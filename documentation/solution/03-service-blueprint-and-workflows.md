@@ -9,6 +9,12 @@
 | Check | Reads the evidence | Each link names its source and place | Manifest with SHA-256 per source | fetch.py, c_hashes |
 | Reuse | Downloads or calls the feed | Data page, formats, contract | BODS, CSV, JSON-LD, concordance | export_bods.py, schema check |
 | Correct | Raises a correction | Form on GitHub | Issue triaged, change proposed in a pull request | CI runs every check before merge |
+| Orient | Picks who they are on the home page | 'Start here' panel: goal, tasks and routes for each of 15 personas | Routes read from documentation/solution/personas.json | personas.py checks every route resolves |
+| Explore | Opens the org charts | Four charts: who answers to whom, nations and branches, type and purpose, the UK in the world | Charts built from chains, nations and relations | orgchart.py: every open body placed once, known answer |
+| Comply | Reads the rules that apply to a body | Profile: rules by scope, what it issues, legislation naming it | Rules matched by type and nation from each instrument's scope | instruments.py: known answers, official sources only |
+| Fund | Looks for grants, schemes or a sandbox | Funding page with sector and audience filters and quick picks | Find a grant, GOV.UK schemes, 360Giving registry, regulators' pages | funding.py: givers in the register, council org-ids checked |
+| Relate | Looks for treaties, MoUs or memberships | Nations page: relationships tabs; profile: treaties it holds | GOV.UK treaties and agreements, Wikidata memberships | relations.py: known answers, roles not people |
+| Query | Asks its own question of the data | Datasette Lite on one SQLite file | sqlite_export.py writes every table | Negative test for malformed org-ids |
 
 ## Workflows
 
@@ -31,4 +37,4 @@ flowchart LR
   L --> M[CI passes] --> N[Merge, credit the contributor]
 ```
 
-**Effort to run (one person):** a refresh with review takes about an hour; triaging a correction takes 10–20 minutes. Nothing runs on a schedule, so nothing breaks unattended.
+**Effort to run (one person):** a refresh with review takes about an hour (the evidence reads for rules, relationships and funding add about 45 minutes a quarter); triaging a correction takes 10–20 minutes. Nothing runs on a schedule, so nothing breaks unattended.

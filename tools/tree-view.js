@@ -334,6 +334,21 @@ function figures(){
   panels.forEach((p, i) => bars($("#figB" + i), p[1].slice(0, 12).map(([l, n]) => [l, n]), p[2]));
 }
 
+/* Start here: proto-personas and their routes (documentation/solution/personas.json; tools/personas.py checks each route) */
+function personas(){
+  const P = ACC.personas; if (!P || !$("#personaChips")) return;
+  const groups = [...new Set(P.personas.map(x => x.group))];
+  $("#personaChips").innerHTML = groups.map(g => `<div class="pgroup"><span class="muted">${esc(g)}</span><div class="pc">${P.personas.filter(x => x.group === g).map(x => `<button type="button" class="pchip" aria-pressed="false" data-persona="${esc(x.id)}">${esc(x.who)}</button>`).join("")}</div></div>`).join("");
+  const show = id => { const x = P.personas.find(p => p.id === id); $$("#personaChips .pchip").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.persona === id)));
+    if (!x) { $("#personaCard").innerHTML = ""; return; }
+    $("#personaCard").innerHTML = `<div class="pcard"><h3>${esc(x.who)}</h3><p><b>You want to:</b> ${esc(x.goal)}.</p><p class="muted"><b>Top tasks:</b> ${x.tasks.map(esc).join("; ")}.</p><div class="proutes">${x.routes.map(r => `<a class="btn ghost" href="${esc(r[1])}">${esc(r[0])}</a>`).join("")}</div><p class="muted"><b>Success looks like:</b> ${esc(x.success)}. <b>What we are testing:</b> ${esc(x.test)}.</p></div>`;
+    try { localStorage.setItem("og-persona", id); } catch (e) { /* storage unavailable: the choice just isn't remembered */ } };
+  $("#personaChips").addEventListener("click", e => { const b = e.target.closest("[data-persona]"); if (!b) return; const on = b.getAttribute("aria-pressed") !== "true"; show(on ? b.dataset.persona : "");
+    if (on) { const c = $("#personaCard"), r = c.getBoundingClientRect(); if (r.top > innerHeight - 80) c.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"}); } });
+  let saved = ""; try { saved = localStorage.getItem("og-persona") || ""; } catch (e) { saved = ""; }
+  if (saved) show(saved);
+}
+
 function treeSelfChecks(){
   const res = [];
   res.push(["Every open record has an accountability chain", OPEN.every(r => ACC.ch[r.id])]);

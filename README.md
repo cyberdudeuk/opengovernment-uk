@@ -54,6 +54,7 @@ tools/instruments.py    rules that apply to each body, what it issues, and legis
 tools/relations.py      the UK's memberships, treaties and agreements, linked to the UK bodies that hold them
 tools/orgchart.py      interactive org charts: who answers to whom, nations and branches, type and purpose, the UK in the world
 tools/funding.py        grants, business support schemes, regulators' innovation services and grant-makers
+tools/personas.py       personas and journeys from one source; checks every route the portal offers them
 tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
 ```
 

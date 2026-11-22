@@ -49,6 +49,8 @@ jobs:
         run: python tools/orgchart.py && python tools/orgchart.py --negative
       - name: Funding, grants, schemes and innovation services (givers in the register, council org-ids checked, negatives)
         run: python tools/funding.py && python tools/funding.py --negative
+      - name: Personas and journeys (every route leads somewhere real, negatives)
+        run: python tools/personas.py && python tools/personas.py --negative
       - name: Each body's own website (one combined table, code-matched only, negatives)
         run: python tools/websites.py && python tools/websites.py --negative
       - name: Trading fund and public corporation trees (one place each, known answers, negatives)
