@@ -50,6 +50,8 @@ tools/sameas.py         one record per body: combines records that are the same 
 tools/territories.py    the Crown Dependencies' and Overseas Territories' own bodies, branch by branch
 tools/international.py  which UK body leads the UK's place in each international body or trading bloc
 tools/sqlite_export.py  one SQLite file for Datasette Lite, and org-id.guide identifiers
+tools/instruments.py    rules that apply to each body, what it issues, and legislation naming it
+tools/relations.py      the UK's memberships, treaties and agreements, linked to the UK bodies that hold them
 tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
 ```
 
@@ -72,6 +74,7 @@ python tools/fetch.py --private && python tools/build.py   # full rebuild
 | Territory bodies and websites: re-read the Wikidata and founding-order evidence files, review exclusions | twice a year | 1 to 2 hours |
 | Reconciliation decisions (sources/evidence/reconciliation-decisions.json): decide new items from the body's own page or founding law | when the review queue is not empty | 15 minutes per item |
 | International bodies (sources/evidence/international-bodies.json): re-check leads after any machinery-of-government change; confirm the 'still to confirm' list | after each change, at least yearly | 30 to 60 minutes |
+| Rules, guidance, treaties and agreements: re-run the GOV.UK, legislation.gov.uk and Wikidata reads (scripts in tools/, about 15 minutes of machine time), review the known answers | quarterly | 30 minutes |
 | Feedback via the GitHub issue form | as it comes | minutes each |
 
 Nothing runs on a schedule: there are no paid services, no secrets and no tokens beyond the read-only one GitHub gives each workflow run.

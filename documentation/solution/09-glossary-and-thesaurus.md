@@ -27,3 +27,6 @@
 | Decided from evidence | A disagreement between sources that the automatic rules could not settle, decided by a person from the body's own page or the law that set it up. The evidence is kept with the decision. | manual reconciliation; human decision |
 | Single point of contact | The one UK body that another country or an international organisation deals with on a subject | SPOC; national focal point; National Central Bureau |
 | UK mission or delegation | A team of UK officials posted to an international organisation | permanent representation; UKMis; UKDel |
+| Applies by rule | A law or rulebook shown against a body because the body's type and nation fall within the instrument's own stated scope; not a legal opinion on that body | in scope; applicability |
+| Treaty Series, Country Series, Miscellaneous Series | The Command Paper series in which the Foreign Office publishes treaties, printed in each treaty's title on GOV.UK | TS; CS; MS |
+| Memorandum of understanding | A written arrangement between two or more parties setting out how they will work together, usually not legally binding | MoU; concordat; accord |

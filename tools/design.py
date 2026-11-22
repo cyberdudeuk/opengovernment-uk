@@ -165,9 +165,15 @@ def wrap_page(html, active):
     return html.replace("</body>", f"</div>{foot}</body>", 1)
 
 
+# Narrow-screen guards for elements that refuse to wrap (each from a defect in documentation/defect-register.md)
+WRAP_GUARDS = [("nmulti", "@media (max-width:640px){.nmulti{white-space:normal}}", "OG-D50"), ('class="ins"', "dl.kv dd,ul.ins li{overflow-wrap:anywhere", "OG-D50")]
+
+
 def audit_html(name, html):
     """Problems with one published page."""
     p = []
+    for sel, rule, d in WRAP_GUARDS:
+        if sel in html and rule not in html: p.append(f"{name}: {sel} has no narrow-screen wrap rule ({d})")
     if re.search(r"fonts\.(googleapis|gstatic)\.com|<link[^>]+rel=\"stylesheet\"[^>]+href=\"https?://", html): p.append(f"{name}: third-party font or stylesheet")
     if 'href="assets/og.css"' not in html: p.append(f"{name}: doesn't use the shared stylesheet")
     css = " ".join(re.findall(r"<style[^>]*>(.*?)</style>", html, re.S))
@@ -274,6 +280,7 @@ def main():
         for bad in ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">', "<style>a{color:#ff0000}</style>", "<style>p{font-size:13px}</style>", "<style>p{font:700 .9rem var(--f-body)}</style>",
                     "<style>.c{border-radius:14px}</style>", "<style>@media (max-width:900px){a{color:red}}</style>"):
             caught.append(bool(audit_html("bad", ok + bad)))
+        caught.append(bool(audit_html("bad", ok + '<span class="nmulti">serves the whole UK</span>')))  # OG-D50: a no-wrap chip without its narrow-screen rule
         caught.append(tokenise("p{font-size:.72rem;border-radius:10px}@media (max-width:900px){}") == "p{font-size:var(--og-size-xs);border-radius:var(--og-radius-md)}@media (max-width:1023px){}")
         if not all(caught): sys.exit(f"design negative: {caught.count(False)} not caught")
         print(f"design negative: all {len(caught)} cases behave as they should"); return

@@ -40,6 +40,15 @@ _CL = json.loads((ROOT / "data" / "classification.json").read_text())  # tools/c
 ACC["cl"] = {k: [v["purpose"], v["activity"], v["btype"], v["reach"]] for k, v in _CL["bodies"].items()}
 _SA = json.loads((ROOT / "data" / "same-as.json").read_text())  # tools/sameas.py: one record per body
 ACC["orgid"] = json.loads((ROOT / "data" / "org-id.json").read_text())  # tools/sqlite_export.py: org-id.guide identifiers (GB-COH, GB-CHC)
+_INS = json.loads((ROOT / "data" / "instruments.json").read_text())  # tools/instruments.py: rules that apply, what each body issues, legislation naming it
+ACC["ins"] = _INS["bodies"]; ACC["insr"] = _INS["rules"]
+_REL = json.loads((ROOT / "data" / "relations.json").read_text())  # tools/relations.py: treaties and agreements by UK body
+_RB = collections.defaultdict(list)
+for _x in _REL["treaties"]:
+    for _u in _x["uk"]: _RB[_u].append([_x["title"], _x["url"], _x["date"], "treaty"])
+for _x in _REL["agreements"]:
+    for _u in _x["uk"]: _RB[_u].append([_x["title"], _x["url"], _x["date"], _x["form"]])
+ACC["relb"] = {k: {"n": len(v), "top": sorted(v, key=lambda z: z[2], reverse=True)[:6]} for k, v in _RB.items()}
 ACC["web"] = json.loads((ROOT / "data" / "websites.json").read_text())  # tools/websites.py: id -> [own website, source]
 ACC["sa"] = {c: g["members"] for c, g in _SA["groups"].items()}; ACC["sar"] = {c: g["rules"] for c, g in _SA["groups"].items()}
 ACC["clm"] = {"purpose": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["purposes"]}, "activity": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["activities"]},

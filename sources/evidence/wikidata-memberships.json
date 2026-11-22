@@ -1,0 +1,731 @@
+{
+"about": "Organisations the United Kingdom, or England, Scotland, Wales or Northern Ireland, is recorded as a member of on Wikidata (property P463, 'member of'), read 22 November 2026, with the start and end dates of each membership where recorded. Kept only where Wikidata types the item as an organisation, alliance, treaty body, regime, bank, fund or similar. A membership with an end date, or an organisation recorded as dissolved, is shown as former. Wikidata is community-edited: these are as recorded there, and gaps are known.",
+"licence": "CC0",
+"read": "2026-11-22",
+"sha256": "092c00f6e8941ac8af8077fd51200c1699e70df8625af59ab7ffd86eaf2405c5",
+"memberships": [
+{
+"who": "UK",
+"qid": "Q2863003",
+"name": "ABCANZ Armies",
+"types": [
+"international organization"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q2625543",
+"name": "ANZUK",
+"types": [
+"international organization",
+"military alliance"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "1974-12-16",
+"status": "former"
+},
+{
+"who": "UK",
+"qid": "Q108556886",
+"name": "AUKUS",
+"types": [
+"military technology",
+"intergovernmental organization"
+],
+"site": "",
+"start": "2021-09-15",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q4033111",
+"name": "AUSCANNZUKUS",
+"types": [
+"international organization"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q340195",
+"name": "African Development Bank",
+"types": [
+"multilateral development bank"
+],
+"site": "https://www.afdb.org/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q4426267",
+"name": "Air Force Interoperability Council",
+"types": [
+"international organization"
+],
+"site": "http://www.airstandards.org/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q188822",
+"name": "Asian Development Bank",
+"types": [
+"public company",
+"international financial institution",
+"publishing house",
+"multilateral development bank"
+],
+"site": "https://adb.org",
+"start": "1966-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q782942",
+"name": "Australia Group",
+"types": [
+"international organization"
+],
+"site": "https://australiagroup.net",
+"start": "1985-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q3772571",
+"name": "Caribbean Development Bank",
+"types": [
+"multilateral development bank"
+],
+"site": "https://www.caribank.org",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q5150848",
+"name": "Combined Communications-Electronics Board",
+"types": [
+"international organization"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q8908",
+"name": "Council of Europe",
+"types": [
+"organization",
+"intergovernmental organization"
+],
+"site": "https://www.coe.int",
+"start": "1949-05-05",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q663492",
+"name": "Eurocontrol",
+"types": [
+"organization",
+"international organization"
+],
+"site": "https://www.eurocontrol.int/articles/france",
+"start": "1960-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q166546",
+"name": "European Free Trade Association",
+"types": [
+"international organization",
+"free trade area",
+"regional organization"
+],
+"site": "http://www.efta.int/",
+"start": "1960-05-03",
+"end": "1973-01-01",
+"dissolved": "",
+"status": "former"
+},
+{
+"who": "UK",
+"qid": "Q151991",
+"name": "European Southern Observatory",
+"types": [
+"research institute",
+"international organization",
+"astronomical observatory"
+],
+"site": "https://www.eso.org/",
+"start": "2002-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q42262",
+"name": "European Space Agency",
+"types": [
+"intergovernmental organization",
+"international organization",
+"space agency"
+],
+"site": "https://esa.int",
+"start": "1978-03-28",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q458",
+"name": "European Union",
+"types": [
+"confederation",
+"supranational union",
+"regional organization",
+"political economic union"
+],
+"site": "https://european-union.europa.eu/",
+"start": "1973-01-01",
+"end": "2020-01-31",
+"dissolved": "",
+"status": "former"
+},
+{
+"who": "UK",
+"qid": "Q15978258",
+"name": "Five Eyes",
+"types": [
+"partnership",
+"strategic alliance",
+"intelligence alliance"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q19771",
+"name": "G20",
+"types": [
+"intergovernmental organization",
+"international organization",
+"Icosad",
+"geopolitical group"
+],
+"site": "https://g20.org",
+"start": "1999-09-26",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q1764511",
+"name": "G7",
+"types": [
+"intergovernmental organization",
+"international organization",
+"group of major economic countries",
+"heptad"
+],
+"site": "http://www.g7italy.it/",
+"start": "1977-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q37143",
+"name": "G8",
+"types": [
+"intergovernmental organization",
+"octad",
+"group of major economic countries"
+],
+"site": "",
+"start": "1998-05-18",
+"end": "2014-01-01",
+"dissolved": "2014-01-01",
+"status": "former"
+},
+{
+"who": "UK",
+"qid": "Q5611262",
+"name": "Group on Earth Observations",
+"types": [
+"organization"
+],
+"site": "https://www.earthobservations.org/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q191384",
+"name": "International Bank for Reconstruction and Development",
+"types": [
+"multilateral development bank"
+],
+"site": "https://www.worldbank.org/en/about/what-we-do/brief/ibrd",
+"start": "1945-12-27",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q899770",
+"name": "International Centre for Settlement of Investment Disputes",
+"types": [
+"international organization"
+],
+"site": "http://www.worldbank.org/icsid",
+"start": "1967-01-18",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q827525",
+"name": "International Development Association",
+"types": [
+"multilateral development bank"
+],
+"site": "http://www.worldbank.org/ida/",
+"start": "1960-09-24",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q826700",
+"name": "International Energy Agency",
+"types": [
+"intergovernmental organization"
+],
+"site": "https://www.iea.org/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q656801",
+"name": "International Finance Corporation",
+"types": [
+"international financial institution"
+],
+"site": "https://www.ifc.org/",
+"start": "1956-07-20",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q823428",
+"name": "International Holocaust Remembrance Alliance",
+"types": [
+"intergovernmental organization"
+],
+"site": "https://www.holocaustremembrance.com/",
+"start": "1998-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q233611",
+"name": "International Hydrographic Organization",
+"types": [
+"intergovernmental organization"
+],
+"site": "https://www.iho.int",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q376150",
+"name": "International Telecommunication Union",
+"types": [
+"standards organization",
+"specialized agency of the United Nations"
+],
+"site": "https://www.itu.int",
+"start": "1871-02-24",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q8475",
+"name": "Interpol",
+"types": [
+"organization",
+"intergovernmental organization",
+"international organization",
+"law enforcement agency"
+],
+"site": "https://interpol.int",
+"start": "1928-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q1072120",
+"name": "Missile Technology Control Regime",
+"types": [
+"intergovernmental organization",
+"international organization"
+],
+"site": "https://mtcr.info/",
+"start": "1987-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q3866537",
+"name": "Movement Coordination Centre Europe",
+"types": [
+"international organization"
+],
+"site": "https://www.mcce-mil.org/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q1043527",
+"name": "Multilateral Investment Guarantee Agency",
+"types": [
+"intergovernmental organization"
+],
+"site": "https://www.miga.org/",
+"start": "1988-04-12",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q7184",
+"name": "NATO",
+"types": [
+"intergovernmental organization",
+"international organization",
+"military alliance",
+"multinational military coalition"
+],
+"site": "https://nato.int",
+"start": "1949-04-04",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q1480793",
+"name": "Nuclear Suppliers Group",
+"types": [
+"intergovernmental organization",
+"international organization"
+],
+"site": "https://nuclearsuppliersgroup.org/en/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q521227",
+"name": "Organisation for Joint Armament Cooperation",
+"types": [
+"international organization"
+],
+"site": "http://www.occar.int/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q842490",
+"name": "Organisation for the Prohibition of Chemical Weapons",
+"types": [
+"intergovernmental organization"
+],
+"site": "https://www.opcw.org/",
+"start": "1997-04-29",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q41550",
+"name": "Organization for Economic Cooperation and Development",
+"types": [
+"organization",
+"intergovernmental organization",
+"international organization"
+],
+"site": "https://www.oecd.org/",
+"start": "1961-05-02",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q81299",
+"name": "Organization for Security and Co-operation in Europe",
+"types": [
+"intergovernmental organization"
+],
+"site": "https://www.osce.org/ru",
+"start": "1973-06-25",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q277252",
+"name": "Southeast Asia Treaty Organization",
+"types": [
+"intergovernmental organization",
+"military alliance"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "1977-06-30",
+"status": "former"
+},
+{
+"who": "UK",
+"qid": "Q7768229",
+"name": "The Technical Cooperation Program",
+"types": [
+"international organization"
+],
+"site": "https://www.acq.osd.mil/ttcp/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q1928989",
+"name": "Treaty on Open Skies",
+"types": [
+"treaty"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q186444",
+"name": "Treaty on the Non-Proliferation of Nuclear Weapons",
+"types": [
+"treaty"
+],
+"site": "https://www.un.org/disarmament/wmd/nuclear/npt/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q1065",
+"name": "United Nations",
+"types": [
+"organization",
+"intergovernmental organization",
+"nonprofit organization",
+"international organization"
+],
+"site": "https://www.un.org/",
+"start": "1945-10-24",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q17495",
+"name": "Universal Postal Union",
+"types": [
+"specialized agency of the United Nations"
+],
+"site": "https://www.upu.int/fr",
+"start": "1875-07-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q45177",
+"name": "Visa Waiver Program",
+"types": [
+"visa policy",
+"expedited border crossing scheme",
+"government program"
+],
+"site": "https://www.dhs.gov/visa-waiver-program",
+"start": "1988-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q605326",
+"name": "World Customs Organization",
+"types": [
+"intergovernmental organization"
+],
+"site": "https://www.wcoomd.org/",
+"start": "1952-09-12",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q7817",
+"name": "World Health Organization",
+"types": [
+"international organization",
+"specialized agency of the United Nations",
+"open-access publisher",
+"academic publisher"
+],
+"site": "https://www.who.int",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q170424",
+"name": "World Meteorological Organization",
+"types": [
+"international organization",
+"specialized agency of the United Nations"
+],
+"site": "https://wmo.int/",
+"start": "1948-12-14",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q7825",
+"name": "World Trade Organization",
+"types": [
+"international organization"
+],
+"site": "https://wto.org",
+"start": "1995-01-01",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "UK",
+"qid": "Q189062",
+"name": "states with nuclear weapons",
+"types": [
+"group"
+],
+"site": "",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+},
+{
+"who": "WA",
+"qid": "Q67652870",
+"name": "World Tourism Cities Federation",
+"types": [
+"non-governmental organization"
+],
+"site": "https://en.wtcf.org.cn/",
+"start": "",
+"end": "",
+"dissolved": "",
+"status": "current"
+}
+]
+}

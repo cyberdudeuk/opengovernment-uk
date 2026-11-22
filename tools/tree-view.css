@@ -99,3 +99,7 @@
 
 #s-figures .stat small{display:block;margin-top:4px;font-size:var(--og-size-xs,.78rem);line-height:1.35}
 .figgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px 24px;margin-top:18px}.figgrid h3{font-size:var(--og-size-md,1rem);margin:0 0 8px}.figwide{grid-column:1/-1}
+
+ul.ins{margin:4px 0 6px;padding-left:1.1em}ul.ins li{margin:2px 0}
+dl.kv dd,ul.ins li{overflow-wrap:anywhere;min-width:0}
+.nmulti{display:inline-block;max-width:100%}@media (max-width:640px){.nmulti{white-space:normal}}

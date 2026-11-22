@@ -41,6 +41,10 @@ jobs:
         run: python tools/territories.py && python tools/territories.py --negative
       - name: The UK in international bodies (official sources only, open register leads, roles not people, negatives)
         run: python tools/international.py && python tools/international.py --negative
+      - name: Rules, standards and guidance for each body (official sources, known answers, negatives)
+        run: python tools/instruments.py && python tools/instruments.py --negative
+      - name: The UK's memberships, treaties and agreements (known answers, negatives)
+        run: python tools/relations.py && python tools/relations.py --negative
       - name: Each body's own website (one combined table, code-matched only, negatives)
         run: python tools/websites.py && python tools/websites.py --negative
       - name: Trading fund and public corporation trees (one place each, known answers, negatives)
