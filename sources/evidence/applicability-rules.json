@@ -1,52 +1,398 @@
 {
-  "about": "Cross-cutting laws and rulebooks that apply to bodies because of what they are and where they work. Each rule quotes the instrument's own scope statement and is applied only within it, by the body's type (tools/classify.py) and nation (tools/nations.py). A match means 'applies by rule'; it is not a body-by-body legal opinion. Read 22 November 2026.",
-  "read": "2026-11-22",
-  "rules": [
-    {"id": "mpm", "title": "Managing Public Money", "kind": "rulebook", "issuer": "government-organisation:D15", "url": "https://www.gov.uk/government/publications/managing-public-money",
-     "scope": "In broad terms it applies to UK central government bodies, as well as other specified public sector bodies. The devolved administrations have equivalent rulebooks.", "scope_url": "https://assets.publishing.service.gov.uk/media/69e0b17861d2e8e9b9e42e13/Managing_Public_Money_-_April_2026.pdf",
-     "when": {"btype": ["department", "agency", "ndpb", "central"], "nation": ["EN", "UK", "GB", "none"]}},
-    {"id": "govs", "title": "Government Functional Standards (GovS 001 to GovS 015)", "kind": "standard", "issuer": "government-organisation:D2", "url": "https://www.gov.uk/government/collections/functional-standards",
-     "scope": "These standards are mandated for use across central government, and may also be adopted by other public sector organisations.", "scope_url": "https://www.gov.uk/government/collections/functional-standards",
-     "when": {"btype": ["department", "agency", "ndpb", "central"], "nation": ["EN", "UK", "GB", "none"]}},
-    {"id": "board-code", "title": "Code of Conduct for Board Members of Public Bodies", "kind": "code", "issuer": "government-organisation:D2", "url": "https://www.gov.uk/government/publications/code-of-conduct-for-board-members-of-public-bodies",
-     "scope": "Standards expected from those on boards of government departments, non-ministerial departments, executive agencies, NDPBs, and national public corporations.", "scope_url": "https://www.gov.uk/government/publications/code-of-conduct-for-board-members-of-public-bodies",
-     "when": {"btype": ["department", "agency", "ndpb", "corporation"], "nation": ["EN", "UK", "GB", "none"]}},
-    {"id": "cs-code", "title": "Civil Service Code", "kind": "code", "issuer": "government-organisation:CS1028", "url": "https://www.gov.uk/government/publications/civil-service-code",
-     "scope": "The Civil Service code outlines the Civil Service's core values, and the standards of behaviour expected of all civil servants.", "scope_url": "https://www.gov.uk/government/publications/civil-service-code",
-     "when": {"btype": ["department", "agency"], "nation": ["EN", "UK", "GB", "SC", "WA", "none"]}},
-    {"id": "lg-transparency", "title": "Local Government Transparency Code 2015", "kind": "code", "issuer": "government-organisation:D1419", "url": "https://www.gov.uk/government/publications/local-government-transparency-code-2015",
-     "scope": "Sets out the minimum data that local authorities should be publishing, the frequency it should be published and how it should be published.", "scope_url": "https://www.gov.uk/government/publications/local-government-transparency-code-2015",
-     "when": {"btype": ["council"], "nation": ["EN"], "family": ["local-authority"]}},
-    {"id": "spfm", "title": "Scottish Public Finance Manual", "kind": "rulebook", "issuer": "government-organisation:DA1020", "url": "https://www.gov.scot/publications/scottish-public-finance-manual/",
-     "scope": "Issued by the Scottish Ministers, it sets out the main principles for dealing with resources in public sector organisations in Scotland; bodies sponsored by the Scottish Government include executive NDPBs, public corporations and NHS bodies.", "scope_url": "https://www.gov.scot/publications/scottish-public-finance-manual/foreward-and-scope-of-the-spfm/background-and-applicability/",
-     "when": {"btype": ["department", "agency", "ndpb", "central", "corporation", "nhs"], "nation": ["SC"], "only": true}},
-    {"id": "mwpm", "title": "Managing Welsh Public Money", "kind": "rulebook", "issuer": "government-organisation:DA1019", "url": "https://gov.wales/managing-welsh-public-money",
-     "scope": "The framework applies to the Welsh Government, its sponsored bodies, the NHS in Wales, its commissioners, the Education Workforce Council, Estyn and the Welsh Government's subsidiary bodies.", "scope_url": "https://gov.wales/managing-welsh-public-money",
-     "when": {"btype": ["department", "agency", "ndpb", "central", "corporation", "nhs"], "nation": ["WA"], "only": true}},
-    {"id": "mpmni", "title": "Managing Public Money Northern Ireland", "kind": "rulebook", "issuer": "government-organisation:OT1177", "url": "https://www.finance-ni.gov.uk/articles/managing-public-money-ni-mpmni",
-     "scope": "It sets out the main principles for dealing with resources used by public sector organisations in Northern Ireland.", "scope_url": "https://www.finance-ni.gov.uk/articles/managing-public-money-ni-mpmni",
-     "when": {"btype": ["department", "agency", "ndpb", "central", "corporation", "nhs", "council", "court"], "nation": ["NI"], "only": true}},
-    {"id": "procurement-act", "title": "Procurement Act 2023", "kind": "law", "issuer": null, "url": "https://www.legislation.gov.uk/ukpga/2023/54",
-     "scope": "A contracting authority is a public authority (or, for utilities contracts, also a public undertaking or private utility) other than an excluded authority; devolved Scottish authorities are excluded (section 2).", "scope_url": "https://www.legislation.gov.uk/ukpga/2023/54/section/2",
-     "when": {"btype": ["department", "agency", "ndpb", "central", "council", "nhs", "court"], "nation": ["EN", "WA", "NI", "UK", "GB", "none"]}, "likely": true},
-    {"id": "foi-depts", "title": "Freedom of Information Act 2000 (government departments)", "kind": "law", "issuer": null, "url": "https://www.legislation.gov.uk/ukpga/2000/36",
-     "scope": "Schedule 1, Part I, paragraph 1: any government department, with named exceptions.", "scope_url": "https://www.legislation.gov.uk/ukpga/2000/36/schedule/1",
-     "when": {"btype": ["department"], "nation": ["EN", "UK", "GB", "WA", "none"]}},
-    {"id": "foi-lg", "title": "Freedom of Information Act 2000 (local government)", "kind": "law", "issuer": null, "url": "https://www.legislation.gov.uk/ukpga/2000/36",
-     "scope": "Schedule 1, Part II: local authorities in England and Wales within the meaning of the Local Government Act 1972, and district councils in Northern Ireland.", "scope_url": "https://www.legislation.gov.uk/ukpga/2000/36/schedule/1",
-     "when": {"btype": ["council"], "nation": ["EN", "WA", "NI"], "family": ["local-authority", "ons-name"]}},
-    {"id": "foi-nhs", "title": "Freedom of Information Act 2000 (the NHS)", "kind": "law", "issuer": null, "url": "https://www.legislation.gov.uk/ukpga/2000/36",
-     "scope": "Schedule 1, Part III: bodies of the National Health Service.", "scope_url": "https://www.legislation.gov.uk/ukpga/2000/36/schedule/1",
-     "when": {"btype": ["nhs"], "nation": ["EN", "WA"]}},
-    {"id": "psed", "title": "Equality Act 2010, public sector equality duty (section 149)", "kind": "law", "issuer": null, "url": "https://www.legislation.gov.uk/ukpga/2010/15/section/149",
-     "scope": "Schedule 19, Part 1 lists the authorities: a Minister of the Crown and government departments; a county, district or parish council in England; NHS bodies in England.", "scope_url": "https://www.legislation.gov.uk/ukpga/2010/15/schedule/19",
-     "when": {"btype": ["department", "council", "nhs"], "nation": ["EN", "UK", "GB", "none"]}},
-    {"id": "companies-act", "title": "Companies Act 2006", "kind": "law", "issuer": null, "url": "https://www.legislation.gov.uk/ukpga/2006/46",
-     "scope": "Applies to companies registered under it; the body has a Companies House number.", "scope_url": "https://www.legislation.gov.uk/ukpga/2006/46",
-     "when": {"has_id": "companies_house"}},
-    {"id": "charities-act", "title": "Charities Act 2011", "kind": "law", "issuer": null, "url": "https://www.legislation.gov.uk/ukpga/2011/25",
-     "scope": "Applies to charities in England and Wales; the body has a Charity Commission registration number.", "scope_url": "https://www.legislation.gov.uk/ukpga/2011/25",
-     "when": {"has_id": "charity_ew"}}
-  ],
-  "to_confirm": ["Freedom of Information (Scotland) Act 2002 and the equality duty's Scottish and Welsh parts: the schedules have not yet been read here, so they are not applied.", "Service Standard and Technology Code of Practice: their pages state no scope, so they are shown as issued by the Government Digital Service but not applied.", "Governance Code on Public Appointments: applies to bodies named in an Order in Council, which is not yet read here."]
+ "about": "Cross-cutting laws and rulebooks that apply to bodies because of what they are and where they work. Each rule quotes the instrument's own scope statement and is applied only within it, by the body's type (tools/classify.py) and nation (tools/nations.py). A match means 'applies by rule'; it is not a body-by-body legal opinion. Read 22 November 2026.",
+ "read": "2026-11-22",
+ "rules": [
+  {
+   "id": "mpm",
+   "title": "Managing Public Money",
+   "kind": "rulebook",
+   "issuer": "government-organisation:D15",
+   "url": "https://www.gov.uk/government/publications/managing-public-money",
+   "scope": "In broad terms it applies to UK central government bodies, as well as other specified public sector bodies. The devolved administrations have equivalent rulebooks.",
+   "scope_url": "https://assets.publishing.service.gov.uk/media/69e0b17861d2e8e9b9e42e13/Managing_Public_Money_-_April_2026.pdf",
+   "when": {
+    "btype": [
+     "department",
+     "agency",
+     "ndpb",
+     "central"
+    ],
+    "nation": [
+     "EN",
+     "UK",
+     "GB",
+     "none"
+    ]
+   }
+  },
+  {
+   "id": "govs",
+   "title": "Government Functional Standards (GovS 001 to GovS 015)",
+   "kind": "standard",
+   "issuer": "government-organisation:D2",
+   "url": "https://www.gov.uk/government/collections/functional-standards",
+   "scope": "These standards are mandated for use across central government, and may also be adopted by other public sector organisations.",
+   "scope_url": "https://www.gov.uk/government/collections/functional-standards",
+   "when": {
+    "btype": [
+     "department",
+     "agency",
+     "ndpb",
+     "central"
+    ],
+    "nation": [
+     "EN",
+     "UK",
+     "GB",
+     "none"
+    ]
+   }
+  },
+  {
+   "id": "board-code",
+   "title": "Code of Conduct for Board Members of Public Bodies",
+   "kind": "code",
+   "issuer": "government-organisation:D2",
+   "url": "https://www.gov.uk/government/publications/code-of-conduct-for-board-members-of-public-bodies",
+   "scope": "Standards expected from those on boards of government departments, non-ministerial departments, executive agencies, NDPBs, and national public corporations.",
+   "scope_url": "https://www.gov.uk/government/publications/code-of-conduct-for-board-members-of-public-bodies",
+   "when": {
+    "btype": [
+     "department",
+     "agency",
+     "ndpb",
+     "corporation"
+    ],
+    "nation": [
+     "EN",
+     "UK",
+     "GB",
+     "none"
+    ]
+   }
+  },
+  {
+   "id": "cs-code",
+   "title": "Civil Service Code",
+   "kind": "code",
+   "issuer": "government-organisation:CS1028",
+   "url": "https://www.gov.uk/government/publications/civil-service-code",
+   "scope": "The Civil Service code outlines the Civil Service's core values, and the standards of behaviour expected of all civil servants.",
+   "scope_url": "https://www.gov.uk/government/publications/civil-service-code",
+   "when": {
+    "btype": [
+     "department",
+     "agency"
+    ],
+    "nation": [
+     "EN",
+     "UK",
+     "GB",
+     "SC",
+     "WA",
+     "none"
+    ]
+   }
+  },
+  {
+   "id": "lg-transparency",
+   "title": "Local Government Transparency Code 2015",
+   "kind": "code",
+   "issuer": "government-organisation:D1419",
+   "url": "https://www.gov.uk/government/publications/local-government-transparency-code-2015",
+   "scope": "Sets out the minimum data that local authorities should be publishing, the frequency it should be published and how it should be published.",
+   "scope_url": "https://www.gov.uk/government/publications/local-government-transparency-code-2015",
+   "when": {
+    "btype": [
+     "council"
+    ],
+    "nation": [
+     "EN"
+    ],
+    "family": [
+     "local-authority"
+    ]
+   }
+  },
+  {
+   "id": "spfm",
+   "title": "Scottish Public Finance Manual",
+   "kind": "rulebook",
+   "issuer": "government-organisation:DA1020",
+   "url": "https://www.gov.scot/publications/scottish-public-finance-manual/",
+   "scope": "Issued by the Scottish Ministers, it sets out the main principles for dealing with resources in public sector organisations in Scotland; bodies sponsored by the Scottish Government include executive NDPBs, public corporations and NHS bodies.",
+   "scope_url": "https://www.gov.scot/publications/scottish-public-finance-manual/foreward-and-scope-of-the-spfm/background-and-applicability/",
+   "when": {
+    "btype": [
+     "department",
+     "agency",
+     "ndpb",
+     "central",
+     "corporation",
+     "nhs"
+    ],
+    "nation": [
+     "SC"
+    ],
+    "only": true
+   }
+  },
+  {
+   "id": "mwpm",
+   "title": "Managing Welsh Public Money",
+   "kind": "rulebook",
+   "issuer": "government-organisation:DA1019",
+   "url": "https://gov.wales/managing-welsh-public-money",
+   "scope": "The framework applies to the Welsh Government, its sponsored bodies, the NHS in Wales, its commissioners, the Education Workforce Council, Estyn and the Welsh Government's subsidiary bodies.",
+   "scope_url": "https://gov.wales/managing-welsh-public-money",
+   "when": {
+    "btype": [
+     "department",
+     "agency",
+     "ndpb",
+     "central",
+     "corporation",
+     "nhs"
+    ],
+    "nation": [
+     "WA"
+    ],
+    "only": true
+   }
+  },
+  {
+   "id": "mpmni",
+   "title": "Managing Public Money Northern Ireland",
+   "kind": "rulebook",
+   "issuer": "government-organisation:OT1177",
+   "url": "https://www.finance-ni.gov.uk/articles/managing-public-money-ni-mpmni",
+   "scope": "It sets out the main principles for dealing with resources used by public sector organisations in Northern Ireland.",
+   "scope_url": "https://www.finance-ni.gov.uk/articles/managing-public-money-ni-mpmni",
+   "when": {
+    "btype": [
+     "department",
+     "agency",
+     "ndpb",
+     "central",
+     "corporation",
+     "nhs",
+     "council",
+     "court"
+    ],
+    "nation": [
+     "NI"
+    ],
+    "only": true
+   }
+  },
+  {
+   "id": "procurement-act",
+   "title": "Procurement Act 2023",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/ukpga/2023/54",
+   "scope": "A contracting authority is a public authority (or, for utilities contracts, also a public undertaking or private utility) other than an excluded authority; devolved Scottish authorities are excluded (section 2).",
+   "scope_url": "https://www.legislation.gov.uk/ukpga/2023/54/section/2",
+   "when": {
+    "btype": [
+     "department",
+     "agency",
+     "ndpb",
+     "central",
+     "council",
+     "nhs",
+     "court"
+    ],
+    "nation": [
+     "EN",
+     "WA",
+     "NI",
+     "UK",
+     "GB",
+     "none"
+    ]
+   },
+   "likely": true
+  },
+  {
+   "id": "foi-depts",
+   "title": "Freedom of Information Act 2000 (government departments)",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/ukpga/2000/36",
+   "scope": "Schedule 1, Part I, paragraph 1: any government department, with named exceptions.",
+   "scope_url": "https://www.legislation.gov.uk/ukpga/2000/36/schedule/1",
+   "when": {
+    "btype": [
+     "department"
+    ],
+    "nation": [
+     "EN",
+     "UK",
+     "GB",
+     "WA",
+     "none"
+    ]
+   }
+  },
+  {
+   "id": "foi-lg",
+   "title": "Freedom of Information Act 2000 (local government)",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/ukpga/2000/36",
+   "scope": "Schedule 1, Part II: local authorities in England and Wales within the meaning of the Local Government Act 1972, and district councils in Northern Ireland.",
+   "scope_url": "https://www.legislation.gov.uk/ukpga/2000/36/schedule/1",
+   "when": {
+    "btype": [
+     "council"
+    ],
+    "nation": [
+     "EN",
+     "WA",
+     "NI"
+    ],
+    "family": [
+     "local-authority",
+     "ons-name"
+    ]
+   }
+  },
+  {
+   "id": "foi-nhs",
+   "title": "Freedom of Information Act 2000 (the NHS)",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/ukpga/2000/36",
+   "scope": "Schedule 1, Part III: bodies of the National Health Service.",
+   "scope_url": "https://www.legislation.gov.uk/ukpga/2000/36/schedule/1",
+   "when": {
+    "btype": [
+     "nhs"
+    ],
+    "nation": [
+     "EN",
+     "WA"
+    ]
+   }
+  },
+  {
+   "id": "psed",
+   "title": "Equality Act 2010, public sector equality duty (section 149)",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/ukpga/2010/15/section/149",
+   "scope": "Schedule 19, Part 1 lists the authorities: a Minister of the Crown and government departments; a county, district or parish council in England; NHS bodies in England.",
+   "scope_url": "https://www.legislation.gov.uk/ukpga/2010/15/schedule/19",
+   "when": {
+    "btype": [
+     "department",
+     "council",
+     "nhs"
+    ],
+    "nation": [
+     "EN",
+     "UK",
+     "GB",
+     "none"
+    ]
+   }
+  },
+  {
+   "id": "companies-act",
+   "title": "Companies Act 2006",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/ukpga/2006/46",
+   "scope": "Applies to companies registered under it; the body has a Companies House number.",
+   "scope_url": "https://www.legislation.gov.uk/ukpga/2006/46",
+   "when": {
+    "has_id": "companies_house"
+   }
+  },
+  {
+   "id": "charities-act",
+   "title": "Charities Act 2011",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/ukpga/2011/25",
+   "scope": "Applies to charities in England and Wales; the body has a Charity Commission registration number.",
+   "scope_url": "https://www.legislation.gov.uk/ukpga/2011/25",
+   "when": {
+    "has_id": "charity_ew"
+   }
+  },
+  {
+   "id": "foisa-ministers",
+   "title": "Freedom of Information (Scotland) Act 2002 (the Scottish Ministers)",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/asp/2002/13",
+   "scope": "Schedule 1, Part 1, paragraph 1: the Scottish Ministers.",
+   "scope_url": "https://www.legislation.gov.uk/asp/2002/13/schedule/1",
+   "when": {
+    "ids": [
+     "government-organisation:DA1020"
+    ]
+   }
+  },
+  {
+   "id": "foisa-councils",
+   "title": "Freedom of Information (Scotland) Act 2002 (local government)",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/asp/2002/13",
+   "scope": "Schedule 1, Part 3, paragraph 21: a council constituted by section 2 of the Local Government etc. (Scotland) Act 1994.",
+   "scope_url": "https://www.legislation.gov.uk/asp/2002/13/schedule/1",
+   "when": {
+    "btype": [
+     "council"
+    ],
+    "nation": [
+     "SC"
+    ],
+    "only": true,
+    "family": [
+     "local-authority",
+     "ons-name"
+    ],
+    "name_has": "Council"
+   }
+  },
+  {
+   "id": "foisa-nhs",
+   "title": "Freedom of Information (Scotland) Act 2002 (the NHS in Scotland)",
+   "kind": "law",
+   "issuer": null,
+   "url": "https://www.legislation.gov.uk/asp/2002/13",
+   "scope": "Schedule 1, Part 4 (The National Health Service): Health Boards, the Common Services Agency, Healthcare Improvement Scotland, the National Waiting Times Centre Board, NHS 24, Public Health Scotland, the Scottish Ambulance Service Board and others.",
+   "scope_url": "https://www.legislation.gov.uk/asp/2002/13/schedule/1",
+   "when": {
+    "btype": [
+     "nhs"
+    ],
+    "nation": [
+     "SC"
+    ],
+    "only": true
+   }
+  },
+  {
+   "id": "public-appointments",
+   "title": "Governance Code on Public Appointments",
+   "kind": "code",
+   "issuer": "government-organisation:D2",
+   "url": "https://www.gov.uk/government/publications/governance-code-for-public-appointments",
+   "scope": "Applies to all public appointments made to bodies listed in the Public Appointments Order in Council; this body is on the list GOV.UK publishes (May 2026), matched by exact name.",
+   "scope_url": "https://www.gov.uk/government/publications/bodies-and-offices-regulated-by-the-commissioner-for-public-appointments/bodies-and-offices-regulated-by-the-commissioner-for-public-appointments",
+   "when": {
+    "ids_file": "sources/evidence/public-appointments-bodies.json"
+   }
+  }
+ ],
+ "to_confirm": [
+  "Service Standard and Technology Code of Practice: their pages state no scope, so they are shown as issued by the Government Digital Service but not applied.",
+  "The equality duty's Scottish and Welsh parts: their schedules are not yet read here, so they are not applied.",
+  "Public appointments: 102 of the 322 listed bodies and offices did not match a single register record by exact name, so the code is not shown for them (they are listed in sources/evidence/public-appointments-bodies.json)."
+ ]
 }

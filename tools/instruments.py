@@ -19,8 +19,17 @@ def load():
             json.loads((ROOT / "data/body-nations.json").read_text()), json.loads((ROOT / "data/same-as.json").read_text())["groups"])
 
 
+_IDS = {}
+
+
 def matches(when, r, cl, nat):
     if "has_id" in when: return bool(r[10].get(when["has_id"]))
+    if "ids" in when: return r[0] in when["ids"]
+    if "ids_file" in when:
+        f = when["ids_file"]
+        if f not in _IDS: _IDS[f] = {e["id"] for e in json.loads((ROOT / f).read_text())["entries"] if e["id"]}
+        return r[0] in _IDS[f]
+    if "name_has" in when and when["name_has"].lower() not in r[1].lower(): return False
     if cl.get("btype") not in when["btype"]: return False
     if "family" in when and r[0].split(":")[0] not in when["family"]: return False
     ns = nat or ["none"]
@@ -60,7 +69,7 @@ def check(o, D):
         if any(a not in o["rules"] for a in b.get("applies", [])): e.append(f"{i}: unknown rule")
     byname = {r[1]: r[0] for r in D["r"] if r[4]}
     def has(name, rule): return rule in o["bodies"].get(byname.get(name, ""), {}).get("applies", [])
-    for name, rule, want in [("HM Treasury", "mpm", True), ("Manchester City Council", "lg-transparency", True), ("Manchester City Council", "mpm", False), ("Welsh Government", "mwpm", True), ("HM Treasury", "spfm", False)]:
+    for name, rule, want in [("Greater Glasgow and Clyde", "foisa-nhs", True), ("Glasgow City Council", "foisa-councils", True), ("Glasgow City Council", "foi-lg", False), ("Arts Council England", "public-appointments", True), ("HM Treasury", "mpm", True), ("Manchester City Council", "lg-transparency", True), ("Manchester City Council", "mpm", False), ("Welsh Government", "mwpm", True), ("HM Treasury", "spfm", False)]:
         if has(name, rule) != want: e.append(f"known answer wrong: {name} {rule} should be {want}")
     if not any("British Museum Act" in it.get("title", "") for it in o["bodies"].get(byname.get("British Museum", byname.get("The British Museum", "")), {}).get("named_in", [])):
         e.append("known answer wrong: British Museum Act not found")

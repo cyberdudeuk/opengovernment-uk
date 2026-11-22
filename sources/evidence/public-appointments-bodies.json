@@ -1,0 +1,1620 @@
+{
+"about": "Bodies and offices regulated by the Commissioner for Public Appointments, as listed on GOV.UK (from the Public Appointments Order in Council), read 22 November 2026, each matched to the register by exact name (qualifiers such as ', Chair only' removed; a trailing 'Board' removed only when the full name has no match). Entries with no single match are kept and reported, never guessed.",
+"source": "https://www.gov.uk/government/publications/bodies-and-offices-regulated-by-the-commissioner-for-public-appointments/bodies-and-offices-regulated-by-the-commissioner-for-public-appointments",
+"published": "2026-05-21",
+"read": "2026-11-22",
+"sha256": "f35dccb7c30859fe2198adc53b5e7633898cc52cdfc874643fe0636030b59f03",
+"entries": [
+{
+"listed": "His Majesty’s Crown Prosecution Service Inspectorate",
+"id": "government-organisation:OT347",
+"how": "exact"
+},
+{
+"listed": "Advisory, Conciliation and Arbitration Service",
+"id": "government-organisation:PB28",
+"how": "exact"
+},
+{
+"listed": "British Business Bank, Chair only",
+"id": "government-organisation:OT1148",
+"how": "exact"
+},
+{
+"listed": "British Hallmarking Council",
+"id": "government-organisation:PB124",
+"how": "exact"
+},
+{
+"listed": "Central Arbitration Committee",
+"id": "government-organisation:PB148",
+"how": "exact"
+},
+{
+"listed": "Certification Officer",
+"id": "government-organisation:PB139",
+"how": "exact"
+},
+{
+"listed": "Competition and Markets Authority Board",
+"id": "government-organisation:D550",
+"how": "name without 'Board'"
+},
+{
+"listed": "Competition Appeal Tribunal",
+"id": "government-organisation:PB140",
+"how": "exact"
+},
+{
+"listed": "Competition Service",
+"id": "government-organisation:PB318",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Department for Business and Trade, non-executive members only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Financial Reporting Council",
+"id": "government-organisation:OT1260",
+"how": "exact"
+},
+{
+"listed": "Groceries Code Adjudicator",
+"id": "government-organisation:OT551",
+"how": "exact"
+},
+{
+"listed": "Labour Market Enforcement Director",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Low Pay Commission",
+"id": "government-organisation:PB122",
+"how": "exact"
+},
+{
+"listed": "Post Office Ltd, Chair only",
+"id": "government-organisation:PC1386",
+"how": "name without its qualifier"
+},
+{
+"listed": "Pubs Code Adjudicator and Deputy Pubs Code Adjudicator",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Regulatory Policy Committee",
+"id": "government-organisation:PB354",
+"how": "exact"
+},
+{
+"listed": "Small Business Commissioner",
+"id": "government-organisation:PB1237",
+"how": "exact"
+},
+{
+"listed": "Trade Remedies Authority",
+"id": "government-organisation:PB1327",
+"how": "exact"
+},
+{
+"listed": "Civil Service Pensions Board",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Departmental Board for the Cabinet Office, non-executive members only",
+"id": "government-organisation:D2",
+"how": "the department whose board it is"
+},
+{
+"listed": "Equality and Human Rights Commission",
+"id": "government-organisation:OT269",
+"how": "exact"
+},
+{
+"listed": "Ethics and Integrity Commission, excluding political members",
+"id": "government-organisation:PB1458",
+"how": "name without its qualifier"
+},
+{
+"listed": "House of Lords Appointment Commission, excluding political members",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Office of the Registrar of Consultant Lobbyists",
+"id": "government-organisation:OT1091",
+"how": "exact"
+},
+{
+"listed": "Security Vetting Appeals Panel",
+"id": "government-organisation:PB367",
+"how": "exact"
+},
+{
+"listed": "Senior Salaries Review Body",
+"id": "government-organisation:PB368",
+"how": "exact"
+},
+{
+"listed": "Social Mobility Commission",
+"id": "government-organisation:PB1193",
+"how": "exact"
+},
+{
+"listed": "UK Statistics Authority Board",
+"id": "government-organisation:D116",
+"how": "name without 'Board'"
+},
+{
+"listed": "The Advisory Council on National Records and Archives",
+"id": "government-organisation:PB438",
+"how": "exact"
+},
+{
+"listed": "Arts Council England",
+"id": "government-organisation:PB165",
+"how": "exact"
+},
+{
+"listed": "Big Lottery Fund (The National Lottery Community Fund)",
+"id": "government-organisation:PB1283",
+"how": "the name in its bracket"
+},
+{
+"listed": "British Broadcasting Corporation",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "British Film Institute British Library British Museum",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Charity Commission for England and Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Departmental Board for the Department for Culture, Media and Sport, non-executive members only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Gambling Commission",
+"id": "government-organisation:PB169",
+"how": "exact"
+},
+{
+"listed": "Geffrye Museum Trust Ltd (Museum of the Home)",
+"id": "ons-name:geffrye-museum-trust-ltd",
+"how": "name without its bracket"
+},
+{
+"listed": "Historic Buildings and Monuments Commission for England (Historic England)",
+"id": "government-organisation:PB1164",
+"how": "the name in its bracket"
+},
+{
+"listed": "Historic Royal Palaces",
+"id": "government-organisation:PC389",
+"how": "exact"
+},
+{
+"listed": "Horniman Public Museum and Public Park Trust",
+"id": "government-organisation:PB171",
+"how": "exact"
+},
+{
+"listed": "Horserace Betting Levy Board",
+"id": "government-organisation:PB118",
+"how": "exact"
+},
+{
+"listed": "Imperial War Museum",
+"id": "government-organisation:PB172",
+"how": "exact"
+},
+{
+"listed": "Independent Football Regulator",
+"id": "government-organisation:PB1461",
+"how": "exact"
+},
+{
+"listed": "The National Archives",
+"id": "government-organisation:EA71",
+"how": "exact"
+},
+{
+"listed": "National Gallery",
+"id": "government-organisation:PB174",
+"how": "exact"
+},
+{
+"listed": "National Heritage Memorial Fund/Heritage Lottery Fund (The National Lottery Heritage Fund)",
+"id": "government-organisation:PB1284",
+"how": "the name in its bracket"
+},
+{
+"listed": "National Museums Liverpool",
+"id": "government-organisation:PB178",
+"how": "exact"
+},
+{
+"listed": "National Portrait Gallery",
+"id": "government-organisation:PB179",
+"how": "exact"
+},
+{
+"listed": "Natural History Museum",
+"id": "government-organisation:PB180",
+"how": "exact"
+},
+{
+"listed": "Reviewing Committee on the Export of Works of Art and Objects of Cultural Interest",
+"id": "government-organisation:PB382",
+"how": "exact"
+},
+{
+"listed": "Royal Armouries",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Royal Museums Greenwich",
+"id": "government-organisation:PB291",
+"how": "exact"
+},
+{
+"listed": "The Royal Parks",
+"id": "government-organisation:EA41",
+"how": "exact"
+},
+{
+"listed": "Science Museum Group Sianel Pedwar Cymru (S4C)",
+"id": "government-organisation:PC387",
+"how": "the name in its bracket"
+},
+{
+"listed": "Sport England",
+"id": "government-organisation:PB190",
+"how": "exact"
+},
+{
+"listed": "Sports Grounds Safety Authority",
+"id": "government-organisation:PB184",
+"how": "exact"
+},
+{
+"listed": "Tate",
+"id": "government-organisation:PB571",
+"how": "exact"
+},
+{
+"listed": "Theatres Trust",
+"id": "government-organisation:PB380",
+"how": "exact"
+},
+{
+"listed": "Treasure Valuation Committee",
+"id": "government-organisation:PB383",
+"how": "exact"
+},
+{
+"listed": "UK Sport",
+"id": "government-organisation:PB185",
+"how": "exact"
+},
+{
+"listed": "United Kingdom Anti-Doping Ltd",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Victoria and Albert Museum",
+"id": "government-organisation:PB378",
+"how": "exact"
+},
+{
+"listed": "VisitBritain",
+"id": "government-organisation:PB186",
+"how": "exact"
+},
+{
+"listed": "VisitEngland",
+"id": "government-organisation:PB376",
+"how": "exact"
+},
+{
+"listed": "Wallace Collection",
+"id": "government-organisation:PB187",
+"how": "exact"
+},
+{
+"listed": "Child Safeguarding Practice Review Panel",
+"id": "government-organisation:OT1277",
+"how": "exact"
+},
+{
+"listed": "Children’s Commissioner for England",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Departmental Board for the Department for Education, non-executive members only",
+"id": "government-organisation:D6",
+"how": "the department whose board it is"
+},
+{
+"listed": "Further Education Commissioner’s Office, Further Education Commissioner and Deputy Further Education Commissioner only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "His Majesty’s Chief Inspector of Education, Children’s Services and Skills",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Assessors for Student Finance Appeals and Complaints",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Oak National Academy, Chair and a maximum of four non-executive members",
+"id": "government-organisation:PB1370",
+"how": "exact"
+},
+{
+"listed": "Office for Standards in Education, Children’s Services and Skills (Ofsted)",
+"id": "ons-name:office-for-standards-in-education-childrens-services-and-skills-ofsted",
+"how": "exact"
+},
+{
+"listed": "Office for Students",
+"id": "government-organisation:PB1253",
+"how": "exact"
+},
+{
+"listed": "Office of Qualifications and Examinations Regulation (Ofqual)",
+"id": "government-organisation:D109",
+"how": "the name in its bracket"
+},
+{
+"listed": "School Teachers’ Review Body",
+"id": "government-organisation:PB414",
+"how": "exact"
+},
+{
+"listed": "Social Work England",
+"id": "government-organisation:PB1298",
+"how": "exact"
+},
+{
+"listed": "Student Loans Company Ltd",
+"id": "government-organisation:PB27",
+"how": "name without its qualifier"
+},
+{
+"listed": "Civil Nuclear Police Authority, with the exception of members appointed to represent service recipients",
+"id": "government-organisation:PB194",
+"how": "name without its qualifier"
+},
+{
+"listed": "Climate Change Committee",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Coal Authority (Mining Remediation Authority)",
+"id": "government-organisation:PB1430",
+"how": "the name in its bracket"
+},
+{
+"listed": "Departmental Board for the Department for Energy Security and Net Zero, non-executive members only",
+"id": "government-organisation:D1380",
+"how": "the department whose board it is"
+},
+{
+"listed": "Electricity Settlements Company Ltd, Chair and Senior Independent Director only",
+"id": "government-organisation:OT1390",
+"how": "name without its qualifier"
+},
+{
+"listed": "Gas and Electricity Markets Authority",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Low Carbon Contracts Company Ltd, Chair and Senior Independent Director only",
+"id": "government-organisation:OT1389",
+"how": "name without its qualifier"
+},
+{
+"listed": "National Energy System Operator, Chair only",
+"id": "government-organisation:PC1425",
+"how": "exact"
+},
+{
+"listed": "National Nuclear Laboratory",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Nuclear Decommissioning Authority",
+"id": "government-organisation:PB197",
+"how": "exact"
+},
+{
+"listed": "Oil and Gas Authority, Chair only (North Sea Transition Authority)",
+"id": "government-organisation:OT1353",
+"how": "the name in its bracket"
+},
+{
+"listed": "Salix Finance Ltd",
+"id": "government-organisation:PB1325",
+"how": "exact"
+},
+{
+"listed": "UK Atomic Energy Authority",
+"id": "government-organisation:PB137",
+"how": "exact"
+},
+{
+"listed": "Advisory Committee on Releases to the Environment",
+"id": "government-organisation:PB209",
+"how": "exact"
+},
+{
+"listed": "Agriculture and Horticulture Development Board",
+"id": "government-organisation:OT204",
+"how": "exact"
+},
+{
+"listed": "British Wool Marketing Board",
+"id": "ons-name:british-wool-marketing-board",
+"how": "exact"
+},
+{
+"listed": "Broads Authority",
+"id": "government-organisation:OT216",
+"how": "exact"
+},
+{
+"listed": "Conservation Board for the Chilterns Area of Outstanding Natural Beauty, with the exception of parish members",
+"id": "ons-name:conservation-board-for-the-chilterns-area-of-outstanding-natural-beauty",
+"how": "name without its qualifier"
+},
+{
+"listed": "Conservation Board for the Cotswolds Area of Outstanding Natural Beauty, with the exception of parish members",
+"id": "ons-name:conservation-board-for-the-cotswolds-area-of-outstanding-natural-beauty",
+"how": "name without its qualifier"
+},
+{
+"listed": "Consumer Council for Water",
+"id": "government-organisation:PB198",
+"how": "exact"
+},
+{
+"listed": "Covent Garden Market Authority",
+"id": "government-organisation:OT214",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Department for Environment, Food and Rural Affairs, non-executive members only",
+"id": "government-organisation:D7",
+"how": "the department whose board it is"
+},
+{
+"listed": "Environment Agency",
+"id": "government-organisation:EA199",
+"how": "exact"
+},
+{
+"listed": "Forestry Commission",
+"id": "government-organisation:D85",
+"how": "exact"
+},
+{
+"listed": "Joint Nature Conservation Committee",
+"id": "government-organisation:PB201",
+"how": "exact"
+},
+{
+"listed": "Marine Management Organisation",
+"id": "government-organisation:PB57",
+"how": "exact"
+},
+{
+"listed": "National Park Authorities, with the exception of parish members",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Natural England",
+"id": "government-organisation:PB202",
+"how": "exact"
+},
+{
+"listed": "Office for Environmental Protection",
+"id": "government-organisation:PB1356",
+"how": "exact"
+},
+{
+"listed": "Regional Flood and Coastal Committees, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Royal Botanic Gardens, Kew",
+"id": "ons-name:royal-botanic-gardens-kew",
+"how": "exact"
+},
+{
+"listed": "Science Advisory Council",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Sea Fish Industry Authority",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Water Services Regulation Authority (Ofwat)",
+"id": "government-organisation:D240",
+"how": "the name in its bracket"
+},
+{
+"listed": "Building Digital UK",
+"id": "government-organisation:EA1352",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Department for Science, Innovation and Technology, non-executive members only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Information Commission",
+"id": "government-organisation:PB1494",
+"how": "exact"
+},
+{
+"listed": "National Physical Laboratory (NPL) Management Ltd, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Office of Communications (Ofcom)",
+"id": "government-organisation:OT385",
+"how": "the name in its bracket"
+},
+{
+"listed": "Ordnance Survey, Chair only",
+"id": "government-organisation:D38",
+"how": "exact"
+},
+{
+"listed": "UK Research and Innovation",
+"id": "government-organisation:PB1221",
+"how": "exact"
+},
+{
+"listed": "British Transport Police Authority",
+"id": "government-organisation:PB461",
+"how": "exact"
+},
+{
+"listed": "Civil Aviation Authority",
+"id": "government-organisation:PC469",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Department for Transport, non-executive members only",
+"id": "government-organisation:D9",
+"how": "the department whose board it is"
+},
+{
+"listed": "Disabled Persons Transport Advisory Committee",
+"id": "government-organisation:PB247",
+"how": "exact"
+},
+{
+"listed": "East West Rail Company, with the exception of the shareholder-appointed Special Directors",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "HS2 Ltd, with the exception of the shareholder-appointed Special Directors",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "National Highways Limited, Chair only",
+"id": "government-organisation:OT1346",
+"how": "name without its qualifier"
+},
+{
+"listed": "Network Rail, Chair only",
+"id": "government-organisation:OT1244",
+"how": "exact"
+},
+{
+"listed": "Office of Rail and Road",
+"id": "government-organisation:D1117",
+"how": "exact"
+},
+{
+"listed": "Transport Focus",
+"id": "government-organisation:PB1118",
+"how": "exact"
+},
+{
+"listed": "Construction Industry Training Board",
+"id": "government-organisation:PB126",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Department for Work and Pensions, non-executive members only",
+"id": "government-organisation:D10",
+"how": "the department whose board it is"
+},
+{
+"listed": "Engineering Construction Industry Training Board",
+"id": "government-organisation:PB131",
+"how": "exact"
+},
+{
+"listed": "Health and Safety Executive",
+"id": "government-organisation:PB207",
+"how": "exact"
+},
+{
+"listed": "Industrial Injuries Advisory Council",
+"id": "government-organisation:PB231",
+"how": "exact"
+},
+{
+"listed": "Money and Pensions Service",
+"id": "government-organisation:OT1266",
+"how": "exact"
+},
+{
+"listed": "National Employment Savings Trust",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Office for Nuclear Regulation",
+"id": "government-organisation:PC1059",
+"how": "exact"
+},
+{
+"listed": "Pension Protection Fund, Chair only",
+"id": "government-organisation:PB348",
+"how": "exact"
+},
+{
+"listed": "Pension Protection Fund Ombudsman, Ombudsman and Deputy Ombudsman only Pensions Ombudsman, Ombudsman and Deputy Ombudsman only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Pensions Regulator",
+"id": "government-organisation:PB234",
+"how": "exact"
+},
+{
+"listed": "Social Security Advisory Committee",
+"id": "government-organisation:PB232",
+"how": "exact"
+},
+{
+"listed": "Advisory Committee on Clinical Impact Awards, Chair and Medical Director only",
+"id": "government-organisation:PB1354",
+"how": "exact"
+},
+{
+"listed": "Advisory Committee on Resource Allocation, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "British Pharmacopoeia Commission",
+"id": "government-organisation:PB524",
+"how": "exact"
+},
+{
+"listed": "Care Quality Commission",
+"id": "government-organisation:PB251",
+"how": "exact"
+},
+{
+"listed": "Commission on Human Medicines",
+"id": "government-organisation:PB525",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Department of Health and Social Care, non-executive members only",
+"id": "government-organisation:D12",
+"how": "the department whose board it is"
+},
+{
+"listed": "Food Standards Agency",
+"id": "government-organisation:D102",
+"how": "exact"
+},
+{
+"listed": "Health Research Authority",
+"id": "government-organisation:OT483",
+"how": "exact"
+},
+{
+"listed": "Health Services Safety Investigation Body",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Human Fertilisation and Embryology Authority",
+"id": "government-organisation:PB253",
+"how": "exact"
+},
+{
+"listed": "Human Tissue Authority",
+"id": "government-organisation:PB254",
+"how": "exact"
+},
+{
+"listed": "Independent Reconfiguration Panel",
+"id": "government-organisation:PB527",
+"how": "exact"
+},
+{
+"listed": "National Data Guardian",
+"id": "government-organisation:OT1180",
+"how": "exact"
+},
+{
+"listed": "National Institute for Health and Care Excellence",
+"id": "government-organisation:PB474",
+"how": "exact"
+},
+{
+"listed": "NHS Blood and Transplant",
+"id": "government-organisation:OT486",
+"how": "exact"
+},
+{
+"listed": "NHS Business Services Authority",
+"id": "government-organisation:OT529",
+"how": "exact"
+},
+{
+"listed": "NHS Counter Fraud Authority",
+"id": "government-organisation:OT1243",
+"how": "exact"
+},
+{
+"listed": "NHS England",
+"id": "government-organisation:PB481",
+"how": "exact"
+},
+{
+"listed": "NHS Litigation Authority (NHS Resolution)",
+"id": "government-organisation:PB1287",
+"how": "the name in its bracket"
+},
+{
+"listed": "NHS Pay Review Body",
+"id": "government-organisation:PB531",
+"how": "exact"
+},
+{
+"listed": "Office for Strategic Coordination of Health Research, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Patient Safety Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Review Body on Doctors’ and Dentists’ Remuneration",
+"id": "government-organisation:PB530",
+"how": "exact"
+},
+{
+"listed": "Export Guarantees Advisory Council",
+"id": "government-organisation:PB357",
+"how": "exact"
+},
+{
+"listed": "CDC Group Plc (British International Investment Plc), Chair and two non-executive Directors only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Commonwealth Scholarship Commission",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Departmental Board for the Foreign, Commonwealth and Development Office, non-executive members only",
+"id": "government-organisation:D1315",
+"how": "the department whose board it is"
+},
+{
+"listed": "Great Britain-China Centre, Chair only",
+"id": "government-organisation:PB426",
+"how": "exact"
+},
+{
+"listed": "Independent Commission for Aid Impact",
+"id": "government-organisation:IM335",
+"how": "exact"
+},
+{
+"listed": "Marshall Aid Commemoration Commission",
+"id": "government-organisation:OT315",
+"how": "exact"
+},
+{
+"listed": "Westminster Foundation for Democracy, excluding political appointments",
+"id": "government-organisation:OT316",
+"how": "name without its qualifier"
+},
+{
+"listed": "Court of Directors of the Bank of England, with the exception of the Governor and Deputy Governors",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Crown Estate Commissioners",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Departmental Board for HM Treasury, non-executive members only",
+"id": "government-organisation:D15",
+"how": "the department whose board it is"
+},
+{
+"listed": "Financial Conduct Authority",
+"id": "government-organisation:OT1085",
+"how": "exact"
+},
+{
+"listed": "National Savings and Investments",
+"id": "government-organisation:EA104",
+"how": "exact"
+},
+{
+"listed": "Reclaim Fund Ltd, Chair only",
+"id": "government-organisation:PB1331",
+"how": "exact"
+},
+{
+"listed": "Royal Mint Advisory Committee on the Design of Coins, Medals, Seals and Decorations",
+"id": "ons-name:royal-mint-advisory-committee-on-the-design-of-coins-medals-seals-and-decoration",
+"how": "exact"
+},
+{
+"listed": "UK Government Investments",
+"id": "government-organisation:OT1186",
+"how": "exact"
+},
+{
+"listed": "Advisory Council on the Misuse of Drugs Animals in Science Committee",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Appointed Person under the Proceeds of Crime Act 2002",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "College of Policing Board of Directors, Chair and Independent Non-Executive Directors only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Commissioner for the Retention and Use of Biometric Material",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Departmental Board for the Home Office, non-executive members only",
+"id": "government-organisation:D16",
+"how": "the department whose board it is"
+},
+{
+"listed": "Domestic Abuse Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Disclosure and Barring Service",
+"id": "government-organisation:PB509",
+"how": "exact"
+},
+{
+"listed": "Forensic Science Regulator",
+"id": "government-organisation:OT536",
+"how": "exact"
+},
+{
+"listed": "Gangmasters and Labour Abuse Authority",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "His Majesty’s Inspectorate of Constabulary and Fire & Rescue Services",
+"id": "government-organisation:OT1241",
+"how": "exact"
+},
+{
+"listed": "Immigration Services Commissioner and Deputy Immigration Services Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Advisor to the UK Government on Drugs",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Anti-Slavery Commissioner",
+"id": "government-organisation:IM1123",
+"how": "exact"
+},
+{
+"listed": "Independent Chief Inspector of Borders and Immigration",
+"id": "government-organisation:OT284",
+"how": "exact"
+},
+{
+"listed": "Independent Family Returns Panel",
+"id": "government-organisation:OT1122",
+"how": "exact"
+},
+{
+"listed": "Independent Monitor of the Disclosure and Barring Service",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Office for Police Conduct",
+"id": "government-organisation:PB1248",
+"how": "exact"
+},
+{
+"listed": "Independent Reviewer of State Threats Legislation",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Reviewer of Terrorism Legislation",
+"id": "government-organisation:OT511",
+"how": "exact"
+},
+{
+"listed": "Members of the Visiting Committee of any immigration removal centre or short-term holding facility",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Migration Advisory Committee",
+"id": "government-organisation:PB275",
+"how": "exact"
+},
+{
+"listed": "National Crime Agency Remuneration Review Body",
+"id": "government-organisation:PB580",
+"how": "exact"
+},
+{
+"listed": "Police Advisory Board for England and Wales, Chair only",
+"id": "government-organisation:PB273",
+"how": "exact"
+},
+{
+"listed": "Police Remuneration Review Body",
+"id": "government-organisation:PB1083",
+"how": "exact"
+},
+{
+"listed": "Science and Technology Ethics Advisory Committee",
+"id": "government-organisation:PB1455",
+"how": "exact"
+},
+{
+"listed": "Security Industry Authority",
+"id": "government-organisation:PB264",
+"how": "exact"
+},
+{
+"listed": "Surveillance Camera Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Technical Advisory Board (for the Regulation of Investigatory Powers Act 2000), with the exception of Agency Members",
+"id": "government-organisation:PB274",
+"how": "name without its bracket"
+},
+{
+"listed": "Windrush Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Armed Forces Pay Review Body",
+"id": "government-organisation:PB394",
+"how": "exact"
+},
+{
+"listed": "Defence Nuclear Safety Expert Committee",
+"id": "government-organisation:PB396",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Ministry of Defence, non-executive members only",
+"id": "government-organisation:D17",
+"how": "the department whose board it is"
+},
+{
+"listed": "Independent Medical Expert Group",
+"id": "government-organisation:PB1017",
+"how": "exact"
+},
+{
+"listed": "Independent Monitoring Board for the Military Corrective Training Centre",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Nuclear Research Advisory Council",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Oil and Pipelines Agency",
+"id": "government-organisation:PB401",
+"how": "exact"
+},
+{
+"listed": "Royal Air Force Museum",
+"id": "government-organisation:PB308",
+"how": "exact"
+},
+{
+"listed": "Service Complaints Ombudsman",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Service Police Complaints Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Single Source Regulations Office",
+"id": "government-organisation:PB1093",
+"how": "exact"
+},
+{
+"listed": "Veterans Advisory and Pensions Committees",
+"id": "government-organisation:PB403",
+"how": "exact"
+},
+{
+"listed": "Architects Registration Board, excluding temporary Board members",
+"id": "government-organisation:PC163",
+"how": "name without its qualifier"
+},
+{
+"listed": "Boundary Commission for England, members known as Commissioners, excluding the Chair and Deputy Chair",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Boundary Commission for Wales, members known as Commissioners, excluding the Chair and Deputy Chair",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Commission for Local Administration in England (Local Government and Social Care Ombudsman), Ombudsman-Chair only",
+"id": "government-organisation:PB503",
+"how": "the name in its bracket"
+},
+{
+"listed": "Departmental Board for the Ministry of Housing, Communities and Local Government, non-executive members only",
+"id": "government-organisation:D1419",
+"how": "the department whose board it is"
+},
+{
+"listed": "Firefighters’ Pension Scheme Advisory Board, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "HM Land Registry, non-executive members only",
+"id": "government-organisation:D69",
+"how": "name without its qualifier"
+},
+{
+"listed": "Homes England",
+"id": "government-organisation:PB1232",
+"how": "exact"
+},
+{
+"listed": "The Housing Ombudsman",
+"id": "government-organisation:PB372",
+"how": "exact"
+},
+{
+"listed": "Leasehold Advisory Service (LEASE)",
+"id": "government-organisation:PB373",
+"how": "name without its bracket"
+},
+{
+"listed": "Local Government Pension Scheme Advisory Board, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Regulator of Social Housing",
+"id": "government-organisation:PB1218",
+"how": "exact"
+},
+{
+"listed": "Valuation Tribunal Service",
+"id": "government-organisation:PB375",
+"how": "exact"
+},
+{
+"listed": "Advisory Committees on Justices of the Peace",
+"id": "government-organisation:PB437",
+"how": "exact"
+},
+{
+"listed": "Advisory Committee on Conscientious Objectors",
+"id": "government-organisation:PB392",
+"how": "exact"
+},
+{
+"listed": "Children and Family Court Advisory and Support Service",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Civil Justice Council",
+"id": "government-organisation:PB293",
+"how": "exact"
+},
+{
+"listed": "Civil Procedure Rule Committee",
+"id": "government-organisation:PB440",
+"how": "exact"
+},
+{
+"listed": "Commissioner for Victims and Witnesses (Victims’ Commissioner) Court Examiners",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Court of Protection Visitors",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Criminal Cases Review Commission",
+"id": "government-organisation:IM320",
+"how": "exact"
+},
+{
+"listed": "Criminal Procedure Rule Committee, with the exception of members appointed under section 70(2)(k) of the Courts Act 2003 (members who appear to represent voluntary organisations with a direct interest in the work of criminal courts)",
+"id": "government-organisation:PB516",
+"how": "name without its qualifier"
+},
+{
+"listed": "Departmental Board for the Ministry of Justice, non-executive members only",
+"id": "government-organisation:D18",
+"how": "the department whose board it is"
+},
+{
+"listed": "Family Procedure Rule Committee, with the exception of members nominated by the Children and Family Court Advisory and Support Service and the Welsh Ministers",
+"id": "government-organisation:PB442",
+"how": "name without its qualifier"
+},
+{
+"listed": "His Majesty’s Chief Inspector of Prisons",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "His Majesty’s Chief Inspector of Probation",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Advisory Panel on Deaths in Custody",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Monitoring Authority",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Monitoring Board of any prison or young offender institution",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Insolvency Rules Committee",
+"id": "government-organisation:PB445",
+"how": "exact"
+},
+{
+"listed": "Judicial Appointments and Conduct Ombudsman",
+"id": "government-organisation:IM333",
+"how": "exact"
+},
+{
+"listed": "Judicial Appointments Commission",
+"id": "government-organisation:PB299",
+"how": "exact"
+},
+{
+"listed": "Judicial Pension Board, independent Chair and independent members only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Law Commission, with the exception of the Chair",
+"id": "government-organisation:PB294",
+"how": "name without its qualifier"
+},
+{
+"listed": "Lay Observers, appointed in accordance with section 81(1)(b) of the Criminal Justice Act 1991",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Legal Services Board",
+"id": "government-organisation:IM332",
+"how": "exact"
+},
+{
+"listed": "Mother and Baby Units, Chairs only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Multi-Agency Public Protection Arrangements Lay Advisers",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "National Chair of the Independent Monitoring Boards",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "National Council of Lay Observers, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "National Mental Capacity Forum, Chair only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Non-Judicial Members of Disciplinary Panels of the Judicial Conduct Investigations Office",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Parole Board, with the exception of judicial members",
+"id": "government-organisation:PB301",
+"how": "name without its qualifier"
+},
+{
+"listed": "Persons appointed by the Lord Chancellor under section 2 of the Legal Aid, Sentencing and Punishment of Offenders Act 2012",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Prisons and Probation Ombudsman",
+"id": "government-organisation:IM327",
+"how": "exact"
+},
+{
+"listed": "Prison Service Pay Review Body",
+"id": "government-organisation:PB446",
+"how": "exact"
+},
+{
+"listed": "Sentencing Council for England and Wales",
+"id": "government-organisation:PB295",
+"how": "exact"
+},
+{
+"listed": "Tribunal Procedure Committee",
+"id": "government-organisation:PB448",
+"how": "exact"
+},
+{
+"listed": "Youth Justice Board for England and Wales",
+"id": "government-organisation:PB302",
+"how": "exact"
+},
+{
+"listed": "Boundary Commission for Northern Ireland, members known as Commissioners excluding the Chair and Deputy Chair",
+"id": "government-organisation:OT428",
+"how": "exact"
+},
+{
+"listed": "Chief Electoral Officer for Northern Ireland",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Departmental Board for the Northern Ireland Office, non-executive members only",
+"id": "government-organisation:D19",
+"how": "the department whose board it is"
+},
+{
+"listed": "Equality Commission for Northern Ireland",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Independent Commission for Reconciliation and Information Recovery, excluding the Chief Commissioner",
+"id": "government-organisation:PB1408",
+"how": "name without its qualifier"
+},
+{
+"listed": "Northern Ireland Human Rights Commission",
+"id": "government-organisation:OT429",
+"how": "exact"
+},
+{
+"listed": "Parades Commission for Northern Ireland",
+"id": "government-organisation:OT430",
+"how": "exact"
+},
+{
+"listed": "Boundary Commission for Scotland, members known as Commissioners excluding the Chair and Deputy Chair",
+"id": "government-organisation:OT431",
+"how": "exact"
+},
+{
+"listed": "Departmental Board for the Office of the Secretary of State for Wales, non-executive members only",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Advisory Panel to the Welsh Language Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Agricultural Advisory Panel for Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "All Wales Medicines Strategy Group",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Amgueddfa Cymru - Museum of Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Aneurin Bevan University Health Board",
+"id": "ons-name:aneurin-bevan-university-health-board",
+"how": "exact"
+},
+{
+"listed": "Animal Health and Welfare Framework Group",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Arts Council of Wales",
+"id": "government-organisation:OT731",
+"how": "exact"
+},
+{
+"listed": "Awdurdod Parc Cenedlaethol Arfordir Penfro / Pembrokeshire Coast National Park Authority Awdurdod Parc Cenedlaethol Bannau Brycheiniog / Brecon Beacons National Park Authority Awdurdod Parc Cenedlaethol Eryri /Snowdonia National Park Authority",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Betsi Cadwaladr University Health Board",
+"id": "ons-name:betsi-cadwaladr-university-health-board",
+"how": "exact"
+},
+{
+"listed": "Cardiff & Vale University Health Board",
+"id": "ons-name:cardiff-and-vale-university-health-board",
+"how": "exact"
+},
+{
+"listed": "Career Choices Dewis Gyrfa Ltd",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Children’s Commissioner for Wales",
+"id": "ons-name:childrens-commissioner-for-wales",
+"how": "exact"
+},
+{
+"listed": "Commission for Tertiary Education and Research (Medr)",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Cwm Taf Morgannwg University Health Board",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Democracy and Boundary Commission Cymru",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Design Commission for Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Digital Health and Care Wales",
+"id": "nhs-ods:L5X6M",
+"how": "exact"
+},
+{
+"listed": "Education Workforce Council",
+"id": "ons-name:education-workforce-council",
+"how": "exact"
+},
+{
+"listed": "Future Generations Commissioner",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Health Education and Improvement Wales",
+"id": "nhs-ods:T1530",
+"how": "exact"
+},
+{
+"listed": "Hybu Cig Cymru",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Hywel Dda University Health Board",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Life Sciences Hub Wales Board",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Llais Citizen Voice Body for Health and Social Care, Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Local Democracy and Boundary Commission for Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "National Academy for Educational Leadership",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "National Adviser for Violence against Women and other forms of Gender-based Violence, Domestic Abuse and Sexual Violence",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "National Library of Wales",
+"id": "ons-name:national-library-of-wales",
+"how": "exact"
+},
+{
+"listed": "Natural Resources Wales",
+"id": "government-organisation:OT1103",
+"how": "exact"
+},
+{
+"listed": "Older People’s Commissioner for Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Powys Teaching Health Board",
+"id": "ons-name:powys-teaching-health-board",
+"how": "exact"
+},
+{
+"listed": "Public Health Wales NHS Trust",
+"id": "nhs-ods:RYT",
+"how": "exact"
+},
+{
+"listed": "Qualifications Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Royal Commission on the Ancient and Historical Monuments of Wales",
+"id": "ons-name:royal-commission-on-the-ancient-and-historical-monuments-of-wales",
+"how": "exact"
+},
+{
+"listed": "Social Care Wales",
+"id": "ons-name:social-care-wales",
+"how": "exact"
+},
+{
+"listed": "Sport Wales",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Swansea Bay University Health Board",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Velindre National Health Services Trust",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Welsh Ambulance Services National Health Service Trust",
+"id": "",
+"how": "no single register match"
+},
+{
+"listed": "Welsh Industrial Development Advisory Board",
+"id": "ons-name:welsh-industrial-development-advisory-board",
+"how": "exact"
+},
+{
+"listed": "Welsh Language Commissioner",
+"id": "government-organisation:OT1101",
+"how": "exact"
+},
+{
+"listed": "Welsh Revenue Authority",
+"id": "ons-name:welsh-revenue-authority",
+"how": "exact"
+}
+],
+"unmatched_note": "Entries with no single exact match are kept with an empty id: some are posts rather than bodies, some are grouped entries, and some are named differently in the register."
+}

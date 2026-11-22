@@ -30,3 +30,6 @@
 | Applies by rule | A law or rulebook shown against a body because the body's type and nation fall within the instrument's own stated scope; not a legal opinion on that body | in scope; applicability |
 | Treaty Series, Country Series, Miscellaneous Series | The Command Paper series in which the Foreign Office publishes treaties, printed in each treaty's title on GOV.UK | TS; CS; MS |
 | Memorandum of understanding | A written arrangement between two or more parties setting out how they will work together, usually not legally binding | MoU; concordat; accord |
+| Regulatory sandbox | A regulator's service that lets a firm test a new product with real customers, under the regulator's oversight | sandbox; innovation hub |
+| 360Giving | An open data standard for publishing grants, and the register of the organisations that publish in it | GrantNav; open grants data |
+| Find a grant | GOV.UK's service listing government grants open for applications | government grants |

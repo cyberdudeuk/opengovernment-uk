@@ -53,6 +53,7 @@ tools/sqlite_export.py  one SQLite file for Datasette Lite, and org-id.guide ide
 tools/instruments.py    rules that apply to each body, what it issues, and legislation naming it
 tools/relations.py      the UK's memberships, treaties and agreements, linked to the UK bodies that hold them
 tools/orgchart.py      interactive org charts: who answers to whom, nations and branches, type and purpose, the UK in the world
+tools/funding.py        grants, business support schemes, regulators' innovation services and grant-makers
 tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
 ```
 
@@ -76,6 +77,7 @@ python tools/fetch.py --private && python tools/build.py   # full rebuild
 | Reconciliation decisions (sources/evidence/reconciliation-decisions.json): decide new items from the body's own page or founding law | when the review queue is not empty | 15 minutes per item |
 | International bodies (sources/evidence/international-bodies.json): re-check leads after any machinery-of-government change; confirm the 'still to confirm' list | after each change, at least yearly | 30 to 60 minutes |
 | Rules, guidance, treaties and agreements: re-run the GOV.UK, legislation.gov.uk and Wikidata reads (scripts in tools/, about 15 minutes of machine time), review the known answers | quarterly | 30 minutes |
+| Funding (Find a grant, GOV.UK schemes, 360Giving registry): re-read; grants open and close weekly | monthly, with the Refresh workflow | 20 minutes |
 | Feedback via the GitHub issue form | as it comes | minutes each |
 
 Nothing runs on a schedule: there are no paid services, no secrets and no tokens beyond the read-only one GitHub gives each workflow run.

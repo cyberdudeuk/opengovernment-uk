@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Funding, grants and support · OpenGovernment UK</title>
+<meta name="description" content="Grants open now, business support schemes, regulators' innovation services and the public bodies that give them, filterable by sector and by who can apply.">
+<style>
+main{max-width:var(--og-layout-max);margin:0 auto;padding:20px 16px 40px}
+.lede{max-width:var(--og-layout-measure)}
+.f-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:10px;margin:14px 0}
+.f-stat{border:1px solid var(--og-line);border-radius:var(--og-radius-md);padding:12px;background:var(--og-surface)}
+.f-stat b{display:block;font-size:var(--og-size-xl);font-family:var(--og-font-display)}
+.f-stat span{font-size:var(--og-size-sm);color:var(--og-muted)}
+.f-picks{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 4px}
+.f-picks button,.f-tabs [role=tab]{border:1px solid var(--og-line);background:var(--og-surface);color:var(--og-ink);border-radius:var(--og-radius-pill);padding:6px 12px;font:inherit;cursor:pointer;min-height:var(--og-target-min)}
+.f-picks button[aria-pressed=true]{background:var(--og-accent-soft);border-color:var(--og-accent)}
+.f-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 8px}
+.f-tabs [aria-selected=true]{background:var(--og-ink);color:var(--og-surface)}
+.f-tools{display:flex;flex-wrap:wrap;gap:8px 12px;margin:6px 0 10px}
+.f-tools label{display:flex;flex-direction:column;font-size:var(--og-size-sm);flex:1 1 180px;min-width:0}
+.f-tools select,.f-tools input{font:inherit;padding:6px 10px;border:1px solid var(--og-line-strong);border-radius:var(--og-radius-sm);background:var(--og-surface);color:var(--og-ink);min-height:var(--og-target-min);max-width:100%}
+.f-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px}
+.f-card{border:1px solid var(--og-line);border-radius:var(--og-radius-md);padding:14px;background:var(--og-surface);display:flex;flex-direction:column;gap:6px;min-width:0}
+.f-card h3{margin:0;font-size:var(--og-size-md);overflow-wrap:anywhere}
+.f-card p{margin:0;font-size:var(--og-size-sm);overflow-wrap:anywhere}
+.f-meta{font-size:var(--og-size-xs);color:var(--og-muted);overflow-wrap:anywhere}
+.f-chips{display:flex;flex-wrap:wrap;gap:4px}
+.f-chip{font-size:var(--og-size-xs);border:1px solid var(--og-line);border-radius:var(--og-radius-pill);padding:1px 8px;white-space:normal}
+.f-due{font-size:var(--og-size-xs);font-weight:700;border-radius:var(--og-radius-pill);padding:2px 8px;align-self:flex-start}
+.f-due.soon{background:var(--og-gold-soft)}.f-due.open{background:var(--og-good-soft)}.f-due.shut{background:var(--og-bad-soft)}
+.f-warn{font-size:var(--og-size-xs);color:var(--og-bad)}
+.f-note{font-size:var(--og-size-sm);color:var(--og-muted);max-width:var(--og-layout-measure)}
+.more{margin:12px 0;border:1px solid var(--og-line);background:var(--og-surface);border-radius:var(--og-radius-sm);padding:6px 12px;font:inherit;cursor:pointer}
+</style></head><body>
+<main id="main">
+<h1>Funding, grants and support</h1>
+<p class="lede">Grants open now, business support schemes, regulators' innovation services, and the public bodies that give them. Filter by sector and by who can apply, or start from one of the quick picks. Every giver links to its full profile in the register.</p>
+<div class="f-stats" id="stats"></div>
+<p class="f-note" id="srcnote"></p>
+<div class="f-picks" id="picks" aria-label="Quick picks"></div>
+<div role="tablist" class="f-tabs" id="tabs" aria-label="Kind of support"></div>
+<div class="f-tools"><label>Sector <select id="sec"></select></label><label>Who can apply <select id="who"></select></label><label>Type of support <select id="typ"></select></label><label>Search <input id="q" type="search" placeholder="Words in the title or description"></label></div>
+<p aria-live="polite" class="f-note" id="count"></p>
+<div class="f-list" id="list"></div>
+<button type="button" class="more" id="more" hidden>Show more</button>
+</main>
+<script id="fd" type="application/json">__DATA__</script>
+<script>
+(()=>{const F=JSON.parse(document.getElementById("fd").textContent),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $=id=>document.getElementById(id),NAMES=F.names,TODAY=new Date().toISOString().slice(0,10);
+const prof=id=>"index.html#org-"+String(id).replace(/:/g,"--").replace(/[^A-Za-z0-9-]/g,"");
+const giver=ids=>ids.map(i=>`<a href="${prof(i)}">${esc(NAMES[i]||i)}</a>`).join(", ");
+const ext=(u,t)=>`<a href="${esc(u)}" rel="noopener" target="_blank">${esc(t)}<span class="sr-only"> (opens in a new tab)</span></a>`;
+const chips=xs=>xs.length?`<div class="f-chips">${xs.map(s=>`<span class="f-chip">${esc(F.sectors[s]||s)}</span>`).join("")}</div>`:"";
+const TYP={"expertise-and-advice":"Expertise and advice",finance:"Finance",grant:"Grant",loan:"Loan",equity:"Equity","recognition-award":"Recognition or award",sandbox:"Sandbox",advice:"Advice","front door":"Single front door"};
+const due=g=>{if(!g.closes)return"";const d=Math.round((new Date(g.closes)-new Date(TODAY))/864e5);return d<0?`<span class="f-due shut">Closed ${esc(g.closes)}</span>`:d===0?`<span class="f-due soon">Closes today (${esc(g.closes)})</span>`:d<=21?`<span class="f-due soon">Closes in ${d} day${d===1?"":"s"} (${esc(g.closes)})</span>`:`<span class="f-due open">Open until ${esc(g.closes)}</span>`};
+const TABS={grants:{label:"Grants open now",data:F.grants,who:g=>g.who,typ:()=>["grant"],card:g=>`<article class="f-card">${due(g)}<h3>${ext(g.url,g.title)}</h3><p>${esc(g.desc)}</p><p class="f-meta"><b>Funder:</b> ${g.by.length?giver(g.by):esc(g.funder)}${g.amount?` · <b>Amount:</b> ${esc(g.amount)}`:""}${g.total?` · <b>Scheme size:</b> ${esc(g.total)}`:""}</p><p class="f-meta"><b>Who can apply:</b> ${esc(g.who.join(", ")||"Not stated")} · <b>Where:</b> ${esc(g.location||"Not stated")}</p>${g.date_flag?`<p class="f-warn">Note: ${esc(g.date_flag)}.</p>`:""}${chips(g.sectors)}</article>`},
+ schemes:{label:"Business support schemes",data:F.schemes,who:()=>["businesses"],typ:s=>s.types,card:s=>`<article class="f-card"><h3>${ext(s.url,s.title)}</h3><p>${esc(s.desc)}</p><p class="f-meta"><b>Support:</b> ${esc(s.types.map(t=>TYP[t]||t).join(", ")||"Not stated")}${s.sizes.length?` · <b>Business size:</b> ${esc(s.sizes.join(", ").replace(/-/g," "))}`:""}</p><p class="f-meta"><b>Published on GOV.UK by:</b> ${giver(s.by)||"Not recorded"}${s.regions.length&&s.regions.length<12?` · <b>Regions:</b> ${esc(s.regions.join(", ").replace(/-/g," "))}`:""}</p>${chips(s.sectors)}</article>`},
+ services:{label:"Regulators' innovation services",data:F.services,who:()=>["businesses"],typ:s=>[s.kind],card:s=>`<article class="f-card"><h3>${ext(s.url,s.name)}</h3><p>${esc(s.what)}</p><p class="f-meta"><b>Run by:</b> ${giver([s.body])} · <b>Kind:</b> ${esc(TYP[s.kind]||s.kind)}</p>${chips(s.sectors)}</article>`},
+ funders:{label:"Grant-makers publishing open data",data:F.funders,who:()=>[],typ:()=>[],card:f=>`<article class="f-card"><h3>${f.id?`<a href="${prof(f.id)}">${esc(f.name)}</a>`:esc(f.name)}</h3><p class="f-meta"><b>Identifier:</b> <span class="mono">${esc(f.org_id||"none")}</span> · ${f.datasets} dataset${f.datasets===1?"":"s"} · last published ${esc(f.last||"not stated")}</p><p>${f.grantnav?ext(f.grantnav,"See its grants in GrantNav"):""}${f.website?` · ${ext(f.website,"website")}`:""}</p>${f.id?`<p class="f-meta">A public body in this register.</p>`:""}</article>`}};
+let tab="grants",sec="",who="",typ="",q="",lim=24,pick="";
+const PICKS={"fintech start-up":{tab:"services",sec:"fintech"},"medtech developer":{tab:"services",sec:"medtech"},"regtech or compliance":{tab:"services",sec:"regtech"},"govtech or public sector supplier":{tab:"grants",sec:"govtech"},"clean energy business":{tab:"schemes",sec:"cleantech"},"charity or community group":{tab:"grants",who:"non-profits"},"researcher":{tab:"grants",sec:"education"},"council":{tab:"grants",who:"local authorities"},"individual":{tab:"grants",who:"individuals"},"small business looking for finance":{tab:"schemes",typ:"finance"}};
+$("stats").innerHTML=[[F.grants.filter(g=>!g.closes||g.closes>=TODAY).length,"grants open on Find a grant"],[F.schemes.length,"business support schemes on GOV.UK"],[F.services.length,"regulators' innovation services"],[F.funders.length,"grant-makers publishing open data"],[F.funders.filter(f=>f.id).length,"of them public bodies in this register"]].map(([n,l])=>`<div class="f-stat"><b>${n}</b><span>${esc(l)}</span></div>`).join("");
+$("srcnote").textContent=`Read ${F.read} from GOV.UK's Find a grant service and its funding finder, the 360Giving data registry and each regulator's own pages. Sectors are worked out from titles and descriptions, so a few may be wrong; dates are as published.`;
+$("picks").innerHTML="<span class=\"f-note\" style=\"align-self:center\">I'm a…</span>"+Object.keys(PICKS).map(k=>`<button type="button" aria-pressed="false" data-p="${esc(k)}">${esc(k)}</button>`).join("");
+$("tabs").innerHTML=Object.entries(TABS).map(([k,v],i)=>`<button role="tab" data-t="${k}" aria-selected="${!i}" tabindex="${i?-1:0}">${esc(v.label)} · ${v.data.length}</button>`).join("");
+function opts(){const T=TABS[tab],D=T.data,cnt=f=>(D.filter(f).length);
+ $("sec").innerHTML=`<option value="">All sectors</option>`+Object.entries(F.sectors).map(([k,v])=>`<option value="${k}"${k===sec?" selected":""}>${esc(v)} (${cnt(x=>(x.sectors||[]).includes(k))})</option>`).join("");
+ const ws=[...new Set(D.flatMap(T.who))].sort();$("who").innerHTML=`<option value="">Anyone</option>`+ws.map(w=>`<option${w===who?" selected":""}>${esc(w)}</option>`).join("");$("who").disabled=!ws.length;
+ const ts=[...new Set(D.flatMap(T.typ))].sort();$("typ").innerHTML=`<option value="">Any</option>`+ts.map(t=>`<option value="${esc(t)}"${t===typ?" selected":""}>${esc(TYP[t]||t)}</option>`).join("");$("typ").disabled=!ts.length}
+function draw(){const T=TABS[tab];const rows=T.data.filter(x=>(!sec||(x.sectors||[]).includes(sec))&&(!who||T.who(x).includes(who))&&(!typ||T.typ(x).includes(typ))&&(!q||JSON.stringify([x.title||x.name,x.desc||x.what||"",x.funder||""]).toLowerCase().includes(q))&&(tab!=="grants"||!x.closes||x.closes>=TODAY));
+ if(tab==="grants")rows.sort((a,b)=>(a.closes||"9999").localeCompare(b.closes||"9999"));
+ $("count").textContent=`${rows.length} shown${tab==="grants"?", soonest closing first":""}.`;$("list").innerHTML=rows.slice(0,lim).map(T.card).join("")||`<p class="f-note">Nothing matches. Try another sector or clear the filters.</p>`;$("more").hidden=rows.length<=lim}
+$("tabs").addEventListener("click",e=>{const t=e.target.closest("[role=tab]");if(!t)return;set({tab:t.dataset.t})});
+$("tabs").addEventListener("keydown",e=>{if(!["ArrowRight","ArrowLeft"].includes(e.key))return;const ts=[...$("tabs").children],i=ts.indexOf(e.target),n=ts[(i+(e.key==="ArrowRight"?1:ts.length-1))%ts.length];n.focus();n.click()});
+function set(o){if(o.tab&&o.tab!==tab){tab=o.tab;sec=who=typ="";}if("sec"in o)sec=o.sec;if("who"in o)who=o.who;if("typ"in o)typ=o.typ;lim=24;document.querySelectorAll("#tabs [role=tab]").forEach(t=>{const on=t.dataset.t===tab;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1});opts();draw()}
+$("picks").addEventListener("click",e=>{const b=e.target.closest("[data-p]");if(!b)return;const on=b.getAttribute("aria-pressed")!=="true";document.querySelectorAll("#picks [data-p]").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed",on);if(on){const p=PICKS[b.dataset.p];tab="";set(Object.assign({sec:"",who:"",typ:""},p))}else set({sec:"",who:"",typ:""})});
+$("sec").onchange=e=>set({sec:e.target.value});$("who").onchange=e=>set({who:e.target.value});$("typ").onchange=e=>set({typ:e.target.value});
+$("q").oninput=e=>{q=e.target.value.trim().toLowerCase();lim=24;draw()};$("more").onclick=()=>{lim+=24;draw()};
+const h=new URLSearchParams(location.hash.slice(1));set({tab:h.get("tab")||"grants",sec:h.get("sector")||"",who:h.get("who")||"",typ:""});
+})();
+</script>
+</body></html>

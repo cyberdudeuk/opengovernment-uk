@@ -1,0 +1,3304 @@
+{
+"about": "Publishers of open grants data in the 360Giving Data Standard, from the 360Giving data registry (registry.threesixtygiving.org/data.json), read 22 November 2026: each publisher's name, organisation identifier (org-id), website, number of datasets and when it last published. Grant records themselves stay with 360Giving (GrantNav).",
+"source": "https://registry.threesixtygiving.org/data.json",
+"read": "2026-11-22",
+"sha256": "6eb4f1d78acfb392be96fde2ff85d7f52aca78e68a6f4e413d06d86502ef72ed",
+"publishers": [
+{
+"name": "10GM",
+"org_id": "360G-10GM",
+"prefix": "360G-10GM",
+"website": "https://www.10gm.org.uk/index.html",
+"last_published": "2023-03-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "A B Charitable Trust",
+"org_id": "GB-CHC-1000147",
+"prefix": "360G-ABCT",
+"website": "https://abcharitabletrust.org.uk/",
+"last_published": "2026-11-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Access to Justice Foundation",
+"org_id": "GB-CHC-1126147",
+"prefix": "360G-ATJF",
+"website": "https://atjf.org.uk/",
+"last_published": "2026-10-19",
+"datasets": 18,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "Alan & Babette Sainsbury Charitable Fund",
+"org_id": "GB-CHC-292930",
+"prefix": "360G-abscharitablefund",
+"website": "https://www.sfct.org.uk/index.html",
+"last_published": "2026-08-12",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Alex Ferry Foundation",
+"org_id": "GB-CHC-1179847",
+"prefix": "360G-AlexFerryFdn",
+"website": "www.ferryfoundation.org.uk",
+"last_published": "2026-06-02",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Allen Lane Foundation",
+"org_id": "GB-CHC-248031",
+"prefix": "360G-AllenLaneFdn",
+"website": "www.allenlane.org.uk",
+"last_published": "2026-03-11",
+"datasets": 5,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "Andrew Lloyd Webber Foundation",
+"org_id": "GB-CHC-1015648",
+"prefix": "360G-ALWF",
+"website": "http://www.andrewlloydwebberfoundation.com/",
+"last_published": "2026-03-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "ARCADIA",
+"org_id": "360G-ArcadiaFund",
+"prefix": "360G-ArcadiaFund",
+"website": "https://www.arcadiafund.org.uk/",
+"last_published": "2026-04-14",
+"datasets": 2,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Architectural Heritage Fund",
+"org_id": "GB-CHC-266780",
+"prefix": "360G-AHF",
+"website": "www.ahfund.org.uk",
+"last_published": "2026-09-03",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Armed Forces Covenant Fund",
+"org_id": "GB-CHC-1177627",
+"prefix": "360G-CovenantFund",
+"website": "https://www.covenantfund.org.uk",
+"last_published": "2026-03-04",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Arts Council England",
+"org_id": "GB-CHC-1036733",
+"prefix": "360G-ACE",
+"website": "www.artscouncil.org.uk",
+"last_published": "2019-11-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Aurora Trust",
+"org_id": "GB-CHC-802623",
+"prefix": "360G-aurora",
+"website": "https://auroratrust.org.uk",
+"last_published": "2026-07-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Backstage Trust",
+"org_id": "GB-CHC-1145887",
+"prefix": "360G-BackstageTrust",
+"website": "https://beta.charitycommission.gov.uk/charity-details/?subid=0&regid=1145887",
+"last_published": "2025-02-07",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Barking & Dagenham Giving",
+"org_id": "GB-CHC-1166335",
+"prefix": "360G-BDGiving",
+"website": "https://bdgiving.org.uk/",
+"last_published": "2025-12-10",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Barnwood Trust",
+"org_id": "GB-CHC-1162855",
+"prefix": "360G-BarnwoodTrust",
+"website": "http://www.barnwoodtrust.org/",
+"last_published": "2026-05-28",
+"datasets": 9,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Barrow Cadbury Trust",
+"org_id": "GB-CHC-1115476",
+"prefix": "360G-barrowcadbury",
+"website": "www.bctrust.org.uk",
+"last_published": "2025-01-14",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "BBC Children in Need",
+"org_id": "GB-CHC-802052",
+"prefix": "360g-cin",
+"website": "https://www.bbcchildreninneed.co.uk/",
+"last_published": "2026-11-04",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Bedfordshire and Luton Community Foundation",
+"org_id": "GB-CHC-1086516",
+"prefix": "360G-BLCF",
+"website": "www.blcf.org.uk",
+"last_published": "2025-11-06",
+"datasets": 9,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Attribution Share-Alike 4.0",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Benefact Trust",
+"org_id": "GB-CHC-263960",
+"prefix": "360G-Benefact",
+"website": "https://benefacttrust.co.uk/",
+"last_published": "2026-09-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Birmingham City Council",
+"org_id": "GB-LAE-BIR",
+"prefix": "360G-BirminghamCC",
+"website": "https://www.birmingham.gov.uk/",
+"last_published": "2024-02-15",
+"datasets": 2,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Brian Mercer Trust",
+"org_id": "GB-CHC-1076925",
+"prefix": "360G-BMT",
+"website": "https://www.brianmercertrust.org/",
+"last_published": "2026-10-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Bury Voluntary, Community and Faith Alliance",
+"org_id": "GB-CHC-1182039",
+"prefix": "360G-BVCFA",
+"website": "https://buryvcfa.org.uk/",
+"last_published": "2026-06-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Buttle UK",
+"org_id": "GB-CHC-313007",
+"prefix": "360G-ButtleUK",
+"website": "www.buttleuk.org/",
+"last_published": "2026-09-10",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Bòrd na Gàidhlig",
+"org_id": "XI-PB-gb/bord-na-gaidhlig",
+"prefix": "360G-BNG",
+"website": "https://www.gaidhlig.scot/",
+"last_published": "2026-11-18",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Cabinet Office",
+"org_id": "GB-GOR-D2",
+"prefix": "360G-cabinetoffice",
+"website": "https://www.gov.uk/government/organisations/cabinet-office",
+"last_published": "2023-03-30",
+"datasets": 9,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "CAF",
+"org_id": "GB-CHC-268369",
+"prefix": "360G-CAF",
+"website": "www.cafonline.org",
+"last_published": "2026-02-26",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Calouste Gulbenkian Foundation, UK Branch",
+"org_id": "GB-COH-00488851",
+"prefix": "360G-Gulbenkian",
+"website": "https://gulbenkian.pt/uk-branch/",
+"last_published": "2026-05-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Cambridgeshire Community Foundation",
+"org_id": "GB-CHC-1103314",
+"prefix": "360G-CambsCF",
+"website": "www.cambscf.org.uk",
+"last_published": "2026-03-18",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Camden Council",
+"org_id": "GB-LAE-CMD",
+"prefix": "360G-CamdenCouncil",
+"website": "https://www.camden.gov.uk/",
+"last_published": "2025-06-18",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Camden Giving",
+"org_id": "GB-CHC-1174463",
+"prefix": "360G-CamdenGiving",
+"website": "https://www.camdengiving.org.uk/",
+"last_published": "2026-10-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "CareTech Foundation",
+"org_id": "GB-CHC-1182567",
+"prefix": "360G-CTF",
+"website": "www.caretechfoundation.org.uk",
+"last_published": "2022-12-15",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Charles Hayward Foundation",
+"org_id": "GB-CHC-1078969",
+"prefix": "360G-CharlesHayward",
+"website": "www.charleshaywardfoundation.org.uk",
+"last_published": "2026-02-24",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Cheshire Community Foundation",
+"org_id": "GB-CHC-1143711",
+"prefix": "360G-cheshirecf",
+"website": "www.cheshirecommunityfoundation.org.uk",
+"last_published": "2026-04-29",
+"datasets": 10,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "CHK Foundation",
+"org_id": "GB-CHC-1050900",
+"prefix": "360G-CHK",
+"website": "http://www.chkfoundation.org.uk",
+"last_published": "2026-07-22",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "City Bridge Foundation",
+"org_id": "GB-CHC-1035628",
+"prefix": "360G-citybridgetrust",
+"website": "https://www.citybridgetrust.org.uk/",
+"last_published": "2026-07-16",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Cloudesley",
+"org_id": "GB-CHC-205959",
+"prefix": "360G-Cloudesley",
+"website": "http://www.cloudesley.org.uk/",
+"last_published": "2026-10-22",
+"datasets": 4,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Co-operative Group",
+"org_id": "GB-COH-IP00525R",
+"prefix": "360G-coopgroup",
+"website": "https://www.coop.co.uk/",
+"last_published": "2026-02-06",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "Comic Relief",
+"org_id": "GB-CHC-326568",
+"prefix": "360G-CR",
+"website": "https://www.comicrelief.com/",
+"last_published": "2026-04-09",
+"datasets": 5,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Community Foundation for Calderdale",
+"org_id": "GB-CHC-1002722",
+"prefix": "360G-CFFC",
+"website": "http://www.cffc.co.uk/",
+"last_published": "2026-01-19",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Community Foundation for Northern Ireland",
+"org_id": "GB-NIC-105105",
+"prefix": "360G-CFNI",
+"website": "http://www.communityfoundationni.org",
+"last_published": "2020-08-20",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Community Foundation for Surrey",
+"org_id": "GB-CHC-1111600",
+"prefix": "360G-CFSurrey",
+"website": "www.cfsurrey.org.uk",
+"last_published": "2026-08-31",
+"datasets": 15,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Community Foundation in Wales",
+"org_id": "GB-CHC-1074655",
+"prefix": "360G-CFinWales",
+"website": "www.communityfoundationwales.org.uk",
+"last_published": "2026-02-24",
+"datasets": 9,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Community Foundation North East",
+"org_id": "GB-CHC-700510",
+"prefix": "360G-CFTyneWearNland",
+"website": "www.communityfoundation.org.uk",
+"last_published": "2026-08-13",
+"datasets": 12,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Community Foundations for Lancashire & Merseyside",
+"org_id": "GB-CHC-1068887",
+"prefix": "360G-CFLM",
+"website": "www.cfmerseyside.org.uk",
+"last_published": "2026-08-05",
+"datasets": 4,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Coop Foundation",
+"org_id": "GB-CHC-1093028",
+"prefix": "GB-CHC-1093028",
+"website": "https://www.coopfoundation.org.uk/",
+"last_published": "2026-06-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Cornwall Community Foundation",
+"org_id": "GB-CHC-1099977",
+"prefix": "360G-CornwallCF",
+"website": "https://www.cornwallcommunityfoundation.com/",
+"last_published": "2026-02-27",
+"datasets": 5,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Corra Foundation",
+"org_id": "GB-SC-SC009481",
+"prefix": "360G-CorraFoundation",
+"website": "http://www.corra.scot",
+"last_published": "2026-11-04",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Cripplegate Foundation",
+"org_id": "GB-CHC-207499",
+"prefix": "360G-CripplegateFdn",
+"website": "https://www.cripplegate.org/",
+"last_published": "2025-02-12",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Crisis UK",
+"org_id": "GB-CHC-1082947",
+"prefix": "360G-CRISISUK",
+"website": "www.crisis.org.uk",
+"last_published": "2022-10-18",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Crowdfunder",
+"org_id": "GB-COH-07831511",
+"prefix": "360G-Crowdfunder",
+"website": "https://www.crowdfunder.co.uk/",
+"last_published": "2023-07-31",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Culham St Gabriel's Trust",
+"org_id": "GB-CHC-309671",
+"prefix": "360G-CSTG",
+"website": "www.cstg.org.uk",
+"last_published": "2025-04-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Cumbria Community Foundation",
+"org_id": "GB-CHC-1075120",
+"prefix": "360G-CumbriaF",
+"website": "www.cumbriafoundation.org",
+"last_published": "2024-08-09",
+"datasets": 3,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Daiwa Anglo-Japanese Foundation",
+"org_id": "GB-CHC-299955",
+"prefix": "360G-DAJF",
+"website": "http://dajf.org.uk/",
+"last_published": "2026-03-30",
+"datasets": 8,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Devon Community Foundation",
+"org_id": "GB-CHC-1057923",
+"prefix": "360G-devoncf",
+"website": "www.devoncf.com",
+"last_published": "2026-04-20",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Didymus Charity",
+"org_id": "GB-CHC-1152432",
+"prefix": "360G-Didymus",
+"website": "https://didymus-charity.org.uk/",
+"last_published": "2026-02-10",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Disability Action",
+"org_id": "GB-NIC-100004",
+"prefix": "360G-DisabilityAction",
+"website": "https://www.disabilityaction.org/",
+"last_published": "2022-06-10",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Dorset Community Foundation",
+"org_id": "GB-CHC-1122113",
+"prefix": "360G-DorsetCF",
+"website": "https://www.dorsetcommunityfoundation.org/",
+"last_published": "2025-02-21",
+"datasets": 3,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Dundee City Council",
+"org_id": "GB-LAS-DND",
+"prefix": "360G-DundeeCC",
+"website": "https://www.dundeecity.gov.uk/",
+"last_published": "2018-05-02",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "EA Foundation",
+"org_id": "GB-CHC-1194169",
+"prefix": "360G-EAFoundation",
+"website": "https://ea-foundation.org.uk/",
+"last_published": "2025-04-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "East Suffolk Trust",
+"org_id": "GB-CHC-1213569",
+"prefix": "360G-EaST",
+"website": "https://eastsuffolktrust.org/",
+"last_published": "2026-10-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Educational Opportunity Foundation",
+"org_id": "GB-CHC-314286",
+"prefix": "360G-EOF",
+"website": "https://educationalopportunity.org.uk/",
+"last_published": "2026-11-18",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Energy Saving Trust Foundation",
+"org_id": "GB-CHC-1144106",
+"prefix": "360G-EnergySavingTrustFdn",
+"website": "https://energysavingtrust.org.uk/about-us/our-corporate-social-responsibility/the-foundation/",
+"last_published": "2024-07-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Esmée Fairbairn Foundation",
+"org_id": "GB-CHC-200051",
+"prefix": "360G-esmeefairbairn",
+"website": "https://www.esmeefairbairn.org.uk/",
+"last_published": "2026-11-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Essex Community Foundation",
+"org_id": "GB-CHC-1052061",
+"prefix": "360G-EssexCF",
+"website": "www.essexcommunityfoundation.org.uk",
+"last_published": "2026-04-06",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Essex County Council",
+"org_id": "GB-LAE-ESS",
+"prefix": "360G-Essex_CC",
+"website": "https://www.essex.gov.uk",
+"last_published": "2019-11-29",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Family Fund Trust",
+"org_id": "GB-CHC-1053866",
+"prefix": "360G-FamilyFund",
+"website": "www.familyfund.org.uk",
+"last_published": "2025-10-07",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Farming The Future",
+"org_id": "360G-FTF",
+"prefix": "360G-FTF",
+"website": "https://www.farmingthefuture.uk/",
+"last_published": "2026-07-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Fenton Arts Trust",
+"org_id": "GB-CHC-294629",
+"prefix": "360G-FentonArtsTrust",
+"website": "https://www.fentonartstrust.org.uk",
+"last_published": "2026-08-04",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Fight for Sight",
+"org_id": "GB-CHC-1111438",
+"prefix": "360G-Fight4Sight",
+"website": "https://www.fightforsight.org.uk/",
+"last_published": "2025-06-20",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Firstport",
+"org_id": "GB-SC-SC037942",
+"prefix": "360G-Firstport",
+"website": "https://www.firstport.org.uk/",
+"last_published": "2026-09-03",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Foothold",
+"org_id": "GB-CHC-208925",
+"prefix": "360G-Foothold",
+"website": "https://www.myfoothold.org/",
+"last_published": "2026-04-01",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Forever Manchester",
+"org_id": "GB-CHC-1017504",
+"prefix": "360G-ForeverManchester",
+"website": "www.forevermanchester.com",
+"last_published": "2026-10-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "forRefugees",
+"org_id": "GB-CHC-1168435",
+"prefix": "360G-forRefugees",
+"website": "https://www.forrefugees.org/",
+"last_published": "2026-10-15",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Forte Charitable Foundation",
+"org_id": "GB-CHC-1063945",
+"prefix": "360G-TrusthouseCF",
+"website": "https://www.fortecharitablefoundation.org.uk/",
+"last_published": "2026-10-14",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Attribution Share-Alike 4.0",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Foundation Scotland",
+"org_id": "GB-SC-SC022910",
+"prefix": "360G-FoundationScotland",
+"website": "https://www.foundationscotland.org.uk/",
+"last_published": "2026-11-20",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Francis Scott Trust",
+"org_id": "GB-CHC-232131",
+"prefix": "360G-FST",
+"website": "https://francis-scott.org.uk/",
+"last_published": "2026-07-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Freemasons’ Charity",
+"org_id": "GB-CHC-1164703",
+"prefix": "360G-MasonicCharitableFdn",
+"website": "https://freemasonscharity.org.uk/",
+"last_published": "2026-10-08",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Friends Provident Foundation",
+"org_id": "GB-CHC-1087053",
+"prefix": "GB-CHC-1087053",
+"website": "http://www.friendsprovidentfoundation.org",
+"last_published": "2026-10-14",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Garfield Weston Foundation",
+"org_id": "GB-CHC-230260",
+"prefix": "360G-GWF",
+"website": "www.garfieldweston.org",
+"last_published": "2026-09-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Gatsby Charitable Foundation",
+"org_id": "GB-CHC-251988",
+"prefix": "360G-gatsbyfoundation",
+"website": "www.gatsby.org.uk",
+"last_published": "2024-03-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Glasgow City Council",
+"org_id": "GB-LAS-GLG",
+"prefix": "360G-GlasgowCC",
+"website": "http://www.glasgow.gov.uk",
+"last_published": "2019-08-09",
+"datasets": 3,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "GMSP Foundation",
+"org_id": "GB-CHC-1113218",
+"prefix": "360G-GMSP_Fdn",
+"website": "gmspfoundation.org",
+"last_published": "2021-08-11",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Gower Street",
+"org_id": "GB-CHC-1183461",
+"prefix": "360G-GowerStreet",
+"website": "https://www.gowerstreet.org/",
+"last_published": "2026-08-06",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Greater London Authority",
+"org_id": "GB-LAE-GLA",
+"prefix": "360G-GLA-GROUP",
+"website": "https://www.london.gov.uk/",
+"last_published": "2024-06-28",
+"datasets": 29,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Greater Manchester Mayor's Charity",
+"org_id": "GB-CHC-1198852",
+"prefix": "360G-GMMC",
+"website": "https://gmmayorscharity.co.uk/",
+"last_published": "2025-10-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Greenwood Place",
+"org_id": "GB-COH-10579996",
+"prefix": "360G-GreenwoodPlace",
+"website": "https://www.greenwood.place/",
+"last_published": "2026-08-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Guy's and St Thomas' Foundation (previously Guy's and St Thomas' Charity)",
+"org_id": "GB-CHC-1160316",
+"prefix": "360G-GSTC",
+"website": "https://gsttfoundation.org.uk/about-us/",
+"last_published": "2024-12-05",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Haberdashers' Company",
+"org_id": "GB-CHC-275067",
+"prefix": "360G-HaberdashersCo",
+"website": "https://www.haberdashers.co.uk/",
+"last_published": "2026-03-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Hackney Council",
+"org_id": "GB-LAE-HCK",
+"prefix": "360G-HackneyCouncil",
+"website": "https://hackney.gov.uk/",
+"last_published": "2026-04-23",
+"datasets": 6,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Hackney CVS",
+"org_id": "GB-CHC-1069736",
+"prefix": "360G-HackneyCVS",
+"website": "www.hcvs.org.uk",
+"last_published": "2026-07-09",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Halifax Foundation for Northern Ireland",
+"org_id": "GB-NIC-101763",
+"prefix": "360G-HFNI",
+"website": "http://www.halifaxfoundationni.org",
+"last_published": "2026-11-09",
+"datasets": 19,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Hammersmith United Charities",
+"org_id": "GB-CHC-205856",
+"prefix": "360G-HamUnitedCharities",
+"website": "https://hamunitedcharities.org.uk/",
+"last_published": "2020-06-24",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Hampshire and Isle of Wight Community Foundation",
+"org_id": "GB-CHC-1100417",
+"prefix": "360G-HIWCF",
+"website": "www.hiwcf.org.uk",
+"last_published": "2026-10-28",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Hampton Fund",
+"org_id": "GB-CHC-211756",
+"prefix": "360G-HamptonFund",
+"website": "https://www.hamptonfund.co.uk/",
+"last_published": "2026-04-01",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Harpur Trust",
+"org_id": "GB-CHC-1066861",
+"prefix": "360G-HarpurTrust",
+"website": "www.harpur-trust.org.uk",
+"last_published": "2026-02-23",
+"datasets": 4,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Hazelhurst Trust",
+"org_id": "GB-CHC-1145221",
+"prefix": "360G-Hazelhurst",
+"website": "https://register-of-charities.charitycommission.gov.uk/charity-details/?subid=0&regid=1145221",
+"last_published": "2020-10-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Heart of England Community Foundation",
+"org_id": "GB-CHC-1117345",
+"prefix": "360G-HeartofEnglandCF",
+"website": "https://www.heartofenglandcf.org/",
+"last_published": "2026-02-12",
+"datasets": 11,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Henry Smith Foundation",
+"org_id": "GB-CHC-230102",
+"prefix": "360G-HenrySmithCharity",
+"website": "https://www.henrysmithcharity.org.uk/",
+"last_published": "2026-11-12",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Herefordshire Community Foundation",
+"org_id": "GB-CHC-1094935",
+"prefix": "360G-HerefordshireCF",
+"website": "https://www.herefordshirecf.org/",
+"last_published": "2026-08-06",
+"datasets": 14,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Hertfordshire Community Foundation",
+"org_id": "GB-CHC-1156082",
+"prefix": "360G-HertsCF",
+"website": "www.hertscf.org.uk",
+"last_published": "2026-02-24",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Highlands and Islands Environment Foundation",
+"org_id": "GB-SC-SC043026",
+"prefix": "360G-HIEF",
+"website": "https://hief.scot/",
+"last_published": "2026-10-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Historic Environment Scotland",
+"org_id": "GB-SC-SC045925",
+"prefix": "360-HistEnvScot",
+"website": "https://www.historicenvironment.scot/",
+"last_published": "2026-11-17",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Hyde Charitable Trust",
+"org_id": "GB-CHC-289888",
+"prefix": "360G-HydeCT",
+"website": "https://www.hyde-housing.co.uk/corporate/our-social-purpose/hyde-charitable-trust/",
+"last_published": "2024-06-03",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Imperial Health Charity",
+"org_id": "GB-CHC-1166084",
+"prefix": "360G-IHC",
+"website": "https://www.imperialcharity.org.uk/",
+"last_published": "2025-10-07",
+"datasets": 8,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Independent Age",
+"org_id": "GB-CHC-210729",
+"prefix": "360G-IndAge",
+"website": "https://www.independentage.org/",
+"last_published": "2026-03-30",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Indigo Trust",
+"org_id": "GB-CHC-1075920",
+"prefix": "360G-indigotrust",
+"website": "www.sfct.org.uk",
+"last_published": "2026-08-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Innox Foundation",
+"org_id": "GB-CHC-1189683",
+"prefix": "360G-InnoxFdn",
+"website": "https://www.innoxuk.com",
+"last_published": "2024-01-05",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Inspiring Scotland",
+"org_id": "GB-SC-SC039605",
+"prefix": "360G-InspiringScotland",
+"website": "http://www.inspiringscotland.org.uk",
+"last_published": "2026-10-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "J J Charitable Trust",
+"org_id": "GB-CHC-1015792",
+"prefix": "360G-JJCT",
+"website": "www.sfct.org.uk",
+"last_published": "2026-07-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "JAC Trust",
+"org_id": "GB-CHC-1189523",
+"prefix": "360G-JACTrust",
+"website": "https://jaclarktrust.org",
+"last_published": "2026-02-10",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Joffe Charitable Trust",
+"org_id": "GB-CHC-1180520",
+"prefix": "360G-JoffeTrust",
+"website": "https://joffetrust.org",
+"last_published": "2026-02-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "John Ellerman Foundation",
+"org_id": "GB-CHC-263207",
+"prefix": "360G-Ellerman",
+"website": "https://ellerman.org.uk/",
+"last_published": "2026-10-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "John Lyon's Charity",
+"org_id": "GB-CHC-237725",
+"prefix": "360G-JLC",
+"website": "https://www.jlc.london/",
+"last_published": "2026-09-29",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "John Moores Foundation",
+"org_id": "GB-CHC-253481",
+"prefix": "360G-JMF",
+"website": "http://www.jmf.org.uk",
+"last_published": "2025-10-14",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Joseph Levy Foundation",
+"org_id": "GB-CHC-1165225",
+"prefix": "360G-JLF",
+"website": "https://www.jlf.org.uk/",
+"last_published": "2026-07-10",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Joseph Rowntree Charitable Trust",
+"org_id": "GB-CHC-210037",
+"prefix": "360G-JRCT",
+"website": "www.jrct.org.uk",
+"last_published": "2026-11-09",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Joseph Rowntree Reform Trust",
+"org_id": "GB-COH-00357963",
+"prefix": "360G-JRRT",
+"website": "https://www.jrrt.org.uk/",
+"last_published": "2026-05-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "JRSST-CT",
+"org_id": "GB-CHC-247498",
+"prefix": "360G-JRSST-CT",
+"website": "https://www.jrrt.org.uk/what-we-do/jrsst-ct/",
+"last_published": "2026-05-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Julia Rausing Trust",
+"org_id": "GB-CHC-1213572",
+"prefix": "360G-JuliaRausingTrust",
+"website": "https://www.juliarausingtrust.org/",
+"last_published": "2025-10-16",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Justice Together Initiative",
+"org_id": "GB-CHC-1187441",
+"prefix": "360G-JTI",
+"website": "https://justice-together.org.uk/",
+"last_published": "2023-05-24",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Kingston Voluntary Action",
+"org_id": "GB-CHC-1160403",
+"prefix": "360G-LoveKingston",
+"website": "http://kva.org.uk/",
+"last_published": "2019-09-18",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "KPMG Foundation",
+"org_id": "GB-CHC-1194474",
+"prefix": "360G-KPMGF",
+"website": "https://kpmgfoundation.org.uk",
+"last_published": "2026-03-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Kurt and Magda Stern Foundation",
+"org_id": "GB-CHC-1168201",
+"prefix": "360G-KMSFdn",
+"website": "https://kurtandmagdastern.org/",
+"last_published": "2026-02-04",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "LandAid Charitable Trust",
+"org_id": "GB-CHC-295157",
+"prefix": "360G-landaid",
+"website": "www.landaid.org",
+"last_published": "2019-09-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Lankelly Chase Foundation",
+"org_id": "GB-CHC-1107583",
+"prefix": "360G-LankellyChase",
+"website": "www.lankellychase.org.uk",
+"last_published": "2025-02-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Leeds Community Foundation",
+"org_id": "GB-CHC-1096892",
+"prefix": "360G-LeedsCF",
+"website": "www.leedscf.org.uk",
+"last_published": "2026-11-15",
+"datasets": 9,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "LEF",
+"org_id": "GB-CHC-271297",
+"prefix": "360G-LEF",
+"website": "https://www.thelegaleducationfoundation.org/",
+"last_published": "2026-07-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Leicestershire and Rutland Community Foundation",
+"org_id": "GB-CHC-1135322",
+"prefix": "360G-LLRFoundation",
+"website": "www.llrcommunityfoundation.org.uk",
+"last_published": "2026-02-23",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "LGBT Consortium",
+"org_id": "GB-CHC-1105502",
+"prefix": "360G-LGBTConsortium",
+"website": "www.consortium.lgbt",
+"last_published": "2026-08-31",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Lincolnshire Community Foundation",
+"org_id": "GB-CHC-1196448",
+"prefix": "360G-LincolnshireCF",
+"website": "www.lincolnshirecf.co.uk",
+"last_published": "2025-06-03",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "Lloyd's Register Foundation",
+"org_id": "GB-CHC-1145988",
+"prefix": "360G-lloydsregisterfdn",
+"website": "http://www.lrfoundation.org.uk/",
+"last_published": "2026-08-09",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Lloyds Bank Foundation for England and Wales",
+"org_id": "GB-CHC-327114",
+"prefix": "360G-LBFEW",
+"website": "https://www.lloydsbankfoundation.org.uk/",
+"last_published": "2025-06-24",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Local Trust",
+"org_id": "GB-CHC-1147511",
+"prefix": "360G-LocalTrust",
+"website": "http://www.localtrust.org.uk/",
+"last_published": "2018-10-02",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "London Borough of Barnet",
+"org_id": "GB-LAE-BNE",
+"prefix": "360G-BarnetCouncil",
+"website": "https://www.barnet.gov.uk/",
+"last_published": "2021-11-09",
+"datasets": 5,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "London Borough of Havering",
+"org_id": "GB-LAE-HAV",
+"prefix": "360G-LBHavering",
+"website": "https://www.havering.gov.uk/",
+"last_published": "2020-04-30",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "London Borough of Hounslow",
+"org_id": "GB-LAE-HNS",
+"prefix": "360G-HounslowCouncil",
+"website": "https://www.hounslow.gov.uk/site/",
+"last_published": "2026-08-11",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "London Borough of Southwark",
+"org_id": "GB-LAE-SWK",
+"prefix": "360G-southwarkcouncil",
+"website": "https://www.southwark.gov.uk/engagement-and-consultations/grants-and-funding",
+"last_published": "2025-04-15",
+"datasets": 8,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "London Councils",
+"org_id": "GB-COH-03037449",
+"prefix": "360G-londoncouncils",
+"website": "https://www.londoncouncils.gov.uk/",
+"last_published": "2025-05-22",
+"datasets": 2,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "London Legal Support Trust",
+"org_id": "GB-CHC-1101906",
+"prefix": "360G-LLST",
+"website": "https://www.londonlegalsupporttrust.org.uk/",
+"last_published": "2025-07-16",
+"datasets": 4,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "London Marathon Foundation",
+"org_id": "GB-CHC-283813",
+"prefix": "360G-LMCT",
+"website": "https://www.lmct.org.uk/",
+"last_published": "2026-07-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Longleigh Foundation",
+"org_id": "GB-CHC-1169016",
+"prefix": "360G-Longleigh",
+"website": "www.longleigh.org",
+"last_published": "2026-08-09",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Making a Difference Locally",
+"org_id": "GB-CHC-1123800",
+"prefix": "360G-MADL",
+"website": "https://www.nisalocally.co.uk/community/",
+"last_published": "2026-02-26",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Manchester City Council",
+"org_id": "GB-LAE-MAN",
+"prefix": "360G-ManchesterCC",
+"website": "https://www.manchester.gov.uk/",
+"last_published": "2026-04-16",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Manchester Community Central",
+"org_id": "GB-CHC-1145921",
+"prefix": "360G-macc",
+"website": "https://manchestercommunitycentral.org/",
+"last_published": "2025-07-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Mark Leonard Trust",
+"org_id": "GB-CHC-1040323",
+"prefix": "360G-MLT",
+"website": "www.sfct.org.uk",
+"last_published": "2026-04-23",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Maudsley Charity",
+"org_id": "GB-CHC-1175877",
+"prefix": "360G-MaudsleyCharity",
+"website": "https://maudsleycharity.org/",
+"last_published": "2026-03-31",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "McCarthy Stone Foundation",
+"org_id": "GB-CHC-1191504",
+"prefix": "360G-McCarthyStone",
+"website": "https://mccarthystonefoundation.org/",
+"last_published": "2026-01-08",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Millfield House Foundation",
+"org_id": "GB-CHC-1158914",
+"prefix": "360g-mhfdn",
+"website": "http://mhfdn.org.uk",
+"last_published": "2026-05-06",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Mission 44",
+"org_id": "GB-CHC-1199596",
+"prefix": "360G-Mission44",
+"website": "https://mission44.org/",
+"last_published": "2026-03-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Monument Trust",
+"org_id": "GB-CHC-242575",
+"prefix": "360G-monument",
+"website": "https://www.sfct.org.uk/",
+"last_published": "2024-06-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "National Churches Trust",
+"org_id": "GB-CHC-1119845",
+"prefix": "360G-NatChurchTrust",
+"website": "https://www.nationalchurchestrust.org/",
+"last_published": "2025-07-02",
+"datasets": 9,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "National Emergencies Trust",
+"org_id": "GB-CHC-1182809",
+"prefix": "360G-NET",
+"website": "www.nationalemergenciestrust.org.uk",
+"last_published": "2022-06-17",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Nationwide Foundation",
+"org_id": "GB-CHC-1065552",
+"prefix": "360G-nationwidefdn",
+"website": "www.nationwidefoundation.org.uk",
+"last_published": "2026-10-14",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Nesta",
+"org_id": "GB-CHC-1144091",
+"prefix": "360G-nesta",
+"website": "https://www.nesta.org.uk/",
+"last_published": "2024-06-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "New Philanthropy Capital (NPC)",
+"org_id": "GB-CHC-1091450",
+"prefix": "360G-NPC",
+"website": "https://www.thinknpc.org/",
+"last_published": "2023-06-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Norfolk Community Foundation",
+"org_id": "GB-CHC-1110817",
+"prefix": "360G-NorfolkCF",
+"website": "www.norfolkfoundation.com",
+"last_published": "2024-02-05",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Northamptonshire Community Foundation",
+"org_id": "GB-CHC-1094646",
+"prefix": "360G-NCF",
+"website": "http://www.ncf.uk.com/",
+"last_published": "2026-11-03",
+"datasets": 24,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Northern Powergrid Foundation",
+"org_id": "GB-CHC-1203185",
+"prefix": "360G-NPF",
+"website": "https://www.northernpowergridfoundation.com",
+"last_published": "2026-02-20",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Northern Rock Foundation",
+"org_id": "GB-COH-03416658",
+"prefix": "360G-northernrock",
+"website": "http://www.nr-foundation.org.uk",
+"last_published": "2016-05-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Nova Wakefield",
+"org_id": "GB-CHC-1143640",
+"prefix": "360G-NovaWakefield",
+"website": "https://www.nova-wd.org.uk/",
+"last_published": "2026-11-11",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Nuffield Foundation",
+"org_id": "GB-CHC-206601",
+"prefix": "360G-NuffieldFdn",
+"website": "http://www.nuffieldfoundation.org",
+"last_published": "2026-11-20",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "One Manchester",
+"org_id": "GB-COH-RS007018",
+"prefix": "360G-onemanchester",
+"website": "http://www.onemanchester.co.uk",
+"last_published": "2022-12-05",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "OVO Foundation",
+"org_id": "GB-CHC-1155954",
+"prefix": "360G-OVOFdn",
+"website": "www.ovofoundation.org.uk",
+"last_published": "2025-04-03",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Oxford City Council",
+"org_id": "GB-LAE-OXO",
+"prefix": "360G-OxfordCC",
+"website": "https://www.oxford.gov.uk/",
+"last_published": "2019-11-29",
+"datasets": 4,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Oxfordshire Community Foundation",
+"org_id": "GB-CHC-1151621",
+"prefix": "360G-ocf",
+"website": "www.oxfordshire.org",
+"last_published": "2026-09-03",
+"datasets": 13,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Attribution Share-Alike 4.0",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "Paul Hamlyn Foundation",
+"org_id": "GB-CHC-1102927",
+"prefix": "360G-phf",
+"website": "https://www.phf.org.uk/",
+"last_published": "2026-02-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Pears Foundation",
+"org_id": "GB-CHC-1009195",
+"prefix": "360G-PearsFoundation",
+"website": "https://pearsfoundation.org.uk/",
+"last_published": "2026-09-08",
+"datasets": 11,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "People's Health Trust",
+"org_id": "GB-CHC-1125537",
+"prefix": "360G-peopleshealth",
+"website": "www.peopleshealthtrust.org.uk",
+"last_published": "2025-02-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Peter Harrison Foundation",
+"org_id": "GB-CHC-1076579",
+"prefix": "360G-PHFDN",
+"website": "https://www.peterharrisonfoundation.org/",
+"last_published": "2025-08-06",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Peter Minet Trust",
+"org_id": "GB-CHC-259963",
+"prefix": "360G-PeterMinetTrust",
+"website": "https://www.peterminet.org.uk/",
+"last_published": "2024-02-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Point North",
+"org_id": "GB-CHC-1047625",
+"prefix": "360G-CountyDurhamCF",
+"website": "www.cdcf.org.uk",
+"last_published": "2026-08-13",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Postcode Lottery",
+"org_id": "GB-COH-04862732",
+"prefix": "360G-postcodelottery",
+"website": "https://postcodelottery.info/",
+"last_published": "2025-06-23",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Pothecary Witham Weld Solicitors LLP",
+"org_id": "360G-PWW",
+"prefix": "360G-PWW",
+"website": "https://pwwsolicitors.co.uk/",
+"last_published": "2026-06-09",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Power to Change Trust",
+"org_id": "GB-CHC-1159982",
+"prefix": "360G-ptc-gr",
+"website": "www.powertochange.co.uk",
+"last_published": "2024-02-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Prudence Trust",
+"org_id": "GB-CHC-1187700",
+"prefix": "360G-PrudenceTrust",
+"website": "https://theprudencetrust.org/",
+"last_published": "2026-02-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Quartet Community Foundation",
+"org_id": "GB-CHC-1080418",
+"prefix": "360G-QuartetCF",
+"website": "www.quartetcf.org.uk",
+"last_published": "2026-05-11",
+"datasets": 13,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Quixote Foundation",
+"org_id": "US-EIN-39-1916960",
+"prefix": "360G-quixote",
+"website": "http://www.quixotefoundation.org/",
+"last_published": "2017-10-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "R L Glasspool Charity Trust",
+"org_id": "GB-CHC-214648",
+"prefix": "360G-Glasspool",
+"website": "https://www.glasspool.org.uk/",
+"last_published": "2024-08-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "R S Macdonald Charitable Trust",
+"org_id": "GB-SC-SC012710",
+"prefix": "360G-RSMCT",
+"website": "http://www.rsmacdonald.com/",
+"last_published": "2026-09-23",
+"datasets": 10,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Rank Foundation",
+"org_id": "GB-CHC-276976",
+"prefix": "360G-RankFdn",
+"website": "https://rankfoundation.com/",
+"last_published": "2026-10-15",
+"datasets": 10,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Richmond Foundation",
+"org_id": "GB-CHC-200069",
+"prefix": "360G-RPLC",
+"website": "http://www.rplc.org.uk/",
+"last_published": "2026-10-14",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Rosa UK",
+"org_id": "GB-CHC-1124856",
+"prefix": "360G-RosaUK",
+"website": "https://rosauk.org/",
+"last_published": "2026-10-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Rothschild Foundation",
+"org_id": "GB-CHC-1138145",
+"prefix": "360G-RothschildFdn",
+"website": "https://rothschildfoundation.org.uk/",
+"last_published": "2026-10-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Sam and Bella Sebba Charitable Foundation",
+"org_id": "GB-CHC-1191713",
+"prefix": "360G-SebbaFdn",
+"website": "https://sebbafoundation.org/",
+"last_published": "2026-07-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Scottish Council for Voluntary Organisations",
+"org_id": "GB-SC-SC003558",
+"prefix": "360G-SCVO",
+"website": "http://www.scvo.org.uk",
+"last_published": "2025-08-06",
+"datasets": 32,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Scottish Government",
+"org_id": "GB-GOR-DA1020",
+"prefix": "360G-ScottishGovernment",
+"website": "https://www.gov.scot/",
+"last_published": "2026-11-03",
+"datasets": 2,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "ShareGift",
+"org_id": "GB-CHC-1052686",
+"prefix": "360G-ShareGift",
+"website": "https://www.sharegift.org/",
+"last_published": "2026-10-23",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Sheffield City Council",
+"org_id": "GB-LAE-SHF",
+"prefix": "360G-SheffieldCC",
+"website": "https://www.sheffield.gov.uk/",
+"last_published": "2025-06-18",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Sir George Martin Trust",
+"org_id": "GB-CHC-223554",
+"prefix": "360G-SGMT",
+"website": "www.sirgeorgemartintrust.org.uk",
+"last_published": "2026-08-11",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Sir Halley Stewart Trust",
+"org_id": "GB-CHC-208491",
+"prefix": "360G-SHST",
+"website": "http://www.sirhalleystewart.org.uk",
+"last_published": "2026-05-13",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Sir Jules Thorn Charitable Trust",
+"org_id": "GB-CHC-233838",
+"prefix": "360G-SJTCT",
+"website": "https://julesthorntrust.org.uk",
+"last_published": "2023-01-11",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Smallwood Trust",
+"org_id": "GB-CHC-205798",
+"prefix": "360G-SmallwoodTrust",
+"website": "https://www.smallwoodtrust.org.uk/",
+"last_published": "2026-02-26",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Solace Women's Aid",
+"org_id": "GB-CHC-1082450",
+"prefix": "360G-SolaceWomensAid",
+"website": "www.solacewomensaid.org",
+"last_published": "2024-02-01",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Somerset Community Foundation",
+"org_id": "GB-COH-04530979",
+"prefix": "360G-SomersetCF",
+"website": "www.somersetcf.org.uk",
+"last_published": "2026-11-04",
+"datasets": 12,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Southway Housing Trust",
+"org_id": "GB-COH-IP30348R",
+"prefix": "360G-SouthwayHousing",
+"website": "https://www.southwayhousing.co.uk/",
+"last_published": "2026-02-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Spirit of 2012",
+"org_id": "GB-CHC-1155110",
+"prefix": "360G-spiritof2012",
+"website": "http://www.spiritof2012trust.org.uk/",
+"last_published": "2026-02-05",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Sport England",
+"org_id": "GB-COH-RC000766",
+"prefix": "360G-SE",
+"website": "https://www.sportengland.org/",
+"last_published": "2026-05-12",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "St Giles & St George",
+"org_id": "360G-StGilesStGeorge",
+"prefix": "360G-StGilesStGeorge",
+"website": "https://stgilesandstgeorge.org.uk/",
+"last_published": "2026-07-22",
+"datasets": 4,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "St. Martin-in-the-Fields Charity",
+"org_id": "GB-CHC-1156305",
+"prefix": "360G-StMartinsCharity",
+"website": "https://www.smitfc.org/",
+"last_published": "2026-01-12",
+"datasets": 4,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Staples Trust",
+"org_id": "GB-CHC-1010656",
+"prefix": "360G-staples",
+"website": "www.sfct.org.uk",
+"last_published": "2026-09-04",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Steve Morgan Foundation",
+"org_id": "GB-CHC-1087056",
+"prefix": "360G-SteveMorganFdn",
+"website": "http://stevemorganfoundation.org.uk/",
+"last_published": "2026-08-25",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Stockport MBC",
+"org_id": "GB-LAE-SKP",
+"prefix": "360G-stockportmbc",
+"website": "https://www.stockport.gov.uk",
+"last_published": "2023-12-06",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "Suffolk Community Foundation",
+"org_id": "GB-CHC-1109453",
+"prefix": "360G-SuffolkCF",
+"website": "www.suffolkcf.org.uk",
+"last_published": "2021-09-01",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Sussex Community Foundation",
+"org_id": "GB-CHC-1113226",
+"prefix": "360G-SussexCF",
+"website": "www.sussexgiving.org.uk",
+"last_published": "2025-04-15",
+"datasets": 13,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "SYP Trust",
+"org_id": "GB-CHC-311697",
+"prefix": "360G-SYPTrust",
+"website": "https://www.shaftesburyyoungpeople.org/",
+"last_published": "2026-09-10",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Talbot Village Trust",
+"org_id": "GB-CHC-249349",
+"prefix": "360G-TalbotVillage",
+"website": "http://www.talbotvillagetrust.co.uk",
+"last_published": "2026-02-16",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Tedworth Charitable Trust",
+"org_id": "GB-CHC-328524",
+"prefix": "360G-tedworth",
+"website": "www.sfct.org.uk",
+"last_published": "2026-07-31",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The A Team Foundation",
+"org_id": "GB-CHC-1077094",
+"prefix": "360G-AteamFdn",
+"website": "www.ateamfoundation.org",
+"last_published": "2026-09-04",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The AIM Foundation",
+"org_id": "GB-CHC-263294",
+"prefix": "360G-AIMFoundation",
+"website": "https://theaimfoundation.org.uk/",
+"last_published": "2026-09-15",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Archbishops' Council",
+"org_id": "GB-CHC-1074857",
+"prefix": "360G-CCB",
+"website": "https://www.churchofengland.org/resources/churchcare/",
+"last_published": "2025-03-18",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Badur Foundation",
+"org_id": "GB-CHC-1142413",
+"prefix": "360G-BadurFoundation",
+"website": "https://www.badurfoundation.org/",
+"last_published": "2026-10-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Ballinger Charitable Trust",
+"org_id": "GB-CHC-1121739",
+"prefix": "360G-BallingerCT",
+"website": "https://www.ballingercharitabletrust.org.uk/",
+"last_published": "2026-05-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Baring Foundation",
+"org_id": "GB-CHC-258583",
+"prefix": "360G-BaringFdn",
+"website": "www.baringfoundation.org.uk",
+"last_published": "2026-09-02",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Bell Foundation",
+"org_id": "GB-CHC-311585",
+"prefix": "360G-BellFoundation",
+"website": "https://www.bell-foundation.org.uk/",
+"last_published": "2026-02-19",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Berkeley Foundation",
+"org_id": "GB-CHC-1152596",
+"prefix": "360G-BerkeleyFdn",
+"website": "https://www.berkeleyfoundation.org.uk/",
+"last_published": "2026-02-26",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Bishop Radford Trust",
+"org_id": "GB-CHC-1113562",
+"prefix": "360G-BishopRadfordTrust",
+"website": "www.bishopradfordtrust.org.uk",
+"last_published": "2026-07-06",
+"datasets": 8,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Blagrave Trust",
+"org_id": "GB-CHC-1164021",
+"prefix": "360G-blagrave",
+"website": "https://www.blagravetrust.org/",
+"last_published": "2026-08-11",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Bromley Trust",
+"org_id": "GB-CHC-801875",
+"prefix": "360G-BromleyTrust",
+"website": "www.thebromleytrust.org.uk",
+"last_published": "2026-03-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Caerlow Trust",
+"org_id": "GB-CHC-1202408",
+"prefix": "360G-CaerlowTrust",
+"website": "https://thecaerlowtrust.org/",
+"last_published": "2026-08-24",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Childhood Trust",
+"org_id": "GB-CHC-1154032",
+"prefix": "360G-ChildhoodTrust",
+"website": "https://www.childhoodtrust.org.uk/",
+"last_published": "2024-01-19",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Clothworkers Foundation",
+"org_id": "GB-CHC-274100",
+"prefix": "360G-clothworkersfdn",
+"website": "https://www.clothworkersfoundation.org.uk/",
+"last_published": "2025-12-18",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Coalfields Regeneration Trust",
+"org_id": "GB-CHC-1074930",
+"prefix": "360G-Coalfields-Regen",
+"website": "https://www.coalfields-regen.org.uk/",
+"last_published": "2024-03-28",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Colyer-Fergusson Charitable Trust",
+"org_id": "GB-CHC-258958",
+"prefix": "360G-CFCT",
+"website": "www.cfct.org.uk",
+"last_published": "2025-04-15",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "The Coutts Foundation",
+"org_id": "GB-CHC-1150784",
+"prefix": "360G-couttsfoundation",
+"website": "http://www.coutts.com/foundation/",
+"last_published": "2026-10-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The David & Elaine Potter Foundation",
+"org_id": "GB-CHC-1078217",
+"prefix": "360G-DEPF",
+"website": "http://www.potterfoundation.com",
+"last_published": "2025-01-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Dixon Foundation",
+"org_id": "GB-CHC-1189898",
+"prefix": "360G-DixonFdn",
+"website": "https://www.thedixonfoundation.org.uk/",
+"last_published": "2025-03-04",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Dulverton Trust",
+"org_id": "GB-CHC-1146484",
+"prefix": "360G-dulverton",
+"website": "www.dulverton.org",
+"last_published": "2026-11-19",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Eaton Fund",
+"org_id": "GB-CHC-1197452",
+"prefix": "360G-Eaton",
+"website": "http://www.eatonfund.org.uk",
+"last_published": "2025-04-07",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The EQ Foundation",
+"org_id": "GB-CHC-1161209",
+"prefix": "360G-EQFoundation",
+"website": "https://eqinvestors.co.uk/",
+"last_published": "2026-09-14",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Fore",
+"org_id": "GB-CHC-1204122",
+"prefix": "360G-bulldogtrust",
+"website": "https://www.thefore.org/",
+"last_published": "2026-08-18",
+"datasets": 3,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Foyle Foundation",
+"org_id": "GB-CHC-1081766",
+"prefix": "360G-FoyleFdn",
+"website": "www.foylefoundation.org.uk",
+"last_published": "2026-04-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Funding Network",
+"org_id": "GB-CHC-1088315",
+"prefix": "360G-TheFundingNetwork",
+"website": "www.thefundingnetwork.org.uk",
+"last_published": "2026-10-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Gannochy Trust",
+"org_id": "GB-SC-SC003133",
+"prefix": "360G-Gannochy",
+"website": "http://www.gannochytrust.org.uk",
+"last_published": "2026-09-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Goldsmiths' Foundation",
+"org_id": "GB-CHC-1175593",
+"prefix": "360G-GoldsmithsFdn",
+"website": "https://www.thegoldsmiths.co.uk/charity/general-charity/overview/",
+"last_published": "2025-07-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Greggs Foundation",
+"org_id": "GB-CHC-296590",
+"prefix": "360G-GreggsFoundation",
+"website": "www.greggsfoundation.org.uk",
+"last_published": "2026-03-04",
+"datasets": 9,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Grocers' Charity",
+"org_id": "GB-CHC-255230",
+"prefix": "360G-GrocersCharity",
+"website": "www.grocershall.co.uk",
+"last_published": "2025-08-12",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Headley Trust",
+"org_id": "GB-CHC-266620",
+"prefix": "360G-headleytrust",
+"website": "https://www.sfct.org.uk/the-headley-trust/",
+"last_published": "2026-05-07",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The James Tudor Foundation",
+"org_id": "GB-CHC-1105916",
+"prefix": "360G-JamesTudor",
+"website": "http://www.jamestudor.org.uk",
+"last_published": "2025-07-08",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Jerusalem Trust",
+"org_id": "GB-CHC-285696",
+"prefix": "360G-jerusalem",
+"website": "http://www.sfct.org.uk",
+"last_published": "2026-08-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Joseph Rank Trust",
+"org_id": "GB-CHC-1093844",
+"prefix": "360G-JRT",
+"website": "http://www.ranktrust.org/",
+"last_published": "2026-11-09",
+"datasets": 10,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Karlsson Játiva Charitable Foundation",
+"org_id": "GB-CHC-1168787",
+"prefix": "360G-KJCF",
+"website": "https://www.kjcf.org.uk/",
+"last_published": "2026-09-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Leathersellers' Foundation",
+"org_id": "GB-CHC-278072",
+"prefix": "360G-Leathersellers",
+"website": "https://leathersellers.co.uk/charitablefund/",
+"last_published": "2026-11-15",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Linbury Trust",
+"org_id": "GB-CHC-287077",
+"prefix": "360G-linbury",
+"website": "www.linburytrust.org.uk",
+"last_published": "2026-09-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The London Community Foundation",
+"org_id": "GB-CHC-1091263",
+"prefix": "360G-LondonCF",
+"website": "https://londoncf.org.uk/",
+"last_published": "2021-08-11",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Mercers' Company",
+"org_id": "360G-MercersCompany",
+"prefix": "360G-MercersCompany",
+"website": "https://www.mercers.co.uk/about-the-company",
+"last_published": "2026-11-02",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Michael and Betty Little Trust",
+"org_id": "GB-CHC-1107412",
+"prefix": "360G-MBLTrust",
+"website": "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1107412&subid=0",
+"last_published": "2026-11-09",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The MSE Charity",
+"org_id": "GB-CHC-1121320",
+"prefix": "360G-MSECharity",
+"website": "www.msecharity.com",
+"last_published": "2026-08-25",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The National Lottery Community Fund",
+"org_id": "GB-GOR-PB188",
+"prefix": "360G-tnlcomfund",
+"website": "https://www.tnlcommunityfund.org.uk/",
+"last_published": "2026-10-14",
+"datasets": 26,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "The National Lottery Heritage Fund",
+"org_id": "GB-GOR-PC390",
+"prefix": "360G-NLHF",
+"website": "www.hlf.org.uk",
+"last_published": "2026-10-27",
+"datasets": 3,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "The Paul Mellon Centre for Studies in British Art",
+"org_id": "GB-CHC-313838",
+"prefix": "360G-PaulMellonCentre",
+"website": "https://www.paul-mellon-centre.ac.uk/",
+"last_published": "2026-04-27",
+"datasets": 10,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Pilgrim Trust",
+"org_id": "GB-CHC-206602",
+"prefix": "360G-ThePilgrimTrust",
+"website": "https://www.thepilgrimtrust.org.uk/",
+"last_published": "2026-02-10",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "The Postlethwaite Music Foundation",
+"org_id": "GB-CHC-1164294",
+"prefix": "360G-PostlethwaiteMusicFdn",
+"website": "https://thepostlethwaitemusicfoundation.mailerpage.io/",
+"last_published": "2026-10-16",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Rayne Foundation",
+"org_id": "GB-CHC-1179912",
+"prefix": "360G-RayneFdn",
+"website": "https://www.raynefoundation.org.uk/",
+"last_published": "2026-06-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Road Safety Trust",
+"org_id": "GB-CHC-1156300",
+"prefix": "360G-RST",
+"website": "https://roadsafetytrust.org.uk/",
+"last_published": "2026-08-23",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Royal Countryside Fund",
+"org_id": "GB-CHC-1136077",
+"prefix": "360G-RoyalCountrysideFund",
+"website": "https://www.royalcountrysidefund.org.uk/",
+"last_published": "2025-12-11",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Samworth Foundation",
+"org_id": "GB-CHC-1207859",
+"prefix": "360G-SamworthFnd",
+"website": "https://samworthfoundation.org.uk/",
+"last_published": "2026-02-05",
+"datasets": 5,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+},
+{
+"name": "The Seafarers' Charity",
+"org_id": "GB-CHC-226446",
+"prefix": "360G-TheSeafarersCharity",
+"website": "https://www.theseafarerscharity.org/",
+"last_published": "2026-07-30",
+"datasets": 9,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Segelman Trust",
+"org_id": "GB-CHC-1079151",
+"prefix": "360G-SegelmanTrust",
+"website": "https://segelmantrust.org.uk/",
+"last_published": "2025-07-24",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)",
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "The Shears Foundation",
+"org_id": "GB-CHC-1202285",
+"prefix": "360G-ShearsFdn",
+"website": "https://www.shearsfoundation.org/",
+"last_published": "2026-11-05",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Skinners' Company",
+"org_id": "360G-SkinnersCompany",
+"prefix": "360G-SkinnersCompany",
+"website": "https://www.skinners.org.uk/",
+"last_published": "2024-12-17",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Teaching Staff Trust",
+"org_id": "GB-CHC-1168445",
+"prefix": "360G-TST",
+"website": "https://teachingstafftrust.org.uk/",
+"last_published": "2025-09-30",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Triangle Trust 1949 Fund",
+"org_id": "GB-CHC-222860",
+"prefix": "360G-triangletrust",
+"website": "www.triangletrust.org.uk",
+"last_published": "2026-11-12",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Tudor Trust",
+"org_id": "GB-CHC-1105580",
+"prefix": "360G-tudortrust",
+"website": "https://tudortrust.org.uk/",
+"last_published": "2022-07-29",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Veterans' Foundation",
+"org_id": "GB-CHC-1166953",
+"prefix": "360G-Veterans",
+"website": "http://www.veteransfoundation.org.uk",
+"last_published": "2026-07-01",
+"datasets": 3,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Wellcome Trust",
+"org_id": "GB-CHC-210183",
+"prefix": "360G-wellcome",
+"website": "www.wellcome.org",
+"last_published": "2026-09-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The William Syson Foundation",
+"org_id": "GB-SC-SC049635",
+"prefix": "360G-WilliamSysonFdn",
+"website": "https://www.williamsysonfoundation.org.uk/",
+"last_published": "2025-02-14",
+"datasets": 3,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "The Wimbledon Foundation",
+"org_id": "GB-CHC-1156996",
+"prefix": "360G-WimbledonFdn",
+"website": "https://www.wimbledon.com/en_GB/foundation/index.html",
+"last_published": "2026-03-23",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Thirty Percy Foundation",
+"org_id": "GB-CHC-1177514",
+"prefix": "360G-ThirtyPercy",
+"website": "www.thirtypercy.org",
+"last_published": "2022-07-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Three Guineas Trust",
+"org_id": "GB-CHC-1059652",
+"prefix": "360G-threeguineas",
+"website": "http://www.sfct.org.uk/the-three-guineas-trust/",
+"last_published": "2026-09-04",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Thrive LDN",
+"org_id": "360G-ThriveLDN",
+"prefix": "360G-ThriveLDN",
+"website": "https://thriveldn.co.uk/",
+"last_published": "2020-08-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Trafford Metropolitan Borough Council",
+"org_id": "GB-LAE-TRF",
+"prefix": "360G-traffordmbc",
+"website": "http://www.trafford.gov.uk",
+"last_published": "2024-08-02",
+"datasets": 1,
+"licences": [
+"Open Government Licence 3.0 (United Kingdom)"
+]
+},
+{
+"name": "True Colours Trust",
+"org_id": "GB-CHC-1089893",
+"prefix": "360G-truecolours",
+"website": "www.truecolourstrust.org.uk",
+"last_published": "2026-08-24",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Trussell",
+"org_id": "GB-CHC-1110522",
+"prefix": "360G-TrussellTrust",
+"website": "https://www.trussell.org.uk/",
+"last_published": "2025-06-18",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Trust For London",
+"org_id": "GB-CHC-205629",
+"prefix": "360G-trustforlondon",
+"website": "www.trustforlondon.org.uk",
+"last_published": "2026-08-24",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Tuixen Foundation",
+"org_id": "GB-CHC-1081124",
+"prefix": "360G-tuixen",
+"website": "www.tuixen.org.uk",
+"last_published": "2026-02-12",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Two Ridings Community Foundation",
+"org_id": "GB-CHC-1166471",
+"prefix": "360G-TwoRidingsCF",
+"website": "www.tworidingscf.org.uk",
+"last_published": "2025-09-24",
+"datasets": 7,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "UK Community Foundations",
+"org_id": "GB-CHC-1004630",
+"prefix": "360G-UKCF",
+"website": "www.ukcommunityfoundations.org",
+"last_published": "2023-02-01",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Unbound Philanthropy",
+"org_id": "US-EIN-83-0411606",
+"prefix": "360G-UnboundPhilanthropy",
+"website": "https://unboundphilanthropy.org/",
+"last_published": "2025-10-24",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "United St Saviour's Charity",
+"org_id": "GB-CHC-1103731",
+"prefix": "360G-USTSC",
+"website": "https://www.ustsc.org.uk/",
+"last_published": "2026-08-06",
+"datasets": 3,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Virgin Money Foundation",
+"org_id": "GB-CHC-1161290",
+"prefix": "360G-virginmoneyfdn",
+"website": "www.virginmoneyfoundation.org.uk",
+"last_published": "2026-05-19",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Vivensa Foundation",
+"org_id": "GB-CHC-1140372",
+"prefix": "360G-dunhillmedical",
+"website": "https://vivensafoundation.org.uk/",
+"last_published": "2026-01-15",
+"datasets": 2,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Walcot Foundation",
+"org_id": "GB-CHC-312800",
+"prefix": "360G-Walcot",
+"website": "https://www.walcotfoundation.org.uk/",
+"last_published": "2023-03-24",
+"datasets": 6,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Wales Council for Voluntary Action",
+"org_id": "GB-CHC-218093",
+"prefix": "360G-WCVA",
+"website": "https://wcva.cymru/",
+"last_published": "2025-10-10",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Walton Charity",
+"org_id": "GB-CHC-1185959",
+"prefix": "360G-WaltonCharity",
+"website": "https://www.waltoncharity.org.uk/",
+"last_published": "2025-10-14",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Wates Family Enterprise Trust",
+"org_id": "GB-CHC-1126007",
+"prefix": "360G-WFET",
+"website": "https://www.wfet.org.uk/",
+"last_published": "2026-04-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Wates Foundation",
+"org_id": "GB-CHC-247941",
+"prefix": "360G-WatesFdn",
+"website": "https://www.watesfoundation.org.uk/",
+"last_published": "2024-06-20",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "WCIT Charity",
+"org_id": "GB-CHC-1113488",
+"prefix": "360G-WCIT",
+"website": "www.wcit.org.uk",
+"last_published": "2026-01-23",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Westminster Foundation",
+"org_id": "GB-CHC-267618",
+"prefix": "360G-WestminsterFdn",
+"website": "https://westminsterfoundation.org.uk/",
+"last_published": "2026-07-08",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "William Grant Foundation",
+"org_id": "360G-WilliamGrantFdn",
+"prefix": "360G-WilliamGrantFdn",
+"website": "http://www.williamgrantfoundation.org.uk/",
+"last_published": "2026-10-15",
+"datasets": 14,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Wiltshire and Swindon Community Foundation",
+"org_id": "GB-CHC-1123126",
+"prefix": "360G-WCF",
+"website": "www.wiltshirecf.org.uk",
+"last_published": "2026-02-04",
+"datasets": 12,
+"licences": [
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "Wolfson Foundation",
+"org_id": "GB-CHC-1156077",
+"prefix": "360G-wolfson",
+"website": "www.wolfson.org.uk",
+"last_published": "2026-08-27",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Women's Fund for Scotland",
+"org_id": "GB-SC-SC049217",
+"prefix": "360G-WomensFundScotland",
+"website": "https://www.womensfundscotland.org/",
+"last_published": "2026-09-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Woodsmith Foundation",
+"org_id": "GB-CHC-1163127",
+"prefix": "360G-Woodsmith",
+"website": "http://www.woodsmithfoundation.org.uk/",
+"last_published": "2026-06-18",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution Share-Alike 4.0"
+]
+},
+{
+"name": "Woodward Charitable Trust",
+"org_id": "GB-CHC-299963",
+"prefix": "360G-Woodward",
+"website": "www.woodwardcharitabletrust.org.uk",
+"last_published": "2025-08-22",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Yorkshire Building Society",
+"org_id": "GB-CHC-1069082",
+"prefix": "360G-YBSCF",
+"website": "https://www.ybs.co.uk/your-society/charitable-foundation",
+"last_published": "2026-04-29",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Young K&C",
+"org_id": "GB-CHC-1185156",
+"prefix": "360G-YoungKC",
+"website": "https://youngkandc.org.uk/about",
+"last_published": "2026-05-20",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Youth Music",
+"org_id": "GB-CHC-1075032",
+"prefix": "360G-YouthMusic",
+"website": "https://youthmusic.org.uk/",
+"last_published": "2026-01-14",
+"datasets": 1,
+"licences": [
+"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+]
+},
+{
+"name": "Zing",
+"org_id": "GB-CHC-1133342",
+"prefix": "360G-zing",
+"website": "www.zing.org.uk",
+"last_published": "2026-07-21",
+"datasets": 1,
+"licences": [
+"Creative Commons Public Domain Dedication 1.0 Universal"
+]
+}
+]
+}
