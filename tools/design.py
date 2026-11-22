@@ -128,7 +128,7 @@ def tokenise(css):
     return css
 
 
-SHELL_NAV = [("index.html#home", "Home", "home"), ("index.html#register", "Register", "register"), ("index.html#tree", "Who answers", "tree"), ("nations.html", "Nations", "nations"), ("orgchart.html", "Org charts", "orgchart"), ("funding.html", "Funding", "funding"),
+SHELL_NAV = [("index.html#home", "Home", "home"), ("index.html#register", "Register", "register"), ("index.html#tree", "Who answers", "tree"), ("nations.html", "Nations", "nations"), ("world.html", "UK and the world", "world"), ("orgchart.html", "Org charts", "orgchart"), ("funding.html", "Funding", "funding"),
              ("index.html#changes", "Changes", "changes"), ("navigator.html", "Documentation", "docs")]  # the design system page is linked from every footer
 LOGO = '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="var(--og-brand)"/><circle cx="20" cy="20" r="11.5" fill="none" stroke="var(--og-surface)" stroke-width="2"/><circle cx="20" cy="20" r="5" fill="var(--og-surface)"/><path d="M20 2v7M20 31v7M2 20h7M31 20h7" stroke="var(--og-surface)" stroke-width="2"/></svg>'
 # The global navigation must never wrap or exceed the screen: when its links would not fit on one line, it folds into
@@ -269,12 +269,12 @@ def design_page():
     return wrap_page(html, "design").replace('<div id="og-main" tabindex="-1">', f'<div id="og-main" tabindex="-1">{body}', 1)
 
 
-PAGES = ["index.html", "nations.html", "orgchart.html", "funding.html", "navigator.html", "design-system.html"]  # every published page; a new page must be added here
+PAGES = ["index.html", "nations.html", "world.html", "orgchart.html", "funding.html", "navigator.html", "design-system.html"]  # every published page; a new page must be added here
 
 # Page-weight budget, in gzip bytes (what GitHub Pages sends). Measured 22 Nov 2026: index 974,578 (ready in 1.8 s on a
 # 4x-throttled CPU, about 0.8 s more to download on 4G), nations 263,437, orgchart 160,032, funding 57,625.
 # The budget leaves about 15% headroom; going over it means lazy-loading per-body data (ACC.ins is the largest part).
-BUDGET = {"index.html": 1_100_000, "nations.html": 320_000, "orgchart.html": 200_000, "funding.html": 80_000}
+BUDGET = {"index.html": 1_100_000, "nations.html": 320_000, "world.html": 220_000, "orgchart.html": 200_000, "funding.html": 80_000}
 BUDGET_DEFAULT = 150_000
 
 
@@ -295,7 +295,8 @@ def audit():
     pub = sorted(f.name for f in (ROOT / "docs").glob("*.html"))
     p += [f"{n}: published but not audited (add it to PAGES)" for n in pub if n not in PAGES]
     if og != build_css(): p.append("og.css is stale: rebuild from the tokens")
-    if (ROOT / "docs/design-system.html").read_text() != design_page(): p.append("design-system.html is stale: rebuild from the tokens")
+    ds = re.sub(r'<script type="application/ld\+json" id="og-dataset">.*?</script><link rel="alternate"[^>]*>', "", (ROOT / "docs/design-system.html").read_text(), flags=re.S)  # tools/standards.py adds that block to every page
+    if ds != design_page(): p.append("design-system.html is stale: rebuild from the tokens")
     for _, f, *_ in FONTS:
         if not (ASSETS / "fonts" / f).exists(): p.append(f"font file missing: {f}")
     return p + contrast_problems()

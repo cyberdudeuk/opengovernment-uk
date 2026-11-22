@@ -19,8 +19,8 @@ function hmBullseye(){
     HM_NATS.map(([c, l]) => ({label: l, short: NS[c], n: hmNatCount(c), go: {nat: c}, href: "#register", what: `Open bodies in ${c === "UK" ? "the UK as a whole, or with no nation stated" : l}`, more: [["Nation by nation", "nations.html"]]})),
     HM_BT.map(k => ({label: CLL("btype", k), short: SHORT[k], n: hmBtCount(k), go: {bt: k}, href: "#register", what: CLL("btype", k), more: [["Org charts by type", "orgchart.html#view=types"]]})),
     [["Who answers", "#tree", `Accountability traced for ${fmt(Object.keys(ACC.ch || {}).length)} bodies`],
-     ["Treaties", "nations.html#rel", `${fmt(N.treaties || 0)} treaties, mapped by partner`],
-     ["Alliances", "nations.html#intl", `${fmt(N.memberships || 0)} memberships of international bodies`],
+     ["Treaties", "world.html#tab=t", `${fmt(N.treaties || 0)} treaties, mapped by partner`],
+     ["Alliances", "world.html#tab=i", `${fmt(N.memberships || 0)} memberships of international bodies`],
      ["Funding", "funding.html", `${fmt(N.grants || 0)} open grants and ${fmt(N.schemes || 0)} schemes`],
      ["Org charts", "orgchart.html", "Every body in context, as a chart you can explore"],
      ["Changes", "#changes", `${fmt(D.ev.length)} closures, mergers and renames`]].map(([l, h, w]) => ({label: l, short: l, href: h, what: w, more: []}))];
@@ -55,7 +55,7 @@ function hmBullseye(){
 
 function hmSearch(){
   const box = $("#hmQ"), out = $("#hmQr"); if (!box) return;
-  const PLACES = [["Who answers", "#tree"], ["Register", "#register"], ["Nation by nation", "nations.html"], ["Treaties and the world map", "nations.html#rel"], ["International bodies", "nations.html#intl"], ["Org charts", "orgchart.html"], ["Funding, grants and schemes", "funding.html"], ["Changes to the state", "#changes"], ["Downloads and the data", "#data"], ["Ask a question", "#ask"], ["How matching works", "#reconcile"], ["Quality and evidence", "#quality"], ["Glossary and help", "#help"]];
+  const PLACES = [["Who answers", "#tree"], ["Register", "#register"], ["Nation by nation", "nations.html"], ["The UK and the world", "world.html"], ["Treaties and the world map", "world.html#tab=t"], ["International bodies", "world.html#tab=i"], ["Org charts", "orgchart.html"], ["Funding, grants and schemes", "funding.html"], ["Changes to the state", "#changes"], ["Downloads and the data", "#data"], ["Ask a question", "#ask"], ["How matching works", "#reconcile"], ["Quality and evidence", "#quality"], ["Glossary and help", "#help"]];
   let sel = -1;
   const draw = () => { const q = box.value.trim(); sel = -1; if (!q) { out.hidden = true; box.setAttribute("aria-expanded", "false"); return; }
     const pl = PLACES.filter(p => p[0].toLowerCase().includes(q.toLowerCase())).slice(0, 3);
@@ -93,7 +93,7 @@ function hmCarousel(){
   const S = [
     ["crown", "Who answers", `${fmt(Object.keys(ACC.ch || {}).length)} bodies traced to whoever answers for them`, "Follow any body up its chain to Parliament or an assembly, with the law or record behind each step, the money that funds it and who owns it.", "#tree", "Trace a body"],
     ["atlas", "Nation by nation", `${fmt(hmNatCount("SC"))} in Scotland, ${fmt(hmNatCount("WA"))} in Wales, ${fmt(hmNatCount("NI"))} in Northern Ireland`, "Each nation's legislature, executive and judiciary, the Crown Dependencies and Overseas Territories, and the rings that connect them.", "nations.html", "Open the nations"],
-    ["globe", "The UK and the world", `${fmt(N.treaties || 0)} treaties with ${fmt(N.partners || 0)} countries`, "A world map of treaty partners, the alliances and international bodies the UK belongs to, and which UK body speaks for it in each.", "nations.html#rel", "See the map"],
+    ["globe", "The UK and the world", `${fmt(N.treaties || 0)} treaties with ${fmt(N.partners || 0)} countries`, "A world map of treaty partners, the alliances and international bodies the UK belongs to, and which UK body speaks for it in each.", "world.html", "Open the section"],
     ["tree", "Org charts", `${fmt(OPEN.length)} open bodies in context`, "Who sits under whom, by accountability, nation, type or the world stage. Zoom, pan and open any body from the chart.", "orgchart.html", "Explore the charts"],
     ["coin", "Funding", `${fmt(N.grants || 0)} grants and ${fmt(N.schemes || 0)} schemes`, "Grants, finance schemes and innovation services from public funders, filtered by sector (fintech, medtech, govtech, regtech and more) and by who can apply.", "funding.html", "Find funding"],
     ["scale", "How matching works", `${fmt(N.sa_decided || 0)} of ${fmt(N.sa_total || 0)} near-name pairs decided`, "A wrong join is worse than a missing one. Every join says how it was made, and every decision keeps its evidence.", "#reconcile", "See the evidence"],
@@ -129,7 +129,7 @@ const HM_WAYS = [
   ["Find out who a body answers to", [["Search for the body", "#register"], ["Open its profile", "#register"], ["Follow its chain", "#tree"]]],
   ["Find funding for my organisation", [["Pick your sector", "funding.html"], ["Check who can apply", "funding.html#tab=grants"], ["Open the funder's page", "funding.html#tab=funders"]]],
   ["See how a nation is governed", [["Choose a nation", "nations.html"], ["Read its branches", "nations.html"], ["See its bodies", "#explore"]]],
-  ["See the UK's place in the world", [["Open the treaty map", "nations.html#rel"], ["Pick a country", "nations.html#rel"], ["See the alliances", "nations.html#intl"]]],
+  ["See the UK's place in the world", [["Open the treaty map", "world.html#tab=t"], ["Pick a country", "world.html#tab=c"], ["See the alliances", "world.html#tab=i"]]],
   ["Use the data in my own work", [["Download a file", "#data"], ["Query it in your browser", "#data"], ["Check the evidence", "#quality"]]],
   ["Check a fact or report a mistake", [["Find the body", "#register"], ["Read where each fact came from", "#quality"], ["Tell us", "#help"]]],
   ["Follow changes to the state", [["See closures and mergers", "#changes"], ["Read the latest", "jump:s-ticker"], ["Track a body's lineage", "#register"]]]];
@@ -144,7 +144,7 @@ function hmWayfinder(){
 
 function hmSignposts(){
   const s = $("#hmSign"); if (!s) return;
-  const P = [["list", "Register", "Any body by name, code or identifier", "#register"], ["crown", "Who answers", "Chains, money and owners", "#tree"], ["atlas", "Nations", "Branches, territories and rings", "nations.html"], ["globe", "World", "Treaties, alliances and partners", "nations.html#rel"], ["tree", "Org charts", "Every body in context", "orgchart.html"], ["coin", "Funding", "Grants, schemes and services", "funding.html"], ["data", "Data", "Downloads and the SQLite file", "#data"], ["ask", "Ask", "Questions answered from the register", "#ask"]];
+  const P = [["list", "Register", "Any body by name, code or identifier", "#register"], ["crown", "Who answers", "Chains, money and owners", "#tree"], ["atlas", "Nations", "Branches, territories and rings", "nations.html"], ["globe", "World", "Treaties, alliances and partners", "world.html#tab=t"], ["tree", "Org charts", "Every body in context", "orgchart.html"], ["coin", "Funding", "Grants, schemes and services", "funding.html"], ["data", "Data", "Downloads and the SQLite file", "#data"], ["ask", "Ask", "Questions answered from the register", "#ask"]];
   s.innerHTML = P.map(p => `<a class="sign" href="${esc(p[3])}">${icon(p[0])}<b>${esc(p[1])}</b><span>${esc(p[2])}</span><i aria-hidden="true">→</i></a>`).join("");
 }
 

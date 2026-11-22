@@ -1,0 +1,154 @@
+{
+"read": "2026-11-22",
+"holder": "wikidata:Q145",
+"rows": [
+{
+"name": "International Bank for Reconstruction and Development",
+"short": "IBRD",
+"lei": "ZTMSNXROF84AHWJNKQ93",
+"wikidata": "Q191384",
+"members": 189,
+"as_of": "30-Jun-2026",
+"votes": 109468,
+"share_of_votes": 3.75,
+"share_of_subscriptions": 3.94,
+"source": {
+"title": "World Bank Group Finances One, IBRD subscriptions and voting power of member countries (DS00051)",
+"url": "https://financesone.worldbank.org/d/DS00051",
+"api": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?datasetId=DS00051&resourceId=RS00053&top=1000&type=json",
+"licence": "CC BY 4.0"
+},
+"wikidata_label": "International Bank for Reconstruction and Development",
+"lei_name": "International Bank for Reconstruction and Development",
+"lei_city": "Washington",
+"uk_lead": [
+"government-organisation:D1315",
+"government-organisation:D15"
+]
+},
+{
+"name": "International Development Association",
+"short": "IDA",
+"lei": "P41R60HC414IWQA1XW02",
+"wikidata": "Q827525",
+"members": 175,
+"as_of": "30-Jun-2026",
+"votes": 2302960,
+"share_of_votes": 6.92,
+"share_of_subscriptions": null,
+"source": {
+"title": "World Bank Group Finances One, IDA subscriptions and voting power of member countries (DS00049)",
+"url": "https://financesone.worldbank.org/d/DS00049",
+"api": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?datasetId=DS00049&resourceId=RS00051&top=1000&type=json",
+"licence": "CC BY 4.0"
+},
+"wikidata_label": "International Development Association",
+"lei_name": "International Development Association",
+"lei_city": "Washington",
+"uk_lead": [
+"government-organisation:D1315",
+"government-organisation:D15"
+]
+},
+{
+"name": "International Finance Corporation",
+"short": "IFC",
+"lei": "QKL54NQY28TCDAI75F60",
+"wikidata": "Q656801",
+"members": 186,
+"as_of": "30-Jun-2026",
+"votes": 1192114,
+"share_of_votes": 4.63,
+"share_of_subscriptions": 4.88,
+"source": {
+"title": "World Bank Group Finances One, IFC subscriptions and voting power of member countries (DS00050)",
+"url": "https://financesone.worldbank.org/d/DS00050",
+"api": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?datasetId=DS00050&resourceId=RS00052&top=1000&type=json",
+"licence": "CC BY 4.0"
+},
+"wikidata_label": "International Finance Corporation",
+"lei_name": "INTERNATIONAL FINANCE CORPORATION",
+"lei_city": "WASHINGTON",
+"uk_lead": [
+"government-organisation:D1315",
+"government-organisation:D15"
+]
+},
+{
+"name": "Multilateral Investment Guarantee Agency",
+"short": "MIGA",
+"lei": "549300ZG5PH6MA164968",
+"wikidata": "Q1043527",
+"members": 182,
+"as_of": "30-Jun-2026",
+"votes": 8807,
+"share_of_votes": 3.98,
+"share_of_subscriptions": 4.83,
+"source": {
+"title": "World Bank Group Finances One, MIGA subscriptions and voting power of member countries (DS00045)",
+"url": "https://financesone.worldbank.org/d/DS00045",
+"api": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?datasetId=DS00045&resourceId=RS00044&top=1000&type=json",
+"licence": "CC BY 4.0"
+},
+"wikidata_label": "Multilateral Investment Guarantee Agency",
+"lei_name": "Multilateral Investment Guarantee Agency",
+"lei_city": "Washington",
+"uk_lead": [
+"government-organisation:D1315",
+"government-organisation:D15"
+]
+},
+{
+"name": "Asian Infrastructure Investment Bank",
+"short": "AIIB",
+"lei": "25490065OSV2524LCR32",
+"wikidata": "Q18109843",
+"members": 109,
+"as_of": "October 16, 2026",
+"member_since": "Dec 25, 2015",
+"votes": 32434,
+"share_of_votes": 2.8534,
+"share_of_subscriptions": 3.1288,
+"source": {
+"title": "Asian Infrastructure Investment Bank, Members of the Bank",
+"url": "https://www.aiib.org/en/about-aiib/governance/members-of-bank/index.html",
+"api": "https://www.aiib.org/en/about-aiib/governance/members-of-bank/.content/voting-power.js",
+"licence": "published by the Bank"
+},
+"wikidata_label": "Asian Infrastructure Investment Bank",
+"lei_name": "Asian Infrastructure Investment Bank",
+"lei_city": "北京",
+"uk_lead": [
+"government-organisation:D15"
+]
+}
+],
+"not_read": [
+{
+"name": "International Monetary Fund",
+"why": "The IMF's quotas and voting power page refuses automated reads (access denied); it is not worked around.",
+"url": "https://www.imf.org/en/About/executive-board/members-quotas"
+},
+{
+"name": "European Bank for Reconstruction and Development",
+"why": "No machine-readable shareholding table found on its site.",
+"url": "https://www.ebrd.com/shareholders-and-board-of-governors.html"
+},
+{
+"name": "Asian Development Bank",
+"why": "Its UK member fact sheet could not be found at a stable address.",
+"url": "https://www.adb.org/"
+},
+{
+"name": "African Development Bank",
+"why": "Its shareholders page refuses automated reads (HTTP 403).",
+"url": "https://www.afdb.org/en/about/shareholders"
+},
+{
+"name": "Caribbean Development Bank",
+"why": "Its members page could not be found (HTTP 404).",
+"url": "https://www.caribank.org/"
+}
+],
+"lei_note": "GLEIF has two records named International Finance Corporation; the one in Washington DC (QKL54NQY28TCDAI75F60) is the World Bank Group institution, the other (in Florida) is an unrelated company."
+}

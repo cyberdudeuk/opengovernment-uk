@@ -1,0 +1,717 @@
+{
+ "@context": {
+  "org": "http://www.w3.org/ns/org#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "dct": "http://purl.org/dc/terms/",
+  "dcat": "http://www.w3.org/ns/dcat#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "schema": "https://schema.org/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "time": "http://www.w3.org/2006/time#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "rov": "http://www.w3.org/ns/regorg#",
+  "og": "https://cyberdudeuk.github.io/opengovernment-uk/id/"
+ },
+ "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/catalogue.jsonld",
+ "@type": "dcat:Catalog",
+ "dct:title": "OpenGovernment UK: open data catalogue",
+ "dct:description": "Every dataset this portal publishes, in open standards, for other portals to harvest.",
+ "dct:publisher": {
+  "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+  "@type": [
+   "foaf:Agent",
+   "schema:Organization"
+  ],
+  "foaf:name": "OpenGovernment UK (pilot)",
+  "schema:name": "OpenGovernment UK (pilot)"
+ },
+ "dct:license": {
+  "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+ },
+ "dct:modified": "2026-11-22",
+ "dcat:dataset": [
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/data-register-jsonld",
+   "@type": "dcat:Dataset",
+   "dct:title": "Register of the UK state (linked data)",
+   "dct:description": "Every public body, its parent, identifiers and classification.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/register.jsonld"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/register.jsonld"
+    },
+    "dcat:mediaType": "application/ld+json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Register of the UK state (linked data)",
+    "dct:conformsTo": {
+     "@id": "http://www.w3.org/ns/org#"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/data-register-csv",
+   "@type": "dcat:Dataset",
+   "dct:title": "Register of the UK state (table)",
+   "dct:description": "One row per record, with every register code.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/register.csv"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/register.csv"
+    },
+    "dcat:mediaType": "text/csv",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Register of the UK state (table)",
+    "dct:conformsTo": {
+     "@id": "http://www.w3.org/ns/csvw"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/data-international-jsonld",
+   "@type": "dcat:Dataset",
+   "dct:title": "The UK and the world",
+   "dct:description": "Memberships of international bodies, the UK body that leads, treaties, agreements, trade agreements in effect and tax treaties.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/international.jsonld"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/international.jsonld"
+    },
+    "dcat:mediaType": "application/ld+json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "The UK and the world",
+    "dct:conformsTo": {
+     "@id": "http://www.w3.org/ns/org#"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/data-taxonomies-skos-jsonld",
+   "@type": "dcat:Dataset",
+   "dct:title": "Taxonomies",
+   "dct:description": "Types, purposes (UN COFOG), activities, reach, nations (ISO 3166-2:GB), kinds of treaty.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/taxonomies.skos.jsonld"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/taxonomies.skos.jsonld"
+    },
+    "dcat:mediaType": "application/ld+json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Taxonomies",
+    "dct:conformsTo": {
+     "@id": "http://www.w3.org/2004/02/skos/core#"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/bods-0-4-json",
+   "@type": "dcat:Dataset",
+   "dct:title": "Ownership and control (BODS 0.4)",
+   "dct:description": "Who owns or controls each public body, and the UK's shareholdings in international financial institutions.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/bods-0.4.json"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/bods-0.4.json"
+    },
+    "dcat:mediaType": "application/json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Ownership and control (BODS 0.4)",
+    "dct:conformsTo": {
+     "@id": "https://standard.openownership.org/en/0.4.0/"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/data-provenance-jsonld",
+   "@type": "dcat:Dataset",
+   "dct:title": "Provenance of this build",
+   "dct:description": "Sources used, with fingerprints, and the files made.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/provenance.jsonld"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/provenance.jsonld"
+    },
+    "dcat:mediaType": "application/ld+json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Provenance of this build",
+    "dct:conformsTo": {
+     "@id": "http://www.w3.org/ns/prov#"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/datapackage-json",
+   "@type": "dcat:Dataset",
+   "dct:title": "Data package",
+   "dct:description": "Every CSV with its fields and licence.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/datapackage.json"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/datapackage.json"
+    },
+    "dcat:mediaType": "application/json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Data package",
+    "dct:conformsTo": {
+     "@id": "https://specs.frictionlessdata.io/data-package/"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/opengovernment-uk-db",
+   "@type": "dcat:Dataset",
+   "dct:title": "Everything in one SQLite file",
+   "dct:description": "All tables, ready for Datasette or any SQLite tool.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/opengovernment-uk.db"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/opengovernment-uk.db"
+    },
+    "dcat:mediaType": "application/vnd.sqlite3",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Everything in one SQLite file"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/accountability-json",
+   "@type": "dcat:Dataset",
+   "dct:title": "Who answers for each body",
+   "dct:description": "Accountability chains, money and owners.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/accountability.json"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/accountability.json"
+    },
+    "dcat:mediaType": "application/json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Who answers for each body"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/nations-json",
+   "@type": "dcat:Dataset",
+   "dct:title": "Nation by nation",
+   "dct:description": "Each nation's legislature, executive and judiciary.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/nations.json"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/nations.json"
+    },
+    "dcat:mediaType": "application/json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Nation by nation"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/edges-csv",
+   "@type": "dcat:Dataset",
+   "dct:title": "Links between bodies",
+   "dct:description": "Each parent-child link with its source.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/edges.csv"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/edges.csv"
+    },
+    "dcat:mediaType": "text/csv",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Links between bodies"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/concordance-csv",
+   "@type": "dcat:Dataset",
+   "dct:title": "Concordance of codes",
+   "dct:description": "Every register's code for each body.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/concordance.csv"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/concordance.csv"
+    },
+    "dcat:mediaType": "text/csv",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Concordance of codes"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/accountable-owner-csv",
+   "@type": "dcat:Dataset",
+   "dct:title": "Accountable owner",
+   "dct:description": "Who each body answers to in the end.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/accountable-owner.csv"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/accountable-owner.csv"
+    },
+    "dcat:mediaType": "text/csv",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Accountable owner"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/ppp-csv",
+   "@type": "dcat:Dataset",
+   "dct:title": "Public-private partnerships",
+   "dct:description": "PFI and PF2 contracts and who pays.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/ppp.csv"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/ppp.csv"
+    },
+    "dcat:mediaType": "text/csv",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Public-private partnerships"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  }
+ ],
+ "foaf:homepage": {
+  "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+ }
+}

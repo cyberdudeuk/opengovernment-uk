@@ -1,0 +1,120 @@
+{
+ "@context": "http://www.w3.org/ns/csvw",
+ "url": "register.csv",
+ "dc:title": "Register of the UK state",
+ "dc:license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "tableSchema": {
+  "primaryKey": "id",
+  "aboutUrl": "https://cyberdudeuk.github.io/opengovernment-uk/id/{id}",
+  "columns": [
+   {
+    "name": "id",
+    "titles": "id",
+    "datatype": "string",
+    "required": true
+   },
+   {
+    "name": "name",
+    "titles": "name",
+    "datatype": "string",
+    "required": true
+   },
+   {
+    "name": "family",
+    "titles": "family",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "kind",
+    "titles": "kind",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "status",
+    "titles": "status",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "nations",
+    "titles": "nations",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "parents",
+    "titles": "parents",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "start",
+    "titles": "start",
+    "datatype": "date",
+    "required": false
+   },
+   {
+    "name": "end",
+    "titles": "end",
+    "datatype": "date",
+    "required": false
+   },
+   {
+    "name": "website",
+    "titles": "website",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "btype",
+    "titles": "btype",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "purpose",
+    "titles": "purpose",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "activity",
+    "titles": "activity",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "reach",
+    "titles": "reach",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "wikidata",
+    "titles": "wikidata",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "lei",
+    "titles": "lei",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "companies_house",
+    "titles": "companies_house",
+    "datatype": "string",
+    "required": false
+   },
+   {
+    "name": "org_id",
+    "titles": "org_id",
+    "datatype": "string",
+    "required": false
+   }
+  ]
+ }
+}

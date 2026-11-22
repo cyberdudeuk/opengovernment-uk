@@ -97,23 +97,6 @@ WEB = json.loads(_WP.read_text()) if _WP.exists() else {}
 JTIER = "The jurisdictions themselves"
 
 
-def rel_payload():
-    """The UK's memberships, treaties and agreements (tools/relations.py), with UK body names resolved, for the nations page."""
-    p = ROOT / "data/relations.json"
-    if not p.exists(): return None
-    o = json.loads(p.read_text())
-    D = json.loads(re.search(r'<script[^>]*id="data"[^>]*>(.*?)</script>', (ROOT / "sources/opengovernment-uk-0.2.2.html").read_text(), re.S).group(1))
-    nm = {r[0]: r[1] for r in D["r"]}
-    uk = lambda ids: [[i, nm.get(i, i)] for i in ids]
-    cp = ROOT / "data/cooperation.json"; coop = json.loads(cp.read_text()) if cp.exists() else None
-    return {"read": o["read"], "domains": o["domains"],
-            "m": [[m["who"], m["name"], m["status"], m["start"][:4], (m["end"] or "")[:4], m["domain"], uk(m["lead"]), m["site"], m.get("official") or (f"https://www.wikidata.org/wiki/{m['qid']}" if m["qid"] else "")] for m in o["memberships"]],
-            "t": [[t["title"], t["url"], t["date"], t["partner"], t["kind"], t["series"], t["domain"], uk(t["uk"]), k] for t, k in zip(o["treaties"], coop["treaty_kind"] if coop else [""] * len(o["treaties"]), strict=True)],
-            "a": [[a["title"], a["url"], a["date"], a["form"], a["level"], a["domain"], uk(a["uk"])] for a in o["agreements"]],
-            "geo": json.loads((ROOT / "data/worldmap.json").read_text()) if (ROOT / "data/worldmap.json").exists() else None,
-            "coop": {k: v for k, v in coop.items() if k != "treaty_kind"} if coop else None}
-
-
 def add_territories(out):
     """The Crown Dependencies' and Overseas Territories' own bodies (tools/territories.py), grouped by jurisdiction within each branch."""
     tp = ROOT / "data/territories.json"
@@ -239,8 +222,7 @@ if __name__ == "__main__":
     unl = sorted(({"id": r[0], "name": r[1], "type": r[3].replace("\n", " ")} for r in D["r"] if r[4] and r[0] not in placed), key=lambda x: x["name"])
     meta = json.loads((ROOT / "data/classification.json").read_text())["meta"] if (ROOT / "data/classification.json").exists() else {}
     payload = {"meta": meta, "nations": out, "conflicts": [c for c in evd["conflicts"] if c.get("status") == "contested"], "resolved": sum(1 for c in evd["conflicts"] if c.get("status") == "resolved"), "unplaced": unl,
-               "rel": rel_payload(),
-               "intl": json.loads((ROOT / "data/international.json").read_text()) if (ROOT / "data/international.json").exists() else None}
+               "rel": None, "intl": None}  # the UK and the world now has its own page (tools/world.py)
     sys.path.insert(0, str(ROOT / "tools")); import design  # shared design system and page shell (OG-D42)
     (ROOT / "docs/nations.html").write_text(design.wrap_page(PAGE, "nations").replace("__DATA__", json.dumps(payload).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
     for k, n in out.items(): print(f"{k:3} {n['name']:36} {n['counts']}")

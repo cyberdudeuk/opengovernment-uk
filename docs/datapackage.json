@@ -1,0 +1,403 @@
+{
+ "name": "opengovernment-uk",
+ "title": "OpenGovernment UK",
+ "licenses": [
+  {
+   "name": "OGL-UK-3.0",
+   "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "title": "Open Government Licence v3.0"
+  }
+ ],
+ "homepage": "https://cyberdudeuk.github.io/opengovernment-uk/",
+ "resources": [
+  {
+   "name": "register",
+   "path": "data/register.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "licenses": [
+    {
+     "name": "OGL-UK-3.0",
+     "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+   ],
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "name",
+      "type": "string"
+     },
+     {
+      "name": "family",
+      "type": "string"
+     },
+     {
+      "name": "kind",
+      "type": "string"
+     },
+     {
+      "name": "status",
+      "type": "string"
+     },
+     {
+      "name": "nations",
+      "type": "string"
+     },
+     {
+      "name": "parents",
+      "type": "string"
+     },
+     {
+      "name": "start",
+      "type": "date"
+     },
+     {
+      "name": "end",
+      "type": "date"
+     },
+     {
+      "name": "website",
+      "type": "string"
+     },
+     {
+      "name": "btype",
+      "type": "string"
+     },
+     {
+      "name": "purpose",
+      "type": "string"
+     },
+     {
+      "name": "activity",
+      "type": "string"
+     },
+     {
+      "name": "reach",
+      "type": "string"
+     },
+     {
+      "name": "wikidata",
+      "type": "string"
+     },
+     {
+      "name": "lei",
+      "type": "string"
+     },
+     {
+      "name": "companies_house",
+      "type": "string"
+     },
+     {
+      "name": "org_id",
+      "type": "string"
+     }
+    ],
+    "primaryKey": "id"
+   }
+  },
+  {
+   "name": "edges",
+   "path": "edges.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "licenses": [
+    {
+     "name": "OGL-UK-3.0",
+     "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+   ],
+   "schema": {
+    "fields": [
+     {
+      "name": "child_id",
+      "type": "string"
+     },
+     {
+      "name": "child_name",
+      "type": "string"
+     },
+     {
+      "name": "parent_id",
+      "type": "string"
+     },
+     {
+      "name": "parent_name",
+      "type": "string"
+     },
+     {
+      "name": "parent_as_written",
+      "type": "string"
+     },
+     {
+      "name": "relation",
+      "type": "string"
+     },
+     {
+      "name": "source",
+      "type": "string"
+     },
+     {
+      "name": "source_ref",
+      "type": "string"
+     },
+     {
+      "name": "match_method",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "concordance",
+   "path": "concordance.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "licenses": [
+    {
+     "name": "OGL-UK-3.0",
+     "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+   ],
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "name",
+      "type": "string"
+     },
+     {
+      "name": "family",
+      "type": "string"
+     },
+     {
+      "name": "status",
+      "type": "string"
+     },
+     {
+      "name": "govuk",
+      "type": "string"
+     },
+     {
+      "name": "govuk_slug",
+      "type": "string"
+     },
+     {
+      "name": "ons_name",
+      "type": "string"
+     },
+     {
+      "name": "gss",
+      "type": "string"
+     },
+     {
+      "name": "local_authority",
+      "type": "string"
+     },
+     {
+      "name": "nhs_ods",
+      "type": "string"
+     },
+     {
+      "name": "companies_house",
+      "type": "string"
+     },
+     {
+      "name": "lei",
+      "type": "string"
+     },
+     {
+      "name": "charity_ew",
+      "type": "string"
+     },
+     {
+      "name": "charity_sc",
+      "type": "string"
+     },
+     {
+      "name": "charity_ni",
+      "type": "string"
+     },
+     {
+      "name": "wikidata",
+      "type": "string"
+     },
+     {
+      "name": "dgu",
+      "type": "string"
+     },
+     {
+      "name": "github",
+      "type": "string"
+     },
+     {
+      "name": "iati_gb_gov",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "accountable-owner",
+   "path": "accountable-owner.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "licenses": [
+    {
+     "name": "OGL-UK-3.0",
+     "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+   ],
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "name",
+      "type": "string"
+     },
+     {
+      "name": "family",
+      "type": "string"
+     },
+     {
+      "name": "type",
+      "type": "string"
+     },
+     {
+      "name": "accountable_owner_id",
+      "type": "string"
+     },
+     {
+      "name": "accountable_owner",
+      "type": "string"
+     },
+     {
+      "name": "answerable_to",
+      "type": "string"
+     },
+     {
+      "name": "chain",
+      "type": "string"
+     },
+     {
+      "name": "sources_agreeing",
+      "type": "string"
+     },
+     {
+      "name": "parents_asserted",
+      "type": "string"
+     },
+     {
+      "name": "wga_2024_25",
+      "type": "string"
+     },
+     {
+      "name": "government_funded_income_gbp",
+      "type": "string"
+     },
+     {
+      "name": "total_managed_expenditure_gbp",
+      "type": "string"
+     },
+     {
+      "name": "trading_fund",
+      "type": "string"
+     },
+     {
+      "name": "ukgi_shareholding",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "ppp",
+   "path": "ppp.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "licenses": [
+    {
+     "name": "OGL-UK-3.0",
+     "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+   ],
+   "schema": {
+    "fields": [
+     {
+      "name": "hmt_project_id",
+      "type": "string"
+     },
+     {
+      "name": "project",
+      "type": "string"
+     },
+     {
+      "name": "status",
+      "type": "string"
+     },
+     {
+      "name": "sector",
+      "type": "string"
+     },
+     {
+      "name": "procuring_authority_id",
+      "type": "string"
+     },
+     {
+      "name": "procuring_authority",
+      "type": "string"
+     },
+     {
+      "name": "department_id",
+      "type": "string"
+     },
+     {
+      "name": "department",
+      "type": "string"
+     },
+     {
+      "name": "project_company",
+      "type": "string"
+     },
+     {
+      "name": "company_number",
+      "type": "string"
+     },
+     {
+      "name": "equity_holders",
+      "type": "string"
+     },
+     {
+      "name": "individuals_not_named",
+      "type": "string"
+     },
+     {
+      "name": "capital_gbp_m",
+      "type": "string"
+     },
+     {
+      "name": "unitary_charge_2025_26_gbp_m",
+      "type": "string"
+     },
+     {
+      "name": "contract_end",
+      "type": "string"
+     },
+     {
+      "name": "esa_balance_sheet",
+      "type": "string"
+     }
+    ]
+   }
+  }
+ ]
+}

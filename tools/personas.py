@@ -21,6 +21,7 @@ def check(p):
             if page not in docs: e.append(f"{x['id']}: {label}: page {page} does not exist"); continue
             if page == "index.html" and frag and frag not in views: e.append(f"{x['id']}: {label}: view #{frag} does not exist")
             if page == "nations.html" and frag and f'id="{frag}"' not in docs[page]: e.append(f"{x['id']}: {label}: section #{frag} does not exist")
+            if page == "world.html" and frag and dict(urllib.parse.parse_qsl(frag)).get("tab") not in (None, "o", "i", "m", "t", "a", "c", "own", "std"): e.append(f"{x['id']}: unknown world tab")
             if page in ("funding.html", "orgchart.html") and frag:
                 q = dict(urllib.parse.parse_qsl(frag))
                 if page == "funding.html" and q.get("tab") not in (None, "grants", "schemes", "services", "funders"): e.append(f"{x['id']}: unknown funding tab")

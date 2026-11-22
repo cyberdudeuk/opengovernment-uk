@@ -52,6 +52,12 @@ def build():
     T = json.loads((ROOT / "data/territories.json").read_text())["bodies"]
     cur.execute("CREATE TABLE territory_bodies (id TEXT, name TEXT, jurisdiction TEXT, grp TEXT, branch TEXT, type TEXT, website TEXT, constitutional INTEGER)")
     cur.executemany("INSERT INTO territory_bodies VALUES (?,?,?,?,?,?,?,?)", [(b["id"], b["name"], b["jurisdiction"], b["group"], b["branch"], b["type"], b.get("web", ""), int(bool(b.get("constitutional")))) for b in T])
+    io_ = json.loads((ROOT / "data/intl-ownership.json").read_text())  # the UK state's shares and votes in international financial institutions
+    cur.execute("CREATE TABLE intl_ownership (institution TEXT, short TEXT, lei TEXT, wikidata TEXT, uk_share_of_votes REAL, uk_share_of_subscriptions REAL, uk_votes INTEGER, members INTEGER, as_of TEXT, source TEXT)")
+    cur.executemany("INSERT INTO intl_ownership VALUES (?,?,?,?,?,?,?,?,?,?)", [(r["name"], r["short"], r["lei"], r["wikidata"], r["share_of_votes"], r.get("share_of_subscriptions"), r["votes"], r["members"], r["as_of"], r["source"]["url"]) for r in io_["rows"]])
+    co = json.loads((ROOT / "data/cooperation.json").read_text())  # cooperation by country
+    cur.execute("CREATE TABLE cooperation (country TEXT, commonwealth INTEGER, trade_agreements TEXT, tax_treaties INTEGER, treaties INTEGER)")
+    cur.executemany("INSERT INTO cooperation VALUES (?,?,?,?,?)", [(v["display"], int(bool(v["commonwealth"])), "; ".join(x["agreement"] for x in v["trade"]), len(v["tax"]), v["treaty_total"]) for v in co["countries"].values()])
     con.commit(); n = cur.execute("SELECT count(*) FROM bodies").fetchone()[0]; con.execute("VACUUM"); con.close()
     (ROOT / "data/org-id.json").write_text(json.dumps(o, separators=(",", ":")))
     return n, o, db

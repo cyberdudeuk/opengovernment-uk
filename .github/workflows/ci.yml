@@ -47,6 +47,8 @@ jobs:
         run: python tools/instruments.py && python tools/instruments.py --negative
       - name: The UK's memberships, treaties and agreements (known answers, negatives)
         run: python tools/relations.py && python tools/relations.py --negative
+      - name: UK shareholdings in international financial institutions (each institution's own table; LEIs and Wikidata read back; negatives)
+        run: python tools/intl_ownership.py && python tools/intl_ownership.py --negative
       - name: Org charts (every open body placed once, parents before children, known answer, negatives)
         run: python tools/orgchart.py && python tools/orgchart.py --negative
       - name: Funding, grants, schemes and innovation services (givers in the register, council org-ids checked, negatives)
@@ -57,6 +59,8 @@ jobs:
         run: python tools/worldmap.py && python tools/worldmap.py --negative
       - name: Cooperation by country (Commonwealth, trade agreements in effect, tax treaties, kinds of treaty; official sources; negatives)
         run: python tools/cooperation.py && python tools/cooperation.py --negative
+      - name: The UK and the world section (known answers, every standard file published, negatives)
+        run: python tools/world.py && python tools/world.py --negative
       - name: Each body's own website (one combined table; codes, and official council lists by exact name; negatives)
         run: python tools/websites.py && python tools/websites.py --negative
       - name: Trading fund and public corporation trees (one place each, known answers, negatives)
@@ -65,8 +69,8 @@ jobs:
         run: python tools/localgov.py && python tools/localgov.py --negative
       - name: Builds are deterministic (built twice with different hash seeds; any difference fails, OG-D61)
         run: |
-          for t in funding cooperation setaside worldmap; do PYTHONHASHSEED=1 python tools/$t.py >/dev/null; done; cp docs/funding.html /tmp/a.html; cp data/cooperation.json /tmp/a.json; cp data/set-aside.json /tmp/b.json; cp data/worldmap.json /tmp/c.json
-          for t in funding cooperation setaside worldmap; do PYTHONHASHSEED=2 python tools/$t.py >/dev/null; done; cmp /tmp/a.html docs/funding.html && cmp /tmp/a.json data/cooperation.json && cmp /tmp/b.json data/set-aside.json && cmp /tmp/c.json data/worldmap.json
+          for t in funding cooperation setaside worldmap intl_ownership; do PYTHONHASHSEED=1 python tools/$t.py >/dev/null; done; cp docs/funding.html /tmp/a.html; cp data/cooperation.json /tmp/a.json; cp data/set-aside.json /tmp/b.json; cp data/worldmap.json /tmp/c.json
+          for t in funding cooperation setaside worldmap intl_ownership; do PYTHONHASHSEED=2 python tools/$t.py >/dev/null; done; cmp /tmp/a.html docs/funding.html && cmp /tmp/a.json data/cooperation.json && cmp /tmp/b.json data/set-aside.json && cmp /tmp/c.json data/worldmap.json
       - name: Nations and documentation (known answers, traceability, negatives)
         run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: Design system (contrast in light and dark, every page on the shared tokens, no third-party fonts, negatives)
@@ -75,6 +79,8 @@ jobs:
         run: python tools/sqlite_export.py && python tools/sqlite_export.py --negative
       - name: BODS output validates against the official schema
         run: python tools/export_bods.py
+      - name: Open standards for harvesting (DCAT, ORG, schema.org, SKOS, PROV, CSVW, Frictionless; every graph parsed back; negatives)
+        run: python tools/standards.py && python tools/standards.py --negative
       - name: Published page carries no email address or former office name
         run: |
           ! grep -Eq '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(gov|org|com|uk|net)\b' docs/index.html

@@ -1,0 +1,265 @@
+{
+ "@context": {
+  "org": "http://www.w3.org/ns/org#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "dct": "http://purl.org/dc/terms/",
+  "dcat": "http://www.w3.org/ns/dcat#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "schema": "https://schema.org/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "time": "http://www.w3.org/2006/time#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "rov": "http://www.w3.org/ns/regorg#",
+  "og": "https://cyberdudeuk.github.io/opengovernment-uk/id/"
+ },
+ "@graph": [
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z",
+   "@type": "prov:Activity",
+   "prov:endedAtTime": {
+    "@value": "2026-11-22T08:27:32Z",
+    "@type": "xsd:dateTime"
+   },
+   "prov:wasAssociatedWith": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "prov:used": [
+    {
+     "@id": "https://www.gov.uk/api/organisations"
+    },
+    {
+     "@id": "https://www.ons.gov.uk/file?uri=/methodology/classificationsandstandards/economicstatisticsclassifications/introductiontoeconomicstatisticsclassifications/pscgnov2026.xlsx"
+    },
+    {
+     "@id": "https://www.legislation.gov.uk/uksi/2026/216/made"
+    },
+    {
+     "@id": "https://www.legislation.gov.uk/uksi/2026/66/made"
+    },
+    {
+     "@id": "https://www.gov.uk/government/collections/whole-of-government-accounts"
+    },
+    {
+     "@id": "https://assets.publishing.service.gov.uk/media/697897e25da1fd4ddea98bda/2025-05-29_Public_Bodies_Directory_2023_24.xlsx"
+    },
+    {
+     "@id": "https://api.gleif.org/api/v1/lei-records"
+    },
+    {
+     "@id": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "@id": "https://www.legislation.gov.uk/nisr/2026/49/made"
+    },
+    {
+     "@id": "https://www.gov.uk/government/publications/pfi-and-pfi2-projects-2025-summary-data"
+    },
+    {
+     "@id": "https://www.legislation.gov.uk/all?title=Trading%20Fund%20Order"
+    },
+    {
+     "@id": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+    },
+    {
+     "@id": "https://github.com/cyberdudeuk/opengovernment-uk/blob/main/sources/evidence/reconciliation-decisions.json"
+    }
+   ]
+  },
+  {
+   "@id": "https://www.gov.uk/api/organisations",
+   "@type": "prov:Entity",
+   "dct:title": "GOV.UK Organisations API",
+   "og:sha256": "f84dd546118ed488a32107179d93de3ded595321fc1c51a9b119489a8fb0e40d",
+   "prov:generatedAtTime": "2026-11-22T03:42:14Z"
+  },
+  {
+   "@id": "https://www.ons.gov.uk/file?uri=/methodology/classificationsandstandards/economicstatisticsclassifications/introductiontoeconomicstatisticsclassifications/pscgnov2026.xlsx",
+   "@type": "prov:Entity",
+   "dct:title": "ONS Public Sector Classification Guide, November 2026 (issued 20 November 2026)",
+   "og:sha256": "f8fc489417dc8ad418229b685229d68e299a569b72fb1c793da597507b004926",
+   "prov:generatedAtTime": "2026-11-22T03:42:14Z"
+  },
+  {
+   "@id": "https://www.legislation.gov.uk/uksi/2026/216/made",
+   "@type": "prov:Entity",
+   "dct:title": "The Government Resources and Accounts Act 2000 (Estimates and Accounts) Order 2026, S.I. 2026/216, Schedule",
+   "og:sha256": "8a9c04b429dd980eebf9584400c9407086a68ad90378b042c575f88d933f9264",
+   "prov:generatedAtTime": "2026-11-22T03:42:14Z"
+  },
+  {
+   "@id": "https://www.legislation.gov.uk/uksi/2026/66/made",
+   "@type": "prov:Entity",
+   "dct:title": "The Whole of Government Accounts (Designation of Bodies) Order 2026, S.I. 2026/66, Schedule",
+   "og:sha256": "35cf54c5ab4b512bb670fc3eb5f1e5cb09e045b924677d5e2ca629d762999654",
+   "prov:generatedAtTime": "2026-11-22T03:42:14Z"
+  },
+  {
+   "@id": "https://www.gov.uk/government/collections/whole-of-government-accounts",
+   "@type": "prov:Entity",
+   "dct:title": "HM Treasury Whole of Government Accounts 2024-25, Annexes 1 to 3 (published annexes, transcribed 21 September 2026)",
+   "og:sha256": "6b7788a6f81dd3ed88692c59dae600863f6697b6abc24427cbf1d27c76b26e23",
+   "prov:generatedAtTime": "2026-09-21"
+  },
+  {
+   "@id": "https://assets.publishing.service.gov.uk/media/697897e25da1fd4ddea98bda/2025-05-29_Public_Bodies_Directory_2023_24.xlsx",
+   "@type": "prov:Entity",
+   "dct:title": "Cabinet Office Public Bodies Directory 2023/24 (published 29 May 2025)",
+   "og:sha256": "ab2d19a028b5ceb92900ca58ccb109e4550be88a0ca2936118945eb4992a40d6",
+   "prov:generatedAtTime": "2026-11-22T03:42:14Z"
+  },
+  {
+   "@id": "https://api.gleif.org/api/v1/lei-records",
+   "@type": "prov:Entity",
+   "dct:title": "GLEIF Level 2 relationship records (API)",
+   "og:sha256": "4554fb9e7c56316fb75edaf3fd7531aea148f6e4313888962c02e7ebf8eeec7f",
+   "prov:generatedAtTime": "2026-11-22T03:42:14Z"
+  },
+  {
+   "@id": "https://find-and-update.company-information.service.gov.uk/",
+   "@type": "prov:Entity",
+   "dct:title": "Companies House register: persons with significant control (public pages)",
+   "og:sha256": "987ab4fdc79d37b0c489f7409989c8892d733b7fa80067d57a554186edca5a09",
+   "prov:generatedAtTime": "2026-11-22T03:42:14Z"
+  },
+  {
+   "@id": "https://www.legislation.gov.uk/nisr/2026/49/made",
+   "@type": "prov:Entity",
+   "dct:title": "Government Resources and Accounts Act (Northern Ireland) 2001 (Estimates and Accounts) (Designation of Bodies) Order 2026, S.R. 2026/49",
+   "og:sha256": "086ae83571bcf84c2117628dde1963a2a2e81d17e132381292fa2a49a96a234f",
+   "prov:generatedAtTime": "2026-11-22"
+  },
+  {
+   "@id": "https://www.gov.uk/government/publications/pfi-and-pfi2-projects-2025-summary-data",
+   "@type": "prov:Entity",
+   "dct:title": "HM Treasury: Current PFI and PF2 projects as at 31 March 2025",
+   "og:sha256": "08d53dc1cd88f33257330d8d7b69477a7aa9d5d28ebfa3878e9d532a45e4ad65",
+   "prov:generatedAtTime": "2026-11-22"
+  },
+  {
+   "@id": "https://www.legislation.gov.uk/all?title=Trading%20Fund%20Order",
+   "@type": "prov:Entity",
+   "dct:title": "legislation.gov.uk: trading fund orders under the Government Trading Funds Act 1973",
+   "og:sha256": "f05ef706a7c8de762328b734c98fae3276e315c3d72f476568afbead735eb96e",
+   "prov:generatedAtTime": "2026-11-22"
+  },
+  {
+   "@id": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb",
+   "@type": "prov:Entity",
+   "dct:title": "OpenGovernment UK 0.2.2 (built 14 November 2026)",
+   "og:sha256": "eb6e7d7f6dd27cf586dacbdb308563f38401a0b9dcdd38c23fb8bd60b39d6cd5",
+   "prov:generatedAtTime": "2026-11-14T18:32:29Z"
+  },
+  {
+   "@id": "https://github.com/cyberdudeuk/opengovernment-uk/blob/main/sources/evidence/reconciliation-decisions.json",
+   "@type": "prov:Entity",
+   "dct:title": "Reconciliation decisions, each with its evidence (this repository)",
+   "og:sha256": "c1e8c02f0831a75a5073f70a8a2497bc3a5c150964fc95c1abacad8ea62e1da9",
+   "prov:generatedAtTime": "2026-11-22"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/register.jsonld",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "cf45c8ea0181644bb1bad9481415d8814197380bb3f4e888d4e08bb2c4dfe19f"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/international.jsonld",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "813a434647c213c21c9935a7607dc69e9e80c14c3e43dd72763ecbea9b3895d7"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/taxonomies.skos.jsonld",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "eba82bfa7693a40ee132ff3bfb37966fc1bcef501da3a7323999c0fef4f546d7"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/catalogue.jsonld",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "e712501a92b3105717eb609efb326a23f997ea7b634cc3e7856c10e777a845c1"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/datapackage.json",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "413103450291123856919d3fde42f57cf0c152b9cc948a14f1b00894e4e3fe2e"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/bods-0.4.json",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "c3dabf711c76d1d5e3cf55ad3ea702c2f5848956be6273013299285c8c6ab607"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/accountability.json",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "c8b79a854a0b901c60d234976d3852c72c71ad12f054add7e28b68f1963fa4f1"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/nations.json",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "fb1e7aed42426120867a9b3699bc3f1056e14935bfbb6f19c847024c647be5d3"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/edges.csv",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "742b99fc21c3db2074775f16257950a05d592c8085eeeb5510949908c374b22f"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/concordance.csv",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "113e34044435a0c17baafcf5bb21f191fb7cbc6aa42128de4a2d5da2d6f7854e"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/accountable-owner.csv",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "b21b856fa3d2d8b911e4a6af245ba4c86b7bc8df6ceb7c9956fe548978df862e"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/ppp.csv",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "8bc2a0e572759bca44dfb18fc731a6533b6dc4cdf89af80efa1d690d5eccf201"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/opengovernment-uk.db",
+   "@type": "prov:Entity",
+   "prov:wasGeneratedBy": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/build/2026-11-22T08:27:32Z"
+   },
+   "og:sha256": "6c60b5e39671c7505e23f6c0cf582a75271296092b5d387e094ab2fafa827463"
+  }
+ ]
+}

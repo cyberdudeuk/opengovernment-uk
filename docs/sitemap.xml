@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/design-system.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/funding.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/index.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/nations.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/navigator.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/orgchart.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/world.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/register.jsonld</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/register.csv</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/international.jsonld</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/taxonomies.skos.jsonld</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/bods-0.4.json</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/provenance.jsonld</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/datapackage.json</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/opengovernment-uk.db</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/accountability.json</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/nations.json</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/edges.csv</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/concordance.csv</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/accountable-owner.csv</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/ppp.csv</loc><lastmod>2026-11-22</lastmod></url>
+</urlset>

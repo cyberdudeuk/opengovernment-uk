@@ -1,0 +1,724 @@
+{
+ "@context": {
+  "org": "http://www.w3.org/ns/org#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "dct": "http://purl.org/dc/terms/",
+  "dcat": "http://www.w3.org/ns/dcat#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "schema": "https://schema.org/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "time": "http://www.w3.org/2006/time#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "rov": "http://www.w3.org/ns/regorg#",
+  "og": "https://cyberdudeuk.github.io/opengovernment-uk/id/"
+ },
+ "@graph": [
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "Types of public body"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/legislature",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Parliament or assembly",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "Where elected (or appointed) members make laws, approve spending and question the government."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/department",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Government department",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "A ministerial or non-ministerial department, or a devolved government."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/agency",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Executive agency or part of a department",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "Run by civil servants inside a department, with its own job to do."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/ndpb",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Arm's-length public body",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "Set up by law or by ministers to work at arm's length: an executive or advisory non-departmental public body, or another statutory body."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/court",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Court or tribunal",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "Where judges and tribunal members decide cases."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/corporation",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Public corporation or government company",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "Owned or controlled by government and run like a business (ONS: public corporation)."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/nhs",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "NHS body",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "A hospital trust, health board, care board or other NHS organisation."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/council",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Council or local public body",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "An elected council, a group of councils, or a body that councils control."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/central",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Other central government body",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "A body ONS counts as central government that doesn't fit the groups above."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/charity",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Charity or non-profit",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "A non-profit body that government partly funds or controls."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/pension",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Pension scheme",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "A pension scheme for people who worked in public services."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype/territory",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Territory or dependency",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/btype"
+   },
+   "skos:definition": "An overseas territory or Crown dependency with its own government."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "What a body is for (mapped to UN COFOG divisions)"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/govt",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Running the country",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Making laws, collecting taxes, keeping records, statistics and elections, and links with other countries.",
+   "skos:notation": "01"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/defence",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Defence",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "The armed forces and keeping the country safe from attack.",
+   "skos:notation": "02"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/safety",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Police, courts and safety",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Police, fire and rescue, courts, prisons and the justice system.",
+   "skos:notation": "03"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/economy",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Money, business and transport",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Jobs, business, trade, farming, energy, roads, railways, ports and airports.",
+   "skos:notation": "04"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/environment",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Nature and the environment",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Protecting nature, cleaning up pollution and looking after the countryside and sea.",
+   "skos:notation": "05"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/housing",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Homes and local places",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Housing, planning new buildings, water supply and improving towns and cities.",
+   "skos:notation": "06"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/health",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Health",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Hospitals, doctors, medicines and keeping people healthy.",
+   "skos:notation": "07"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/culture",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Culture, sport and heritage",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Museums, libraries, the arts, sport, broadcasting, languages and historic places.",
+   "skos:notation": "08"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/education",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Education and research",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Schools, colleges, universities, exams, skills and research.",
+   "skos:notation": "09"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/support",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Benefits, pensions and care",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Pensions, benefits, social care and support for children, families and disabled people.",
+   "skos:notation": "10"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/local",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Many local services",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "Councils run many local services at once: bins, roads, schools, care, libraries and planning.",
+   "skos:notation": "06"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose/unknown",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Not yet worked out",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/purpose"
+   },
+   "skos:definition": "The sources don't say enough yet. You can help by sending a correction."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "What a body does"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/legislate",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Makes laws",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "A parliament, assembly or council whose members debate and pass laws, approve spending and question the government."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/policy",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Runs a government",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Ministers and civil servants who make policy, propose laws and run the departments under them."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/judge",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Decides cases",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Courts and tribunals that settle disputes and decide what the law means in a case."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/regulate",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Sets and enforces rules",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Licenses, registers or regulates a profession, market or activity, and can take action when rules are broken."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/inspect",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Inspects and audits",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Checks that services and public money are run properly, and reports what it finds."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/complaints",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Handles complaints",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "An ombudsman or commissioner who looks into complaints and stands up for people."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/advise",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Gives expert advice",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "A committee or council of experts that advises ministers but doesn't run services."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/fund",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Gives out money",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Pays out grants, loans or investment to other organisations or people."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/trade",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Sells goods or services",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Earns most of its income by charging customers, like a business."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/collections",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Looks after collections and places",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Museums, galleries, libraries, archives, parks and historic places."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/records",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Keeps records and statistics",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Registers, records, maps and official statistics."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/research",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Does research",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Science and research, in its own labs or by funding others."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/promote",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Promotes and represents",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Promotes a place, an industry or a group of people, or speaks for them."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/services",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Runs public services",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "Delivers services to the public directly: health, councils, benefits, policing, transport and more."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity/unknown",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Not yet worked out",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/activity"
+   },
+   "skos:definition": "The sources don't say enough yet. You can help by sending a correction."
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "Where a body works"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach/uk",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "The whole UK",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach/several",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Several nations",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach/one",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "One nation",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach/local",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Local",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach/outside",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Outside the UK",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach/unstated",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Not stated",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/reach"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "Nations of the UK (ISO 3166-2:GB)"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation/EN",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "England",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation"
+   },
+   "skos:notation": "GB-ENG"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation/SC",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Scotland",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation"
+   },
+   "skos:notation": "GB-SCT"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation/WA",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Wales",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation"
+   },
+   "skos:notation": "GB-WLS"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation/NI",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Northern Ireland",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation"
+   },
+   "skos:notation": "GB-NIR"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation/UK",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "United Kingdom",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/nation"
+   },
+   "skos:notation": "GB"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "Kinds of treaty (worked out from titles, so modelled)"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/trade",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Trade",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/tax",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Tax",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/social",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Social security and health",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/air",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Air services",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/justice",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Justice, policing and returns",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/defence",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Defence and security",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/science",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Science, research and space",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/investment",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Investment",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/environment",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Environment, energy and fisheries",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/culture",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Culture, education and youth",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/people",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Visas, migration and mobility",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/diplomatic",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Diplomatic and consular",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/transport",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Shipping, transport and communications",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/borders",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Borders and territory",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/development",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Aid and development",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind/other",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Other or not worked out",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/treaty-kind"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "Domains of international relationships"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/defence",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Defence and security",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/justice",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Justice, policing and borders",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/trade",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Trade, customs and investment",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/finance",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Finance, tax and development",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/transport",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Transport, aviation and maritime",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/science",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Science, space and technology",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/energy",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Energy, climate and environment",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/health",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Health and social security",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/culture",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Culture, education and people",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/governance",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Diplomacy and governance",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain/other",
+   "@type": "skos:Concept",
+   "skos:prefLabel": "Other",
+   "skos:inScheme": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/scheme/domain"
+   }
+  }
+ ]
+}

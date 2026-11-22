@@ -69,6 +69,37 @@ for i, e in enumerate(T["edges"]):
               "recordDetails": {"isComponent": False, "subject": rid(e["c"]), "interestedParty": rid(e["p"]), "interests": interests(e)},
               "publicationDetails": PUB, "source": src(e),
               "publicAccountability": {"relation": e["rel"], "relationLabel": T["rels"][e["rel"]], "asWritten": e["pt"], "matchMethod": e["how"], "sourceKey": e["src"]}})
+# The UK state's holdings in international financial institutions (tools/intl_ownership.py): real ownership, from each
+# institution's own published table. The UK is a 'state' entity; each institution a 'legalEntity' with its LEI.
+IO = json.loads((ROOT / "data" / "intl-ownership.json").read_text())
+UK = IO["holder"]
+if UK not in ids_needed:
+    S.append({"statementId": sid("e", UK, T["digest"]), "statementDate": T["built"][:10], "recordId": rid(UK), "declarationSubject": rid(UK), "recordType": "entity", "recordStatus": "new",
+              "recordDetails": {"isComponent": False, "entityType": {"type": "state"}, "name": "United Kingdom", "jurisdiction": {"name": "United Kingdom", "code": "GB"},
+                                "identifiers": [{"id": UK, "schemeName": "OpenGovernment UK register key"}, {"id": "Q145", "scheme": "XI-WIKIDATA", "schemeName": "Wikidata"}]},
+              "publicationDetails": PUB, "source": {"type": ["officialRegister"], "description": "OpenGovernment UK register record"}})
+MON = {m: i + 1 for i, m in enumerate(["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])}
+def iso(d):
+    m = re.fullmatch(r"(\d{1,2})-(\w{3})-(\d{4})", d) or None
+    if m: return f"{m.group(3)}-{MON[m.group(2)[:3]]:02d}-{int(m.group(1)):02d}"
+    m = re.fullmatch(r"(\w{3})\w*\.? (\d{1,2}), (\d{4})", d.strip())
+    return f"{m.group(3)}-{MON[m.group(1)[:3]]:02d}-{int(m.group(2)):02d}"
+for r in IO["rows"]:
+    k = "lei:" + r["lei"]; asof = iso(r["as_of"])
+    S.append({"statementId": sid("e", k, asof), "statementDate": asof, "recordId": rid(k), "declarationSubject": rid(k), "recordType": "entity", "recordStatus": "new",
+              "recordDetails": {"isComponent": False, "entityType": {"type": "legalEntity", "details": "International financial institution, established by treaty among its member countries"}, "name": r["name"],
+                                "identifiers": [{"id": r["lei"], "scheme": "XI-LEI", "schemeName": "Global Legal Entity Identifier"}, {"id": r["wikidata"], "scheme": "XI-WIKIDATA", "schemeName": "Wikidata"}],
+                                "uri": r["source"]["url"]},
+              "publicationDetails": PUB, "source": {"type": ["officialRegister"], "description": r["source"]["title"], "url": r["source"]["url"]}})
+    base = {"directOrIndirect": "direct", "beneficialOwnershipOrControl": False}
+    ints = ([dict(base, type="shareholding", share={"exact": r["share_of_subscriptions"]}, details="Share of total subscriptions to capital, as the institution publishes it")] if r.get("share_of_subscriptions") is not None else []) + \
+           [dict(base, type="votingRights", share={"exact": r["share_of_votes"]}, details=f"{r['votes']:,} votes, {r['share_of_votes']}% of total voting power, as the institution publishes it")]
+    if r.get("member_since"):
+        for i in ints: i["startDate"] = iso(r["member_since"])
+    S.append({"statementId": sid("r", k, UK, asof), "statementDate": asof, "recordId": rid(f"{k}|{UK}|member-shareholder"), "recordType": "relationship", "recordStatus": "new", "declarationSubject": rid(k),
+              "recordDetails": {"isComponent": False, "subject": rid(k), "interestedParty": rid(UK), "interests": ints},
+              "publicationDetails": PUB, "source": {"type": ["officialRegister"], "description": f"{r['source']['title']}; as of {asof}", "url": r["source"]["url"], "retrievedAt": IO["read"]},
+              "publicAccountability": {"relation": "member-shareholder", "relationLabel": "The UK state is a member and shareholder", "ukLead": r.get("uk_lead", []), "membersOfInstitution": r["members"]}})
 # validate against the official schema
 reg = Registry()
 for f in BODS.glob("*.json"):
