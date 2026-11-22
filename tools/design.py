@@ -13,7 +13,7 @@ import gzip
 import hashlib, json, os, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-DES = ROOT / "tools/design"; ASSETS = ROOT / "docs/assets"
+DES = ROOT / "tools/design"; ASSETS = ROOT / "docs/assets"; TOOLS = ROOT / "tools"
 TOK = json.loads((DES / "tokens.json").read_text())
 FONTS = [("Atkinson Hyperlegible Next", "atkinson-hyperlegible-next-latin-wght-normal.woff2", "normal", "200 800", "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"),
          ("Atkinson Hyperlegible Next", "atkinson-hyperlegible-next-latin-ext-wght-normal.woff2", "normal", "200 800", "U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"),
@@ -145,6 +145,31 @@ THEME_JS = ('<script>(()=>{const k="og-theme",r=document.documentElement,b=docum
             'set(t);b.addEventListener("click",()=>set(N[t]));})();</script>')
 
 
+ICON_SEARCH = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+ICON_BELL = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+ICON_CLOCK = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+
+
+def mast_tools(index=False):
+    """Search, notifications (bell) and latest changes (clock) for every masthead. The portal page keeps its own
+    search engine (ids hmQ/hmQr, every record in memory); other pages use tools/og-shell.js with a small index."""
+    q, r = ("hmQ", "hmQr") if index else ("ogQ", "ogQr")
+    base = "" if index else "index.html"
+    pop = lambda pid, title, more, more_t: (f'<div class="og-pop" id="{pid}" role="dialog" aria-label="{title}" hidden><div class="og-pop-h"><h2 tabindex="-1">{title}</h2>'
+                                           f'<button type="button" class="og-pop-x" aria-label="Close {title.lower()}">×</button></div><ul class="og-pop-list"><li class="og-pop-empty">Loading…</li></ul>'
+                                           f'<p class="og-pop-f"><a href="{more}">{more_t}</a></p></div>')
+    return (f'<div class="og-tools"><div class="og-search hmsearch" role="search">{ICON_SEARCH}<label for="{q}" class="sr-only">Search public bodies, codes and pages</label>'
+            f'<input id="{q}" type="search" role="combobox" aria-expanded="false" aria-controls="{r}" aria-autocomplete="list" autocomplete="off" placeholder="Search bodies, codes, pages">'
+            f'<ul id="{r}" role="listbox" aria-label="Suggestions" hidden></ul></div>'
+            f'<button class="iconbtn og-iconbtn" id="ogBell" type="button" aria-expanded="false" aria-controls="ogBellPanel" aria-label="Notifications" data-label="Notifications">{ICON_BELL}<span class="og-badge" hidden></span></button>'
+            f'<button class="iconbtn og-iconbtn" id="ogChanges" type="button" aria-expanded="false" aria-controls="ogChangesPanel" aria-label="Latest changes" data-label="Latest changes">{ICON_CLOCK}<span class="og-badge" hidden></span></button>'
+            + pop("ogBellPanel", "Notifications", f"{base}#quality", "How each source stands")
+            + pop("ogChangesPanel", "Latest changes", f"{base}#changes", "All changes to the state") + '</div>')
+
+
+SHELL_JS = '<script src="assets/og-shell.js" defer></script>'
+
+
 def shell(active):
     """Masthead, global navigation, theme switch and footer shared by every subpage (the main portal keeps its own richer shell)."""
     cur = ' aria-current="page"'
@@ -152,6 +177,7 @@ def shell(active):
     head = (f'<a class="og-skip" href="#og-main">Skip to main content</a><header class="og-shell-mast"><div class="in"><a class="brand" href="index.html#home" aria-label="OpenGovernment UK, home">{LOGO}'
             f'<span><b>OpenGovernment UK</b><small>The anatomy of the state, from the registers that keep it</small></span></a>'
             f'<nav class="og-shell-nav" aria-label="Sections of the portal">{nav}</nav>'
+            + mast_tools() +
             f'<details class="og-shell-menu"><summary>Menu</summary><nav aria-label="Sections of the portal (menu)">{nav}</nav></details>'
             f'<button class="iconbtn" id="ogTheme" type="button" aria-label="Switch colour theme"><span class="og-phone-hide">Theme:&nbsp;</span><span class="v">Device</span></button></div></header>')
     foot = ('<footer class="og-shell-foot"><div class="in">'
@@ -160,7 +186,7 @@ def shell(active):
             '<div><h2>Contact</h2><p><a href="https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=feedback.yml" rel="noopener" target="_blank">Tell us what\'s wrong or missing</a> through the feedback form.</p></div>'
             '<div><h2>Colophon</h2><p>Source and issues on <a href="https://github.com/cyberdudeuk/opengovernment-uk" rel="noopener" target="_blank">GitHub</a>. Code MIT, documentation CC BY 4.0, data OGL v3. '
             'Fonts: Atkinson Hyperlegible Next and IBM Plex Mono (SIL Open Font License), served from this site. <a href="design-system.html">Design system</a>.</p></div>'
-            f'</div></footer>{THEME_JS}{NAVFIT_JS}')
+            f'</div></footer>{THEME_JS}{NAVFIT_JS}{SHELL_JS}')
     return head, foot
 
 
@@ -192,6 +218,9 @@ def audit_html(name, html):
         if sel in html and rule not in html: p.append(f"{name}: {sel} has no narrow-screen wrap rule ({d})")
     if re.search(r"fonts\.(googleapis|gstatic)\.com|<link[^>]+rel=\"stylesheet\"[^>]+href=\"https?://", html): p.append(f"{name}: third-party font or stylesheet")
     if 'href="assets/og.css"' not in html: p.append(f"{name}: doesn't use the shared stylesheet")
+    static = re.sub(r"<script\b[^>]*>.*?</script>", "", html, flags=re.S)  # ids written into the page itself, not built by script
+    dup = sorted({i for i in re.findall(r'\sid="([^"]+)"', static) if re.findall(r'\sid="' + re.escape(i) + '"', static).__len__() > 1})
+    if dup: p.append(f"{name}: the same id is used more than once: {dup[:5]} (OG-D69)")
     css = " ".join(re.findall(r"<style[^>]*>(.*?)</style>", html, re.S))
     hx = re.search(r".{0,40}#[0-9a-fA-F]{3,8}\b", css)
     if hx: p.append(f"{name}: raw hex colour in page CSS: {hx.group(0)}")
@@ -310,7 +339,7 @@ def main():
         ok = '<head><link rel="stylesheet" href="assets/og.css"></head><style>a{color:var(--og-accent)}</style>'
         caught.append(not audit_html("ok", ok))  # the clean page passes
         for bad in ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">', "<style>a{color:#ff0000}</style>", "<style>p{font-size:13px}</style>", "<style>p{font:700 .9rem var(--f-body)}</style>",
-                    "<style>.c{border-radius:14px}</style>", "<style>@media (max-width:900px){a{color:red}}</style>"):
+                    "<style>.c{border-radius:14px}</style>", "<style>@media (max-width:900px){a{color:red}}</style>", '<div id="x"></div><p id="x"></p>'):
             caught.append(bool(audit_html("bad", ok + bad)))
         caught.append(bool(css_guards(".og-shell-nav a{display:inline-flex}")))  # OG-D53: hidden links shown because author CSS overrides [hidden]
         caught.append(bool(audit_html("bad", ok + '<nav class="og-shell-nav"><a href="#">A</a></nav>')))  # OG-D51: a shell navigation without its fold
@@ -327,6 +356,7 @@ def main():
     if p: sys.exit("design: contrast fails: " + "; ".join(p))
     ASSETS.mkdir(parents=True, exist_ok=True)
     (ASSETS / "og.css").write_text(build_css())
+    (ASSETS / "og-shell.js").write_text((TOOLS / "og-shell.js").read_text())  # masthead tools for every page
     (ASSETS / "tokens.json").write_text(json.dumps(TOK, indent=1, ensure_ascii=False))
     (ROOT / "docs/design-system.html").write_text(design_page())
     fonts = {f: hashlib.sha256((ASSETS / "fonts" / f).read_bytes()).hexdigest() for _, f, *_ in FONTS}

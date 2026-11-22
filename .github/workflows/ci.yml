@@ -79,6 +79,8 @@ jobs:
         run: python tools/bods_fixtures_ps.py && python tools/bods_fixtures_ps.py --negative
       - name: Sources meet their expected counts; source status published (fail closed; negatives)
         run: python tools/sources_check.py && python tools/sources_check.py --negative
+      - name: Masthead feeds on every page (notifications, latest changes, search index; safe links only; negatives)
+        run: python tools/alerts.py && python tools/alerts.py --negative
       - name: Nations and documentation (known answers, traceability, negatives)
         run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: Design system (contrast in light and dark, every page on the shared tokens, no third-party fonts, negatives)
@@ -91,6 +93,8 @@ jobs:
         run: python tools/standards.py && python tools/standards.py --negative
       - name: Agent instructions answer their known questions from the published files (negative)
         run: python tools/agent_evals.py && python tools/agent_evals.py --negative
+      - name: Every page in a real browser (phone and desktop, light and dark; no script errors, no overflow, masthead clear; negative)
+        run: python -m playwright install --with-deps chromium && python tools/browser_check.py && python tools/browser_check.py --negative
       - name: Published page carries no email address or former office name
         run: |
           ! grep -Eq '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(gov|org|com|uk|net)\b' docs/index.html

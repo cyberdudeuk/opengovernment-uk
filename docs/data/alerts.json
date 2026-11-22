@@ -1,0 +1,170 @@
+{
+ "about": "Notifications and latest changes for the masthead of every page. Dates come from the data; built by tools/alerts.py.",
+ "as_of": "2026-11-22",
+ "notifications": [
+  {
+   "date": "2026-11-25",
+   "kind": "Grant closes",
+   "title": "Unlocking advanced capabilities in conservation and heritage science (Grant) (UK Research and Innovation, Arts and Humanities Research Council)",
+   "url": "https://www.find-government-grants.service.gov.uk/grants/unlocking-advanced-capabilities-in-conservation-and-heritage-science-grant-1"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "Grant closes",
+   "title": "NQS Mission 2: Components, systems and architectures (Grant) (UK Research and Innovation, Engineering and Physical Sciences Research Council, Science and Technology Facilities Council)",
+   "url": "https://www.find-government-grants.service.gov.uk/grants/nqs-mission-2-components-systems-and-architectures-grant-1"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "Grant closes",
+   "title": "NQS Mission 2 Coordination Network (Grant) (UK Research and Innovation, Engineering and Physical Sciences Research Council, Science and Technology Facilities Council)",
+   "url": "https://www.find-government-grants.service.gov.uk/grants/nqs-mission-2-coordination-network-grant-1"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Data rebuilt",
+   "title": "Register rebuilt from 22 current sources; every expected count in range",
+   "url": "index.html#quality"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Grant closes",
+   "title": "Reading for Redemption: Comparative Research of the Brazilian Reading for Remission Model (Ministry of Justice)",
+   "url": "https://www.find-government-grants.service.gov.uk/grants/reading-for-redemption-comparative-research-of-the-brazilian-reading-for-remission-model-1"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Grant closes",
+   "title": "Reading for Redemption Phase 2 Expansion (Ministry of Justice)",
+   "url": "https://www.find-government-grants.service.gov.uk/grants/reading-for-redemption-phase-2-expansion-1"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Source not read",
+   "title": "Isle of Man Government website: not read. The Isle of Man Government's website refused automated checks, so its departments known only from Wikidata are left out until they can be confirmed another way; the site was not retried with a disguised request.",
+   "url": "index.html#quality"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Source not read",
+   "title": "International Monetary Fund: not read. The IMF's quotas and voting power page refuses automated reads (access denied); it is not worked around.",
+   "url": "index.html#quality"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Source not read",
+   "title": "European Bank for Reconstruction and Development: not read. No machine-readable shareholding table found on its site.",
+   "url": "index.html#quality"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Source not read",
+   "title": "Caribbean Development Bank: not read. Its members page could not be found (HTTP 404).",
+   "url": "index.html#quality"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Source not read",
+   "title": "Asian Development Bank: not read. Its UK member fact sheet could not be found at a stable address.",
+   "url": "index.html#quality"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "Source not read",
+   "title": "African Development Bank: not read. Its shareholders page refuses automated reads (HTTP 403).",
+   "url": "index.html#quality"
+  }
+ ],
+ "changes": [
+  {
+   "date": "2026-11-12",
+   "kind": "Treaty",
+   "title": "Agreement on Electronic Commerce [MS No.13/2026]",
+   "url": "https://www.gov.uk/government/publications/agreement-on-electronic-commerce-ms-no132026"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "Treaty",
+   "title": "UK/Korea: Agreement on the Protection of Classified Military Information [TS No.44/2026]",
+   "url": "https://www.gov.uk/government/publications/ukkorea-agreement-on-the-protection-of-classified-military-information-ts-no442026"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "Treaty",
+   "title": "Hong Kong International Convention for the Safe and Environmentally Sound Recycling of Ships, 2009 [MS No.12/2026]",
+   "url": "https://www.gov.uk/government/publications/hong-kong-international-convention-for-the-safe-and-environmentally-sound-recycling-of-ships-2009-ms-no122026"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "Change",
+   "title": "Department for Business and Trade was replaced: now Department for Business, Innovation, Science and Trade",
+   "url": "index.html#org-government-organisation--D1480"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "Change",
+   "title": "Department for Science, Innovation and Technology was split: now Cabinet Office and Department for Business, Innovation, Science and Trade",
+   "url": "index.html#org-government-organisation--D2"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "Change",
+   "title": "The Queen Elizabeth Memorial Committee was renamed: now The Queen Elizabeth Memorial Programme",
+   "url": "index.html#org-government-organisation--OT1493"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "Change",
+   "title": "Information Commissioner's Office was renamed: now Information Commission",
+   "url": "index.html#org-government-organisation--PB1494"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "Change",
+   "title": "Government Skills was replaced: now National School of Government and Public Services",
+   "url": "index.html#org-government-organisation--OT1491"
+  },
+  {
+   "date": "2026-10-19",
+   "kind": "Treaty",
+   "title": "Agreement between France, Germany, Belgium, Italy, Spain and the UK amending the OCCAR Security Agreement [MS No.11/2026]",
+   "url": "https://www.gov.uk/government/publications/agreement-between-france-germany-belgium-italy-spain-and-the-uk-amending-the-occar-security-agreement-ms-no112026"
+  },
+  {
+   "date": "2026-10-13",
+   "kind": "Treaty",
+   "title": "UK/Bahrain: Agreement on Cooperation and Mutual Administrative Assistance in Customs Matters [CS No.1/2026]",
+   "url": "https://www.gov.uk/government/publications/ukbahrain-agreement-on-cooperation-and-mutual-administrative-assistance-in-customs-matters-cs-no12026"
+  },
+  {
+   "date": "2026-10-13",
+   "kind": "Treaty",
+   "title": "UK/Australia: Agreement on Cooperation and Mutual Administrative Assistance in Customs Matters [CS No.1/2026]",
+   "url": "https://www.gov.uk/government/publications/ukaustralia-agreement-on-cooperation-and-mutual-administrative-assistance-in-customs-matters-cs-no12026"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "Change",
+   "title": "Parliamentary and Health Service Ombudsman was renamed: now Public Service Ombudsman",
+   "url": "index.html#org-government-organisation--OT1489"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "Change",
+   "title": "Chancery Division of the High Court was renamed: now Business and Property Division of the High Court",
+   "url": "index.html#org-government-organisation--CO1488"
+  },
+  {
+   "date": "2026-08-03",
+   "kind": "Change",
+   "title": "Service Complaints Ombudsman was replaced: now Armed Forces Commissioner",
+   "url": "index.html#org-government-organisation--OT1484"
+  },
+  {
+   "date": "2026-07-29",
+   "kind": "Change",
+   "title": "Independent Advisory Panel on Deaths in Custody was renamed: now Independent Advisory Panel on Deaths in Detention",
+   "url": "index.html#org-government-organisation--PB1482"
+  }
+ ]
+}

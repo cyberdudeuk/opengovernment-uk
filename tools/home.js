@@ -57,7 +57,10 @@ function hmSearch(){
   const box = $("#hmQ"), out = $("#hmQr"); if (!box) return;
   const PLACES = [["Who answers", "#tree"], ["Register", "#register"], ["Nation by nation", "nations.html"], ["The UK and the world", "world.html"], ["Treaties and the world map", "world.html#tab=t"], ["International bodies", "world.html#tab=i"], ["Org charts", "orgchart.html"], ["Funding, grants and schemes", "funding.html"], ["Changes to the state", "#changes"], ["Downloads and the data", "#data"], ["Ask a question", "#ask"], ["How matching works", "#reconcile"], ["Quality and evidence", "#quality"], ["Glossary and help", "#help"]];
   let sel = -1;
-  const draw = () => { const q = box.value.trim(); sel = -1; if (!q) { out.hidden = true; box.setAttribute("aria-expanded", "false"); return; }
+  const HM_QA = [["list", "Find a body", "#register"], ["crown", "Who answers", "#tree"], ["globe", "Treaty map", "world.html#tab=t"], ["tree", "Org charts", "orgchart.html"], ["coin", "Find funding", "funding.html"], ["down", "Download data", "#data"], ["data", "Developer hub", "developers.html"], ["ask", "Ask a question", "#ask"], ["flag", "Report a mistake", "#help"]];
+  const quick = () => { sel = -1; out.innerHTML = `<li class="og-qhead" role="presentation">Quick actions</li>` + HM_QA.map(p => `<li role="option"><a href="${esc(p[2])}">${icon(p[0])}<span><b>${esc(p[1])}</b></span></a></li>`).join(""); out.hidden = false; box.setAttribute("aria-expanded", "true"); };
+  box.addEventListener("focus", () => { if (!box.value.trim()) quick(); });
+  const draw = () => { const q = box.value.trim(); sel = -1; if (!q) { quick(); return; }
     const pl = PLACES.filter(p => p[0].toLowerCase().includes(q.toLowerCase())).slice(0, 3);
     const rs = searchRecords(q, 7).filter(r => !SA_FOLDED.has(r.id));
     out.innerHTML = [...pl.map(p => `<li role="option"><a href="${esc(p[1])}">${icon("atlas")}<span><b>${esc(p[0])}</b><small>Page</small></span></a></li>`),
@@ -67,7 +70,7 @@ function hmSearch(){
   box.addEventListener("input", draw);
   box.addEventListener("keydown", e => { const its = $$("a", out); if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); sel = (sel + (e.key === "ArrowDown" ? 1 : its.length - 1)) % its.length; its.forEach((a, i) => a.classList.toggle("on", i === sel)); }
     if (e.key === "Enter") { e.preventDefault(); (its[sel] || its[its.length - 1])?.click(); } if (e.key === "Escape") { out.hidden = true; box.setAttribute("aria-expanded", "false"); } });
-  document.addEventListener("click", e => { if (!e.target.closest(".hmsearch")) out.hidden = true; });
+  document.addEventListener("click", e => { if (!e.target.closest(".og-search")) { out.hidden = true; box.setAttribute("aria-expanded", "false"); } });
 }
 
 function hmTicker(){
@@ -151,7 +154,7 @@ function hmSignposts(){
 document.addEventListener("click", e => { const b = e.target.closest("[data-jump]"); if (!b) return; const s = document.getElementById(b.dataset.jump); if (!s) return; s.scrollIntoView({behavior: HM_RM() ? "auto" : "smooth", block: "start"}); const h = $("h2,h3", s) || s; h.tabIndex = -1; h.focus({preventScroll: true}); });
 
 function homeExtras(){
-  ["s-search", "s-ticker", "s-carousel", "s-spot", "s-ways", "s-sign"].forEach(x => NEWSEC.add(x));
+  ["s-ticker", "s-carousel", "s-spot", "s-ways", "s-sign"].forEach(x => NEWSEC.add(x));
   hmBullseye(); hmSearch(); hmTicker(); hmCarousel(); hmSpotlight(); hmWayfinder(); hmSignposts();
   COUNTS["s-spot"] = 1; COUNTS["s-ways"] = HM_WAYS.length;
 }

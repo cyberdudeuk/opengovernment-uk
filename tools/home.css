@@ -38,22 +38,6 @@
 @keyframes hmtick{to{transform:translateX(-100%)}}
 
 /* search and quick actions */
-.hmbar{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
-.hmsearch{position:relative}
-.hmsearch input[type=search]{width:100%;font:inherit;font-size:var(--og-size-md);padding:12px 14px 12px 44px;border:1.5px solid var(--line-2);border-radius:var(--og-radius-md);background:var(--paper);color:var(--ink)}
-.hmsearch input:focus{outline:3px solid var(--og-focus);outline-offset:1px}
-.hmsearch > svg{position:absolute;left:14px;top:50%;width:20px;height:20px;transform:translateY(-50%);color:var(--muted)}
-#hmQr{position:absolute;z-index:30;left:0;right:0;top:calc(100% + 4px);margin:0;padding:4px;list-style:none;background:var(--paper);border:1px solid var(--line-2);border-radius:var(--og-radius-md);box-shadow:0 8px 24px rgba(0,0,0,.16);max-height:60vh;overflow:auto}
-#hmQr a{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:var(--og-radius-sm);text-decoration:none;color:var(--ink)}
-#hmQr a svg{width:18px;height:18px;flex:none;color:var(--muted)}
-#hmQr a span{display:flex;flex-direction:column;min-width:0}
-#hmQr a b{font-weight:600;overflow-wrap:anywhere}
-#hmQr a small{color:var(--muted);font-size:var(--og-size-xs)}
-#hmQr a:hover,#hmQr a.on{background:var(--paper-2)}
-.qact{display:flex;flex-wrap:wrap;gap:8px}
-.qact a{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border:1px solid var(--line);border-radius:var(--og-radius-pill);text-decoration:none;color:var(--ink);background:var(--paper);font-size:var(--og-size-sm);min-height:var(--og-target-min)}
-.qact a svg{width:16px;height:16px}
-.qact a:hover{border-color:var(--ink)}
 
 /* ticker */
 .ticker{display:flex;align-items:center;gap:10px;margin:12px 0;padding:6px 8px;border:1px solid var(--line);border-radius:var(--og-radius-md);background:var(--paper);overflow:hidden}
@@ -126,3 +110,7 @@
 .bnlist a{padding:4px 10px;border:1px solid var(--line);border-radius:var(--og-radius-pill);text-decoration:none;color:var(--ink);font-size:var(--og-size-sm);min-height:32px;display:inline-flex;align-items:center;gap:4px}
 @media (max-width:900px){.bnwrap{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:600px){#bullseye .bn.r0 text,#bullseye .bn.r1 text,#bullseye .bn.r2 text{display:none}.bnlist{display:block}}
+
+.tickerbar{padding:var(--og-space-2) max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));max-width:1440px;margin:0 auto}
+.tickerbar[hidden]{display:none}
+.tickerbar .ticker{margin:0}
