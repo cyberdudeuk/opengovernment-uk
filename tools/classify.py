@@ -26,16 +26,16 @@ PURPOSES = [  # (key, plain label, plain explanation, COFOG division)
     ("unknown", "Not yet worked out", "The sources don't say enough yet. You can help by sending a correction.", ""),
 ]
 KW = [  # checked in order; the first rule that matches wins (tax first: HMRC's description also mentions benefits)
-    ("govt", r"\b(tax|taxes|revenue|customs|treasury)\b"),
-    ("defence", r"\b(defen[cs]e|military|armed forces|army|navy|naval|royal air force|raf|veterans?|soldiers?|atomic weapons|nuclear deterrent|dstl)\b"),
-    ("safety", r"\b(police|policing|constabulary|court|courts|tribunals?|justice|prison|probation|fire and rescue|fire service|crime|criminal|prosecut\w*|judicial|judges|legal aid|coroner|border force|sentencing|parole|youth justice|ombudsman)\b"),
-    ("health", r"\b(health|nhs|hospital|medical|medicines?|clinical|ambulance|dental|nursing|nurses|midwi\w+|care quality|public health|blood|organ|genomic|pharma\w*|surgeon|gp|perinatal|prescribing|disease|caldicott|covid\w*|patients?)\b"),
+    ("govt", r"\b(tax|taxes|revenue|customs|treasury|foreign|diplomatic|diplomacy|embass(?:y|ies))\b"),
+    ("defence", r"\b(defen[cs]e|military|armed forces|reserve forces|reservists?|cadets?|army|navy|naval|royal air force|raf|veterans?|soldiers?|atomic weapons|nuclear deterrent|dstl)\b"),
+    ("safety", r"\b(keep (?:citizens|people|the public) safe|counter-terror\w*|immigration|passports?|border (?:control|force|security)|police|policing|constabulary|court|courts|tribunals?|justice|prison|probation|fire and rescue|fire service|crime|criminal|prosecut\w*|judicial|judges|legal aid|coroner|border force|sentencing|parole|youth justice|ombudsman)\b"),
+    ("health", r"\b(health|nhs|hospital|fertilit\w+|embryo\w*|toxicity|medical|medicines?|clinical|ambulance|dental|nursing|nurses|midwi\w+|care quality|public health|blood|organ|genomic|pharma\w*|surgeon|gp|perinatal|prescribing|disease|caldicott|covid\w*|patients?)\b"),
     ("economy", r"\b(financial|finance|energy|electricity|banking|audience research)\b"),  # before education: "research" and "reporting" misled (NESO, FRC, RAJAR)
-    ("education", r"\b(education|schools?|universit\w+|colleges?|student|skills|qualifications?|exam\w*|ofsted|ofqual|estyn|learning|apprenticeship\w*|research|science|scientific|innovation|academ\w+)\b"),
+    ("education", r"\b(education|schools?|universit\w+|colleges?|students?|teach\w*|skills|qualifications?|exam\w*|ofsted|ofqual|estyn|learning|apprenticeship\w*|research|science|scientific|innovation|academ\w+)\b"),
     ("support", r"\b(pensions?|benefits?|social security|child support|social care|disabilit\w+|welfare|children'?s commissioner|older people|carers?|care inspectorate|social work|fuel poverty|poverty)\b"),
-    ("culture", r"\b(museums?|galler\w+|library|libraries|arts?|cultur\w+|heritage|historic|sport\w*|theatres?|broadcast\w*|bbc|s4c|channel 4|archives?|lottery|gaelic|g[aà]idhlig|welsh language|cymraeg|zoo|botanic\w*|royal parks|film|cycling|championships|games)\b"),
-    ("environment", r"\b(environment\w*|natur\w+|wildlife|waste|pollution|climate|conservation|national park|marine|countryside|forest\w*|woodland|rivers?|canals?|flood\w*|nuclear decommissioning|radioactive)\b"),
-    ("housing", r"\b(housing|homes?|planning|regeneration|development corporation|water|sewerage|land registry|valuation|building safety|new towns?|leasehold|communities)\b"),
+    ("culture", r"\b(museums?|treasure|galler\w+|library|libraries|arts?|cultur\w+|heritage|historic|sport\w*|theatres?|broadcast\w*|bbc|s4c|channel 4|archives?|lottery|gaelic|g[aà]idhlig|welsh language|cymraeg|zoo|botanic\w*|royal parks|film|cycling|championships|games)\b"),
+    ("environment", r"\b(environment\w*|natur\w+|wildlife|waste|pollution|climate|weather|meteorolog\w+|conservation|national park|marine|countryside|forest\w*|woodland|rivers?|canals?|flood\w*|nuclear decommissioning|radioactive)\b"),
+    ("housing", r"\b(housing|homes|home (?:ownership|building|buyers?|improvements?)|planning|regeneration|development corporation|water|sewerage|land registry|valuation|building safety|new towns?|leasehold|communities)\b"),
     ("economy", r"\b(business|trade|enterprise|transport|rail\w*|roads?|highways|airports?|aviation|ports?|harbou?r|shipping|maritime|energy|electricity|gas|industr\w+|investment|bank\w*|financ\w+|competition|markets?|agricultur\w+|farm\w*|fisher\w+|food|tourism|employment|jobs|work|communications|ofcom|post office|royal mint|insolvency|companies|patent|intellectual property|consumer|economic|economy|growth|export|shipbuilding|infrastructure|cattle|livestock|animal|ventures|plant)\b"),
     ("govt", r"\b(tax|revenue|customs|treasury|cabinet|statistics|audit\w*|civil service|government|parliament\w*|assembly|senedd|elections?|electoral|boundary|foreign|international|commonwealth|debt|procurement|commercial|digital|data|records|privy council|prime minister|office|cabinet office|treasury solicitor|legal|law commission|standards in public life|appointments|charit\w+|policy|ict|programme)\b"),
 ]
@@ -157,12 +157,27 @@ def activity(name, kind, desc, tf):
     return "unknown", ""
 
 
-def purpose(name, kind, desc):
+# OG-D78: a body's purpose must come from what it does, not from the name of the department it mentions
+# ("sponsored by the Department for Business, Innovation, Science and Trade" made the Met Office an education body).
+DEPT_PHRASE = re.compile(r"\b(?:[Dd]epartment|[Mm]inistry) (?:for|of) [A-Z][^.]*?(?=\s*,?\s*(?:supported|which|who|that|and is|and are)\b|\s*\.|$)")
+DEPT_NAMES = []  # every department's name in the register, filled in build()
+
+
+def strip_departments(name, desc):
+    d = desc or ""
+    for n in DEPT_NAMES:
+        if n != name and n in d: d = d.replace(n, " ")
+    return DEPT_PHRASE.sub(" ", d) if not DEPT_PHRASE.fullmatch(name) else d
+
+
+def purpose(name, kind, desc, sponsor=None):
     if kind in TYPE_PURPOSE and (TYPE_PURPOSE[kind] != "local" or COUNCIL.search(name) or kind == "Combined authority"): return TYPE_PURPOSE[kind], "its kind"
     if re.search(r"\b(greater london authority|city of london corporation|combined (county )?authority|city region)\b", name, re.I): return "local", "its kind"
-    text = f"{name} {desc}".lower()
-    for key, rx in KW:
+    text = f"{name} {strip_departments(name, desc)}".lower()  # a body's purpose, not its sponsor's name
+    for key, rx in KW[:-1]:  # specific words first
         if re.search(rx, text): return key, "its name and description"
+    if sponsor and sponsor != "unknown": return sponsor, "the department it answers to"  # OG-D78: the sponsor is a fallback, never the deciding word
+    if re.search(KW[-1][1], text): return KW[-1][0], "its name and description"  # the generic catch-all comes last
     if kind in TYPE_PURPOSE: return TYPE_PURPOSE[kind], "its kind"  # a local-government body with no clearer clue
     return "unknown", ""
 
@@ -206,12 +221,19 @@ def build():
     desc = json.loads((SRC / "govuk-descriptions.json").read_text())
     sys.path.insert(0, str(ROOT / "tools")); from nations import branch_of  # one definition of the three branches
     tfs = set(json.loads((ROOT / "data/tree.json").read_text())["stats"]["trading_funds"])
+    DEPT_NAMES[:] = sorted({r[1] for r in D["r"] if r[3] in ("Ministerial department", "Non-ministerial department")}, key=len, reverse=True)
+    def dept_p(r):  # a department by its own name first (its description lists everything it touches), then its description
+        for key, rx in KW[:-1]:
+            if re.search(rx, r[1].lower()): return key
+        return purpose(r[1], r[3], desc.get(r[10].get("govuk_slug", ""), ""))[0]
+    dept_purpose = {r[0]: dept_p(r) for r in D["r"] if r[3] in ("Ministerial department", "Non-ministerial department")}
     out = {}
     for r in D["r"]:
         if not r[4]: continue
         ns = nat.get(r[0], []); ans = (chains.get(r[0]) or {}).get("answerable", ""); fam = D["fam"][r[2]]
         br, _ = branch_of(r[1], r[3], fam, ans)
-        pk, pbasis = purpose(r[1], r[3], desc.get(r[10].get("govuk_slug", ""), ""))
+        sp = next((dept_purpose[x] for x in (r[6] or []) if x in dept_purpose), None)
+        pk, pbasis = (dept_purpose[r[0]], "its name") if r[0] in dept_purpose and dept_purpose[r[0]] != "unknown" else purpose(r[1], r[3], desc.get(r[10].get("govuk_slug", ""), ""), sp)
         rk, rl = reach(ns, r[3], fam, r[1]); fk = formed(r[1], r[3], fam, ns, ans, br)
         ak, abasis = activity(r[1], r[3], desc.get(r[10].get("govuk_slug", ""), ""), r[0] in tfs)
         out[r[0]] = {"purpose": pk, "purpose_basis": pbasis, "activity": ak, "activity_basis": abasis, "btype": btype(r[3], fam), "reach": rk, "reach_label": rl, "formed": fk}
@@ -222,7 +244,7 @@ def check(D, out):
     p = []; by = {r[1]: r[0] for r in D["r"] if r[4]}
     for name, want in [("Ministry of Defence", ("defence", None)), ("NHS England", ("health", "appointed")), ("Aberdeen City Council", ("local", "council-SC")),
                        ("Cardiff Council", ("local", "council-WA")), ("Crown Prosecution Service", ("safety", "nmd")), ("Natural England", ("environment", "appointed")),
-                       ("HM Revenue & Customs", ("govt", "nmd")), ("Ofqual", ("education", "nmd")), ("National Energy System Operator", ("economy", None)), ("Financial Reporting Council", ("economy", None)), ("The Scottish Government", (None, "dept-SC"))]:
+                       ("HM Revenue & Customs", ("govt", "nmd")), ("Ofqual", ("education", "nmd")), ("National Energy System Operator", ("economy", None)), ("Financial Reporting Council", ("economy", None)), ("The Scottish Government", (None, "dept-SC")), ("Met Office", ("environment", None)), ("Home Office", ("safety", None)), ("Jobcentre Plus", ("support", None)), ("Teaching Regulation Agency", ("education", None)), ("Office for Students", ("education", None)), ("Department for Work and Pensions", ("support", None)), ("Cyber & Specialist Operations Command", ("defence", None)), ("Northumberland National Park Authority", (None, None)), ("Foreign, Commonwealth & Development Office", ("govt", None))]:
         i = by.get(name)
         if not i: p.append(f"{name}: not found"); continue
         got = out[i]

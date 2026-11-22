@@ -12,7 +12,7 @@ Identifiers: each body is https://cyberdudeuk.github.io/opengovernment-uk/id/<re
 - [Org charts](https://cyberdudeuk.github.io/opengovernment-uk/orgchart.html): every body in context
 - [Funding](https://cyberdudeuk.github.io/opengovernment-uk/funding.html): grants, schemes and innovation services
 - [Developer hub](https://cyberdudeuk.github.io/opengovernment-uk/developers.html): connect, harvest, crosswalks, MCP connector, plugins, test cases, licensing and how to contribute
-- [Documentation](https://cyberdudeuk.github.io/opengovernment-uk/navigator.html): requirements, design and traceability
+- [Requirements and design](https://cyberdudeuk.github.io/opengovernment-uk/navigator.html): how it is built: needs, requirements, design and checks
 
 ## Data
 

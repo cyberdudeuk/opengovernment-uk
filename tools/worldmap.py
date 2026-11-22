@@ -61,9 +61,23 @@ def path(rings):
     return "".join(d)
 
 
+def label_anchor(rings):
+    """Where to write a country's name: the centre of its largest landmass, with that landmass's width and height
+    (so France is labelled in Europe, not French Guiana, and the United States in the lower 48, not Alaska)."""
+    def area_c(r):
+        a = cx = cy = 0.0
+        for (x0, y0), (x1, y1) in zip(r, r[1:] + r[:1], strict=False):
+            k = x0 * y1 - x1 * y0; a += k; cx += (x0 + x1) * k; cy += (y0 + y1) * k
+        return (abs(a) / 2, (cx / (3 * a), cy / (3 * a)) if a else (r[0][0], r[0][1]))
+    best = max(rings, key=lambda r: area_c(r)[0])
+    (ar, (cx, cy)) = area_c(best)
+    xs, ys = [q[0] for q in best], [q[1] for q in best]
+    return [round(cx, 1), round(cy, 1), max(xs) - min(xs), max(ys) - min(ys)]
+
+
 def build():
     topo = json.loads(ATLAS.read_text()); A = arcs(topo)
-    shapes, dots = {}, {}
+    shapes, dots, labels = {}, {}, {}
     for g in topo["objects"]["countries"]["geometries"]:
         name = g["properties"]["name"]
         polys = g["arcs"] if g["type"] == "MultiPolygon" else [g["arcs"]] if g["type"] == "Polygon" else []
@@ -72,7 +86,7 @@ def build():
         if not allpts: continue
         xs, ys = [p[0] for p in allpts], [p[1] for p in allpts]
         big = [r for r in rings if len(set(r)) >= 4]
-        if big and (max(xs) - min(xs) >= 3 or max(ys) - min(ys) >= 3): shapes[name] = path(big)
+        if big and (max(xs) - min(xs) >= 3 or max(ys) - min(ys) >= 3): shapes[name] = path(big); labels[name] = label_anchor(big)
         else: dots[name] = [round(sum(xs) / len(xs)), round(sum(ys) / len(ys))]
     ev = json.loads(EV.read_text())
     for name, x in ev.get("extra_dots", {}).items():  # places too small for the atlas, from Wikidata coordinates
@@ -86,7 +100,8 @@ def build():
         elif p in ev["organisations"] or p in ev["former_states"]: continue
         else: problems.append(f"treaty partner not placed: {p!r} (add it to treaty-partners.json)")
     problems += [f"alias points at no map country: {a} -> {c}" for a, cs in ev["aliases"].items() for c in cs if c not in known]
-    return {"w": W, "h": H, "shapes": shapes, "dots": dots, "place": place,
+    for name, xy in dots.items(): labels.setdefault(name, [xy[0], xy[1], 0, 0])
+    return {"w": W, "h": H, "shapes": shapes, "dots": dots, "labels": labels, "place": place,
             "not_drawn": {"organisations": ev["organisations"], "former_states": ev["former_states"]},
             "source": "world-atlas 2.0.2 (ISC), from Natural Earth (public domain); Equal Earth projection"}, problems
 
@@ -98,6 +113,11 @@ def check(m, problems):
     for small in ["Singapore", "Malta", "Bahrain"]:  # tiny states must still be visible
         if small not in m["dots"] and small not in m["shapes"]: e.append(f"{small} is not drawn")
     if "United States of America" not in m["shapes"]: e.append("the United States has no shape")
+    fx, fy = m["labels"].get("France", [0, 0])[:2]; ux, uy = m["labels"].get("United States of America", [0, 0])[:2]; ax = m["labels"].get("Australia", [0])[0]
+    if not (470 <= fx <= 540 and fy < 150): e.append(f"known answer: France is labelled at {fx},{fy}, not in Europe")
+    if not (150 <= ux <= 300 and 100 <= uy <= 200): e.append(f"known answer: the United States is labelled at {ux},{uy}, not the lower 48")
+    if not 800 <= ax <= 950: e.append(f"known answer: Australia is labelled at x {ax}")
+    if set(m["shapes"]) | set(m["dots"]) - set(m["labels"]): e += [f"{c} has no label anchor" for c in (set(m["shapes"]) | set(m["dots"])) - set(m["labels"])]
     n = len(gzip.compress(json.dumps(m, separators=(",", ":")).encode(), 9))
     if n > 120_000: e.append(f"map is {n:,} bytes gzip; budget 120,000")
     return e
@@ -106,7 +126,7 @@ def check(m, problems):
 def main():
     m, problems = build()
     if "--negative" in sys.argv:
-        bad = json.loads(json.dumps(m)); bad["place"]["USA"] = ["Canada"]; bad["dots"].pop("Singapore", None); bad["shapes"].pop("Singapore", None)
+        bad = json.loads(json.dumps(m)); bad["place"]["USA"] = ["Canada"]; bad["dots"].pop("Singapore", None); bad["shapes"].pop("Singapore", None); bad["labels"]["France"] = [300, 300, 1, 1]
         caught = [bool(check(bad, [])), bool(check(m, ["treaty partner not placed: 'Atlantis'"]))]
         if not all(caught): sys.exit(f"worldmap negative: {caught.count(False)} not caught")
         print("worldmap negative: all breakers caught"); return

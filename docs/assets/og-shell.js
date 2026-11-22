@@ -72,10 +72,37 @@
     fit(); addEventListener("resize", fit); addEventListener("hashchange", () => setTimeout(fit)); if (document.fonts) document.fonts.ready.then(fit);
   }
 
+  // ---- page menu (left drawer) on long subpages that opt in (data-og-drawer): retractable, lists the page's visible sections,
+  //      marks the one in view; the open/closed choice is shared with the portal page's own page menu ----
+  const host = document.querySelector("#og-main[data-og-drawer]");
+  if (host) {
+    const content = el("div", {class: "og-dr-content"}); while (host.firstChild) content.appendChild(host.firstChild);
+    const aside = el("aside", {class: "og-drawer", "aria-labelledby": "ogDrTitle"}, [el("p", {class: "og-dr-title", id: "ogDrTitle", text: "On this page"}), el("nav", {"aria-label": "Sections of this page"})]);
+    const sw = el("button", {type: "button", role: "switch", class: "og-dr-switch", "aria-checked": "true"}, [el("span", {class: "og-dr-knob", "aria-hidden": "true"}), el("span", {text: "Page menu"})]);
+    host.append(aside, content); content.prepend(el("div", {class: "og-dr-bar"}, [sw]));
+    let opened = store.get("og-drawer") !== "0";
+    const setOpen = o => { opened = o; host.classList.toggle("og-dr-closed", !o); sw.setAttribute("aria-checked", String(o)); store.set("og-drawer", o ? "1" : "0"); };
+    sw.addEventListener("click", () => setOpen(!opened)); setOpen(opened);
+    const slug = t => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 48) || "section";
+    let spy = null;
+    const build = () => {
+      const hs = [...content.querySelectorAll("h2")].filter(h => h.offsetParent !== null && !h.closest(".og-pop, header, footer, [role=dialog]"));
+      hs.forEach((h, i) => { if (!h.id) { let id = "sec-" + slug(h.textContent), n = 2; while (document.getElementById(id)) id = "sec-" + slug(h.textContent) + "-" + n++; h.id = id; } });
+      const nav = aside.querySelector("nav");
+      nav.replaceChildren(...hs.map(h => el("a", {href: "#" + h.id, "data-sec": h.id}, [el("span", {text: h.textContent.trim()})])));
+      if (spy) spy.disconnect();
+      if ("IntersectionObserver" in window) { spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) nav.querySelectorAll("a").forEach(a => a.classList.toggle("on", a.dataset.sec === e.target.id)); }), {rootMargin: "-20% 0px -70% 0px"}); hs.forEach(h => spy.observe(h)); }
+    };
+    aside.addEventListener("click", e => { const a = e.target.closest("a[data-sec]"); if (!a) return; e.preventDefault(); const h = document.getElementById(a.dataset.sec); if (!h) return;
+      h.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"}); h.tabIndex = -1; h.focus({preventScroll: true}); history.replaceState(null, "", location.pathname + location.search + location.hash.replace(/#sec-.*$/, "")); });
+    build();
+    let t = 0; new MutationObserver(() => { clearTimeout(t); t = setTimeout(build, 250); }).observe(content, {childList: true, subtree: true, attributes: true, attributeFilter: ["hidden"]});
+  }
+
   // ---- search on pages that don't hold the register (the portal page has its own, with every record in memory) ----
   const box = document.getElementById("ogQ"), out = document.getElementById("ogQr");
   if (!box || !out) return;
-  const PLACES = [["Register", "index.html#register"], ["Who answers", "index.html#tree"], ["Nation by nation", "nations.html"], ["The UK and the world", "world.html"], ["Treaties and the world map", "world.html#tab=t"], ["Org charts", "orgchart.html"], ["Funding, grants and schemes", "funding.html"], ["Changes to the state", "index.html#changes"], ["Developer hub", "developers.html"], ["Documentation", "navigator.html"], ["Ask a question", "index.html#ask"]];
+  const PLACES = [["Register", "index.html#register"], ["Who answers", "index.html#tree"], ["Nation by nation", "nations.html"], ["The UK and the world", "world.html"], ["Treaties and the world map", "world.html#tab=t"], ["Org charts", "orgchart.html"], ["Funding, grants and schemes", "funding.html"], ["Changes to the state", "index.html#changes"], ["Developer hub", "developers.html"], ["Requirements and design", "navigator.html"], ["Help and guides", "index.html#help"], ["Ask a question", "index.html#ask"]];
   let bodies = null, sel = -1;
   const getBodies = () => bodies || (bodies = fetch("data/search-index.json", {credentials: "same-origin"}).then(r => r.ok ? r.json() : []).catch(() => []));
   const hash = id => "org-" + id.replace(/:/g, "--").replace(/[^A-Za-z0-9-]/g, "");
@@ -88,7 +115,8 @@
     const hits = all.filter(r => r[1].toLowerCase().includes(q) || r[0].toLowerCase().includes(q)).sort((a, b) => (b[1].toLowerCase().startsWith(q) - a[1].toLowerCase().startsWith(q)) || b[3] - a[3] || a[1].localeCompare(b[1])).slice(0, 7);
     out.replaceChildren(...PLACES.filter(p => p[0].toLowerCase().includes(q)).slice(0, 3).map(p => row(p[0], "Page", p[1])),
       ...hits.map(r => row(r[1], r[2] + (r[3] ? "" : " · closed"), "index.html#" + hash(r[0]))),
-      row(`See every match for “${box.value.trim()}”`, "In the register", "index.html#register?q=" + encodeURIComponent(box.value.trim())));
+      row(`See every match for “${box.value.trim()}”`, "In the register", "index.html#register?q=" + encodeURIComponent(box.value.trim())),
+      row(`Ask: “${box.value.trim()}”`, "Answered only from the register, with its sources", "index.html#ask?q=" + encodeURIComponent(box.value.trim())));
     out.hidden = false; box.setAttribute("aria-expanded", "true");
   }
   box.addEventListener("focus", getBodies, {once: true});

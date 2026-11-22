@@ -9,6 +9,16 @@ const hmNatCount = c => OPEN.filter(r => (r.nat.length ? r.nat : ["UK"]).include
 const hmBtCount = k => OPEN.filter(r => !SA_FOLDED.has(r.id) && CLX(r.id, 2) === k).length;
 const hmGo = f => `data-go='${esc(JSON.stringify(Object.assign({stat: "1"}, f)))}'`;
 
+// One line-icon set for the rings (24-unit grid, rounded strokes), each drawn for what the node means.
+// Nations and territories carry a short code instead of a flag: neutral, legible at this size, no sovereignty implied.
+const HM_GLYPH = {
+  department: "M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6", agency: "M4 8h16v12H4zM9 8V5h6v3M4 13h16", ndpb: "M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1.2 1.2M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1.2-1.2",
+  central: "M3 10h18L12 4zM5 10v8M9.7 10v8M14.3 10v8M19 10v8M3 20h18", corporation: "M3 21V11l5 3v-3l5 3V7h8v14zM16 11h2M16 15h2", court: "M12 4v16M8 20h8M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z",
+  council: "M3 20v-8l5-4 5 4v8M13 20v-6l4-3 4 3v6M2 20h20", nhs: "M9 3h6v6h6v6h-6v6H9v-6H3V9h6z", territory: "M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18",
+  crown: "M3 18h18l-1.5-9-4.5 4-3-6-3 6-4.5-4zM4 21h16", treaty: "M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h7", alliance: "M3 12a5 5 0 1 0 10 0a5 5 0 1 0-10 0M11 12a5 5 0 1 0 10 0a5 5 0 1 0-10 0",
+  fund: "M15.5 7.5A3.5 3.5 0 0 0 9 9.5V17M7 13h6M7 17h10", orgchart: "M9 3h6v5H9zM3 16h6v5H3zM15 16h6v5h-6zM12 8v4M6 16v-4h12v4", change: "M20 12a8 8 0 0 1-14.3 4.9M4 12a8 8 0 0 1 14.3-4.9M18 3v4h-4M6 21v-4h4"};
+const HM_RING2_ICON = {"Who answers": "crown", "Treaties": "treaty", "Alliances": "alliance", "Funding": "fund", "Org charts": "orgchart", "Changes": "change"};
+
 function hmBullseye(){
   const host = $("#bullseye"); if (!host) return;
   const W = 820, H = 600, cx = 410, cy = 300, RAD = [92, 182, 262];
@@ -16,14 +26,14 @@ function hmBullseye(){
   const SHORT = {department: "Departments", agency: "Agencies", ndpb: "Arm's-length bodies", central: "Other central bodies", corporation: "Corporations", court: "Courts and tribunals", council: "Councils", nhs: "NHS bodies", territory: "Territories"};
   const NS = {UK: "UK-wide", EN: "England", SC: "Scotland", WA: "Wales", NI: "N. Ireland", CD: "Crown Deps", OT: "Overseas Terr."};
   const rings = [
-    HM_NATS.map(([c, l]) => ({label: l, short: NS[c], n: hmNatCount(c), go: {nat: c}, href: "#register", what: `Open bodies in ${c === "UK" ? "the UK as a whole, or with no nation stated" : l}`, more: [["Nation by nation", "nations.html"]]})),
-    HM_BT.map(k => ({label: CLL("btype", k), short: SHORT[k], n: hmBtCount(k), go: {bt: k}, href: "#register", what: CLL("btype", k), more: [["Org charts by type", "orgchart.html#view=types"]]})),
+    HM_NATS.map(([c, l]) => ({code: c, label: l, short: NS[c], n: hmNatCount(c), go: {nat: c}, href: "#register", what: `Open bodies in ${c === "UK" ? "the UK as a whole, or with no nation stated" : l}`, more: [["Nation by nation", "nations.html"]]})),
+    HM_BT.map(k => ({ic: k, label: CLL("btype", k), short: SHORT[k], n: hmBtCount(k), go: {bt: k}, href: "#register", what: CLL("btype", k), more: [["Org charts by type", "orgchart.html#view=types"]]})),
     [["Who answers", "#tree", `Accountability traced for ${fmt(Object.keys(ACC.ch || {}).length)} bodies`],
      ["Treaties", "world.html#tab=t", `${fmt(N.treaties || 0)} treaties, mapped by partner`],
      ["Alliances", "world.html#tab=i", `${fmt(N.memberships || 0)} memberships of international bodies`],
      ["Funding", "funding.html", `${fmt(N.grants || 0)} open grants and ${fmt(N.schemes || 0)} schemes`],
      ["Org charts", "orgchart.html", "Every body in context, as a chart you can explore"],
-     ["Changes", "#changes", `${fmt(D.ev.length)} closures, mergers and renames`]].map(([l, h, w]) => ({label: l, short: l, href: h, what: w, more: []}))];
+     ["Changes", "#changes", `${fmt(D.ev.length)} closures, mergers and renames`]].map(([l, h, w]) => ({ic: HM_RING2_ICON[l], label: l, short: l, href: h, what: w, more: []}))];
   const NAMES = ["Nations and territories", "Types of body", "How it connects"];
   const OFF = [0, .5, .5];  // the outer ring sits between the middle ring's labels
   const pos = (ri, i, n) => { const a = -Math.PI / 2 + (i + OFF[ri]) * 2 * Math.PI / n; return [cx + RAD[ri] * Math.cos(a), cy + RAD[ri] * Math.sin(a), a]; };
@@ -31,10 +41,10 @@ function hmBullseye(){
   let k = 0;
   const nodes = rings.map((ring, ri) => ring.map((nd, i) => {
     const [x, y, a] = pos(ri, i, ring.length), c = Math.cos(a), s = Math.sin(a), right = ri > 0 && c > .3, left = ri > 0 && c < -.3;  // inner-ring labels sit above or below their node, inside the ring's own band
-    const tx = x + (right ? 14 : left ? -14 : 0), ty = y + (right || left ? -2 : s > 0 ? 26 : -26), anchor = right ? "start" : left ? "end" : "middle";
+    const tx = x + (right ? 22 : left ? -22 : 0), ty = y + (right || left ? -2 : s > 0 ? 32 : -32), anchor = right ? "start" : left ? "end" : "middle";
     const attrs = nd.go ? hmGo(nd.go) : "";
     const t2 = nd.n !== undefined ? `<tspan x="${tx.toFixed(1)}" dy="15" class="cnt">${fmt(nd.n)}</tspan>` : "";
-    return `<a class="bn r${ri}" href="${esc(nd.href)}" ${attrs} data-k="${k++}" style="--d:${(ri * 0.25 + i * 0.06).toFixed(2)}s" aria-label="${esc(nd.label)}${nd.n !== undefined ? ": " + fmt(nd.n) + " bodies" : ""}. ${esc(nd.what)}"><circle class="dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${ri === 2 ? 10 : 8}" fill="${COL[ri]}"/><circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="15"/><text x="${tx.toFixed(1)}" y="${(ty - (t2 && !(right || left) && s < 0 ? 15 : 0)).toFixed(1)}" text-anchor="${anchor}">${esc(nd.short)}${t2}</text></a>`;
+    return `<a class="bn r${ri}" href="${esc(nd.href)}" ${attrs} data-k="${k++}" style="--d:${(ri * 0.25 + i * 0.06).toFixed(2)}s" aria-label="${esc(nd.label)}${nd.n !== undefined ? ": " + fmt(nd.n) + " bodies" : ""}. ${esc(nd.what)}"><circle class="dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${ri === 2 ? 15 : 14}" fill="${COL[ri]}"/>${nd.code ? `<text class="ncode" x="${x.toFixed(1)}" y="${(y + 3.6).toFixed(1)}" text-anchor="middle" aria-hidden="true">${esc(nd.code)}</text>` : HM_GLYPH[nd.ic] ? `<g class="glyph" aria-hidden="true" transform="translate(${(x - 9).toFixed(1)},${(y - 9).toFixed(1)}) scale(.75)"><path d="${HM_GLYPH[nd.ic]}"/></g>` : ""}<circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="20"/><text x="${tx.toFixed(1)}" y="${(ty - (t2 && !(right || left) && s < 0 ? 15 : 0)).toFixed(1)}" text-anchor="${anchor}">${esc(nd.short)}${t2}</text></a>`;
   }).join("")).join("");
   const flat = rings.flat();
   host.innerHTML = `<div class="bnwrap"><svg viewBox="0 0 ${W} ${H}" role="group" aria-label="The UK state as rings: at the centre, who answers; around it, nations and territories, then types of body, then how they connect. Each node is a link.">
@@ -65,7 +75,8 @@ function hmSearch(){
     const rs = searchRecords(q, 7).filter(r => !SA_FOLDED.has(r.id));
     out.innerHTML = [...pl.map(p => `<li role="option"><a href="${esc(p[1])}">${icon("atlas")}<span><b>${esc(p[0])}</b><small>Page</small></span></a></li>`),
       ...rs.map(r => `<li role="option"><a href="#${toHash(r.id)}">${icon("list")}<span><b>${esc(r.name)}</b><small>${esc(r.fam)}${r.open ? "" : " · closed"}</small></span></a></li>`),
-      `<li role="option"><a href="#register" ${hmGo({q})}>${icon("list")}<span><b>See every match for “${esc(q)}”</b><small>In the register</small></span></a></li>`].join("");
+      `<li role="option"><a href="#register" ${hmGo({q})}>${icon("list")}<span><b>See every match for “${esc(q)}”</b><small>In the register</small></span></a></li>`,
+      `<li role="option"><a href="#ask?q=${encodeURIComponent(q)}">${icon("ask")}<span><b>Ask: “${esc(q)}”</b><small>Answered only from the register, with its sources</small></span></a></li>`].join("");
     out.hidden = false; box.setAttribute("aria-expanded", "true"); };
   box.addEventListener("input", draw);
   box.addEventListener("keydown", e => { const its = $$("a", out); if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); sel = (sel + (e.key === "ArrowDown" ? 1 : its.length - 1)) % its.length; its.forEach((a, i) => a.classList.toggle("on", i === sel)); }
@@ -152,7 +163,7 @@ function hmSignposts(){
     ["The state", [["atlas", "Explore the anatomy", "Families, sectors and department trees", "#explore"], ["atlas", "Nation by nation", "Law-makers, government and courts", "nations.html"], ["globe", "UK and the world", "Treaties, alliances and partners", "world.html"], ["tree", "Org charts", "Every body in context", "orgchart.html"]]],
     ["Accountability and money", [["crown", "Who answers", "Chains, money and owners", "#tree"], ["coin", "Funding", "Grants, schemes and services", "funding.html"], ["clock", "Change", "Renames, mergers and closures", "#changes"]]],
     ["Data", [["data", "Data and feeds", "Downloads and the SQLite file", "#data"], ["data", "Developer hub", "Connect, harvest, crosswalks, MCP", "developers.html"]]],
-    ["Take part and trust", [["scale", "What needs a person", "How matching works; names to decide", "#reconcile"], ["shield", "Quality and trust", "Sources, checks and the audit trail", "#quality"], ["help", "Help", "Guides, tours and the glossary", "#help"]]]];
+    ["Take part and trust", [["scale", "What needs a person", "How matching works; names to decide", "#reconcile"], ["shield", "Quality and trust", "Sources, checks and the audit trail", "#quality"], ["help", "Help and guides", "Manual, tours, tutorials, glossary", "#help"]]]];
   s.innerHTML = GROUPS.map(([g, xs]) => `<div class="signgrp"><h3>${esc(g)}</h3><div class="signrow">${xs.map(p => `<a class="sign" href="${esc(p[3])}">${icon(p[0])}<b>${esc(p[1])}</b><span>${esc(p[2])}</span><i aria-hidden="true">→</i></a>`).join("")}</div></div>`).join("");
 }
 
@@ -168,6 +179,37 @@ document.addEventListener("click", e => { const b = e.target.closest("[data-jump
 
 function homeExtras(){
   ["s-find", "s-carousel", "s-spot"].forEach(x => NEWSEC.add(x));
-  hmBullseye(); hmSearch(); hmTicker(); hmCarousel(); hmSpotlight(); hmWayfinder(); hmSignposts(); hmFind();
+  hmBullseye(); hmSearch(); hmTicker(); hmCarousel(); hmSpotlight(); hmWayfinder(); hmSignposts(); hmFind(); viewTabs();
   COUNTS["s-spot"] = 1;
+}
+
+// Breadcrumbs on a body's profile: where it sits in the portal, then the bodies it answers to, top first (only real links)
+function crumbs(id){
+  const r = BY[id]; if (!r) return "";
+  const c = (typeof CHAIN === "function") ? CHAIN(id) : null;
+  const up = c ? c.path.map(e => e.p).filter(p => BY[p] && p !== id).reverse() : [];
+  const shown = up.length > 4 ? [up[0], null, ...up.slice(-2)] : up;
+  const li = x => x === null ? '<li aria-hidden="true">…</li>' : `<li><a href="#${toHash(x)}">${esc(BY[x].name)}</a></li>`;
+  return `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="#home">Home</a></li><li><a href="#register">Register</a></li><li><a href="#register" ${hmGo({fam: r.fam})}>${esc(r.fam)}</a></li>${shown.map(li).join("")}<li aria-current="page">${esc(r.name)}</li></ol></nav>`;
+}
+
+// Tabs for long views: each tab holds a group of the view's sections; the page menu lists the open tab's sections.
+const VIEW_TABS = {tree: {after: "s-tintro", tabs: [["trace", "Trace a body", ["s-tchain"]], ["ends", "Where it ends", ["s-troots"]], ["money", "Money", ["s-tmoney", "s-tppp"]], ["business", "Public businesses", ["s-ttf"]], ["evidence", "Evidence and gaps", ["s-tconf", "s-tgaps", "s-tledger", "s-tssot"]]]}};
+function viewTabs(){
+  Object.entries(VIEW_TABS).forEach(([vid, cfg]) => {
+    const view = $("#v-" + vid), anchor = view && $("#" + cfg.after, view); if (!anchor) return;
+    const bar = document.createElement("div"); bar.className = "tabs hmtabs vtabs"; bar.setAttribute("role", "tablist"); bar.setAttribute("aria-label", `${view.dataset.title}: sections`);
+    bar.innerHTML = cfg.tabs.map(([k, t, ids]) => `<button type="button" role="tab" id="vtb-${vid}-${k}" data-k="${k}" aria-controls="${ids.join(" ")}" aria-selected="false" tabindex="-1">${esc(t)}</button>`).join("");
+    anchor.after(bar);
+    const show = (k, focus) => {
+      cfg.tabs.forEach(([kk, , ids]) => ids.forEach(id => { const el = document.getElementById(id); if (el) { el.hidden = kk !== k; el.setAttribute("role", "tabpanel"); el.setAttribute("aria-labelledby", `vtb-${vid}-${kk}`); } }));
+      $$('[role="tab"]', bar).forEach(b => { const on = b.dataset.k === k; b.setAttribute("aria-selected", String(on)); b.tabIndex = on ? 0 : -1; if (on && focus) b.focus(); });
+      try { localStorage.setItem("og-vt-" + vid, k); } catch (e) { /* storage off */ }
+      if (!view.hidden) buildDrawer(vid);
+    };
+    bar.addEventListener("click", e => { const b = e.target.closest('[role="tab"]'); if (b) show(b.dataset.k); });
+    bar.addEventListener("keydown", e => { if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return; e.preventDefault(); const bs = $$('[role="tab"]', bar), i = bs.indexOf(document.activeElement), n = bs[(i + (e.key === "ArrowRight" ? 1 : bs.length - 1)) % bs.length]; show(n.dataset.k, true); });
+    let k = ""; try { k = localStorage.getItem("og-vt-" + vid) || ""; } catch (e) { /* storage off */ }
+    show(cfg.tabs.some(t => t[0] === k) ? k : cfg.tabs[0][0]);
+  });
 }

@@ -25,7 +25,7 @@
  #bullseye .spin.s2{animation-duration:52s}
  #bullseye .bn.r0,#bullseye .bn.r1,#bullseye .bn.r2{opacity:0;animation:hmin .5s var(--og-motion-ease) forwards;animation-delay:calc(.6s + var(--d))}
  #bullseye .bn .dot{transform-box:fill-box;transform-origin:center;transition:transform .2s var(--og-motion-ease)}
- #bullseye .bn:hover .dot,#bullseye .bn:focus-visible .dot{transform:scale(1.35)}
+ #bullseye .bn:hover .dot,#bullseye .bn:focus-visible .dot{transform:scale(1.12)}
  #bullseye .core .pulse{transform-box:fill-box;transform-origin:center;animation:hmpulse 2.8s ease-out infinite}
  .ticker:not(.paused) .tktrack{animation:hmtick var(--tkdur,90s) linear infinite}
  .ticker:hover .tktrack,.ticker:focus-within .tktrack{animation-play-state:paused}
@@ -130,3 +130,13 @@
 .hm-about>summary h2{margin:0!important}
 .hm-about>summary::after{content:"Show";align-self:flex-start;margin-top:.5rem;font-weight:600;color:var(--og-accent)}
 .hm-about[open]>summary::after{content:"Hide"}
+
+.crumbs{margin:0 0 .75rem}.crumbs ol{display:flex;flex-wrap:wrap;gap:.25rem .5rem;list-style:none;margin:0;padding:0;font-size:.9rem}
+.crumbs li{display:flex;align-items:center;gap:.5rem;overflow-wrap:anywhere}.crumbs li+li::before{content:"›";color:var(--og-muted)}
+.crumbs [aria-current]{color:var(--og-muted)}
+
+#v-tree > [hidden]{display:none!important}
+.vtabs{margin:1rem 0}
+
+#bullseye .bn .glyph path{fill:none;stroke:var(--paper);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+#bullseye .bn text.ncode{display:block!important;font-size:10px;font-weight:700;fill:var(--paper);stroke:none;letter-spacing:.03em;pointer-events:none}

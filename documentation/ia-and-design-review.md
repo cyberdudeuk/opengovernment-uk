@@ -127,11 +127,17 @@ The page menu went from nine sections to six.
 
 ### Next, in order of value
 
-1. **Tabs for Who answers** (10 sections on one page): chains, where accountability ends, money, PFI, trading funds and corporations, confidence, gaps, ledger, single source. About a day.
-2. **A drawer on subpages with many sections**, starting with Nation by nation (11). It should reuse the portal page's drawer: retractable, icons, counts, new flags. About a day.
-3. **Breadcrumbs on body profiles** (Register > family > body), so people know where they are after a search. Half a day.
-4. **Merge Help and Documentation under About** into one "How it works" page with tabs (guides, tours, glossary, requirements and design). About a day.
-5. **Ask in the masthead search:** offer "Ask about this" as the last search suggestion, so the AI is one step from anywhere. Half a day.
+1. Done, 22 November: **Tabs for Who answers** (10 sections on one page): chains, where accountability ends, money, PFI, trading funds and corporations, confidence, gaps, ledger, single source. About a day.
+2. Done, 22 November (Nation by nation and the design system page): **A drawer on subpages with many sections**, starting with Nation by nation (11). It should reuse the portal page's drawer: retractable, icons, counts, new flags. About a day.
+3. Done, 22 November: **Breadcrumbs on body profiles** (Register > family > body), so people know where they are after a search. Half a day.
+4. Clarified rather than merged, 22 November (renamed "Help and guides" and "Requirements and design", cross-linked; a merge would hide the requirements behind a help page): **Merge Help and Documentation under About** into one "How it works" page with tabs (guides, tours, glossary, requirements and design). About a day.
+5. Done, 22 November: **Ask in the masthead search:** offer "Ask about this" as the last search suggestion, so the AI is one step from anywhere. Half a day.
+
+### Also added, 22 November
+
+- **World map:** every country is named where its name fits, with its treaty count in the current view; zoom (buttons, Ctrl or Cmd and the wheel) and drag to pan; the tooltip gives treaties by kind; a selected country gets a summary card (treaties by kind, trade agreement, tax treaty, Commonwealth).
+- **Home-page rings:** one line-icon set for every type of body and every link on the outer ring; nations and territories carry two-letter codes rather than flags.
+- **Classification:** department names in a description no longer decide a body's purpose (OG-D78).
 
 ### Effort to run
 

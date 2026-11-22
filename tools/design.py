@@ -154,8 +154,8 @@ NAV = [
                                      ("Report a mistake", "report", "https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=data-correction.yml", "Cite the source that says so")]),
     ("About", "about", None, [("Quality and trust", "quality", "index.html#quality", "Sources, checks, defects and the audit trail"),
                               ("Product and roadmap", "product", "index.html#product", "Vision, roadmap and requirements"),
-                              ("Help", "help", "index.html#help", "Guides, tours and the glossary"),
-                              ("Documentation", "docs", "navigator.html", "Requirements, design and traceability"),
+                              ("Help and guides", "help", "index.html#help", "How to use the portal: manual, tours, tutorials, glossary"),
+                              ("Requirements and design", "docs", "navigator.html", "How it is built: needs, requirements, design, checks"),
                               ("Design system", "design", "design-system.html", "How the portal looks, and why")]),
 ]
 
@@ -220,13 +220,13 @@ def shell(active):
     return head, foot
 
 
-def wrap_page(html, active):
+def wrap_page(html, active, drawer=False):
     """Put the shared shell and stylesheet on a generated subpage."""
     head, foot = shell(active)
     html = re.sub(r'<link[^>]+fonts\.(googleapis|gstatic)\.com[^>]*>', "", html)
     html = html.replace("</head>", '<link rel="stylesheet" href="assets/og.css"></head>', 1)
     html = re.sub(r"<style>(.*?)</style>", lambda m: "<style>" + layer(tokenise(m.group(1))) + "</style>", html, count=1, flags=re.S)
-    html = re.sub(r"<body([^>]*)>", lambda m: f"<body{m.group(1)}>{head}<div id=\"og-main\" tabindex=\"-1\">", html, count=1)
+    html = re.sub(r"<body([^>]*)>", lambda m: f"<body{m.group(1)}>{head}<div id=\"og-main\" tabindex=\"-1\"" + (" data-og-drawer" if drawer else "") + ">", html, count=1)
     html = re.sub(r"<footer[^>]*>.*?</footer>", "", html, count=1, flags=re.S)
     return html.replace("</body>", f"</div>{foot}</body>", 1)
 
@@ -326,7 +326,10 @@ def design_page():
 .ds-radii{margin-top:var(--og-space-4)}.ds-row{display:flex;flex-wrap:wrap;gap:var(--og-space-3);align-items:center;margin-bottom:var(--og-space-4)}
 .ds-row .stat{min-width:180px}.ds-field{display:grid;gap:var(--og-space-1);font-weight:600;font-size:var(--og-size-sm);color:var(--og-muted)}"""
     html = f'<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Design system · OpenGovernment UK</title><meta name="description" content="The design tokens, type, colour and components behind OpenGovernment UK."><style>{css}</style></head><body></body></html>'
-    return wrap_page(html, "design").replace('<div id="og-main" tabindex="-1">', f'<div id="og-main" tabindex="-1">{body}', 1)
+    out = wrap_page(html, "design", drawer=True)
+    tag = '<div id="og-main" tabindex="-1" data-og-drawer>'
+    if tag not in out: raise SystemExit("design page: main area not found, so the page body would be missing")  # fail closed, not a blank page
+    return out.replace(tag, tag + body, 1)
 
 
 PAGES = ["index.html", "nations.html", "world.html", "orgchart.html", "funding.html", "developers.html", "navigator.html", "design-system.html"]  # every published page; a new page must be added here

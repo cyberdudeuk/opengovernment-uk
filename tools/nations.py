@@ -224,6 +224,6 @@ if __name__ == "__main__":
     payload = {"meta": meta, "nations": out, "conflicts": [c for c in evd["conflicts"] if c.get("status") == "contested"], "resolved": sum(1 for c in evd["conflicts"] if c.get("status") == "resolved"), "unplaced": unl,
                "rel": None, "intl": None}  # the UK and the world now has its own page (tools/world.py)
     sys.path.insert(0, str(ROOT / "tools")); import design  # shared design system and page shell (OG-D42)
-    (ROOT / "docs/nations.html").write_text(design.wrap_page(PAGE, "nations").replace("__DATA__", json.dumps(payload).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
+    (ROOT / "docs/nations.html").write_text(design.wrap_page(PAGE, "nations", drawer=True).replace("__DATA__", json.dumps(payload).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
     for k, n in out.items(): print(f"{k:3} {n['name']:36} {n['counts']}")
     print("unplaced", unplaced, "problems", probs); sys.exit(1 if probs else 0)

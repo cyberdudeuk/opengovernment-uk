@@ -6,6 +6,7 @@ For each page, at a phone width (390) and a desktop width (1280), in light and d
   - nothing in the masthead off-screen, and the masthead tools don't overlap each other or the theme switch;
   - the notifications panel opens, shows items, and closes with Escape;
   - search shows suggestions for a known body (the Met Office).
+  - the world map labels countries and keeps labels when zoomed; the bullseye carries its 15 icons and 7 nation codes (OG-D79).
 Serves docs/ on a local port; nothing is fetched from the internet.
 
   python tools/browser_check.py             run
@@ -47,6 +48,18 @@ def check(base, pages):
                     pg.on("pageerror", lambda e, errs=errs: errs.append(str(e)[:160]))
                     pg.goto(f"{base}/{n}"); pg.wait_for_timeout(1800 if n == "index.html" else 700)
                     tag = f"{n} {w}px {scheme}"
+                    # OG-D79: map labels and bullseye icons must render (not just exist in the source).
+                    # Runs before the tab loop: opening other tabs hides the map (width 0, no labels).
+                    if n == "world.html":
+                        pg.wait_for_timeout(400); n0 = pg.locator(".wlab text").count()
+                        need = 20 if w >= 1024 else 3  # a phone labels only the largest countries until zoomed
+                        if n0 < need: bad.append(f"{tag}: world map shows {n0} country labels (expected {need} or more)")
+                        if pg.locator("[data-z=in]").count():
+                            pg.click("[data-z=in]"); pg.wait_for_timeout(300)
+                            if pg.locator(".wlab text").count() == 0: bad.append(f"{tag}: zoomed map lost every label")
+                    if n == "index.html":
+                        g, c = pg.locator("#bullseye .glyph").count(), pg.locator("#bullseye .ncode").count()
+                        if (g, c) != (15, 7): bad.append(f"{tag}: bullseye has {g} icons and {c} nation codes (expected 15 and 7)")
                     bad += [f"{tag}: script error: {e}" for e in errs]
                     ov = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
                     if ov > 1: bad.append(f"{tag}: page overflows sideways by {ov}px")

@@ -498,7 +498,7 @@
    "formed": "agency"
   },
   "government-organisation:PB523": {
-   "purpose": "health",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its name",
@@ -619,7 +619,7 @@
   },
   "government-organisation:PB437": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -628,8 +628,8 @@
    "formed": "appointed"
   },
   "government-organisation:PB271": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -648,7 +648,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB28": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its name",
@@ -668,7 +668,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT204": {
-   "purpose": "environment",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -689,7 +689,7 @@
   },
   "government-organisation:OT248": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -719,7 +719,7 @@
   },
   "government-organisation:PC163": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -799,7 +799,7 @@
   },
   "government-organisation:D1": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -818,7 +818,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT1016": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -838,7 +838,7 @@
    "formed": "appointed"
   },
   "government-organisation:PC427": {
-   "purpose": "culture",
+   "purpose": "govt",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -848,8 +848,8 @@
    "formed": "unknown"
   },
   "government-organisation:IM1345": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "inspect",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -909,7 +909,7 @@
   },
   "government-organisation:PB337": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -919,7 +919,7 @@
   },
   "government-organisation:OT428": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -929,7 +929,7 @@
   },
   "government-organisation:OT431": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -939,7 +939,7 @@
   },
   "government-organisation:OT432": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -948,7 +948,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT1148": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -989,7 +989,7 @@
   },
   "government-organisation:PB124": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "research",
    "activity_basis": "its description",
    "btype": "ndpb",
@@ -1029,7 +1029,7 @@
   },
   "government-organisation:PC1487": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -1038,7 +1038,7 @@
    "formed": "company"
   },
   "government-organisation:OT1395": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -1058,7 +1058,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT1374": {
-   "purpose": "environment",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its description",
@@ -1079,7 +1079,7 @@
   },
   "government-organisation:AG1446": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -1088,7 +1088,7 @@
    "formed": "appointed"
   },
   "government-organisation:EA1352": {
-   "purpose": "culture",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -1119,7 +1119,7 @@
   },
   "government-organisation:D2": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1129,7 +1129,7 @@
   },
   "government-organisation:OT1201": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -1148,7 +1148,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT1447": {
-   "purpose": "housing",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -1179,7 +1179,7 @@
   },
   "government-organisation:PB1194": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -1228,7 +1228,7 @@
    "formed": "agency"
   },
   "government-organisation:PB139": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "research",
    "activity_basis": "its description",
@@ -1268,7 +1268,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT1290": {
-   "purpose": "culture",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -1339,7 +1339,7 @@
   },
   "government-organisation:CS1028": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "unknown",
    "activity_basis": "",
    "btype": "agency",
@@ -1369,7 +1369,7 @@
   },
   "government-organisation:OT1281": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -1398,8 +1398,8 @@
    "formed": "judicial"
   },
   "government-organisation:OT1249": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -1419,7 +1419,7 @@
   },
   "government-organisation:OT517": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its description",
    "btype": "central",
@@ -1428,7 +1428,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB196": {
-   "purpose": "economy",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its name",
@@ -1448,7 +1448,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB526": {
-   "purpose": "health",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its kind",
@@ -1479,7 +1479,7 @@
   },
   "government-organisation:PB226": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -1488,7 +1488,7 @@
    "formed": "appointed"
   },
   "government-organisation:EA26": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
@@ -1519,7 +1519,7 @@
   },
   "government-organisation:D550": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "department",
@@ -1558,7 +1558,7 @@
    "formed": "appointed"
   },
   "government-organisation:PB198": {
-   "purpose": "environment",
+   "purpose": "housing",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its name",
@@ -1579,7 +1579,7 @@
   },
   "government-organisation:EO1362": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -1638,7 +1638,7 @@
    "formed": "judicial"
   },
   "government-organisation:OT214": {
-   "purpose": "environment",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -1689,7 +1689,7 @@
   },
   "government-organisation:D101": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "fund",
    "activity_basis": "its description",
    "btype": "department",
@@ -1699,7 +1699,7 @@
   },
   "government-organisation:OT1454": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -1829,7 +1829,7 @@
   },
   "government-organisation:D1480": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1849,7 +1849,7 @@
   },
   "government-organisation:D1481": {
    "purpose": "culture",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1859,7 +1859,7 @@
   },
   "government-organisation:D6": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1869,7 +1869,7 @@
   },
   "government-organisation:D1380": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1879,7 +1879,7 @@
   },
   "government-organisation:D7": {
    "purpose": "environment",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1909,7 +1909,7 @@
   },
   "government-organisation:D9": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1918,8 +1918,8 @@
    "formed": "dept-UK"
   },
   "government-organisation:D10": {
-   "purpose": "health",
-   "purpose_basis": "its name and description",
+   "purpose": "support",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -1969,7 +1969,7 @@
   },
   "government-organisation:D12": {
    "purpose": "health",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -2018,8 +2018,8 @@
    "formed": "unknown"
   },
   "government-organisation:PB509": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -2028,7 +2028,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT1080": {
-   "purpose": "govt",
+   "purpose": "housing",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -2038,7 +2038,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1479": {
-   "purpose": "environment",
+   "purpose": "housing",
    "purpose_basis": "its name and description",
    "activity": "inspect",
    "activity_basis": "its name",
@@ -2049,7 +2049,7 @@
   },
   "government-organisation:EA74": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "agency",
@@ -2059,7 +2059,7 @@
   },
   "government-organisation:EA570": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "agency",
@@ -2189,7 +2189,7 @@
   },
   "government-organisation:PB1458": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -2199,7 +2199,7 @@
   },
   "government-organisation:PB1492": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -2209,7 +2209,7 @@
   },
   "government-organisation:OT1348": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -2248,7 +2248,7 @@
    "formed": "unknown"
   },
   "government-organisation:EA1466": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its description",
@@ -2289,7 +2289,7 @@
   },
   "government-organisation:OT1316": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "agency",
@@ -2298,7 +2298,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1085": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its description",
@@ -2489,7 +2489,7 @@
   },
   "government-organisation:D102": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "department",
@@ -2498,8 +2498,8 @@
    "formed": "nmd"
   },
   "government-organisation:D1315": {
-   "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose": "govt",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -2529,7 +2529,7 @@
   },
   "government-organisation:D85": {
    "purpose": "environment",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "department",
@@ -2579,7 +2579,7 @@
   },
   "government-organisation:OT1307": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -2589,7 +2589,7 @@
   },
   "government-organisation:D103": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "department",
@@ -2619,7 +2619,7 @@
   },
   "government-organisation:EA1474": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "agency",
@@ -2629,7 +2629,7 @@
   },
   "government-organisation:OT1116": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -2669,7 +2669,7 @@
   },
   "government-organisation:OT1475": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "research",
    "activity_basis": "its description",
    "btype": "agency",
@@ -2689,7 +2689,7 @@
   },
   "government-organisation:OT1413": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -2699,7 +2699,7 @@
   },
   "government-organisation:OT1056": {
    "purpose": "culture",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -2719,7 +2719,7 @@
   },
   "government-organisation:OT549": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -2728,7 +2728,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT1297": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -2749,7 +2749,7 @@
   },
   "government-organisation:EA1084": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "inspect",
    "activity_basis": "its name",
    "btype": "agency",
@@ -2769,7 +2769,7 @@
   },
   "government-organisation:D1108": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "department",
@@ -2808,7 +2808,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT1372": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "research",
    "activity_basis": "its description",
@@ -2839,7 +2839,7 @@
   },
   "government-organisation:OT1460": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -2849,7 +2849,7 @@
   },
   "government-organisation:D1397": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -2889,7 +2889,7 @@
   },
   "government-organisation:EA1255": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -2899,7 +2899,7 @@
   },
   "government-organisation:OT1310": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -2979,7 +2979,7 @@
   },
   "government-organisation:PB426": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "promote",
    "activity_basis": "its description",
    "btype": "ndpb",
@@ -3019,7 +3019,7 @@
   },
   "government-organisation:OT551": {
    "purpose": "environment",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "judge",
    "activity_basis": "its name",
    "btype": "central",
@@ -3169,7 +3169,7 @@
   },
   "government-organisation:D69": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "records",
    "activity_basis": "its name",
    "btype": "department",
@@ -3188,7 +3188,7 @@
    "formed": "agency"
   },
   "government-organisation:EA66": {
-   "purpose": "housing",
+   "purpose": "safety",
    "purpose_basis": "its name and description",
    "activity": "records",
    "activity_basis": "its description",
@@ -3219,7 +3219,7 @@
   },
   "government-organisation:D25": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "department",
@@ -3229,7 +3229,7 @@
   },
   "government-organisation:D15": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -3238,8 +3238,8 @@
    "formed": "dept-UK"
   },
   "government-organisation:D16": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -3279,7 +3279,7 @@
   },
   "government-organisation:IM341": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -3298,7 +3298,7 @@
    "formed": "appointed"
   },
   "government-organisation:PB1279": {
-   "purpose": "health",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -3328,7 +3328,7 @@
    "formed": "appointed"
   },
   "government-organisation:PB1420": {
-   "purpose": "housing",
+   "purpose": "safety",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its description",
@@ -3338,7 +3338,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT1069": {
-   "purpose": "housing",
+   "purpose": "safety",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -3359,7 +3359,7 @@
   },
   "government-organisation:OT1358": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -3369,7 +3369,7 @@
   },
   "government-organisation:PB1482": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -3378,7 +3378,7 @@
    "formed": "appointed"
   },
   "government-organisation:PB210": {
-   "purpose": "environment",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its kind",
@@ -3388,8 +3388,8 @@
    "formed": "appointed"
   },
   "government-organisation:IM1123": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "inspect",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -3419,7 +3419,7 @@
   },
   "government-organisation:IM335": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -3428,8 +3428,8 @@
    "formed": "appointed"
   },
   "government-organisation:OT1099": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "unknown",
+   "purpose_basis": "",
    "activity": "complaints",
    "activity_basis": "its name",
    "btype": "central",
@@ -3468,7 +3468,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB1318": {
-   "purpose": "safety",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -3519,7 +3519,7 @@
   },
   "government-organisation:PB1258": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -3528,8 +3528,8 @@
    "formed": "unknown"
   },
   "government-organisation:OT511": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -3599,7 +3599,7 @@
   },
   "government-organisation:PB1494": {
    "purpose": "culture",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -3628,7 +3628,7 @@
    "formed": "judicial"
   },
   "government-organisation:PB445": {
-   "purpose": "safety",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its kind",
@@ -3648,7 +3648,7 @@
    "formed": "judicial"
   },
   "government-organisation:EA34": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
@@ -3698,8 +3698,8 @@
    "formed": "unknown"
   },
   "government-organisation:OT1257": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -3738,7 +3738,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1490": {
-   "purpose": "defence",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -3839,7 +3839,7 @@
   },
   "government-organisation:PB358": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "records",
    "activity_basis": "its name",
    "btype": "central",
@@ -3849,7 +3849,7 @@
   },
   "government-organisation:PB294": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -3899,7 +3899,7 @@
   },
   "government-organisation:IM332": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its description",
    "btype": "ndpb",
@@ -3918,7 +3918,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT1263": {
-   "purpose": "economy",
+   "purpose": "govt",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its description",
@@ -3928,7 +3928,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT849": {
-   "purpose": "environment",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its description",
@@ -3939,7 +3939,7 @@
   },
   "government-organisation:PB1478": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "inspect",
    "activity_basis": "its name",
    "btype": "ndpb",
@@ -3969,7 +3969,7 @@
   },
   "government-organisation:PB122": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -4048,7 +4048,7 @@
    "formed": "agency"
   },
   "government-organisation:EA46": {
-   "purpose": "education",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
@@ -4058,8 +4058,8 @@
    "formed": "agency"
   },
   "government-organisation:PB275": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -4088,7 +4088,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB1430": {
-   "purpose": "economy",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -4099,7 +4099,7 @@
   },
   "government-organisation:D17": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -4109,7 +4109,7 @@
   },
   "government-organisation:D1419": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -4119,7 +4119,7 @@
   },
   "government-organisation:D18": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -4129,7 +4129,7 @@
   },
   "government-organisation:OT1333": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -4159,7 +4159,7 @@
   },
   "government-organisation:OT1495": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -4189,7 +4189,7 @@
   },
   "government-organisation:PB558": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "department",
@@ -4318,7 +4318,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT1438": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -4359,7 +4359,7 @@
   },
   "government-organisation:PC1387": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -4389,7 +4389,7 @@
   },
   "government-organisation:EA104": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "department",
@@ -4419,7 +4419,7 @@
   },
   "government-organisation:OT1409": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -4428,7 +4428,7 @@
    "formed": "agency"
   },
   "government-organisation:PB1457": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -4569,7 +4569,7 @@
   },
   "government-organisation:OT1353": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -4639,7 +4639,7 @@
   },
   "government-organisation:OT429": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its description",
    "btype": "ndpb",
@@ -4649,7 +4649,7 @@
   },
   "government-organisation:D19": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -4678,7 +4678,7 @@
    "formed": "agency"
   },
   "government-organisation:EA701": {
-   "purpose": "economy",
+   "purpose": "education",
    "purpose_basis": "its name and description",
    "activity": "research",
    "activity_basis": "its name",
@@ -4708,7 +4708,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB197": {
-   "purpose": "economy",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -4768,7 +4768,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT385": {
-   "purpose": "culture",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its name",
@@ -4778,7 +4778,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB260": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -4789,7 +4789,7 @@
   },
   "government-organisation:OT1429": {
    "purpose": "culture",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -4828,7 +4828,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1332": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -4869,7 +4869,7 @@
   },
   "government-organisation:PC1059": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "corporation",
@@ -4879,7 +4879,7 @@
   },
   "government-organisation:OT1246": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "research",
    "activity_basis": "its description",
    "btype": "agency",
@@ -4888,7 +4888,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1445": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "research",
    "activity_basis": "its description",
@@ -4929,7 +4929,7 @@
   },
   "government-organisation:OT1424": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "research",
    "activity_basis": "its description",
    "btype": "agency",
@@ -4948,7 +4948,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1323": {
-   "purpose": "economy",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its description",
@@ -4958,7 +4958,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1187": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -4968,8 +4968,8 @@
    "formed": "agency"
   },
   "government-organisation:D1117": {
-   "purpose": "health",
-   "purpose_basis": "its name and description",
+   "purpose": "economy",
+   "purpose_basis": "its name",
    "activity": "regulate",
    "activity_basis": "its description",
    "btype": "department",
@@ -4979,7 +4979,7 @@
   },
   "government-organisation:D20": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -4998,7 +4998,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB413": {
-   "purpose": "education",
+   "purpose": "support",
    "purpose_basis": "its name and description",
    "activity": "complaints",
    "activity_basis": "its name",
@@ -5008,8 +5008,8 @@
    "formed": "appointed"
   },
   "government-organisation:PB1456": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -5019,7 +5019,7 @@
   },
   "government-organisation:D21": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -5029,7 +5029,7 @@
   },
   "government-organisation:D22": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -5058,7 +5058,7 @@
    "formed": "unknown"
   },
   "government-organisation:EA72": {
-   "purpose": "safety",
+   "purpose": "health",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its description",
@@ -5069,7 +5069,7 @@
   },
   "government-organisation:OT1091": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "central",
@@ -5078,7 +5078,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT553": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its name",
@@ -5098,8 +5098,8 @@
    "formed": "unknown"
   },
   "government-organisation:IM1468": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "inspect",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -5108,7 +5108,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT1404": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "research",
    "activity_basis": "its description",
@@ -5128,7 +5128,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT1262": {
-   "purpose": "economy",
+   "purpose": "environment",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its name",
@@ -5139,7 +5139,7 @@
   },
   "government-organisation:D108": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "department",
@@ -5149,7 +5149,7 @@
   },
   "government-organisation:D109": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "department",
@@ -5159,7 +5159,7 @@
   },
   "government-organisation:D106": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "inspect",
    "activity_basis": "its name",
    "btype": "department",
@@ -5169,7 +5169,7 @@
   },
   "government-organisation:D240": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "department",
@@ -5218,7 +5218,7 @@
    "formed": "agency"
   },
   "government-organisation:D38": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
@@ -5228,8 +5228,8 @@
    "formed": "appointed"
   },
   "government-organisation:OT1432": {
-   "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -5239,7 +5239,7 @@
   },
   "government-organisation:OT430": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -5279,7 +5279,7 @@
   },
   "government-organisation:OT1151": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "central",
@@ -5409,7 +5409,7 @@
   },
   "government-organisation:OT1184": {
    "purpose": "health",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its description",
    "btype": "central",
@@ -5429,7 +5429,7 @@
   },
   "government-organisation:OT1210": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -5439,7 +5439,7 @@
   },
   "government-organisation:OT532": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -5539,7 +5539,7 @@
   },
   "government-organisation:EA1366": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -5569,7 +5569,7 @@
   },
   "government-organisation:OT1192": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "judge",
    "activity_basis": "its name",
    "btype": "central",
@@ -5579,7 +5579,7 @@
   },
   "government-organisation:EA40": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "agency",
@@ -5588,7 +5588,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1427": {
-   "purpose": "housing",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -5628,7 +5628,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB1331": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -5668,7 +5668,7 @@
    "formed": "agency"
   },
   "government-organisation:PB354": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its kind",
@@ -5729,7 +5729,7 @@
   },
   "government-organisation:PB530": {
    "purpose": "health",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -5768,7 +5768,7 @@
    "formed": "agency"
   },
   "government-organisation:EA114": {
-   "purpose": "govt",
+   "purpose": "culture",
    "purpose_basis": "its name and description",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
@@ -5778,7 +5778,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB434": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its kind",
@@ -5828,7 +5828,7 @@
    "formed": "appointed"
   },
   "government-organisation:EA58": {
-   "purpose": "environment",
+   "purpose": "housing",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -5929,7 +5929,7 @@
   },
   "government-organisation:D1423": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -5938,7 +5938,7 @@
    "formed": "dept-UK"
   },
   "government-organisation:OT205": {
-   "purpose": "environment",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its description",
@@ -5948,7 +5948,7 @@
    "formed": "appointed"
   },
   "government-organisation:OT305": {
-   "purpose": "economy",
+   "purpose": "govt",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its description",
@@ -5958,7 +5958,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB264": {
-   "purpose": "housing",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "regulate",
    "activity_basis": "its description",
@@ -5969,7 +5969,7 @@
   },
   "government-organisation:PB367": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -6019,7 +6019,7 @@
   },
   "government-organisation:D115": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "department",
@@ -6028,7 +6028,7 @@
    "formed": "nmd"
   },
   "government-organisation:OT406": {
-   "purpose": "defence",
+   "purpose": "safety",
    "purpose_basis": "its name and description",
    "activity": "judge",
    "activity_basis": "its description",
@@ -6049,7 +6049,7 @@
   },
   "government-organisation:PB1093": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "ndpb",
@@ -6078,7 +6078,7 @@
    "formed": "agency"
   },
   "government-organisation:PB1237": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "research",
    "activity_basis": "its description",
@@ -6089,7 +6089,7 @@
   },
   "government-organisation:PB1193": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -6108,7 +6108,7 @@
    "formed": "appointed"
   },
   "government-organisation:PB1298": {
-   "purpose": "education",
+   "purpose": "support",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -6189,7 +6189,7 @@
   },
   "government-organisation:OT1314": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -6199,7 +6199,7 @@
   },
   "government-organisation:OT1377": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its description",
    "btype": "agency",
@@ -6209,7 +6209,7 @@
   },
   "government-organisation:D435": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "judge",
    "activity_basis": "its name",
    "btype": "department",
@@ -6238,8 +6238,8 @@
    "formed": "agency"
   },
   "government-organisation:PB274": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its kind",
    "btype": "ndpb",
@@ -6299,7 +6299,7 @@
   },
   "government-organisation:D98": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "regulate",
    "activity_basis": "its description",
    "btype": "department",
@@ -6359,7 +6359,7 @@
   },
   "government-organisation:PB1408": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "promote",
    "activity_basis": "its description",
    "btype": "ndpb",
@@ -6399,7 +6399,7 @@
   },
   "government-organisation:EA71": {
    "purpose": "culture",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "collections",
    "activity_basis": "its name",
    "btype": "department",
@@ -6478,8 +6478,8 @@
    "formed": "judicial"
   },
   "government-organisation:OT1493": {
-   "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose": "culture",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -6498,7 +6498,7 @@
    "formed": "judicial"
   },
   "government-organisation:PB382": {
-   "purpose": "culture",
+   "purpose": "govt",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its kind",
@@ -6518,8 +6518,8 @@
    "formed": "dept-SC"
   },
   "government-organisation:OT304": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -6548,7 +6548,7 @@
    "formed": "unknown"
   },
   "government-organisation:PB1327": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "research",
    "activity_basis": "its description",
@@ -6619,7 +6619,7 @@
   },
   "government-organisation:OT1288": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its description",
    "btype": "central",
@@ -6648,7 +6648,7 @@
    "formed": "unknown"
   },
   "government-organisation:OT1268": {
-   "purpose": "education",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its name",
@@ -6658,7 +6658,7 @@
    "formed": "agency"
   },
   "government-organisation:EA82": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -6689,7 +6689,7 @@
   },
   "government-organisation:D241": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -6708,7 +6708,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1186": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -6729,7 +6729,7 @@
   },
   "government-organisation:PB1171": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -6739,7 +6739,7 @@
   },
   "government-organisation:EA51": {
    "purpose": "defence",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "agency",
@@ -6748,7 +6748,7 @@
    "formed": "agency"
   },
   "government-organisation:PB1398": {
-   "purpose": "govt",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "fund",
    "activity_basis": "its name",
@@ -6758,8 +6758,8 @@
    "formed": "appointed"
   },
   "government-organisation:OT1411": {
-   "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "agency",
@@ -6819,7 +6819,7 @@
   },
   "government-organisation:EA31": {
    "purpose": "education",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "research",
    "activity_basis": "its description",
    "btype": "agency",
@@ -6839,7 +6839,7 @@
   },
   "government-organisation:D116": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "records",
    "activity_basis": "its name",
    "btype": "department",
@@ -6848,7 +6848,7 @@
    "formed": "nmd"
   },
   "government-organisation:OT554": {
-   "purpose": "culture",
+   "purpose": "safety",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its description",
@@ -6859,7 +6859,7 @@
   },
   "government-organisation:PC1435": {
    "purpose": "economy",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -6879,7 +6879,7 @@
   },
   "government-organisation:OT1294": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -6988,7 +6988,7 @@
    "formed": "agency"
   },
   "government-organisation:PB212": {
-   "purpose": "environment",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "advise",
    "activity_basis": "its kind",
@@ -6999,7 +6999,7 @@
   },
   "government-organisation:PB326": {
    "purpose": "safety",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "promote",
    "activity_basis": "its description",
    "btype": "central",
@@ -7018,7 +7018,7 @@
    "formed": "appointed"
   },
   "government-organisation:PB186": {
-   "purpose": "culture",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its name",
@@ -7028,7 +7028,7 @@
    "formed": "appointed"
   },
   "government-organisation:PB376": {
-   "purpose": "culture",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its name",
@@ -7049,7 +7049,7 @@
   },
   "government-organisation:OT1422": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "its name",
    "activity": "policy",
    "activity_basis": "its kind",
    "btype": "department",
@@ -7089,7 +7089,7 @@
   },
   "government-organisation:OT316": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "ndpb",
@@ -7109,7 +7109,7 @@
   },
   "government-organisation:OT1285": {
    "purpose": "housing",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "agency",
@@ -7118,7 +7118,7 @@
    "formed": "agency"
   },
   "government-organisation:OT1428": {
-   "purpose": "housing",
+   "purpose": "economy",
    "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
@@ -14358,8 +14358,8 @@
    "formed": "company"
   },
   "ons-name:adventure-activities-licensing-authority-tqs-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "support",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "central",
@@ -14428,8 +14428,8 @@
    "formed": "central-body"
   },
   "ons-name:advisory-committee-on-packaging": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -14468,8 +14468,8 @@
    "formed": "central-body"
   },
   "ons-name:advisory-committees-on-justices-of-the-peace-in-england-and-wales": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -14518,8 +14518,8 @@
    "formed": "local-body"
   },
   "ons-name:aggregator-vehicle-plc": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "education",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -14568,8 +14568,8 @@
    "formed": "company"
   },
   "ons-name:air-travel-trust": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -14578,8 +14578,8 @@
    "formed": "central-body"
   },
   "ons-name:airborne-particles-expert-group": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -15348,8 +15348,8 @@
    "formed": "local-body"
   },
   "ons-name:big-society-capital-group-big-society-trust-big-society-capital-big-society-foun": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -15538,8 +15538,8 @@
    "formed": "central-body"
   },
   "ons-name:boards-of-visitors-to-penal-establishments": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "promote",
    "activity_basis": "its name",
    "btype": "central",
@@ -15638,8 +15638,8 @@
    "formed": "company"
   },
   "ons-name:bpex-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -15868,8 +15868,8 @@
    "formed": "company"
   },
   "ons-name:british-wool-marketing-board": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -16338,8 +16338,8 @@
    "formed": "local-body"
   },
   "ons-name:chequers-trust": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -16348,8 +16348,8 @@
    "formed": "central-body"
   },
   "ons-name:chevening-estate-trust": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -16579,7 +16579,7 @@
   },
   "ons-name:civil-service-appeal-board": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "judge",
    "activity_basis": "its name",
    "btype": "central",
@@ -16888,8 +16888,8 @@
    "formed": "parliament-body"
   },
   "ons-name:commonwealth-war-graves-commission": {
-   "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose": "defence",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -17038,8 +17038,8 @@
    "formed": "local-body"
   },
   "ons-name:consolidated-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -17108,8 +17108,8 @@
    "formed": "central-body"
   },
   "ons-name:contingencies-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -17138,8 +17138,8 @@
    "formed": "local-body"
   },
   "ons-name:conversion-loan-redemption-account": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -17198,8 +17198,8 @@
    "formed": "central-body"
   },
   "ons-name:council-of-reserve-forces-and-cadet-associations-reserve-forces-and-cadet-associ": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "defence",
+   "purpose_basis": "its name and description",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -17358,8 +17358,8 @@
    "formed": "company"
   },
   "ons-name:cumbria-and-lancashire-community-rehabilitation-company-crc": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -17378,8 +17378,8 @@
    "formed": "local-body"
   },
   "ons-name:customer-service-committees-ofwat": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "housing",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "central",
@@ -17408,8 +17408,8 @@
    "formed": "council-EN"
   },
   "ons-name:dairyco-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -17428,8 +17428,8 @@
    "formed": "company"
   },
   "ons-name:darwin-advisory-committee": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -17579,7 +17579,7 @@
   },
   "ons-name:debt-management-account": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -17628,8 +17628,8 @@
    "formed": "council-NI"
   },
   "ons-name:designated-institutions-in-england-en-bloc": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "education",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -17809,7 +17809,7 @@
   },
   "ons-name:donations-and-bequests-to-government": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -17818,8 +17818,8 @@
    "formed": "central-body"
   },
   "ons-name:dorneywood-trust": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -18098,8 +18098,8 @@
    "formed": "company"
   },
   "ons-name:eblex-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -18288,8 +18288,8 @@
    "formed": "company"
   },
   "ons-name:exchange-equalisation-account": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -18308,8 +18308,8 @@
    "formed": "central-body"
   },
   "ons-name:expert-panel-on-air-quality-standards": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -18688,8 +18688,8 @@
    "formed": "central-body"
   },
   "ons-name:general-lighthouse-authorities-en-bloc": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -18698,8 +18698,8 @@
    "formed": "central-body"
   },
   "ons-name:general-lighthouse-authorities-en-bloc-2": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -18708,8 +18708,8 @@
    "formed": "central-body"
   },
   "ons-name:general-lighthouse-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -18718,8 +18718,8 @@
    "formed": "central-body"
   },
   "ons-name:general-teaching-council-for-northern-ireland": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "education",
+   "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its name",
    "btype": "central",
@@ -18728,8 +18728,8 @@
    "formed": "central-body"
   },
   "ons-name:general-teaching-council-for-scotland": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "education",
+   "purpose_basis": "its name and description",
    "activity": "promote",
    "activity_basis": "its name",
    "btype": "central",
@@ -18748,8 +18748,8 @@
    "formed": "central-body"
   },
   "ons-name:genomics-england-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "health",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -19298,8 +19298,8 @@
    "formed": "company"
   },
   "ons-name:hgca-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -19498,8 +19498,8 @@
    "formed": "company"
   },
   "ons-name:honours-scrutiny-committee": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "inspect",
    "activity_basis": "its name",
    "btype": "central",
@@ -19518,8 +19518,8 @@
    "formed": "company"
   },
   "ons-name:hopetoun-quay-ltd-a-bwb": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -19538,8 +19538,8 @@
    "formed": "judicial"
   },
   "ons-name:horticultural-development-company-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -19738,8 +19738,8 @@
    "formed": "central-body"
   },
   "ons-name:independent-review-services-for-social-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "support",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -19948,8 +19948,8 @@
    "formed": "company"
   },
   "ons-name:irish-land-purchase-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -19998,8 +19998,8 @@
    "formed": "central-body"
   },
   "ons-name:jobcentre-plus": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "support",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -20338,8 +20338,8 @@
    "formed": "central-body"
   },
   "ons-name:legal-services-consultative-panel": {
-   "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -20388,8 +20388,8 @@
    "formed": "central-body"
   },
   "ons-name:life-and-other-annuities-warrant-account": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -20398,8 +20398,8 @@
    "formed": "central-body"
   },
   "ons-name:limehouse-developments-ltd-dormant-s-bwb": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -20628,8 +20628,8 @@
    "formed": "company"
   },
   "ons-name:located-property-limited-located": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "education",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -21308,8 +21308,8 @@
    "formed": "pension"
   },
   "ons-name:misuse-of-drugs-advisory-board": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -21318,8 +21318,8 @@
    "formed": "central-body"
   },
   "ons-name:misuse-of-drugs-professional-panel": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -21588,8 +21588,8 @@
    "formed": "central-body"
   },
   "ons-name:national-insurance-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "support",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -21638,8 +21638,8 @@
    "formed": "pension"
   },
   "ons-name:national-loans-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -22798,8 +22798,8 @@
    "formed": "company"
   },
   "ons-name:northern-trains": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -22858,8 +22858,8 @@
    "formed": "company"
   },
   "ons-name:nram-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23009,7 +23009,7 @@
   },
   "ons-name:office-of-government-commerce": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23059,7 +23059,7 @@
   },
   "ons-name:office-of-the-commissioner-for-public-appointments": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23068,8 +23068,8 @@
    "formed": "central-body"
   },
   "ons-name:office-of-the-information-commissioner": {
-   "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23148,8 +23148,8 @@
    "formed": "central-body"
   },
   "ons-name:ofwat-national-customer-council": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "housing",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "central",
@@ -23259,7 +23259,7 @@
   },
   "ons-name:parliamentary-boundary-commission-for-england": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23269,7 +23269,7 @@
   },
   "ons-name:parliamentary-boundary-commission-for-wales": {
    "purpose": "govt",
-   "purpose_basis": "its name and description",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23548,8 +23548,8 @@
    "formed": "company"
   },
   "ons-name:poisons-board": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23628,8 +23628,8 @@
    "formed": "central-body"
   },
   "ons-name:pool-re": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23638,8 +23638,8 @@
    "formed": "central-body"
   },
   "ons-name:pool-reinsurance-nuclear-limited": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23758,8 +23758,8 @@
    "formed": "company"
   },
   "ons-name:potato-council-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23838,8 +23838,8 @@
    "formed": "central-body"
   },
   "ons-name:property-advisors-to-the-civil-estate-pace": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -23958,8 +23958,8 @@
    "formed": "central-body"
   },
   "ons-name:race-relations-forum": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -24358,8 +24358,8 @@
    "formed": "company"
   },
   "ons-name:rnm-functions-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "defence",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -24478,8 +24478,8 @@
    "formed": "central-body"
   },
   "ons-name:royal-household": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -25228,8 +25228,8 @@
    "formed": "company"
   },
   "ons-name:se-trains-limited": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -25248,8 +25248,8 @@
    "formed": "judicial"
   },
   "ons-name:security-and-intelligence-services": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -25298,8 +25298,8 @@
    "formed": "council-EN"
   },
   "ons-name:shared-services-connected-limited-sscl": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "unknown",
    "activity_basis": "",
    "btype": "corporation",
@@ -25308,8 +25308,8 @@
    "formed": "company"
   },
   "ons-name:sharpness-gloucester-s-bwb": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -25458,8 +25458,8 @@
    "formed": "central-body"
   },
   "ons-name:social-fund": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "support",
+   "purpose_basis": "the department it answers to",
    "activity": "fund",
    "activity_basis": "its name",
    "btype": "central",
@@ -26068,8 +26068,8 @@
    "formed": "central-body"
   },
   "ons-name:submarine-gift-shop-ltd": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "defence",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -26118,8 +26118,8 @@
    "formed": "local-body"
   },
   "ons-name:supply-chain-coordination-limited": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "health",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -26718,8 +26718,8 @@
    "formed": "company"
   },
   "ons-name:traffic-commissioners-licensing-authorities": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "regulate",
    "activity_basis": "its name",
    "btype": "central",
@@ -26778,8 +26778,8 @@
    "formed": "central-body"
   },
   "ons-name:transpennine-trains-limited": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
@@ -26898,8 +26898,8 @@
    "formed": "judicial"
   },
   "ons-name:trinity-house-lighthouse-service": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "economy",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -27088,8 +27088,8 @@
    "formed": "company"
   },
   "ons-name:unclaimed-redemption-monies": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -27098,8 +27098,8 @@
    "formed": "central-body"
   },
   "ons-name:unclaimed-stock-and-dividends-account": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "govt",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
@@ -28208,8 +28208,8 @@
    "formed": "local-body"
   },
   "ons-name:hazardous-substances-advisory-committee": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "environment",
+   "purpose_basis": "the department it answers to",
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
@@ -28458,8 +28458,8 @@
    "formed": "central-body"
   },
   "ons-name:victims-commissioner-for-england-and-wales-vc": {
-   "purpose": "unknown",
-   "purpose_basis": "",
+   "purpose": "safety",
+   "purpose_basis": "the department it answers to",
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",

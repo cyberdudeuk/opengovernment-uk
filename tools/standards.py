@@ -263,7 +263,7 @@ def main():
         "Identifiers: each body is " + ID + "<register key>, for example " + ID + "government-organisation:D9. Licence: data OGL v3.0, code MIT, documentation CC BY 4.0.\n\n"
         "## Pages\n\n" + "".join(f"- [{t}]({SITE}{u}): {d}\n" for u, t, d in [("index.html", "Register", "search any body; profiles; who answers; changes; data and feeds; ask a question"),
             ("nations.html", "Nation by nation", "each nation's legislature, executive and judiciary"), ("world.html", "UK and the world", "international bodies, memberships, treaties, agreements, the Commonwealth, trade and tax agreements, the UK's shares in international financial institutions"),
-            ("orgchart.html", "Org charts", "every body in context"), ("funding.html", "Funding", "grants, schemes and innovation services"), ("developers.html", "Developer hub", "connect, harvest, crosswalks, MCP connector, plugins, test cases, licensing and how to contribute"), ("navigator.html", "Documentation", "requirements, design and traceability")]) +
+            ("orgchart.html", "Org charts", "every body in context"), ("funding.html", "Funding", "grants, schemes and innovation services"), ("developers.html", "Developer hub", "connect, harvest, crosswalks, MCP connector, plugins, test cases, licensing and how to contribute"), ("navigator.html", "Requirements and design", "how it is built: needs, requirements, design and checks")]) +
         "\n## Data\n\n" + "".join(f"- [{t}]({SITE}{f}): {d}\n" for f, t, d, _, _ in DATASETS) +
         "\n## Optional\n\n- [Source code and issues](https://github.com/cyberdudeuk/opengovernment-uk)\n")
     # licences beside the data, from the same REUSE.toml the linter checks; the catalogue's claim must agree (OG-D65 class)
