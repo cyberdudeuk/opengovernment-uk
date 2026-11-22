@@ -9,7 +9,8 @@ Rules the guards enforce (OG-D42):
   - outside the token file, page CSS has no raw hex colours, no raw font sizes and no raw corner radii;
   - media queries use only the two breakpoints;
   - every text and UI colour pair meets WCAG 2.2 AA contrast in light and dark."""
-import hashlib, json, pathlib, re, sys
+import gzip
+import hashlib, json, os, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DES = ROOT / "tools/design"; ASSETS = ROOT / "docs/assets"
@@ -270,13 +271,25 @@ def design_page():
 
 PAGES = ["index.html", "nations.html", "orgchart.html", "funding.html", "navigator.html", "design-system.html"]  # every published page; a new page must be added here
 
+# Page-weight budget, in gzip bytes (what GitHub Pages sends). Measured 22 Nov 2026: index 974,578 (ready in 1.8 s on a
+# 4x-throttled CPU, about 0.8 s more to download on 4G), nations 263,437, orgchart 160,032, funding 57,625.
+# The budget leaves about 15% headroom; going over it means lazy-loading per-body data (ACC.ins is the largest part).
+BUDGET = {"index.html": 1_100_000, "nations.html": 320_000, "orgchart.html": 200_000, "funding.html": 80_000}
+BUDGET_DEFAULT = 150_000
+
+
+def weight(name, html):
+    n = len(gzip.compress(html.encode(), 9))
+    cap = BUDGET.get(name, BUDGET_DEFAULT)
+    return [f"{name}: {n:,} bytes gzip is over its {cap:,} budget (lazy-load per-body data)"] if n > cap else []
+
 
 def audit():
     p = []
     for n in PAGES:
         f = ROOT / "docs" / n
         if not f.exists(): p.append(f"{n}: missing"); continue
-        p += audit_html(n, f.read_text())
+        p += audit_html(n, f.read_text()) + weight(n, f.read_text())
     og = (ASSETS / "og.css").read_text()
     p += css_guards(og)
     pub = sorted(f.name for f in (ROOT / "docs").glob("*.html"))
@@ -301,6 +314,7 @@ def main():
         caught.append(bool(css_guards(".og-shell-nav a{display:inline-flex}")))  # OG-D53: hidden links shown because author CSS overrides [hidden]
         caught.append(bool(audit_html("bad", ok + '<nav class="og-shell-nav"><a href="#">A</a></nav>')))  # OG-D51: a shell navigation without its fold
         caught.append(bool(audit_html("bad", ok + '<span class="nmulti">serves the whole UK</span>')))  # OG-D50: a no-wrap chip without its narrow-screen rule
+        caught.append(bool(weight("design-system.html", os.urandom(200_000).hex())))  # page weight: an oversized page fails the audit
         caught.append(tokenise("p{font-size:.72rem;border-radius:10px}@media (max-width:900px){}") == "p{font-size:var(--og-size-xs);border-radius:var(--og-radius-md)}@media (max-width:1023px){}")
         if not all(caught): sys.exit(f"design negative: {caught.count(False)} not caught")
         print(f"design negative: all {len(caught)} cases behave as they should"); return
