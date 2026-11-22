@@ -48,6 +48,7 @@ tools/design.py         the design system: tokens to one stylesheet, the shared 
 tools/localgov.py       local government under the English Devolution and Community Empowerment Act 2026 (current and planned)
 tools/sameas.py         one record per body: combines records that are the same body seen by different sources
 tools/territories.py    the Crown Dependencies' and Overseas Territories' own bodies, branch by branch
+tools/international.py  which UK body leads the UK's place in each international body or trading bloc
 tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
 ```
 
@@ -69,6 +70,7 @@ python tools/fetch.py --private && python tools/build.py   # full rebuild
 | Local government facts (sources/evidence/local-government-2026.json): check the government's reorganisation and devolution announcements | when MHCLG announces decisions (every area is due an outcome by early 2027), then at least quarterly | 30 to 60 minutes |
 | Territory bodies and websites: re-read the Wikidata and founding-order evidence files, review exclusions | twice a year | 1 to 2 hours |
 | Reconciliation decisions (sources/evidence/reconciliation-decisions.json): decide new items from the body's own page or founding law | when the review queue is not empty | 15 minutes per item |
+| International bodies (sources/evidence/international-bodies.json): re-check leads after any machinery-of-government change; confirm the 'still to confirm' list | after each change, at least yearly | 30 to 60 minutes |
 | Feedback via the GitHub issue form | as it comes | minutes each |
 
 Nothing runs on a schedule: there are no paid services, no secrets and no tokens beyond the read-only one GitHub gives each workflow run.

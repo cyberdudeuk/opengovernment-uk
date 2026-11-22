@@ -25,3 +25,5 @@
 | Founding order | The Order in Council or Act that sets up a territory's constitution and its law-makers, government and courts. We read it on legislation.gov.uk and quote the clause that creates each body. | constitution order; Order in Council |
 | Combined record | One body that different sources record under different names or keys. We show it once, with every source's identifiers together, and say which rule joined them. | same-as; duplicate record |
 | Decided from evidence | A disagreement between sources that the automatic rules could not settle, decided by a person from the body's own page or the law that set it up. The evidence is kept with the decision. | manual reconciliation; human decision |
+| Single point of contact | The one UK body that another country or an international organisation deals with on a subject | SPOC; national focal point; National Central Bureau |
+| UK mission or delegation | A team of UK officials posted to an international organisation | permanent representation; UKMis; UKDel |

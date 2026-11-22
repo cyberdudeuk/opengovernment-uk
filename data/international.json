@@ -1,0 +1,551 @@
+{
+ "read": "2026-11-22",
+ "groups": {
+  "bloc": "Trading blocs and economic partnerships",
+  "security": "Security, defence and justice",
+  "un": "United Nations and its agencies",
+  "finance": "International finance",
+  "europe": "European and regional bodies",
+  "specialist": "Specialist and technical bodies"
+ },
+ "to_confirm": [
+  {
+   "name": "CERN",
+   "why": "The Department for Science, Innovation and Technology published the UK's CERN strategy but closed on 2 November 2026 and was split three ways; which successor holds CERN is not yet stated."
+  },
+  {
+   "name": "World Health Organization, International Labour Organization, WIPO, ITU, Universal Postal Union, UNFCCC, UNESCO, World Customs Organization, Codex Alimentarius, World Organisation for Animal Health",
+   "why": "No official page read so far says which UK body leads; they are left out rather than guessed."
+  },
+  {
+   "name": "Bank for International Settlements, Financial Stability Board, IOSCO",
+   "why": "Membership is held by UK regulators and the central bank; not yet confirmed from their own pages."
+  },
+  {
+   "name": "British-Irish Council, Hague Conference on Private International Law, G7 and G20 leaders' track",
+   "why": "Not yet confirmed from an official page."
+  }
+ ],
+ "bodies": [
+  {
+   "name": "European Union",
+   "group": "bloc",
+   "way_in": "UK Mission to the European Union (Brussels)",
+   "lead": [
+    {
+     "id": "government-organisation:D2",
+     "name": "Cabinet Office"
+    },
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Cabinet Office holds overall responsibility for the UK's relationship with the EU; a Cabinet Office minister co-chaired the Trade and Cooperation Agreement Partnership Council and the Withdrawal Agreement Joint Committee in February 2026. Since July 2026 a joint Cabinet Office and Foreign Office Minister of State holds EU policy and relations. The Foreign Office runs the mission in Brussels.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Minister of State (Minister for Intergovernmental Relations and European Relations)",
+     "url": "https://www.gov.uk/government/ministers/minister-of-state-minister-for-intergovernmental-relations-and-european-relations"
+    },
+    {
+     "title": "GOV.UK: Joint statement on the Joint Committee and Partnership Council meetings, 2 February 2026",
+     "url": "https://www.gov.uk/government/news/joint-statement-on-the-withdrawal-agreement-joint-committee-and-trade-and-cooperation-agreement-partnership-council-meetings-2-february-2026"
+    },
+    {
+     "title": "GOV.UK: UK Mission to the European Union",
+     "url": "https://www.gov.uk/world/organisations/uk-mission-to-the-european-union"
+    }
+   ]
+  },
+  {
+   "name": "World Trade Organization",
+   "group": "bloc",
+   "way_in": "UK Mission to the WTO, UN and other international organisations (Geneva)",
+   "lead": [
+    {
+     "id": "government-organisation:D1480",
+     "name": "Department for Business, Innovation, Science and Trade"
+    },
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "Trade policy at the WTO was led by the Department for Business and Trade, now part of the Department for Business, Innovation, Science and Trade (from 9 November 2026). The Foreign Office runs the Geneva mission.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Minister of State for Trade Policy (WTO, G7, G20, OECD, Commonwealth engagement)",
+     "url": "https://www.gov.uk/government/ministers/minister-of-state--163"
+    },
+    {
+     "title": "GOV.UK API: Department for Business and Trade, closed 9 November 2026 and superseded",
+     "url": "https://www.gov.uk/api/organisations/department-for-business-and-trade"
+    },
+    {
+     "title": "GOV.UK: UK Mission to the WTO, UN and other international organisations (Geneva)",
+     "url": "https://www.gov.uk/world/organisations/uk-mission-to-the-wto-un-and-other-international-organisations-geneva"
+    }
+   ]
+  },
+  {
+   "name": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+   "group": "bloc",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:D1480",
+     "name": "Department for Business, Innovation, Science and Trade"
+    }
+   ],
+   "role": "The Department for Business and Trade negotiated and holds UK membership; its work passed to the Department for Business, Innovation, Science and Trade on 9 November 2026.",
+   "evidence": [
+    {
+     "title": "Department for Business and Trade: draft explanatory memorandum on the UK's accession to CPTPP",
+     "url": "https://assets.publishing.service.gov.uk/media/64b408cb48826b00103a9ed5/draft_explanatory_memorandum.pdf"
+    },
+    {
+     "title": "GOV.UK API: Department for Business and Trade, closed 9 November 2026 and superseded",
+     "url": "https://www.gov.uk/api/organisations/department-for-business-and-trade"
+    }
+   ]
+  },
+  {
+   "name": "ASEAN",
+   "group": "bloc",
+   "way_in": "UK Mission to ASEAN (Jakarta)",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office's mission deepens the UK's engagement with ASEAN and its member states.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Mission to ASEAN",
+     "url": "https://www.gov.uk/world/organisations/uk-mission-to-asean"
+    }
+   ]
+  },
+  {
+   "name": "NATO",
+   "group": "security",
+   "way_in": "UK Joint Delegation to NATO (Brussels)",
+   "lead": [
+    {
+     "id": "government-organisation:D17",
+     "name": "Ministry of Defence"
+    },
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The joint delegation, sponsored by the Ministry of Defence and the Foreign Office, is the link between the UK government and NATO.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Joint Delegation to NATO",
+     "url": "https://www.gov.uk/world/organisations/uk-joint-delegation-to-nato"
+    }
+   ]
+  },
+  {
+   "name": "INTERPOL",
+   "group": "security",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:PB558",
+     "name": "National Crime Agency"
+    }
+   ],
+   "role": "The National Crime Agency provides the UK's INTERPOL National Central Bureau (Manchester), the country's single point of contact for INTERPOL.",
+   "evidence": [
+    {
+     "title": "National Crime Agency: international network",
+     "url": "https://nationalcrimeagency.gov.uk/what-we-do/how-we-work/providing-specialist-capabilities-for-law-enforcement/international-network"
+    },
+    {
+     "title": "INTERPOL: United Kingdom",
+     "url": "https://www.interpol.int/en/Who-we-are/Member-countries/Europe/UNITED-KINGDOM"
+    }
+   ]
+  },
+  {
+   "name": "Europol",
+   "group": "security",
+   "way_in": "UK Liaison Bureau at Europol (The Hague)",
+   "lead": [
+    {
+     "id": "government-organisation:PB558",
+     "name": "National Crime Agency"
+    }
+   ],
+   "role": "The National Crime Agency provides the UK Europol National Unit and leads the multi-agency UK Liaison Bureau.",
+   "evidence": [
+    {
+     "title": "National Crime Agency: international network",
+     "url": "https://nationalcrimeagency.gov.uk/what-we-do/how-we-work/providing-specialist-capabilities-for-law-enforcement/international-network"
+    }
+   ]
+  },
+  {
+   "name": "OSCE",
+   "group": "security",
+   "way_in": "UK Delegation to the OSCE (Vienna)",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office's delegation works with the OSCE and its participating states.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Delegation to the OSCE",
+     "url": "https://www.gov.uk/world/organisations/organization-for-security-and-co-operation-in-europe"
+    }
+   ]
+  },
+  {
+   "name": "Organisation for the Prohibition of Chemical Weapons (OPCW)",
+   "group": "security",
+   "way_in": "UK Permanent Representative to the OPCW (The Hague)",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office provides the UK Permanent Representative to the OPCW.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Statement from the UK Permanent Representative to the OPCW",
+     "url": "https://www.gov.uk/government/news/uk-position-on-briefing-by-russia-and-syria-at-the-opcw"
+    }
+   ]
+  },
+  {
+   "name": "United Nations (New York)",
+   "group": "un",
+   "way_in": "UK Mission to the UN in New York",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office's mission represents the UK across the UN's work in New York, including the Security Council.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Mission to UN in New York",
+     "url": "https://www.gov.uk/world/organisations/uk-mission-to-un-in-new-york"
+    }
+   ]
+  },
+  {
+   "name": "UN and other international organisations in Geneva",
+   "group": "un",
+   "way_in": "UK Mission to the WTO, UN and other international organisations (Geneva)",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office's Geneva mission engages every body where the UK is a member or observer there.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Mission to the WTO, UN and other international organisations (Geneva)",
+     "url": "https://www.gov.uk/world/organisations/uk-mission-to-the-wto-un-and-other-international-organisations-geneva"
+    }
+   ]
+  },
+  {
+   "name": "UN in Vienna, IAEA and CTBTO",
+   "group": "un",
+   "way_in": "UK Mission to the UN in Vienna",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office's Vienna mission represents the UK at the UN there, the International Atomic Energy Agency and the Comprehensive Nuclear-Test-Ban Treaty Organization.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Mission to the UN in Vienna",
+     "url": "https://www.gov.uk/world/organisations/uk-mission-to-the-un-in-vienna"
+    }
+   ]
+  },
+  {
+   "name": "UN food and agriculture agencies in Rome (FAO, WFP, IFAD)",
+   "group": "un",
+   "way_in": "UK Representation to the UN agencies in Rome (British Embassy Rome)",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The British Embassy in Rome hosts the UK Representation to the United Nations agencies in Rome.",
+   "evidence": [
+    {
+     "title": "GOV.UK: British Embassy Rome",
+     "url": "https://www.gov.uk/world/organisations/british-embassy-rome"
+    }
+   ]
+  },
+  {
+   "name": "International Maritime Organization (IMO)",
+   "group": "un",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:EA78",
+     "name": "Maritime and Coastguard Agency"
+    },
+    {
+     "id": "government-organisation:D9",
+     "name": "Department for Transport"
+    }
+   ],
+   "role": "The Maritime and Coastguard Agency, the UK's maritime administration, leads the UK delegation with the Department for Transport.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Maritime Autonomous Surface Ships Code, the UK delegation at the IMO (June 2026)",
+     "url": "https://www.gov.uk/government/news/global-cooperation-brings-breakthrough-on-first-international-maritime-autonomous-surface-ships-mass-code"
+    },
+    {
+     "title": "GOV.UK: UK national maritime strategy for the IMO Instruments Implementation Code",
+     "url": "https://www.gov.uk/government/publications/united-kingdom-national-maritime-strategy-for-the-imo-instruments-implementation-code/united-kingdom-national-maritime-strategy-for-the-imo-instruments-implementation-code"
+    }
+   ]
+  },
+  {
+   "name": "International Civil Aviation Organization (ICAO)",
+   "group": "un",
+   "way_in": "UK Delegation on the ICAO Council (Montreal)",
+   "lead": [
+    {
+     "id": "government-organisation:D9",
+     "name": "Department for Transport"
+    }
+   ],
+   "role": "The Department for Transport answers for the Chicago Convention and ICAO, and fills and funds the UK's representative posts on the ICAO Council.",
+   "evidence": [
+    {
+     "title": "Civil Aviation Authority: State Safety Programme responsibilities (Chicago Convention and ICAO)",
+     "url": "https://www.caa.co.uk/media/pr2iffom/sspdiagram.pdf"
+    },
+    {
+     "title": "Hansard written answer, 12 December 1994: UK representation at ICAO",
+     "url": "https://api.parliament.uk/historic-hansard/written-answers/1994/dec/12/international-civil-aviation-organisation"
+    }
+   ]
+  },
+  {
+   "name": "World Meteorological Organization (WMO)",
+   "group": "un",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:EA46",
+     "name": "Met Office"
+    }
+   ],
+   "role": "The Met Office's Chief Executive is the UK's Permanent Representative to the WMO.",
+   "evidence": [
+    {
+     "title": "Met Office: Chief Executive elected WMO First Vice-President (UK Permanent Representative)",
+     "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/corporate-news/2017/rob-varley-elected-as-wmo-first-vice-president"
+    }
+   ]
+  },
+  {
+   "name": "International Whaling Commission",
+   "group": "specialist",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:D7",
+     "name": "Department for Environment, Food & Rural Affairs"
+    }
+   ],
+   "role": "The Department for Environment, Food and Rural Affairs sets out and represents the UK's position at the Commission.",
+   "evidence": [
+    {
+     "title": "GOV.UK (Defra): UK reiterates anti-whaling stance at the 70th meeting of the IWC",
+     "url": "https://www.gov.uk/government/news/80th-anniversary-of-international-whaling-commission-uk-reiterates-strong-anti-whaling-stance-and-invests-150000-in-a-new-global-strandings-database"
+    }
+   ]
+  },
+  {
+   "name": "International Monetary Fund",
+   "group": "finance",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:D15",
+     "name": "HM Treasury"
+    }
+   ],
+   "role": "The Chancellor of the Exchequer is the UK Governor of the IMF.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Chancellor of the Exchequer, responsibilities",
+     "url": "https://www.gov.uk/government/ministers/chancellor-of-the-exchequer"
+    }
+   ]
+  },
+  {
+   "name": "World Bank Group",
+   "group": "finance",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:D15",
+     "name": "HM Treasury"
+    },
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Chancellor and the Foreign Office's development minister speak for the UK as its Governors at the Development Committee.",
+   "evidence": [
+    {
+     "title": "GOV.UK: World Bank Group and IMF 2026 Spring Meetings, UK Governors' statement",
+     "url": "https://www.gov.uk/government/publications/world-bank-group-and-international-monetary-fund-2026-spring-meetings-development-committee-uk-governors-statement"
+    }
+   ]
+  },
+  {
+   "name": "European Bank for Reconstruction and Development (EBRD)",
+   "group": "finance",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:D15",
+     "name": "HM Treasury"
+    }
+   ],
+   "role": "The Chancellor of the Exchequer is the UK Governor of the EBRD.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Chancellor of the Exchequer, responsibilities",
+     "url": "https://www.gov.uk/government/ministers/chancellor-of-the-exchequer"
+    }
+   ]
+  },
+  {
+   "name": "Asian Infrastructure Investment Bank (AIIB)",
+   "group": "finance",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:D15",
+     "name": "HM Treasury"
+    }
+   ],
+   "role": "The Chancellor of the Exchequer is the UK Governor of the AIIB.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Chancellor of the Exchequer, responsibilities",
+     "url": "https://www.gov.uk/government/ministers/chancellor-of-the-exchequer"
+    }
+   ]
+  },
+  {
+   "name": "G7 and G20 (finance track)",
+   "group": "finance",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:D15",
+     "name": "HM Treasury"
+    }
+   ],
+   "role": "The Chancellor leads on international economic and financial affairs at the G7 and G20.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Chancellor of the Exchequer, responsibilities",
+     "url": "https://www.gov.uk/government/ministers/chancellor-of-the-exchequer"
+    }
+   ]
+  },
+  {
+   "name": "OECD",
+   "group": "europe",
+   "way_in": "UK Permanent Delegation to the OECD (Paris)",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office's delegation represents the UK at the OECD.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Permanent Delegation to the OECD",
+     "url": "https://www.gov.uk/world/organisations/uk-permanent-delegation-to-the-oecd"
+    }
+   ]
+  },
+  {
+   "name": "Council of Europe",
+   "group": "europe",
+   "way_in": "UK Delegation to the Council of Europe (Strasbourg)",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office's delegation represents the UK, a founding member.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Delegation to the Council of Europe",
+     "url": "https://www.gov.uk/world/organisations/uk-delegation-to-the-council-of-europe"
+    }
+   ]
+  },
+  {
+   "name": "The Commonwealth",
+   "group": "europe",
+   "way_in": "UK Representation in the Commonwealth",
+   "lead": [
+    {
+     "id": "government-organisation:D1315",
+     "name": "Foreign, Commonwealth & Development Office"
+    }
+   ],
+   "role": "The Foreign Office holds the UK's representation in the Commonwealth.",
+   "evidence": [
+    {
+     "title": "GOV.UK: UK Representation in the Commonwealth",
+     "url": "https://www.gov.uk/world/organisations/uk-representation-in-the-commonwealth"
+    }
+   ]
+  },
+  {
+   "name": "European Space Agency (ESA)",
+   "group": "specialist",
+   "way_in": "",
+   "lead": [
+    {
+     "id": "government-organisation:EA31",
+     "name": "UK Space Agency"
+    }
+   ],
+   "role": "The UK Space Agency holds the UK's ESA membership and commits most of its budget to ESA programmes.",
+   "evidence": [
+    {
+     "title": "GOV.UK: Evaluating the benefits of the UK's investments in the European Space Agency",
+     "url": "https://www.gov.uk/government/publications/evaluating-the-benefits-of-the-uks-investments-in-the-european-space-agency/evaluating-the-benefits-of-the-uks-investments-in-the-european-space-agency-executive-summary"
+    }
+   ]
+  }
+ ]
+}

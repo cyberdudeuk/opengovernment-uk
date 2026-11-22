@@ -217,7 +217,8 @@ if __name__ == "__main__":
     placed = {x["id"] for n in out.values() for t in n["branches"].values() for v in t.values() for x in v}
     unl = sorted(({"id": r[0], "name": r[1], "type": r[3].replace("\n", " ")} for r in D["r"] if r[4] and r[0] not in placed), key=lambda x: x["name"])
     meta = json.loads((ROOT / "data/classification.json").read_text())["meta"] if (ROOT / "data/classification.json").exists() else {}
-    payload = {"meta": meta, "nations": out, "conflicts": [c for c in evd["conflicts"] if c.get("status") == "contested"], "resolved": sum(1 for c in evd["conflicts"] if c.get("status") == "resolved"), "unplaced": unl}
+    payload = {"meta": meta, "nations": out, "conflicts": [c for c in evd["conflicts"] if c.get("status") == "contested"], "resolved": sum(1 for c in evd["conflicts"] if c.get("status") == "resolved"), "unplaced": unl,
+               "intl": json.loads((ROOT / "data/international.json").read_text()) if (ROOT / "data/international.json").exists() else None}
     sys.path.insert(0, str(ROOT / "tools")); import design  # shared design system and page shell (OG-D42)
     (ROOT / "docs/nations.html").write_text(design.wrap_page(PAGE, "nations").replace("__DATA__", json.dumps(payload).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
     for k, n in out.items(): print(f"{k:3} {n['name']:36} {n['counts']}")

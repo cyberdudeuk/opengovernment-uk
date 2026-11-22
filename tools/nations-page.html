@@ -65,7 +65,7 @@ th[scope=row]{background:none;position:static}
 footer{padding:16px 24px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);background:var(--paper)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .facets{display:inline}.fa{font-size:var(--og-size-xs);color:var(--og-muted);border:1px solid var(--og-line);border-radius:var(--og-radius-pill);padding:0 var(--og-space-2);margin-left:var(--og-space-1);display:inline-block;max-width:100%;overflow-wrap:anywhere}
-.srcs{font-size:var(--og-size-xs);color:var(--og-muted)}.srcs a{color:var(--og-muted)}
+.srcs{font-size:var(--og-size-xs);color:var(--og-muted)}table.intl{width:100%;table-layout:fixed}table.intl col.c1{width:27%}table.intl col.c2{width:21%}@media(max-width:760px){table.intl{table-layout:auto}}table.intl th[scope=row]{min-width:12rem}table.intl td,table.intl th{vertical-align:top}.srcs a{color:var(--og-muted)}
 .cover{border:1px solid var(--og-line);border-left:4px solid var(--og-navy);background:var(--og-navy-soft);border-radius:var(--og-radius-md);padding:var(--og-space-3) var(--og-space-4);margin:var(--og-space-3) 0;font-size:var(--og-size-sm)}.cover p{margin:0 0 var(--og-space-2)}
 header.hero{overflow:visible}
 .tools label{min-width:0;max-width:100%;flex:1 1 180px}.tools select,.tools input{width:100%}
@@ -101,6 +101,7 @@ header.hero{overflow:visible}
 <div role="tablist" id="tabs" aria-label="Choose a nation"></div>
 <section id="panel" role="tabpanel" aria-live="polite"></section>
 <section class="box" id="how-run" aria-labelledby="h-how"><h2 id="h-how">How the people in charge get there</h2><p>For each kind of body: whether it is elected or appointed, how often, and how. These are the rules for that kind of body, with the law or guidance they come from.</p><div class="how" id="howList"></div></section>
+<section class="box" id="intl" aria-labelledby="h-intl" hidden></section>
 <section class="box" aria-labelledby="h-method"><h2 id="h-method">How we decide which nation a body belongs to</h2><p>We only use trusted sources, in this order: the parliament the body answers to; who funds and oversees it, as the Office for National Statistics records; what the body says about itself on GOV.UK; the nation its official register gives; official local council codes; the law that set it up; Wikidata; a 2020 list of public bodies; and where it is registered as a company. We never guess from a name. What each body <b>does</b> is worked out from its name and description, so it can be wrong: please tell us if it is.</p></section>
 <section class="box" aria-labelledby="h-conf"><h2 id="h-conf">Where sources still disagree</h2><p id="confIntro"></p><ul id="conf"></ul></section>
 <section class="box" aria-labelledby="h-un"><h2 id="h-un">Not yet placed (__UNPLACED__)</h2><p>No trusted source yet says which nation these bodies belong to. If you know, <a href="https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=data-correction.yml">send a correction with a source</a>.</p><details><summary>Show the list</summary><ul class="cols" id="un"></ul></details></section>
@@ -200,6 +201,16 @@ document.getElementById("un").innerHTML=ALL.unplaced.map(x=>`<li>${esc(x.name)} 
  svg.addEventListener("keydown",e=>{const g=e.target.closest(".node");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();go(g.dataset.k)}});
  const mark=k=>svg.querySelectorAll(".node").forEach(g=>g.setAttribute("aria-current",String(g.dataset.k===k)));
  const _show=show;show=function(k,f){_show(k,f);mark(k)};
+})();
+
+/* The UK in international bodies: who holds each relationship, grouped, with combined official sources */
+(function(){const I=ALL.intl,el=document.getElementById("intl");if(!I||!el)return;
+ const hash=i=>"index.html#org-"+String(i).replace(/:/g,"--").replace(/[^A-Za-z0-9-]/g,"");
+ const by={};I.bodies.forEach(b=>(by[b.group]=by[b.group]||[]).push(b));
+ const leads=[...new Set(I.bodies.flatMap(b=>b.lead.map(l=>l.name)))].length;
+ el.hidden=false;el.innerHTML=`<h2 id="h-intl">The UK in international bodies</h2><p class="lede">Who looks after the UK's place in each international body, trading bloc or treaty organisation, or is its single point of contact. ${I.bodies.length} bodies, ${leads} UK bodies leading. Every row cites an official page that says so (read ${esc(I.read)}); roles only, never people.</p>`+
+ Object.entries(I.groups).filter(([k])=>by[k]).map(([k,lab])=>`<h3>${esc(lab)} · ${by[k].length}</h3><div class="tablewrap"><table class="intl"><colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr><th scope="col">International body</th><th scope="col">UK lead</th><th scope="col">How the UK takes part</th></tr></thead><tbody>${by[k].map(b=>`<tr><th scope="row" style="font-weight:600">${esc(b.name)}${b.way_in?`<br><small>${esc(b.way_in)}</small>`:""}</th><td data-label="UK lead">${b.lead.map(l=>`<a href="${hash(l.id)}">${esc(l.name)}</a>`).join("<br>")}</td><td data-label="How the UK takes part">${esc(b.role)}<br><span class="srcs">sources: ${b.evidence.map(e=>`<a href="${esc(e.url)}" rel="noopener" target="_blank" title="${esc(e.title)}">${esc((s=>s.length>46?s.slice(0,44)+"…":s)(e.title.replace(/^(GOV\.UK( API)?|[^:]{0,40}):\s*/,"")))}</a>`).join(", ")}</span></td></tr>`).join("")}</tbody></table></div>`).join("")+
+ `<div class="cover"><p><b>Still to confirm:</b> ${I.to_confirm.map(x=>`${esc(x.name)} (${esc(x.why)})`).join(" ")}</p></div>`;
 })();
 show(order[0]);
 </script></body></html>

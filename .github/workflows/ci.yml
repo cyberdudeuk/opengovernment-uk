@@ -39,6 +39,8 @@ jobs:
         run: python tools/sameas.py && python tools/sameas.py --negative
       - name: Crown Dependencies and Overseas Territories (founding orders, confirmed websites, negatives)
         run: python tools/territories.py && python tools/territories.py --negative
+      - name: The UK in international bodies (official sources only, open register leads, roles not people, negatives)
+        run: python tools/international.py && python tools/international.py --negative
       - name: Each body's own website (one combined table, code-matched only, negatives)
         run: python tools/websites.py && python tools/websites.py --negative
       - name: Trading fund and public corporation trees (one place each, known answers, negatives)
