@@ -14473,8 +14473,8 @@
    "activity": "advise",
    "activity_basis": "its name",
    "btype": "central",
-   "reach": "several",
-   "reach_label": "Several nations",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:advisory-committees-on-justices-of-the-peace-in-lancashire-greater-manchester-an": {
@@ -14553,8 +14553,8 @@
    "activity": "research",
    "activity_basis": "its name",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:air-safety-support-international-ltd-assi": {
@@ -20213,8 +20213,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:land-and-property-services": {
@@ -23123,8 +23123,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "several",
-   "reach_label": "Several nations",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:office-of-the-scottish-charity-regulator-oscr": {
@@ -24073,8 +24073,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:regional-health-and-social-care-board": {

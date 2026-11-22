@@ -1,0 +1,431 @@
+{
+ "about": "Decisions on near-name pairs that the automatic reconciliation set aside, read 22 November 2026. The rules in tools/setaside.py decide most pairs; these are the rest, each decided from an official page (GOV.UK or legislation.gov.uk) and carrying a short quote that tools/setaside.py --verify checks is still on that page. 'different' means two records; 'same' means one body under two names.",
+ "read": "2026-11-22",
+ "manual": [
+  {
+   "id": "government-organisation:PB437",
+   "ons": "Advisory Committees on Justices of the Peace in England and Wales",
+   "decision": "same",
+   "why": "The GOV.UK record is the Ministry of Justice's committees that recommend magistrates to the Lord Chancellor, which is the England and Wales system the ONS name states.",
+   "evidence": [
+    {
+     "title": "GOV.UK: advisory committees on justices of the peace",
+     "url": "https://www.gov.uk/government/organisations/advisory-committees-on-justices-of-the-peace",
+     "quote": "make recommendations to the Lord Chancellor"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB437",
+   "ons": "The Advisory Committee on Justices of the Peace (Northern Ireland)",
+   "decision": "different",
+   "why": "The ONS name states Northern Ireland, whose courts are run by the Northern Ireland Department of Justice; the GOV.UK record is the Ministry of Justice's committees for England and Wales.",
+   "evidence": [
+    {
+     "title": "GOV.UK: advisory committees on justices of the peace",
+     "url": "https://www.gov.uk/government/organisations/advisory-committees-on-justices-of-the-peace",
+     "quote": "make recommendations to the Lord Chancellor"
+    },
+    {
+     "title": "GOV.UK: Northern Ireland Courts and Tribunals Service",
+     "url": "https://www.gov.uk/government/organisations/northern-ireland-court-service",
+     "quote": "an Agency within the Department of Justice"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB421",
+   "ons": "Agricultural Dwelling House Advisory Committees (Wales) (ADHAC)",
+   "decision": "different",
+   "why": "The GOV.UK record is the 16 committees in England; the ONS name states Wales.",
+   "evidence": [
+    {
+     "title": "GOV.UK: agricultural dwelling house advisory committees x16",
+     "url": "https://www.gov.uk/government/organisations/agricultural-dwelling-house-advisory-committees-x16",
+     "quote": "close the 16 committees in England"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB420",
+   "ons": "Agricultural Wages Committees for England",
+   "decision": "same",
+   "why": "The GOV.UK record is the committees in England, as the ONS name states.",
+   "evidence": [
+    {
+     "title": "GOV.UK: agricultural wages committee x13",
+     "url": "https://www.gov.uk/government/organisations/agricultural-wages-committee-x13",
+     "quote": "close the 15 committees in England"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB420",
+   "ons": "Agricultural Wages Committees for Wales",
+   "decision": "different",
+   "why": "The GOV.UK record is the committees in England; the ONS name states Wales.",
+   "evidence": [
+    {
+     "title": "GOV.UK: agricultural wages committee x13",
+     "url": "https://www.gov.uk/government/organisations/agricultural-wages-committee-x13",
+     "quote": "close the 15 committees in England"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:EA52",
+   "ons": "Animal Health and Veterinary Laboratories Association",
+   "decision": "same",
+   "why": "The body is the Animal Health and Veterinary Laboratories Agency; 'Association' is a variant in the ONS list, and GOV.UK records the agency's change of name to the Animal and Plant Health Agency.",
+   "evidence": [
+    {
+     "title": "GOV.UK: animal health and veterinary laboratories agency",
+     "url": "https://www.gov.uk/government/organisations/animal-health-and-veterinary-laboratories-agency",
+     "quote": "Animal and Plant Health Agency"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:EA810",
+   "ons": "Child Support Agency",
+   "decision": "different",
+   "why": "The GOV.UK record is the Northern Ireland agency; the Child Support Agency named by ONS was the Great Britain agency.",
+   "evidence": [
+    {
+     "title": "GOV.UK: northern ireland child support agency",
+     "url": "https://www.gov.uk/government/organisations/northern-ireland-child-support-agency",
+     "quote": "Child Maintenance in Northern Ireland"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT824",
+   "ons": "Commission for Social Care Inspection for England (CSCI)",
+   "decision": "same",
+   "why": "GOV.UK says the commission was the inspectorate for social care in England, as the ONS name states.",
+   "evidence": [
+    {
+     "title": "GOV.UK: commission for social care inspection",
+     "url": "https://www.gov.uk/government/organisations/commission-for-social-care-inspection",
+     "quote": "inspectorate for social care in England"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB576",
+   "ons": "Committee on Carcinogenicity of Chemicals in Food, Consumer Products and the Environment",
+   "decision": "different",
+   "why": "Toxicity and carcinogenicity are two separate scientific committees, each with its own GOV.UK page.",
+   "evidence": [
+    {
+     "title": "GOV.UK: committee on toxicity of chemicals in food consumer products and the environment",
+     "url": "https://www.gov.uk/government/organisations/committee-on-toxicity-of-chemicals-in-food-consumer-products-and-the-environment",
+     "quote": "is an independent scientific committee"
+    },
+    {
+     "title": "GOV.UK: Committee on Carcinogenicity (expert group)",
+     "url": "https://www.gov.uk/government/groups/committee-on-carcinogenicity-of-chemicals-in-food-consumer-products-and-the-environment-coc",
+     "quote": "Committee on Carcinogenicity"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB126",
+   "ons": "Construction Industry Training Board (NI)",
+   "decision": "different",
+   "why": "Northern Ireland has its own industrial training law and board; the GOV.UK record is the board sponsored by the Department for Work and Pensions.",
+   "evidence": [
+    {
+     "title": "GOV.UK: construction industry training board",
+     "url": "https://www.gov.uk/government/organisations/construction-industry-training-board",
+     "quote": "Department for Work and Pensions"
+    },
+    {
+     "title": "The Industrial Training (Northern Ireland) Order 1984",
+     "url": "https://www.legislation.gov.uk/nisi/1984/1159/contents",
+     "quote": "Industrial Training (Northern Ireland) Order 1984"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT710",
+   "ons": "Equal Opportunities Commission for Northern Ireland",
+   "decision": "different",
+   "why": "The Northern Ireland commission was a separate body, dissolved by the Northern Ireland Act 1998; the GOV.UK record was replaced by the Equality and Human Rights Commission.",
+   "evidence": [
+    {
+     "title": "GOV.UK: equal opportunities commission",
+     "url": "https://www.gov.uk/government/organisations/equal-opportunities-commission",
+     "quote": "replaced by the Equality and Human Rights Commission"
+    },
+    {
+     "title": "Northern Ireland Act 1998, section 74",
+     "url": "https://www.legislation.gov.uk/ukpga/1998/47/section/74",
+     "quote": "the Equal Opportunities Commission for Northern Ireland"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB207",
+   "ons": "Health and Safety Executive for Northern Ireland",
+   "decision": "different",
+   "why": "GOV.UK says HSE is Britain's regulator; the ONS name states Northern Ireland.",
+   "evidence": [
+    {
+     "title": "GOV.UK: health and safety executive",
+     "url": "https://www.gov.uk/government/organisations/health-and-safety-executive",
+     "quote": "Britain’s national regulator"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT991",
+   "ons": "Health Development Agency",
+   "decision": "different",
+   "why": "Different bodies: the Welsh Development Agency worked on business and investment in Wales.",
+   "evidence": [
+    {
+     "title": "GOV.UK: welsh development agency",
+     "url": "https://www.gov.uk/government/organisations/welsh-development-agency",
+     "quote": "investment in Wales"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT902",
+   "ons": "Horticulture Development Council",
+   "decision": "same",
+   "why": "One body: its founding order names it the Horticultural Development Council; 'Horticulture' is a variant in the ONS list.",
+   "evidence": [
+    {
+     "title": "The Horticultural Development Council Order 1986",
+     "url": "https://www.legislation.gov.uk/uksi/1986/1110/contents",
+     "quote": "The Horticultural Development Council Order 1986"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB1494",
+   "ons": "Information Commissioner",
+   "decision": "different",
+   "why": "Successive bodies: the Data (Use and Access) Act 2025 abolished the office of Information Commissioner and transferred its functions to the Information Commission.",
+   "evidence": [
+    {
+     "title": "Data (Use and Access) Act 2025, section 118",
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/section/118",
+     "quote": "The office of Information Commissioner is abolished"
+    },
+    {
+     "title": "Data (Use and Access) Act 2025, section 119",
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/section/119",
+     "quote": "transferred to the Information Commission"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB174",
+   "ons": "National Galleries of Scotland",
+   "decision": "different",
+   "why": "The ONS name states Scotland; the National Galleries of Scotland have their own Act.",
+   "evidence": [
+    {
+     "title": "National Galleries of Scotland Act 1906",
+     "url": "https://www.legislation.gov.uk/ukpga/Edw7/6/50/contents",
+     "quote": "National Galleries of Scotland Act 1906"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB307",
+   "ons": "National Maritime Museum",
+   "decision": "different",
+   "why": "Different museums: the National Army Museum covers the British Army; the National Maritime Museum has its own Act.",
+   "evidence": [
+    {
+     "title": "GOV.UK: national army museum",
+     "url": "https://www.gov.uk/government/organisations/national-army-museum",
+     "quote": "history of the British Army"
+    },
+    {
+     "title": "National Maritime Museum Act 1934",
+     "url": "https://www.legislation.gov.uk/ukpga/Geo5/24-25/43/contents",
+     "quote": "National Maritime Museum Act 1934"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT712",
+   "ons": "National Weights and Measurements Laboratory",
+   "decision": "same",
+   "why": "One body: GOV.UK's record of the laboratory says it is now the National Measurement Office; 'Measurements' is a variant in the ONS list.",
+   "evidence": [
+    {
+     "title": "GOV.UK: national weights and measures laboratory",
+     "url": "https://www.gov.uk/government/organisations/national-weights-and-measures-laboratory",
+     "quote": "Now the National Measurement Office"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT941",
+   "ons": "Northern Ireland Commissioner for Protection Against Unlawful Industrial Action",
+   "decision": "different",
+   "why": "The ONS name states Northern Ireland, which had its own commissioner under Northern Ireland law; the GOV.UK record is the Great Britain office.",
+   "evidence": [
+    {
+     "title": "GOV.UK: office of the commissioner for protection against unlawful industrial action",
+     "url": "https://www.gov.uk/government/organisations/office-of-the-commissioner-for-protection-against-unlawful-industrial-action",
+     "quote": "The role of the Commissioner was abolished in 1999"
+    },
+    {
+     "title": "The Employment Relations (Northern Ireland) Order 1999",
+     "url": "https://www.legislation.gov.uk/nisi/1999/2790/contents",
+     "quote": "Employment Relations (Northern Ireland) Order 1999"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:EA808",
+   "ons": "Northern Ireland Driver Vehicle Testing Agency",
+   "decision": "same",
+   "why": "GOV.UK says the agency tested drivers and vehicles in Northern Ireland, as the ONS name states.",
+   "evidence": [
+    {
+     "title": "GOV.UK: driver and vehicle testing agency",
+     "url": "https://www.gov.uk/government/organisations/driver-and-vehicle-testing-agency",
+     "quote": "testing of both drivers and vehicles in Northern Ireland"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:EA199",
+   "ons": "Northern Ireland Environment Agency",
+   "decision": "different",
+   "why": "The Environment Agency's founding section extends to England and Wales (and Scotland for some purposes), not Northern Ireland; the ONS name states Northern Ireland.",
+   "evidence": [
+    {
+     "title": "Environment Act 1995, section 1",
+     "url": "https://www.legislation.gov.uk/ukpga/1995/25/section/1",
+     "quote": "There shall be a body corporate to be known as the Environment Agency"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT945",
+   "ons": "Office of the Health Professionals Adjudicators",
+   "decision": "same",
+   "why": "One body: the Health and Social Care Act 2008 names it the Office of the Health Professions Adjudicator; the ONS name is a variant.",
+   "evidence": [
+    {
+     "title": "Health and Social Care Act 2008, section 98",
+     "url": "https://www.legislation.gov.uk/ukpga/2008/14/section/98",
+     "quote": "The Office of the Health Professions Adjudicator"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB165",
+   "ons": "Parish Councils (England)",
+   "decision": "different",
+   "why": "Different bodies: Arts Council England is a single arts body; parish councils are local councils.",
+   "evidence": [
+    {
+     "title": "GOV.UK: arts council england",
+     "url": "https://www.gov.uk/government/organisations/arts-council-england",
+     "quote": "champions, develops and invests in artistic and cultural"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT714",
+   "ons": "Planning Service (Northern Ireland)",
+   "decision": "same",
+   "why": "GOV.UK says the Planning Service worked in Northern Ireland, as the ONS name states.",
+   "evidence": [
+    {
+     "title": "GOV.UK: planning service",
+     "url": "https://www.gov.uk/government/organisations/planning-service",
+     "quote": "land development and use in Northern Ireland"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB1279",
+   "ons": "Regional Business Services Organisation (Northern Ireland)",
+   "decision": "same",
+   "why": "One body: its founding Act names it the Regional Business Services Organisation; 'HSC Business Services Organisation' is its working name.",
+   "evidence": [
+    {
+     "title": "Health and Social Care (Reform) Act (Northern Ireland) 2009, section 14",
+     "url": "https://www.legislation.gov.uk/nia/2009/1/section/14",
+     "quote": "The Regional Business Services Organisation"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:IM320",
+   "ons": "Scottish Criminal Cases Review Commission",
+   "decision": "different",
+   "why": "GOV.UK says the commission covers England, Wales and Northern Ireland; the ONS name states Scotland.",
+   "evidence": [
+    {
+     "title": "GOV.UK: criminal cases review commission",
+     "url": "https://www.gov.uk/government/organisations/criminal-cases-review-commission",
+     "quote": "England, Wales and Northern Ireland"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT850",
+   "ons": "Scottish Film Council",
+   "decision": "different",
+   "why": "The ONS name states Scotland; the UK Film Council was set up in 2000 for the UK film industry.",
+   "evidence": [
+    {
+     "title": "GOV.UK: uk film council",
+     "url": "https://www.gov.uk/government/organisations/uk-film-council",
+     "quote": "set up in 2000 to promote the UK film industry"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:OT1192",
+   "ons": "Scottish Pubs Code Adjudicator",
+   "decision": "different",
+   "why": "Scotland has its own adjudicator under the Tied Pubs (Scotland) Act 2021; the GOV.UK record is the UK government's adjudicator, sponsored by the Department for Business, Innovation, Science and Trade.",
+   "evidence": [
+    {
+     "title": "Tied Pubs (Scotland) Act 2021",
+     "url": "https://www.legislation.gov.uk/asp/2021/17/contents",
+     "quote": "Scottish Pubs Code Adjudicator"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:EA919",
+   "ons": "South West of England Development Agency",
+   "decision": "different",
+   "why": "Different regions: SEEDA was the development agency for the south east.",
+   "evidence": [
+    {
+     "title": "GOV.UK: south east england development agency",
+     "url": "https://www.gov.uk/government/organisations/south-east-england-development-agency",
+     "quote": "developing the economy in the south east"
+    }
+   ]
+  },
+  {
+   "id": "government-organisation:PB1204",
+   "ons": "Valuation Tribunals",
+   "decision": "different",
+   "why": "Successive bodies: the Local Government and Public Involvement in Health Act 2007 established the Valuation Tribunal for England and abolished the existing English tribunals.",
+   "evidence": [
+    {
+     "title": "Local Government and Public Involvement in Health Act 2007, section 219",
+     "url": "https://www.legislation.gov.uk/ukpga/2007/28/section/219",
+     "quote": "The existing English tribunals are abolished"
+    }
+   ]
+  }
+ ]
+}

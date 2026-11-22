@@ -108,6 +108,12 @@ _DEC = json.loads((ROOT / "sources/evidence/reconciliation-decisions.json").read
 _DONE = {(d["id"], d["ons"]) for d in _DEC}
 if not all(d.get("evidence") for d in _DEC): sys.exit("a name decision has no evidence")
 D["q"] = [x for x in D["q"] if (x["id"], x["ons"]) not in _DONE]
+_SA = json.loads((ROOT / "data/set-aside.json").read_text())["pairs"]  # tools/setaside.py: decided near-name pairs leave the set-aside list
+_SAD = {(p["id"], p["ons"]) for p in _SA if p["decision"]}
+D["a"] = [x for x in D["a"] if (x["id"], x["ons"]) not in _SAD]
+_SAC = collections.Counter(p["decision"] for p in _SA if p["decision"])
+_SAR = collections.Counter(p["rule"] for p in _SA if p["decision"])
+_RULES = {"R1": "both names state different nations", "R2": "one name states a nation the other record's own evidenced nation excludes", "R2b": "identical once the nation is removed, and the nations agree", "R3": "Wikidata resolves each name to one item", "R5": "identical once spaces and punctuation are removed", "M": "decided from a quoted official page"}
 chk = subprocess.run([sys.executable, str(TOOLS / "check.py")], capture_output=True, text=True)  # noqa: S603 fixed interpreter and script path, no input
 neg = subprocess.run([sys.executable, str(TOOLS / "check.py"), "--negative"], capture_output=True, text=True)  # noqa: S603
 if chk.returncode or neg.returncode: sys.exit("accountability checks failed; nothing written\n" + chk.stdout + neg.stdout)
@@ -134,6 +140,8 @@ c["consumers"] = [dict(x, portal=PUBLIC_APPS[x["app"]][0], repo=PUBLIC_APPS[x["a
 if {x["app"] for x in c["consumers"]} != set(PUBLIC_APPS): sys.exit(f"public consumer missing: {set(PUBLIC_APPS) - {x['app'] for x in c['consumers']}}")
 data_json = json.dumps(D, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 h = h[:m.start(2)] + data_json + h[m.end(2):]
+h = once(h, '<p class="muted" style="margin:6px 0 12px">Near-names of different bodies. They are not joined, and each shows why. If you know a pair is the same body, say so and a steward will check it.</p>',
+         f'<p class="muted" style="margin:6px 0 12px">Near-names the matcher would not join on its own. {sum(_SAC.values())} of {len(_SA)} have been decided and have left this list: {_SAC["different"]} are different records and {_SAC["same"]} are one body under two names. Where both names state a nation and the nations differ, they are always different records. By rule: ' + "; ".join(f"{_RULES[k]} ({v})" for k, v in sorted(_SAR.items(), key=lambda kv: -kv[1])) + '. Each decision, its rule and its evidence are kept in data/set-aside.json. What remains below has no official source that settles it. If you know a pair is the same body, say so and a steward will check it.</p>', "set-aside intro says what was decided")  # after the data block is written: an edit before it would shift the recorded offsets (OG-D56)
 mf = re.search(r'(<script[^>]*id="files"[^>]*>)(.*?)(</script>)', h, re.S); F = json.loads(mf.group(2))
 F["feed-contract.json"] = json.dumps(c, indent=1, ensure_ascii=False)  # D-OG6: the download is regenerated from the same contract as the page
 h = h[:mf.start(2)] + json.dumps(F, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + h[mf.end(2):]
@@ -228,6 +236,18 @@ h = re.sub(r'style="([^"]*)"', lambda m: 'style="' + design.tokenise(m.group(1))
 h = once(h, "</head>", '<link rel="stylesheet" href="assets/og.css">\n</head>', "design stylesheet")
 h = h.replace("Fonts: Fraunces, Inter and IBM Plex Mono, from Google Fonts.", 'Fonts: Atkinson Hyperlegible Next and IBM Plex Mono (SIL Open Font License), served from this site. <a href="design-system.html">Design system</a>.')
 if "fonts.googleapis" in h or "Fraunces" in h.split("<script")[0]: sys.exit("OG-D42: a third-party font is still referenced")
+def json_blocks_parse(page):
+    """OG-D56: every <script type="application/json"> block must still parse, or the page cannot start."""
+    bad = []
+    for m2 in re.finditer(r'<script[^>]*type="application/json"[^>]*id="([^"]+)"[^>]*>(.*?)</script>|<script[^>]*id="([^"]+)"[^>]*type="application/json"[^>]*>(.*?)</script>', page, re.S):
+        bid, body = m2.group(1) or m2.group(3), m2.group(2) if m2.group(1) else m2.group(4)
+        try: json.loads(body)
+        except ValueError as err: bad.append(f"{bid}: {err}")
+    if not re.search(r'<script[^>]*id="data"', page): bad.append("data block missing")
+    return bad
+
+
+if json_blocks_parse(h) or not json_blocks_parse(h.replace('id="data"', 'id="data" x', 1).replace('"v":', '"v":,', 1)): sys.exit("portal page data does not parse (or the guard failed its negative): " + "; ".join(json_blocks_parse(h)))
 (OUT / "index.html").write_text(h)
 # served feed files (same content the page offers as downloads)
 (OUT / "accountability.json").write_text(json.dumps(ACC, ensure_ascii=False, separators=(",", ":")))

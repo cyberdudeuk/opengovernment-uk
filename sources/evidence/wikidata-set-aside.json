@@ -1,0 +1,799 @@
+{
+"query": "SELECT ?n ?item ?itemLabel ?end ?country WHERE { VALUES ?n { \"Advisory Committees on Justices of the Peace\"@en \"Advisory Committees on Justices of the Peace in England and Wales\"@en \"Agri-Food & Biosciences Institute\"@en \"Agri-Food and Biosciences Institute (Northern Ireland)\"@en \"Agricultural Dwelling House Advisory Committees (Wales) (ADHAC)\"@en \"Agricultural Dwelling House Advisory Committees (x16)\"@en \"Agricultural Wages Committee\"@en \"Agricultural Wages Committees for England\"@en \"Agricultural Wages Committees for Wales\"@en \"Ancient Monuments Board for Scotland\"@en \"Ancient Monuments Board for Wales\"@en \"Animal Health and Veterinary Laboratories Agency\"@en \"Animal Health and Veterinary Laboratories Association\"@en \"Arts Council England\"@en \"Bank of England\"@en \"Bank of Scotland plc\"@en \"Boundary Commission for Scotland\"@en \"Charity Commission of Northern Ireland\"@en \"Child Support Agency\"@en \"Commission for Social Care Inspection\"@en \"Commission for Social Care Inspection for England (CSCI)\"@en \"Committee on Carcinogenicity of Chemicals in Food, Consumer Products and the Environment\"@en \"Committee on Mutagenicity of Chemicals in Food, Consumer Products and the Environment\"@en \"Committee on Toxicity of Chemicals in Food, Consumer Products and the Environment\"@en \"Construction Industry Training Board\"@en \"Construction Industry Training Board (NI)\"@en \"Criminal Cases Review Commission\"@en \"Defence Intelligence and Security Agency\"@en \"Defence Intelligence and Security Centre\"@en \"Driver and Vehicle Testing Agency\"@en \"Environment Agency\"@en \"Equal Opportunities Commission\"@en \"Equal Opportunities Commission for Northern Ireland\"@en \"Fire Authority for Northern Ireland\"@en \"Forestry England\"@en \"General Teaching Council for England\"@en \"General Teaching Council for Wales\"@en \"HSC Business Services Organisation (Northern Ireland)\"@en \"Health Development Agency\"@en \"Health and Safety Executive\"@en \"Health and Safety Executive for Northern Ireland\"@en \"Higher Education Funding Council for England\"@en \"Higher Education Funding Council for Wales\"@en \"Horticultural Development Council\"@en \"Horticulture Development Council\"@en \"Industrial Development Advisory Board\"@en \"Information Commission\"@en \"Information Commissioner\"@en \"Irish Language Commissioner\"@en \"Labour Relations Agency\"@en \"Labour Relations Agency (Northern Ireland)\"@en \"National Army Museum\"@en \"National Galleries of Scotland\"@en \"National Gallery\"@en \"National Maritime Museum\"@en \"National Weights and Measurements Laboratory\"@en \"National Weights and Measures Laboratory\"@en \"North West Regional Development Agency\"@en \"Northern Ireland Child Support Agency\"@en \"Northern Ireland Commissioner for Protection Against Unlawful Industrial Action\"@en \"Northern Ireland Courts and Tribunals Service\"@en \"Northern Ireland Driver Vehicle Testing Agency\"@en \"Northern Ireland Environment Agency\"@en \"Northern Ireland Human Rights Commission\"@en \"Northern Ireland Prison Service\"@en \"Northwest Regional Development Agency\"@en \"OGC buying.solutions\"@en \"OGCbuyingsolutions\"@en \"Office of the Commissioner for Protection Against Unlawful Industrial Action\"@en \"Office of the Health Professionals Adjudicators\"@en \"Office of the Health Professions Adjudicator\"@en \"Office of the Public Guardian\"@en \"Office of the Public Guardian (England and Wales)\"@en \"One North East\"@en \"One NorthEast\"@en \"Parish Councils (England)\"@en \"Parole Board\"@en \"Parole Board for Scotland\"@en \"Planning Service\"@en \"Planning Service (Northern Ireland)\"@en \"Police Authority for Northern Ireland\"@en \"Police Service of Northern Ireland\"@en \"Police Service of Scotland\"@en \"Public Health Scotland\"@en \"Public Health Wales\"@en \"Public Service Ombudsman\"@en \"Public Services Ombudsman for Wales\"@en \"Pubs Code Adjudicator\"@en \"Regional Business Services Organisation (Northern Ireland)\"@en \"Scottish Courts and Tribunals Service\"@en \"Scottish Criminal Cases Review Commission\"@en \"Scottish Development Agency\"@en \"Scottish Film Council\"@en \"Scottish Forestry\"@en \"Scottish Higher Education Funding Council\"@en \"Scottish Human Rights Commission\"@en \"Scottish Prison Service\"@en \"Scottish Public Services Ombudsman\"@en \"Scottish Pubs Code Adjudicator\"@en \"Ship Support Agency\"@en \"South East England Development Agency\"@en \"South West of England Development Agency\"@en \"Sports Council for Northern Ireland\"@en \"Sports Council for Wales\"@en \"Standards Commission for Scotland\"@en \"The Advisory Committee on Justices of the Peace (Northern Ireland)\"@en \"The Charity Commission\"@en \"UK Film Council\"@en \"Valuation Tribunal for England\"@en \"Valuation Tribunals\"@en \"Valuation Tribunals (Wales)\"@en \"Warship Support Agency\"@en \"Welsh Development Agency\"@en \"Welsh Industrial Development Advisory Board\"@en \"Welsh Language Commissioner\"@en }\n { ?item rdfs:label ?n } UNION { ?item skos:altLabel ?n }\n ?item wdt:P31/wdt:P279* wd:Q43229 .\n OPTIONAL { ?item wdt:P576 ?end } OPTIONAL { ?item wdt:P17 ?c . ?c rdfs:label ?country FILTER(lang(?country)='en') }\n SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } }",
+"read": "2026-11-22",
+"rows": [
+{
+"item": "http://www.wikidata.org/entity/Q180788",
+"country": "United Kingdom",
+"n": "National Gallery",
+"itemLabel": "National Gallery"
+},
+{
+"item": "http://www.wikidata.org/entity/Q183231",
+"country": "United Kingdom",
+"n": "Bank of England",
+"itemLabel": "Bank of England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q183231",
+"country": "United Kingdom",
+"n": "Bank of England",
+"itemLabel": "Bank of England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q627381",
+"country": "United Kingdom",
+"n": "Bank of Scotland plc",
+"itemLabel": "Bank of Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q627381",
+"country": "United Kingdom",
+"n": "Bank of Scotland plc",
+"itemLabel": "Bank of Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q731616",
+"country": "United Kingdom",
+"n": "National Army Museum",
+"itemLabel": "National Army Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q731616",
+"country": "United Kingdom",
+"n": "National Army Museum",
+"itemLabel": "National Army Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q731616",
+"country": "United Kingdom",
+"n": "National Army Museum",
+"itemLabel": "National Army Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q922857",
+"country": "United Kingdom",
+"n": "UK Film Council",
+"itemLabel": "UK Film Council"
+},
+{
+"item": "http://www.wikidata.org/entity/Q922857",
+"country": "United Kingdom",
+"n": "UK Film Council",
+"itemLabel": "UK Film Council"
+},
+{
+"item": "http://www.wikidata.org/entity/Q942713",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "Scottish National Gallery"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1199924",
+"country": "United Kingdom",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1199924",
+"country": "United Kingdom",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1199924",
+"country": "United Kingdom",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1478750",
+"country": "United Kingdom",
+"n": "Health and Safety Executive",
+"itemLabel": "Health and Safety Executive"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1482170",
+"country": "United Kingdom",
+"n": "Police Service of Northern Ireland",
+"itemLabel": "Police Service of Northern Ireland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1889944",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "Scottish National Gallery of Modern Art"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1889944",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "Scottish National Gallery of Modern Art"
+},
+{
+"item": "http://www.wikidata.org/entity/Q2051997",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "National Galleries Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q2051997",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "National Galleries Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q2051997",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "National Galleries Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q2441562",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "Scottish National Portrait Gallery"
+},
+{
+"item": "http://www.wikidata.org/entity/Q2441562",
+"country": "United Kingdom",
+"n": "National Galleries of Scotland",
+"itemLabel": "Scottish National Portrait Gallery"
+},
+{
+"item": "http://www.wikidata.org/entity/Q3015291",
+"country": "United Kingdom",
+"n": "Northern Ireland Prison Service",
+"itemLabel": "Northern Ireland Prison Service"
+},
+{
+"item": "http://www.wikidata.org/entity/Q3102478",
+"country": "United Kingdom",
+"n": "Northern Ireland Environment Agency",
+"itemLabel": "Northern Ireland Environment Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q3400795",
+"country": "United Kingdom",
+"n": "Arts Council England",
+"itemLabel": "Arts Council England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q3400795",
+"country": "United Kingdom",
+"n": "Arts Council England",
+"itemLabel": "Arts Council England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q3400795",
+"country": "United Kingdom",
+"n": "Arts Council England",
+"itemLabel": "Arts Council England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5011892",
+"country": "United Kingdom",
+"n": "Construction Industry Training Board",
+"itemLabel": "Construction Industry Training Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5074501",
+"country": "United Kingdom",
+"n": "The Charity Commission",
+"itemLabel": "Charity Commission for England and Wales"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5074501",
+"country": "United Kingdom",
+"n": "The Charity Commission",
+"itemLabel": "Charity Commission for England and Wales"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5074501",
+"country": "United Kingdom",
+"n": "The Charity Commission",
+"itemLabel": "Charity Commission for England and Wales"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5097791",
+"country": "United Kingdom",
+"n": "Child Support Agency",
+"itemLabel": "Child Support Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5152659",
+"country": "United Kingdom",
+"n": "Commission for Social Care Inspection",
+"itemLabel": "Commission for Social Care Inspection"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5185530",
+"country": "United Kingdom",
+"n": "Criminal Cases Review Commission",
+"itemLabel": "Criminal Cases Review Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5381011",
+"country": "United Kingdom",
+"n": "Environment Agency",
+"itemLabel": "Environment Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5384129",
+"country": "United Kingdom",
+"n": "Equal Opportunities Commission",
+"itemLabel": "Equal Opportunities Commission",
+"end": "2007-10-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5532234",
+"country": "United Kingdom",
+"n": "General Teaching Council for England",
+"itemLabel": "General Teaching Council for England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5532236",
+"country": "United Kingdom",
+"n": "General Teaching Council for Wales",
+"itemLabel": "General Teaching Council for Wales"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5758074",
+"country": "United Kingdom",
+"n": "Higher Education Funding Council for England",
+"itemLabel": "Higher Education Funding Council for England",
+"end": "2018-03-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5758076",
+"country": "United Kingdom",
+"n": "Higher Education Funding Council for Wales",
+"itemLabel": "Higher Education Funding Council for Wales",
+"end": "2024-07-31T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7058507",
+"country": "United Kingdom",
+"n": "Northern Ireland Human Rights Commission",
+"itemLabel": "Northern Ireland Human Rights Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7058507",
+"country": "United Kingdom",
+"n": "Northern Ireland Human Rights Commission",
+"itemLabel": "Northern Ireland Human Rights Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7060182",
+"country": "United Kingdom",
+"n": "Northwest Regional Development Agency",
+"itemLabel": "Northwest Regional Development Agency",
+"end": "2012-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7060182",
+"country": "United Kingdom",
+"n": "Northwest Regional Development Agency",
+"itemLabel": "Northwest Regional Development Agency",
+"end": "2012-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7079406",
+"country": "United Kingdom",
+"n": "Office of the Public Guardian",
+"itemLabel": "Office of the Public Guardian"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7093088",
+"country": "United Kingdom",
+"n": "One NorthEast",
+"itemLabel": "One NorthEast",
+"end": "2012-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7093088",
+"country": "United Kingdom",
+"n": "One NorthEast",
+"itemLabel": "One NorthEast",
+"end": "2012-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7437682",
+"country": "United Kingdom",
+"n": "Scottish Courts and Tribunals Service",
+"itemLabel": "Scottish Courts and Tribunals Service"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7437688",
+"country": "United Kingdom",
+"n": "Scottish Criminal Cases Review Commission",
+"itemLabel": "Scottish Criminal Cases Review Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7437782",
+"country": "United Kingdom",
+"n": "Scottish Human Rights Commission",
+"itemLabel": "Scottish Human Rights Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7437782",
+"country": "United Kingdom",
+"n": "Scottish Human Rights Commission",
+"itemLabel": "Scottish Human Rights Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7437782",
+"country": "United Kingdom",
+"n": "Scottish Human Rights Commission",
+"itemLabel": "Scottish Human Rights Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7437912",
+"country": "United Kingdom",
+"n": "Scottish Prison Service",
+"itemLabel": "Scottish Prison Service"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7437918",
+"country": "United Kingdom",
+"n": "Scottish Public Services Ombudsman",
+"itemLabel": "Scottish Public Services Ombudsman"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7567117",
+"country": "United Kingdom",
+"n": "South East England Development Agency",
+"itemLabel": "South East England Development Agency",
+"end": "2012-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7567117",
+"country": "United Kingdom",
+"n": "South East England Development Agency",
+"itemLabel": "South East England Development Agency",
+"end": "2012-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7579368",
+"country": "United Kingdom",
+"n": "Sports Council for Northern Ireland",
+"itemLabel": "Sport Northern Ireland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7598418",
+"country": "United Kingdom",
+"n": "Standards Commission for Scotland",
+"itemLabel": "Standards Commission for Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7598418",
+"country": "United Kingdom",
+"n": "Standards Commission for Scotland",
+"itemLabel": "Standards Commission for Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7981937",
+"country": "United Kingdom",
+"n": "Welsh Language Commissioner",
+"itemLabel": "Welsh Language Commissioner"
+},
+{
+"item": "http://www.wikidata.org/entity/Q16961600",
+"country": "United Kingdom",
+"n": "Animal Health and Veterinary Laboratories Agency",
+"itemLabel": "Animal and Plant Health Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q16981179",
+"country": "United Kingdom",
+"n": "Forestry England",
+"itemLabel": "Forestry England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q17018314",
+"country": "United Kingdom",
+"n": "Public Health Wales",
+"itemLabel": "Public Health Wales"
+},
+{
+"item": "http://www.wikidata.org/entity/Q17068528",
+"country": "United Kingdom",
+"n": "Labour Relations Agency",
+"itemLabel": "Labour Relations Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q18392368",
+"country": "United Kingdom",
+"n": "Parole Board for Scotland",
+"itemLabel": "Parole Board for Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q21008518",
+"country": "United Kingdom",
+"n": "Health and Safety Executive",
+"itemLabel": "Health and Safety Laboratory"
+},
+{
+"item": "http://www.wikidata.org/entity/Q26487354",
+"country": "United Kingdom",
+"n": "Bank of England",
+"itemLabel": "The Old Bank of England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q65061980",
+"country": "United Kingdom",
+"n": "Scottish Forestry",
+"itemLabel": "Scottish Forestry"
+},
+{
+"item": "http://www.wikidata.org/entity/Q81075624",
+"country": "United Kingdom",
+"n": "Valuation Tribunal for England",
+"itemLabel": "Valuation Tribunal for England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q89284077",
+"country": "United Kingdom",
+"n": "Public Health Scotland",
+"itemLabel": "Public Health Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q104763501",
+"country": "United Kingdom",
+"n": "Committee on Carcinogenicity of Chemicals in Food, Consumer Products and the Environment",
+"itemLabel": "Committee on Carcinogenicity of Chemicals in Food, Consumer Products and the Environment"
+},
+{
+"item": "http://www.wikidata.org/entity/Q104900928",
+"country": "United Kingdom",
+"n": "Industrial Development Advisory Board",
+"itemLabel": "Industrial Development Advisory Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q104901258",
+"country": "United Kingdom",
+"n": "Welsh Industrial Development Advisory Board",
+"itemLabel": "Welsh Industrial Development Advisory Board"
+},
+{
+"item": "http://www.wikidata.org/entity/Q105099539",
+"country": "United Kingdom",
+"n": "Office of the Health Professions Adjudicator",
+"itemLabel": "Office of the Health Professions Adjudicator"
+},
+{
+"item": "http://www.wikidata.org/entity/Q105460793",
+"country": "United Kingdom",
+"n": "Advisory Committees on Justices of the Peace",
+"itemLabel": "Advisory Committees on Justices of the Peace"
+},
+{
+"item": "http://www.wikidata.org/entity/Q105537724",
+"country": "United Kingdom",
+"n": "Fire Authority for Northern Ireland",
+"itemLabel": "Fire Authority for Northern Ireland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q105544823",
+"country": "United Kingdom",
+"n": "Police Authority for Northern Ireland",
+"itemLabel": "Police Authority for Northern Ireland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q119983740",
+"country": "United Kingdom",
+"n": "Boundary Commission for Scotland",
+"itemLabel": "Boundary Commission for Scotland"
+},
+{
+"item": "http://www.wikidata.org/entity/Q131583153",
+"country": "United Kingdom",
+"n": "Equal Opportunities Commission for Northern Ireland",
+"itemLabel": "Equal Opportunities Commission",
+"end": "1999-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q131583153",
+"country": "United Kingdom",
+"n": "Equal Opportunities Commission",
+"itemLabel": "Equal Opportunities Commission",
+"end": "1999-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q132011183",
+"country": "United Kingdom",
+"n": "Bank of England",
+"itemLabel": "Bank of England"
+},
+{
+"item": "http://www.wikidata.org/entity/Q138002235",
+"country": "United Kingdom",
+"n": "Information Commission",
+"itemLabel": "Information Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q140452521",
+"country": "United Kingdom",
+"n": "Committee on Mutagenicity of Chemicals in Food, Consumer Products and the Environment",
+"itemLabel": "Committee on Mutagenicity of Chemicals in Food, Consumer Products and the Environment"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7981885",
+"country": "Wales",
+"n": "Welsh Development Agency",
+"itemLabel": "Welsh Development Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7981937",
+"country": "Wales",
+"n": "Welsh Language Commissioner",
+"itemLabel": "Welsh Language Commissioner"
+},
+{
+"item": "http://www.wikidata.org/entity/Q214867",
+"country": "United States",
+"n": "National Gallery",
+"itemLabel": "Q214867"
+},
+{
+"item": "http://www.wikidata.org/entity/Q214867",
+"country": "United States",
+"n": "National Gallery",
+"itemLabel": "Q214867"
+},
+{
+"item": "http://www.wikidata.org/entity/Q214867",
+"country": "United States",
+"n": "National Gallery",
+"itemLabel": "Q214867"
+},
+{
+"item": "http://www.wikidata.org/entity/Q214867",
+"country": "United States",
+"n": "National Gallery",
+"itemLabel": "Q214867"
+},
+{
+"item": "http://www.wikidata.org/entity/Q214867",
+"country": "United States",
+"n": "National Gallery",
+"itemLabel": "Q214867"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1616123",
+"country": "Netherlands",
+"n": "National Maritime Museum",
+"itemLabel": "Het Scheepvaartmuseum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1616123",
+"country": "Netherlands",
+"n": "National Maritime Museum",
+"itemLabel": "Het Scheepvaartmuseum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1616123",
+"country": "Netherlands",
+"n": "National Maritime Museum",
+"itemLabel": "Het Scheepvaartmuseum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q19365734",
+"country": "France",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1547492",
+"country": "People's Republic of China",
+"n": "Equal Opportunities Commission",
+"itemLabel": "Equal Opportunities Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1547492",
+"country": "People's Republic of China",
+"n": "Equal Opportunities Commission",
+"itemLabel": "Equal Opportunities Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q16410106",
+"country": "Estonia",
+"n": "Environment Agency",
+"itemLabel": "Environment Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1419555",
+"country": "Czech Republic",
+"n": "National Gallery",
+"itemLabel": "National Gallery Prague"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1419555",
+"country": "Czech Republic",
+"n": "National Gallery",
+"itemLabel": "National Gallery Prague"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1419555",
+"country": "Czech Republic",
+"n": "National Gallery",
+"itemLabel": "National Gallery Prague"
+},
+{
+"item": "http://www.wikidata.org/entity/Q1419555",
+"country": "Czech Republic",
+"n": "National Gallery",
+"itemLabel": "National Gallery Prague"
+},
+{
+"item": "http://www.wikidata.org/entity/Q17166403",
+"country": "Chile",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q17166403",
+"country": "Chile",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q17166403",
+"country": "Chile",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5097793",
+"country": "Australia",
+"n": "Child Support Agency",
+"itemLabel": "Child Support Agency",
+"end": "2011-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q5097793",
+"country": "Australia",
+"n": "Child Support Agency",
+"itemLabel": "Child Support Agency",
+"end": "2011-01-01T00:00:00Z"
+},
+{
+"item": "http://www.wikidata.org/entity/Q3330644",
+"country": "New Zealand",
+"n": "National Army Museum",
+"itemLabel": "National Army Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q3330644",
+"country": "New Zealand",
+"n": "National Army Museum",
+"itemLabel": "National Army Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q105615367",
+"country": "New Zealand",
+"n": "Criminal Cases Review Commission",
+"itemLabel": "Criminal Cases Review Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q6974256",
+"country": "Sri Lanka",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q123651795",
+"country": "Thailand",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q123651795",
+"country": "Thailand",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q130628",
+"country": "South Korea",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q130628",
+"country": "South Korea",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q130628",
+"country": "South Korea",
+"n": "National Maritime Museum",
+"itemLabel": "National Maritime Museum"
+},
+{
+"item": "http://www.wikidata.org/entity/Q6030686",
+"country": "Bangladesh",
+"n": "Information Commission",
+"itemLabel": "Information Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q140549854",
+"country": "Seychelles",
+"n": "Information Commission",
+"itemLabel": "Information Commission"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7079405",
+"n": "Office of the Public Guardian",
+"itemLabel": "Office of the Public Guardian"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7201374",
+"n": "Planning Service",
+"itemLabel": "Planning Service"
+},
+{
+"item": "http://www.wikidata.org/entity/Q7970935",
+"n": "Warship Support Agency",
+"itemLabel": "Warship Support Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q108767414",
+"n": "Northern Ireland Prison Service",
+"itemLabel": "Northern Ireland Prison Service"
+},
+{
+"item": "http://www.wikidata.org/entity/Q113129036",
+"n": "Environment Agency",
+"itemLabel": "Environment Agency"
+},
+{
+"item": "http://www.wikidata.org/entity/Q121091028",
+"n": "Bank of England",
+"itemLabel": "Bank of England"
+}
+]
+}

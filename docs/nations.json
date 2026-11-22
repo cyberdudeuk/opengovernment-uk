@@ -76,30 +76,6 @@
        "also": []
       },
       {
-       "id": "ons-name:advisory-committees-on-justices-of-the-peace-in-england-and-wales",
-       "name": "Advisory Committees on Justices of the Peace in England and Wales",
-       "type": "Central Government",
-       "basis": "stated by the register",
-       "why": "the register states ENWA",
-       "url": "",
-       "p": "government-organisation:D18",
-       "answers_to": "Parliament, through the Secretary of State or minister in charge",
-       "h": "org-ons-name--advisory-committees-on-justices-of-the-peace-in-england-and-wales",
-       "web": "",
-       "gov": "",
-       "names": [],
-       "nations": [
-        "EN",
-        "WA"
-       ],
-       "pk": "unknown",
-       "rk": "Several nations",
-       "fk": "central-body",
-       "ak": "advise",
-       "tk": "central",
-       "also": []
-      },
-      {
        "id": "government-organisation:PB165",
        "name": "Arts Council England",
        "type": "Executive non-departmental public body",
@@ -1280,31 +1256,12 @@
        "fk": "agency",
        "ak": "fund",
        "tk": "agency",
-       "also": []
-      },
-      {
-       "id": "ons-name:office-of-the-public-guardian-england-and-wales",
-       "name": "Office of the Public Guardian (England and Wales)",
-       "type": "Central Government",
-       "basis": "stated by the register",
-       "why": "the register states ENWA",
-       "url": "",
-       "p": "",
-       "answers_to": "not established from the sources",
-       "h": "org-ons-name--office-of-the-public-guardian-england-and-wales",
-       "web": "",
-       "gov": "",
-       "names": [],
-       "nations": [
-        "EN",
-        "WA"
-       ],
-       "pk": "govt",
-       "rk": "Several nations",
-       "fk": "central-body",
-       "ak": "services",
-       "tk": "central",
-       "also": []
+       "also": [
+        {
+         "id": "ons-name:office-of-the-public-guardian-england-and-wales",
+         "name": "Office of the Public Guardian (England and Wales)"
+        }
+       ]
       },
       {
        "id": "ons-name:parliamentary-boundary-commission-for-england",
@@ -18658,7 +18615,7 @@
    },
    "counts": {
     "legislature": 1,
-    "executive": 863,
+    "executive": 861,
     "judiciary": 8
    },
    "iso": "GB-ENG"
@@ -23074,30 +23031,6 @@
        "also": []
       },
       {
-       "id": "ons-name:advisory-committees-on-justices-of-the-peace-in-england-and-wales",
-       "name": "Advisory Committees on Justices of the Peace in England and Wales",
-       "type": "Central Government",
-       "basis": "stated by the register",
-       "why": "the register states ENWA",
-       "url": "",
-       "p": "government-organisation:D18",
-       "answers_to": "Parliament, through the Secretary of State or minister in charge",
-       "h": "org-ons-name--advisory-committees-on-justices-of-the-peace-in-england-and-wales",
-       "web": "",
-       "gov": "",
-       "names": [],
-       "nations": [
-        "EN",
-        "WA"
-       ],
-       "pk": "unknown",
-       "rk": "Several nations",
-       "fk": "central-body",
-       "ak": "advise",
-       "tk": "central",
-       "also": []
-      },
-      {
        "id": "ons-name:amey-infrastructure-wales-ltd",
        "name": "Amey Infrastructure Wales Ltd",
        "type": "Foreign controlled Non-financial corporations",
@@ -24902,31 +24835,12 @@
        "fk": "agency",
        "ak": "fund",
        "tk": "agency",
-       "also": []
-      },
-      {
-       "id": "ons-name:office-of-the-public-guardian-england-and-wales",
-       "name": "Office of the Public Guardian (England and Wales)",
-       "type": "Central Government",
-       "basis": "stated by the register",
-       "why": "the register states ENWA",
-       "url": "",
-       "p": "",
-       "answers_to": "not established from the sources",
-       "h": "org-ons-name--office-of-the-public-guardian-england-and-wales",
-       "web": "",
-       "gov": "",
-       "names": [],
-       "nations": [
-        "EN",
-        "WA"
-       ],
-       "pk": "govt",
-       "rk": "Several nations",
-       "fk": "central-body",
-       "ak": "services",
-       "tk": "central",
-       "also": []
+       "also": [
+        {
+         "id": "ons-name:office-of-the-public-guardian-england-and-wales",
+         "name": "Office of the Public Guardian (England and Wales)"
+        }
+       ]
       },
       {
        "id": "ons-name:parliamentary-boundary-commission-for-wales",
@@ -27865,7 +27779,7 @@
    },
    "counts": {
     "legislature": 2,
-    "executive": 197,
+    "executive": 195,
     "judiciary": 10
    },
    "iso": "GB-WLS"
@@ -27901,27 +27815,6 @@
     "executive": {
      "Arm's-length bodies and other central bodies": [
       {
-       "id": "ons-name:agri-food-biosciences-institute",
-       "name": "Agri-Food & Biosciences Institute",
-       "type": "Central Government",
-       "basis": "answers to that nation's legislature",
-       "why": "answers to the Northern Ireland Assembly",
-       "url": "",
-       "p": "government-organisation:OT1178",
-       "answers_to": "the Northern Ireland Assembly",
-       "h": "org-ons-name--agri-food-biosciences-institute",
-       "web": "",
-       "gov": "",
-       "names": [],
-       "nations": [],
-       "pk": "economy",
-       "rk": "One nation",
-       "fk": "central-body",
-       "ak": "research",
-       "tk": "central",
-       "also": []
-      },
-      {
        "id": "government-organisation:PB1072",
        "name": "Agri-Food and Biosciences Institute (Northern Ireland)",
        "type": "Executive non-departmental public body",
@@ -27940,7 +27833,12 @@
        "fk": "appointed",
        "ak": "research",
        "tk": "ndpb",
-       "also": []
+       "also": [
+        {
+         "id": "ons-name:agri-food-biosciences-institute",
+         "name": "Agri-Food & Biosciences Institute"
+        }
+       ]
       },
       {
        "id": "ons-name:agricultural-wages-board-for-northern-ireland",
@@ -28671,7 +28569,12 @@
        "fk": "appointed",
        "ak": "services",
        "tk": "ndpb",
-       "also": []
+       "also": [
+        {
+         "id": "ons-name:regional-business-services-organisation-northern-ireland",
+         "name": "Regional Business Services Organisation (Northern Ireland)"
+        }
+       ]
       },
       {
        "id": "ons-name:health-estates-northern-ireland",
@@ -28947,27 +28850,6 @@
        "also": []
       },
       {
-       "id": "ons-name:labour-relations-agency",
-       "name": "Labour Relations Agency",
-       "type": "Central Government",
-       "basis": "answers to that nation's legislature",
-       "why": "answers to the Northern Ireland Assembly",
-       "url": "",
-       "p": "",
-       "answers_to": "the Northern Ireland Assembly",
-       "h": "org-ons-name--labour-relations-agency",
-       "web": "",
-       "gov": "",
-       "names": [],
-       "nations": [],
-       "pk": "unknown",
-       "rk": "One nation",
-       "fk": "central-body",
-       "ak": "services",
-       "tk": "central",
-       "also": []
-      },
-      {
        "id": "government-organisation:EA752",
        "name": "Labour Relations Agency (Northern Ireland)",
        "type": "Other",
@@ -28986,7 +28868,12 @@
        "fk": "unknown",
        "ak": "fund",
        "tk": "central",
-       "also": []
+       "also": [
+        {
+         "id": "ons-name:labour-relations-agency",
+         "name": "Labour Relations Agency"
+        }
+       ]
       },
       {
        "id": "ons-name:land-reform-advisory-committee-for-northern-ireland",
@@ -30505,27 +30392,6 @@
        "names": [],
        "nations": [],
        "pk": "unknown",
-       "rk": "One nation",
-       "fk": "central-body",
-       "ak": "services",
-       "tk": "central",
-       "also": []
-      },
-      {
-       "id": "ons-name:regional-business-services-organisation-northern-ireland",
-       "name": "Regional Business Services Organisation (Northern Ireland)",
-       "type": "Central Government",
-       "basis": "answers to that nation's legislature",
-       "why": "answers to the Northern Ireland Assembly",
-       "url": "",
-       "p": "",
-       "answers_to": "the Northern Ireland Assembly",
-       "h": "org-ons-name--regional-business-services-organisation-northern-ireland",
-       "web": "",
-       "gov": "",
-       "names": [],
-       "nations": [],
-       "pk": "economy",
        "rk": "One nation",
        "fk": "central-body",
        "ak": "services",
@@ -32437,7 +32303,7 @@
    },
    "counts": {
     "legislature": 1,
-    "executive": 196,
+    "executive": 193,
     "judiciary": 11
    },
    "iso": "GB-NIR"
@@ -36000,7 +35866,12 @@
        "fk": "appointed",
        "ak": "advise",
        "tk": "ndpb",
-       "also": []
+       "also": [
+        {
+         "id": "ons-name:advisory-committees-on-justices-of-the-peace-in-england-and-wales",
+         "name": "Advisory Committees on Justices of the Peace in England and Wales"
+        }
+       ]
       },
       {
        "id": "government-organisation:PB271",

@@ -35,6 +35,8 @@ jobs:
         run: python tools/nation_evidence.py --verify && python tools/nation_evidence.py --negative
       - name: Plain-English classification (known answers, negative)
         run: python tools/classify.py && python tools/classify.py --negative
+      - name: Set-aside near-name pairs decided (nation rule, evidenced nations, Wikidata, quoted official pages; negatives)
+        run: python tools/setaside.py && python tools/setaside.py --negative
       - name: One record per body (same-as layer; known answers, never merged across identifiers, negatives)
         run: python tools/sameas.py && python tools/sameas.py --negative
       - name: Crown Dependencies and Overseas Territories (founding orders, confirmed websites, negatives)

@@ -1,11 +1,12 @@
 {
  "meta": {
-  "rule": "Strict rules (any one is enough; all are recorded with the reason):\n  S1  identical name once case, a leading \"The\", a legal form (Ltd, Limited, plc), punctuation and a trailing number suffix\n      on a register key are ignored. Brackets are NOT dropped: \"(NI)\" or \"(Tax)\" usually names a different body.\n  S2  one name is the other plus a bracket that only spells out its initials, e.g. \"Health Education and Improvement Wales (HEIW)\".\n  S3  both records carry the same strong identifier: LEI, Companies House number, Wikidata item, ONS GSS code, charity number.\n  S4  a person decided they are one body from its own page or founding instrument (sources/evidence/reconciliation-decisions.json).\nNever merged: two records with different values for the same strong identifier; two closed records; a closed with an open record.\nThe canonical record is the one from the most authoritative family (GOV.UK, council, NHS, then ONS-only, then others).\nWrites data/same-as.json. --negative proves the checks fail when they should.",
-  "groups": 21,
-  "records_folded": 21,
+  "rule": "Strict rules (any one is enough; all are recorded with the reason):\n  S1  identical name once case, a leading \"The\", a legal form (Ltd, Limited, plc), punctuation and a trailing number suffix\n      on a register key are ignored. Brackets are NOT dropped: \"(NI)\" or \"(Tax)\" usually names a different body.\n  S2  one name is the other plus a bracket that only spells out its initials, e.g. \"Health Education and Improvement Wales (HEIW)\".\n  S3  both records carry the same strong identifier: LEI, Companies House number, Wikidata item, ONS GSS code, charity number.\n  S4  a person decided they are one body from its own page or founding instrument (sources/evidence/reconciliation-decisions.json).\n  S5  a set-aside near-name pair decided 'same' by tools/setaside.py (rule and evidence in data/set-aside.json).\nGuard: no group may hold names that state different nations (tools/setaside.py same_as_guard).\nNever merged: two records with different values for the same strong identifier; two closed records; a closed with an open record.\nThe canonical record is the one from the most authoritative family (GOV.UK, council, NHS, then ONS-only, then others).\nWrites data/same-as.json. --negative proves the checks fail when they should.",
+  "groups": 26,
+  "records_folded": 26,
   "open_records": 2824,
-  "bodies": 2803,
+  "bodies": 2798,
   "by_rule": {
+   "S5": 5,
    "S4": 1,
    "S2": 2,
    "S1": 18,
@@ -13,6 +14,30 @@
   }
  },
  "groups": {
+  "government-organisation:PB437": {
+   "members": [
+    "ons-name:advisory-committees-on-justices-of-the-peace-in-england-and-wales"
+   ],
+   "names": {
+    "government-organisation:PB437": "Advisory Committees on Justices of the Peace",
+    "ons-name:advisory-committees-on-justices-of-the-peace-in-england-and-wales": "Advisory Committees on Justices of the Peace in England and Wales"
+   },
+   "rules": [
+    "S5 set-aside pair decided same (M)"
+   ]
+  },
+  "government-organisation:PB1072": {
+   "members": [
+    "ons-name:agri-food-biosciences-institute"
+   ],
+   "names": {
+    "government-organisation:PB1072": "Agri-Food and Biosciences Institute (Northern Ireland)",
+    "ons-name:agri-food-biosciences-institute": "Agri-Food & Biosciences Institute"
+   },
+   "rules": [
+    "S5 set-aside pair decided same (R2b)"
+   ]
+  },
   "government-organisation:PC389": {
    "members": [
     "ons-name:historic-royal-palaces-trust"
@@ -23,6 +48,42 @@
    },
    "rules": [
     "S4 decided from evidence"
+   ]
+  },
+  "government-organisation:PB1279": {
+   "members": [
+    "ons-name:regional-business-services-organisation-northern-ireland"
+   ],
+   "names": {
+    "government-organisation:PB1279": "HSC Business Services Organisation (Northern Ireland)",
+    "ons-name:regional-business-services-organisation-northern-ireland": "Regional Business Services Organisation (Northern Ireland)"
+   },
+   "rules": [
+    "S5 set-aside pair decided same (M)"
+   ]
+  },
+  "government-organisation:EA752": {
+   "members": [
+    "ons-name:labour-relations-agency"
+   ],
+   "names": {
+    "government-organisation:EA752": "Labour Relations Agency (Northern Ireland)",
+    "ons-name:labour-relations-agency": "Labour Relations Agency"
+   },
+   "rules": [
+    "S5 set-aside pair decided same (R2b)"
+   ]
+  },
+  "government-organisation:EA72": {
+   "members": [
+    "ons-name:office-of-the-public-guardian-england-and-wales"
+   ],
+   "names": {
+    "government-organisation:EA72": "Office of the Public Guardian",
+    "ons-name:office-of-the-public-guardian-england-and-wales": "Office of the Public Guardian (England and Wales)"
+   },
+   "rules": [
+    "S5 set-aside pair decided same (R2b)"
    ]
   },
   "government-organisation:PB295": {

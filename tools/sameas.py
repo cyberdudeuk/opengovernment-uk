@@ -6,6 +6,8 @@ Strict rules (any one is enough; all are recorded with the reason):
   S2  one name is the other plus a bracket that only spells out its initials, e.g. "Health Education and Improvement Wales (HEIW)".
   S3  both records carry the same strong identifier: LEI, Companies House number, Wikidata item, ONS GSS code, charity number.
   S4  a person decided they are one body from its own page or founding instrument (sources/evidence/reconciliation-decisions.json).
+  S5  a set-aside near-name pair decided 'same' by tools/setaside.py (rule and evidence in data/set-aside.json).
+Guard: no group may hold names that state different nations (tools/setaside.py same_as_guard).
 Never merged: two records with different values for the same strong identifier; two closed records; a closed with an open record.
 The canonical record is the one from the most authoritative family (GOV.UK, council, NHS, then ONS-only, then others).
 Writes data/same-as.json. --negative proves the checks fail when they should."""
@@ -76,6 +78,9 @@ def build():
             for a in ks[1:]: join(ks[0], a, f"S3 same {key}")
     for d in json.loads((ROOT / "sources/evidence/reconciliation-decisions.json").read_text())["names"]:
         if d["decision"] == "same" and d.get("match") in R and d["id"] in R: join(d["id"], d["match"], "S4 decided from evidence")
+    sa = ROOT / "data/set-aside.json"
+    for p in (json.loads(sa.read_text())["pairs"] if sa.exists() else []):
+        if p["decision"] == "same" and p.get("ons_id") in R and p["id"] in R: join(p["id"], p["ons_id"], f"S5 set-aside pair decided same ({p['rule']})")
     groups = collections.defaultdict(list)
     for k in R: groups[find(k)].append(k)
     out = {}
@@ -104,14 +109,18 @@ def check(out, R):
     must = [("Health Education and Improvement Wales (Heiw)", "Health Education and Improvement Wales"),
             ("Community Health Partnerships Ltd", "Community Health Partnerships Limited"),
             ("NHS Confederation", "The NHS Confederation"),
-            ("Sentencing Council for England and Wales", "The Sentencing Council for England and Wales (Sentencing Council)")]
+            ("Sentencing Council for England and Wales", "The Sentencing Council for England and Wales (Sentencing Council)"),
+            ("Labour Relations Agency (Northern Ireland)", "Labour Relations Agency")]  # OG-D55: both are the Northern Ireland agency (GOV.UK; ONS sponsor)
     never = [("Construction Industry Training Board", "Construction Industry Training Board (NI)"),
              ("First-tier Tribunal (Tax)", "First-tier Tribunal (Property Chamber)"),
-             ("Labour Relations Agency (Northern Ireland)", "Labour Relations Agency") ]
+             ("Health and Safety Executive", "Health and Safety Executive for Northern Ireland"),
+             ("The Charity Commission", "Charity Commission of Northern Ireland")]
     for a, b in must:
         if not same(a, b): e.append(f"known merge missing: {a} = {b}")
     for a, b in never:
         if same(a, b): e.append(f"wrong merge: {a} = {b}")
+    sys.path.insert(0, str(ROOT / "tools")); from setaside import same_as_guard  # noqa: E402
+    e += [f"group joins names that state different nations: {b}" for b in same_as_guard(out)]
     vel = [k for k, r in R.items() if r[1] == "Velindre NHS Trust"]
     if len(vel) == 2 and not any(set(vel) <= {c, *g["members"]} for c, g in out.items()): e.append("known merge missing: Velindre NHS Trust (NHS and ONS records)")
     return e
@@ -124,6 +133,7 @@ def main():
         o = copy.deepcopy(out); c = next(iter(o)); o[c]["members"].append(next(k for k in R if k not in o and all(k not in g["members"] for g in o.values()))); o[next(k for k in o if k != c)]["members"].append(o[c]["members"][-1]); caught.append(bool(check(o, R)))
         o = copy.deepcopy(out); cit = next(k for k, r in R.items() if r[1] == "Construction Industry Training Board"); ni = next(k for k, r in R.items() if r[1] == "Construction Industry Training Board (NI)"); o[cit] = {"members": [ni], "names": {}, "rules": []}; caught.append(bool(check(o, R)))
         o = copy.deepcopy(out); h = next(c for c, g in o.items() if any("Heiw" in n or "HEIW" in n for n in g["names"].values())); del o[h]; caught.append(bool(check(o, R)))
+        o = copy.deepcopy(out); ps = next(k for k, r in R.items() if r[1] == "Police Service of Northern Ireland"); sc = next(k for k, r in R.items() if r[1] == "Police Service of Scotland"); o[ps] = {"members": [sc], "names": {}, "rules": []}; caught.append(bool(check(o, R)))  # nation guard
         if not all(caught): sys.exit(f"same-as negative: {caught.count(False)} not caught")
         print(f"same-as negative: all {len(caught)} breakers caught"); return
     e = check(out, R)
