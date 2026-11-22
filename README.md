@@ -61,6 +61,9 @@ tools/world.py          the UK and the world section (docs/world.html)
 tools/standards.py      open standards for harvesting: DCAT catalogue, ORG/schema.org, SKOS, PROV-O, CSVW, Frictionless, sitemap (docs/data/)
 tools/ftm_export.py     the register in FollowTheMoney (docs/data/register.ftm.json), checked against FtM's own compiled model
 tools/bods_fixtures_ps.py  public-sector BODS test cases in the shared fixture-pack layout (tests/fixtures/bods/public-sector/), checked by lib-cove-bods
+tools/sources_check.py  every source against its expected counts (sources/expectations.json); publishes docs/data/source-status.json
+tools/agent_evals.py    the agent instructions (agent/SKILL.md) answer their known questions from the published files
+tools/licences.py       the one licence lookup over REUSE.toml, shared by every check
 tools/cooperation.py    cooperation by country: the Commonwealth (Secretariat's members; GOV.UK's wording), trade agreements in effect (DBT), tax treaties (HMRC), kind of every treaty (modelled); --refresh re-reads them
 tools/worldmap.py       world map of treaty partners (world-atlas 2.0.2, Equal Earth); every partner placed or recorded as an organisation or former state
 tools/websites.py       each body's own website, from one combined table (matched by code; councils in Scotland and Northern Ireland by exact name within that nation's councils, from the official lists, one-to-one or the build fails)

@@ -9,7 +9,10 @@ pack; offering them is the maintainer's decision.
   python tools/bods_fixtures_ps.py             build and check
   python tools/bods_fixtures_ps.py --negative  prove the check fails when it should
 """
-import fnmatch, json, pathlib, subprocess, sys, tempfile, tomllib
+import json, pathlib, subprocess, sys, tempfile
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from licences import licence_of  # noqa: E402  shared with tools/standards.py
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "tests/fixtures/bods/public-sector"
@@ -99,15 +102,6 @@ def cove(statements):
     jsv = json.loads(subprocess.run(["libcovebods", "jsv", p], capture_output=True, text=True).stdout or "[]")  # noqa: S603,S607 fixed program, our own temp file
     pv = json.loads(subprocess.run(["libcovebods", "pv", p], capture_output=True, text=True).stdout or "{}").get("additional_checks", [])  # noqa: S603,S607
     return len(jsv) + len(pv)
-
-
-def licence_of(rel):
-    """The licence REUSE.toml gives a path: the last matching override wins (OG-D65)."""
-    lic = None
-    for a in tomllib.loads((ROOT / "REUSE.toml").read_text())["annotations"]:
-        pats = a["path"] if isinstance(a["path"], list) else [a["path"]]
-        if any(fnmatch.fnmatch(rel, p.replace("**", "*")) for p in pats): lic = a["SPDX-License-Identifier"]
-    return lic
 
 
 def main():

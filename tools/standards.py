@@ -17,6 +17,7 @@
 Every graph is parsed back with rdflib and every CSV checked against its schema before anything is written.
 """
 import csv, hashlib, io, json, pathlib, re, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))  # tools/licences.py
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"; OUT = DOCS / "data"
@@ -142,6 +143,7 @@ DATASETS = [  # file, title, description, media type, standard it conforms to
     ("data/taxonomies.skos.jsonld", "Taxonomies", "Types, purposes (UN COFOG), activities, reach, nations (ISO 3166-2:GB), kinds of treaty.", "application/ld+json", "http://www.w3.org/2004/02/skos/core#"),
     ("bods-0.4.json", "Ownership and control (BODS 0.4)", "Who owns or controls each public body, and the UK's shareholdings in international financial institutions.", "application/json", "https://standard.openownership.org/en/0.4.0/"),
     ("data/register.ftm.json", "The register in FollowTheMoney", "Public bodies, companies they control, international bodies, links, renames and memberships, for OpenSanctions, OpenAleph and yente.", "application/json", "https://followthemoney.tech/"),
+    ("data/source-status.json", "How each source stands", "When each source was read, how often it changes, whether it is current, the parts that could not be read and why, and the expected counts checked on every build.", "application/json", ""),
     ("llms.txt", "Guide for AI agents", "Where everything is, in plain text, for language models and agents (the llms.txt convention).", "text/plain", "https://llmstxt.org/"),
     ("data/provenance.jsonld", "Provenance of this build", "Sources used, with fingerprints, and the files made.", "application/ld+json", "http://www.w3.org/ns/prov#"),
     ("datapackage.json", "Data package", "Every CSV with its fields and licence.", "application/json", "https://specs.frictionlessdata.io/data-package/"),
@@ -251,6 +253,17 @@ def main():
             ("orgchart.html", "Org charts", "every body in context"), ("funding.html", "Funding", "grants, schemes and innovation services"), ("navigator.html", "Documentation", "requirements, design and traceability")]) +
         "\n## Data\n\n" + "".join(f"- [{t}]({SITE}{f}): {d}\n" for f, t, d, _, _ in DATASETS) +
         "\n## Optional\n\n- [Source code and issues](https://github.com/cyberdudeuk/opengovernment-uk)\n")
+    # licences beside the data, from the same REUSE.toml the linter checks; the catalogue's claim must agree (OG-D65 class)
+    from licences import licence_of
+    rows = [(f, licence_of("docs/" + f)) for f, *_ in DATASETS]
+    (DOCS / "data/LICENCES.md").write_text("# Licences for these files\n\nEvery file here is listed with its licence, read from the repository's REUSE.toml (checked by `reuse lint`).\n\n"
+        "| File | Licence |\n|---|---|\n" + "".join(f"| {f} | {lic} |\n" for f, lic in rows) +
+        "\nOGL-UK-3.0: Open Government Licence v3.0, https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\n\n"
+        "Attribution: Contains public sector information licensed under the Open Government Licence v3.0, via OpenGovernment UK.\n\n"
+        "Some facts come from sources with their own terms (for example Wikidata, CC0; GLEIF, CC0); each is named in data/provenance.jsonld. Nothing here is endorsed by any public body.\n")
+    mism = [f for f, lic in rows if "OGL-UK-3.0" not in (lic or "")]
+    if "--negative" in sys.argv and "OGL-UK-3.0" in (licence_of("docs/data/LICENCES.md") or ""): sys.exit("standards negative: a documentation file resolves to OGL, so the cross-check cannot tell")
+    if mism: sys.exit("standards: the catalogue says OGL but REUSE.toml says otherwise for " + ", ".join(mism))
     (DOCS / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
     ld = {"@context": "https://schema.org/", "@type": "Dataset", "name": "OpenGovernment UK: register of the UK state",
           "description": "Every UK public body the official registers know, with who each answers to, its codes in other registers, its ownership (BODS 0.4) and the UK's international relationships.",

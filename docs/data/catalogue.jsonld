@@ -332,6 +332,53 @@
    }
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/data-source-status-json",
+   "@type": "dcat:Dataset",
+   "dct:title": "How each source stands",
+   "dct:description": "When each source was read, how often it changes, whether it is current, the parts that could not be read and why, and the expected counts checked on every build.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/source-status.json"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/source-status.json"
+    },
+    "dcat:mediaType": "application/json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "How each source stands"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/llms-txt",
    "@type": "dcat:Dataset",
    "dct:title": "Guide for AI agents",

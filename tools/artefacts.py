@@ -3,7 +3,7 @@ needs -> requirements -> components -> checks -> outputs, with the documents tha
 Writes: documentation/solution/05-requirements-specification.md, 10-data-dictionary.md, ontology.ttl,
 knowledge-graph.jsonld, traceability.json, and docs/navigator.html (interactive lineage).
 The data dictionary is read from the real files, so it cannot drift from them."""
-import collections, csv, json, pathlib, sys
+import collections, csv, json, pathlib, re, sys
 import rdflib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]; SOL = ROOT / "documentation" / "solution"; SOL.mkdir(parents=True, exist_ok=True)
@@ -130,18 +130,58 @@ def describe_csv(p):
 def describe_json(p):
     d = json.loads(p.read_text()); return list(d)[:40] if isinstance(d, dict) else (list(d[0])[:40] if d and isinstance(d[0], dict) else [])
 DESC = {"id": "Register key: the owning register's code as a CURIE", "name": "Current name", "family": "Kind of register record", "status": "open or closed",
-        "child_id": "Body the link starts from", "parent_id": "Body it links to", "parent_as_written": "Parent's name exactly as the source wrote it", "relation": "accounts, sponsors, controls, parent or owns",
+        "child_id": "Body the link starts from", "child_name": "Name of the body the link starts from", "parent_id": "Body it links to", "parent_name": "Name of the body it links to, as the register names it",
+        "parent_as_written": "Parent's name exactly as the source wrote it", "relation": "accounts, sponsors, controls, parent or owns",
         "source": "Source key (see sources/manifest.json)", "source_ref": "Where in the source", "match_method": "How the two names were matched", "accountable_owner_id": "Key of the body at the top of the chain",
-        "answers_to": "Elected body it answers to in the end", "chain": "The chain, each step with relation and source", "sources_agreeing": "Sources naming the same first link",
-        "verdict": "current, replaced (with successor), closed, or for a person", "in_directory_2023_24": "Also listed in the 2023/24 directory"}
+        "accountable_owner": "Name of the body at the top of the chain", "answerable_to": "Elected body it answers to in the end", "chain": "The chain, each step with relation and source", "sources_agreeing": "Sources naming the same first link",
+        "parents_asserted": "Number of first links the sources assert (more than 1 means sources disagree)", "type": "Kind of body as its register states it (for example Executive agency)",
+        "wga_2024_25": "Status in the Whole of Government Accounts 2024-25 (for example consolidated), blank if not listed", "government_funded_income_gbp": "Income from government in pounds, from the Public Bodies Directory 2023/24, blank if not stated",
+        "total_managed_expenditure_gbp": "Total managed expenditure in pounds, from the Public Bodies Directory 2023/24, blank if not stated", "trading_fund": "True if a trading fund order names it",
+        "ukgi_shareholding": "True if UK Government Investments manages the government's shareholding in it",
+        "govuk": "GOV.UK organisation code", "govuk_slug": "GOV.UK organisation slug (the end of its www.gov.uk/government/organisations/ address)", "ons_name": "Name as the ONS Public Sector Classification Guide writes it",
+        "gss": "ONS Government Statistical Service code (councils and other areas)", "local_authority": "Local authority code (GB-LAE register)", "nhs_ods": "NHS Organisation Data Service code",
+        "companies_house": "Companies House company number", "lei": "Legal Entity Identifier (ISO 17442)", "charity_ew": "Charity Commission for England and Wales number", "charity_sc": "Scottish Charity Regulator number (none matched yet)",
+        "charity_ni": "Charity Commission for Northern Ireland number (none matched yet)", "wikidata": "Wikidata item (corroborating only)", "dgu": "data.gov.uk publisher slug", "github": "GitHub organisation the body publishes code under",
+        "iati_gb_gov": "IATI organisation identifier (international aid reporting)",
+        "hmt_project_id": "HM Treasury's project number", "project": "Project name as HM Treasury writes it", "sector": "Sector as HM Treasury writes it", "procuring_authority_id": "Register key of the public body that procured the project",
+        "procuring_authority": "Public body that procured the project, as HM Treasury writes it", "department_id": "Register key of the sponsoring department", "department": "Sponsoring department, as HM Treasury writes it",
+        "project_company": "The private project company (special purpose vehicle)", "company_number": "Companies House number of the project company", "equity_holders": "Companies holding equity in the project company, each with its share (1.0 = 100%)",
+        "individuals_not_named": "Number of individual shareholders left out because they are people", "capital_gbp_m": "Capital value in millions of pounds, as HM Treasury states it",
+        "unitary_charge_2025_26_gbp_m": "Unitary charge (the annual payment) for 2025-26 in millions of pounds", "contract_end": "Date the contract ends", "esa_balance_sheet": "Whether the project is on the public balance sheet under ESA 2010, as HM Treasury states it",
+        "name_2020": "Name in the 2020 public bodies list", "department_2020": "Department in the 2020 list", "class_2020": "Classification in the 2020 list (for example NDPB)", "register_id": "Register key it was matched to, blank if none",
+        "register_status": "open or closed in the register now", "closed": "Date it closed, from GOV.UK", "close_reason": "Why it closed, from GOV.UK (replaced, merged, no_longer_exists and so on)",
+        "verdict": "current, replaced (with successor), closed, or for a person", "in_directory_2023_24": "Also listed in the 2023/24 directory",
+        "kind": "Kind of body (department, agency, council and so on)", "nations": "Nations it serves: EN, SC, WA, NI, or UK", "parents": "Register keys of the bodies it answers to", "start": "Date it was set up, where a source states it",
+        "end": "Date it closed, where it has", "website": "Official website", "btype": "Body type key (see taxonomies.skos.jsonld)", "purpose": "What it is for, grouped by UN COFOG (worked out, not official)",
+        "activity": "What it does (worked out from kind, name and description, so a few may be wrong)", "reach": "Whom it serves (worked out)", "org_id": "org-id.guide identifier"}
+FILE_DESC = {"docs/ppp.csv": {"status": "Project status as HM Treasury states it (for example In Operation)"}}  # where a column name means something else in one file
+CSVS = ["docs/data/register.csv", "docs/concordance.csv", "data/edges.csv", "data/accountable-owner.csv", "docs/ppp.csv", "data/reconciliation-2020.csv"]
+def undescribed():  # every column of every CSV must carry a meaning (the dictionary had 51 blanks before this guard)
+    return [f"{f}:{h}" for f in CSVS for h in describe_csv(ROOT / f)[0] if not (FILE_DESC.get(f, {}).get(h) or DESC.get(h))]
 def dictionary():
-    out = ["# Data dictionary", "", "Generated from the files themselves by `tools/artefacts.py`, so it always matches them.", ""]
-    for f in ["docs/concordance.csv", "data/edges.csv", "data/accountable-owner.csv", "docs/ppp.csv", "data/reconciliation-2020.csv"]:
+    out = ["# Data dictionary", "", "Generated from the files themselves by `tools/artefacts.py`, so it always matches them. The build fails if any column has no meaning written.", ""]
+    for f in CSVS:
         head, sample = describe_csv(ROOT / f)
-        out += [f"## `{f}`", "", "| Field | Meaning | Example |", "|---|---|---|"] + [f"| `{h}` | {DESC.get(h, '')} | {str(sample[i])[:40].replace('|', '/') if i < len(sample) else ''} |" for i, h in enumerate(head)] + [""]
+        out += [f"## `{f}`", "", "| Field | Meaning | Example |", "|---|---|---|"] + [f"| `{h}` | {FILE_DESC.get(f, {}).get(h) or DESC.get(h, '')} | {str(sample[i])[:40].replace('|', '/') if i < len(sample) else ''} |" for i, h in enumerate(head)] + [""]
     for f in ["data/tree.json", "data/public-bodies-trends.json", "data/scenarios-2030.json", "data/back-office.json", "docs/accountability.json"]:
         out += [f"## `{f}`", "", "Top-level keys: " + ", ".join(f"`{k}`" for k in describe_json(ROOT / f)), ""]
     out += ["## `docs/bods-0.4.json`", "", "An array of BODS 0.4 statements (entity and relationship). Public-sector detail is in the `publicAccountability` extension; see documentation/bods-public-sector-profile.md.", ""]
+    ftm = [json.loads(ln) for ln in (ROOT / "docs/data/register.ftm.json").read_text().splitlines() if ln.strip()]
+    model = json.loads((ROOT / "vendor/followthemoney/defaultModel.json").read_text())["schemata"]
+    used = collections.defaultdict(lambda: collections.Counter())
+    for e in ftm:
+        for k in e["properties"]: used[e["schema"]][k] += 1
+    out += ["## `docs/data/register.ftm.json`", "", "One FollowTheMoney entity per line. Meanings are FollowTheMoney's own labels, read from its compiled model.", "", "| Schema | Property | Meaning | Entities with it |", "|---|---|---|---|"]
+    for sc in sorted(used):
+        props = {}
+        for anc in model[sc]["schemata"]: props.update(model[anc].get("properties", {}))
+        out += [f"| {sc} | `{k}` | {(props[k].get('description') or props[k].get('label', '')).replace('|', '/')} | {n} |" for k, n in sorted(used[sc].items())]
+    st = json.loads((ROOT / "docs/data/source-status.json").read_text())
+    out += ["", "## `docs/data/source-status.json`", "", "How each source stands at this build (written by `tools/sources_check.py`).", "", "| Field | Meaning |", "|---|---|",
+            "| `as_of` | The build's latest read; ages count from it |", "| `sources[].status` | current, stale (read more than twice its change interval before `as_of`) or not read |",
+            "| `sources[].frequency_days` | How often the publisher changes the source, in days |", "| `sources[].next_due` | When the source is next expected to change |", "| `sources[].official` | True if published by the body responsible for it |",
+            "| `not_read[]` | Parts of sources that could not be read, each with the reason |", "| `counts[]` | Each expected count, its range, and whether it is in range |", "",
+            f"Top-level keys: {', '.join(f'`{k}`' for k in st)}", ""]
     (SOL / "10-data-dictionary.md").write_text("\n".join(out))
 
 TTL = """@prefix og: <https://cyberdudeuk.github.io/opengovernment-uk/ontology#> .
@@ -213,9 +253,11 @@ main{padding:16px 24px}.cols{display:grid;grid-template-columns:repeat(5,minmax(
 .col h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 8px}.node{display:block;width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:0 0 6px;color:var(--ink);font:inherit;font-size:.86rem;cursor:pointer}
 .node b{font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--muted);display:block}.node.on{border-color:var(--hi);background:var(--hi2)}.node.dim{opacity:.35}.node:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .status{font-size:.72rem;color:var(--muted)}#detail{margin:14px 0;padding:12px 14px;background:var(--paper);border:1px solid var(--line);border-radius:10px;min-height:3em}a{color:var(--hi)}
-footer{padding:16px 24px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}</style></head><body>
+footer{padding:16px 24px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+.start{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:0 0 18px;padding:0;list-style:none}.start li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px}.start h3{font-size:1.05rem!important;line-height:1.3!important;margin:0 0 4px!important}.sec-h{font-size:1.3rem!important;margin:0 0 10px!important}.col h2{font-size:.8rem!important;line-height:1.4!important;letter-spacing:.05em!important;margin:0 0 8px!important}.start p{margin:0;font-size:.9rem;color:var(--muted)}.start a{font-weight:600}
+</style></head><body>
 <header><h1>Documentation and traceability</h1><p>Choose any item to see its lineage: the needs it serves, what meets it, what proves it, and the documents that describe it. Generated from the same spine as the documentation.</p></header>
-<main><div id="detail" aria-live="polite">Nothing selected.</div><div class="cols" id="cols"></div></main>
+<main><section aria-labelledby="start-h"><h2 id="start-h" class="sec-h">Start here: what do you want to do?</h2><ul class="start"><li><h3>Find every file</h3><p>Start from the DCAT catalogue; agents can start from llms.txt.</p><p><a href="data/catalogue.jsonld">Catalogue</a> · <a href="llms.txt">llms.txt</a></p></li><li><h3>Validate</h3><p>BODS 0.4 checked by Open Ownership's lib-cove-bods; FollowTheMoney checked against its own model, on every build.</p><p><a href="bods-0.4.json">BODS 0.4</a> · <a href="data/register.ftm.json">FollowTheMoney</a></p></li><li><h3>Analyse</h3><p>One SQLite file with every table, or the CSVs with CSVW metadata.</p><p><a href="opengovernment-uk.db">SQLite</a> · <a href="data/register.csv">Register CSV</a> · <a href="accountable-owner.csv">Who answers</a></p></li><li><h3>Integrate or harvest</h3><p>Linked data with one web address per body under id/, a Frictionless package and a sitemap.</p><p><a href="data/register.jsonld">JSON-LD</a> · <a href="datapackage.json">Data package</a> · <a href="sitemap.xml">Sitemap</a></p></li><li><h3>Test a converter</h3><p>Public-sector BODS test cases, each with a statement of correct handling.</p><p><a href="https://github.com/cyberdudeuk/opengovernment-uk/blob/main/tests/fixtures/bods/public-sector">Test cases</a></p></li><li><h3>Build an agent</h3><p>Instructions and questions with known answers, checked on every build.</p><p><a href="https://github.com/cyberdudeuk/opengovernment-uk/blob/main/agent/SKILL.md">Agent instructions</a> · <a href="https://github.com/cyberdudeuk/opengovernment-uk/blob/main/agent/evals.json">Questions</a></p></li><li><h3>Check freshness</h3><p>When each source was read, whether it is current, and what could not be read.</p><p><a href="data/source-status.json">Source status</a></p></li><li><h3>Reuse and licences</h3><p>Data OGL v3.0, code MIT, documentation CC BY 4.0.</p><p><a href="data/LICENCES.md">Licences</a> · <a href="https://github.com/cyberdudeuk/opengovernment-uk/blob/main/documentation/solution/10-data-dictionary.md">Data dictionary</a></p></li></ul></section><h2 class="sec-h">Requirements and traceability</h2><div id="detail" aria-live="polite">Nothing selected.</div><div class="cols" id="cols"></div></main>
 <footer>OpenGovernment UK, an open-source public good. <a href="./">Back to the register</a> · <a href="https://github.com/cyberdudeuk/opengovernment-uk/tree/main/documentation/solution">The documents on GitHub</a></footer>
 <script id="kg" type="application/json">__DATA__</script>
 <script>"use strict";
@@ -271,8 +313,13 @@ def check(items):
 if __name__ == "__main__":
     ftir(); dictionary(); n_onto = ontology(); n_kg, items = graph(); navigator(items)
     (SOL / "traceability.json").write_text(json.dumps({"needs": NEEDS, "requirements": REQS, "components": COMPONENTS, "checks": CHECKS, "documents": DOCS}, indent=1))
-    bad = check(items)
+    nav = (ROOT / "docs/navigator.html").read_text()
+    dead = [u for u in re.findall(r'<li><h3>.*?</li>', nav) for u in re.findall(r'href="([^"]+)"', u) if not u.startswith("http") and not (ROOT / "docs" / u).exists()]
+    bad = check(items) + [f"no meaning for {x}" for x in undescribed()] + [f"start-here links to a file that is not published: {u}" for u in dead] + ([] if "Start here: what do you want to do?" in nav else ["navigator has lost its start-here block"]) + ([] if re.search(r"\.col h2\{font-size:[^;}]+!important", nav) and re.search(r"\.start h3\{font-size:[^;}]+!important", nav) else ["navigator headings lost the override that beats the shared heading sizes (OG-D68)"])
     if "--negative" in sys.argv:
+        DESC["_saved"] = DESC.pop("gss"); caught0 = "docs/concordance.csv:gss" in undescribed(); DESC["gss"] = DESC.pop("_saved")
+        print("caught undescribed column" if caught0 else "MISSED undescribed column")
+        if not caught0: sys.exit(1)
         REQS["OG-RX"] = ("A requirement serving nothing", "Must", "Done", [], []); caught = bool(check(items)); del REQS["OG-RX"]
         print("caught traceability break" if caught else "MISSED traceability break")
         def undirected(items, start):  # the defective rule: any edge, any direction, documents included

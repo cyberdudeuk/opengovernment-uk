@@ -73,6 +73,12 @@ jobs:
         run: |
           for t in funding cooperation setaside worldmap intl_ownership ftm_export; do PYTHONHASHSEED=1 python tools/$t.py >/dev/null; done; cp docs/funding.html /tmp/a.html; cp data/cooperation.json /tmp/a.json; cp data/set-aside.json /tmp/b.json; cp data/worldmap.json /tmp/c.json; cp docs/data/register.ftm.json /tmp/d.json
           for t in funding cooperation setaside worldmap intl_ownership ftm_export; do PYTHONHASHSEED=2 python tools/$t.py >/dev/null; done; cmp /tmp/a.html docs/funding.html && cmp /tmp/a.json data/cooperation.json && cmp /tmp/b.json data/set-aside.json && cmp /tmp/c.json data/worldmap.json && cmp /tmp/d.json docs/data/register.ftm.json
+      - name: FollowTheMoney export (checked against FtM's own model; negatives)
+        run: python tools/ftm_export.py && python tools/ftm_export.py --negative
+      - name: Public-sector BODS test cases (shared fixture-pack layout; lib-cove-bods; negative)
+        run: python tools/bods_fixtures_ps.py && python tools/bods_fixtures_ps.py --negative
+      - name: Sources meet their expected counts; source status published (fail closed; negatives)
+        run: python tools/sources_check.py && python tools/sources_check.py --negative
       - name: Nations and documentation (known answers, traceability, negatives)
         run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: Design system (contrast in light and dark, every page on the shared tokens, no third-party fonts, negatives)
@@ -81,12 +87,10 @@ jobs:
         run: python tools/sqlite_export.py && python tools/sqlite_export.py --negative
       - name: BODS output validates against the official schema
         run: python tools/export_bods.py
-      - name: FollowTheMoney export (checked against FtM's own model; negatives)
-        run: python tools/ftm_export.py && python tools/ftm_export.py --negative
-      - name: Public-sector BODS test cases (shared fixture-pack layout; lib-cove-bods; negative)
-        run: python tools/bods_fixtures_ps.py && python tools/bods_fixtures_ps.py --negative
       - name: Open standards for harvesting (DCAT, ORG, schema.org, SKOS, PROV, CSVW, Frictionless; every graph parsed back; negatives)
         run: python tools/standards.py && python tools/standards.py --negative
+      - name: Agent instructions answer their known questions from the published files (negative)
+        run: python tools/agent_evals.py && python tools/agent_evals.py --negative
       - name: Published page carries no email address or former office name
         run: |
           ! grep -Eq '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(gov|org|com|uk|net)\b' docs/index.html

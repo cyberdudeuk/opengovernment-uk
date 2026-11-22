@@ -21,6 +21,7 @@ Identifiers: each body is https://cyberdudeuk.github.io/opengovernment-uk/id/<re
 - [Taxonomies](https://cyberdudeuk.github.io/opengovernment-uk/data/taxonomies.skos.jsonld): Types, purposes (UN COFOG), activities, reach, nations (ISO 3166-2:GB), kinds of treaty.
 - [Ownership and control (BODS 0.4)](https://cyberdudeuk.github.io/opengovernment-uk/bods-0.4.json): Who owns or controls each public body, and the UK's shareholdings in international financial institutions.
 - [The register in FollowTheMoney](https://cyberdudeuk.github.io/opengovernment-uk/data/register.ftm.json): Public bodies, companies they control, international bodies, links, renames and memberships, for OpenSanctions, OpenAleph and yente.
+- [How each source stands](https://cyberdudeuk.github.io/opengovernment-uk/data/source-status.json): When each source was read, how often it changes, whether it is current, the parts that could not be read and why, and the expected counts checked on every build.
 - [Guide for AI agents](https://cyberdudeuk.github.io/opengovernment-uk/llms.txt): Where everything is, in plain text, for language models and agents (the llms.txt convention).
 - [Provenance of this build](https://cyberdudeuk.github.io/opengovernment-uk/data/provenance.jsonld): Sources used, with fingerprints, and the files made.
 - [Data package](https://cyberdudeuk.github.io/opengovernment-uk/datapackage.json): Every CSV with its fields and licence.

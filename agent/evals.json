@@ -1,0 +1,13 @@
+{
+ "about": "Questions with known answers. tools/agent_evals.py answers each from the published files by the recipe in agent/SKILL.md and fails the build if an answer changes. A changed answer may be a real change in the world: then update expected here, deliberately, in the same commit.",
+ "evals": [
+  {"id": "met-office-owner", "question": "Which department is the Met Office accountable to?", "recipe": "accountable_owner", "args": {"name": "Met Office"}, "expected": "Department for Science, Innovation and Technology"},
+  {"id": "ate-owner", "question": "Who does Active Travel England answer to?", "recipe": "accountable_owner", "args": {"name": "Active Travel England"}, "expected": "Department for Transport"},
+  {"id": "arsac-control", "question": "Which department controls the Administration of Radioactive Substances Advisory Committee, and by what?", "recipe": "controller", "args": {"subject": "Administration of Radioactive Substances Advisory Committee"}, "expected": "Department of Health and Social Care by controlByLegalFramework"},
+  {"id": "ibrd-votes", "question": "What share of the votes in the International Bank for Reconstruction and Development does the UK hold?", "recipe": "uk_votes", "args": {"institution": "International Bank for Reconstruction and Development"}, "expected": "3.75"},
+  {"id": "ifc-lei", "question": "What is the LEI of the International Finance Corporation?", "recipe": "lei", "args": {"name": "International Finance Corporation"}, "expected": "QKL54NQY28TCDAI75F60"},
+  {"id": "albania-trade", "question": "Does the UK have a trade agreement in effect with Albania?", "recipe": "trade", "args": {"country": "Albania"}, "expected": "UK-Albania Partnership, Trade and Cooperation Agreement"},
+  {"id": "commonwealth-count", "question": "How many countries does the register record as Commonwealth members?", "recipe": "commonwealth_count", "args": {}, "expected": "56"},
+  {"id": "imf-not-read", "question": "Was the UK's IMF quota read, and if not, why?", "recipe": "not_read", "args": {"source": "International Monetary Fund"}, "expected": "not read"}
+ ]
+}

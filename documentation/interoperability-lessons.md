@@ -21,7 +21,11 @@ Each finding says what was adopted in this portal now, what is next, and what wa
 
 One place where this portal departs from the published mapping, on purpose: FollowTheMoney only lets an `Ownership` point at an `Asset`, and an intergovernmental bank is not one. So the UK's shares in the five institutions are a `Membership`, and its description gives the share of votes. Fixture 20 says this, so a converter author meets the question before their code does.
 
-## 2. Next, in order of value for effort
+## 2. Next steps, built on 22 November 2026
+
+All six were built the same day: expected counts and source status (`sources/expectations.json`, `tools/sources_check.py`, `docs/data/source-status.json`); a dictionary generated from the code that fails on any blank meaning; licences beside the data (`docs/data/LICENCES.md`, cross-checked against the catalogue); agent instructions with known-answer questions (`agent/`, `tools/agent_evals.py`); and a developer start-here on the documentation page. The original list follows for the record.
+
+### As first proposed
 
 1. **Declarative source manifests with assertions** (OpenSanctions dataset YAML). Each source this portal reads would get one small file: who publishes it, whether it is official, how often it changes, its address, its licence, and minimum and maximum counts (for example, "Commonwealth members: 50 to 60"). A failed assertion stops the build. Today these checks exist, but they are spread across each tool. Effort: about one day to move them; it then saves time on every new source.
 2. **Source-degradation reporting** (OpenCheck). When a source can't be read, publish a small machine-readable note (source, when, why, what is now stale) rather than only failing CI. The five institutions this portal could not read are the first case. Effort: half a day.
@@ -41,7 +45,7 @@ One place where this portal departs from the published mapping, on purpose: Foll
 
 ## 4. Arrangements that would help both sides
 
-These are offers, not actions. Opening issues or pull requests on others' repositories is the maintainer's decision.
+Written up as a non-binding memorandum of understanding, one schedule per project, with issue drafts in `documentation/upstream-offers.md`. These are offers, not actions. Opening issues or pull requests on others' repositories is the maintainer's decision.
 
 - **The shared fixture pack** gains three public-sector cases it doesn't have. This portal gains a shared definition of "correct" for its own BODS.
 - **OpenCheck's state-controlled signal** builds its state nodes from Wikidata, GEM, EITI, OpenSanctions and GLEIF. This register could become an official-sourced UK input: every body, its accountable department and the source of each link. OpenCheck gets UK coverage; this portal gets its data used and checked by another tool.
