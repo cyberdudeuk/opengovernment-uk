@@ -1,0 +1,34 @@
+name: Data correction
+description: Something in the register is wrong, missing or out of date, and a source says so
+title: "Correction: "
+labels: [data-correction]
+body:
+  - type: markdown
+    attributes:
+      value: "This is public. Please don't include names of office holders, email addresses or phone numbers."
+  - type: input
+    id: body
+    attributes:
+      label: Body
+      description: Its name or register key, for example government-organisation:D303
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What is wrong
+      options: [Name or status, Parent or accountability link, Money figure, Identifier or match between registers, Missing body, Name that couldn't be matched, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should be
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source (a link to the authoritative record)
+    validations:
+      required: true

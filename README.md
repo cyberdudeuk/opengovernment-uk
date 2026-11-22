@@ -4,7 +4,7 @@ One register of the UK state: every public body the official registers know abou
 
 **Site:** https://cyberdudeuk.github.io/opengovernment-uk/ · **Status:** pilot, version 0.3.0 · **Licence:** code MIT, data OGL v3.0 (see [LICENCE-DATA.md](LICENCE-DATA.md))
 
-It isn't an official government list and it isn't affiliated with any public body.
+It isn't an official government list and it isn't affiliated with any public body. It is an open-source public good: corrections, sources and code are welcome from everyone (see [Contributing](CONTRIBUTING.md)).
 
 ## What it holds
 
@@ -41,6 +41,7 @@ tools/export_bods.py    emit and validate BODS 0.4 (schema vendored in vendor/bo
 tools/reconcile_peers.py  reconcile peer reference lists from the National Data Library catalogue
 tools/refdata.py        reference data lineage, matched against data.gov.uk
 tools/trends.py         public bodies 2012-2024 from the official editions; 2020 baseline reconciled with today
+tools/functions.py      back-office classes: A (exists for government) and B (back office as one line of business)
 tools/scenarios.py      evolution, reform and revolution to 2030 (modelled, assumptions editable)
 ```
 
@@ -66,6 +67,9 @@ Nothing runs on a schedule: there are no paid services, no secrets and no tokens
 ## Documentation
 
 - [Trends since 2012 and three lenses to 2030](documentation/trends-and-futures-2030.md): what the Cabinet Office's own editions show, the November 2020 baseline checked against today, and modelled scenarios
+- [The open-government ecosystem](documentation/ecosystem.md): BODS tools, OCDS contracts, FollowTheMoney, OpenCorporates, OpenSanctions, WhatDoTheyKnow, and what to reuse
+- [Information architecture and design review](documentation/ia-and-design-review.md): the brief for 0.4
+- [Contributing](CONTRIBUTING.md): how to correct, add sources or improve the code
 - [Reference data lineage](documentation/reference-data.md): everything this relies on, everything that relies on it, matched against data.gov.uk
 - [BODS public-sector profile](documentation/bods-public-sector-profile.md)
 - [Defect register](documentation/defect-register.md) and [the case against](documentation/case-against.md)

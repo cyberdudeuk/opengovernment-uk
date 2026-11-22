@@ -1,6 +1,10 @@
-# Data licence and attribution
+# Licences and attribution
 
-The code is MIT licensed (see LICENSE). The data in `data/`, `docs/` and `sources/` is published under the
+- **Code:** MIT (see LICENSE).
+- **Documentation and other original content** (`documentation/`, README): [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/), attributed to "OpenGovernment UK contributors".
+- **Data:** see below.
+
+The data in `data/`, `docs/` and `sources/` is published under the
 [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), because it is derived from sources released under it.
 
 Contains public sector information licensed under the Open Government Licence v3.0, from: GOV.UK (Government Digital Service),

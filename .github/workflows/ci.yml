@@ -23,6 +23,8 @@ jobs:
         run: python tools/check.py
       - name: Every check fails when it should
         run: python tools/check.py --negative
+      - name: Back-office classes A and B (known answers, proven to fail when broken)
+        run: python tools/check_functions.py && python tools/check_functions.py --negative
       - name: Trends, 2020 reconciliation and 2030 scenarios
         run: python tools/check_trends.py && python tools/check_trends.py --negative
       - name: BODS output validates against the official schema
