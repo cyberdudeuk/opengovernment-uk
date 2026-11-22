@@ -198,3 +198,4 @@ footer h3{font-size:var(--og-size-sm);text-transform:uppercase;letter-spacing:.0
 @media (max-width:640px){.og-shell-mast .in,.mast .in{flex-wrap:wrap}.og-tools{order:20;flex:1 1 100%;margin-left:0}.og-search{flex:1 1 auto;max-width:none;min-width:0}.og-pop{right:0;left:auto}}
 #ogTheme .og-theme-i{display:none;width:20px;height:20px}
 @media (max-width:640px){#ogTheme{width:var(--og-target-min);padding:0;display:inline-grid;place-items:center}#ogTheme .og-theme-i{display:block}#ogTheme .v{display:none}}
+p code,li code,dd code,td code{overflow-wrap:anywhere}  /* OG-D74: a long address in inline code must not widen the page */

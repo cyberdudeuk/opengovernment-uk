@@ -208,7 +208,7 @@ WRAP_GUARDS = [("nmulti", "@media (max-width:640px){.nmulti{white-space:normal}}
 
 def css_guards(css):
     """Rules the shared stylesheet must keep (each from a defect)."""
-    return [f"og.css lacks {r} ({d})" for r, d in [(".og-shell-nav a[hidden]{display:none}", "OG-D53"), (".sr-only{", "OG-D53"), (".sr-only{position:absolute!important;left:0", "OG-D73")] if r not in css]
+    return [f"og.css lacks {r} ({d})" for r, d in [(".og-shell-nav a[hidden]{display:none}", "OG-D53"), (".sr-only{", "OG-D53"), (".sr-only{position:absolute!important;left:0", "OG-D73"), ("p code,li code,dd code,td code{overflow-wrap:anywhere}", "OG-D74")] if r not in css]
 
 
 def audit_html(name, html):
