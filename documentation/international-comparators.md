@@ -28,6 +28,14 @@
 | EU Whoiswho | **Snapshot archive**: every release kept and downloadable, so any past state can be cited | later |
 | allusgov | **Method check**: compare sources and the reconciliation approach, and share findings openly | later |
 
+## Open Ownership, org-id.guide and the OECD (reviewed 22 November 2026)
+
+| From | What we found | What we did |
+|---|---|---|
+| **Open Ownership** | The Open Ownership Register was a prototype and closed on 29 November 2024; its datasets live on at bods-data.openownership.org. What remains are tools: BODS data analysis tools (Datasette, BigQuery, notebooks and dashboards with red-flag queries), the BODS data review tool, the BODS visualisation library (bods-dagre) and an RDF vocabulary. Open Ownership and GLEIF launched the Global Open Data Integration Network in March 2025. | **done:** one SQLite file of every table, opened in Datasette Lite from the Data and feeds page (free, nothing to run); BODS 0.4 output already passes Open Ownership's own checker in CI. **later:** draw each corporation tree with the BODS visualisation library; publish the RDF form |
+| **org-id.guide** | The shared register of organisation identifier lists used by IATI, 360Giving and the Open Contracting Data Standard: `GB-COH` for Companies House, `GB-CHC` for charities in England and Wales. Its old `GB-GOR` (Government Organisation Register) entry is deprecated. | **done:** each body's org-ids (from codes the register already holds) on its profile and in the SQLite file. **later:** register this register's own list code once its keys are stable |
+| **OECD** | *Ownership and Governance of State-Owned Enterprises 2026* and its Global SOE Dataset (33,834 firms) describe each state firm by its **ownership entity**: the body that exercises the state's ownership rights. | **already** shown as the owner in each trading fund and public corporation tree |
+
 ## What we do differently, on purpose
 
 - **No personal data.** Unlike Whoiswho, AGOR's appointments register and GC InfoBase's people data, this register describes offices and roles, never named people.
@@ -42,3 +50,6 @@
 - GSA *Federal Hierarchy public API*; Federal Register *agencies API*; CivicActions `allusgov`
 - Publications Office of the EU: *EU Whoiswho* and archives
 - UN Statistics Division: *Classification of the Functions of Government*
+- Open Ownership: *Developing the world's first transnational open beneficial ownership register* (2024); *Technology*; *How to use Open Ownership's tools* (2023)
+- org-id.guide and its handbook; Open Contracting Data Standard, *Organization identifiers*
+- OECD: *Ownership and Governance of State-Owned Enterprises 2026*, methodological note

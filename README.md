@@ -49,6 +49,7 @@ tools/localgov.py       local government under the English Devolution and Commun
 tools/sameas.py         one record per body: combines records that are the same body seen by different sources
 tools/territories.py    the Crown Dependencies' and Overseas Territories' own bodies, branch by branch
 tools/international.py  which UK body leads the UK's place in each international body or trading bloc
+tools/sqlite_export.py  one SQLite file for Datasette Lite, and org-id.guide identifiers
 tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
 ```
 
