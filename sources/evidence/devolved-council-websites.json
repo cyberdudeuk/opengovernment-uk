@@ -1,0 +1,240 @@
+{
+"about": "Official lists of councils in Scotland (mygov.scot, the Scottish Government's public information site: one page per council naming its website) and Northern Ireland (nidirect, the Northern Ireland government's site: each council's contact page, whose site root is taken as the website), read 22 November 2026. Wales has no official list page that can be read automatically (gov.wales offers a postcode lookup), so Welsh councils are not covered here.",
+"read": "2026-11-22",
+"sha256": "04fb0fff77ec1dafdb3c0fb1a5eaae8aeaa0c9644532a9bc765cc0ecd009f0a7",
+"councils": {
+"SC": [
+{
+"name": "Aberdeen City Council",
+"source_page": "https://www.mygov.scot/organisations/aberdeen-city-council",
+"website": "https://www.aberdeencity.gov.uk/"
+},
+{
+"name": "Aberdeenshire Council",
+"source_page": "https://www.mygov.scot/organisations/aberdeenshire-council",
+"website": "https://www.aberdeenshire.gov.uk"
+},
+{
+"name": "Angus Council",
+"source_page": "https://www.mygov.scot/organisations/angus-council",
+"website": "https://www.angus.gov.uk/"
+},
+{
+"name": "Argyll and Bute Council",
+"source_page": "https://www.mygov.scot/organisations/argyll-and-bute-council",
+"website": "https://www.argyll-bute.gov.uk/"
+},
+{
+"name": "City of Edinburgh Council",
+"source_page": "https://www.mygov.scot/organisations/city-of-edinburgh-council",
+"website": "https://www.edinburgh.gov.uk/"
+},
+{
+"name": "Clackmannanshire Council",
+"source_page": "https://www.mygov.scot/organisations/clackmannanshire-council",
+"website": "https://www.clacks.gov.uk/"
+},
+{
+"name": "Comhairle nan Eilean Siar",
+"source_page": "https://www.mygov.scot/organisations/comhairle-nan-eilean-siar",
+"website": "https://www.cne-siar.gov.uk/"
+},
+{
+"name": "Dumfries and Galloway Council",
+"source_page": "https://www.mygov.scot/organisations/dumfries-and-galloway-council",
+"website": "https://www.dumfriesandgalloway.gov.uk/"
+},
+{
+"name": "Dundee City Council",
+"source_page": "https://www.mygov.scot/organisations/dundee-city-council",
+"website": "https://www.dundeecity.gov.uk/"
+},
+{
+"name": "East Ayrshire Council",
+"source_page": "https://www.mygov.scot/organisations/east-ayrshire-council",
+"website": "https://www.east-ayrshire.gov.uk/"
+},
+{
+"name": "East Dunbartonshire Council",
+"source_page": "https://www.mygov.scot/organisations/east-dunbartonshire-council",
+"website": "https://www.eastdunbarton.gov.uk"
+},
+{
+"name": "East Lothian Council",
+"source_page": "https://www.mygov.scot/organisations/east-lothian-council",
+"website": "https://www.eastlothian.gov.uk/"
+},
+{
+"name": "East Renfrewshire Council",
+"source_page": "https://www.mygov.scot/organisations/east-renfrewshire-council",
+"website": "https://www.eastrenfrewshire.gov.uk/"
+},
+{
+"name": "Falkirk Council",
+"source_page": "https://www.mygov.scot/organisations/falkirk-council",
+"website": "https://www.falkirk.gov.uk"
+},
+{
+"name": "Fife Council",
+"source_page": "https://www.mygov.scot/organisations/fife-council",
+"website": "https://www.fife.gov.uk/"
+},
+{
+"name": "Glasgow City Council",
+"source_page": "https://www.mygov.scot/organisations/glasgow-city-council",
+"website": "https://www.glasgow.gov.uk/"
+},
+{
+"name": "Inverclyde Council",
+"source_page": "https://www.mygov.scot/organisations/inverclyde-council",
+"website": "https://www.inverclyde.gov.uk/"
+},
+{
+"name": "Midlothian Council",
+"source_page": "https://www.mygov.scot/organisations/midlothian-council",
+"website": "https://www.midlothian.gov.uk/"
+},
+{
+"name": "North Ayrshire Council",
+"source_page": "https://www.mygov.scot/organisations/north-ayrshire-council",
+"website": "https://www.north-ayrshire.gov.uk/"
+},
+{
+"name": "North Lanarkshire Council",
+"source_page": "https://www.mygov.scot/organisations/north-lanarkshire-council",
+"website": "https://www.northlanarkshire.gov.uk/"
+},
+{
+"name": "Orkney Islands Council",
+"source_page": "https://www.mygov.scot/organisations/orkney-islands-council",
+"website": "https://www.orkney.gov.uk/"
+},
+{
+"name": "Perth and Kinross Council",
+"source_page": "https://www.mygov.scot/organisations/perth-and-kinross-council",
+"website": "https://www.pkc.gov.uk"
+},
+{
+"name": "Renfrewshire Council",
+"source_page": "https://www.mygov.scot/organisations/renfrewshire-council",
+"website": "https://www.renfrewshire.gov.uk/"
+},
+{
+"name": "Scottish Borders Council",
+"source_page": "https://www.mygov.scot/organisations/scottish-borders-council",
+"website": "https://www.scotborders.gov.uk/"
+},
+{
+"name": "Shetland Islands Council",
+"source_page": "https://www.mygov.scot/organisations/shetland-islands-council",
+"website": "https://www.shetland.gov.uk/"
+},
+{
+"name": "South Ayrshire Council",
+"source_page": "https://www.mygov.scot/organisations/south-ayrshire-council",
+"website": "https://www.south-ayrshire.gov.uk/"
+},
+{
+"name": "South Lanarkshire Council",
+"source_page": "https://www.mygov.scot/organisations/south-lanarkshire-council",
+"website": "https://www.southlanarkshire.gov.uk/"
+},
+{
+"name": "Stirling Council",
+"source_page": "https://www.mygov.scot/organisations/stirling-council",
+"website": "https://www.stirling.gov.uk/"
+},
+{
+"name": "The Highland Council",
+"source_page": "https://www.mygov.scot/organisations/the-highland-council",
+"website": "https://www.highland.gov.uk/"
+},
+{
+"name": "Moray Council",
+"source_page": "https://www.mygov.scot/organisations/moray-council",
+"website": "https://www.moray.gov.uk/"
+},
+{
+"name": "West Dunbartonshire Council",
+"source_page": "https://www.mygov.scot/organisations/west-dunbartonshire-council",
+"website": "https://www.west-dunbarton.gov.uk/"
+},
+{
+"name": "West Lothian Council",
+"source_page": "https://www.mygov.scot/organisations/west-lothian-council",
+"website": "https://www.westlothian.gov.uk/"
+}
+],
+"NI": [
+{
+"name": "Antrim and Newtownabbey Borough Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://antrimandnewtownabbey.gov.uk/"
+},
+{
+"name": "Ards and North Down Borough Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.ardsandnorthdown.gov.uk/"
+},
+{
+"name": "Armagh City, Banbridge and Craigavon Borough Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.armaghbanbridgecraigavon.gov.uk/"
+},
+{
+"name": "Belfast City Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.belfastcity.gov.uk/"
+},
+{
+"name": "Causeway Coast and Glens Borough Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://causewaycoastandglens.gov.uk/"
+},
+{
+"name": "Derry City and Strabane District Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.derrystrabane.com/"
+},
+{
+"name": "Fermanagh and Omagh District Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.fermanaghomagh.com/"
+},
+{
+"name": "Lisburn and Castlereagh City Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.lisburncastlereagh.gov.uk/"
+},
+{
+"name": "Mid and East Antrim Borough Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.midandeastantrim.gov.uk/"
+},
+{
+"name": "Mid Ulster District Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.midulstercouncil.org/"
+},
+{
+"name": "Newry, Mourne and Down District Council",
+"source_page": "https://www.nidirect.gov.uk/contacts/local-councils-in-northern-ireland",
+"website": "https://www.newrymournedown.org/"
+}
+]
+},
+"decisions": {
+"City of Edinburgh Council": {
+"id": "ons-name:edinburgh-city-council",
+"why": "The register holds the council under the ONS form 'Edinburgh City Council'; the Local Government etc. (Scotland) Act 1994, Schedule 1 names the area 'City of Edinburgh'."
+},
+"Comhairle nan Eilean Siar": {
+"id": "ons-name:comhaire-nan-eilean-siar-council",
+"why": "The register's ONS-derived record is misspelt ('Comhaire') and carries no nation tag; it is the only Eilean Siar council record."
+},
+"Causeway Coast and Glens Borough Council": {
+"id": "ons-name:causeway-coast-and-glens-district-council",
+"why": "The register keeps the council's original 'District Council' title; nidirect uses its current borough title. It is the only Causeway Coast and Glens council record."
+}
+}
+}

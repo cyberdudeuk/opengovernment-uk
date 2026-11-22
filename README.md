@@ -55,7 +55,7 @@ tools/relations.py      the UK's memberships, treaties and agreements, linked to
 tools/orgchart.py      interactive org charts: who answers to whom, nations and branches, type and purpose, the UK in the world
 tools/funding.py        grants, business support schemes, regulators' innovation services and grant-makers
 tools/personas.py       personas and journeys from one source; checks every route the portal offers them
-tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
+tools/websites.py       each body's own website, from one combined table (matched by code; councils in Scotland and Northern Ireland by exact name within that nation's councils, from the official lists, one-to-one or the build fails)
 ```
 
 Three source files are **not redistributed** here because they name people (the Public Bodies Directory, Companies House controller pages, the PFI register's investors). `fetch.py --private` downloads them; their fingerprints are in `sources/manifest.json`, so a downloaded copy can be checked against the one the build used.
