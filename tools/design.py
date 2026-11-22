@@ -128,21 +128,53 @@ def tokenise(css):
     return css
 
 
-SHELL_NAV = [("index.html#home", "Home", "home"), ("index.html#register", "Register", "register"), ("index.html#tree", "Who answers", "tree"), ("nations.html", "Nations", "nations"), ("world.html", "UK and the world", "world"), ("orgchart.html", "Org charts", "orgchart"), ("funding.html", "Funding", "funding"),
-             ("index.html#changes", "Changes", "changes"), ("developers.html", "Developers", "devs"), ("navigator.html", "Documentation", "docs")]  # the design system page is linked from every footer
 LOGO = '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="var(--og-brand)"/><circle cx="20" cy="20" r="11.5" fill="none" stroke="var(--og-surface)" stroke-width="2"/><circle cx="20" cy="20" r="5" fill="var(--og-surface)"/><path d="M20 2v7M20 31v7M2 20h7M31 20h7" stroke="var(--og-surface)" stroke-width="2"/></svg>'
-# The global navigation must never wrap or exceed the screen: when its links would not fit on one line, it folds into
-# the Menu button (the 1023px media rule is the fallback without JavaScript).
-NAVFIT_JS = ('<script>(()=>{const m=document.querySelector(".og-shell-mast"),n=m&&m.querySelector(".og-shell-nav");if(!n)return;'
-             'const L=[...n.querySelectorAll(":scope>a")],mo=document.createElement("details");mo.className="og-shell-more";mo.innerHTML="<summary>More</summary><nav aria-label=\\"More sections\\"></nav>";n.appendChild(mo);const mn=mo.querySelector("nav");'
-             'const W=()=>document.documentElement.clientWidth,over=()=>{const v=L.filter(a=>!a.hidden);const last=mo.hidden?v[v.length-1]:mo;return last.getBoundingClientRect().top>L[0].getBoundingClientRect().top+2||n.scrollWidth>n.clientWidth+1||document.documentElement.scrollWidth>W()+1||[...m.querySelectorAll(".in > *")].some(e=>e.getBoundingClientRect().right>W()+1)};'
-             'const fit=()=>{m.classList.remove("og-fold");L.forEach(a=>a.hidden=false);mo.hidden=true;mn.innerHTML="";mo.open=false;if(getComputedStyle(n).display==="none")return;if(!over())return;mo.hidden=false;'
-             'for(let i=L.length-1;i>0&&over();i--){if(L[i].getAttribute("aria-current"))continue;L[i].hidden=true}'
-             'L.filter(a=>a.hidden).forEach(a=>{const c=a.cloneNode(true);c.hidden=false;mn.appendChild(c)});if(over()||L.filter(a=>!a.hidden).length<3)m.classList.add("og-fold")};'
-             'fit();addEventListener("resize",fit);document.fonts&&document.fonts.ready.then(fit)})()</script>')
 THEME_JS = ('<script>(()=>{const k="og-theme",r=document.documentElement,b=document.getElementById("ogTheme"),L={"":"Device","light":"Light","dark":"Dark"},N={"":"light","light":"dark","dark":""};'
             'let t="";try{t=localStorage.getItem(k)||""}catch(e){}const set=x=>{t=x;x?r.setAttribute("data-theme",x):r.removeAttribute("data-theme");b.querySelector(".v").textContent=L[x];try{localStorage.setItem(k,x)}catch(e){}};'
             'set(t);b.addEventListener("click",()=>set(N[t]));})();</script>')
+
+# One global navigation for every page (the IA in documentation/ia-and-design-review.md): grouped by the questions people
+# bring, not by how the register is built. Groups hold whole views and pages, never in-page anchors (those live in each
+# page's own menu). Rendered identically on the portal page and every subpage.
+NAV = [
+    ("Home", "home", "index.html#home", None),
+    ("Find", "find", None, [("Register", "register", "index.html#register", "Any body by name, code or identifier"),
+                            ("Ask a question", "ask", "index.html#ask", "Answers drawn only from the register")]),
+    ("The state", "state", None, [("Explore the anatomy", "explore", "index.html#explore", "Families, sectors and department trees"),
+                                  ("Nation by nation", "nations", "nations.html", "Each nation's law-makers, government and courts"),
+                                  ("UK and the world", "world", "world.html", "International bodies, treaties and agreements"),
+                                  ("Org charts", "orgchart", "orgchart.html", "Every body in context, top to bottom")]),
+    ("Who answers", "tree", "index.html#tree", None),
+    ("Funding", "funding", "funding.html", None),
+    ("Change", "changes", "index.html#changes", None),
+    ("Data", "datagrp", None, [("Data and feeds", "data", "index.html#data", "Downloads, SQL in your browser and the feed"),
+                               ("Developer hub", "devs", "developers.html", "Connect, harvest, crosswalks, MCP connector")]),
+    ("Contribute", "contrib", None, [("What needs a person", "reconcile", "index.html#reconcile", "How matching works and the names left to decide"),
+                                     ("Contributor charter", "charter", "https://github.com/cyberdudeuk/opengovernment-uk/blob/main/documentation/contributor-charter.md", "How we work together and how credit works"),
+                                     ("Report a mistake", "report", "https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=data-correction.yml", "Cite the source that says so")]),
+    ("About", "about", None, [("Quality and trust", "quality", "index.html#quality", "Sources, checks, defects and the audit trail"),
+                              ("Product and roadmap", "product", "index.html#product", "Vision, roadmap and requirements"),
+                              ("Help", "help", "index.html#help", "Guides, tours and the glossary"),
+                              ("Documentation", "docs", "navigator.html", "Requirements, design and traceability"),
+                              ("Design system", "design", "design-system.html", "How the portal looks, and why")]),
+]
+
+
+def gnav(active="", index=False):
+    """The global navigation as HTML. On the portal page, its own views are same-page links (#view)."""
+    def href(u): return u[len("index.html"):] if index and u.startswith("index.html#") else u
+    def link(t, k, u, desc=None):
+        ext = u.startswith("http"); cur = ' aria-current="page"' if k == active else ""
+        inner = f"<b>{t}</b><span>{desc}</span>" if desc else t
+        return (f'<a href="{href(u)}"{cur}' + (' rel="noopener" target="_blank"' if ext else "") + f">{inner}"
+                + ('<span class="sr-only"> (opens in a new tab)</span>' if ext else "") + "</a>")
+    items = []
+    for t, k, u, kids in NAV:
+        if not kids: items.append(f"<li>{link(t, k, u)}</li>"); continue
+        cur = " cur" if any(kk == active for _, kk, _, _ in kids) else ""
+        items.append(f'<li class="og-gnav-grp{cur}"><details><summary>{t}</summary><ul class="og-gnav-menu">' + "".join(f"<li>{link(*kid)}</li>" for kid in kids) + "</ul></details></li>")
+    items.append('<li class="og-gnav-more" hidden><details><summary>More</summary><ul class="og-gnav-menu"></ul></details></li>')
+    return "<ul>" + "".join(items) + "</ul>"
 
 
 ICON_SEARCH = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
@@ -173,21 +205,18 @@ SHELL_JS = '<script src="assets/og-shell.js" defer></script>'
 
 def shell(active):
     """Masthead, global navigation, theme switch and footer shared by every subpage (the main portal keeps its own richer shell)."""
-    cur = ' aria-current="page"'
-    nav = "".join(f'<a href="{h}"{cur if k == active else ""}>{t}</a>' for h, t, k in SHELL_NAV)
     head = (f'<a class="og-skip" href="#og-main">Skip to main content</a><header class="og-shell-mast"><div class="in"><a class="brand" href="index.html#home" aria-label="OpenGovernment UK, home">{LOGO}'
             f'<span><b>OpenGovernment UK</b><small>The anatomy of the state, from the registers that keep it</small></span></a>'
-            f'<nav class="og-shell-nav" aria-label="Sections of the portal">{nav}</nav>'
             + mast_tools() +
-            f'<details class="og-shell-menu"><summary>Menu</summary><nav aria-label="Sections of the portal (menu)">{nav}</nav></details>'
-            f'<button class="iconbtn" id="ogTheme" type="button" aria-label="Switch colour theme">{ICON_THEME}<span class="og-phone-hide">Theme:&nbsp;</span><span class="v">Device</span></button></div></header>')
+            f'<button class="iconbtn" id="ogTheme" type="button" aria-label="Switch colour theme">{ICON_THEME}<span class="og-phone-hide">Theme:&nbsp;</span><span class="v">Device</span></button></div>'
+            f'<nav class="og-gnav" id="gnav" aria-label="Sections of the portal">{gnav(active)}</nav></header>')
     foot = ('<footer class="og-shell-foot"><div class="in">'
             '<div><h2>Disclaimer</h2><p>A pilot built from open registers. It isn\'t an official government list, isn\'t affiliated with any public body, and no body named here has endorsed it.</p></div>'
             '<div><h2>Transparency</h2><p>An open-source public good, built in the open. AI (Claude) helps with harvesting, matching and building; every change is checked and reviewed in public.</p></div>'
             '<div><h2>Contact</h2><p><a href="https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=feedback.yml" rel="noopener" target="_blank">Tell us what\'s wrong or missing</a> through the feedback form.</p></div>'
             '<div><h2>Colophon</h2><p>Source and issues on <a href="https://github.com/cyberdudeuk/opengovernment-uk" rel="noopener" target="_blank">GitHub</a>. Code MIT, documentation CC BY 4.0, data OGL v3. '
             'Fonts: Atkinson Hyperlegible Next and IBM Plex Mono (SIL Open Font License), served from this site. <a href="design-system.html">Design system</a>.</p></div>'
-            f'</div></footer>{THEME_JS}{NAVFIT_JS}{SHELL_JS}')
+            f'</div></footer>{THEME_JS}{SHELL_JS}')
     return head, foot
 
 
@@ -208,13 +237,14 @@ WRAP_GUARDS = [("nmulti", "@media (max-width:640px){.nmulti{white-space:normal}}
 
 def css_guards(css):
     """Rules the shared stylesheet must keep (each from a defect)."""
-    return [f"og.css lacks {r} ({d})" for r, d in [(".og-shell-nav a[hidden]{display:none}", "OG-D53"), (".sr-only{", "OG-D53"), (".sr-only{position:absolute!important;left:0", "OG-D73"), ("p code,li code,dd code,td code{overflow-wrap:anywhere}", "OG-D74")] if r not in css]
+    return [f"og.css lacks {r} ({d})" for r, d in [(".og-gnav li[hidden]{display:none}", "OG-D53"), (".sr-only{", "OG-D53"), (".sr-only{position:absolute!important;left:0", "OG-D73"), ("p code,li code,dd code,td code{overflow-wrap:anywhere}", "OG-D74")] if r not in css]
 
 
 def audit_html(name, html):
     """Problems with one published page."""
     p = []
-    if "og-shell-nav" in html and ("og-fold" not in html or "og-shell-more" not in html): p.append(f"{name}: the global navigation has no More menu and fold for when it would not fit (OG-D51)")
+    if 'class="og-gnav"' not in html: p.append(f"{name}: doesn't carry the shared global navigation (OG-D75)")
+    elif "og-gnav-more" not in html: p.append(f"{name}: the global navigation has no More group for when it would not fit (OG-D51)")
     for sel, rule, d in WRAP_GUARDS:
         if sel in html and rule not in html: p.append(f"{name}: {sel} has no narrow-screen wrap rule ({d})")
     if re.search(r"fonts\.(googleapis|gstatic)\.com|<link[^>]+rel=\"stylesheet\"[^>]+href=\"https?://", html): p.append(f"{name}: third-party font or stylesheet")
@@ -337,13 +367,15 @@ def main():
         import copy
         caught = []
         t = copy.deepcopy(TOK); t["color"]["light"]["muted"]["$value"] = "#9aa3ad"; caught.append(bool(contrast_problems(t)))
-        ok = '<head><link rel="stylesheet" href="assets/og.css"></head><style>a{color:var(--og-accent)}</style>'
+        base = '<head><link rel="stylesheet" href="assets/og.css"></head><style>a{color:var(--og-accent)}</style>'
+        ok = base + '<nav class="og-gnav"><ul><li><a href="#">A</a></li><li class="og-gnav-more" hidden></li></ul></nav>'
         caught.append(not audit_html("ok", ok))  # the clean page passes
         for bad in ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">', "<style>a{color:#ff0000}</style>", "<style>p{font-size:13px}</style>", "<style>p{font:700 .9rem var(--f-body)}</style>",
                     "<style>.c{border-radius:14px}</style>", "<style>@media (max-width:900px){a{color:red}}</style>", '<div id="x"></div><p id="x"></p>'):
             caught.append(bool(audit_html("bad", ok + bad)))
-        caught.append(bool(css_guards(".og-shell-nav a{display:inline-flex}")))  # OG-D53: hidden links shown because author CSS overrides [hidden]
-        caught.append(bool(audit_html("bad", ok + '<nav class="og-shell-nav"><a href="#">A</a></nav>')))  # OG-D51: a shell navigation without its fold
+        caught.append(bool(css_guards(".og-gnav li{display:block}")))  # OG-D53: hidden items shown because author CSS overrides [hidden]
+        caught.append(bool(audit_html("bad", base + '<nav class="og-gnav"><ul><li><a href="#">A</a></li></ul></nav>')))
+        caught.append(bool(audit_html("bad", base)))  # OG-D75: a page without the shared global navigation  # OG-D51: a navigation without its fold
         caught.append(bool(audit_html("bad", ok + '<span class="nmulti">serves the whole UK</span>')))  # OG-D50: a no-wrap chip without its narrow-screen rule
         caught.append(bool(weight("design-system.html", os.urandom(200_000).hex())))  # page weight: an oversized page fails the audit
         caught.append(tokenise("p{font-size:.72rem;border-radius:10px}@media (max-width:900px){}") == "p{font-size:var(--og-size-xs);border-radius:var(--og-radius-md)}@media (max-width:1023px){}")

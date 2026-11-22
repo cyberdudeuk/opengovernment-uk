@@ -71,3 +71,69 @@ Every chart has a table view, a text summary and its source.
 ## Effort to run, for one maintainer
 
 The redesign is a one-off build. Running it adds no services: the site stays static on GitHub Pages, the data is rebuilt by the existing workflows, and contributions arrive as GitHub issues and pull requests. The ongoing cost is the review time for contributions, so the contribution page should make good submissions easy and invalid ones impossible (structured forms, a required source).
+
+## Review and changes, 22 November 2026 (implemented)
+
+### What we found
+
+| Layer | Before | Problem |
+|---|---|---|
+| Global navigation | Two different menus: the portal page listed 11 views plus 5 page links; the other pages listed 10 items, a different set | The menu changed depending on where you were; Reconcile, Quality, Help, Product and Ask were unreachable from subpages; organised around the build, not people's questions |
+| Masthead | Search card on the home page only; no notifications | Nothing to find or follow from other pages |
+| Home page | Ten sections: splash, jump strip, figures, highlights, spotlight, who are you, I want to, why it exists, where to start, where next | Four wayfinding sections overlapped and were scattered; background sat in the middle; long scroll |
+| In-page (vertical) | The portal page's drawer lists each view's sections; subpages use tabs | Nation by nation has 11 sections and no drawer |
+| Org charts | Left to right only | Depth across a wide screen hides the hierarchy most people expect |
+
+### What changed
+
+**One global navigation**, defined once (`tools/design.py` NAV) and rendered identically on every page. It's grouped by the questions above, adapted to what exists today:
+
+| Menu | Holds |
+|---|---|
+| Home | |
+| Find | Register; Ask a question |
+| The state | Explore the anatomy; Nation by nation; UK and the world; Org charts |
+| Who answers | |
+| Funding | |
+| Change | |
+| Data | Data and feeds; Developer hub |
+| Contribute | What needs a person; Contributor charter; Report a mistake |
+| About | Quality and trust; Product and roadmap; Help; Documentation; Design system |
+
+- Groups open as disclosure menus with a one-line description per destination. One is open at a time, and Escape or a click elsewhere closes it.
+- The current page and its group are marked.
+- What doesn't fit folds into More, which shows each group as a headed list.
+- Groups hold whole views and pages, never in-page anchors.
+- The menu has its own row under the masthead on every page.
+
+**Masthead utilities on every page:** search (hands off to the register), notifications, latest changes, and the theme switch. The ticker sits directly under the masthead on the home page.
+
+**Home page, in order of precedence:**
+1. Splash (what this is, with the rings picture).
+2. Jump strip.
+3. Find your way: one card, three tabs (Who are you? / I want to… / Every section, grouped as in the menu).
+4. The state in numbers: headline figures, with the breakdown behind "Show the breakdown".
+5. Highlights beside the spotlight.
+6. About this register: collapsed, last.
+
+The page menu went from nine sections to six.
+
+**Org charts run top to bottom.** A parent whose children are all closed stacks them in a column under it, so a level with hundreds of bodies stays readable. Left to right is one click away, and the choice is remembered.
+
+**Checks:**
+- every page must carry the shared navigation and its More group (`tools/design.py`, OG-D75);
+- the portal page's generator runs in CI, and committed outputs must match a fresh build (OG-D76);
+- the browser test opens every page and tab at phone and desktop widths.
+
+### Next, in order of value
+
+1. **Tabs for Who answers** (10 sections on one page): chains, where accountability ends, money, PFI, trading funds and corporations, confidence, gaps, ledger, single source. About a day.
+2. **A drawer on subpages with many sections**, starting with Nation by nation (11). It should reuse the portal page's drawer: retractable, icons, counts, new flags. About a day.
+3. **Breadcrumbs on body profiles** (Register > family > body), so people know where they are after a search. Half a day.
+4. **Merge Help and Documentation under About** into one "How it works" page with tabs (guides, tours, glossary, requirements and design). About a day.
+5. **Ask in the masthead search:** offer "Ask about this" as the last search suggestion, so the AI is one step from anywhere. Half a day.
+
+### Effort to run
+
+None beyond the existing checks. A new page needs one line in NAV and one in PAGES. The audit fails until both are there.
+

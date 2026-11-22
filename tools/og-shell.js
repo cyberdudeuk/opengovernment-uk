@@ -51,6 +51,27 @@
   document.addEventListener("keydown", e => { if (e.key === "Escape" && openId) close(true); });
   document.addEventListener("click", e => { if (openId && !e.target.closest(".og-pop")) close(false); });
 
+  // ---- global navigation: one group open at a time; Escape or a click elsewhere closes it; what doesn't fit folds into More ----
+  const gnav = document.querySelector(".og-gnav");
+  if (gnav) {
+    const ul = gnav.querySelector(":scope > ul"), more = ul.querySelector(".og-gnav-more"), mul = more && more.querySelector(".og-gnav-menu");
+    const items = [...ul.children].filter(li => li !== more);
+    const fit = () => {
+      if (!more) return;
+      items.forEach(li => li.hidden = false); more.hidden = true; mul.replaceChildren();
+      if (ul.scrollWidth <= ul.clientWidth + 1) return;
+      more.hidden = false;
+      for (let i = items.length - 1; i > 0 && ul.scrollWidth > ul.clientWidth + 1; i--) items[i].hidden = true;
+      items.filter(li => li.hidden).forEach(li => { const c = li.cloneNode(true); c.hidden = false; c.querySelectorAll("details").forEach(d => d.open = true); mul.appendChild(c); });
+      more.classList.toggle("cur", !!mul.querySelector('[aria-current="page"]'));
+    };
+    const closeAll = except => gnav.querySelectorAll(":scope > ul > li > details[open]").forEach(d => { if (d !== except) d.open = false; });
+    gnav.addEventListener("toggle", e => { if (e.target.open && e.target.parentElement.parentElement === ul) closeAll(e.target); }, true);
+    document.addEventListener("click", e => { if (!e.target.closest(".og-gnav")) closeAll(); else if (e.target.closest(".og-gnav-menu a")) closeAll(); });
+    document.addEventListener("keydown", e => { if (e.key !== "Escape") return; const d = gnav.querySelector(":scope > ul > li > details[open]"); if (d) { d.open = false; d.querySelector("summary").focus(); } });
+    fit(); addEventListener("resize", fit); addEventListener("hashchange", () => setTimeout(fit)); if (document.fonts) document.fonts.ready.then(fit);
+  }
+
   // ---- search on pages that don't hold the register (the portal page has its own, with every record in memory) ----
   const box = document.getElementById("ogQ"), out = document.getElementById("ogQr");
   if (!box || !out) return;

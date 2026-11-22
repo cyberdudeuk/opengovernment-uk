@@ -17,6 +17,8 @@ jobs:
         with:
           python-version: "3.13"
       - run: pip install -r requirements.txt
+      - name: Portal page and BODS file build cleanly (the generators the refresh runs; OG-D76)
+        run: python tools/patch_portal.py && python tools/export_bods.py
       - name: Licensing is machine-readable and complete (REUSE 3.3; every file has a licence and copyright)
         run: reuse lint
       - name: Lint (fails on any finding)
@@ -103,3 +105,5 @@ jobs:
         run: |
           ! grep -Eq '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(gov|org|com|uk|net)\b' docs/index.html
           ! grep -q 'Office of the Chief Data Officer' docs/index.html
+      - name: Committed outputs match a fresh build (nothing generated was left uncommitted; OG-D76)
+        run: git diff --stat --exit-code -- docs data ':!docs/opengovernment-uk.db'

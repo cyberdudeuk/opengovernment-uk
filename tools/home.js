@@ -147,14 +147,27 @@ function hmWayfinder(){
 
 function hmSignposts(){
   const s = $("#hmSign"); if (!s) return;
-  const P = [["list", "Register", "Any body by name, code or identifier", "#register"], ["crown", "Who answers", "Chains, money and owners", "#tree"], ["atlas", "Nations", "Branches, territories and rings", "nations.html"], ["globe", "World", "Treaties, alliances and partners", "world.html#tab=t"], ["tree", "Org charts", "Every body in context", "orgchart.html"], ["coin", "Funding", "Grants, schemes and services", "funding.html"], ["data", "Data", "Downloads and the SQLite file", "#data"], ["ask", "Ask", "Questions answered from the register", "#ask"]];
-  s.innerHTML = P.map(p => `<a class="sign" href="${esc(p[3])}">${icon(p[0])}<b>${esc(p[1])}</b><span>${esc(p[2])}</span><i aria-hidden="true">→</i></a>`).join("");
+  // Every section, in the order and groups of the global navigation (tools/design.py NAV)
+  const GROUPS = [["Find", [["list", "Register", "Any body by name, code or identifier", "#register"], ["ask", "Ask a question", "Answers drawn only from the register", "#ask"]]],
+    ["The state", [["atlas", "Explore the anatomy", "Families, sectors and department trees", "#explore"], ["atlas", "Nation by nation", "Law-makers, government and courts", "nations.html"], ["globe", "UK and the world", "Treaties, alliances and partners", "world.html"], ["tree", "Org charts", "Every body in context", "orgchart.html"]]],
+    ["Accountability and money", [["crown", "Who answers", "Chains, money and owners", "#tree"], ["coin", "Funding", "Grants, schemes and services", "funding.html"], ["clock", "Change", "Renames, mergers and closures", "#changes"]]],
+    ["Data", [["data", "Data and feeds", "Downloads and the SQLite file", "#data"], ["data", "Developer hub", "Connect, harvest, crosswalks, MCP", "developers.html"]]],
+    ["Take part and trust", [["scale", "What needs a person", "How matching works; names to decide", "#reconcile"], ["shield", "Quality and trust", "Sources, checks and the audit trail", "#quality"], ["help", "Help", "Guides, tours and the glossary", "#help"]]]];
+  s.innerHTML = GROUPS.map(([g, xs]) => `<div class="signgrp"><h3>${esc(g)}</h3><div class="signrow">${xs.map(p => `<a class="sign" href="${esc(p[3])}">${icon(p[0])}<b>${esc(p[1])}</b><span>${esc(p[2])}</span><i aria-hidden="true">→</i></a>`).join("")}</div></div>`).join("");
 }
 
-document.addEventListener("click", e => { const b = e.target.closest("[data-jump]"); if (!b) return; const s = document.getElementById(b.dataset.jump); if (!s) return; s.scrollIntoView({behavior: HM_RM() ? "auto" : "smooth", block: "start"}); const h = $("h2,h3", s) || s; h.tabIndex = -1; h.focus({preventScroll: true}); });
+function hmFind(){  // Find your way: three tabs, arrow keys move between them, the choice is remembered
+  const tabs = $$('#s-find [role="tab"]'); if (!tabs.length) return;
+  const show = (id, focus) => { tabs.forEach(t => { const on = t.id === "fyt-" + id; t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1; $("#" + t.getAttribute("aria-controls")).hidden = !on; if (on && focus) t.focus(); }); try { localStorage.setItem("og-find", id); } catch (e) { /* storage off */ } };
+  tabs.forEach((t, i) => { t.addEventListener("click", () => show(t.id.slice(4))); t.addEventListener("keydown", e => { if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return; e.preventDefault(); const n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length]; show(n.id.slice(4), true); }); });
+  let last = ""; try { last = localStorage.getItem("og-find") || ""; } catch (e) { /* storage off */ }
+  if (["who", "task", "all"].includes(last)) show(last);
+}
+
+document.addEventListener("click", e => { const b = e.target.closest("[data-jump]"); if (!b) return; const s = document.getElementById(b.dataset.jump); if (!s) return; if (s.tagName === "DETAILS") s.open = true; s.scrollIntoView({behavior: HM_RM() ? "auto" : "smooth", block: "start"}); const h = $("h2,h3", s) || s; h.tabIndex = -1; h.focus({preventScroll: true}); });
 
 function homeExtras(){
-  ["s-ticker", "s-carousel", "s-spot", "s-ways", "s-sign"].forEach(x => NEWSEC.add(x));
-  hmBullseye(); hmSearch(); hmTicker(); hmCarousel(); hmSpotlight(); hmWayfinder(); hmSignposts();
-  COUNTS["s-spot"] = 1; COUNTS["s-ways"] = HM_WAYS.length;
+  ["s-find", "s-carousel", "s-spot"].forEach(x => NEWSEC.add(x));
+  hmBullseye(); hmSearch(); hmTicker(); hmCarousel(); hmSpotlight(); hmWayfinder(); hmSignposts(); hmFind();
+  COUNTS["s-spot"] = 1;
 }
