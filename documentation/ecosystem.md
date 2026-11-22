@@ -44,3 +44,25 @@
 - OpenCorporates API reference and terms of use
 - GOV.UK *Open contracting* transparency page; Find a Tender API documentation; Open Contracting Partnership data registry
 - mySociety, *WhatDoTheyKnow Authorities Dataset*
+
+## Repository survey, 22 November 2026
+
+Every public repository of the three organisations was read from its GitHub listing: Open Ownership (45), OpenSanctions (34) and OpenCorporates (42). What matters for this register, by audience:
+
+| Repository | Owner | What it is | Value here | Decision | Effort to run |
+|---|---|---|---|---|---|
+| `lib-cove-bods` | Open Ownership | The official checker for BODS data | Proves our BODS file follows the standard's rules, not just its schema | **Adopted**: runs in CI and fails the build on any finding. It found two real defects (OG-D29, OG-D30), both fixed | None: pinned, runs in CI |
+| `data-standard` | Open Ownership | BODS 0.4 schema and documentation | Our ownership and accountability export | **Adopted** (schema vendored) | Re-validate per release |
+| `visualisation-tool` (bods-dagre) | Open Ownership | Draws ownership and control graphs from BODS | Visual lineage for journalists and researchers | Next: one library in the page | Low |
+| `bodsld` | Open Ownership | Maps BODS 0.4 to RDF | Joins our BODS file to our ontology and knowledge graph | Next: map with it rather than by hand | Low |
+| `bods-uk-psc-pipeline` | Open Ownership | Companies House controllers as BODS 0.4 | Could replace our own controller reading for government-owned companies | Later: reuse the mapping, not its cloud infrastructure | Medium |
+| `bluetail` | Open Ownership | Joins ownership with contracting data (OCDS) | The pattern for linking contracts to bodies and owners | Learn from it for the planned OCDS join | n/a |
+| `bodsdata-datasette` | Open Ownership | SQL access to BODS data with Datasette | Researchers query the register in a browser | Later: a static Datasette build | Low |
+| `bodsanalysis`, `beneficial-ownership-explorer` | Open Ownership | Analysis notebooks; an explorer app | Patterns for analysts | Link from the documentation | None |
+| `followthemoney` | OpenSanctions | The data model used by investigative tools (MIT) | An export journalists can load directly | Planned: a plain JSON exporter; the library needs a system library (ICU) CI shouldn't carry | Low |
+| `yente` | OpenSanctions | Entity search with a reconciliation API | The kind of matching service OpenRefine users want | Not now: needs a server; a static site cannot run it | n/a |
+| `rigour`, `nomenklatura` | OpenSanctions | Name cleaning and record combining (MIT) | Could improve our name matching | Later: test against our known answers before adopting | Low |
+| `everypolitician.org`, `poliloom` | OpenSanctions | Databases of politicians | Not used: they hold personal data, which this register does not | Declined | n/a |
+| `openc-schema`, `knowledge-graph` | OpenCorporates | Company data schemas; a procurement knowledge graph (Apache 2.0) | Reference for company and procurement modelling | Learn from it; OpenCorporates data stays linked, not copied (ODbL share-alike) | n/a |
+
+**What was done as a result:** Open Ownership's own checker now gates every build, and the two defects it found are fixed. The other repositories are ranked above by value for effort, with personal-data and licence limits respected.

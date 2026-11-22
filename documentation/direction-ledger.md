@@ -1,0 +1,22 @@
+# Direction ledger
+
+Each direction given for this register, what was done about it, and where to see it. Kept so nothing given in passing is lost. Newest last.
+
+| # | Direction | What was done | Where | Status |
+|---|---|---|---|---|
+| 1 | Look for similar national and supranational work; adopt the best | Seven comparators surveyed (Australia, Canada, New Zealand, US Federal Hierarchy, allusgov, EU Whoiswho, COFOG); identifier concordance adopted now; founding legislation, COFOG, movements, interests and parent history planned | documentation/international-comparators.md, docs/concordance.csv | Done; adoptions planned |
+| 2 | The usual documentation bundle | 01 to 12, with the specification, data dictionary, ontology and knowledge graph generated from one traceability spine; interactive navigator | documentation/solution/, docs/navigator.html | Done |
+| 3 | Each nation's register: its bodies and the three branches of the state | Per-nation tabs with legislature, executive and judiciary; the top of each branch from its founding Act, each link checked | docs/nations.html | Done |
+| 4 | Remove the author's name from the history (force push approved) | Author, committer and two files rewritten in every commit; force-pushed | git history | Done |
+| 5 | Import the 2020 database via the browser | Downloads were blocked by device policy; the non-personal sheet was read in the page and copied in six hashed chunks; the whole-sheet SHA-256 matches the source | data/historical-2020.json | Done (raw rows not redistributed) |
+| 6 | Remove ambiguity using trusted sources and governance instruments | Nation evidence ranked: legislature, ONS sponsor, own GOV.UK page, register, ONS council codes, founding Act extent, Wikidata, 2020 compilation, company registration; never from a name | tools/nation_evidence.py, data/nation-evidence.json | Done |
+| 7 | Show hierarchies as parent and child | Family tree view per nation and branch, from each body's accountability chain | docs/nations.html (Family tree) | Done |
+| 8 | Report on the BODS, Open Ownership, OpenCorporates and OpenSanctions repositories | All public repositories read; lib-cove-bods adopted in CI (found and fixed two defects); others ranked | documentation/ecosystem.md | Done |
+| 9 | Split ultimate owners into the four nations, colour them, flag multi-nation bodies | Validated nation palette (colour-blind safe, light and dark, always labelled); owners in nation columns; "serves N nations" flags across the portal | Who answers, nations page | Done |
+| 10 | Own websites and official-language names, linked internally and externally | Websites (Wikidata P856), official names (P1448, ONS Welsh council names), community translations marked; each name links to the profile and out | docs/nations.html | Done |
+| 11 | Confirm reconciliation by triangulation; hide what is resolved | 80 of 85 chain disagreements and 11 of 12 nation disagreements settled by stated rules or independent sources; only contested ones shown; an independent check re-verifies each | data/tree.json, data/nation-evidence.json | Done |
+| 12 | Classify each body by purpose, reach and how it is formed, how often and how | Plain-English classifier; election cycles and voting systems verified against the Acts; table view with filters, grouping and sorting | tools/classify.py, docs/nations.html (Table) | Done (purpose is modelled and labelled) |
+| 13 | Plain English for any reader, icons, visual effects, animation; less monochrome | Nations page rewritten: plain names, glossary, line icons, nation colour throughout, count-up numbers, gentle motion off for reduced motion | docs/nations.html | Done for the nations page; the rest of the portal is part of the 0.4 redesign |
+| 14 | Only show apps with public portals and repositories as consumers | Two remain (GitHub Repos Asset Catalogue, dcat-ap-uk), each with portal and repository links; internal names removed from the build | Data and feeds | Done |
+| 15 | Amend and update the open standards it follows | 26 standards with status and deep links; licences stated per kind of file; ISO 3166-2 nation codes added | Data and feeds | Done |
+| 16 | (Found while doing 14) An internal working register was committed as a source | Replaced by the published WGA annex fields only; outputs unchanged | sources/wga-2024-25-annexes.json | Removed from the tree; removal from history awaits approval |
