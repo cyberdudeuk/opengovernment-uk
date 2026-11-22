@@ -1,0 +1,401 @@
+{
+ "peer": "IATI Organisation Identifiers for UK government organisations (FCDO)",
+ "catalogue": "https://www.data.gov.uk/dataset/3daf2e08-170e-4aa0-850b-bde231a2031a",
+ "file": "https://assets.publishing.service.gov.uk/media/656a277f1104cf0013fa73cf/iati-organisation-identifiers.ods",
+ "rows": [
+  {
+   "iati_id": "GB-GOV-1",
+   "name": "Foreign, Commonwealth & Development Office",
+   "status": "Active",
+   "note": "Previously Department of International Development, prior to the creation of the FCDO",
+   "register_id": "government-organisation:D1315",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-2",
+   "name": "HM Treasury",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D15",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-3",
+   "name": null,
+   "status": "Deprecated",
+   "note": "Previously Foreign & Commonwealth Office, prior to the creation of the FCDO",
+   "register_id": null,
+   "how": "no name given (deprecated code)"
+  },
+  {
+   "iati_id": "GB-GOV-4",
+   "name": "Ministry of Justice",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D18",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-5",
+   "name": "UK Export Finance",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D241",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-6",
+   "name": "Home Office",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D16",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-7",
+   "name": "Department for Environment, Food and Rural Affairs",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D7",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-8",
+   "name": "Ministry of Defence",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D17",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-9",
+   "name": "Department for Work and Pensions",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D10",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-10",
+   "name": "Department of Health and Social Care",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D12",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-11",
+   "name": "HM Revenue and Customs",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D25",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-12",
+   "name": "Department for Culture, Media and Sport",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D1383",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-13",
+   "name": "Department for Business, Energy and Industrial Strategy",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D1198",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-14",
+   "name": "Department for Education",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D6",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-15",
+   "name": "Department for International Trade",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D1196",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-16",
+   "name": "Department for Transport",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D9",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-17",
+   "name": "Cabinet Office",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D2",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-18",
+   "name": "Crown Prosecution Service",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D101",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-19",
+   "name": "National Crime Agency",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB558",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-20",
+   "name": "Government Digital Service",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:OT1056",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-21",
+   "name": "Scottish Government",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:DA1020",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-22",
+   "name": "Welsh Assembly Government",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  },
+  {
+   "iati_id": "GB-GOV-23",
+   "name": "Infrastructure Project Authority",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  },
+  {
+   "iati_id": "GB-GOV-24",
+   "name": "Office for National Statistics",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D303",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-25",
+   "name": "Department for Energy, Security and Net Zero",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D1380",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-26",
+   "name": "Department for Science, Innovation and Technology",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D1381",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-27",
+   "name": "Ministry of Housing, Communities and Local Government",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:D1419",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-28",
+   "name": "Medicines and Healthcare products Regulatory Agency",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:EA63",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-29",
+   "name": "UK Health Security Agency",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:EA1328",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-30",
+   "name": "Veterinary Medicines Directorate",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:EA60",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-31",
+   "name": "UK Research and Innovation (UKRI)",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  },
+  {
+   "iati_id": "GB-GOV-32",
+   "name": "Innovate UK",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB1078",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-33",
+   "name": "Research England",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:OT1450",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-50",
+   "name": "Prosperity Fund",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  },
+  {
+   "iati_id": "GB-GOV-52",
+   "name": "Conflict, Stability and Security Fund (CSSF)",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  },
+  {
+   "iati_id": "GB-GOV-53",
+   "name": "UK Integrated Security Fund (UKISF)",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  },
+  {
+   "iati_id": "GB-GOV-54",
+   "name": "Animal and Plant Health Agency",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:EA1079",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-55",
+   "name": "Centre for Environment, Fisheries and Aquaculture Science",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:EA53",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-56",
+   "name": "Wilton Park",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:EA62",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-57",
+   "name": "NHS England",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB481",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-COH-RC000346",
+   "name": "Medical Research Council",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB132",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-COH-03877777",
+   "name": "British International Investment PLC",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  },
+  {
+   "iati_id": "GB-COH-RC000555",
+   "name": "The Economic and Social Research Council",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB129",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-COH-RC000707",
+   "name": "The Biotechnology and Biological Sciences Research Council",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB317",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-COH-RC000708",
+   "name": "The Engineering and Physical Sciences Research Council",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB130",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-COH-RC000740",
+   "name": "The Natural Environment Research Council",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB133",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-COH-RC000800",
+   "name": "The Arts and Humanities Research Council",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB123",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-COH-RC000817",
+   "name": "The Science and Technology Facilities Council",
+   "status": "Active",
+   "note": null,
+   "register_id": "government-organisation:PB135",
+   "how": "name, cleaned"
+  },
+  {
+   "iati_id": "GB-GOV-58",
+   "name": "Police Scotland",
+   "status": "Active",
+   "note": null,
+   "register_id": null,
+   "how": "no register record with this name"
+  }
+ ],
+ "matched": 40,
+ "named": 48
+}

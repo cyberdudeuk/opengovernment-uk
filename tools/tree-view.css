@@ -1,0 +1,35 @@
+.chain{display:flex;flex-direction:column;margin-top:12px}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;position:relative;padding-bottom:16px}
+.step::before{content:"";position:absolute;left:14px;top:30px;bottom:0;width:2px;background:var(--line-2)}
+.step:last-child::before{display:none}
+.step .dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--navy-soft);color:var(--navy);border:2px solid var(--navy)}
+.step .dot svg{width:15px;height:15px}
+.step.start .dot{background:var(--paper-2);color:var(--ink);border-color:var(--line-2)}
+.step.root .dot{background:var(--red);color:var(--on-accent);border-color:var(--red)}
+.step .rel{display:block;font-size:.78rem;letter-spacing:.02em;text-transform:uppercase;color:var(--muted)}
+.step .ev{font-size:.82rem;color:var(--muted);margin-top:3px;overflow-wrap:anywhere}
+.step .ev .mono{font-size:.76rem}
+.step.root b{color:var(--red)}
+.limits{border-left:4px solid var(--gold);background:var(--gold-soft);padding:12px 14px;border-radius:8px}
+.limits h3{margin-bottom:6px}
+.limits ul{margin:0;padding-left:1.1em}
+.limits li{margin:3px 0}
+.term-b{font:inherit;color:inherit;background:none;border:0;border-bottom:1px dotted currentColor;padding:0;cursor:help}
+.term-b:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+#tipbox{position:fixed;z-index:60;max-width:min(320px,calc(100vw - 16px));background:var(--ink);color:var(--paper);padding:8px 10px;border-radius:8px;font-size:.82rem;line-height:1.4;box-shadow:0 6px 24px rgba(0,0,0,.25);pointer-events:none}
+#tipbox[hidden]{display:none}
+.otree{list-style:none;padding-left:0;margin:8px 0}
+.otree ul{list-style:none;padding-left:18px;border-left:1px solid var(--line);margin:2px 0 2px 6px}
+.otree li{margin:2px 0}
+.otree summary{cursor:pointer;padding:2px 0}
+.otree .c{font-size:.76rem;color:var(--muted);margin-left:6px}
+.otree .rl{font-size:.72rem;color:var(--muted);margin-left:6px;text-transform:uppercase;letter-spacing:.03em}
+.mny{font-variant-numeric:tabular-nums}
+.inv{font-size:.82rem;color:var(--muted)}
+#tHits .tile{text-align:left}
+@media (prefers-reduced-motion:no-preference){.step{animation:stepIn .35s ease both}.step:nth-child(2){animation-delay:.05s}.step:nth-child(3){animation-delay:.1s}.step:nth-child(4){animation-delay:.15s}@keyframes stepIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+#v-tree .controls label{min-width:0;max-width:100%}
+#v-tree select{max-width:100%;text-overflow:ellipsis}
+#v-tree .controls label{grid-template-columns:minmax(0,1fr)}
+#v-tree select{width:100%}
+@media (max-width:520px){.mast .iconbtn>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.mast .brand small{display:none}} /* D-OG8: masthead clipped the title at 390px */

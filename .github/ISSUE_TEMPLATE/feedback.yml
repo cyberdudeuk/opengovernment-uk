@@ -1,0 +1,26 @@
+name: Feedback
+description: Tell us something is wrong or missing in the register
+title: "Feedback: "
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: "This is public. Please don't include names, email addresses or phone numbers."
+  - type: input
+    id: body
+    attributes:
+      label: Which body, if any
+      description: Its name or register key, for example government-organisation:D303
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem
+      options: [Wrong or missing body, Wrong parent or accountability link, Wrong money figure, Wrong match between registers, Something on the site doesn't work, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What's wrong, and the source that says so
+    validations:
+      required: true

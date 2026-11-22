@@ -1,0 +1,2511 @@
+<Legislation xmlns="http://www.legislation.gov.uk/namespaces/legislation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216" NumberOfProvisions="2" xsi:schemaLocation="http://www.legislation.gov.uk/namespaces/legislation http://www.legislation.gov.uk/schema/legislation.xsd" SchemaVersion="2.0"><ukm:Metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:ukm="http://www.legislation.gov.uk/namespaces/metadata">
+					<dc:identifier>http://www.legislation.gov.uk/uksi/2026/216/made</dc:identifier><dc:title>The Government Resources and Accounts Act 2000 (Estimates and Accounts) Order 2026</dc:title><dc:language>en</dc:language><dc:publisher>King's Printer of Acts of Parliament</dc:publisher><dc:modified>2026-03-05</dc:modified><dc:subject scheme="SIheading">GOVERNMENT RESOURCES AND ACCOUNTS</dc:subject>
+					<dc:description>This Order designates specified central government bodies in relation to named government departments for the purpose of those departments’ supply estimates and resource accounts.</dc:description>
+					<atom:link rel="self" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.xml" type="application/xml"/><atom:link rel="http://www.legislation.gov.uk/def/navigation/resources" href="http://www.legislation.gov.uk/uksi/2026/216/resources" title="More Resources"/>
+					
+					<atom:link rel="http://www.legislation.gov.uk/def/navigation/memorandum" href="http://www.legislation.gov.uk/uksi/2026/216/memorandum" title="Explanatory Memorandum"/><atom:link rel="http://www.legislation.gov.uk/def/navigation/memorandum/toc" href="http://www.legislation.gov.uk/uksi/2026/216/memorandum/contents" title="Explanatory Memorandum Table of Contents"/>
+					
+					<atom:link rel="http://www.legislation.gov.uk/def/navigation/act" href="http://www.legislation.gov.uk/uksi/2026/216/made" title="whole act"/><atom:link rel="http://www.legislation.gov.uk/def/navigation/introduction" href="http://www.legislation.gov.uk/uksi/2026/216/introduction/made" title="introduction"/><atom:link rel="http://www.legislation.gov.uk/def/navigation/signature" href="http://www.legislation.gov.uk/uksi/2026/216/signature/made" title="signature"/><atom:link rel="http://www.legislation.gov.uk/def/navigation/note" href="http://www.legislation.gov.uk/uksi/2026/216/note/made" title="note"/>
+					<atom:link rel="http://www.legislation.gov.uk/def/navigation/body" href="http://www.legislation.gov.uk/uksi/2026/216/body/made" title="body"/>
+					<atom:link rel="http://www.legislation.gov.uk/def/navigation/schedules" href="http://www.legislation.gov.uk/uksi/2026/216/schedules/made" title="schedules"/>
+					
+										
+					
+					
+					
+					<atom:link rel="alternate" type="application/rdf+xml" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.rdf" title="RDF/XML"/><atom:link rel="alternate" type="application/akn+xml" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.akn" title="AKN"/><atom:link rel="alternate" type="application/xhtml+xml" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.xht" title="HTML snippet"/><atom:link rel="alternate" type="text/html" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.htm" title="Website (XHTML) Default View"/><atom:link rel="alternate" type="text/csv" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.csv" title="CSV"/><atom:link rel="alternate" type="application/pdf" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.pdf" title="PDF"/>
+					<atom:link rel="alternate" type="application/akn+xhtml" href="http://www.legislation.gov.uk/uksi/2026/216/made/data.html" title="HTML5 snippet"/>
+
+					<atom:link rel="alternate" href="http://www.legislation.gov.uk/uksi/2026/216/pdfs/uksi_20260216_en.pdf" type="application/pdf" title="Original PDF"/>
+					<atom:link rel="http://purl.org/dc/terms/tableOfContents" hreflang="en" href="http://www.legislation.gov.uk/uksi/2026/216/contents/made" title="Table of Contents"/>
+					
+					
+					
+					
+					<ukm:SecondaryMetadata><ukm:DocumentClassification>
+<ukm:DocumentCategory Value="secondary"/>
+<ukm:DocumentMainType Value="UnitedKingdomStatutoryInstrument"/>
+<ukm:DocumentStatus Value="final"/>
+<ukm:DocumentMinorType Value="order"/>
+</ukm:DocumentClassification><ukm:Year Value="2026"/><ukm:Number Value="216"/><ukm:Made Date="2026-03-04"/><ukm:Laid Date="2026-03-05" Time="00:00:00" Class="UnitedKingdomParliament"/><ukm:ComingIntoForce>
+<ukm:DateTime Date="2026-04-01" Time="00:00:00"/>
+</ukm:ComingIntoForce><ukm:ISBN Value="9780348280425"/></ukm:SecondaryMetadata>
+					
+
+                    
+									<ukm:Notes><ukm:Note IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/notes"/><ukm:Alternatives><ukm:Alternative URI="http://www.legislation.gov.uk/uksi/2026/216/pdfs/uksiem_20260216_en_001.pdf" Date="2026-03-05" Title="UK Explanatory Memorandum" Size="46589"/></ukm:Alternatives>       
+								</ukm:Notes> 
+					<ukm:Alternatives><ukm:Alternative URI="http://www.legislation.gov.uk/uksi/2026/216/pdfs/uksi_20260216_en.pdf" Date="2026-03-05" Size="244876" Print="true"/></ukm:Alternatives>
+					
+					<ukm:Statistics>
+									<ukm:TotalParagraphs Value="23"/>
+									<ukm:BodyParagraphs Value="2"/>
+									<ukm:ScheduleParagraphs Value="21"/>
+									<ukm:AttachmentParagraphs Value="0"/>
+									<ukm:TotalImages Value="0"/>
+								</ukm:Statistics>
+				</ukm:Metadata><Secondary>
+<SecondaryPrelims DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/introduction/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/introduction">
+<Number>2026 No. 216</Number>
+<SubjectInformation>
+<Subject>
+<Title>GOVERNMENT RESOURCES AND ACCOUNTS</Title>
+</Subject>
+</SubjectInformation>
+<Title>The Government Resources and Accounts Act 2000 (Estimates and Accounts) Order 2026</Title>
+<MadeDate>
+<Text>Made</Text>
+<DateText>4th March 2026</DateText>
+</MadeDate>
+<LaidDate>
+<Text>Laid before Parliament</Text>
+<DateText>5th March 2026</DateText>
+</LaidDate>
+<ComingIntoForce>
+<Text>Coming into force</Text>
+<DateText>1st April 2026</DateText>
+</ComingIntoForce>
+<SecondaryPreamble>
+<EnactingText>
+<Para>
+<Text>The Treasury make this Order in exercise of the powers conferred by 
+<Citation URI="https://www.legislation.gov.uk/ukpga/2000/20/section/4A" id="c00001" Class="UnitedKingdomPublicGeneralAct" Year="2000" Number="20" SectionRef="section-4A">section 4A</Citation>
+<Citation URI="https://www.legislation.gov.uk/ukpga/2000/20/section/4A" id="c00002" Class="UnitedKingdomPublicGeneralAct" Year="2000" Number="20" SectionRef="section-4A">(3)</Citation> and 
+<Citation URI="https://www.legislation.gov.uk/ukpga/2000/20/section/4A" id="c00003" Class="UnitedKingdomPublicGeneralAct" Year="2000" Number="20" SectionRef="section-4A">(4)</Citation> of the 
+<Citation URI="https://www.legislation.gov.uk/ukpga/2000/20/contents" id="c00004" Class="UnitedKingdomPublicGeneralAct" Year="2000" Number="20" SectionRef="contents">Government Resources and Accounts Act 2000</Citation><FootnoteRef Ref="f00001"/>.</Text>
+</Para>
+<Para>
+<Text>In accordance with 
+<Citation URI="https://www.legislation.gov.uk/ukpga/2010/25/section/4A" id="c00005" Class="UnitedKingdomPublicGeneralAct" Year="2010" Number="25" SectionRef="section-4A">section 4A</Citation>
+<Citation URI="https://www.legislation.gov.uk/ukpga/2010/25/section/4A" id="c00006" Class="UnitedKingdomPublicGeneralAct" Year="2010" Number="25" SectionRef="section-4A">(8)</Citation> of 
+<Citation URI="https://www.legislation.gov.uk/ukpga/2010/25/contents" id="c00007" Class="UnitedKingdomPublicGeneralAct" Year="2010" Number="25" SectionRef="contents">that Act</Citation> the Treasury have consulted, where they think it appropriate, the Scottish Ministers, the Department of Finance and Personnel for Northern Ireland<FootnoteRef Ref="f00002"/> and the Welsh Ministers.</Text>
+</Para>
+</EnactingText>
+</SecondaryPreamble>
+</SecondaryPrelims>
+<Body DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/body/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/body" NumberOfProvisions="2">
+<P1group>
+<Title>Citation, commencement and extent</Title>
+<P1 DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/article/1/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/article/1" id="article-1">
+<Pnumber>1</Pnumber>
+<P1para>
+<P2 DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/article/1/1/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/article/1/1" id="article-1-1">
+<Pnumber>1</Pnumber>
+<P2para>
+<Text>This Order may be cited as the Government Resources and Accounts Act 2000 (Estimates and Accounts) Order 2026 and comes into force on 1st April 2026.</Text>
+</P2para>
+</P2>
+<P2 DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/article/1/2/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/article/1/2" id="article-1-2">
+<Pnumber>2</Pnumber>
+<P2para>
+<Text>This Order extends to England and Wales, Scotland and Northern Ireland.</Text>
+</P2para>
+</P2>
+</P1para>
+</P1>
+</P1group>
+<P1group>
+<Title>Designations</Title>
+<P1 DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/article/2/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/article/2" id="article-2">
+<Pnumber>2</Pnumber>
+<P1para>
+<Text>A body which is listed in a Part of the Schedule to this Order is a designated body for the purposes of section 4A of the Government Resources and Accounts Act 2000—</Text>
+<P3 DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/article/2/a/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/article/2/a" id="article-2-a">
+<Pnumber>a</Pnumber>
+<P3para>
+<Text>in relation to the department named in the heading to that Part, and</Text>
+</P3para>
+</P3>
+<P3 DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/article/2/b/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/article/2/b" id="article-2-b">
+<Pnumber>b</Pnumber>
+<P3para>
+<Text>for the financial year which ends on 31st March 2027.</Text>
+</P3para>
+</P3>
+</P1para>
+</P1>
+</P1group>
+<SignedSection DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/signature/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/signature">
+<Signatory>
+<Signee>
+<PersonName>Gen Kitchen </PersonName>
+<PersonName>Taiwo Owatemi</PersonName>
+<JobTitle>Two of the Lords Commissioners of His Majesty's Treasury</JobTitle>
+<DateSigned Date="2026-03-04">
+<DateText>4th March 2026</DateText>
+</DateSigned>
+</Signee>
+</Signatory>
+</SignedSection>
+</Body>
+<Schedules>
+<Schedule DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule" id="schedule">
+<Number>Schedule</Number>
+<TitleBlock>
+<Title>Designated Bodies</Title>
+</TitleBlock>
+<Reference>Article 2</Reference>
+<ScheduleBody>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/1/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/1" id="schedule-part-1">
+<Number>Part 1</Number>
+<Title>Department of Health and Social Care</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Administration of Radioactive Substances Advisory Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on Antimicrobial Prescribing, Resistance and Healthcare Associated Infection</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on Borderline Substances</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on Clinical Impact Awards</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on Dangerous Pathogens</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on the Safety of Blood, Tissues and Organs</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Group on Hepatitis</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Pharmacopoeia Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Care Quality Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Charitable trusts the trustees of which are an NHS Foundation Trust (as established under section 30 of the National Health Service Act 2006<FootnoteRef Ref="f00003"/>)</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Commission on Human Medicines</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on Carcinogenicity of Chemicals in Food, Consumer Products and the Environment</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on the Medical Aspects of Radiation in the Environment</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on the Medical Effects of Air Pollutants</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on Mutagenicity of Chemicals in Food, Consumer Products and the Environment</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Community Health Partnerships Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>English NHS charities as defined by section 149(7) of the Charities Act 2011<FootnoteRef Ref="f00004"/></Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Expert Advisory Group on AIDS</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Genomics England Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Health and Care Professions Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Health Research Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Health Services Safety Investigations Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Healthwatch England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Human Fertilisation and Embryology Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Human Tissue Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Reconfiguration Panel</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Integrated Care Boards (as established under section 14Z25 of the National Health Service Act 2006<FootnoteRef Ref="f00005"/>)</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Joint Committee on Vaccination and Immunisation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Medicines Manufacturing Centre LLP</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Institute for Health and Care Excellence</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NHS Business Services Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NHS Counter Fraud Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NHS England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NHS Foundation Trusts (as established under section 30 of the National Health Service Act 2006)</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NHS Litigation Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The NHS Pay Review Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NHS Property Services Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NHS Trusts (as established under section 25 of the National Health Service Act 2006)</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Nursing and Midwifery Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Commissioner for Patient Safety</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the National Data Guardian for Health and Social Care</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Professional Standards Authority for Health and Social Care</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Review Body on Doctors’ and Dentists’ Remuneration</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Scientific Advisory Committee on Nutrition</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Supply Chain Coordination Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Nutrition and Health Claims Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Wiltshire Health and Care LLP</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/2/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/2" id="schedule-part-2">
+<Number>Part 2</Number>
+<Title>Department for Education</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Aggregator Vehicle plc</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Children’s Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Located Property Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Oak National Academy Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office for Students</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>School Teachers’ Review Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Social Work England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Student Loans Company Limited</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/3/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/3" id="schedule-part-3">
+<Number>Part 3</Number>
+<Title>Home Office</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>The Advisory Council on the Misuse of Drugs</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>College of Policing Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Commission for Countering Extremism</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Committee for the Protection of Animals Used for Scientific Purposes</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Disclosure and Barring Service</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Firefighters’ Pension Scheme Advisory Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Forensic Archive Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Gangmasters and Labour Abuse Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>His Majesty’s Inspectors of Constabulary</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Immigration Services Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Family Returns Panel</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Office for Police Conduct</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Investigatory Powers Commissioner’s Office</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Investigatory Powers Tribunal</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Migration Advisory Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Crime Agency Remuneration Review Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Chief Inspector of the UK Border Agency</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Office of the Commissioner for the Retention and Use of Biometric Material</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Director of Labour Market Enforcement</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Domestic Abuse Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Office of the Forensic Science Regulator</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Office of the Independent Anti-Slavery Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Office of the Independent Monitor for the purposes of Part 5 of the Police Act 1997<FootnoteRef Ref="f00006"/></Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Independent Reviewer of State Threats Legislation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Office of the Independent Reviewer of Terrorism Legislation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the person appointed under sections 47H(4), 127H(4), 195H(4), 290(8), 303E(9) and 303Z23(7) of the Proceeds of Crime Act 2002<FootnoteRef Ref="f00007"/></Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Office of the Surveillance Camera Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Police Advisory Board for England and Wales</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Police Appeals Tribunal</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Police Remuneration Review Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Science and Technology Ethics Advisory Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Security Industry Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Technical Advisory Board</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/4/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/4" id="schedule-part-4">
+<Number>Part 4</Number>
+<Title>Ministry of Justice</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advisory Committees on Justices of the Peace in England and Wales</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Chief Coroner’s Office</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Children and Family Court Advisory and Support Service</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Civil Justice Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Civil Procedure Rule Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Criminal Cases Review Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Criminal Procedure Rule Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Family Justice Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Family Procedure Rule Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Gov Facility Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Advisory Panel on Deaths in Custody</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Monitoring Authority for the Citizens’ Rights Agreements</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Monitoring Boards of Prisons, Immigration Removal Centres and Short Term Holding Facilities</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Judicial Appointments and Conduct Ombudsman</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Judicial Appointments Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Judicial College</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Judicial Conduct and Investigations Office</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Judicial Office</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Law Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Legal Services Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Oasis Restore Trust</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office for Legal Complaints</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Assessor of Compensation for Miscarriages of Justice</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Commissioner for Victims and Witnesses</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of HM Inspectorate of Prisons</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of HM Inspectorate of Probation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Judge Advocate General</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Official Solicitor</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Prisons and Probation Ombudsman for England and Wales</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Standing Advocate for Victims of Major Incidents</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Parole Board for England and Wales</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Prison Service Pay Review Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Public Trustee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Recognition Panel</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sentencing Council for England and Wales</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Tribunal Procedure Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Youth Justice Board for England and Wales</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/5/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/5" id="schedule-part-5">
+<Number>Part 5</Number>
+<Title>Ministry of Defence</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advisory Committee on Conscientious Objectors</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Group on Military Medicine</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Armed Forces Covenant Fund Trustee Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Armed Forces Pay Review Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>AWE plc</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Central Advisory Committee on Compensation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Commonwealth War Graves Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Defence Nuclear Safety Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Defence Science Expert Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Medical Expert Group</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Monitoring Board for the Military Corrective Training Centre (MCTC) Colchester</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Army Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Museum of the Royal Navy</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Nuclear Research Advisory Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Ploughshare Innovations Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Royal Air Force Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Royal Hospital Chelsea</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Science Advisory Committee on the Medical Implications of Less-Lethal Weapons</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Service Complaints Ombudsman</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Service Prosecuting Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Single Source Regulations Office</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Territorial, auxiliary and volunteer reserve associations established under section 110 of the Reserve Forces Act 1996<FootnoteRef Ref="f00008"/></Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Veterans Advisory and Pensions Committees</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/6/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/6" id="schedule-part-6">
+<Number>Part 6</Number>
+<Title>Foreign, Commonwealth and Development Office</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Commonwealth Scholarship Commission in the United Kingdom</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Great Britain-China Centre</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Independent Commission for Aid Impact</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Marshall Aid Commemoration Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The UK China Forum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Westminster Foundation for Democracy Limited</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/7/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/7" id="schedule-part-7">
+<Number>Part 7</Number>
+<Title>Ministry of Housing, Communities and Local Government</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Blandford Brewery Estate Management Company Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Building Safety Regulator</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Cambridge Growth Company Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Commission for Local Administration in England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>English Partnerships (LP) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Estuary Management Company Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Homes and Communities Agency</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Housing Ombudsman</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Leasehold Advisory Service</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Housing Bank Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Parliamentary Boundary Commission for England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Parliamentary Boundary Commission for Wales</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Regulator of Social Housing</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Rule Committee (as mentioned in section 127(2) of the Land Registration Act 2002)<FootnoteRef Ref="f00009"/></Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Valuation Tribunal for England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Valuation Tribunal Service</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/8/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/8" id="schedule-part-8">
+<Number>Part 8</Number>
+<Title>Department for Culture, Media and Sport</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advisory Committee on the Government Art Collection</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Arts Council of England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Clann Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Commercial Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Free to View Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Free to View (Satellite) Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Media Applications Technologies Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC News International Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Property Development Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Property Investment Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Property Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Studios Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC Subscription Television Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC World Service Holdings Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBC World Service Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BIG Lottery Fund</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Birmingham Organising Committee for the 2022 Commonwealth Games Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the Armouries</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the National Gallery</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the National Museums and Galleries on Merseyside</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the National Portrait Gallery</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the Science Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the Tate Gallery</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the Victoria and Albert Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the Wallace Collection</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Broadcasting Corporation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Film Institute</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Library Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Tourist Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Churches Conservation Trust</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Creative Industries New Entrant Scheme Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>English Sports Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>English Sports Development Trust Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Gambling Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Geffrye Museum Trust Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Historic Buildings and Monuments Commission for England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Historic England Foundation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Historic England Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Horniman Museum and Public Park Foundation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Horniman Public Museum and Public Park Trust</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Horserace Betting Levy Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Football Regulator</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Film Development Fund</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Natural History Museum Benevolent Fund</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Natural History Museum Special Funds Trust</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Reviewing Committee on the Export of Works of Art</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>S4C</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sir John Soane’s Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Sports Council Trust Company</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sports Grounds Safety Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Treasure Valuation Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Trustees of the British Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Trustees of the Imperial War Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Trustees of the National Heritage Memorial Fund</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Trustees of the National Maritime Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Trustees of the Natural History Museum</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Anti-Doping</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Sports Institute Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The United Kingdom Sports Council</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/9/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/9" id="schedule-part-9">
+<Number>Part 9</Number>
+<Title>Department for Science, Innovation and Technology</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advanced Research and Invention Agency</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Technology Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Copyright Tribunal</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Council for Science and Technology</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Daresbury SIC (PubSec) LLP</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Diamond Light Source Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Harwell Science and Innovation Campus Public Sector Limited Partnership</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Information Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Information Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Innovate UK Loans Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Knowledge Transfer Network Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Medical Research Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The NESTA Trust</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Adjudicator Broadcast Transmission Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Adjudicator Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of Communications</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>STFC Innovations Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Shared Business Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>United Kingdom Research and Innovation</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/10/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/10" id="schedule-part-10">
+<Number>Part 10</Number>
+<Title>Department for Transport</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Air Safety Support International Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Air Travel Trust</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Transport Police Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Commissioners of Irish Lights</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Commissioners of Northern Lighthouses</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>CTRL Section 1 Finance plc</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Disabled Persons Transport Advisory Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>East West Rail Company Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Euston Delivery Company Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Great British Railways Transition Team Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>High Speed Two (HS2) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>LCR Finance plc</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Highways Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail Certification Body Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail Development Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail (High Speed) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail Holdco Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail Infrastructure Finance plc</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail Infrastructure Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail Pension Trustee Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail (VY1) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Network Rail (VY2) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office for the Traffic Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Passengers’ Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Train Fleet (2019) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Transport Focus Wales Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Trinity House Lighthouse Service</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/11/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/11" id="schedule-part-11">
+<Number>Part 11</Number>
+<Title>Department for Energy Security and Net Zero</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>AEA Insurance Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BNFL (Investments US) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Nuclear Group Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Bulb Energy Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Civil Nuclear Police Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Coal Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on Climate Change</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on Fuel Poverty</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on Radioactive Waste Management</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Dounreay Site Restoration Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Electricity Settlements Company Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Enrichment Holdings Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Enrichment Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Great British Energy Group Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Great British Energy - Nuclear</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Liverpool Bay CCS Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>LLWR Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Low Carbon Contracts Company Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Magnox Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>NDA Archives Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Net Zero North Sea Storage Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Nuclear Decommissioning Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Nuclear Liabilities Financing Assurance Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Nuclear Restoration Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Nuclear Waste Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Oil and Gas Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Radioactive Waste Management Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Research Sites Restoration Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Salix Finance Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sellafield Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sizewell C (Holding) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sizewell C Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sizewell C (PledgeCo) Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UKAEA Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Fusion Solutions Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Industrial Fusion Solutions Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>United Kingdom Atomic Energy Authority</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/12/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/12" id="schedule-part-12">
+<Number>Part 12</Number>
+<Title>Department for Environment, Food and Rural Affairs</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advisory Committee on Releases to the Environment</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Agriculture and Horticulture Development Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>AHDB Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Board of Trustees of the Royal Botanic Gardens, Kew</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>CCW Trading Company Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Consumer Council for Water</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Environment Agency</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Flood Re Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Forestry Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Agricultural Appeals Panel</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>JNCC Support Co</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Joint Nature Conservation Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Livestock Information Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Marine Management Organisation</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Forest Company</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Forest Enterprises Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Natural England</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office for Environmental Protection</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Plant Varieties and Seeds Tribunal</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>RBG Kew Enterprises Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Science Advisory Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sea Fish Industry Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Sutton Bridge Experimental Unit Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Veterinary Products Committee</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/13/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/13" id="schedule-part-13">
+<Number>Part 13</Number>
+<Title>Department for Business and Trade</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advisory, Conciliation and Arbitration Service</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBB Investment Holdings Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBB Investment Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BBB Mandates Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>BIS (Postal Services Act 2011) Company Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Business Aspire Holdco Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Business Bank plc</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Business Finance Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Business Financial Services Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Business Investments Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Hallmarking Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>British Patient Capital Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Central Arbitration Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Certification Office for Trade Union and Employers’ Associations</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Competition Appeal Tribunal</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Competition Service</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Cornwall and Isles of Scilly Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>East Midlands Early Growth Fund Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Financial Reporting Council Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Fleetbank Funding Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Groceries Code Adjudicator</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Industrial Development Advisory Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Low Pay Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Midlands Engine Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Nations and Regions Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Northern Powerhouse Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office for the Pay Review Bodies</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Postal Services Holding Company Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Pubs Code Adjudicator</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Regulatory Policy Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Small Business Commissioner</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Start-Up Loans Company</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Accounting Standards Endorsement Board Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Trade Remedies Authority</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/14/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/14" id="schedule-part-14">
+<Number>Part 14</Number>
+<Title>Department for Work and Pensions</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Construction Industry Training Board (established under the Industrial Training Act 1964<FootnoteRef Ref="f00010"/>)</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Engineering Construction Industry Training Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Health and Safety Executive</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Industrial Injuries Advisory Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Money and Pensions Service</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Ombudsman for the Board of the Pension Protection Fund</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Pensions Ombudsman</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Pensions Regulator</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Remploy Pension Scheme Trustees Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Social Security Advisory Committee</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/15/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/15" id="schedule-part-15">
+<Number>Part 15</Number>
+<Title>HM Treasury</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Financial Reporting Advisory Board</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>HM Treasury UK Sovereign Sukuk plc</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>IUK Investments Holdings Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>IUK Investments Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>National Wealth Fund Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office for Budget Responsibility</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Pool Reinsurance Company Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Pool Re Services Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Pool Re Solutions Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Reclaim Fund Ltd</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Royal Household</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Royal Mint Advisory Committee on the Design of Coins, Medals, Seals and Decorations</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Asset Resolution Limited</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>UK Government Investments Limited</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/16/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/16" id="schedule-part-16">
+<Number>Part 16</Number>
+<Title>Cabinet Office</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Civil Service Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Commission for Equality and Human Rights</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Ethics and Integrity Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>House of Lords Appointments Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Infected Blood Compensation Authority</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Main Honours Committee</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Office of the Commissioner for Public Appointments</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>The Registrar of Consultant Lobbyists</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Security Vetting Appeals Panel</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Senior Salaries Review Body</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Social Mobility Commission</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/17/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/17" id="schedule-part-17">
+<Number>Part 17</Number>
+<Title>Scotland Office and Office of the Advocate General</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Boundary Commission for Scotland</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/18/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/18" id="schedule-part-18">
+<Number>Part 18</Number>
+<Title>Northern Ireland Office</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Boundary Commission for Northern Ireland</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Commission for Reconciliation and Information Recovery</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Independent Reporting Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Northern Ireland Human Rights Commission</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Parades Commission for Northern Ireland</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/19/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/19" id="schedule-part-19">
+<Number>Part 19</Number>
+<Title>Food Standards Agency</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advisory Committee for Social Science</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on Animal Feedingstuffs</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on the Microbiological Safety of Food</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Advisory Committee on Novel Foods and Processes</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Committee on Toxicity of Chemicals in Food, Consumer Products and the Environment</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>FSA Science Council</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Joint Expert Group on Additives, Enzymes and other Regulated Products</Text>
+</Para>
+</ListItem>
+<ListItem>
+<Para>
+<Text>Joint Expert Group for Food Contact Materials</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/20/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/20" id="schedule-part-20">
+<Number>Part 20</Number>
+<Title>The National Archives</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Advisory Council on National Records and Archives</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+<Part DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/schedule/part/21/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/schedule/part/21" id="schedule-part-21">
+<Number>Part 21</Number>
+<Title>Export Credits Guarantee Department</Title>
+<P>
+<UnorderedList Decoration="none">
+<ListItem>
+<Para>
+<Text>Export Guarantees Advisory Council</Text>
+</Para>
+</ListItem>
+</UnorderedList>
+</P>
+</Part>
+</ScheduleBody>
+</Schedule>
+</Schedules>
+<ExplanatoryNotes DocumentURI="http://www.legislation.gov.uk/uksi/2026/216/note/made" IdURI="http://www.legislation.gov.uk/id/uksi/2026/216/note">
+<Title>Explanatory Note</Title>
+<Comment>
+<Para>
+<Text>(This note is not part of the Order)</Text>
+</Para>
+</Comment>
+<P>
+<Text>This Order designates specified central government bodies in relation to named government departments for the purpose of those departments’ supply estimates and resource accounts.</Text>
+</P>
+<P>
+<Text>The designations have effect for the financial year that ends on 31st March 2027.</Text>
+</P>
+<P>
+<Text>A full impact assessment has not been prepared for this instrument as no, or no significant, impact on the private, voluntary or public sector is foreseen.</Text>
+</P>
+</ExplanatoryNotes>
+</Secondary><Footnotes><Footnote id="f00001">
+<FootnoteText>
+<Para>
+<Text>
+<Citation URI="https://www.legislation.gov.uk/ukpga/2000/20/contents" id="c00008" Class="UnitedKingdomPublicGeneralAct" Year="2000" Number="20" SectionRef="contents">2000 c. 20</Citation>. Section 4A was inserted by 
+<Citation URI="https://www.legislation.gov.uk/ukpga/2010/25/section/43" id="c00009" Class="UnitedKingdomPublicGeneralAct" Year="2010" Number="25" SectionRef="section-43">section 43</Citation>
+<Citation URI="https://www.legislation.gov.uk/ukpga/2010/25/section/43" id="c00010" Class="UnitedKingdomPublicGeneralAct" Year="2010" Number="25" SectionRef="section-43">(2)</Citation> of the 
+<Citation URI="https://www.legislation.gov.uk/ukpga/2010/25/contents" id="c00011" Class="UnitedKingdomPublicGeneralAct" Year="2010" Number="25" SectionRef="contents">Constitutional Reform and Governance Act 2010 (c. 25)</Citation>.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00002">
+<FootnoteText>
+<Para>
+<Text>The Department of Finance and Personnel was renamed the Department of Finance by section 1(4) of the Departments Act (Northern Ireland) <Citation URI="http://www.legislation.gov.uk/id/nia/2016/5" id="c00012" Year="2016" Number="5" Class="NorthernIrelandAct">2016 (c. 5) (N.I.)</Citation>.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00003">
+<FootnoteText>
+<Para>
+<Text><Citation URI="http://www.legislation.gov.uk/id/ukpga/2006/41" id="c00013" Year="2006" Number="41" Class="UnitedKingdomPublicGeneralAct">2006 c. 41</Citation>. Section 30(1) was amended by section 159(1) of the Health and Social Care Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2012/7" id="c00014" Year="2012" Number="7" Class="UnitedKingdomPublicGeneralAct">2012 (c. 7)</Citation>.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00004">
+<FootnoteText>
+<Para>
+<Text><Citation URI="http://www.legislation.gov.uk/id/ukpga/2011/25" id="c00015" Year="2011" Number="25" Class="UnitedKingdomPublicGeneralAct">2011 c. 25</Citation>. Section 149(7) was amended by paragraph 184 of Schedule 5 to the Health and Social Care Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2012/7" id="c00016" Year="2012" Number="7" Class="UnitedKingdomPublicGeneralAct">2012 (c. 7)</Citation>, paragraph 15 of Schedule 1 to the NHS (Charitable Trusts Etc) Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2016/10" id="c00017" Year="2016" Number="10" Class="UnitedKingdomPublicGeneralAct">2016 (c. 10)</Citation> and paragraph 1 of Schedule 1, and paragraph 174 of Schedule 4, to the Health and Care Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2022/31" id="c00018" Year="2022" Number="31" Class="UnitedKingdomPublicGeneralAct">2022 (c. 31)</Citation>.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00005">
+<FootnoteText>
+<Para>
+<Text>Section 14Z25 was inserted by section 19(2) of the Health and Care Act 2022.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00006">
+<FootnoteText>
+<Para>
+<Text><Citation URI="http://www.legislation.gov.uk/id/ukpga/1997/50" id="c00019" Year="1997" Number="50" Class="UnitedKingdomPublicGeneralAct">1997 c. 50</Citation>. The independent monitor is appointed under section 119B of the Police Act 1997. Section 119B was inserted by section 28 of the Safeguarding Vulnerable Groups Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2006/47" id="c00020" Year="2006" Number="47" Class="UnitedKingdomPublicGeneralAct">2006 (c. 47)</Citation>. Subsection (4A) was inserted by paragraph 37(2) of Schedule 14 to the Northern Ireland Act 1998 (Devolution of Policing and Justice Functions) Order 2010 (<Citation URI="http://www.legislation.gov.uk/id/uksi/2010/976" id="c00021" Year="2010" Number="976" Class="UnitedKingdomStatutoryInstrument">S.I. 2010/976</Citation>). There are other amendments to section 119B that are not relevant to this Order.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00007">
+<FootnoteText>
+<Para>
+<Text><Citation URI="http://www.legislation.gov.uk/id/ukpga/2002/29" id="c00022" Year="2002" Number="29" Class="UnitedKingdomPublicGeneralAct">2002 c. 29</Citation>. Sections 47H, 127H and 195H were inserted respectively by sections 55(2), 56(2) and 57(2) of the Policing and Crime Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2009/26" id="c00023" Year="2009" Number="26" Class="UnitedKingdomPublicGeneralAct">2009 (c. 26)</Citation> and section 303E was inserted by section 15 of the Criminal Finances Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2017/22" id="c00024" Year="2017" Number="22" Class="UnitedKingdomPublicGeneralAct">2017 (c. 22)</Citation> and section 303Z23 was inserted by section 180(1) of, and paragraph 1 of Schedule 9 to, the Economic Crime and Corporate Transparency Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2023/56" id="c00025" Year="2023" Number="56" Class="UnitedKingdomPublicGeneralAct">2023 (c. 56)</Citation>.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00008">
+<FootnoteText>
+<Para>
+<Text><Citation URI="http://www.legislation.gov.uk/id/ukpga/1996/14" id="c00026" Year="1996" Number="14" Class="UnitedKingdomPublicGeneralAct">1996 c. 14</Citation>.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00009">
+<FootnoteText>
+<Para>
+<Text><Citation URI="http://www.legislation.gov.uk/id/ukpga/2002/9" id="c00027" Year="2002" Number="9" Class="UnitedKingdomPublicGeneralAct">2002 c. 9</Citation>. Section 127(2) was amended by paragraph 302 of Schedule 4 to the Constitutional Reform Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2005/4" id="c00028" Year="2005" Number="4" Class="UnitedKingdomPublicGeneralAct">2005 (c. 4)</Citation> and section 36 of the Infrastructure Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/2015/7" id="c00029" Year="2015" Number="7" Class="UnitedKingdomPublicGeneralAct">2015 (c. 7)</Citation>.</Text>
+</Para>
+</FootnoteText>
+</Footnote><Footnote id="f00010">
+<FootnoteText>
+<Para>
+<Text><Citation URI="http://www.legislation.gov.uk/id/ukpga/1964/16" id="c00030" Year="1964" Number="16" Class="UnitedKingdomPublicGeneralAct">1964 c. 16</Citation>. The Board was established by order (<Citation URI="http://www.legislation.gov.uk/id/uksi/1964/1079" id="c00031" Year="1964" Number="1079" Class="UnitedKingdomStatutoryInstrument">S.I. 1964/1079</Citation>) made under section 1 of the Industrial Training Act 1964. The Industrial Training Act 1964 was repealed by Schedule 4 to the Industrial Training Act <Citation URI="http://www.legislation.gov.uk/id/ukpga/1982/10" id="c00032" Year="1982" Number="10" Class="UnitedKingdomPublicGeneralAct">1982 (c. 10)</Citation> and that Act now makes provision about the Board’s functions.</Text>
+</Para>
+</FootnoteText>
+</Footnote></Footnotes></Legislation>

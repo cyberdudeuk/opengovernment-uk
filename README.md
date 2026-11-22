@@ -1,0 +1,72 @@
+# OpenGovernment UK
+
+One register of the UK state: every public body the official registers know about, **who it answers to, who pays for it and who owns it**, each fact traced to the authoritative source it came from.
+
+**Site:** https://cyberdudeuk.github.io/opengovernment-uk/ · **Status:** pilot, version 0.3.0 · **Licence:** code MIT, data OGL v3.0 (see [LICENCE-DATA.md](LICENCE-DATA.md))
+
+It isn't an official government list and it isn't affiliated with any public body.
+
+## What it holds
+
+| | |
+|---|---|
+| Records | 3,477 bodies (2,824 open): departments, agencies, non-departmental bodies, councils, NHS bodies, devolved bodies, public corporations, Crown Dependencies and Overseas Territories |
+| Accountability | 2,522 links, each naming its source, where in the source and how the names were matched; 2,581 open bodies (91%) traced to an elected body |
+| Money | Government funding and spend (Public Bodies Directory 2023/24); 654 PFI and PF2 contracts with their project companies and investors |
+| Ownership | Companies House controllers, GLEIF consolidation parents, ONS parent companies; trading funds and public corporations |
+| Open standards | W3C ORG, DCAT 3, CSVW, SKOS; **BODS 0.4** (Beneficial Ownership Data Standard) with a public-sector extension |
+
+## Feeds
+
+All served from the site and rebuilt from the same run:
+
+| File | What it is |
+|---|---|
+| `accountability.json` | Links, chains, money, PFI, conflicts, unmatched names and the provenance ledger |
+| `edges.csv` | Every accountability, sponsorship and ownership link with its source |
+| `accountable-owner.csv` | One row per open body: its accountable owner and the chain to it |
+| `ppp.csv` | PFI and PF2 contracts |
+| `bods-0.4.json` | The same tree as 4,209 BODS 0.4 statements, validated against the official schema |
+
+The register's key is the owning register's own code as a CURIE, for example `government-organisation:D303`. Join your list by GOV.UK slug or code first, never by name. The full contract is `feed-contract.json` in the page's downloads.
+
+## How it is built
+
+```
+tools/fetch.py          read every source; write sources/manifest.json with SHA-256 of each file
+tools/build.py          join the sources into data/tree.json (exact cleaned names only; anything else goes to a queue)
+tools/check.py          13 checks; --negative proves each one fails on a deliberate break
+tools/patch_portal.py   build docs/index.html from the 0.2.2 page plus the accountability view
+tools/export_bods.py    emit and validate BODS 0.4 (schema vendored in vendor/bods-schema, commit e8cc3fd)
+tools/reconcile_peers.py  reconcile peer reference lists from the National Data Library catalogue
+tools/refdata.py        reference data lineage, matched against data.gov.uk
+```
+
+Three source files are **not redistributed** here because they name people (the Public Bodies Directory, Companies House controller pages, the PFI register's investors). `fetch.py --private` downloads them; their fingerprints are in `sources/manifest.json`, so a downloaded copy can be checked against the one the build used.
+
+```
+pip install -r requirements.txt
+python tools/check.py && python tools/check.py --negative
+python tools/fetch.py --private && python tools/build.py   # full rebuild
+```
+
+## Running it: effort for one person
+
+| Task | When | Effort |
+|---|---|---|
+| Run the **Refresh** workflow, read the summary, publish if the checks pass | monthly, or when a source changes | about 30 minutes |
+| New editions of the sources: ONS guide (roughly monthly), Estimates and Accounts and WGA orders (yearly), Public Bodies Directory and PFI register (yearly) | as published | 1 to 2 hours each to update the URL in `fetch.py` and review changes |
+| Clear the queue of names that didn't match (884 today) | per release | open-ended; worth 1 to 2 hours a release |
+| Feedback via the GitHub issue form | as it comes | minutes each |
+
+Nothing runs on a schedule: there are no paid services, no secrets and no tokens beyond the read-only one GitHub gives each workflow run.
+
+## Documentation
+
+- [Reference data lineage](documentation/reference-data.md): everything this relies on, everything that relies on it, matched against data.gov.uk
+- [BODS public-sector profile](documentation/bods-public-sector-profile.md)
+- [Defect register](documentation/defect-register.md) and [the case against](documentation/case-against.md)
+
+## Contact
+
+Use the [feedback form](https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=feedback.yml). Please don't include names, email addresses or phone numbers.

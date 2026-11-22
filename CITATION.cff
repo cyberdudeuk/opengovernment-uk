@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this register, please cite it as below."
+title: "OpenGovernment UK: one register of the UK state"
+version: 0.3.0
+date-released: 2026-11-22
+license: MIT
+repository-code: "https://github.com/cyberdudeuk/opengovernment-uk"
+url: "https://cyberdudeuk.github.io/opengovernment-uk/"
+authors:
+  - name: "OpenGovernment UK contributors"
+keywords: [public bodies, reference data, accountability, beneficial ownership, BODS, machinery of government]

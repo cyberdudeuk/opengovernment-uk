@@ -1,0 +1,15 @@
+[project]
+name = "opengovernment-uk"
+version = "0.3.0"
+description = "One register of the UK state: every public body, who it answers to, who pays for it and who owns it, traced to source."
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 420
+target-version = "py311"
+
+[tool.ruff.lint]
+# Pyflakes, pycodestyle errors, bugbear and security (bandit) rules. The build scripts are written as dense
+# one-line pipelines, so the "multiple statements on one line" style rules (E701, E702) and lambda assignment (E731) are off.
+select = ["F", "E", "W", "B", "S"]
+ignore = ["E401", "E501", "E701", "E702", "E731", "S310"]  # S310: urlopen is only ever called with the fixed https source URLs in fetch.py/refdata.py

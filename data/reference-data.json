@@ -1,0 +1,1322 @@
+{
+ "built": "2026-11-22T04:24:15Z",
+ "catalogue": "https://www.data.gov.uk (National Data Library search directory), CKAN package_search",
+ "note": "score = share of the reference item's name words found in the catalogue title; a lead for a person to confirm, not a confirmed match",
+ "upstream": [
+  {
+   "id": "govuk-orgs",
+   "name": "GOV.UK Organisations API",
+   "owner": "Government Digital Service",
+   "used_for": "identity spine: names, types, parents, successors",
+   "kind": "register",
+   "url": "https://www.gov.uk/api/organisations",
+   "catalogue_query": "government organisations GOV.UK",
+   "catalogue_hits": 22488,
+   "candidates": [
+    {
+     "title": "IATI Organisation Identifier for UK government organisations",
+     "publisher": "Foreign, Commonwealth and Development Office (FCDO)",
+     "url": "https://www.data.gov.uk/dataset/3daf2e08-170e-4aa0-850b-bde231a2031a",
+     "modified": "2023-12-06",
+     "score": 0.67
+    },
+    {
+     "title": "https://www.gov.uk/government/publications/dhsc-departmental-spending-over-25000-2018",
+     "publisher": "Department of Health and Social Care",
+     "url": "https://www.data.gov.uk/dataset/916c184e-69d6-447b-9a26-392ed74a4a7f",
+     "modified": "2018-08-30",
+     "score": 0.67
+    },
+    {
+     "title": "https://www.gov.uk/government/publications/dhsc-departmental-spending-over-500-2018",
+     "publisher": "Department of Health and Social Care",
+     "url": "https://www.data.gov.uk/dataset/3f97154b-32ae-486b-93ca-66269534c010",
+     "modified": "2018-08-30",
+     "score": 0.67
+    },
+    {
+     "title": "Organisation Structure - Local Government Transparency Code",
+     "publisher": "North Lincolnshire Council",
+     "url": "https://www.data.gov.uk/dataset/e6e68c42-bec8-4733-a0ec-52ce0a0d9db8",
+     "modified": "2018-04-19",
+     "score": 0.33
+    }
+   ],
+   "best": 0.67
+  },
+  {
+   "id": "ons-pscg",
+   "name": "Public Sector Classification Guide",
+   "owner": "Office for National Statistics",
+   "used_for": "sector, ESA code, sponsor, parent company, controlling unit",
+   "kind": "register",
+   "url": "https://www.ons.gov.uk/methodology/classificationsandstandards/economicstatisticsclassifications/introductiontoeconomicstatisticsclassifications",
+   "catalogue_query": "public sector classification guide",
+   "catalogue_hits": 173,
+   "candidates": [
+    {
+     "title": "National Accounts Sector Classification",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/04e8b6c8-2afb-4eec-ae3b-b7c016f1d2f0",
+     "modified": "2026-07-08",
+     "score": 0.5
+    },
+    {
+     "title": "Historic Seascape Characterisation: The Irish Sea (English sector)",
+     "publisher": "Marine Environmental Data & Information Network",
+     "url": "https://www.data.gov.uk/dataset/d144d2f7-8321-412b-9079-6d7159efe833",
+     "modified": "2024-09-10",
+     "score": 0.25
+    },
+    {
+     "title": "User guide to Home Office crime statistics",
+     "publisher": "Home Office",
+     "url": "https://www.data.gov.uk/dataset/04d64134-4759-498a-a068-f821fc6e03b2",
+     "modified": "2013-08-12",
+     "score": 0.25
+    },
+    {
+     "title": "Town Centre Classification",
+     "publisher": "Torridge District Council",
+     "url": "https://www.data.gov.uk/dataset/574a9ea6-1286-43b3-b7fc-2491c4de7636",
+     "modified": "2026-07-08",
+     "score": 0.25
+    }
+   ],
+   "best": 0.5
+  },
+  {
+   "id": "esa2010",
+   "name": "ESA 2010 institutional sector codes",
+   "owner": "Eurostat / ONS",
+   "used_for": "sector codes on every ONS-classified body",
+   "kind": "codelist",
+   "url": "https://ec.europa.eu/eurostat/web/esa-2010",
+   "catalogue_query": "ESA 2010 sector classification",
+   "catalogue_hits": 7,
+   "candidates": [
+    {
+     "title": "town_centre_classification",
+     "publisher": "Colchester Borough Council",
+     "url": "https://www.data.gov.uk/dataset/15b5de65-8028-4e9f-9bb8-3eee11d99f9a",
+     "modified": "2016-02-10",
+     "score": 0.25
+    },
+    {
+     "title": "Engineering Turnover and Orders",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/6f0fe0c0-2e03-4f1d-a7a3-940a1b49c16e",
+     "modified": "2026-07-08",
+     "score": 0.0
+    },
+    {
+     "title": "UK greenhouse gas emissions: final",
+     "publisher": "Department for Energy Security and Net Zero",
+     "url": "https://www.data.gov.uk/dataset/9568363e-57e5-4c33-9e00-31dc528fcc5a",
+     "modified": "2026-06-25",
+     "score": 0.0
+    },
+    {
+     "title": "Place Name Gazetteer - Scotland",
+     "publisher": "Scottish Government SpatialData.gov.scot",
+     "url": "https://www.data.gov.uk/dataset/4b656c40-af07-49f3-8960-42bf1b05cd44",
+     "modified": "2024-06-19",
+     "score": 0.0
+    }
+   ],
+   "best": 0.25
+  },
+  {
+   "id": "eao",
+   "name": "Estimates and Accounts Order 2026 (S.I. 2026/216)",
+   "owner": "HM Treasury (legislation.gov.uk)",
+   "used_for": "legal accounting boundary: which department answers for a body's money",
+   "kind": "legislation",
+   "url": "https://www.legislation.gov.uk/uksi/2026/216/made",
+   "catalogue_query": "estimates and accounts designation of bodies",
+   "catalogue_hits": 645,
+   "candidates": [
+    {
+     "title": "Environmental Accounts",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/f099c07d-501f-4ced-a952-91edfb42cd7b",
+     "modified": "2026-07-08",
+     "score": 0.25
+    },
+    {
+     "title": "Estimates of Households and Dwellings in Scotland",
+     "publisher": "National Records of Scotland",
+     "url": "https://www.data.gov.uk/dataset/1fd9c94c-edfb-4b72-8298-a2afa554830b",
+     "modified": "2026-07-08",
+     "score": 0.25
+    },
+    {
+     "title": "National Accounts articles",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/92c4b7a1-c426-4842-89b1-95337ab9f677",
+     "modified": "2026-07-08",
+     "score": 0.25
+    },
+    {
+     "title": "UK Environmental Accounts",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/d49e74ac-ef6c-46ef-9a11-edc7cbc730c0",
+     "modified": "2026-07-08",
+     "score": 0.25
+    }
+   ],
+   "best": 0.25
+  },
+  {
+   "id": "eao-ni",
+   "name": "Estimates and Accounts Order (NI) 2026 (S.R. 2026/49)",
+   "owner": "Department of Finance NI (legislation.gov.uk)",
+   "used_for": "the same for Northern Ireland bodies",
+   "kind": "legislation",
+   "url": "https://www.legislation.gov.uk/nisr/2026/49/made",
+   "catalogue_query": "Northern Ireland estimates accounts designation",
+   "catalogue_hits": 175,
+   "candidates": [
+    {
+     "title": "Mid-year population estimates - Northern Ireland",
+     "publisher": "OpenDataNI",
+     "url": "https://www.data.gov.uk/dataset/0f17c4ca-63ae-4cdc-9704-d2754d731893",
+     "modified": "2025-09-23",
+     "score": 0.6
+    },
+    {
+     "title": "Small Area Population Estimates for Northern Ireland",
+     "publisher": "Northern Ireland Statistics and Research Agency",
+     "url": "https://www.data.gov.uk/dataset/9466e1c7-58f3-4445-8523-205f4c5ab961",
+     "modified": "2014-07-01",
+     "score": 0.6
+    },
+    {
+     "title": "Crop Yields and Production Estimates (Northern Ireland)",
+     "publisher": "Department of Agriculture and Rural Development (Northern Ireland)",
+     "url": "https://www.data.gov.uk/dataset/b87721bf-e01e-4f34-91a8-0ba61668190f",
+     "modified": "2014-05-09",
+     "score": 0.6
+    },
+    {
+     "title": "Mid-Year Population Estimates for Northern Ireland",
+     "publisher": "Northern Ireland Statistics and Research Agency",
+     "url": "https://www.data.gov.uk/dataset/dff5ea2d-7725-41cb-ad2e-d1c3d886c7e9",
+     "modified": "2014-06-26",
+     "score": 0.6
+    }
+   ],
+   "best": 0.6
+  },
+  {
+   "id": "wgao",
+   "name": "Whole of Government Accounts (Designation of Bodies) Order 2026",
+   "owner": "HM Treasury (legislation.gov.uk)",
+   "used_for": "which bodies supply data to WGA",
+   "kind": "legislation",
+   "url": "https://www.legislation.gov.uk/uksi/2026/66/made",
+   "catalogue_query": "whole of government accounts",
+   "catalogue_hits": 845,
+   "candidates": [
+    {
+     "title": "Sub-regional Government Accounts (experimental)",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/9a7c52ac-00a0-47de-b8a7-c8c7440f771c",
+     "modified": "2026-07-08",
+     "score": 0.67
+    },
+    {
+     "title": "South Northamptonshire Council's Statement of Accounts",
+     "publisher": "South Northamptonshire Council",
+     "url": "https://www.data.gov.uk/dataset/38d1e221-ae9b-48fb-b751-f4b72441d86e",
+     "modified": "2013-10-26",
+     "score": 0.33
+    },
+    {
+     "title": "SAGE Accounts",
+     "publisher": "The Pensions Regulator",
+     "url": "https://www.data.gov.uk/dataset/5423d766-4b64-4247-8555-294b1dd147cc",
+     "modified": "2013-12-12",
+     "score": 0.33
+    },
+    {
+     "title": "Parking Account",
+     "publisher": "Calderdale Metropolitan Borough Council",
+     "url": "https://www.data.gov.uk/dataset/8684ddac-700d-458f-80e2-ce68ba83494a",
+     "modified": "2026-09-25",
+     "score": 0.0
+    }
+   ],
+   "best": 0.67
+  },
+  {
+   "id": "wga",
+   "name": "Whole of Government Accounts 2024-25, Annexes 1-3",
+   "owner": "HM Treasury",
+   "used_for": "WGA consolidation status per body",
+   "kind": "dataset",
+   "url": "https://www.gov.uk/government/collections/whole-of-government-accounts",
+   "catalogue_query": "whole of government accounts annex",
+   "catalogue_hits": 28,
+   "candidates": [
+    {
+     "title": "Directory of London Businesses",
+     "publisher": "Greater London Authority",
+     "url": "https://www.data.gov.uk/dataset/bf2d8d1b-2aaa-4b6e-a10e-4fae572a1230",
+     "modified": "2026-09-25",
+     "score": 0.0
+    },
+    {
+     "title": "Department for Transport business plan quarterly data summary (QDS)",
+     "publisher": "Department for Transport",
+     "url": "https://www.data.gov.uk/dataset/66b11f8a-a0f0-4ef3-aeac-177932dff8ba",
+     "modified": "2014-05-16",
+     "score": 0.0
+    },
+    {
+     "title": "Civil Service Pension Scheme membership data",
+     "publisher": "Cabinet Office",
+     "url": "https://www.data.gov.uk/dataset/e75e951c-0468-4c30-b1a0-85b08e7b9248",
+     "modified": "2013-12-12",
+     "score": 0.0
+    },
+    {
+     "title": "Defra Business Plan Quarterly Data Summary",
+     "publisher": "Department for Environment, Food and Rural Affairs",
+     "url": "https://www.data.gov.uk/dataset/423597aa-1cee-421c-9938-b954262e6751",
+     "modified": "2016-03-24",
+     "score": 0.0
+    }
+   ],
+   "best": 0.0
+  },
+  {
+   "id": "pbd",
+   "name": "Public Bodies Directory 2023/24",
+   "owner": "Cabinet Office",
+   "used_for": "sponsor, government funding, spend, classification",
+   "kind": "dataset",
+   "url": "https://www.gov.uk/government/collections/public-bodies",
+   "catalogue_query": "public bodies",
+   "catalogue_hits": 551,
+   "candidates": [
+    {
+     "title": "Public Bodies 2014",
+     "publisher": "Cabinet Office",
+     "url": "https://www.data.gov.uk/dataset/d942fd6c-3e88-4c1b-8d5d-c51128e8e00a",
+     "modified": "2015-04-02",
+     "score": 1.0
+    },
+    {
+     "title": "Public Bodies 2013",
+     "publisher": "Cabinet Office",
+     "url": "https://www.data.gov.uk/dataset/c57d2108-47ec-43ae-a19a-e0ac4012a4eb",
+     "modified": "2015-02-16",
+     "score": 1.0
+    },
+    {
+     "title": "Public Bodies 2012",
+     "publisher": "Cabinet Office",
+     "url": "https://www.data.gov.uk/dataset/6fb6ff3a-854b-4e1c-9358-d58927a0e1f2",
+     "modified": "2015-02-16",
+     "score": 1.0
+    },
+    {
+     "title": "BIS public bodies directory: as at 31 March 2010",
+     "publisher": "Department for Business, Innovation and Skills",
+     "url": "https://www.data.gov.uk/dataset/d6896a86-b3ec-47f0-9357-f5c0471a22c6",
+     "modified": "2017-02-03",
+     "score": 1.0
+    }
+   ],
+   "best": 1.0
+  },
+  {
+   "id": "pfi",
+   "name": "Current PFI and PF2 projects (31 March 2025)",
+   "owner": "HM Treasury / NISTA",
+   "used_for": "public-private partnerships: authority, project company, investors, charges",
+   "kind": "dataset",
+   "url": "https://www.gov.uk/government/publications/pfi-and-pfi2-projects-2025-summary-data",
+   "catalogue_query": "PFI PF2 projects",
+   "catalogue_hits": 6203,
+   "candidates": [
+    {
+     "title": "Private Finance Initiative (PFI) Data",
+     "publisher": "HM Treasury",
+     "url": "https://www.data.gov.uk/dataset/ade9b626-885e-4a70-a438-d0b6f991e922",
+     "modified": "2026-07-08",
+     "score": 0.33
+    },
+    {
+     "title": "PFI Business Cases",
+     "publisher": "Data Mill North",
+     "url": "https://www.data.gov.uk/dataset/a1d0d005-eec1-465c-8379-117edd74858b",
+     "modified": "2026-09-25",
+     "score": 0.33
+    },
+    {
+     "title": "Barnet Street Lighting PFI Contract",
+     "publisher": "London Borough of Barnet",
+     "url": "https://www.data.gov.uk/dataset/0fe6078e-1c3c-41cc-925b-9c3cfd4da453",
+     "modified": "2026-09-25",
+     "score": 0.33
+    },
+    {
+     "title": "EU Project: CO2CARE - CO2 Site Closure Assessment Research",
+     "publisher": "British Geological Survey (BGS)",
+     "url": "https://www.data.gov.uk/dataset/d5298a85-d5ee-4557-b369-d9aebe0e69b1",
+     "modified": "2026-11-20",
+     "score": 0.0
+    }
+   ],
+   "best": 0.33
+  },
+  {
+   "id": "tf",
+   "name": "Trading Fund Orders",
+   "owner": "legislation.gov.uk",
+   "used_for": "which operations are trading funds",
+   "kind": "legislation",
+   "url": "https://www.legislation.gov.uk/all?title=Trading%20Fund%20Order",
+   "catalogue_query": "trading fund",
+   "catalogue_hits": 34,
+   "candidates": [
+    {
+     "title": "Bradford Council trade union facility time",
+     "publisher": "City of Bradford Metropolitan District Council",
+     "url": "https://www.data.gov.uk/dataset/5968ae05-4fe7-4133-b859-9d49e0e532a7",
+     "modified": "2018-11-07",
+     "score": 0.0
+    },
+    {
+     "title": "Department of Trade and Industry (DTI) Geophysical and Multibeam Survey 2006/1_SEA8: Strategic Environmental Assessment Area 8: Inner Bristol Channel (29/Mar/2006 to 21/Apr/2006)",
+     "publisher": "British Geological Survey (BGS)",
+     "url": "https://www.data.gov.uk/dataset/c3430bbc-7a60-4d6f-8105-f3a1ca68bf54",
+     "modified": "2026-11-20",
+     "score": 0.0
+    },
+    {
+     "title": "National Accounts articles",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/92c4b7a1-c426-4842-89b1-95337ab9f677",
+     "modified": "2026-07-08",
+     "score": 0.0
+    },
+    {
+     "title": "Defence Science and Technology Laboratory Corporate Plan 2011-16",
+     "publisher": "Defence Science and Technology Laboratory",
+     "url": "https://www.data.gov.uk/dataset/678bc9bf-59db-4796-b9f5-197d5f09e875",
+     "modified": "2026-07-08",
+     "score": 0.0
+    }
+   ],
+   "best": 0.0
+  },
+  {
+   "id": "ch",
+   "name": "Companies House register and persons with significant control",
+   "owner": "Companies House",
+   "used_for": "company numbers; who controls government companies",
+   "kind": "register",
+   "url": "https://find-and-update.company-information.service.gov.uk/",
+   "catalogue_query": "companies house persons with significant control",
+   "catalogue_hits": 38,
+   "candidates": [
+    {
+     "title": "People with significant control (PSC)",
+     "publisher": "Companies House",
+     "url": "https://www.data.gov.uk/dataset/ef221487-73b6-49a4-9fdc-cd87eda50bbc",
+     "modified": "2026-07-08",
+     "score": 0.4
+    },
+    {
+     "title": "Mergers & Acquisitions involving UK companies",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/d2f192e8-a8fd-459d-a0d4-c514cebbe3df",
+     "modified": "2013-12-12",
+     "score": 0.2
+    },
+    {
+     "title": "Impact indicator: housing completions",
+     "publisher": "Ministry of Housing, Communities and Local Government",
+     "url": "https://www.data.gov.uk/dataset/c0d1a47f-9a67-4112-9420-83d439c40ae0",
+     "modified": "2018-02-26",
+     "score": 0.0
+    },
+    {
+     "title": "Impact indicator: housing starts",
+     "publisher": "Ministry of Housing, Communities and Local Government",
+     "url": "https://www.data.gov.uk/dataset/9b0895c4-ddf0-4779-a049-60175c7c44e2",
+     "modified": "2018-02-26",
+     "score": 0.0
+    }
+   ],
+   "best": 0.4
+  },
+  {
+   "id": "gleif",
+   "name": "Global LEI Index, Level 1 and Level 2",
+   "owner": "GLEIF (ISO 17442)",
+   "used_for": "legal entity identifiers; consolidation parents",
+   "kind": "register",
+   "url": "https://www.gleif.org/en/lei-data/gleif-golden-copy",
+   "catalogue_query": "legal entity identifier",
+   "catalogue_hits": 173,
+   "candidates": [
+    {
+     "title": "Defra electronic legal deposit",
+     "publisher": "Department for Environment, Food and Rural Affairs",
+     "url": "https://www.data.gov.uk/dataset/28bec91d-6e1c-4c06-bd8b-f70428497e37",
+     "modified": "2025-04-21",
+     "score": 0.33
+    },
+    {
+     "title": "Labelled data for fine tuning a geological Named Entity Recognition and Entity Relation Extraction model",
+     "publisher": "British Geological Survey (BGS)",
+     "url": "https://www.data.gov.uk/dataset/f3734577-1483-4105-8e32-3adf2cb11724",
+     "modified": "2026-11-20",
+     "score": 0.33
+    },
+    {
+     "title": "Section 106-Legal agreement",
+     "publisher": "South Norfolk District Council",
+     "url": "https://www.data.gov.uk/dataset/8c9e257b-4eac-4548-aa77-fe0a72025aad",
+     "modified": "2014-02-22",
+     "score": 0.33
+    },
+    {
+     "title": "Packaging Regulations - Producers - Registered Entities only",
+     "publisher": "Environment Agency",
+     "url": "https://www.data.gov.uk/dataset/8a8af563-188a-414f-80c7-482e2f3da652",
+     "modified": "2026-09-18",
+     "score": 0.0
+    }
+   ],
+   "best": 0.33
+  },
+  {
+   "id": "nhs-ods",
+   "name": "NHS Organisation Data Service",
+   "owner": "NHS England",
+   "used_for": "codes for NHS bodies",
+   "kind": "register",
+   "url": "https://digital.nhs.uk/services/organisation-data-service",
+   "catalogue_query": "NHS organisation data service",
+   "catalogue_hits": 1181,
+   "candidates": [
+    {
+     "title": "Details of NHS organisations in England from Organisation Data Service",
+     "publisher": "NHS Digital",
+     "url": "https://www.data.gov.uk/dataset/afcd5cb3-9598-4485-8156-475260fef9aa",
+     "modified": "2017-10-19",
+     "score": 1.0
+    },
+    {
+     "title": "Details of independent and non-NHS provider organisations in England from Organisation Data Service",
+     "publisher": "NHS Digital",
+     "url": "https://www.data.gov.uk/dataset/2afa5ac5-5786-4c2b-bc30-292a2015c348",
+     "modified": "2017-10-19",
+     "score": 1.0
+    },
+    {
+     "title": "NHS Volunteering Find and Apply Service (Organisation Users) - key performance indicators",
+     "publisher": "NHS Business Services Authority",
+     "url": "https://www.data.gov.uk/dataset/211571a2-dbea-4605-8c52-70f3649e85a1",
+     "modified": "2026-08-03",
+     "score": 1.0
+    },
+    {
+     "title": "Details of miscellaneous organisations from Organisation Data Service",
+     "publisher": "NHS Digital",
+     "url": "https://www.data.gov.uk/dataset/1d2713bb-8117-4d93-98b8-1e19dc0fb574",
+     "modified": "2017-10-19",
+     "score": 0.67
+    }
+   ],
+   "best": 1.0
+  },
+  {
+   "id": "la-codes",
+   "name": "Local authority codes (GSS / ONS geography)",
+   "owner": "Office for National Statistics",
+   "used_for": "codes for councils; GSS codes",
+   "kind": "codelist",
+   "url": "https://geoportal.statistics.gov.uk/",
+   "catalogue_query": "local authority district codes",
+   "catalogue_hits": 2246,
+   "candidates": [
+    {
+     "title": "Former Local Authority Districts",
+     "publisher": "Ministry of Housing, Communities and Local Government",
+     "url": "https://www.data.gov.uk/dataset/7c90716d-4f73-410b-b68b-aa1942f53ee8",
+     "modified": "2017-01-20",
+     "score": 0.67
+    },
+    {
+     "title": "Local Authority Districts (April 1991) Names and Codes in EW",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/805500be-aa02-4a0e-8368-fb52d8d5047b",
+     "modified": "2024-11-24",
+     "score": 0.67
+    },
+    {
+     "title": "Local Authority Districts (December 2016) Names and Codes in the UK",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/724cb887-c270-4e36-8fbf-edbed4524b01",
+     "modified": "2024-11-24",
+     "score": 0.67
+    },
+    {
+     "title": "Local Authority Districts (April 2015) Names and Codes in the UK",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/69051046-3e61-4cf1-8027-497b520626a8",
+     "modified": "2024-11-24",
+     "score": 0.67
+    }
+   ],
+   "best": 0.67
+  },
+  {
+   "id": "charities",
+   "name": "Charity registers (England and Wales, Scotland, Northern Ireland)",
+   "owner": "Charity Commission, OSCR, CCNI",
+   "used_for": "charity numbers of bodies that are charities",
+   "kind": "register",
+   "url": "https://register-of-charities.charitycommission.gov.uk/",
+   "catalogue_query": "register of charities",
+   "catalogue_hits": 2018,
+   "candidates": [
+    {
+     "title": "Register of Charities",
+     "publisher": "OpenDataNI",
+     "url": "https://www.data.gov.uk/dataset/4e5deb54-0485-4cc5-84a3-a72f0d8d3ef3",
+     "modified": "2026-07-08",
+     "score": 1.0
+    },
+    {
+     "title": "Registered Charities",
+     "publisher": "Cambridgeshire Insight",
+     "url": "https://www.data.gov.uk/dataset/6f68d3b4-38df-4b5b-943e-044dea8c0955",
+     "modified": "2018-08-23",
+     "score": 1.0
+    },
+    {
+     "title": "Repayments of Tax to Charities",
+     "publisher": "HM Revenue and Customs",
+     "url": "https://www.data.gov.uk/dataset/2c4797e0-b912-4fc2-863c-97ebc91c1be6",
+     "modified": "2014-06-27",
+     "score": 1.0
+    },
+    {
+     "title": "Gift Aid Repayments to Charities",
+     "publisher": "HM Revenue and Customs",
+     "url": "https://www.data.gov.uk/dataset/0c7e33f1-9fbe-453b-81b9-00245557f97d",
+     "modified": "2014-06-27",
+     "score": 1.0
+    }
+   ],
+   "best": 1.0
+  },
+  {
+   "id": "wikidata",
+   "name": "Wikidata",
+   "owner": "Wikimedia Foundation",
+   "used_for": "corroboration and cross-identifiers",
+   "kind": "register",
+   "url": "https://www.wikidata.org/",
+   "catalogue_query": null,
+   "catalogue_hits": 0,
+   "candidates": [],
+   "best": null,
+   "catalogue_note": "not a UK government dataset; not expected in the catalogue"
+  },
+  {
+   "id": "dgu-publishers",
+   "name": "data.gov.uk publishers",
+   "owner": "National Data Library / GDS",
+   "used_for": "link from each body to its published datasets",
+   "kind": "register",
+   "url": "https://www.data.gov.uk/api/action/organization_list",
+   "catalogue_query": "data.gov.uk publishers organisations",
+   "catalogue_hits": 11841,
+   "candidates": [
+    {
+     "title": "Data Requests at data.gov.uk",
+     "publisher": "Cabinet Office",
+     "url": "https://www.data.gov.uk/dataset/c79fb418-898c-406d-b1a7-7b4aaeff521d",
+     "modified": "2026-07-08",
+     "score": 0.33
+    },
+    {
+     "title": "Meta-data for data.gov.uk datasets",
+     "publisher": "Government Digital Service",
+     "url": "https://www.data.gov.uk/dataset/b5e4be7e-6c36-41b6-9d48-cae195c32e34",
+     "modified": "2026-07-08",
+     "score": 0.33
+    },
+    {
+     "title": "List of .gov.uk domain names",
+     "publisher": "Cabinet Office",
+     "url": "https://www.data.gov.uk/dataset/6eb57d6e-c4cb-4f54-ad6f-f128fd1399d1",
+     "modified": "2018-01-09",
+     "score": 0.33
+    },
+    {
+     "title": "IATI Organisation Identifier for UK government organisations",
+     "publisher": "Foreign, Commonwealth and Development Office (FCDO)",
+     "url": "https://www.data.gov.uk/dataset/3daf2e08-170e-4aa0-850b-bde231a2031a",
+     "modified": "2023-12-06",
+     "score": 0.33
+    }
+   ],
+   "best": 0.33
+  },
+  {
+   "id": "iso3166",
+   "name": "ISO 3166-2:GB subdivision codes",
+   "owner": "ISO / ONS",
+   "used_for": "nation codes (GB-ENG, GB-SCT, GB-WLS, GB-NIR)",
+   "kind": "codelist",
+   "url": "https://www.iso.org/obp/ui/#iso:code:3166:GB",
+   "catalogue_query": "country nation codes",
+   "catalogue_hits": 2290,
+   "candidates": [
+    {
+     "title": "Countries (December 2015) Names and Codes in the UK",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/095c0f3a-dfba-45bc-9108-85b9e7493b5d",
+     "modified": "2025-08-11",
+     "score": 0.0
+    },
+    {
+     "title": "Countries (December 2016) Names and Codes in the UK",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/d5db7085-5916-4512-b5b1-22e7a103ad7a",
+     "modified": "2024-11-24",
+     "score": 0.0
+    },
+    {
+     "title": "Countries (December 2017) Names and Codes in the UK",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/a1f48e69-17f8-4c58-990f-17b030dfde9b",
+     "modified": "2024-11-24",
+     "score": 0.0
+    },
+    {
+     "title": "Countries (December 2024) Names and Codes in the UK",
+     "publisher": "Office for National Statistics",
+     "url": "https://www.data.gov.uk/dataset/935cc8e7-8e7b-4680-a730-a219ddff90cf",
+     "modified": "2025-01-12",
+     "score": 0.0
+    }
+   ],
+   "best": 0.0
+  },
+  {
+   "id": "org-id",
+   "name": "org-id.guide identifier schemes",
+   "owner": "Open Data Services",
+   "used_for": "identifier prefixes in the BODS export (GB-COH, GB-CHC …)",
+   "kind": "identifier scheme",
+   "url": "https://org-id.guide/",
+   "catalogue_query": null,
+   "catalogue_hits": 0,
+   "candidates": [],
+   "best": null,
+   "catalogue_note": "not a UK government dataset; not expected in the catalogue"
+  },
+  {
+   "id": "bods",
+   "name": "Beneficial Ownership Data Standard 0.4 codelists",
+   "owner": "Open Ownership",
+   "used_for": "entityType and interestType codes in the BODS export",
+   "kind": "codelist",
+   "url": "https://standard.openownership.org/",
+   "catalogue_query": null,
+   "catalogue_hits": 0,
+   "candidates": [],
+   "best": null,
+   "catalogue_note": "not a UK government dataset; not expected in the catalogue"
+  },
+  {
+   "id": "govs",
+   "name": "Government Functional Standards (GovS 001-015)",
+   "owner": "Cabinet Office",
+   "used_for": "back-office function flags (0.4)",
+   "kind": "codelist",
+   "url": "https://www.gov.uk/government/collections/functional-standards",
+   "catalogue_query": "functional standards",
+   "catalogue_hits": 41,
+   "candidates": [
+    {
+     "title": "National Occupational Standards (NOS) database",
+     "publisher": "UK Commission for Employment and Skills",
+     "url": "https://www.data.gov.uk/dataset/b4053024-bbf7-4d64-a5b9-739890da5d01",
+     "modified": "2016-02-10",
+     "score": 0.5
+    },
+    {
+     "title": "Social Housing Asset Data",
+     "publisher": "Salford City Council",
+     "url": "https://www.data.gov.uk/dataset/9a85a15f-42c6-4a7e-a358-840522a1488b",
+     "modified": "2026-07-08",
+     "score": 0.0
+    },
+    {
+     "title": "Council Constitution",
+     "publisher": "Salford City Council",
+     "url": "https://www.data.gov.uk/dataset/85ceecb7-77ba-451d-877e-88063e6dad08",
+     "modified": "2026-07-08",
+     "score": 0.0
+    },
+    {
+     "title": "Salford City Council Trade Union Facility Time",
+     "publisher": "Salford City Council",
+     "url": "https://www.data.gov.uk/dataset/b72dc420-bd6d-4bf5-b1d1-1abc773f268f",
+     "modified": "2026-07-08",
+     "score": 0.0
+    }
+   ],
+   "best": 0.5
+  }
+ ],
+ "downstream": [
+  {
+   "id": "ana-anatomy-of-government",
+   "app": "ANA: Anatomy of Government",
+   "holds_now": "its own anatomy of departments and arm's-length bodies",
+   "reads": "id, name, family, parents, ids.govuk_slug",
+   "status": "proposed"
+  },
+  {
+   "id": "govcrm",
+   "app": "GovCRM",
+   "holds_now": "party-data.js (organisations as parties)",
+   "reads": "id as party key; name; parents",
+   "status": "proposed"
+  },
+  {
+   "id": "measr-data-asset-register",
+   "app": "MEASR data asset register",
+   "holds_now": "uk-gov-orgs.json (1,176 organisations), org-resolution.json",
+   "reads": "id, name, ids.govuk_slug, joins",
+   "status": "proposed"
+  },
+  {
+   "id": "mog-navigator-and-the-mog-canon",
+   "app": "MoG Navigator and the MoG canon",
+   "holds_now": "mog-canon.json",
+   "reads": "mog-changes.json as its change log; superseding links",
+   "status": "proposed"
+  },
+  {
+   "id": "cadastre",
+   "app": "Cadastre",
+   "holds_now": "derived organisation feeds",
+   "reads": "id, name, family, nations",
+   "status": "proposed"
+  },
+  {
+   "id": "aim-government-data-directorate-pmo-portal",
+   "app": "AIM Government Data Directorate PMO portal",
+   "holds_now": "org-chart.js",
+   "reads": "id, name, parents",
+   "status": "proposed"
+  },
+  {
+   "id": "github-repos-asset-catalogue",
+   "app": "GitHub Repos Asset Catalogue",
+   "holds_now": "organisation names and GOV.UK slugs per GitHub account",
+   "reads": "ids.github, ids.govuk_slug",
+   "status": "proposed"
+  },
+  {
+   "id": "government-technology-intelligence",
+   "app": "Government Technology Intelligence",
+   "holds_now": "organisation-level scores",
+   "reads": "id, name, family",
+   "status": "proposed"
+  },
+  {
+   "id": "dam-policy-returns-sharepoint-reference-list-and-dataverse",
+   "app": "DAM Policy returns: SharePoint reference list and Dataverse",
+   "holds_now": "data/reference-organisations.csv (308 in-scope bodies), DAM Reference Organisations list, dam_Organisation table",
+   "reads": "id, name, accountable_owner, answers_to, wga, ids.govuk_slug",
+   "status": "adopting (0.3.0)"
+  },
+  {
+   "id": "data-interoperability-atlas",
+   "app": "Data Interoperability Atlas",
+   "holds_now": "estate owners by GOV.UK slug",
+   "reads": "ids.govuk_slug, id",
+   "status": "proposed"
+  },
+  {
+   "id": "cda-register-and-cda-estate-command-dashboard",
+   "app": "CDA register and CDA Estate Command Dashboard",
+   "holds_now": "publishing-body names and WGA status per return",
+   "reads": "id, accountable_owner, wga (accountability.json)",
+   "status": "proposed"
+  },
+  {
+   "id": "dam-insight",
+   "app": "DAM Insight",
+   "holds_now": "organisation names on returns",
+   "reads": "id, name, accountable_owner",
+   "status": "proposed"
+  },
+  {
+   "id": "social-care-legacy-exit-portal",
+   "app": "Social Care Legacy Exit portal",
+   "holds_now": "council and NHS body names",
+   "reads": "id, ids.local_authority, ids.nhs_ods, answers_to",
+   "status": "proposed"
+  },
+  {
+   "id": "portfolio-portal-government-data-directorate",
+   "app": "Portfolio portal (Government Data Directorate)",
+   "holds_now": "departments and bodies in its portfolio",
+   "reads": "id, name, accountable_owner",
+   "status": "proposed"
+  },
+  {
+   "id": "dcat-ap-uk",
+   "app": "dcat-ap-uk",
+   "holds_now": "publisher URIs",
+   "reads": "id as dct:publisher, state.jsonld",
+   "status": "proposed"
+  }
+ ],
+ "peers": [
+  {
+   "query": "organisation identifier government",
+   "title": "IATI Organisation Identifier for UK government organisations",
+   "publisher": "Foreign, Commonwealth and Development Office (FCDO)",
+   "url": "https://www.data.gov.uk/dataset/3daf2e08-170e-4aa0-850b-bde231a2031a",
+   "modified": "2023-12-06",
+   "formats": [
+    "ODS"
+   ],
+   "resources": [
+    "https://assets.publishing.service.gov.uk/media/656a277f1104cf0013fa73cf/iati-organisation-identifiers.ods"
+   ]
+  },
+  {
+   "query": "organisation identifier government",
+   "title": "Organisation Structure - Local Government Transparency Code",
+   "publisher": "North Lincolnshire Council",
+   "url": "https://www.data.gov.uk/dataset/e6e68c42-bec8-4733-a0ec-52ce0a0d9db8",
+   "modified": "2018-04-19",
+   "formats": [
+    "CSV"
+   ],
+   "resources": [
+    "http://www.northlincs.gov.uk/EasySiteWeb/GatewayLink.aspx?alId=36928"
+   ]
+  },
+  {
+   "query": "organisation identifier government",
+   "title": "Identified Residential Areas",
+   "publisher": "City of London",
+   "url": "https://www.data.gov.uk/dataset/41d0b2f0-24ac-4142-88ad-0ec6b5fcf38b",
+   "modified": "2024-04-27",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "organisation identifier government",
+   "title": "Company identifiers (URIs)",
+   "publisher": "Companies House",
+   "url": "https://www.data.gov.uk/dataset/5a33338a-e142-4f05-9458-ca7283f410b3",
+   "modified": "2022-05-30",
+   "formats": [
+    "CSV",
+    "HTML",
+    "JSON",
+    "PDF",
+    "RDF",
+    "XML"
+   ],
+   "resources": [
+    "https://data.companieshouse.gov.uk/doc/company/02050399.json",
+    "https://data.companieshouse.gov.uk/doc/company/02050399.csv"
+   ]
+  },
+  {
+   "query": "organisation identifier government",
+   "title": "Marine Management Organisation (MMO) Government Procurement Card spend - transactions over £500",
+   "publisher": "Department for Environment, Food and Rural Affairs",
+   "url": "https://www.data.gov.uk/dataset/ccca8ab2-b329-4c8c-b47d-634cd0cd97a5",
+   "modified": "2014-07-21",
+   "formats": [
+    "CSV"
+   ],
+   "resources": [
+    "http://data.defra.gov.uk/GPC/MMO-Qtr1-2011-12-GPC-data.csv",
+    "http://data.defra.gov.uk/GPC/MMO-Qtr2-2011-12-GPC-data.csv",
+    "http://data.defra.gov.uk/GPC/MMO-Qtr3-2011-12-GPC-data.csv"
+   ]
+  },
+  {
+   "query": "organisation identifier government",
+   "title": "Grants to voluntary, community and social enterprise organisations - Local Government Transparency Code",
+   "publisher": "North Lincolnshire Council",
+   "url": "https://www.data.gov.uk/dataset/cf725d50-6535-4f8b-bc98-5ab01aa866a7",
+   "modified": "2018-04-19",
+   "formats": [
+    "CSV"
+   ],
+   "resources": [
+    "http://www.northlincs.gov.uk/EasySiteWeb/GatewayLink.aspx?alId=36905"
+   ]
+  },
+  {
+   "query": "public bodies list",
+   "title": "IPS research publications list",
+   "publisher": "Identity & Passport Service",
+   "url": "https://www.data.gov.uk/dataset/3f336752-6b0a-483a-a8e4-a2637e720abe",
+   "modified": "2014-05-10",
+   "formats": [
+    "HTML"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public bodies list",
+   "title": "APHA Staff Publication List 2025",
+   "publisher": "Animal and Plant Health Agency",
+   "url": "https://www.data.gov.uk/dataset/64ba25ae-70a5-473e-bd09-9f84b9c5cceb",
+   "modified": "2026-03-11",
+   "formats": [
+    "PDF"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public bodies list",
+   "title": "APHA Staff Publications List 2024",
+   "publisher": "Animal and Plant Health Agency",
+   "url": "https://www.data.gov.uk/dataset/a9fa31e5-b99a-4b92-af8d-c635302d32fe",
+   "modified": "2025-07-08",
+   "formats": [
+    "PDF"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public bodies list",
+   "title": "APHA Staff Publications List 2023",
+   "publisher": "Animal and Plant Health Agency",
+   "url": "https://www.data.gov.uk/dataset/b5d8b099-0d46-4b43-85bd-e926070319fc",
+   "modified": "2025-07-08",
+   "formats": [
+    "PDF"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public bodies list",
+   "title": "Locally Listed Assets (SDC) (Public)",
+   "publisher": "Sevenoaks District Council",
+   "url": "https://www.data.gov.uk/dataset/f8fb64dc-2ae9-4210-bc58-47d9e77998e6",
+   "modified": "2026-09-18",
+   "formats": [
+    "ARCGIS GEOSERVICES REST API",
+    "CSV",
+    "GEOJSON",
+    "HTML",
+    "KML",
+    "ZIP"
+   ],
+   "resources": [
+    "https://gis-sevenoaks.opendata.arcgis.com/api/download/v1/items/6b681ac39b41457898db8aa5459b78d7/csv?layers=10"
+   ]
+  },
+  {
+   "query": "public bodies list",
+   "title": "APHA Staff Publications List 2014",
+   "publisher": "Animal and Plant Health Agency",
+   "url": "https://www.data.gov.uk/dataset/5b937732-c088-43ed-805d-efa1dc60dd01",
+   "modified": "2016-03-24",
+   "formats": [
+    "CSV"
+   ],
+   "resources": [
+    "http://data.defra.gov.uk/Agriculture/APHA0151-Library_Staff_Publications_2014.csv"
+   ]
+  },
+  {
+   "query": "government organisations register",
+   "title": "Government Grants Register",
+   "publisher": "Cabinet Office",
+   "url": "https://www.data.gov.uk/dataset/3e9a7045-8f37-4490-b6b5-0f38a4a74e16",
+   "modified": "2017-01-20",
+   "formats": [
+    "CSV",
+    "PDF"
+   ],
+   "resources": [
+    "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/405234/2013-14_Government_Grants.csv",
+    "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/502415/Grants_Register.February16.csv"
+   ]
+  },
+  {
+   "query": "government organisations register",
+   "title": "Marine Management Organisation Evidence Project Register",
+   "publisher": "Marine Management Organisation",
+   "url": "https://www.data.gov.uk/dataset/03c5b260-19d8-45e9-a7dd-fc4e09df017e",
+   "modified": "2016-04-21",
+   "formats": [
+    "CSV",
+    "HTML"
+   ],
+   "resources": [
+    "http://www.gov.uk/government/uploads/system/uploads/attachment_data/file/486966/Evidence_Project_Register.csv"
+   ]
+  },
+  {
+   "query": "government organisations register",
+   "title": "Marine Management Organisation Master Data Register",
+   "publisher": "Marine Management Organisation",
+   "url": "https://www.data.gov.uk/dataset/f71fb9f5-d440-40fc-9f63-f4eda2d45d4d",
+   "modified": "2016-04-20",
+   "formats": [
+    "CSV",
+    "HTML"
+   ],
+   "resources": [
+    "http://www.gov.uk/government/uploads/system/uploads/attachment_data/file/486673/Master_Data_Register.csv"
+   ]
+  },
+  {
+   "query": "government organisations register",
+   "title": "Department of Finance Information Asset Register",
+   "publisher": "OpenDataNI",
+   "url": "https://www.data.gov.uk/dataset/ea9bf56e-a73c-4e91-a0d6-1c9e68dd54eb",
+   "modified": "2026-07-08",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "local authority register codes",
+   "title": "Local Authority Eng Register",
+   "publisher": "Ministry of Housing, Communities and Local Government",
+   "url": "https://www.data.gov.uk/dataset/05d3b10a-6670-4643-9c53-7efc98775c8d",
+   "modified": "2026-07-08",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "local authority register codes",
+   "title": "Local authority sct register",
+   "publisher": "Scottish Government",
+   "url": "https://www.data.gov.uk/dataset/e138a2a5-a9c3-4bd7-a1de-c2ce40915d30",
+   "modified": "2026-07-08",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "local authority register codes",
+   "title": "Local Authority Data Registers",
+   "publisher": "Food Standards Agency",
+   "url": "https://www.data.gov.uk/dataset/58428e98-a61a-4879-b935-8441307b3761",
+   "modified": "2026-06-26",
+   "formats": [
+    ".CSV",
+    "CSV"
+   ],
+   "resources": [
+    "https://fsaopendata.blob.core.windows.net/opendatacatalog/InterventionType(FHonly).csv",
+    "https://fsaopendata.blob.core.windows.net/opendatacatalog/InterventionReason(FHonly).csv",
+    "https://fsaopendata.blob.core.windows.net/opendatacatalog/TypeofFood&MethodofHandling(FHonly).csv"
+   ]
+  },
+  {
+   "query": "local authority register codes",
+   "title": "Local Authority Districts (April 1991) Names and Codes in EW",
+   "publisher": "Office for National Statistics",
+   "url": "https://www.data.gov.uk/dataset/805500be-aa02-4a0e-8368-fb52d8d5047b",
+   "modified": "2024-11-24",
+   "formats": [
+    "ARCGIS GEOSERVICES REST API",
+    "CSV",
+    "GEOJSON",
+    "HTML",
+    "KML",
+    "ZIP"
+   ],
+   "resources": [
+    "https://open-geography-portalx-ons.hub.arcgis.com/api/download/v1/items/8f5006db79f94b2eba0f09581f4a234b/csv?layers=0"
+   ]
+  },
+  {
+   "query": "local authority register codes",
+   "title": "Local Authority Land",
+   "publisher": "London Borough of Camden",
+   "url": "https://www.data.gov.uk/dataset/5e6994be-d539-448f-b325-f689c2e0f198",
+   "modified": "2026-09-25",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "local authority register codes",
+   "title": "Local Authority Districts (December 2016) Names and Codes in the UK",
+   "publisher": "Office for National Statistics",
+   "url": "https://www.data.gov.uk/dataset/724cb887-c270-4e36-8fbf-edbed4524b01",
+   "modified": "2024-11-24",
+   "formats": [
+    "ARCGIS GEOSERVICES REST API",
+    "CSV",
+    "GEOJSON",
+    "HTML",
+    "KML",
+    "ZIP"
+   ],
+   "resources": [
+    "https://open-geography-portalx-ons.hub.arcgis.com/api/download/v1/items/2e8b9cb89ab9463993f320af38bc9a19/csv?layers=0"
+   ]
+  },
+  {
+   "query": "arm's length bodies",
+   "title": "Tax Arrangements of public sector employees – data from DCMS arm’s length bodies",
+   "publisher": "Department for Digital, Culture, Media and Sport",
+   "url": "https://www.data.gov.uk/dataset/5be500b0-b0e8-4a21-8e9f-fab453ca5479",
+   "modified": "2013-12-04",
+   "formats": [
+    "XLS"
+   ],
+   "resources": [
+    "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/70625/tax_arrangements-dcms-data-2012.xls"
+   ]
+  },
+  {
+   "query": "arm's length bodies",
+   "title": "Official Development Assistance (ODA) Arms Length Bodies and Soft Power Programmes",
+   "publisher": "Foreign and Commonwealth Office",
+   "url": "https://www.data.gov.uk/dataset/98df2329-432d-4c3a-9c98-863392ea0401",
+   "modified": "2026-07-08",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "arm's length bodies",
+   "title": "Ministry of Justice - Arms Length Body - GPC transactions of £500 and above",
+   "publisher": "Ministry of Justice",
+   "url": "https://www.data.gov.uk/dataset/0bbd58e0-df93-425d-9251-d000e9bc948e",
+   "modified": "2014-01-10",
+   "formats": [
+    "CSV"
+   ],
+   "resources": [
+    "http://www.justice.gov.uk/downloads/information-access-rights/transparency-data/moj/april-June-2011-alb-gpc-data.csv",
+    "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/219693/july-september-2011-alb-gpc-data.csv",
+    "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/219694/october11-january12-alb-gpc-data.csv"
+   ]
+  },
+  {
+   "query": "arm's length bodies",
+   "title": "Greening Government data for DCLG and Arms' Length Bodies [also DfE]",
+   "publisher": "Ministry of Housing, Communities and Local Government",
+   "url": "https://www.data.gov.uk/dataset/bb4e8c6f-8bc8-4d54-93cb-a7a7bd343370",
+   "modified": "2013-12-19",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "arm's length bodies",
+   "title": "Spend over £25,000 in the Ministry of Justice Arms-Length Bodies",
+   "publisher": "Ministry of Justice",
+   "url": "https://www.data.gov.uk/dataset/e62c7888-5b44-46a5-a888-65bd0660b9a7",
+   "modified": "2013-08-12",
+   "formats": [
+    "CSV/ZIP",
+    "ZIP"
+   ],
+   "resources": []
+  },
+  {
+   "query": "arm's length bodies",
+   "title": "Spend over £25,000 in the Department for Transport and its arms-length bodies",
+   "publisher": "Department for Transport",
+   "url": "https://www.data.gov.uk/dataset/804be0c6-ae01-4899-bbb9-2317dff1a4f9",
+   "modified": "2026-10-29",
+   "formats": [
+    ".CSV",
+    "CSV",
+    "XLS",
+    "XLX"
+   ],
+   "resources": [
+    "http://webarchive.nationalarchives.gov.uk/20121204163126/http://data.dft.gov.uk/departmental-monthly-spend-over-500-in-value/dft-monthly-spend-april2009march2010.csv",
+    "http://webarchive.nationalarchives.gov.uk/20121204163126/http://data.dft.gov.uk/departmental-monthly-spend-over-500-in-value/dft-monthly-spend-20100405.csv",
+    "http://webarchive.nationalarchives.gov.uk/20121204163126/http://data.dft.gov.uk/departmental-monthly-spend-over-500-in-value/dft-monthly-spend-201005.csv"
+   ]
+  },
+  {
+   "query": "public sector organisations",
+   "title": "Public Sector Productivity Estimates: Total Public Sector",
+   "publisher": "Office for National Statistics",
+   "url": "https://www.data.gov.uk/dataset/72409bf9-8e9e-4098-932f-73a0dcbc0297",
+   "modified": "2026-07-08",
+   "formats": [],
+   "resources": []
+  },
+  {
+   "query": "public sector organisations",
+   "title": "Grants to third sector organisations",
+   "publisher": "Data Mill North",
+   "url": "https://www.data.gov.uk/dataset/89d360d8-a6ec-438c-86e9-d78bb30a190e",
+   "modified": "2026-09-25",
+   "formats": [
+    "DOC",
+    "PDF"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public sector organisations",
+   "title": "Public Sector Finances",
+   "publisher": "Office for National Statistics",
+   "url": "https://www.data.gov.uk/dataset/ee59f8e5-5103-43d4-8c32-dce0a5978a09",
+   "modified": "2026-07-08",
+   "formats": [
+    "HTML",
+    "HTMLHTML"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public sector organisations",
+   "title": "Public Sector Statistics",
+   "publisher": "Office for National Statistics",
+   "url": "https://www.data.gov.uk/dataset/546d00b0-f44a-4ea6-bf77-7dad9f64abd9",
+   "modified": "2026-07-08",
+   "formats": [
+    "HTML"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public sector organisations",
+   "title": "Public Sector Employment",
+   "publisher": "Office for National Statistics",
+   "url": "https://www.data.gov.uk/dataset/a7affd12-23e9-49cc-b2e9-da7052faaf62",
+   "modified": "2026-07-08",
+   "formats": [
+    "HTML"
+   ],
+   "resources": []
+  },
+  {
+   "query": "public sector organisations",
+   "title": "Public Sector Finances",
+   "publisher": "HM Treasury",
+   "url": "https://www.data.gov.uk/dataset/b1e67a88-db41-4fbd-ae7c-f502276e1ef1",
+   "modified": "2026-07-08",
+   "formats": [],
+   "resources": []
+  }
+ ],
+ "self_in_catalogue": []
+}

@@ -1,0 +1,2431 @@
+{
+"21380016IP5GGQAJZO75": {
+"direct": {
+"lei": "ECTRVYYCEF89VWYS6K36",
+"name": "HIS MAJESTY'S TREASURY"
+},
+"ultimate": {
+"lei": "ECTRVYYCEF89VWYS6K36",
+"name": "HIS MAJESTY'S TREASURY"
+}
+},
+"2138001GJLVNBVEZNO72": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138001O5BVLNHAHR567": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138001RASSQ985IFS28": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"2138001RP94VNNZVWD82": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138001VZLSHCNL1UK06": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138002DWZ3WEO2L8Q94": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138002QEAUKYEC7DK67": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138002SX6YPK9ROQ486": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"21380035SWZWR9W1W968": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138003BB7GLH3GU8D88": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138003EUVPJRRBEPW94": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"2138003IBKD94DW6O488": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138003J84WMS7T8GY40": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138004FBJB26Y41X756": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138004IH71EBWDZKM88": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138004MSTEC2UCYHR15": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138004Q14AQ8NHXMU02": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"21380055NK2HQK5OLT03": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800577HLO2Y3O7V91": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380059DZ8PVILFOB92": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138005CJ4PNLS79AN05": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138005E4IKGW58LR753": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138005ENOZ7TIPY1I02": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138005K94H993IPUZ54": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138005LF5E4PWVUN633": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138005RC2ZPUTWVMI60": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"2138005US35QMBBWUJ57": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138005Y2RPKPWLN6G23": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380061OPSVF67PEC56": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800649Z6DNVRP7680": {
+"direct": {
+"exception": "NATURAL_PERSONS"
+},
+"ultimate": {
+"exception": "NATURAL_PERSONS"
+}
+},
+"2138006CSAW5BQS1PD53": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138006FP4OFDEQ82882": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"2138006U8317ETG5CF63": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380073CLFDFBKQSO35": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380073PVYV5ARIZ507": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380074EP1YUC9HEB04": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"2138007CMXYR5LWQGM33": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138007G4HLU8PR42507": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138007HFHPCYXRGRR46": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"2138007NZREITRCY9E42": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138007Q2KFHRRMKMO98": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380084CQXBRPPV7Z37": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380088N6RUYIZ7NL83": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138008DPM76EFTRFW78": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138008GSNH2EM5YC581": {
+"direct": {
+"exception": "NO_LEI"
+},
+"ultimate": {
+"exception": "NO_LEI"
+}
+},
+"2138008ITPI6BTT79L87": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138008M9YRUARG7X863": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138008NJBMYDLPH5T16": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"21380093ME1SWB5H2B72": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138009CDPXJ73GPPT57": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138009DVGRY25FJT514": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138009HSGHVKM6MC241": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138009LJY6XDVDJJS82": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138009PW1UE6NCCFJ06": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2138009WWSMKCJ2CKC31": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800A1U3CW3A3VME22": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800A6ZAE9T4W4ND40": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ABWBR98YX4C234": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ACIV495GVJ8759": {
+"direct": {
+"lei": "ECTRVYYCEF89VWYS6K36",
+"name": "HIS MAJESTY'S TREASURY"
+},
+"ultimate": {
+"lei": "ECTRVYYCEF89VWYS6K36",
+"name": "HIS MAJESTY'S TREASURY"
+}
+},
+"213800AP2GXFJHX8MP25": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ARIKNELP2TIL51": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800AZO3L1IB98BB84": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800AZUQRQZS5L6Y43": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800B3OK911KE7L262": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800B43QDS5MVUYF65": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800BA928FAOI4WE08": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800BB6QPN5VC5B998": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800BPCBF5HNEY3R49": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800BR5UKB5YK25103": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800BR6WXSK3ZVB815": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800C4M7QS8UMGV568": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800C9MB7USYFKYU09": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800CBJCHEYYYZOL51": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800CK6VWBJMZBTX44": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800CW1LB6AGU1W874": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800CZ6TCYVIS8ZE30": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800D2P3PZCQQQCQ88": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800DPF6XOZBZOQI74": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800DPRISYPILAQD25": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800DVU15BZS3RXY63": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800E2TBNJSDV2NQ28": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800E41EKDDOHO9Z17": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800E9SWWMNWG5SM09": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800EAQ8BT1J1P5310": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800EB9XBG6CDL6T53": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ECKZ9E6S5QTA85": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800EJRJO842V2SG84": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800EKBLDZ2LY53N69": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800FGQ9DJHGRLQZ89": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800FO63X3HMF6CI16": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800H3X929EJVNCG35": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800HBHYDXCZRBE157": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800HC4AQ8MIBWNH08": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800HGO6ORUT6PS111": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800HLFL9G8P7E2E55": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800HLT1TLEWLCJ819": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800HN8D1LMWHJR495": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800HPMF4Q2C2L5C05": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800HRJROMZQ3DNH07": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800I4AVG38S6RZN62": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800IAQXYOM2ZRUR10": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800IBXO1T8DWNRC54": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ICMQY9461LVE96": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800IP7BD29F154N92": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800IR3PUI7XEA9N74": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800IVICKWBWDC2W17": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800IVLWKDWDGLSS47": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800IYV2AUM6ZZJD68": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800IYYKJTQNSBN893": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800J35IK23DZDNM96": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800J7UVS4F3SF6S93": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800JHHC6KAYMI2H79": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800JN16ZFZEVQ1360": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800K4MU9Q8ZDMRL06": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800KCC28NVOUKHK15": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800KQA8ZUE75NB537": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800KRKKWKDWX42B60": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800KUZG6T3LODUF32": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800KVD9AD3XMVXK24": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800KZR8EXP1EECI66": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800L2A94ZWFB95N11": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800L66ZKPG9MEJ197": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800LCDLU8CMEVYZ14": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800LHCJWWMQB7AH54": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800LO8I9L9FAP8S49": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800LQBDVZEJGQX618": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800LXPEX488EON756": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800MDINX6UVR5H957": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800MEUEQ6E5P6L570": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800MJG9DQ86KOO356": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800MRTSSVCSOQXQ37": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800MXC51BCCSWLT22": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800N2NZWSDKJR1A79": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800N4ZEJ98LJYK847": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800N52XN5IPJTTK38": {
+"direct": {
+"lei": "72Q26SNHIF5UHHEV3451",
+"name": "BRADFORD & BINGLEY LIMITED"
+},
+"ultimate": {
+"lei": "72Q26SNHIF5UHHEV3451",
+"name": "BRADFORD & BINGLEY LIMITED"
+}
+},
+"213800N5DPSER1V97I49": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800N7442TR4MKTL02": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800NGIK3FMFKGYF72": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800NIJJQ8FL49LW72": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800NJZDSZL6QI8G70": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800NL7KQEKKK29A30": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800NLZSEIXFXYCN71": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800NN42AHNOBA9S04": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800NOLCVFSSP64F24": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800NP9HW8MLLSAQ51": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800NVT1XLVR2NCU72": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800O2RJW7AXMC8B91": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800OAXJ4OYTBVSH10": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ODOSW148HEQ152": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ORUU24WO1YUZ12": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ORZZ3JQCYNJ195": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800OT1OI8L6FY5G82": {
+"direct": {
+"exception": "NATURAL_PERSONS"
+},
+"ultimate": {
+"exception": "NATURAL_PERSONS"
+}
+},
+"213800OWTSLU8GDCES53": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800OWX8G3ZPF7MH75": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800OXI93ZOWQ39714": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800P924ICRTAMOP04": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800P9O3UQIYFGAN14": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800PK3XFNR2N4HP69": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800PV2DRGJ4HXV178": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800PWYYIB8T9XMN72": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800PZ7THTNTKNZP17": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QAI6XZR54NJA48": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QDCJQ2TY7KTU13": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QG22M3LSYG7K46": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800QG6GRJCGXM6I58": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QIJYMBWYJ1JI14": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QJWBH2HRLUZY72": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QKDJTDDUA8HX65": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QKSAYNRMPC6F68": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800QLJNCG9CAL5591": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800QQWCYNSCFKZM45": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800R3O2PCMHG5LQ58": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800R4AGXM4A3PBR07": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800R4BFXYNT71UC86": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800REWDRKA7RUYG35": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800RSIYROVPUVUV91": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800RU29AY5M8W6Q24": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800RZB77AZJ3LC304": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800S6FP8V7Z4D9M71": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800SA8GQES5IATS73": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800SB6IGACQ3W2103": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800SIOKJPZHAPVF38": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800SJ4HZD9KZIM802": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800SSL5YSSNM6D675": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800STLFLEEXMEJ287": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800T8KP4APS3KNZ67": {
+"direct": {
+"exception": "NO_LEI"
+},
+"ultimate": {
+"exception": "NO_LEI"
+}
+},
+"213800TAW7NG2XIKWW22": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TFSXNHHSWFUT06": {
+"direct": {
+"lei": "2138003EUVPJRRBEPW94",
+"name": "THE FINANCIAL CONDUCT AUTHORITY"
+},
+"ultimate": {
+"lei": "2138003EUVPJRRBEPW94",
+"name": "THE FINANCIAL CONDUCT AUTHORITY"
+}
+},
+"213800TGPOBD1DHMW581": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TK8V6LD5KEI638": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TKVR3YVUWHB533": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TL4RFT1JW7CD81": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TPG6A6857VUC23": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TR86P337IE8605": {
+"direct": {
+"exception": "NO_LEI"
+},
+"ultimate": {
+"lei": "335800E6C75YGSGD5T66",
+"name": "TATA STEEL LIMITED"
+}
+},
+"213800TSSFUWBZI2U688": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TUDJRHI63E6H85": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800TZTUAYJRHB5747": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800U3JX4FNV7DVP18": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800U9T6V5SS9FNL12": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UF5E61CQE2G757": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UGSR1IM968OG05": {
+"direct": {
+"exception": "NO_LEI"
+},
+"ultimate": {
+"exception": "NO_LEI"
+}
+},
+"213800UIZB5ZBZNP2X31": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UM2NRJMA5EDD29": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UP9EB36UUDXZ18": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UQ95OEYUI78W94": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UQWRVIAM6CMZ18": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800USH2HOD39K9F02": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UVBERN1CP6XW44": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UWV3LP319CYD93": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800UX3YHI4K6D9O48": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UXXB3GE99HU111": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800UYXCILU7QWXQ37": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800V2A358OM1DVC03": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800V81CYD21A3V623": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800V8E4PMXDEOGM29": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800VFE8X74PBN3Z16": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800VIWG5T3KK4GO79": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800VPUM3Y5RCWTL20": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800VZCULE4XCZKR95": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800W1LNZXJ6C9D705": {
+"direct": {
+"exception": "NON_PUBLIC"
+},
+"ultimate": {
+"exception": "NON_PUBLIC"
+}
+},
+"213800W2448SUPTKDL10": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800W8CD7FGPAUMW78": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800WEYUFXCW32GT29": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800WMJIFNF3VOYA94": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800WPY9VSBMJT5G20": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800WVRDEKY1O6J402": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800X4Y48RLM5H5V27": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800X7LF3S4FLX1Z86": {
+"direct": {
+"exception": "NATURAL_PERSONS"
+},
+"ultimate": {
+"exception": "NATURAL_PERSONS"
+}
+},
+"213800XBJISJU7M6UX58": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800XFWZUVBAULDZ56": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800XGI1SMKP1LLS58": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800XO2IQMVLEV3C93": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800XROYMZMV6UED75": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800XSHYKECIZSK213": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800XUXT93ME34VC16": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800XVHVH7HY8C8A57": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800Y1BWMD76EYO325": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800Y5ML8PSUIUK405": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800YA8L8RVKRB7W19": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800YCL2JDDEE3CN83": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800YM19O5J5P7A614": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800YNWSLG8UQDG230": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"213800Z6554ALP59MW70": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ZA9VOGM9PTQB46": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ZAEBCEML28T645": {
+"direct": {
+"exception": "NO_LEI"
+},
+"ultimate": {
+"exception": "NO_LEI"
+}
+},
+"213800ZBJPEXJG5W6F75": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ZPA4YX4JRDTK14": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ZPT27JOWTPQ491": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"213800ZU9B1XE2RGSJ63": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"2549000BWESU8V9VCW36": {
+"direct": {
+"exception": "NO_LEI"
+},
+"ultimate": {
+"exception": "NO_LEI"
+}
+},
+"2549005WTO6CD173CM58": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"254900790O8Q2BU1SG80": {
+"direct": {
+"exception": "NATURAL_PERSONS"
+},
+"ultimate": {
+"exception": "NATURAL_PERSONS"
+}
+},
+"25490087LB4BPYJYAB28": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"254900CFIH0E7SM63398": {
+"direct": {
+"exception": "NO_LEI"
+},
+"ultimate": {
+"exception": "NO_LEI"
+}
+},
+"254900FE4U47K61KQE66": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"254900L5YYWOJJRE9O14": {
+"direct": {
+"exception": "NON_PUBLIC"
+},
+"ultimate": {
+"exception": "NON_PUBLIC"
+}
+},
+"254900MIUNKA5DR5FY05": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"254900OBPYXKMX3CRB57": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"254900Q7V798WKIRKS30": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"254900QBYWYD4W7O5G10": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"4LRC0XQDCVXQMZ4WG024": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"4NKSY3QFYV3DD53DFE57": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"5493000DQ2NAHVTEEP50": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"5493000IBP32UQZ0KL24": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"5493000O2SL03D4VD310": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"5493001VZT4FI0CN4W59": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"5493005KNKDKY6JY4754": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"5493005LXBW2SZ7VFH06": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"5493006J787JAZVWSS83": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"549300EQKI5HFLIXVY76": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300FQG4B9WP52M522": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300FYGZMV0VA89186": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300HAV56OC72LIK75": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300HB56H9O4GVHI10": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300JGFOMET4GUKJ59": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"549300KEGYPVJTDRVC23": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300ON5UBV1QGFDL44": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300P9TS11JMP42V84": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300PWCUNU6HU52413": {
+"direct": {
+"exception": "NATURAL_PERSONS"
+},
+"ultimate": {
+"exception": "NATURAL_PERSONS"
+}
+},
+"549300Q2HX0M7C1FRH98": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"549300Q588PLLR442U24": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"549300SIONRW8IU1Q892": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"549300W4Q9IV9MRR2I18": {
+"direct": {
+"lei": "549300WFAUN4WGBZT109",
+"name": "WESTINGHOUSE ELECTRIC UK HOLDINGS LIMITED"
+},
+"ultimate": {
+"lei": "C6J3FGIWG6MBDGTE8F80",
+"name": "BROOKFIELD CORPORATION"
+}
+},
+"549300W98DMCKDDCZ337": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"5LW7VZN223O372JWV340": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"648809VPEGU6Q6C60655": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"8945007FG54RVXPF1U27": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"894500KRU353S7OQYC39": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"894500ZJ1UQRZNOBXV26": {
+"direct": {
+"lei": "549300ZDL0KIOWHDHM11",
+"name": "SHEFFIELD FORGEMASTERS INTERNATIONAL LIMITED"
+},
+"ultimate": {
+"lei": "549300ZDL0KIOWHDHM11",
+"name": "SHEFFIELD FORGEMASTERS INTERNATIONAL LIMITED"
+}
+},
+"9845004F92801E782B77": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"984500899E6D804DCL14": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"B7YT20V6NVJPTNJFKV03": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"DG8MK51JJ3AGPY5N8I26": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"DYNMWEUNRUMUNPOVC580": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"DZ98TVKVC4XDAUOOW833": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"K20FOMOL2CG1KKDIQQ33": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"MDHGDHTWHH0VYYNR5H24": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"USHTZGPY8FNYP5HGCA41": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+},
+"W7NPROBYSSC70U5FQN35": {
+"direct": {
+"exception": null
+},
+"ultimate": {
+"exception": null
+}
+},
+"YHV3J00SHXVZ4ZH20J92": {
+"direct": {
+"exception": "NON_CONSOLIDATING"
+},
+"ultimate": {
+"exception": "NON_CONSOLIDATING"
+}
+},
+"YUEDD7W89PH0FV8Q2S28": {
+"direct": {
+"exception": "NO_KNOWN_PERSON"
+},
+"ultimate": {
+"exception": "NO_KNOWN_PERSON"
+}
+}
+}

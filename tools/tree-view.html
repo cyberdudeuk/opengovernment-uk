@@ -1,0 +1,65 @@
+  <!-- WHO ANSWERS -->
+  <section class="view" id="v-tree" data-title="Who answers" data-icon="crown" hidden>
+   <div class="card" id="s-tintro">
+    <span class="eyebrow">The state's corporate tree</span>
+    <h2>Who answers for each public body, who pays for it, and who owns it</h2>
+    <p class="lede" style="font-size:1.02rem;margin-top:6px">A company has a parent, a group and an ultimate beneficial owner. A public body has the public-sector equivalent: a department whose <span data-term="estimate"></span> includes it, a <span data-term="sponsor"></span>, a classification by ONS, and sometimes a shareholder. This view follows those links, one source at a time, until it reaches whoever answers to an elected body for it.</p>
+    <div class="stats" id="tStats" style="margin-top:14px"></div>
+    <div class="limits" id="tLimits" style="margin-top:14px"></div>
+   </div>
+   <div class="card" id="s-tchain">
+    <h2>Trace a body to whoever answers for it</h2>
+    <p class="muted" style="margin:6px 0 10px">Type part of a name. Each step names the source that states it, where in that source, and how the two names were matched.</p>
+    <div class="controls"><label style="flex:1 1 320px">Body<input type="search" id="tQ" autocomplete="off" placeholder="Met Office, Ofsted, Scottish Water…"></label></div>
+    <div id="tHits" class="grid3" style="margin:6px 0 10px"></div>
+    <div id="tChain" aria-live="polite"></div>
+   </div>
+   <div class="card" id="s-troots">
+    <h2>Where accountability ends</h2>
+    <div class="tabs" role="tablist" aria-label="Where accountability ends" id="rootTabs"></div>
+    <div id="rootPanels"></div>
+   </div>
+   <div class="card" id="s-tmoney">
+    <h2>Follow the money</h2>
+    <div class="tabs" role="tablist" aria-label="Follow the money" id="moneyTabs"></div>
+    <div id="moneyPanels"></div>
+   </div>
+   <div class="card" id="s-tppp">
+    <h2>Public-private partnerships</h2>
+    <p class="muted" style="margin:6px 0 10px" id="pppIntro"></p>
+    <div class="controls"><label>Search<input type="search" id="pppQ" placeholder="Project, authority, company or investor"></label><label>Status<select id="pppStat"><option value="">All statuses</option></select></label><label>Sector<select id="pppSec"><option value="">All sectors</option></select></label></div>
+    <div class="tablewrap"><table><caption class="muted" id="pppCap" style="text-align:left;padding:6px 0"></caption><thead><tr><th scope="col">Project</th><th scope="col">Procuring authority</th><th scope="col">Department</th><th scope="col">Project company and investors</th><th scope="col" class="num">Capital (£m)</th><th scope="col" class="num">Charges 2025-26 (£m)</th><th scope="col">Ends</th></tr></thead><tbody id="pppRows"></tbody></table></div>
+    <p style="margin-top:8px"><button class="btn ghost small" type="button" id="pppMore">Show more</button></p>
+   </div>
+   <div class="card" id="s-ttf">
+    <h2>Trading funds and public corporations</h2>
+    <div class="grid2" style="margin-top:8px">
+     <div><h3><span data-term="trading fund"></span>s</h3><p class="muted" id="tfIntro" style="margin:4px 0 8px"></p><ul id="tfList"></ul></div>
+     <div><h3><span data-term="public corporation"></span>s</h3><p class="muted" id="pcIntro" style="margin:4px 0 8px"></p><div class="controls"><label>Find<input type="search" id="pcQ"></label></div><ul id="pcList"></ul></div>
+    </div>
+   </div>
+   <div class="card" id="s-tconf">
+    <h2>Where sources disagree</h2>
+    <p class="muted" style="margin:6px 0 10px" id="confIntro"></p>
+    <div class="tablewrap"><table><thead><tr><th scope="col">Body</th><th scope="col">What each source says it answers to</th></tr></thead><tbody id="confRows"></tbody></table></div>
+   </div>
+   <div class="card" id="s-tgaps">
+    <h2>What couldn't be matched</h2>
+    <p class="muted" style="margin:6px 0 10px" id="gapIntro"></p>
+    <div class="bars" id="gapBars"></div>
+    <div class="controls" style="margin-top:10px"><label>Source<select id="gapSrc"><option value="">All sources</option></select></label><label>Name<input type="search" id="gapQ"></label></div>
+    <div class="tablewrap"><table><thead><tr><th scope="col">Source</th><th scope="col">As written</th><th scope="col">Where</th><th scope="col">Why not matched</th></tr></thead><tbody id="gapRows"></tbody></table></div>
+   </div>
+   <div class="card" id="s-tledger">
+    <h2>Sources and provenance ledger</h2>
+    <p class="muted" style="margin:6px 0 10px">Every link above traces to one of these files. The fingerprint (<span data-term="SHA-256"></span>) is of the exact file read, so anyone can check that a later copy is the same evidence.</p>
+    <div class="tablewrap"><table><thead><tr><th scope="col">Source</th><th scope="col">What it is the authority for</th><th scope="col">Owner and licence</th><th scope="col">Read</th><th scope="col" class="num">Links</th><th scope="col">Fingerprint</th></tr></thead><tbody id="ledgerRows"></tbody></table></div>
+    <p class="muted" style="margin-top:8px" id="digestLine"></p>
+   </div>
+   <div class="card" id="s-tssot">
+    <h2>The single source of truth for these apps</h2>
+    <p class="muted" style="margin:6px 0 10px">Apps in this estate that need a list of public bodies, or who answers for them, read it from here by the register's key. Each keeps only its own facts.</p>
+    <div class="tablewrap"><table><thead><tr><th scope="col">App</th><th scope="col">Holds today</th><th scope="col">Reads from this register</th><th scope="col">Status</th></tr></thead><tbody id="ssotRows"></tbody></table></div>
+   </div>
+  </section>
+

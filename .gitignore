@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+# D-OG10: these sources name people (chairs, accounting officers, controllers, individual investors); fetch.py --private downloads them
+sources/pbd2324.xlsx
+sources/companies-house-psc.json
+sources/pfi-2025.ods
+sources/ukgi-ara-2025-26.html
+# D-OG11: legislation.gov.uk effect ids in this file trip GitHub push protection (false positive); fetch.py --private downloads it
+sources/ni-eao-2026.xml
