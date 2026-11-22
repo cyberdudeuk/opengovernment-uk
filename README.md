@@ -44,6 +44,7 @@ tools/trends.py         public bodies 2012-2024 from the official editions; 2020
 tools/functions.py      back-office classes: A (exists for government) and B (back office as one line of business)
 tools/scenarios.py      evolution, reform and revolution to 2030 (modelled, assumptions editable)
 tools/corporations.py   one family tree per trading fund and public corporation, grouped by owner
+tools/design.py         the design system: tokens to one stylesheet, the shared page shell, the design system page and its guards
 tools/localgov.py       local government under the English Devolution and Community Empowerment Act 2026 (current and planned)
 ```
 

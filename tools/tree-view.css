@@ -35,9 +35,7 @@
 @media (max-width:520px){.mast .iconbtn>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.mast .brand small{display:none}} /* D-OG8: masthead clipped the title at 390px */
 
 /* nation palette (validated: colour-blind separation and 3:1 contrast, light and dark); always paired with its EN/SC/WA/NI label */
-:root{--nEN:#a0153a;--nSC:#2b6bd6;--nWA:#33a061;--nNI:#8f6a00;--nUK:#6b655c;--nGB:#a39a8c}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--nEN:#e85d78;--nSC:#4f88ea;--nWA:#23905a;--nNI:#b58a1c;--nUK:#9a9184;--nGB:#5c564d}}
-[data-theme="dark"]{--nEN:#e85d78;--nSC:#4f88ea;--nWA:#23905a;--nNI:#b58a1c;--nUK:#9a9184;--nGB:#5c564d}
+/* nation colours come from the design tokens (docs/assets/og.css) */
 .nsw{display:inline-block;width:.75em;height:.75em;border-radius:2px;margin-right:.35em;vertical-align:-.05em;background:var(--c)}.nsw.gb{background:repeating-linear-gradient(45deg,var(--nGB) 0 2px,transparent 2px 4px);border:1px solid var(--nGB)}
 .nchip{display:inline-flex;align-items:center;font-size:.72rem;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:0 .45em;margin-left:.25em;color:var(--ink);background:var(--paper)}
 .nmulti{font-size:.72rem;border:1px dashed var(--muted);border-radius:999px;padding:0 .45em;margin-left:.3em;white-space:nowrap}

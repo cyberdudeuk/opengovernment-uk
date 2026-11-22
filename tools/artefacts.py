@@ -56,6 +56,7 @@ REQS = {
     "OG-R46": ("Every trading fund and public corporation shown as its own family tree, each body in exactly one place, grouped by owner level and owner", "Must", "Done", ["N1", "N2", "N4"], ["C-CORP", "C-PORTAL"]),
     "OG-R47": ("Department and corporation trees grouped by purpose, activity and type of body, with large groups split again", "Must", "Done", ["N1", "N2"], ["C-CLASS", "C-CORP", "C-PORTAL"]),
     "OG-R48": ("Local government in England shown as it is and as planned under the English Devolution and Community Empowerment Act 2026: strategic authorities, reorganisation areas and their councils, and a timeline, every fact sourced", "Must", "Done", ["N1", "N2", "N5", "N7"], ["C-LG", "C-PORTAL"]),
+    "OG-R50": ("One design system for every page: tokens in an open format, one shared stylesheet, self-hosted fonts, WCAG 2.2 AA contrast in light and dark, a published design system page, and a build that stops on any raw value", "Must", "Done", ["N6", "N7"], ["C-DESIGN", "C-PORTAL"]),
     "OG-R49": ("ONS sponsor codes resolve only through the guide's own abbreviation list", "Must", "Done", ["N2", "N7"], ["C-BUILD"]),
     "OG-R37": ("Comparator adoptions: founding legislation, COFOG, movements, interests, parent history", "Should", "Planned", ["N1", "N4", "N5"], []),
 }
@@ -74,6 +75,7 @@ COMPONENTS = {
     "C-NATEV": ("Nation evidence resolver", "tools/nation_evidence.py", ["CHK-natev"], ["data/nation-evidence.json"]),
     "C-H2020": ("2020 historical layer", "tools/historical_2020.py", ["CHK-h2020"], ["data/historical-2020.json"]),
     "C-CLASS": ("Plain-English classifier", "tools/classify.py", ["CHK-classify"], ["data/classification.json"]),
+    "C-DESIGN": ("Design system: tokens, stylesheet, shell and guards", "tools/design.py", ["CHK-design"], ["docs/assets/og.css", "docs/assets/tokens.json", "docs/design-system.html"]),
     "C-CORP": ("Trading fund and public corporation trees", "tools/corporations.py", ["CHK-corporations"], ["data/corporations.json"]),
     "C-LG": ("Local government under the 2026 Act", "tools/localgov.py", ["CHK-localgov"], ["data/local-government.json"]),
     "C-ART": ("Documentation generator", "tools/artefacts.py", ["CHK-artefacts"], ["documentation/solution/", "docs/navigator.html"]),
@@ -88,6 +90,7 @@ CHECKS = {
     "CHK-footer": "Footer names no individual and no government body", "CHK-req_ids": "Requirement IDs are unique", "CHK-self": "The page checks itself (width, links, chains, wording)",
     "CHK-bods_schema": "BODS output validates against the official schema", "CHK-units": "Every edition records its unit evidence and year", "CHK-reconciled": "The 2020 baseline is fully accounted for",
     "CHK-trend_persons": "No personal fields in trend outputs", "CHK-scenarios": "Scenarios recompute exactly from their assumptions", "CHK-functions": "Back-office known answers",
+    "CHK-design": "32 contrast pairs pass in light and dark; every page uses the shared stylesheet with no raw colour, size, radius or breakpoint and no third-party font; negatives caught",
     "CHK-corporations": "Every member in exactly one tree; known answers (Manchester Airport group, Ordnance Survey, Scottish Water); negatives caught",
     "CHK-localgov": "Every fact sourced; 21 areas cover every two-tier county once; 205 councils match MHCLG's count; known answers; negatives caught",
     "CHK-ons_codes": "ONS sponsor codes resolve through the guide's abbreviations; Scottish Water answers to the Scottish Government",
@@ -231,7 +234,8 @@ document.getElementById("cols").addEventListener("click",e=>{const b=e.target.cl
 document.querySelectorAll(".node").forEach(x=>{x.classList.toggle("on",set.has(x.dataset.id));x.classList.toggle("dim",!set.has(x.dataset.id))});
 document.getElementById("detail").innerHTML=`<b>${esc(id)}</b>: ${esc(n.name)}${n.file?` · <a href="https://github.com/cyberdudeuk/opengovernment-uk/blob/main/${esc(n.file)}">read it</a>`:""}${n.path?` · <span>${esc(n.path)}</span>`:""}. Linked items: ${set.size-1}.`});
 </script></body></html>"""
-    (ROOT / "docs" / "navigator.html").write_text(html.replace("__DATA__", data))
+    sys.path.insert(0, str(ROOT / "tools")); import design  # shared design system and page shell (OG-D42)
+    (ROOT / "docs" / "navigator.html").write_text(design.wrap_page(html, "docs").replace("__DATA__", data))
 
 LAYER = {"Need": 0, "Requirement": 1, "Component": 2, "Check": 3}
 def lineage(items, start):

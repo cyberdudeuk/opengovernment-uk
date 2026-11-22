@@ -447,6 +447,19 @@
     "C-PORTAL"
    ]
   ],
+  "OG-R50": [
+   "One design system for every page: tokens in an open format, one shared stylesheet, self-hosted fonts, WCAG 2.2 AA contrast in light and dark, a published design system page, and a build that stops on any raw value",
+   "Must",
+   "Done",
+   [
+    "N6",
+    "N7"
+   ],
+   [
+    "C-DESIGN",
+    "C-PORTAL"
+   ]
+  ],
   "OG-R49": [
    "ONS sponsor codes resolve only through the guide's own abbreviation list",
    "Must",
@@ -621,6 +634,18 @@
     "data/classification.json"
    ]
   ],
+  "C-DESIGN": [
+   "Design system: tokens, stylesheet, shell and guards",
+   "tools/design.py",
+   [
+    "CHK-design"
+   ],
+   [
+    "docs/assets/og.css",
+    "docs/assets/tokens.json",
+    "docs/design-system.html"
+   ]
+  ],
   "C-CORP": [
    "Trading fund and public corporation trees",
    "tools/corporations.py",
@@ -690,6 +715,7 @@
   "CHK-trend_persons": "No personal fields in trend outputs",
   "CHK-scenarios": "Scenarios recompute exactly from their assumptions",
   "CHK-functions": "Back-office known answers",
+  "CHK-design": "32 contrast pairs pass in light and dark; every page uses the shared stylesheet with no raw colour, size, radius or breakpoint and no third-party font; negatives caught",
   "CHK-corporations": "Every member in exactly one tree; known answers (Manchester Airport group, Ordnance Survey, Scottish Water); negatives caught",
   "CHK-localgov": "Every fact sourced; 21 areas cover every two-tier county once; 205 councils match MHCLG's count; known answers; negatives caught",
   "CHK-ons_codes": "ONS sponsor codes resolve through the guide's abbreviations; Scottish Water answers to the Scottish Government",
@@ -777,6 +803,7 @@
     "OG-R46",
     "OG-R47",
     "OG-R48",
+    "OG-R50",
     "OG-R49",
     "OG-R37"
    ]
@@ -822,6 +849,7 @@
     "OG-R46",
     "OG-R47",
     "OG-R48",
+    "OG-R50",
     "OG-R49",
     "OG-R37"
    ]
@@ -843,6 +871,7 @@
     "C-NATEV",
     "C-H2020",
     "C-CLASS",
+    "C-DESIGN",
     "C-CORP",
     "C-LG",
     "C-ART",
@@ -867,6 +896,7 @@
     "C-NATEV",
     "C-H2020",
     "C-CLASS",
+    "C-DESIGN",
     "C-CORP",
     "C-LG",
     "C-ART",
@@ -891,6 +921,7 @@
     "C-NATEV",
     "C-H2020",
     "C-CLASS",
+    "C-DESIGN",
     "C-CORP",
     "C-LG",
     "C-ART",
@@ -962,6 +993,7 @@
     "OG-R46",
     "OG-R47",
     "OG-R48",
+    "OG-R50",
     "OG-R49",
     "OG-R37"
    ]

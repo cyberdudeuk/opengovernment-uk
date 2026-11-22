@@ -568,6 +568,21 @@
    ]
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R50",
+   "@type": "Requirement",
+   "name": "One design system for every page: tokens in an open format, one shared stylesheet, self-hosted fonts, WCAG 2.2 AA contrast in light and dark, a published design system page, and a build that stops on any raw value",
+   "priority": "Must",
+   "status": "Done",
+   "serves": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N6",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N7"
+   ],
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-DESIGN",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-PORTAL"
+   ]
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
    "@type": "Requirement",
    "name": "ONS sponsor codes resolve only through the guide's own abbreviation list",
@@ -770,6 +785,20 @@
    ]
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-DESIGN",
+   "@type": "Component",
+   "name": "Design system: tokens, stylesheet, shell and guards",
+   "path": "tools/design.py",
+   "provenBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-design"
+   ],
+   "produces": [
+    "docs/assets/og.css",
+    "docs/assets/tokens.json",
+    "docs/design-system.html"
+   ]
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
    "@type": "Component",
    "name": "Trading fund and public corporation trees",
@@ -927,6 +956,11 @@
    "name": "Back-office known answers"
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-design",
+   "@type": "Check",
+   "name": "32 contrast pairs pass in light and dark; every page uses the shared stylesheet with no raw colour, size, radius or breakpoint and no third-party font; negatives caught"
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-corporations",
    "@type": "Check",
    "name": "Every member in exactly one tree; known answers (Manchester Airport group, Ordnance Survey, Scottish Water); negatives caught"
@@ -1059,6 +1093,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R46",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R47",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R48",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R50",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
@@ -1106,6 +1141,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R46",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R47",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R48",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R50",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
@@ -1129,6 +1165,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-DESIGN",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
@@ -1155,6 +1192,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-DESIGN",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
@@ -1181,6 +1219,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-DESIGN",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
@@ -1260,6 +1299,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R46",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R47",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R48",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R50",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
