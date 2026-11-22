@@ -11,7 +11,7 @@ T = json.loads((ROOT / "data" / "tree.json").read_text())
 BASE = json.loads(re.search(r'<script[^>]*id="data"[^>]*>(.*?)</script>', (ROOT / "sources" / "opengovernment-uk-0.2.2.html").read_text(), re.S).group(1))
 FAM = BASE["fam"]; REG = {r[0]: r for r in BASE["r"]}
 PUB = {"publicationDate": T["built"][:10], "bodsVersion": "0.4", "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-       "publisher": {"name": "OpenGovernment UK (pilot)", "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"}}
+       "publisher": {"name": "OpenGovernment UK (pilot)", "url": "https://cyberdudeuk.github.io/opengovernment-uk/"}}  # OG-D72: the portal itself, never a private link
 # org-id.guide schemes where one exists; the register's own CURIE otherwise
 SCHEME = {"govuk_slug": ("GB-GOVUK", "GOV.UK organisation"), "companies_house": ("GB-COH", "Companies House"), "charity_ew": ("GB-CHC", "Charity Commission for England and Wales"),
           "charity_sc": ("GB-SC", "Scottish Charity Regulator"), "charity_ni": ("GB-NIC", "Charity Commission for Northern Ireland"), "lei": ("XI-LEI", "Global Legal Entity Identifier"),
@@ -109,5 +109,6 @@ errs = list(Draft202012Validator(schema, registry=reg).iter_errors(S))
 print(f"{len(S)} statements ({sum(s['recordType']=='entity' for s in S)} entities, {sum(s['recordType']=='relationship' for s in S)} relationships); schema errors: {len(errs)}")
 for e in errs[:8]: print(" -", list(e.absolute_path)[:4], e.message[:200])
 if errs: sys.exit(1)
+if any(not str(x["publicationDetails"]["publisher"].get("url", "")).startswith("https://cyberdudeuk.github.io/opengovernment-uk/") for x in S): sys.exit("OG-D72: a statement names a publisher address other than the portal")
 (OUT / "bods-0.4.json").write_text(json.dumps(S, ensure_ascii=False))
 print("wrote docs/bods-0.4.json", (OUT / "bods-0.4.json").stat().st_size)

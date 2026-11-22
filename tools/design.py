@@ -129,7 +129,7 @@ def tokenise(css):
 
 
 SHELL_NAV = [("index.html#home", "Home", "home"), ("index.html#register", "Register", "register"), ("index.html#tree", "Who answers", "tree"), ("nations.html", "Nations", "nations"), ("world.html", "UK and the world", "world"), ("orgchart.html", "Org charts", "orgchart"), ("funding.html", "Funding", "funding"),
-             ("index.html#changes", "Changes", "changes"), ("navigator.html", "Documentation", "docs")]  # the design system page is linked from every footer
+             ("index.html#changes", "Changes", "changes"), ("developers.html", "Developers", "devs"), ("navigator.html", "Documentation", "docs")]  # the design system page is linked from every footer
 LOGO = '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="var(--og-brand)"/><circle cx="20" cy="20" r="11.5" fill="none" stroke="var(--og-surface)" stroke-width="2"/><circle cx="20" cy="20" r="5" fill="var(--og-surface)"/><path d="M20 2v7M20 31v7M2 20h7M31 20h7" stroke="var(--og-surface)" stroke-width="2"/></svg>'
 # The global navigation must never wrap or exceed the screen: when its links would not fit on one line, it folds into
 # the Menu button (the 1023px media rule is the fallback without JavaScript).
@@ -147,6 +147,7 @@ THEME_JS = ('<script>(()=>{const k="og-theme",r=document.documentElement,b=docum
 
 ICON_SEARCH = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
 ICON_BELL = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+ICON_THEME = '<svg class="og-theme-i" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>'
 ICON_CLOCK = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
 
 
@@ -179,7 +180,7 @@ def shell(active):
             f'<nav class="og-shell-nav" aria-label="Sections of the portal">{nav}</nav>'
             + mast_tools() +
             f'<details class="og-shell-menu"><summary>Menu</summary><nav aria-label="Sections of the portal (menu)">{nav}</nav></details>'
-            f'<button class="iconbtn" id="ogTheme" type="button" aria-label="Switch colour theme"><span class="og-phone-hide">Theme:&nbsp;</span><span class="v">Device</span></button></div></header>')
+            f'<button class="iconbtn" id="ogTheme" type="button" aria-label="Switch colour theme">{ICON_THEME}<span class="og-phone-hide">Theme:&nbsp;</span><span class="v">Device</span></button></div></header>')
     foot = ('<footer class="og-shell-foot"><div class="in">'
             '<div><h2>Disclaimer</h2><p>A pilot built from open registers. It isn\'t an official government list, isn\'t affiliated with any public body, and no body named here has endorsed it.</p></div>'
             '<div><h2>Transparency</h2><p>An open-source public good, built in the open. AI (Claude) helps with harvesting, matching and building; every change is checked and reviewed in public.</p></div>'
@@ -207,7 +208,7 @@ WRAP_GUARDS = [("nmulti", "@media (max-width:640px){.nmulti{white-space:normal}}
 
 def css_guards(css):
     """Rules the shared stylesheet must keep (each from a defect)."""
-    return [f"og.css lacks {r} ({d})" for r, d in [(".og-shell-nav a[hidden]{display:none}", "OG-D53"), (".sr-only{", "OG-D53")] if r not in css]
+    return [f"og.css lacks {r} ({d})" for r, d in [(".og-shell-nav a[hidden]{display:none}", "OG-D53"), (".sr-only{", "OG-D53"), (".sr-only{position:absolute!important;left:0", "OG-D73")] if r not in css]
 
 
 def audit_html(name, html):
@@ -298,12 +299,12 @@ def design_page():
     return wrap_page(html, "design").replace('<div id="og-main" tabindex="-1">', f'<div id="og-main" tabindex="-1">{body}', 1)
 
 
-PAGES = ["index.html", "nations.html", "world.html", "orgchart.html", "funding.html", "navigator.html", "design-system.html"]  # every published page; a new page must be added here
+PAGES = ["index.html", "nations.html", "world.html", "orgchart.html", "funding.html", "developers.html", "navigator.html", "design-system.html"]  # every published page; a new page must be added here
 
 # Page-weight budget, in gzip bytes (what GitHub Pages sends). Measured 22 Nov 2026: index 974,578 (ready in 1.8 s on a
 # 4x-throttled CPU, about 0.8 s more to download on 4G), nations 263,437, orgchart 160,032, funding 57,625.
 # The budget leaves about 15% headroom; going over it means lazy-loading per-body data (ACC.ins is the largest part).
-BUDGET = {"index.html": 1_100_000, "nations.html": 320_000, "world.html": 220_000, "orgchart.html": 200_000, "funding.html": 80_000}
+BUDGET = {"index.html": 1_100_000, "nations.html": 320_000, "world.html": 220_000, "orgchart.html": 200_000, "funding.html": 80_000, "developers.html": 60_000}
 BUDGET_DEFAULT = 150_000
 
 

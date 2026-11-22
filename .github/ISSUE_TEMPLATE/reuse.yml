@@ -1,0 +1,39 @@
+name: I reuse the data
+description: Tell us about a project, add-on or integration that uses the register, so we can list and link it
+title: "Reuse: "
+labels: [reuse]
+body:
+  - type: markdown
+    attributes:
+      value: "This is public. Please don't include personal names, email addresses or phone numbers. We list projects that have a public page and repository."
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Public page or repository
+      description: An https address
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What it is
+      options: [App or website, Add-on or plugin, MCP or agent integration, Catalogue or harvester, Research or journalism, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: uses
+    attributes:
+      label: Which files or tools it uses, and how
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Licence
+      options:
+        - label: The project credits OpenGovernment UK and the Open Government Licence v3.0 as the developer hub describes
+          required: true

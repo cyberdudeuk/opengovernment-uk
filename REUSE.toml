@@ -9,7 +9,7 @@ SPDX-FileCopyrightText = "2026 OpenGovernment UK contributors"
 SPDX-License-Identifier = "MIT"
 
 [[annotations]]  # documentation and other original content
-path = ["documentation/**", "tests/fixtures/**.md", "docs/data/*.md", "agent/**", "README.md", "SECURITY.md", "LICENCE-DATA.md", "CHANGELOG.md"]
+path = ["documentation/**", "tests/fixtures/**.md", "docs/data/*.md", "agent/**", "README.md", "CONTRIBUTORS.md", "SECURITY.md", "LICENCE-DATA.md", "CHANGELOG.md"]
 precedence = "override"
 SPDX-FileCopyrightText = "2026 OpenGovernment UK contributors"
 SPDX-License-Identifier = "CC-BY-4.0"

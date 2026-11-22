@@ -51,6 +51,11 @@ def check(base, pages):
                     ov = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
                     if ov > 1: bad.append(f"{tag}: page overflows sideways by {ov}px")
                     bad += [f"{tag}: {x}" for x in pg.evaluate(MAST)]
+                    for i in range(pg.locator("main [role=tab]:visible").count()):  # every tab, not just the first (OG-D73)
+                        t = pg.locator("main [role=tab]:visible").nth(i); name = (t.inner_text() or "").strip()[:30]
+                        t.click(); pg.wait_for_timeout(150)
+                        ov = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
+                        if ov > 1: bad.append(f"{tag} tab '{name}': page overflows sideways by {ov}px")
                     if scheme == "light" and pg.locator("#ogBell").count():
                         pg.click("#ogBell"); pg.wait_for_timeout(500)
                         if pg.locator("#ogBellPanel a").count() == 0: bad.append(f"{tag}: notifications panel opened empty")

@@ -1,0 +1,269 @@
+{
+ "about": "Field-by-field crosswalk from the register to the standards and registers it is published in or joins to. Set by hand; tools/devhub.py checks every cell against the real thing on every build: register columns against the published CSVs, BODS paths and identifier schemes against docs/bods-0.4.json, FollowTheMoney properties against its compiled model and docs/data/register.ftm.json, ORG and schema.org terms against docs/data/register.jsonld, Wikidata properties against their labels read from Wikidata (sources/evidence/wikidata-properties.json). A blank cell means there is no equivalent, not that it was forgotten.",
+ "columns": [
+  [
+   "register",
+   "Register (CSV column)"
+  ],
+  [
+   "bods",
+   "BODS 0.4"
+  ],
+  [
+   "ftm",
+   "FollowTheMoney"
+  ],
+  [
+   "jsonld",
+   "W3C ORG and schema.org (register.jsonld)"
+  ],
+  [
+   "wikidata",
+   "Wikidata property"
+  ],
+  [
+   "orgid",
+   "org-id.guide scheme"
+  ],
+  [
+   "opencorporates",
+   "OpenCorporates"
+  ]
+ ],
+ "rows": [
+  {
+   "concept": "Identifier in this register",
+   "register": "register.csv:id",
+   "bods": "recordDetails.identifiers[schemeName=OpenGovernment UK register key]",
+   "ftm": "",
+   "jsonld": "dct:identifier",
+   "wikidata": "",
+   "orgid": "",
+   "opencorporates": "",
+   "note": "A CURIE: the owning register's own code. FtM ids are oguk- plus the key; JSON-LD ids are the portal's id/ address plus the key"
+  },
+  {
+   "concept": "Name",
+   "register": "register.csv:name",
+   "bods": "recordDetails.name",
+   "ftm": "PublicBody.name",
+   "jsonld": "schema:name",
+   "wikidata": "",
+   "orgid": "",
+   "opencorporates": "name",
+   "note": "Current name; earlier names are in the changes data"
+  },
+  {
+   "concept": "Kind of body",
+   "register": "register.csv:kind",
+   "bods": "recordDetails.entityType",
+   "ftm": "PublicBody.classification",
+   "jsonld": "org:classification",
+   "wikidata": "",
+   "orgid": "",
+   "opencorporates": "",
+   "note": "BODS uses state, stateBody and legalEntity types; the register's own kind goes in entityType.details"
+  },
+  {
+   "concept": "Open or closed",
+   "register": "register.csv:status",
+   "bods": "recordDetails.dissolutionDate",
+   "ftm": "PublicBody.status",
+   "jsonld": "og:status",
+   "wikidata": "P576",
+   "orgid": "",
+   "opencorporates": "current_status",
+   "note": "BODS shows closure as a dissolution date, not a status word"
+  },
+  {
+   "concept": "Date set up",
+   "register": "register.csv:start",
+   "bods": "recordDetails.foundingDate",
+   "ftm": "PublicBody.incorporationDate",
+   "jsonld": "schema:foundingDate",
+   "wikidata": "P571",
+   "orgid": "",
+   "opencorporates": "incorporation_date",
+   "note": "Only where a source states it"
+  },
+  {
+   "concept": "Date closed",
+   "register": "register.csv:end",
+   "bods": "recordDetails.dissolutionDate",
+   "ftm": "PublicBody.dissolutionDate",
+   "jsonld": "schema:dissolutionDate",
+   "wikidata": "P576",
+   "orgid": "",
+   "opencorporates": "dissolution_date",
+   "note": ""
+  },
+  {
+   "concept": "Official website",
+   "register": "register.csv:website",
+   "bods": "",
+   "ftm": "PublicBody.website",
+   "jsonld": "foaf:homepage",
+   "wikidata": "P856",
+   "orgid": "",
+   "opencorporates": "",
+   "note": "BODS has no website field; recordDetails.uri points to the body's GOV.UK page where it has one"
+  },
+  {
+   "concept": "Nation",
+   "register": "register.csv:nations",
+   "bods": "recordDetails.jurisdiction",
+   "ftm": "PublicBody.country",
+   "jsonld": "",
+   "wikidata": "P17",
+   "orgid": "",
+   "opencorporates": "jurisdiction_code",
+   "note": "FtM codes: gb, gb-sct, gb-wls, gb-nir (FtM has no code for England, so England-only bodies are gb)"
+  },
+  {
+   "concept": "Who it answers to",
+   "register": "register.csv:parents",
+   "bods": "relationship: interests[].type",
+   "ftm": "Control.controller",
+   "jsonld": "org:subOrganizationOf",
+   "wikidata": "P749",
+   "orgid": "",
+   "opencorporates": "",
+   "note": "BODS: controlByLegalFramework for designation by law, otherInfluenceOrControl for sponsorship, with the meaning in the publicAccountability extension"
+  },
+  {
+   "concept": "Shares held",
+   "register": "",
+   "bods": "relationship: interests[].share.exact",
+   "ftm": "Membership.description",
+   "jsonld": "",
+   "wikidata": "",
+   "orgid": "",
+   "opencorporates": "",
+   "note": "The register's only stated shares are the UK's holdings in international financial institutions. FollowTheMoney only lets an Ownership point at a company, so they go out as a Membership with the share in its description; Ownership.percentage stays empty"
+  },
+  {
+   "concept": "Legal Entity Identifier",
+   "register": "register.csv:lei",
+   "bods": "recordDetails.identifiers[scheme=XI-LEI]",
+   "ftm": "PublicBody.leiCode",
+   "jsonld": "owl:sameAs",
+   "wikidata": "P1278",
+   "orgid": "XI-LEI",
+   "opencorporates": "",
+   "note": "In JSON-LD as a lei.info address"
+  },
+  {
+   "concept": "Companies House number",
+   "register": "register.csv:companies_house",
+   "bods": "recordDetails.identifiers[scheme=GB-COH]",
+   "ftm": "Company.registrationNumber",
+   "jsonld": "rov:registration",
+   "wikidata": "P2622",
+   "orgid": "GB-COH",
+   "opencorporates": "company_number",
+   "note": "OpenCorporates key: gb/ plus the number"
+  },
+  {
+   "concept": "Wikidata item",
+   "register": "register.csv:wikidata",
+   "bods": "recordDetails.identifiers[scheme=XI-WIKIDATA]",
+   "ftm": "PublicBody.wikidataId",
+   "jsonld": "owl:sameAs",
+   "wikidata": "",
+   "orgid": "XI-WIKIDATA",
+   "opencorporates": "",
+   "note": "Corroborating only"
+  },
+  {
+   "concept": "GOV.UK organisation",
+   "register": "concordance.csv:govuk_slug",
+   "bods": "recordDetails.identifiers[scheme=GB-GOVUK]",
+   "ftm": "",
+   "jsonld": "",
+   "wikidata": "",
+   "orgid": "GB-GOVUK",
+   "opencorporates": "",
+   "note": ""
+  },
+  {
+   "concept": "NHS Organisation Data Service code",
+   "register": "concordance.csv:nhs_ods",
+   "bods": "recordDetails.identifiers[scheme=GB-NHS]",
+   "ftm": "",
+   "jsonld": "",
+   "wikidata": "",
+   "orgid": "GB-NHS",
+   "opencorporates": "",
+   "note": ""
+  },
+  {
+   "concept": "Local authority code",
+   "register": "concordance.csv:local_authority",
+   "bods": "recordDetails.identifiers[scheme=GB-LAE]",
+   "ftm": "",
+   "jsonld": "",
+   "wikidata": "",
+   "orgid": "GB-LAE",
+   "opencorporates": "",
+   "note": ""
+  },
+  {
+   "concept": "ONS GSS code",
+   "register": "concordance.csv:gss",
+   "bods": "",
+   "ftm": "",
+   "jsonld": "",
+   "wikidata": "P836",
+   "orgid": "",
+   "opencorporates": "",
+   "note": "Councils and other areas"
+  },
+  {
+   "concept": "Charity number (England and Wales)",
+   "register": "concordance.csv:charity_ew",
+   "bods": "recordDetails.identifiers[scheme=GB-CHC]",
+   "ftm": "",
+   "jsonld": "",
+   "wikidata": "P3057",
+   "orgid": "GB-CHC",
+   "opencorporates": "",
+   "note": ""
+  },
+  {
+   "concept": "OpenCorporates record",
+   "register": "",
+   "bods": "",
+   "ftm": "",
+   "jsonld": "",
+   "wikidata": "P1320",
+   "orgid": "",
+   "opencorporates": "jurisdiction_code/company_number",
+   "note": "Built from the Companies House number: gb/ plus the number"
+  },
+  {
+   "concept": "Where the fact comes from",
+   "register": "",
+   "bods": "source",
+   "ftm": "PublicBody.sourceUrl",
+   "jsonld": "schema:url",
+   "wikidata": "",
+   "orgid": "",
+   "opencorporates": "",
+   "note": "Every link carries its own source; provenance.jsonld lists every source with its fingerprint"
+  }
+ ],
+ "evidence": {
+  "opencorporates_fields": {
+   "names": [
+    "name",
+    "current_status",
+    "incorporation_date",
+    "dissolution_date",
+    "jurisdiction_code",
+    "company_number"
+   ],
+   "seen_in": "https://github.com/StephenAbbott/bods-opencorporates/blob/2fe048e918d6fe890fca999678b3ed90786560e6/src/bods_opencorporates/ingestion/models.py",
+   "read": "2026-11-22"
+  }
+ }
+}

@@ -81,6 +81,10 @@ jobs:
         run: python tools/sources_check.py && python tools/sources_check.py --negative
       - name: Masthead feeds on every page (notifications, latest changes, search index; safe links only; negatives)
         run: python tools/alerts.py && python tools/alerts.py --negative
+      - name: Developer hub (crosswalk cells checked against the real files and models; OpenAPI paths published; links live; negatives)
+        run: python tools/devhub.py && python tools/devhub.py --negative
+      - name: MCP connector (known answers from the published files; live server over stdio with the pinned SDK; negatives)
+        run: pip install -r integrations/mcp/requirements.txt && python tools/mcp_check.py && python tools/mcp_check.py --negative
       - name: Nations and documentation (known answers, traceability, negatives)
         run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: Design system (contrast in light and dark, every page on the shared tokens, no third-party fonts, negatives)

@@ -144,6 +144,8 @@ DATASETS = [  # file, title, description, media type, standard it conforms to
     ("bods-0.4.json", "Ownership and control (BODS 0.4)", "Who owns or controls each public body, and the UK's shareholdings in international financial institutions.", "application/json", "https://standard.openownership.org/en/0.4.0/"),
     ("data/register.ftm.json", "The register in FollowTheMoney", "Public bodies, companies they control, international bodies, links, renames and memberships, for OpenSanctions, OpenAleph and yente.", "application/json", "https://followthemoney.tech/"),
     ("data/source-status.json", "How each source stands", "When each source was read, how often it changes, whether it is current, the parts that could not be read and why, and the expected counts checked on every build.", "application/json", ""),
+    ("data/crosswalks.json", "Crosswalks to other standards", "Each register field mapped to BODS, FollowTheMoney, ORG and schema.org, Wikidata, org-id and OpenCorporates, every cell checked against the real file or model.", "application/json", ""),
+    ("openapi.json", "OpenAPI description of the published files", "Every published file as a plain HTTPS GET, for API tools and code generators.", "application/json", "https://spec.openapis.org/oas/v3.1.0"),
     ("llms.txt", "Guide for AI agents", "Where everything is, in plain text, for language models and agents (the llms.txt convention).", "text/plain", "https://llmstxt.org/"),
     ("data/provenance.jsonld", "Provenance of this build", "Sources used, with fingerprints, and the files made.", "application/ld+json", "http://www.w3.org/ns/prov#"),
     ("datapackage.json", "Data package", "Every CSV with its fields and licence.", "application/json", "https://specs.frictionlessdata.io/data-package/"),
@@ -250,7 +252,7 @@ def main():
         "Identifiers: each body is " + ID + "<register key>, for example " + ID + "government-organisation:D9. Licence: data OGL v3.0, code MIT, documentation CC BY 4.0.\n\n"
         "## Pages\n\n" + "".join(f"- [{t}]({SITE}{u}): {d}\n" for u, t, d in [("index.html", "Register", "search any body; profiles; who answers; changes; data and feeds; ask a question"),
             ("nations.html", "Nation by nation", "each nation's legislature, executive and judiciary"), ("world.html", "UK and the world", "international bodies, memberships, treaties, agreements, the Commonwealth, trade and tax agreements, the UK's shares in international financial institutions"),
-            ("orgchart.html", "Org charts", "every body in context"), ("funding.html", "Funding", "grants, schemes and innovation services"), ("navigator.html", "Documentation", "requirements, design and traceability")]) +
+            ("orgchart.html", "Org charts", "every body in context"), ("funding.html", "Funding", "grants, schemes and innovation services"), ("developers.html", "Developer hub", "connect, harvest, crosswalks, MCP connector, plugins, test cases, licensing and how to contribute"), ("navigator.html", "Documentation", "requirements, design and traceability")]) +
         "\n## Data\n\n" + "".join(f"- [{t}]({SITE}{f}): {d}\n" for f, t, d, _, _ in DATASETS) +
         "\n## Optional\n\n- [Source code and issues](https://github.com/cyberdudeuk/opengovernment-uk)\n")
     # licences beside the data, from the same REUSE.toml the linter checks; the catalogue's claim must agree (OG-D65 class)

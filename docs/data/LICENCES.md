@@ -11,6 +11,8 @@ Every file here is listed with its licence, read from the repository's REUSE.tom
 | bods-0.4.json | OGL-UK-3.0 |
 | data/register.ftm.json | OGL-UK-3.0 |
 | data/source-status.json | OGL-UK-3.0 |
+| data/crosswalks.json | OGL-UK-3.0 |
+| openapi.json | OGL-UK-3.0 |
 | llms.txt | OGL-UK-3.0 |
 | data/provenance.jsonld | OGL-UK-3.0 |
 | datapackage.json | OGL-UK-3.0 |

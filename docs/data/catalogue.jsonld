@@ -379,6 +379,103 @@
    }
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/data-crosswalks-json",
+   "@type": "dcat:Dataset",
+   "dct:title": "Crosswalks to other standards",
+   "dct:description": "Each register field mapped to BODS, FollowTheMoney, ORG and schema.org, Wikidata, org-id and OpenCorporates, every cell checked against the real file or model.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/crosswalks.json"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/data/crosswalks.json"
+    },
+    "dcat:mediaType": "application/json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "Crosswalks to other standards"
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/openapi-json",
+   "@type": "dcat:Dataset",
+   "dct:title": "OpenAPI description of the published files",
+   "dct:description": "Every published file as a plain HTTPS GET, for API tools and code generators.",
+   "dct:license": {
+    "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+   },
+   "dct:publisher": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/",
+    "@type": [
+     "foaf:Agent",
+     "schema:Organization"
+    ],
+    "foaf:name": "OpenGovernment UK (pilot)",
+    "schema:name": "OpenGovernment UK (pilot)"
+   },
+   "dct:modified": "2026-11-22",
+   "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:downloadURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/openapi.json"
+    },
+    "dcat:accessURL": {
+     "@id": "https://cyberdudeuk.github.io/opengovernment-uk/openapi.json"
+    },
+    "dcat:mediaType": "application/json",
+    "dct:license": {
+     "@id": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "dct:title": "OpenAPI description of the published files",
+    "dct:conformsTo": {
+     "@id": "https://spec.openapis.org/oas/v3.1.0"
+    }
+   },
+   "dcat:keyword": [
+    "public sector",
+    "government organisations",
+    "UK"
+   ],
+   "dct:spatial": {
+    "@id": "http://www.wikidata.org/entity/Q145"
+   },
+   "dcat:landingPage": {
+    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/"
+   },
+   "dct:accrualPeriodicity": {
+    "@id": "http://purl.org/cld/freq/irregular"
+   }
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/id/dataset/llms-txt",
    "@type": "dcat:Dataset",
    "dct:title": "Guide for AI agents",

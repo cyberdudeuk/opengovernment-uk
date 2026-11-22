@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/design-system.html</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/developers.html</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/funding.html</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/index.html</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/nations.html</loc><lastmod>2026-11-22</lastmod></url>
@@ -14,6 +15,8 @@
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/bods-0.4.json</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/register.ftm.json</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/source-status.json</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/crosswalks.json</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://cyberdudeuk.github.io/opengovernment-uk/openapi.json</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/llms.txt</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/data/provenance.jsonld</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://cyberdudeuk.github.io/opengovernment-uk/datapackage.json</loc><lastmod>2026-11-22</lastmod></url>

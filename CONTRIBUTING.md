@@ -4,6 +4,8 @@ OpenGovernment UK is an open-source public good. It gets better when people who 
 and when people who use it say what they need. Everyone is welcome: public servants, journalists, researchers, students,
 civil society and anyone else with an interest in how the state is organised.
 
+Start with the [contributor charter](documentation/contributor-charter.md): what we promise each other, how contributions are credited, and how to become a steward. The [developer hub](https://cyberdudeuk.github.io/opengovernment-uk/developers.html) has everything for building on the data.
+
 ## Ways to help
 
 | You want to | Do this |
@@ -13,6 +15,8 @@ civil society and anyone else with an interest in how the state is organised.
 | Suggest a source | Open a **Feedback** issue with the source's address and licence |
 | Fix or improve code | Fork, branch, and open a pull request; CI runs every check |
 | Improve the documentation | Pull request against `documentation/` |
+| Add a crosswalk row or a test case | Pull request against `sources/crosswalks.json` or `tests/fixtures/`; `python tools/devhub.py` checks every cell |
+| Tell us you reuse the data | Open an **I reuse the data** issue, and we'll list your project on the developer hub |
 
 ## The rules every change follows
 
@@ -29,3 +33,5 @@ Please be patient: this is maintained by volunteers.
 
 By contributing you agree that your code is released under MIT, your documentation under CC BY 4.0, and data corrections
 under the Open Government Licence v3.0, and you agree to follow the [code of conduct](CODE_OF_CONDUCT.md).
+
+Please sign off your commits (`git commit -s`) under the [Developer Certificate of Origin](https://developercertificate.org/).

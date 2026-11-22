@@ -64,6 +64,10 @@ tools/bods_fixtures_ps.py  public-sector BODS test cases in the shared fixture-p
 tools/sources_check.py  every source against its expected counts (sources/expectations.json); publishes docs/data/source-status.json
 tools/agent_evals.py    the agent instructions (agent/SKILL.md) answer their known questions from the published files
 tools/licences.py       the one licence lookup over REUSE.toml, shared by every check
+tools/alerts.py         the masthead feeds on every page: notifications, latest changes, search index
+tools/devhub.py         the developer hub, OpenAPI description and crosswalks (every cell checked against the real file or model)
+tools/mcp_check.py      the MCP connector (integrations/mcp) gives the known answers; live over stdio when the SDK is installed
+tools/browser_check.py  every page and every tab in a real browser, phone and desktop, light and dark
 tools/cooperation.py    cooperation by country: the Commonwealth (Secretariat's members; GOV.UK's wording), trade agreements in effect (DBT), tax treaties (HMRC), kind of every treaty (modelled); --refresh re-reads them
 tools/worldmap.py       world map of treaty partners (world-atlas 2.0.2, Equal Earth); every partner placed or recorded as an organisation or former state
 tools/websites.py       each body's own website, from one combined table (matched by code; councils in Scotland and Northern Ireland by exact name within that nation's councils, from the official lists, one-to-one or the build fails)

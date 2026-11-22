@@ -1,0 +1,636 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "OpenGovernment UK open data",
+  "version": "1.0.0",
+  "description": "The register's published files, read over plain HTTPS GET. No key, no sign-in, no rate limit stated by the host; open to any website (Access-Control-Allow-Origin: *). Send If-None-Match or If-Modified-Since to avoid downloading unchanged files. A pilot, not an official list.",
+  "license": {
+   "name": "Open Government Licence v3.0",
+   "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  }
+ },
+ "servers": [
+  {
+   "url": "https://cyberdudeuk.github.io/opengovernment-uk"
+  }
+ ],
+ "externalDocs": {
+  "description": "Developer hub",
+  "url": "https://cyberdudeuk.github.io/opengovernment-uk/developers.html"
+ },
+ "paths": {
+  "/data/catalogue.jsonld": {
+   "get": {
+    "operationId": "get_data_catalogue_jsonld",
+    "summary": "DCAT catalogue of every dataset and download: start here",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "DCAT catalogue of every dataset and download: start here",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/ld+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/register.csv": {
+   "get": {
+    "operationId": "get_data_register_csv",
+    "summary": "The register: one row per body, with every register code",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The register: one row per body, with every register code",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "text/csv": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/register.jsonld": {
+   "get": {
+    "operationId": "get_data_register_jsonld",
+    "summary": "The register as linked data (W3C ORG and schema.org)",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The register as linked data (W3C ORG and schema.org)",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/ld+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/register.ftm.json": {
+   "get": {
+    "operationId": "get_data_register_ftm_json",
+    "summary": "The register in FollowTheMoney, one entity per line",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The register in FollowTheMoney, one entity per line",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/bods-0.4.json": {
+   "get": {
+    "operationId": "get_bods_0_4_json",
+    "summary": "Ownership and control as BODS 0.4 statements",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Ownership and control as BODS 0.4 statements",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/accountable-owner.csv": {
+   "get": {
+    "operationId": "get_accountable_owner_csv",
+    "summary": "Who each body answers to in the end, with the chain",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Who each body answers to in the end, with the chain",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "text/csv": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/edges.csv": {
+   "get": {
+    "operationId": "get_edges_csv",
+    "summary": "Every accountability link with its source",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Every accountability link with its source",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "text/csv": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/concordance.csv": {
+   "get": {
+    "operationId": "get_concordance_csv",
+    "summary": "Each body's codes in other registers",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Each body's codes in other registers",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "text/csv": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/international.jsonld": {
+   "get": {
+    "operationId": "get_data_international_jsonld",
+    "summary": "International bodies, memberships, treaties, agreements, countries",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "International bodies, memberships, treaties, agreements, countries",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/ld+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/taxonomies.skos.jsonld": {
+   "get": {
+    "operationId": "get_data_taxonomies_skos_jsonld",
+    "summary": "The classifications as SKOS concept schemes",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "The classifications as SKOS concept schemes",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/ld+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/crosswalks.json": {
+   "get": {
+    "operationId": "get_data_crosswalks_json",
+    "summary": "Field-by-field crosswalks to other standards",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Field-by-field crosswalks to other standards",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/source-status.json": {
+   "get": {
+    "operationId": "get_data_source_status_json",
+    "summary": "How each source stands: read, current, not read and why",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "How each source stands: read, current, not read and why",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/alerts.json": {
+   "get": {
+    "operationId": "get_data_alerts_json",
+    "summary": "Notifications and latest changes",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Notifications and latest changes",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/search-index.json": {
+   "get": {
+    "operationId": "get_data_search_index_json",
+    "summary": "Every body's key, name, family and status, for search",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Every body's key, name, family and status, for search",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/data/provenance.jsonld": {
+   "get": {
+    "operationId": "get_data_provenance_jsonld",
+    "summary": "Where each build's data came from, with fingerprints",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Where each build's data came from, with fingerprints",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/ld+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/datapackage.json": {
+   "get": {
+    "operationId": "get_datapackage_json",
+    "summary": "Frictionless data package describing the CSV files",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Frictionless data package describing the CSV files",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  },
+  "/opengovernment-uk.db": {
+   "get": {
+    "operationId": "get_opengovernment_uk_db",
+    "summary": "Every table in one SQLite file",
+    "tags": [
+     "open data"
+    ],
+    "responses": {
+     "200": {
+      "description": "Every table in one SQLite file",
+      "headers": {
+       "ETag": {
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Last-Modified": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/vnd.sqlite3": {
+        "schema": {
+         "type": "string",
+         "format": "binary"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified since the ETag or date you sent"
+     }
+    }
+   }
+  }
+ }
+}

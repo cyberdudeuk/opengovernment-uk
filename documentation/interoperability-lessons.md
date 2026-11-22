@@ -34,6 +34,18 @@ All six were built the same day: expected counts and source status (`sources/exp
 5. **An agent skill with evaluations** (the BODS agent skill). A short instruction file for agents ("how to answer 'who answers for X' from this portal's data"), with a handful of questions that have known answers, run in CI. Effort: about a day. Low upkeep once written.
 6. **A "start here: what do you want to do?" page** (the toolkit). This portal's wayfinder already does this for people. A developer version would point to the right file for each job: validate, convert, analyse, integrate. Effort: half a day.
 
+## 2b. Built after the review: the developer hub
+
+The best of each project in one place (`docs/developers.html`):
+
+- the toolkit's "what do you want to do?" start;
+- crosswalks in the spirit of bods-ftm, checked cell by cell against the real models;
+- OpenCheck's MCP connector and multi-format exports with licences;
+- the BODS agent skill's instructions and known-answer evaluations;
+- OpenSanctions' source manifests and assertions.
+
+To these it adds an OpenAPI description of the static files, a browser test of every page and tab, and a contributor charter with recognition and stewardship.
+
 ## 3. Rejected, and why
 
 | Pattern | Why not |

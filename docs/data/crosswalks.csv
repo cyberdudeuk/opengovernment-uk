@@ -1,0 +1,21 @@
+concept,register,bods,ftm,jsonld,wikidata,orgid,opencorporates,note
+Identifier in this register,register.csv:id,recordDetails.identifiers[schemeName=OpenGovernment UK register key],,dct:identifier,,,,A CURIE: the owning register's own code. FtM ids are oguk- plus the key; JSON-LD ids are the portal's id/ address plus the key
+Name,register.csv:name,recordDetails.name,PublicBody.name,schema:name,,,name,Current name; earlier names are in the changes data
+Kind of body,register.csv:kind,recordDetails.entityType,PublicBody.classification,org:classification,,,,"BODS uses state, stateBody and legalEntity types; the register's own kind goes in entityType.details"
+Open or closed,register.csv:status,recordDetails.dissolutionDate,PublicBody.status,og:status,P576,,current_status,"BODS shows closure as a dissolution date, not a status word"
+Date set up,register.csv:start,recordDetails.foundingDate,PublicBody.incorporationDate,schema:foundingDate,P571,,incorporation_date,Only where a source states it
+Date closed,register.csv:end,recordDetails.dissolutionDate,PublicBody.dissolutionDate,schema:dissolutionDate,P576,,dissolution_date,
+Official website,register.csv:website,,PublicBody.website,foaf:homepage,P856,,,BODS has no website field; recordDetails.uri points to the body's GOV.UK page where it has one
+Nation,register.csv:nations,recordDetails.jurisdiction,PublicBody.country,,P17,,jurisdiction_code,"FtM codes: gb, gb-sct, gb-wls, gb-nir (FtM has no code for England, so England-only bodies are gb)"
+Who it answers to,register.csv:parents,relationship: interests[].type,Control.controller,org:subOrganizationOf,P749,,,"BODS: controlByLegalFramework for designation by law, otherInfluenceOrControl for sponsorship, with the meaning in the publicAccountability extension"
+Shares held,,relationship: interests[].share.exact,Membership.description,,,,,"The register's only stated shares are the UK's holdings in international financial institutions. FollowTheMoney only lets an Ownership point at a company, so they go out as a Membership with the share in its description; Ownership.percentage stays empty"
+Legal Entity Identifier,register.csv:lei,recordDetails.identifiers[scheme=XI-LEI],PublicBody.leiCode,owl:sameAs,P1278,XI-LEI,,In JSON-LD as a lei.info address
+Companies House number,register.csv:companies_house,recordDetails.identifiers[scheme=GB-COH],Company.registrationNumber,rov:registration,P2622,GB-COH,company_number,OpenCorporates key: gb/ plus the number
+Wikidata item,register.csv:wikidata,recordDetails.identifiers[scheme=XI-WIKIDATA],PublicBody.wikidataId,owl:sameAs,,XI-WIKIDATA,,Corroborating only
+GOV.UK organisation,concordance.csv:govuk_slug,recordDetails.identifiers[scheme=GB-GOVUK],,,,GB-GOVUK,,
+NHS Organisation Data Service code,concordance.csv:nhs_ods,recordDetails.identifiers[scheme=GB-NHS],,,,GB-NHS,,
+Local authority code,concordance.csv:local_authority,recordDetails.identifiers[scheme=GB-LAE],,,,GB-LAE,,
+ONS GSS code,concordance.csv:gss,,,,P836,,,Councils and other areas
+Charity number (England and Wales),concordance.csv:charity_ew,recordDetails.identifiers[scheme=GB-CHC],,,P3057,GB-CHC,,
+OpenCorporates record,,,,,P1320,,jurisdiction_code/company_number,Built from the Companies House number: gb/ plus the number
+Where the fact comes from,,source,PublicBody.sourceUrl,schema:url,,,,Every link carries its own source; provenance.jsonld lists every source with its fingerprint
