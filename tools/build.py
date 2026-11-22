@@ -82,7 +82,7 @@ def match_la(name):
     return (next(iter(hits)), "council short name (unique among open local authorities)") if len(hits) == 1 else (None, "no unique council for this place name")
 
 PERSON = re.compile(r"^(?:mr|mrs|ms|miss|dr|sir|dame|lady|professor|prof)\b|^lord\s+(?!chancellor|advocate|president|privy|high|lieutenant|chief)", re.I)  # D-OG4, shared with tools/check.py
-CORP = re.compile(r"\b(limited|limted|ltd|plc|llp|lp|group|holdings|ventures|enterprises|capital|partners|fund|investments|infrastructure|company|co)\b", re.I)
+CORP = re.compile(r"\b(limited|limted|ltd|plc|llp|lp|group|holdings|ventures|enterprises|capital|partners|fund|investments|infrastructure|company|co|museum|gallery|trust|commission|society|foundation|college|library|school|hospital|institute|centre|council)\b", re.I)  # D-OG13
 def is_person(n): return bool(PERSON.match(n or "")) and not CORP.search(n or "")  # D-OG5: companies named after people stay visible; bare names are withheld
 EDGES, UNRES = [], []
 def edge(child, parent_id, parent_text, rel, src, ref, how, **extra):

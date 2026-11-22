@@ -8,3 +8,5 @@ sources/pfi-2025.ods
 sources/ukgi-ara-2025-26.html
 # D-OG11: legislation.gov.uk effect ids in this file trip GitHub push protection (false positive); fetch.py --private downloads it
 sources/ni-eao-2026.xml
+# raw Public Bodies editions name chairs and accounting officers; tools/trends.py --fetch downloads them
+sources/public-bodies/

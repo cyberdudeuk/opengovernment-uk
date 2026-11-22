@@ -40,6 +40,8 @@ tools/patch_portal.py   build docs/index.html from the 0.2.2 page plus the accou
 tools/export_bods.py    emit and validate BODS 0.4 (schema vendored in vendor/bods-schema, commit e8cc3fd)
 tools/reconcile_peers.py  reconcile peer reference lists from the National Data Library catalogue
 tools/refdata.py        reference data lineage, matched against data.gov.uk
+tools/trends.py         public bodies 2012-2024 from the official editions; 2020 baseline reconciled with today
+tools/scenarios.py      evolution, reform and revolution to 2030 (modelled, assumptions editable)
 ```
 
 Three source files are **not redistributed** here because they name people (the Public Bodies Directory, Companies House controller pages, the PFI register's investors). `fetch.py --private` downloads them; their fingerprints are in `sources/manifest.json`, so a downloaded copy can be checked against the one the build used.
@@ -63,6 +65,7 @@ Nothing runs on a schedule: there are no paid services, no secrets and no tokens
 
 ## Documentation
 
+- [Trends since 2012 and three lenses to 2030](documentation/trends-and-futures-2030.md): what the Cabinet Office's own editions show, the November 2020 baseline checked against today, and modelled scenarios
 - [Reference data lineage](documentation/reference-data.md): everything this relies on, everything that relies on it, matched against data.gov.uk
 - [BODS public-sector profile](documentation/bods-public-sector-profile.md)
 - [Defect register](documentation/defect-register.md) and [the case against](documentation/case-against.md)

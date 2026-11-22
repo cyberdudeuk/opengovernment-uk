@@ -24,3 +24,6 @@ Internal record, kept in the repository rather than on the portal. Every defect 
 | OG-D14 | Footer named an employer | Neutral authorship line; the build fails if the footer names a government body (D-OG9) |
 | OG-D15 | Raw sources that name people were candidates for a public repository | Not redistributed; fetched by the pipeline; the hash check requires them to be declared (D-OG10) |
 | OG-D16 | GitHub push protection read a legislation.gov.uk effect identifier ("key-" + 32 hex characters) in the Northern Ireland order as a Mailgun API key | The file is fetched, not committed; its fingerprint stays in the manifest (D-OG11). Push protection is left on |
+| OG-D17 | The trends personal-data check matched "Chair" inside a body name ("Law Commission, with the exception of the Chair") | Checks field names, not body names (D-OG12) |
+| OG-D18 | Person rules read "Sir John Soane's Museum" as a person | One institution-word rule shared by build, check and check_trends (D-OG13); the museum is a test case |
+| OG-D19 | The "Nov2020" public bodies workbook in SharePoint was built on the 2019 edition | Workbook not used as data; the official 2020 edition is the baseline; the comparison is recorded in the trends document |

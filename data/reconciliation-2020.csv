@@ -1,0 +1,245 @@
+name_2020,department_2020,class_2020,register_id,register_status,closed,close_reason,in_directory_2023_24,verdict
+Advisory Committee on Animal Feeding stuffs,Food Standards Agency,NDPB,,,,,False,not matched: for a person
+"Advisory Committee on Business Appointments, excluding political members",Cabinet Office,NDPB,government-organisation:PB336,open,,,False,current
+Advisory Committee on Clinical Excellence Awards,Department of Health and Social Care,NDPB,government-organisation:OT522,closed,2022-04-13,replaced,False,replaced: Advisory Committee on Clinical Impact Awards
+Advisory Committee on Conscientious Objectors,Ministry of Defence,NDPB,government-organisation:PB392,open,,,True,current
+Advisory Committee on Novel Foods and Processes,Food Standards Agency,NDPB,government-organisation:PB574,open,,,True,current
+Advisory Committee on Releases to the Environment,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB209,open,,,True,current
+Advisory Committee on the Microbiological Safety of Food,Food Standards Agency,NDPB,government-organisation:PB575,open,,,True,current
+Advisory Committees on Justices of the Peace,Ministry of Justice,NDPB,government-organisation:PB437,open,,,True,current
+"Advisory, Conciliation and Arbitration Service","Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB28,open,,,True,current
+Advisory Council on the Misuse of Drugs,Home Office,NDPB,government-organisation:PB271,open,,,True,current
+Agriculture and Horticulture Development Board,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:OT204,open,,,True,current
+Animal and Plant Health Agency,"Department for Environment, Food and Rural Affairs",Executive agency,government-organisation:EA1079,open,,,True,current
+Animals in Science Committee,Home Office,NDPB,government-organisation:PB534,open,,,True,current
+Armed Forces Covenant Fund Trust,Ministry of Defence,NDPB,government-organisation:PB1308,open,,,True,current
+Armed Forces Pay Review Body,Ministry of Defence,NDPB,government-organisation:PB394,open,,,True,current
+Arts Council England,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB165,open,,,False,current
+Big Lottery Fund (The National Lottery Community Fund),"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB1283,open,,,False,current
+Biometric and Forensics Ethics Group,Home Office,NDPB,,,,,False,not matched: for a person
+Birmingham Organising Committee for the 2022 Commonwealth Games Ltd,"Department for Digital, Culture, Media and Sport",NDPB,ons-name:birmingham-organising-committee-for-the-2022-commonwealth-games-ltd,open,,,False,current
+Boundary Commission for England,Cabinet Office,NDPB,government-organisation:PB337,open,,,True,current
+Boundary Commission for Northern Ireland,Northern Ireland Office,NDPB,government-organisation:OT428,open,,,True,current
+Boundary Commission for Scotland,Office of the Secretary of State for Scotland,NDPB,government-organisation:OT431,open,,,True,current
+Boundary Commission for Wales,Cabinet Office,NDPB,government-organisation:OT432,open,,,True,current
+BPDTS Ltd,Department for Work and Pensions,NDPB,government-organisation:OT1236,closed,2021-07-01,merged,False,replaced: Department for Work and Pensions
+British Council,"Foreign, Commonwealth and Development office",NDPB,government-organisation:OT313,open,,,True,current
+British Film Institute,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB189,open,,,True,current
+British Hallmarking Council,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB124,open,,,True,current
+British Library,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB166,open,,,True,current
+British Museum,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB167,open,,,True,current
+British Pharmacopoeia Commission,Department of Health and Social Care,NDPB,government-organisation:PB524,open,,,True,current
+British Tourist Authority (VisitBritain),"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB186,open,,,False,current
+British Transport Police Authority,Department for Transport,NDPB,government-organisation:PB461,open,,,True,current
+Building Regulations Advisory Committee,"Ministry for Housing, Communities, and Local Government",NDPB,government-organisation:PB160,closed,2023-04-01,no_longer_exists,False,closed
+Care Quality Commission,Department of Health and Social Care,NDPB,government-organisation:PB251,open,,,True,current
+Central Arbitration Committee,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB148,open,,,True,current
+"Centre for Environment, Fisheries and Aquaculture Science","Department for Environment, Food and Rural Affairs",Executive agency,government-organisation:EA53,open,,,True,current
+Charity Commission for England and Wales,"Department for Digital, Culture, Media and Sport",Non-ministerial department,government-organisation:D98,open,,,True,current
+Children and Family Court Advisory and Support Service,Ministry of Justice,NDPB,,,,,True,not matched: for a person
+Civil Justice Council,Ministry of Justice,NDPB,government-organisation:PB293,open,,,True,current
+Civil Nuclear Police Authority,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB194,open,,,True,current
+Civil Procedure Rule Committee,Ministry of Justice,NDPB,government-organisation:PB440,open,,,True,current
+Civil Service Commission,Cabinet Office,NDPB,government-organisation:PB366,open,,,True,current
+Coal Authority,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB195,closed,2024-11-28,changed_name,True,replaced: Mining Remediation Authority
+Commission for Equality and Human Rights,Cabinet Office,NDPB,,,,,False,not matched: for a person
+Commission on Human Medicines,Department of Health and Social Care,NDPB,government-organisation:PB525,open,,,True,current
+Committee on Climate Change,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB196,open,,,False,current
+Committee on Fuel Poverty,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB1172,open,,,True,current
+"Committee on Mutagenicity of Chemicals in Food, Consumer Products and the Environment",Food Standards Agency,NDPB,government-organisation:PB526,open,,,False,current
+Committee on Radioactive Waste Management,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB191,open,,,True,current
+"Committee on Standards in Public Life, excluding political appointments",Cabinet Office,NDPB,government-organisation:PB158,closed,2025-10-13,replaced,False,replaced: Ethics and Integrity Commission
+"Committee on Toxicity of Chemicals in Food, Consumer Products and the Environment",Food Standards Agency,NDPB,government-organisation:PB576,open,,,True,current
+Commonwealth Scholarship Commission,"Foreign, Commonwealth and Development office",NDPB,,,,,False,not matched: for a person
+Companies House,"Department for Business, Energy and Industrial Strategy",Executive agency,government-organisation:EA26,open,,,True,current
+Competition and Markets Authority,"Department for Business, Energy and Industrial Strategy",Non-ministerial department,government-organisation:D550,open,,,True,current
+Competition Appeal Tribunal,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB140,open,,,True,current
+Competition Service,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB318,open,,,True,current
+Construction Industry Training Board,Department for Education,NDPB,government-organisation:PB126,open,,,True,current
+Consumer Council for Water,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB198,open,,,True,current
+Copyright Tribunal,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB355,open,,,True,current
+Criminal Cases Review Commission,Ministry of Justice,NDPB,government-organisation:IM320,open,,,True,current
+Criminal Injuries Compensation Authority,Ministry of Justice,Executive agency,government-organisation:PB297,open,,,True,current
+Criminal Procedure Rule Committee,Ministry of Justice,NDPB,government-organisation:PB516,open,,,True,current
+"Crown Commercial Service, The",Cabinet Office,Executive agency,government-organisation:EA1015,closed,2026-03-31,changed_name,False,replaced: Government Commercial Agency
+Crown Prosecution Service,Attorney General's Office,Non-ministerial department,government-organisation:D101,open,,,True,current
+Defence Electronics and Components Agency,Ministry of Defence,Executive agency,,,,,False,not matched: for a person
+Defence Equipment and Support,Ministry of Defence,Executive agency,government-organisation:OT495,open,,,True,current
+Defence Nuclear Safety Committee,Ministry of Defence,NDPB,government-organisation:PB396,open,,,False,current
+Defence Science and Technology Laboratory,Ministry of Defence,Executive agency,government-organisation:EA42,open,,,True,current
+Directly Operated Railways Ltd,Department for Transport,NDPB,,,,,False,not matched: for a person
+Disclosure and Barring Service,Home Office,NDPB,government-organisation:PB509,open,,,True,current
+Driver and Vehicle Licensing Agency (DVLA),Department for Transport,Executive agency,government-organisation:EA74,open,,,False,current
+Driver and Vehicle Standards Agency (DVSA),Department for Transport,Executive agency,government-organisation:EA570,open,,,False,current
+East West Rail Company,Department for Transport,NDPB,,,,,False,not matched: for a person
+Education and Skills Funding Agency,Department for Education,Executive agency,government-organisation:EO1216,closed,2025-04-01,merged,True,replaced: Department for Education
+Engineering Construction Industry Training Board,Department for Education,NDPB,government-organisation:PB131,open,,,True,current
+Environment Agency,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:EA199,open,,,True,current
+Family Justice Council,Ministry of Justice,NDPB,government-organisation:PB441,open,,,True,current
+Family Procedure Rule Committee,Ministry of Justice,NDPB,government-organisation:PB442,open,,,True,current
+Film Industry Training Board,Department for Education,NDPB,,,,,False,not matched: for a person
+Food Standards Agency,Department of Health and Social Care,Non-ministerial department,government-organisation:D102,open,,,True,current
+Forest Research,Forestry Commission,Executive agency,government-organisation:EA54,open,,,True,current
+Forestry Commission,"Department for Environment, Food and Rural Affairs",Non-ministerial department,government-organisation:D85,open,,,True,current
+Gambling Commission,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB169,open,,,True,current
+Gangmasters and Labour Abuse Authority,Home Office,NDPB,government-organisation:PB1234,closed,2026-04-06,replaced,True,replaced: Fair Work Agency
+Geffrye Museum Trust,"Department for Digital, Culture, Media and Sport",NDPB,,,,,False,not matched: for a person
+Government Actuary's Department,Her Majesty's Treasury,Non-ministerial department,government-organisation:D103,open,,,True,current
+Government Internal Audit Agency (GIAA),Her Majesty's Treasury,Executive agency,government-organisation:EA1084,open,,,False,current
+Government Legal Department,Attorney General's Office,Executive agency,government-organisation:D1108,open,,,True,current
+Government Property Agency,Cabinet Office,Executive agency,government-organisation:EA1255,open,,,True,current
+Great Britain-China Centre,"Foreign, Commonwealth and Development office",NDPB,government-organisation:PB426,open,,,True,current
+Health and Safety Executive,Department for Work and Pensions,NDPB,government-organisation:PB207,open,,,True,current
+Health and Social Care Information Centre (NHS Digital),Department of Health and Social Care,NDPB,nhs-ods:T1430,open,,,False,current
+Health Education England,Department of Health and Social Care,NDPB,government-organisation:OT539,closed,2023-04-01,merged,False,replaced: NHS England
+Health Research Authority,Department of Health and Social Care,NDPB,government-organisation:OT483,open,,,True,current
+Her Majesty's Courts and Tribunals Service,Ministry of Justice,Executive agency,government-organisation:EA73,open,,,False,current
+Her Majesty's Land Registry,"Department for Business, Energy and Industrial Strategy",Non-ministerial department,government-organisation:D69,open,,,False,current
+Her Majesty's Prison and Probation Service (HMPPS),Ministry of Justice,Executive agency,government-organisation:EA1213,open,,,False,current
+Her Majesty's Revenue and Customs,Her Majesty's Treasury,Non-ministerial department,government-organisation:D25,open,,,False,current
+High Speed 2 Ltd (HS2),Department for Transport,NDPB,,,,,False,not matched: for a person
+Historic Buildings and Monuments Commission for England,"Department for Digital, Culture, Media and Sport",NDPB,,,,,False,not matched: for a person
+Homes England,"Ministry for Housing, Communities, and Local Government",NDPB,government-organisation:PB1232,open,,,True,current
+Horniman Public Museum and Public Park Trust,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB171,open,,,True,current
+Horserace Betting Levy Board,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB118,open,,,True,current
+"House of Lords Appointment Commission, excluding political members",Cabinet Office,NDPB,,,,,False,not matched: for a person
+Human Fertilisation and Embryology Authority,Department of Health and Social Care,NDPB,government-organisation:PB253,open,,,True,current
+Human Tissue Authority,Department of Health and Social Care,NDPB,government-organisation:PB254,open,,,True,current
+Imperial War Museum,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB172,open,,,True,current
+Independent Advisory Panel on Deaths in Custody,Ministry of Justice,NDPB,government-organisation:PB443,closed,2026-07-29,changed_name,True,replaced: Independent Advisory Panel on Deaths in Detention
+Independent Agricultural Appeals Panel,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB210,open,,,True,current
+Independent Commission for Aid Impact,"Foreign, Commonwealth and Development office",NDPB,government-organisation:IM335,open,,,True,current
+Independent Commission on Civil Aviation Noise,Department for Transport,NDPB,government-organisation:PB1274,closed,2021-09-30,no_longer_exists,False,closed
+Independent Medical Expert Group,Ministry of Defence,NDPB,government-organisation:PB1017,open,,,True,current
+Independent Office for Police Conduct,Home Office,NDPB,government-organisation:PB1248,open,,,True,current
+Independent Reconfiguration Panel,Department of Health and Social Care,NDPB,government-organisation:PB527,open,,,True,current
+Industrial Injuries Advisory Council,Department for Work and Pensions,NDPB,government-organisation:PB231,open,,,True,current
+Information Commissioner's Office,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB298,closed,2026-10-29,changed_name,True,replaced: Information Commission
+Insolvency Rules committee,Ministry of Justice,NDPB,government-organisation:PB445,open,,,True,current
+Insolvency Service,"Department for Business, Energy and Industrial Strategy",Executive agency,government-organisation:EA32,open,,,True,current
+Institute for Apprenticeships and Technical Education,Department for Education,NDPB,government-organisation:PB1275,closed,2025-06-01,no_longer_exists,True,replaced: Department for Education
+Intellectual Property Office,"Department for Business, Energy and Industrial Strategy",Executive agency,government-organisation:EA34,open,,,False,current
+Investigatory Powers Tribunal,Home Office,NDPB,government-organisation:PB270,open,,,True,current
+Joint Nature Conservation Committee,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB201,open,,,True,current
+Judicial Appointments Commission,Ministry of Justice,NDPB,government-organisation:PB299,open,,,True,current
+Land Registration Rule Committee,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB358,open,,,False,current
+"Law Commission, with the exception of the Chair",Ministry of Justice,NDPB,government-organisation:PB294,open,,,False,current
+Leasehold Advisory Service (LEASE),"Ministry for Housing, Communities, and Local Government",NDPB,government-organisation:PB373,open,,,False,current
+Legal Aid Agency,Ministry of Justice,Executive agency,government-organisation:EA556,open,,,True,current
+Legal Services Board,Ministry of Justice,NDPB,government-organisation:IM332,open,,,True,current
+LocatEd Property Limited,Department for Education,NDPB,,,,,True,not matched: for a person
+Low Pay Commission,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB122,open,,,True,current
+Marine Management Organisation,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB57,open,,,True,current
+Maritime and Coastguard Agency (MCA),Department for Transport,Executive agency,government-organisation:EA78,open,,,False,current
+Marshall Aid Commemoration Commission,"Foreign, Commonwealth and Development office",NDPB,government-organisation:OT315,open,,,True,current
+Medicines and Healthcare Products Regulatory Agency,Department of Health and Social Care,Executive agency,government-organisation:EA63,open,,,True,current
+Met Office,"Department for Business, Energy and Industrial Strategy",Executive agency,government-organisation:EA46,open,,,True,current
+Migration Advisory Committee,Home Office,NDPB,government-organisation:PB275,open,,,True,current
+Money and Pensions Service (MaPS),Department for Work and Pensions,NDPB,government-organisation:OT1266,open,,,False,current
+"National Archives, The","Department for Digital, Culture, Media and Sport",Non-ministerial department,government-organisation:EA71,open,,,False,current
+National Army Museum,Ministry of Defence,NDPB,government-organisation:PB307,open,,,True,current
+National Crime Agency,Home Office,Non-ministerial department,government-organisation:PB558,open,,,True,current
+National Crime Agency Remuneration Review Body,Home Office,NDPB,government-organisation:PB580,open,,,True,current
+National Gallery,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB174,open,,,True,current
+National Heritage Memorial Fund/Heritage Lottery Fund,"Department for Digital, Culture, Media and Sport",NDPB,,,,,False,ambiguous: for a person
+National Infrastructure Commission,Her Majesty's Treasury,Executive agency,government-organisation:OT1161,closed,2025-03-31,replaced,True,replaced: National Infrastructure and Service Transformation Authority
+National Institute for Health and Care Excellence,Department of Health and Social Care,NDPB,government-organisation:PB474,open,,,True,current
+National Museum of the Royal Navy,Ministry of Defence,NDPB,ons-name:national-museum-of-the-royal-navy,open,,,True,current
+National Museums Liverpool,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB178,open,,,False,current
+National Portrait Gallery,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB179,open,,,True,current
+National Savings and Investments (NS&I),Her Majesty's Treasury,Non-ministerial department,government-organisation:EA104,open,,,False,current
+Natural England,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB202,open,,,True,current
+Natural History Museum,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB180,open,,,True,current
+NHS England,Department of Health and Social Care,NDPB,government-organisation:PB481,open,,,True,current
+NHS Improvement (includes Monitor and TDA),Department of Health and Social Care,NDPB,nhs-ods:T1520,open,,,False,current
+NHS Pay Review Body,Department of Health and Social Care,NDPB,government-organisation:PB531,open,,,True,current
+Northern Ireland Human Rights Commission,Northern Ireland Office,NDPB,government-organisation:OT429,open,,,True,current
+Northern Lighthouse Board (Commissioners of Northern Lighthouses),Department for Transport,NDPB,government-organisation:PB463,open,,,False,current
+Nuclear Decommissioning Authority,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB197,open,,,True,current
+Nuclear Research Advisory Council,Ministry of Defence,NDPB,government-organisation:PB400,closed,2026-04-01,changed_name,True,replaced: Nuclear Research Advisory Committee
+Office for Budget Responsibility,Her Majesty's Treasury,NDPB,government-organisation:PB260,open,,,True,current
+"Office for Standards in Education, Children’s Services and Skills (OFSTED)",Department for Education,Non-ministerial department,ons-name:office-for-standards-in-education-childrens-services-and-skills-ofsted,open,,,False,current
+Office for Students,Department for Education,NDPB,government-organisation:PB1253,open,,,True,current
+Office of Gas and Electricity Markets (Ofgem),"Department for Business, Energy and Industrial Strategy",Non-ministerial department,government-organisation:D108,open,,,False,current
+Office of Qualifications and Examinations Regulation (OFQUAL),Department for Education,Non-ministerial department,government-organisation:D109,open,,,False,current
+Office of Rail and Road,Department for Transport,Non-ministerial department,government-organisation:D1117,open,,,True,current
+"Office of the Children’s Commissioner, The",Department for Education,NDPB,government-organisation:PB413,open,,,False,current
+Office of the Immigration Services Commissioner,Home Office,NDPB,government-organisation:PB263,closed,2025-01-16,changed_name,True,replaced: Immigration Advice Authority
+Office of the Public Guardian,Ministry of Justice,Executive agency,government-organisation:EA72,open,,,True,current
+Parades Commission for Northern Ireland,Northern Ireland Office,NDPB,government-organisation:OT430,open,,,True,current
+Parole Board for England and Wales with the exception of judicial members,Ministry of Justice,NDPB,government-organisation:PB301,open,,,False,current
+Pensions Ombudsman,Department for Work and Pensions,NDPB,government-organisation:PB236,open,,,True,current
+Pensions Regulator,Department for Work and Pensions,NDPB,government-organisation:PB234,open,,,True,current
+Planning Inspectorate,"Ministry for Housing, Communities, and Local Government",Executive agency,government-organisation:EA39,open,,,True,current
+Plant Varieties and Seeds Tribunal,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB423,open,,,True,current
+Police Discipline Appeals Tribunal,Home Office,NDPB,government-organisation:PB278,open,,,False,current
+Police Remuneration Review Body,Home Office,NDPB,government-organisation:PB1083,open,,,True,current
+Prison Service Pay Review Body,Ministry of Justice,NDPB,government-organisation:PB446,open,,,True,current
+Public Health England,Department of Health and Social Care,Executive agency,nhs-ods:X25,open,,,False,current
+Queen Elizabeth II Conference Centre,"Ministry for Housing, Communities, and Local Government",Executive agency,government-organisation:EA40,open,,,True,current
+Regional Advisory Committees / Forestry and Woodlands Advisory Committees (x9),Forestry Commission,NDPB,,,,,False,not matched: for a person
+Regulator of Social Housing,"Ministry for Housing, Communities, and Local Government",NDPB,government-organisation:PB1218,open,,,True,current
+Regulatory Policy Committee,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB354,open,,,True,current
+Review Body on Doctors' and Dentists' Remuneration,Department of Health and Social Care,NDPB,government-organisation:PB530,open,,,True,current
+Reviewing Committee on the Export of Works of Art and Objects of Cultural Interest,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB382,open,,,True,current
+Royal Air Force Museum,Ministry of Defence,NDPB,government-organisation:PB308,open,,,True,current
+Royal Armouries,"Department for Digital, Culture, Media and Sport",NDPB,,,,,False,not matched: for a person
+"Royal Botanic Gardens, Kew","Department for Environment, Food and Rural Affairs",NDPB,,,,,True,ambiguous: for a person
+"Royal Mint Advisory Committee on the Design of Coins, Medals, Seals and Decorations",Her Majesty's Treasury,NDPB,ons-name:royal-mint-advisory-committee-on-the-design-of-coins-medals-seals-and-decoration,open,,,False,current
+Royal Museums Greenwich,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB291,open,,,True,current
+Rural Payments Agency,"Department for Environment, Food and Rural Affairs",Executive agency,government-organisation:EA58,open,,,True,current
+School Teachers’ Review Body,Department for Education,NDPB,government-organisation:PB414,open,,,True,current
+Science Advisory Committee on the Medical Implications of Less-Lethal Weapons,Ministry of Defence,NDPB,government-organisation:PB402,closed,2025-11-30,no_longer_exists,False,closed
+Science Advisory Council,"Department for Environment, Food and Rural Affairs",NDPB,,,,,False,not matched: for a person
+Science Museum Group,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB177,open,,,True,current
+Sea Fish Industry Authority,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:OT205,open,,,False,current
+Security Industry Authority,Home Office,NDPB,government-organisation:PB264,open,,,True,current
+Security Vetting Appeals Panel,Cabinet Office,NDPB,government-organisation:PB367,open,,,True,current
+Senior Salaries Review Body,Cabinet Office,NDPB,government-organisation:PB368,open,,,True,current
+Sentencing Council for England and Wales,Ministry of Justice,NDPB,government-organisation:PB295,open,,,True,current
+Serious Fraud Office,Attorney General's Office,Non-ministerial department,government-organisation:D115,open,,,True,current
+Single Source Regulations Office,Ministry of Defence,NDPB,government-organisation:PB1093,open,,,True,current
+Sir John Soane's Museum,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB183,open,,,True,current
+Small Business Commissioner,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB1237,open,,,True,current
+Social Mobility Commission,Department for Education,NDPB,government-organisation:PB1193,open,,,True,current
+Social Security Advisory Committee,Department for Work and Pensions,NDPB,government-organisation:PB232,open,,,True,current
+Social Work England,Department for Education,NDPB,government-organisation:PB1298,open,,,True,current
+Sport England,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB190,open,,,True,current
+Sports Grounds Safety Authority,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB184,open,,,True,current
+Standards and Testing Agency,Department for Education,Executive agency,government-organisation:EA243,open,,,True,current
+Student Loans Company Ltd,Department for Education,NDPB,,,,,False,not matched: for a person
+Submarine Delivery Agency,Ministry of Defence,Executive agency,government-organisation:OT1314,open,,,True,current
+Supreme Court of the United Kingdom,Ministry of Justice,Non-ministerial department,government-organisation:D435,open,,,False,current
+Tate,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB571,open,,,True,current
+"Technical Advisory Board (for the Regulation of Investigatory Powers Act 2000), with the exception of Agency Members",Home Office,NDPB,government-organisation:PB274,open,,,False,current
+The Advisory Council on National Records and Archives,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB438,open,,,True,current
+The Housing Ombudsman,"Ministry for Housing, Communities, and Local Government",NDPB,government-organisation:PB372,open,,,True,current
+The Teaching Regulation Agency (TRA),Department for Education,Executive agency,government-organisation:EA1256,open,,,False,current
+The Water Services Regulation Authority (OFWAT),"Department for Environment, Food and Rural Affairs",Non-ministerial department,,,,,False,not matched: for a person
+Theatres Trust,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB380,open,,,True,current
+Traffic Commissioners,Department for Transport,NDPB,,,,,False,not matched: for a person
+Transport Focus,Department for Transport,NDPB,government-organisation:PB1118,open,,,True,current
+Treasure Valuation Committee,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB383,open,,,True,current
+Tribunal Procedure Committee,Ministry of Justice,NDPB,government-organisation:PB448,open,,,True,current
+Trinity House,Department for Transport,NDPB,government-organisation:PB462,open,,,True,current
+UK Atomic Energy Authority,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB137,open,,,True,current
+UK Debt Management Office,Her Majesty's Treasury,Executive agency,government-organisation:EA82,open,,,True,current
+UK Hydrographic Office,Ministry of Defence,Executive agency,government-organisation:EA51,open,,,True,current
+UK Research and Innovation,"Department for Business, Energy and Industrial Strategy",NDPB,government-organisation:PB1221,open,,,True,current
+UK Space Agency,"Department for Business, Energy and Industrial Strategy",Executive agency,government-organisation:EA31,open,,,True,current
+UK Sports Council,"Department for Digital, Culture, Media and Sport",NDPB,,,,,False,not matched: for a person
+"UK Statistics Authority Publicly known as the ""UK Statistics Authority"")",Cabinet Office,Non-ministerial department,government-organisation:D116,open,,,False,current
+United Kingdom Anti-Doping Ltd,"Department for Digital, Culture, Media and Sport",NDPB,,,,,False,not matched: for a person
+Valuation Office Agency,Her Majesty's Revenue and Customs,Executive agency,government-organisation:EA87,closed,2026-04-01,merged,True,replaced: HM Revenue & Customs
+Valuation Tribunal for England,"Ministry for Housing, Communities, and Local Government",NDPB,government-organisation:PB1204,open,,,True,current
+Valuation Tribunal Service,"Ministry for Housing, Communities, and Local Government",NDPB,government-organisation:PB375,open,,,True,current
+Vehicle Certification Agency,Department for Transport,Executive agency,government-organisation:EA80,open,,,True,current
+Veterans Advisory and Pensions Committees,Ministry of Defence,NDPB,government-organisation:PB403,open,,,True,current
+Veterinary Medicines Directorate,"Department for Environment, Food and Rural Affairs",Executive agency,government-organisation:EA60,open,,,True,current
+Veterinary Products Committee,"Department for Environment, Food and Rural Affairs",NDPB,government-organisation:PB212,open,,,True,current
+Victoria and Albert Museum,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB378,open,,,True,current
+VisitEngland,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB376,open,,,False,current
+Wallace Collection,"Department for Digital, Culture, Media and Sport",NDPB,government-organisation:PB187,open,,,True,current
+Westminster Foundation for Democracy,"Foreign, Commonwealth and Development office",NDPB,government-organisation:OT316,open,,,True,current
+Wilton Park,"Foreign, Commonwealth and Development office",Executive agency,government-organisation:EA62,open,,,True,current
+Youth Justice Board for England and Wales,Ministry of Justice,NDPB,government-organisation:PB302,open,,,True,current

@@ -9,7 +9,7 @@ BASE = json.loads(re.search(r'<script[^>]*id="data"[^>]*>(.*?)</script>', (S / "
 REG = {r[0]: r for r in BASE["r"]}
 NAME = {k: r[1] for k, r in REG.items()}
 PERSON = re.compile(r"^(?:mr|mrs|ms|miss|dr|sir|dame|lady|professor|prof)\b|^lord\s+(?!chancellor|advocate|president|privy|high|lieutenant|chief)", re.I)  # D-OG4: offices such as "Lord Chancellor" are not persons
-CORP = re.compile(r"\b(limited|limted|ltd|plc|llp|lp|group|holdings|ventures|enterprises|capital|partners|fund|investments|infrastructure|company|co)\b", re.I)
+CORP = re.compile(r"\b(limited|limted|ltd|plc|llp|lp|group|holdings|ventures|enterprises|capital|partners|fund|investments|infrastructure|company|co|museum|gallery|trust|commission|society|foundation|college|library|school|hospital|institute|centre|council)\b", re.I)  # D-OG13: institutions named after people
 def is_person(n): return bool(PERSON.match(n or "")) and not CORP.search(n or "")  # D-OG5: companies named after people stay visible; bare names are withheld
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 FILES = {"eao": "eao2026.xml", "wgao": "wga-order-2026.xml", "ons": "pscgnov2026.xlsx", "pbd": "pbd2324.xlsx", "govuk": "govuk-organisations.json",
@@ -72,7 +72,7 @@ def c_digest(T):
     return [] if d == T["digest"] else ["digest mismatch"]
 def c_person_rule_offices(T):
     """D-OG4: the person filter must not treat offices of state (Lord Chancellor, Lord Advocate) as people, and must still catch people."""
-    offices = ["Lord Chancellor's Department", "Lord Advocate", "Lord President of the Council"]; people = ["Mr A Example", "Lord Example", "Dame B Example", "Sir C Example"]; firms = ["Sir Robert McAlpine Enterprises Limited"]
+    offices = ["Lord Chancellor's Department", "Lord Advocate", "Lord President of the Council"]; people = ["Mr A Example", "Lord Example", "Dame B Example", "Sir C Example"]; firms = ["Sir Robert McAlpine Enterprises Limited", "Sir John Soane's Museum"]
     return [o for o in offices + firms if is_person(o)] + [p for p in people if not is_person(p)]
 CHECKS = [c_person_rule_offices, c_provenance, c_ends, c_no_persons, c_no_email, c_chain_shape, c_coverage, c_hashes, c_known_answers, c_nmd_terminal, c_unresolved_reason, c_wording, c_digest]
 

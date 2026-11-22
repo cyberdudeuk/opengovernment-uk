@@ -1,0 +1,797 @@
+{
+ "editions": {
+  "2012": {
+   "money_coverage": 0.59,
+   "financial_year": "2011-12",
+   "file": "https://assets.publishing.service.gov.uk/media/5a7c11d0ed915d1c30daa610/PB12-csv_1.csv",
+   "unit_evidence": "values written in pounds (Arts Council England \u00a3393,602,000)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 560,
+     "records": 262,
+     "gov_funding": 25898179718.0,
+     "spend": 31309749245.0,
+     "staff": 105225.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 215,
+    "Executive NDPB": 185,
+    "Tribunal NDPB": 15
+   },
+   "total": {
+    "bodies": 560,
+    "records": 262,
+    "gov_funding": 25898179718.0,
+    "spend": 31309749245.0,
+    "staff": 105225.0
+   },
+   "largest_bodies": {},
+   "gov_funding_excl_largest": 25898179718.0,
+   "ndpb_gov_funding_excl_largest": 25898179718.0,
+   "deflator_2025_26_100": 68.4164,
+   "real": {
+    "gov_funding": 37853759797.35853,
+    "gov_funding_excl_largest": 37853759797.35853,
+    "ndpb_gov_funding_excl_largest": 37853759797.35853
+   },
+   "share_of_gdp": 0.015398031242958176,
+   "money_series": true
+  },
+  "2013": {
+   "money_coverage": 0.66,
+   "financial_year": "2012-13",
+   "file": "https://assets.publishing.service.gov.uk/media/5a7c922640f0b626628acff9/PB13_21-jan-14.csv",
+   "unit_evidence": "pounds (469,968,000)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 231,
+     "records": 231,
+     "gov_funding": 20549973673.0,
+     "spend": 27352739492.0,
+     "staff": 97568.0
+    },
+    "Executive agency": {
+     "bodies": 42,
+     "records": 42,
+     "gov_funding": 66197189819.0,
+     "spend": 70583931659.0,
+     "staff": 118737.0
+    },
+    "Non-ministerial department": {
+     "bodies": 22,
+     "records": 22,
+     "gov_funding": 1579896000.0,
+     "spend": 2306077026.0,
+     "staff": 22980.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 88,
+    "Executive NDPB": 127,
+    "Tribunal NDPB": 14
+   },
+   "total": {
+    "bodies": 295,
+    "records": 295,
+    "gov_funding": 88327059492.0,
+    "spend": 100242748177.0,
+    "staff": 239285.0
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 51454795974.0,
+    "NHS England": 34500000.0
+   },
+   "gov_funding_excl_largest": 36837763518.0,
+   "ndpb_gov_funding_excl_largest": 20515473673.0,
+   "deflator_2025_26_100": 69.5581,
+   "real": {
+    "gov_funding": 126983139982.25945,
+    "gov_funding_excl_largest": 52959703496.78902,
+    "ndpb_gov_funding_excl_largest": 29494011010.93906
+   },
+   "share_of_gdp": 0.050902748189846546,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2012",
+    "bodies": 122,
+    "real_change": -0.1714,
+    "set_aside": [
+     "high speed 2 ltd",
+     "human tissue authority",
+     "olympic delivery authority",
+     "pensions regulator"
+    ],
+    "entered": 69,
+    "left": 28
+   }
+  },
+  "2014": {
+   "money_coverage": 0.7,
+   "financial_year": "2013-14",
+   "file": "https://assets.publishing.service.gov.uk/media/5a74e2f0ed915d502d6cbc95/Annex_A_i_public_bodies_2014_for_publication.csv",
+   "unit_evidence": "pounds (\u00a3460,721,000)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 219,
+     "records": 219,
+     "gov_funding": 116339383556.0,
+     "spend": 120235817595.0,
+     "staff": 97559.15
+    },
+    "Executive agency": {
+     "bodies": 41,
+     "records": 41,
+     "gov_funding": 73175107094.0,
+     "spend": 78249902122.0,
+     "staff": 106161.5
+    },
+    "Non-ministerial department": {
+     "bodies": 21,
+     "records": 21,
+     "gov_funding": 2072740000.0,
+     "spend": 2638251000.0,
+     "staff": 26424.0
+    },
+    "Other": {
+     "bodies": 2,
+     "records": 2,
+     "gov_funding": 145374000.0,
+     "spend": 215632000.0,
+     "staff": 311.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 83,
+    "Executive NDPB": 120,
+    "Tribunal NDPB": 14
+   },
+   "total": {
+    "bodies": 283,
+    "records": 283,
+    "gov_funding": 191732604650.0,
+    "spend": 201339602717.0,
+    "staff": 230455.65
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 54180532094.0,
+    "NHS England": 95873000000.0
+   },
+   "gov_funding_excl_largest": 41679072556.0,
+   "ndpb_gov_funding_excl_largest": 20466383556.0,
+   "deflator_2025_26_100": 70.9258,
+   "real": {
+    "gov_funding": 270328434293.3037,
+    "gov_funding_excl_largest": 58764331958.187294,
+    "ndpb_gov_funding_excl_largest": 28856048935.648243
+   },
+   "share_of_gdp": 0.10553999249731104,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2013",
+    "bodies": 155,
+    "real_change": 0.0161,
+    "set_aside": [
+     "armed forces pay review body",
+     "boundary commission for england",
+     "boundary commission for wales",
+     "disclosure and barring service",
+     "government actuarys department",
+     "independent commission for aid impact",
+     "nhs england",
+     "olympic delivery authority",
+     "security industry authority",
+     "uk atomic energy authority"
+    ],
+    "entered": 33,
+    "left": 29
+   }
+  },
+  "2015": {
+   "money_coverage": 0.72,
+   "financial_year": "2013-14",
+   "file": "https://assets.publishing.service.gov.uk/media/5a81750eed915d74e33fe4fe/PB2015_Directory_Dataset_final_Jan_2016.csv",
+   "unit_evidence": "pounds; repeats 2014's figures",
+   "by_class": {
+    "NDPB": {
+     "bodies": 215,
+     "records": 215,
+     "gov_funding": 116367719698.0,
+     "spend": 122576548298.0,
+     "staff": 94091.0
+    },
+    "Executive agency": {
+     "bodies": 43,
+     "records": 43,
+     "gov_funding": 76145242021.0,
+     "spend": 78990149740.0,
+     "staff": 114094.0
+    },
+    "Non-ministerial department": {
+     "bodies": 23,
+     "records": 23,
+     "gov_funding": 2374728000.0,
+     "spend": 3071741000.0,
+     "staff": 26475.0
+    },
+    "Other": {
+     "bodies": 1,
+     "records": 1,
+     "gov_funding": 0.0,
+     "spend": 0.0,
+     "staff": 0.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 84,
+    "Executive NDPB": 115,
+    "Tribunal NDPB": 14
+   },
+   "total": {
+    "bodies": 282,
+    "records": 282,
+    "gov_funding": 194887689719.0,
+    "spend": 204638439038.0,
+    "staff": 234660.0
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 55902927115.0,
+    "NHS England": 97380906000.0
+   },
+   "gov_funding_excl_largest": 41603856604.0,
+   "ndpb_gov_funding_excl_largest": 18986813698.0,
+   "deflator_2025_26_100": 70.9258,
+   "real": {
+    "gov_funding": 274776865003.9901,
+    "gov_funding_excl_largest": 58658283169.171165,
+    "ndpb_gov_funding_excl_largest": 26769967625.321114
+   },
+   "share_of_gdp": 0.10727672191335633,
+   "money_series": false
+  },
+  "2016": {
+   "money_coverage": 0.7,
+   "financial_year": "2015-16",
+   "file": "https://assets.publishing.service.gov.uk/media/5a80d3b3ed915d74e33fca1c/public_bodies_data_set_for_gov_december_2016.csv",
+   "unit_evidence": "pounds (\u00a3463,095,000)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 403,
+     "records": 209,
+     "gov_funding": 123269442690.0,
+     "spend": 0.0,
+     "staff": 77194.0
+    },
+    "Executive agency": {
+     "bodies": 40,
+     "records": 40,
+     "gov_funding": 73202740340.0,
+     "spend": 0.0,
+     "staff": 106436.0
+    },
+    "Non-ministerial department": {
+     "bodies": 24,
+     "records": 24,
+     "gov_funding": 5666413972.0,
+     "spend": 0.0,
+     "staff": 85915.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 143,
+    "Tribunal NDPB": 13
+   },
+   "total": {
+    "bodies": 467,
+    "records": 273,
+    "gov_funding": 202138597002.0,
+    "spend": 0.0,
+    "staff": 269545.0
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 55902927115.0,
+    "NHS England": 100357372000.0
+   },
+   "gov_funding_excl_largest": 45878297887.0,
+   "ndpb_gov_funding_excl_largest": 22912070690.0,
+   "deflator_2025_26_100": 72.2622,
+   "real": {
+    "gov_funding": 279729370268.273,
+    "gov_funding_excl_largest": 63488653662.634125,
+    "ndpb_gov_funding_excl_largest": 31706854607.249706
+   },
+   "share_of_gdp": 0.10396760338043642,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2014",
+    "bodies": 152,
+    "real_change": -0.0362,
+    "set_aside": [
+     "boundary commission for england",
+     "uk supreme court"
+    ],
+    "entered": 34,
+    "left": 43
+   }
+  },
+  "2017": {
+   "money_coverage": 0.69,
+   "financial_year": "2016-17",
+   "file": "https://assets.publishing.service.gov.uk/media/5a7c1d62ed915d210ade1abb/Public_Bodies_dataset__for_publication.csv",
+   "unit_evidence": "pounds (\u00a3494,161,000)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 245,
+     "records": 194,
+     "gov_funding": 127362346341.0,
+     "spend": 0.0,
+     "staff": 79952.0
+    },
+    "Executive agency": {
+     "bodies": 39,
+     "records": 39,
+     "gov_funding": 72924738994.0,
+     "spend": 0.0,
+     "staff": 105220.0
+    },
+    "Non-ministerial department": {
+     "bodies": 21,
+     "records": 21,
+     "gov_funding": 6147106000.0,
+     "spend": 0.0,
+     "staff": 87955.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 123,
+    "Tribunal NDPB": 11
+   },
+   "total": {
+    "bodies": 305,
+    "records": 254,
+    "gov_funding": 206434191335.0,
+    "spend": 0.0,
+    "staff": 273127.0
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 57244357393.0,
+    "NHS England": 104284450000.0
+   },
+   "gov_funding_excl_largest": 44905383942.0,
+   "ndpb_gov_funding_excl_largest": 23077896341.0,
+   "deflator_2025_26_100": 73.7129,
+   "real": {
+    "gov_funding": 280051648130.7885,
+    "gov_funding_excl_largest": 60919301698.88852,
+    "ndpb_gov_funding_excl_largest": 31307812256.742035
+   },
+   "share_of_gdp": 0.1017296555094683,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2016",
+    "bodies": 140,
+    "real_change": 0.0127,
+    "set_aside": [
+     "boundary commission for northern ireland",
+     "boundary commission for wales",
+     "centre for environment fisheries and aquaculture science",
+     "disabled peoples employment corporation gb ltd",
+     "government internal audit agency giaa",
+     "uk supreme court"
+    ],
+    "entered": 28,
+    "left": 42
+   }
+  },
+  "2018-19": {
+   "money_coverage": 0.74,
+   "financial_year": "2017-18",
+   "file": "https://assets.publishing.service.gov.uk/media/5c90d18740f0b633f3d4b657/2017-18_ALB_Financial_Datasets_.csv",
+   "unit_evidence": "\u00a3'000 in the header (462,442)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 234,
+     "records": 183,
+     "gov_funding": 129779758000.0,
+     "spend": 124756695000.0,
+     "staff": 77308.0
+    },
+    "Other": {
+     "bodies": 9,
+     "records": 9,
+     "gov_funding": 1410368000.0,
+     "spend": 559330000.0,
+     "staff": 0.0
+    },
+    "Executive agency": {
+     "bodies": 37,
+     "records": 37,
+     "gov_funding": 73757759000.0,
+     "spend": 72310938000.0,
+     "staff": 108880.0
+    },
+    "Non-ministerial department": {
+     "bodies": 20,
+     "records": 20,
+     "gov_funding": 5756503000.0,
+     "spend": 6032397000.0,
+     "staff": 89234.0
+    },
+    "Public corporation": {
+     "bodies": 1,
+     "records": 1,
+     "gov_funding": 97000000.0,
+     "spend": 96000000.0,
+     "staff": 274.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 118,
+    "Executive NDPB": 5,
+    "Tribunal NDPB": 7
+   },
+   "total": {
+    "bodies": 301,
+    "records": 250,
+    "gov_funding": 210801388000.0,
+    "spend": 203755360000.0,
+    "staff": 275696.0
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 60453322000.0,
+    "NHS England": 107523087000.0
+   },
+   "gov_funding_excl_largest": 42824979000.0,
+   "ndpb_gov_funding_excl_largest": 22256671000.0,
+   "deflator_2025_26_100": 74.6091,
+   "real": {
+    "gov_funding": 282541121659.42224,
+    "gov_funding_excl_largest": 57399136298.3872,
+    "ndpb_gov_funding_excl_largest": 29831040717.553223
+   },
+   "share_of_gdp": 0.09943419485483317,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2017",
+    "bodies": 139,
+    "real_change": -0.0258,
+    "set_aside": [
+     "centre for environment fisheries and aquaculture science",
+     "civil nuclear police authority",
+     "coal authority",
+     "disabled peoples employment corporation gb ltd",
+     "ebbsfleet development corporation",
+     "science advisory committee on the medical implications of lesslethal weapons",
+     "social science research committee the",
+     "uk supreme court",
+     "wilton park"
+    ],
+    "entered": 37,
+    "left": 27
+   }
+  },
+  "2019": {
+   "money_coverage": 0.69,
+   "financial_year": "2018-19",
+   "file": "https://assets.publishing.service.gov.uk/media/5f183697d3bf7f597172867a/Public_Bodies_19.xlsx",
+   "unit_evidence": "\u00a3'000 (486,914)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 235,
+     "records": 184,
+     "gov_funding": 136678949412.0,
+     "spend": 146305805642.0,
+     "staff": 103286.46
+    },
+    "Executive agency": {
+     "bodies": 39,
+     "records": 39,
+     "gov_funding": 68545931000.0,
+     "spend": 72359272000.0,
+     "staff": 108491.06
+    },
+    "Non-ministerial department": {
+     "bodies": 20,
+     "records": 20,
+     "gov_funding": 45873192456.4947,
+     "spend": 46500910923.40281,
+     "staff": 87140.24
+    },
+    "Other": {
+     "bodies": 1,
+     "records": 1,
+     "gov_funding": 0.0,
+     "spend": 0.0,
+     "staff": 253.0
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 111,
+    "Tribunal NDPB": 6
+   },
+   "total": {
+    "bodies": 295,
+    "records": 244,
+    "gov_funding": 251098072868.4947,
+    "spend": 265165988565.4028,
+    "staff": 299170.76
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 56899501000.0,
+    "NHS England": 111725304000.0
+   },
+   "gov_funding_excl_largest": 82473267868.49469,
+   "ndpb_gov_funding_excl_largest": 24953645412.0,
+   "deflator_2025_26_100": 76.2884,
+   "real": {
+    "gov_funding": 329143189355.7798,
+    "gov_funding_excl_largest": 108107219273.82759,
+    "ndpb_gov_funding_excl_largest": 32709619564.704464
+   },
+   "share_of_gdp": 0.11422047808687405,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2018-19",
+    "bodies": 105,
+    "real_change": -0.0623,
+    "set_aside": [
+     "civil nuclear police authority",
+     "coal authority",
+     "government legal department",
+     "health education england",
+     "her majestys revenue and customs",
+     "independent commission for aid impact",
+     "institute for apprenticeships",
+     "rural payments agency",
+     "science advisory committee on the medical implications of lesslethal weapons",
+     "security vetting appeals panel",
+     "senior salaries review body",
+     "wilton park"
+    ],
+    "entered": 50,
+    "left": 67
+   }
+  },
+  "2020": {
+   "money_coverage": 0.39,
+   "financial_year": "2019-20",
+   "file": "https://assets.publishing.service.gov.uk/media/60eddabbe90e0764cd98a00d/PBD20_Data.xlsx",
+   "unit_evidence": "\u00a3'000 (490,719)",
+   "by_class": {
+    "NDPB": {
+     "bodies": 237,
+     "records": 186,
+     "gov_funding": 16156102059.13,
+     "spend": 148069957978.08,
+     "staff": 106763.51999999999
+    },
+    "Executive agency": {
+     "bodies": 39,
+     "records": 39,
+     "gov_funding": 63587586433.69,
+     "spend": 65453890886.16,
+     "staff": 125988.37999999999
+    },
+    "Non-ministerial department": {
+     "bodies": 19,
+     "records": 19,
+     "gov_funding": 262572000.0,
+     "spend": 293340000.0,
+     "staff": 84686.70999999999
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 116,
+    "Executive NDPB": 2,
+    "Tribunal NDPB": 6
+   },
+   "total": {
+    "bodies": 295,
+    "records": 244,
+    "gov_funding": 80006260492.82,
+    "spend": 213817188864.24,
+    "staff": 317438.61
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 58622369000.0,
+    "NHS England": null
+   },
+   "gov_funding_excl_largest": 21383891492.82,
+   "ndpb_gov_funding_excl_largest": 16156102059.13,
+   "deflator_2025_26_100": 78.3047,
+   "real": {
+    "gov_funding": 102172999185.00424,
+    "gov_funding_excl_largest": 27308567037.253193,
+    "ndpb_gov_funding_excl_largest": 20632352922.78752
+   },
+   "share_of_gdp": 0.035203130586275465,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2019",
+    "bodies": 72,
+    "real_change": 0.1073,
+    "set_aside": [
+     "central arbitration committee",
+     "forest research",
+     "gambling commission",
+     "government legal department",
+     "health and social care information centre nhs digital",
+     "health education england",
+     "office for students",
+     "the water services regulation authority ofwat",
+     "victoria and albert museum"
+    ],
+    "entered": 13,
+    "left": 87
+   }
+  },
+  "2022/23": {
+   "money_coverage": 0.76,
+   "financial_year": "2022-23",
+   "file": "https://assets.publishing.service.gov.uk/media/697898221c24881f40a4d663/2024-12-17_Public_Bodies_Directory_2022_23.xlsx",
+   "unit_evidence": "pounds (542,047,000)",
+   "by_class": {
+    "Non-ministerial department": {
+     "bodies": 20,
+     "records": 20,
+     "gov_funding": 48899572947.08,
+     "spend": 44262466545.76,
+     "staff": 99406.91
+    },
+    "NDPB": {
+     "bodies": 244,
+     "records": 191,
+     "gov_funding": 217629553013.09,
+     "spend": 212595360204.65387,
+     "staff": 152394.38999999996
+    },
+    "Executive agency": {
+     "bodies": 38,
+     "records": 38,
+     "gov_funding": 86737827830.0,
+     "spend": 86688990845.45,
+     "staff": 138595.56000000003
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 114,
+    "Executive NDPB": 118,
+    "Tribunal NDPB": 8
+   },
+   "total": {
+    "bodies": 302,
+    "records": 249,
+    "gov_funding": 353266953790.17,
+    "spend": 343546817595.8639,
+    "staff": 390396.86
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 67461995000.0,
+    "Network Rail": 19237538935.0,
+    "NHS England": 159259000000.0,
+    "HM Revenue and Customs": 45222939000.0
+   },
+   "gov_funding_excl_largest": 62085480855.17,
+   "ndpb_gov_funding_excl_largest": 39133014078.09,
+   "deflator_2025_26_100": 88.4564,
+   "real": {
+    "gov_funding": 399368450208.43036,
+    "gov_funding_excl_largest": 70187664041.45998,
+    "ndpb_gov_funding_excl_largest": 44239890022.756966
+   },
+   "share_of_gdp": 0.13352388773803814,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2020",
+    "bodies": 59,
+    "real_change": 0.1186,
+    "set_aside": [
+     "civil nuclear police authority",
+     "forest research",
+     "national portrait gallery",
+     "veterinary medicines directorate",
+     "victoria and albert museum"
+    ],
+    "entered": 125,
+    "left": 30
+   }
+  },
+  "2023/24": {
+   "money_coverage": 0.76,
+   "financial_year": "2023-24",
+   "file": "https://assets.publishing.service.gov.uk/media/697897e25da1fd4ddea98bda/2025-05-29_Public_Bodies_Directory_2023_24.xlsx",
+   "unit_evidence": "pounds (495,330,000)",
+   "by_class": {
+    "Non-ministerial department": {
+     "bodies": 20,
+     "records": 20,
+     "gov_funding": 44434913054.82,
+     "spend": 43239526386.45,
+     "staff": 98045.06999999999
+    },
+    "NDPB": {
+     "bodies": 245,
+     "records": 192,
+     "gov_funding": 231813940901.32,
+     "spend": 229981652245.00827,
+     "staff": 155530.57869999998
+    },
+    "Executive agency": {
+     "bodies": 39,
+     "records": 39,
+     "gov_funding": 93533736814.31999,
+     "spend": 92528421256.17833,
+     "staff": 143427.0415
+    }
+   },
+   "ndpb_detail": {
+    "Advisory NDPB": 115,
+    "Executive NDPB": 118,
+    "Tribunal NDPB": 8
+   },
+   "total": {
+    "bodies": 304,
+    "records": 251,
+    "gov_funding": 369782590770.46,
+    "spend": 365749599887.6366,
+    "staff": 397002.69019999995
+   },
+   "largest_bodies": {
+    "Education and Skills Funding Agency": 72368726000.0,
+    "Network Rail": 17644897000.0,
+    "NHS England": 175000000000.0,
+    "HM Revenue and Customs": 40757815000.0
+   },
+   "gov_funding_excl_largest": 64011152770.46,
+   "ndpb_gov_funding_excl_largest": 39169043901.32,
+   "deflator_2025_26_100": 93.1026,
+   "real": {
+    "gov_funding": 397177512518.94147,
+    "gov_funding_excl_largest": 68753346061.72116,
+    "ndpb_gov_funding_excl_largest": 42070837872.75543
+   },
+   "share_of_gdp": 0.1322519223641305,
+   "money_series": true,
+   "like_for_like": {
+    "from": "2022/23",
+    "bodies": 136,
+    "real_change": -0.0382,
+    "set_aside": [
+     "gambling commission",
+     "gangmasters and labour abuse authority",
+     "government property agency",
+     "national portrait gallery",
+     "northern lighthouse board",
+     "senior salaries review body"
+    ],
+    "entered": 47,
+    "left": 45
+   }
+  }
+ },
+ "deflator_source": "https://assets.publishing.service.gov.uk/media/6ae32ab0a5c2f99e3a7b82e3/GDP_Deflators_Budget_October_2026_update.xlsx",
+ "deflator": {
+  "2010-11": 67.0587,
+  "2011-12": 68.4164,
+  "2012-13": 69.5581,
+  "2013-14": 70.9258,
+  "2014-15": 71.8702,
+  "2015-16": 72.2622,
+  "2016-17": 73.7129,
+  "2017-18": 74.6091,
+  "2018-19": 76.2884,
+  "2019-20": 78.3047,
+  "2020-21": 82.3141,
+  "2021-22": 82.6648,
+  "2022-23": 88.4564,
+  "2023-24": 93.1026,
+  "2024-25": 96.757,
+  "2025-26": 100.0,
+  "2026-27": 102.63276050078403,
+  "2027-28": 104.80777647308531,
+  "2028-29": 106.86169445607621,
+  "2029-30": 108.95377696994758,
+  "2030-31": 111.10124033720358,
+  "2031-32": 113.22258503481099
+ }
+}

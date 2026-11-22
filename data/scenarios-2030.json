@@ -1,0 +1,56 @@
+{
+ "modelled": true,
+ "prices": "2023-24 cash, admin RDEL only (running costs, not programme spend)",
+ "baseline": {
+  "entries": 251,
+  "staff_fte": 397003,
+  "admin_rdel_gbp": 5500000000.0,
+  "admin_by_size_gbp": {
+   "under_50": 6000000.0,
+   "50_499": 747000000.0,
+   "500_plus": 4742000000.0
+  },
+  "entries_by_size": {
+   "under_50": 98,
+   "50_499": 77,
+   "500_plus": 76
+  },
+  "advisory_ndpbs": 64,
+  "advisory_admin_gbp": 22300000.0,
+  "bodies_with_regulatory_powers": 56,
+  "nhs_england": {
+   "staff_fte": 14599,
+   "admin_rdel_gbp": 1892000000.0
+  }
+ },
+ "known": {
+  "closed_or_merged_under_2025_review": 16,
+  "nhs_england_annual_saving_gbp": 1000000000.0
+ },
+ "lenses": {
+  "evolution": {
+   "label": "Evolution: the present review runs its course",
+   "entries_2030": 211,
+   "change": -0.159,
+   "admin_released_gbp": 1195000000.0,
+   "admin_released_share": 0.217
+  },
+  "reform": {
+   "label": "Reform: consolidate by function, share the back office",
+   "entries_2030": 156,
+   "change": -0.378,
+   "admin_released_gbp": 1378515625.0,
+   "admin_released_share": 0.251
+  },
+  "revolution": {
+   "label": "Revolution: AI-enabled, digitally native by default",
+   "entries_2030": 111,
+   "change": -0.558,
+   "admin_released_gbp": [
+    1741700000.0,
+    2026700000.0
+   ],
+   "admin_released_share": 0.368
+  }
+ }
+}
