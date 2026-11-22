@@ -1,0 +1,724 @@
+{
+ "needs": {
+  "N1": "Know which public bodies exist, keyed by an authoritative code",
+  "N2": "Know who each body answers to, in the end, and on what evidence",
+  "N3": "Follow the money: funding, running costs, PFI and contracts",
+  "N4": "Know who owns or controls each body",
+  "N5": "See how the state has changed, and where it is heading",
+  "N6": "Reuse the data safely in other apps and tools, in open standards",
+  "N7": "Trust it: sources, method, checks and limits in plain view",
+  "N8": "Help improve it: correct, add sources, contribute code"
+ },
+ "requirements": {
+  "OG-R01": [
+   "One record per UK public body, keyed by its own register's code",
+   "Must",
+   "Done",
+   [
+    "N1"
+   ],
+   [
+    "C-REG"
+   ]
+  ],
+  "OG-R02": [
+   "Safe-fail matching: no wrong joins",
+   "Must",
+   "Done",
+   [
+    "N1",
+    "N7"
+   ],
+   [
+    "C-REG",
+    "C-BUILD"
+   ]
+  ],
+  "OG-R04": [
+   "Every join explains its method and evidence",
+   "Must",
+   "Done",
+   [
+    "N7"
+   ],
+   [
+    "C-REG",
+    "C-BUILD"
+   ]
+  ],
+  "OG-R05": [
+   "Pan-UK coverage including devolved bodies, Crown Dependencies and Overseas Territories",
+   "Must",
+   "Done",
+   [
+    "N1"
+   ],
+   [
+    "C-REG"
+   ]
+  ],
+  "OG-R08": [
+   "Open-standard exports (ORG, DCAT, CSVW, SKOS)",
+   "Must",
+   "Done",
+   [
+    "N6"
+   ],
+   [
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R09": [
+   "Feed contract for estate apps",
+   "Must",
+   "Done",
+   [
+    "N6"
+   ],
+   [
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R11": [
+   "Refresh on demand, reviewed before publishing",
+   "Must",
+   "Done",
+   [
+    "N7"
+   ],
+   [
+    "C-CI"
+   ]
+  ],
+  "OG-R12": [
+   "Charity registers joined",
+   "Should",
+   "Planned",
+   [
+    "N1"
+   ],
+   []
+  ],
+  "OG-R16": [
+   "Assistant that answers from the register",
+   "Should",
+   "Done",
+   [
+    "N1",
+    "N2"
+   ],
+   [
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R20": [
+   "Official endorsement and a permanent home",
+   "Must",
+   "Planned",
+   [
+    "N7"
+   ],
+   []
+  ],
+  "OG-R21": [
+   "Who answers for each body, traced to the law and the sponsor",
+   "Must",
+   "Done",
+   [
+    "N2"
+   ],
+   [
+    "C-BUILD",
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R22": [
+   "Follow the money: government funding and PFI charges",
+   "Must",
+   "Done",
+   [
+    "N3"
+   ],
+   [
+    "C-BUILD",
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R23": [
+   "Ownership: Companies House controllers, GLEIF parents, PFI investors",
+   "Must",
+   "Done",
+   [
+    "N4"
+   ],
+   [
+    "C-BUILD",
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R24": [
+   "Trading funds, public corporations and public-private partnerships",
+   "Must",
+   "Done",
+   [
+    "N3",
+    "N4"
+   ],
+   [
+    "C-BUILD",
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R25": [
+   "Lineage to a fingerprinted source for every link",
+   "Must",
+   "Done",
+   [
+    "N7"
+   ],
+   [
+    "C-FETCH",
+    "C-BUILD"
+   ]
+  ],
+  "OG-R26": [
+   "Single source of truth for the estate's apps",
+   "Must",
+   "In progress",
+   [
+    "N6"
+   ],
+   [
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R27": [
+   "Trends since 2012 from the official editions",
+   "Must",
+   "Done",
+   [
+    "N5"
+   ],
+   [
+    "C-TRENDS"
+   ]
+  ],
+  "OG-R28": [
+   "The 2020 baseline checked so nothing stale is carried forward",
+   "Must",
+   "Done",
+   [
+    "N5",
+    "N7"
+   ],
+   [
+    "C-TRENDS"
+   ]
+  ],
+  "OG-R29": [
+   "Three lenses to 2030, modelled and editable",
+   "Should",
+   "Done",
+   [
+    "N5"
+   ],
+   [
+    "C-SCEN"
+   ]
+  ],
+  "OG-R30": [
+   "Back-office classes A and B from the bodies' own descriptions",
+   "Must",
+   "Done",
+   [
+    "N1"
+   ],
+   [
+    "C-FUNC"
+   ]
+  ],
+  "OG-R31": [
+   "BODS 0.4 export validated against the official schema",
+   "Must",
+   "Done",
+   [
+    "N4",
+    "N6"
+   ],
+   [
+    "C-BODS"
+   ]
+  ],
+  "OG-R32": [
+   "Concordance of every identifier for every body",
+   "Must",
+   "Done",
+   [
+    "N6"
+   ],
+   [
+    "C-ART"
+   ]
+  ],
+  "OG-R33": [
+   "Open-source contribution: forms, guide, code of conduct, review in public",
+   "Must",
+   "Done",
+   [
+    "N8"
+   ],
+   [
+    "C-REPO"
+   ]
+  ],
+  "OG-R34": [
+   "No personal data; no individual or affiliation named",
+   "Must",
+   "Done",
+   [
+    "N7"
+   ],
+   [
+    "C-BUILD",
+    "C-PORTAL",
+    "C-TRENDS"
+   ]
+  ],
+  "OG-R35": [
+   "Question-led information architecture, WCAG 2.2 AA, dashboards and drill-down",
+   "Must",
+   "Planned",
+   [
+    "N1",
+    "N2",
+    "N3",
+    "N5"
+   ],
+   []
+  ],
+  "OG-R36": [
+   "Reference data lineage matched against the National Data Library catalogue",
+   "Should",
+   "Done",
+   [
+    "N6",
+    "N7"
+   ],
+   [
+    "C-REF"
+   ]
+  ],
+  "OG-R38": [
+   "Each nation's register: its public bodies by branch of the state, apex from founding legislation",
+   "Must",
+   "Done",
+   [
+    "N1",
+    "N2"
+   ],
+   [
+    "C-NAT"
+   ]
+  ],
+  "OG-R37": [
+   "Comparator adoptions: founding legislation, COFOG, movements, interests, parent history",
+   "Should",
+   "Planned",
+   [
+    "N1",
+    "N4",
+    "N5"
+   ],
+   []
+  ]
+ },
+ "components": {
+  "C-REG": [
+   "Register spine (0.2.2)",
+   "sources/opengovernment-uk-0.2.2.html",
+   [
+    "CHK-known_answers"
+   ],
+   [
+    "docs/concordance.csv"
+   ]
+  ],
+  "C-FETCH": [
+   "Source fetcher and manifest",
+   "tools/fetch.py",
+   [
+    "CHK-hashes"
+   ],
+   [
+    "sources/manifest.json"
+   ]
+  ],
+  "C-BUILD": [
+   "Accountability tree builder",
+   "tools/build.py",
+   [
+    "CHK-provenance",
+    "CHK-ends",
+    "CHK-no_persons",
+    "CHK-chain_shape",
+    "CHK-coverage",
+    "CHK-nmd_terminal",
+    "CHK-unresolved_reason",
+    "CHK-digest",
+    "CHK-person_rule_offices"
+   ],
+   [
+    "data/tree.json",
+    "data/edges.csv",
+    "data/accountable-owner.csv"
+   ]
+  ],
+  "C-PORTAL": [
+   "Portal page builder",
+   "tools/patch_portal.py",
+   [
+    "CHK-footer",
+    "CHK-req_ids",
+    "CHK-self"
+   ],
+   [
+    "docs/index.html",
+    "docs/accountability.json",
+    "docs/ppp.csv"
+   ]
+  ],
+  "C-BODS": [
+   "BODS 0.4 exporter",
+   "tools/export_bods.py",
+   [
+    "CHK-bods_schema"
+   ],
+   [
+    "docs/bods-0.4.json"
+   ]
+  ],
+  "C-TRENDS": [
+   "Public bodies trends and 2020 reconciliation",
+   "tools/trends.py",
+   [
+    "CHK-units",
+    "CHK-reconciled",
+    "CHK-trend_persons"
+   ],
+   [
+    "data/public-bodies-trends.json",
+    "data/reconciliation-2020.csv"
+   ]
+  ],
+  "C-SCEN": [
+   "Scenarios to 2030",
+   "tools/scenarios.py",
+   [
+    "CHK-scenarios"
+   ],
+   [
+    "data/scenarios-2030.json"
+   ]
+  ],
+  "C-FUNC": [
+   "Back-office classifier",
+   "tools/functions.py",
+   [
+    "CHK-functions"
+   ],
+   [
+    "data/back-office.json"
+   ]
+  ],
+  "C-REF": [
+   "Reference data lineage",
+   "tools/refdata.py",
+   [],
+   [
+    "data/reference-data.json",
+    "documentation/reference-data.md"
+   ]
+  ],
+  "C-NAT": [
+   "Nation-by-nation registers",
+   "tools/nations.py",
+   [
+    "CHK-nations"
+   ],
+   [
+    "data/nations.json",
+    "docs/nations.html"
+   ]
+  ],
+  "C-ART": [
+   "Documentation generator",
+   "tools/artefacts.py",
+   [
+    "CHK-artefacts"
+   ],
+   [
+    "documentation/solution/",
+    "docs/navigator.html"
+   ]
+  ],
+  "C-CI": [
+   "Checks and refresh workflows",
+   ".github/workflows/",
+   [
+    "CHK-lint"
+   ],
+   []
+  ],
+  "C-REPO": [
+   "Contribution model",
+   "CONTRIBUTING.md",
+   [],
+   [
+    ".github/ISSUE_TEMPLATE/"
+   ]
+  ]
+ },
+ "checks": {
+  "CHK-known_answers": "Chains that can be verified independently land on the right department",
+  "CHK-hashes": "Source fingerprints match the files",
+  "CHK-provenance": "Every edge names its source and place",
+  "CHK-ends": "Both ends of every edge are register records",
+  "CHK-no_persons": "No personal names",
+  "CHK-chain_shape": "Chains are acyclic and end at their stated root",
+  "CHK-coverage": "Every open body has a chain",
+  "CHK-nmd_terminal": "Non-ministerial departments are their own root",
+  "CHK-unresolved_reason": "Every unmatched name says why",
+  "CHK-digest": "Published digest matches the content",
+  "CHK-person_rule_offices": "Offices and institutions are not read as people",
+  "CHK-footer": "Footer names no individual and no government body",
+  "CHK-req_ids": "Requirement IDs are unique",
+  "CHK-self": "The page checks itself (width, links, chains, wording)",
+  "CHK-bods_schema": "BODS output validates against the official schema",
+  "CHK-units": "Every edition records its unit evidence and year",
+  "CHK-reconciled": "The 2020 baseline is fully accounted for",
+  "CHK-trend_persons": "No personal fields in trend outputs",
+  "CHK-scenarios": "Scenarios recompute exactly from their assumptions",
+  "CHK-functions": "Back-office known answers",
+  "CHK-artefacts": "Ontology and knowledge graph parse; every requirement traces to a need",
+  "CHK-lint": "Linter fails on any finding",
+  "CHK-nations": "Nation and branch known answers are found; every nation has an apex for each branch"
+ },
+ "documents": {
+  "D01": [
+   "Theory of change",
+   "01-theory-of-change.md",
+   [
+    "N1",
+    "N2",
+    "N3",
+    "N5",
+    "N7"
+   ]
+  ],
+  "D02": [
+   "User research bundle",
+   "02-user-research.md",
+   [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8"
+   ]
+  ],
+  "D03": [
+   "Service blueprint and workflows",
+   "03-service-blueprint-and-workflows.md",
+   [
+    "OG-R11",
+    "OG-R25",
+    "OG-R33"
+   ]
+  ],
+  "D04": [
+   "Product requirements document",
+   "04-product-requirements.md",
+   [
+    "OG-R01",
+    "OG-R02",
+    "OG-R04",
+    "OG-R05",
+    "OG-R08",
+    "OG-R09",
+    "OG-R11",
+    "OG-R12",
+    "OG-R16",
+    "OG-R20",
+    "OG-R21",
+    "OG-R22",
+    "OG-R23",
+    "OG-R24",
+    "OG-R25",
+    "OG-R26",
+    "OG-R27",
+    "OG-R28",
+    "OG-R29",
+    "OG-R30",
+    "OG-R31",
+    "OG-R32",
+    "OG-R33",
+    "OG-R34",
+    "OG-R35",
+    "OG-R36",
+    "OG-R38",
+    "OG-R37"
+   ]
+  ],
+  "D05": [
+   "Functional and technical requirements specification",
+   "05-requirements-specification.md",
+   [
+    "OG-R01",
+    "OG-R02",
+    "OG-R04",
+    "OG-R05",
+    "OG-R08",
+    "OG-R09",
+    "OG-R11",
+    "OG-R12",
+    "OG-R16",
+    "OG-R20",
+    "OG-R21",
+    "OG-R22",
+    "OG-R23",
+    "OG-R24",
+    "OG-R25",
+    "OG-R26",
+    "OG-R27",
+    "OG-R28",
+    "OG-R29",
+    "OG-R30",
+    "OG-R31",
+    "OG-R32",
+    "OG-R33",
+    "OG-R34",
+    "OG-R35",
+    "OG-R36",
+    "OG-R38",
+    "OG-R37"
+   ]
+  ],
+  "D06": [
+   "Solution architecture",
+   "06-solution-architecture.md",
+   [
+    "C-REG",
+    "C-FETCH",
+    "C-BUILD",
+    "C-PORTAL",
+    "C-BODS",
+    "C-TRENDS",
+    "C-SCEN",
+    "C-FUNC",
+    "C-REF",
+    "C-NAT",
+    "C-ART",
+    "C-CI",
+    "C-REPO"
+   ]
+  ],
+  "D07": [
+   "High-level design",
+   "07-high-level-design.md",
+   [
+    "C-REG",
+    "C-FETCH",
+    "C-BUILD",
+    "C-PORTAL",
+    "C-BODS",
+    "C-TRENDS",
+    "C-SCEN",
+    "C-FUNC",
+    "C-REF",
+    "C-NAT",
+    "C-ART",
+    "C-CI",
+    "C-REPO"
+   ]
+  ],
+  "D08": [
+   "Low-level design",
+   "08-low-level-design.md",
+   [
+    "C-REG",
+    "C-FETCH",
+    "C-BUILD",
+    "C-PORTAL",
+    "C-BODS",
+    "C-TRENDS",
+    "C-SCEN",
+    "C-FUNC",
+    "C-REF",
+    "C-NAT",
+    "C-ART",
+    "C-CI",
+    "C-REPO"
+   ]
+  ],
+  "D09": [
+   "Glossary and thesaurus",
+   "09-glossary-and-thesaurus.md",
+   []
+  ],
+  "D10": [
+   "Data dictionary",
+   "10-data-dictionary.md",
+   [
+    "C-BUILD",
+    "C-TRENDS",
+    "C-BODS",
+    "C-ART"
+   ]
+  ],
+  "D11": [
+   "Taxonomies and ontology",
+   "11-taxonomies-and-ontology.md",
+   [
+    "OG-R08",
+    "OG-R31"
+   ]
+  ],
+  "D12": [
+   "Knowledge graph and navigator",
+   "12-knowledge-graph.md",
+   [
+    "OG-R01",
+    "OG-R02",
+    "OG-R04",
+    "OG-R05",
+    "OG-R08",
+    "OG-R09",
+    "OG-R11",
+    "OG-R12",
+    "OG-R16",
+    "OG-R20",
+    "OG-R21",
+    "OG-R22",
+    "OG-R23",
+    "OG-R24",
+    "OG-R25",
+    "OG-R26",
+    "OG-R27",
+    "OG-R28",
+    "OG-R29",
+    "OG-R30",
+    "OG-R31",
+    "OG-R32",
+    "OG-R33",
+    "OG-R34",
+    "OG-R35",
+    "OG-R36",
+    "OG-R38",
+    "OG-R37"
+   ]
+  ]
+ }
+}

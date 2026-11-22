@@ -27,6 +27,8 @@ jobs:
         run: python tools/check_functions.py && python tools/check_functions.py --negative
       - name: Trends, 2020 reconciliation and 2030 scenarios
         run: python tools/check_trends.py && python tools/check_trends.py --negative
+      - name: Nations and documentation (known answers, traceability, negatives)
+        run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: BODS output validates against the official schema
         run: python tools/export_bods.py
       - name: Published page carries no email address or former office name

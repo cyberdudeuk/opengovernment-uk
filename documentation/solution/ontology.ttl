@@ -1,0 +1,44 @@
+@prefix og: <https://cyberdudeuk.github.io/opengovernment-uk/ontology#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+og: a owl:Ontology ; rdfs:label "OpenGovernment UK ontology" ; dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Public bodies of the UK state, who they answer to, who funds and owns them. Extends W3C ORG; aligned to BODS 0.4 and FollowTheMoney." .
+
+og:PublicBody a owl:Class ; rdfs:subClassOf org:FormalOrganization ; rdfs:label "Public body" ; rdfs:comment "Any body a UK public register lists. FtM: PublicBody; BODS: stateBody." .
+og:MinisterialDepartment a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "Ministerial department" .
+og:NonMinisterialDepartment a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "Non-ministerial department" .
+og:ExecutiveAgency a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "Executive agency" .
+og:NDPB a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "Non-departmental public body" .
+og:PublicCorporation a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "Public corporation" .
+og:TradingFund a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "Trading fund" .
+og:LocalAuthority a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "Local authority" .
+og:NHSBody a owl:Class ; rdfs:subClassOf og:PublicBody ; rdfs:label "NHS body" .
+og:Legislature a owl:Class ; rdfs:subClassOf org:FormalOrganization ; rdfs:label "Legislature" .
+og:ProjectCompany a owl:Class ; rdfs:subClassOf org:FormalOrganization ; rdfs:label "Project company (PFI special purpose vehicle)" .
+og:Source a owl:Class ; rdfs:label "Authoritative source" ; rdfs:comment "A file read by the build, with its SHA-256 fingerprint." .
+
+og:accountsTo a owl:ObjectProperty ; rdfs:domain og:PublicBody ; rdfs:range og:PublicBody ; rdfs:label "included in the Estimate and accounts of" ; skos:closeMatch <https://standard.openownership.org/en/0.4.0/standard/reference.html#interesttype> .
+og:sponsoredBy a owl:ObjectProperty ; rdfs:domain og:PublicBody ; rdfs:range og:PublicBody ; rdfs:label "sponsored by" .
+og:controlledBy a owl:ObjectProperty ; rdfs:label "controlled by (non-institutional unit)" .
+og:ownedBy a owl:ObjectProperty ; rdfs:label "owned or controlled by" .
+og:answersTo a owl:ObjectProperty ; rdfs:range og:Legislature ; rdfs:label "answers in the end to" .
+og:accountableOwner a owl:ObjectProperty ; rdfs:domain og:PublicBody ; rdfs:range og:PublicBody ; rdfs:label "accountable owner" .
+og:procuredBy a owl:ObjectProperty ; rdfs:domain og:ProjectCompany ; rdfs:range og:PublicBody ; rdfs:label "contracted by (procuring authority)" .
+og:evidence a owl:ObjectProperty ; rdfs:range og:Source ; rdfs:label "evidenced by" .
+og:backOfficeClass a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "back-office class (A or B)" .
+og:sha256 a owl:DatatypeProperty ; rdfs:domain og:Source ; rdfs:range xsd:string ; rdfs:label "SHA-256 fingerprint" .
+
+og:Relations a skos:ConceptScheme ; skos:prefLabel "Accountability relations" .
+og:rel-accounts a skos:Concept ; skos:inScheme og:Relations ; skos:prefLabel "accounts" ; skos:definition "Included in a department's Supply Estimate and accounts by designation order" .
+og:rel-sponsors a skos:Concept ; skos:inScheme og:Relations ; skos:prefLabel "sponsors" ; skos:altLabel "sponsoring department" .
+og:rel-controls a skos:Concept ; skos:inScheme og:Relations ; skos:prefLabel "controls" .
+og:rel-parent a skos:Concept ; skos:inScheme og:Relations ; skos:prefLabel "parent" ; skos:definition "GOV.UK parent organisation" .
+og:rel-owns a skos:Concept ; skos:inScheme og:Relations ; skos:prefLabel "owns" .
+og:BackOffice a skos:ConceptScheme ; skos:prefLabel "Back-office classes" .
+og:class-A a skos:Concept ; skos:inScheme og:BackOffice ; skos:prefLabel "A: back-office body" ; skos:definition "Exists to run a function for government itself" .
+og:class-B a skos:Concept ; skos:inScheme og:BackOffice ; skos:prefLabel "B: back-office line of business" ; skos:definition "A public-facing body that also runs a cross-government back-office service" .
