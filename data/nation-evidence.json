@@ -49551,6 +49551,12 @@
       "UK"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "own-site",
+    "statute"
    ]
   },
   {
@@ -49569,6 +49575,14 @@
       "UK"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "ons-sponsor",
+    "pb-2020",
+    "register",
+    "wikidata"
    ]
   },
   {
@@ -49587,6 +49601,13 @@
       "UK"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "pb-2020",
+    "register",
+    "wikidata"
    ]
   },
   {
@@ -49612,6 +49633,12 @@
       "WA"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "2 independent sources support it against 1",
+   "support": [
+    "own-site",
+    "wikidata"
    ]
   },
   {
@@ -49630,6 +49657,16 @@
       "UK"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "chain",
+    "ons-sponsor",
+    "own-site",
+    "pb-2020",
+    "register",
+    "statute"
    ]
   },
   {
@@ -49648,6 +49685,15 @@
       "UK"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "chain",
+    "own-site",
+    "register",
+    "statute",
+    "wikidata"
    ]
   },
   {
@@ -49666,6 +49712,12 @@
       "UK"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "register",
+    "wikidata"
    ]
   },
   {
@@ -49686,6 +49738,12 @@
       "SC"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "own-site",
+    "statute"
    ]
   },
   {
@@ -49704,6 +49762,13 @@
       "UK"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "own-site",
+    "register",
+    "wikidata"
    ]
   },
   {
@@ -49722,6 +49787,11 @@
       "EN"
      ]
     ]
+   ],
+   "status": "contested",
+   "reason": "sources contradict and no majority of independent sources settles it",
+   "support": [
+    "ons-sponsor"
    ]
   },
   {
@@ -49741,6 +49811,12 @@
       "WA"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "ons-sponsor",
+    "register"
    ]
   },
   {
@@ -49760,6 +49836,12 @@
       "WA"
      ]
     ]
+   ],
+   "status": "resolved",
+   "reason": "the other sources are broader (an upper bound) or narrower (partial), so none contradicts",
+   "support": [
+    "ons-sponsor",
+    "register"
    ]
   }
  ],

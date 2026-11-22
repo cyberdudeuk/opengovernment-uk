@@ -43,3 +43,6 @@
 .nmulti{font-size:.72rem;border:1px dashed var(--muted);border-radius:999px;padding:0 .45em;margin-left:.3em;white-space:nowrap}
 .natgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:8px}@media(max-width:900px){.natgrid{grid-template-columns:minmax(0,1fr)}}
 .natcol{border-top:5px solid var(--c);background:var(--paper);border-radius:10px;padding:8px 10px}.natcol h3{margin:0 0 6px;font-size:1rem}.natcol .bars .fill{background:var(--c)}
+/* in nation columns the name, flag and chips get a full line; the bar and value sit beneath (no overlap at any width) */
+.natcol .bar{grid-template-columns:minmax(0,1fr) 44px;row-gap:3px;margin-bottom:8px}.natcol .bar>span:first-child{grid-column:1/-1;line-height:1.6}
+.natcol .nmulti,.natcol .nchip{white-space:nowrap}

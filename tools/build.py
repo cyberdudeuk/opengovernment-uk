@@ -296,6 +296,35 @@ for cid, v in R.items():
                    "wgao": WGAO.get(cid), "wga": WGA.get(cid), "money": MONEY.get(cid), "ons": ONSBY.get(cid), "persons_with_control": PERSONS.get(cid, 0),
                    "trading_fund": cid in TF, "ukgi": cid in UKGI}
 
+# Triangulate each disagreement against the stated precedence (law > Public Bodies Directory > ONS > GOV.UK > ownership)
+# and the number of independent sources. Resolved ones keep their reason in the data and are not shown (OG-D33).
+PREC = {"eao": 0, "eao-ni": 0, "pbd": 1, "ons": 2, "govuk": 3, "ch": 4, "gleif": 4}
+for cf in CONFLICTS:
+    ch = CHAINS.get(cf["id"]) or {}; chosen = ch["path"][0]["to"] if ch.get("path") else None
+    views = cf["views"]; cv = next((v for v in views if v["parent"] == chosen), None); alts = [v for v in views if v is not cv]
+    cf["chosen"] = chosen
+    up = lambda x: {st["to"] for st in (CHAINS.get(x) or {}).get("path", [])}  # everything above x in its own chain
+    kinds = ["nested" if (v["parent"] in up(chosen) or chosen in up(v["parent"])) else "joint" if set(v["sources"]) & set(cv["sources"]) else "contradicts" for v in alts] if cv else []
+    nested = bool(kinds) and "contradicts" not in kinds
+    if R[cf["id"]].get("kind") == "Non-ministerial department" or (chosen is None and not ch.get("path")):
+        cf["status"], cf["reason"] = "resolved", "rule D-OG3: a non-ministerial department answers to Parliament directly, so its listed parents do not change who it answers to"
+    elif nested:
+        cf["status"], cf["reason"] = "resolved", ("nested: the sources name different levels of one chain (one parent sits under the other)" if set(kinds) == {"nested"} else
+                                                  "joint: the same source names more than one parent, which is shared oversight" if set(kinds) == {"joint"} else
+                                                  "nested and joint: the other parents sit in the same chain or are named by the same source")
+    elif all(v["sources"] == ["govuk"] for v in views):
+        cf["status"], cf["reason"] = "resolved", "joint parents: GOV.UK lists more than one, which is shared oversight, not a disagreement"
+    elif cv is None or not alts:
+        cf["status"], cf["reason"] = "contested", "the chosen parent is not among the sources' views"
+    else:
+        cp = min(PREC[s] for s in cv["sources"]); ap = min(PREC[s] for v in alts for s in v["sources"]); most = max(len(v["sources"]) for v in alts)
+        if cp < ap and len(cv["sources"]) >= most:
+            cf["status"], cf["reason"] = "resolved", f"rule: {', '.join(cv['sources'])} outranks {', '.join(sorted({s for v in alts for s in v['sources']}))}, and is not outvoted"
+        elif cp < ap:
+            cf["status"], cf["reason"] = "contested", "the stated precedence and the number of agreeing sources point different ways"
+        else:
+            cf["status"], cf["reason"] = "contested", "sources of equal or higher rank disagree"
+
 # PFI money rolled up to the procuring authority and the department
 PFIBY = collections.defaultdict(lambda: {"projects": 0, "capital": 0.0, "pay_2025_26": 0.0})
 for p in PPP:
@@ -322,6 +351,7 @@ srcs["pfi"] = {"name": "HM Treasury: Current PFI and PF2 projects as at 31 March
 srcs["tf"] = {"name": "legislation.gov.uk: trading fund orders under the Government Trading Funds Act 1973", "url": "https://www.legislation.gov.uk/all?title=Trading%20Fund%20Order", "owner": "legislation.gov.uk (The National Archives)", "licence": "OGL v3.0", "asserts": "which operations are financed as trading funds", "retrieved": datetime.date.today().isoformat(), "sha256": hashlib.sha256((S / "tf-feed.xml").read_bytes()).hexdigest()}
 stats = {"records": len(R), "open": sum(v["open"] for v in R.values()), "edges": len(EDGES), "edges_by": dict(collections.Counter(f'{e["rel"]}:{e["src"]}' for e in EDGES)),
          "chains": len(CHAINS), "roots": dict(collections.Counter(c["answerable"] for c in CHAINS.values()).most_common()), "conflicts": len(CONFLICTS),
+         "conflicts_contested": sum(1 for c in CONFLICTS if c.get("status") == "contested"),
          "unresolved": len(UNRES), "unresolved_by": dict(collections.Counter(u["src"] for u in UNRES)), "eao_bodies": N_EAO, "ni_bodies": N_NI, "wgao": len(WGAO), "wga": len(WGA),
          "ons_matched": len(ONSBY), "pbd_matched": len(MONEY), "ppp_projects": len(PPP), "ppp_authorities_matched": sum(1 for p in PPP if p["authority"]),
          "trading_funds": sorted(TF), "ukgi": UKGI, "gleif_exceptions": dict(GLEIFX), "persons_with_control_withheld": sum(PERSONS.values())}

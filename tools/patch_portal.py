@@ -26,13 +26,15 @@ WO = {k: c["wgao"]["part"] for k, c in T["chains"].items() if c.get("wgao")}
 PCS = {k: c["ons"]["sector"].replace("\n", " ") for k, c in T["chains"].items() if c.get("ons") and (c["ons"]["sector"].startswith("Public") and "Pension" not in c["ons"]["sector"] or c["ons"]["sector"] == "Central Bank")}
 PW = {k: c["persons_with_control"] for k, c in T["chains"].items() if c.get("persons_with_control")}
 PPP = [[p["id"].split(":")[1], p["project"], p["status"], p["sector"], p["authority"], p["authority_text"], p["dept"], re.sub(r"\s*\(.*?\)\s*$", "", p["dept_text"]), p["spv"], p["spv_no"], p["equity"], p.get("equity_withheld", 0), p["capital"], p["pay_2025_26"], p["expiry"], p["balance_sheet_esa"]] for p in T["ppp"]]
-CF = [[x["id"], [[v["parent"], v["sources"]] for v in x["views"]]] for x in T["conflicts"]]
+# Only disagreements still contested after triangulation are shown; resolved ones keep their reason in data/tree.json (OG-D33)
+CF = [[x["id"], [[v["parent"], v["sources"]] for v in x["views"]], x["reason"]] for x in T["conflicts"] if x.get("status") == "contested"]
+CF_RESOLVED = sum(1 for x in T["conflicts"] if x.get("status") == "resolved")
 UN = [[u["src"], u["text"], u["ref"], u["why"], u["role"]] for u in T["unresolved"]]
 SRC = {k: v for k, v in T["sources"].items() if k not in ("base",)}
 ACC = {"v": VER, "built": T["built"], "digest": T["digest"], "legend": {"e": "child, parent, parent as written, relation, source, where in source, match method, money or control",
        "ch": "edge indexes to the root, root, answers-to index, sources agreeing, parents asserted", "m": "year, government funded income, other income, total managed expenditure, classification, purpose, ombudsman",
        "ppp": "HMT id, project, status, sector, authority id, authority, department id, department, project company, company number, equity [holder, share], individuals withheld, capital £m, charge 2025-26 £m, end, ESA balance sheet"},
-       "src": SRC, "e": E, "ans": ANS, "ch": CH, "m": M, "w": W, "wo": WO, "tf": T["stats"]["trading_funds"], "pcs": PCS, "pw": PW, "ppp": PPP, "cf": CF, "un": UN,
+       "src": SRC, "e": E, "ans": ANS, "ch": CH, "m": M, "w": W, "wo": WO, "tf": T["stats"]["trading_funds"], "pcs": PCS, "pw": PW, "ppp": PPP, "cf": CF, "cfr": CF_RESOLVED, "un": UN,
        "nat": json.loads((ROOT / "data" / "body-nations.json").read_text())}  # tools/nations.py: final nation placement per body
 acc_json = json.dumps(ACC, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 

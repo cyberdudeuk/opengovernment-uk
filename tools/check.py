@@ -76,6 +76,26 @@ def c_person_rule_offices(T):
     return [o for o in offices + firms if is_person(o)] + [p for p in people if not is_person(p)]
 CHECKS = [c_person_rule_offices, c_provenance, c_ends, c_no_persons, c_no_email, c_chain_shape, c_coverage, c_hashes, c_known_answers, c_nmd_terminal, c_unresolved_reason, c_wording, c_digest]
 
+PREC = {"eao": 0, "eao-ni": 0, "pbd": 1, "ons": 2, "govuk": 3, "ch": 4, "gleif": 4}
+def c_conflicts_triangulated(T):
+    """OG-D33: every disagreement is either contested or resolved for a stated reason that re-checks independently."""
+    bad = []; up = lambda x: {st["to"] for st in T["chains"].get(x, {}).get("path", [])}
+    for c in T["conflicts"]:
+        st, why, ch = c.get("status"), c.get("reason", ""), c.get("chosen")
+        if st not in ("resolved", "contested") or not why: bad.append(c["id"]); continue
+        if st != "resolved": continue
+        cv = next((v for v in c["views"] if v["parent"] == ch), None); alts = [v for v in c["views"] if v is not cv]
+        if why.startswith("rule:"):
+            ok = cv and min(PREC[x] for x in cv["sources"]) < min(PREC[x] for v in alts for x in v["sources"]) and len(cv["sources"]) >= max(len(v["sources"]) for v in alts)
+        elif why.startswith(("nested", "joint")):
+            ok = cv and all(v["parent"] in up(ch) or ch in up(v["parent"]) or set(v["sources"]) & set(cv["sources"]) for v in alts)
+        elif why.startswith("rule D-OG3"):
+            ok = REG[c["id"]][3] == "Non-ministerial department" or not T["chains"].get(c["id"], {}).get("path")
+        else: ok = False
+        if not ok: bad.append(c["id"])
+    return bad
+CHECKS.append(c_conflicts_triangulated)
+
 def breakers(T):
     """One deliberate break per check. Each must make exactly its check fail."""
     k0 = next(iter(T["chains"])); e0 = T["edges"][0]
@@ -96,6 +116,7 @@ def breakers(T):
         "c_unresolved_reason": b(lambda t: t["unresolved"][0].update(why="")),
         "c_wording": b(lambda t: t["edges"][0].update(how="Office of the Chief Data Officer")),
         "c_digest": b(lambda t: t["conflicts"].append({"id": k0, "views": []})),
+        "c_conflicts_triangulated": b(lambda t: next(c for c in t["conflicts"] if c["status"] == "contested").update(status="resolved", reason="rule: invented")),
     }
 
 def run(T, quiet=False):

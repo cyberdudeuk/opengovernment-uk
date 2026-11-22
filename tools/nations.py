@@ -172,7 +172,7 @@ if __name__ == "__main__":
     evd = json.loads((ROOT / "data/nation-evidence.json").read_text())
     placed = {x["id"] for n in out.values() for t in n["branches"].values() for v in t.values() for x in v}
     unl = sorted(({"id": r[0], "name": r[1], "type": r[3].replace("\n", " ")} for r in D["r"] if r[4] and r[0] not in placed), key=lambda x: x["name"])
-    payload = {"nations": out, "conflicts": evd["conflicts"], "unplaced": unl}
+    payload = {"nations": out, "conflicts": [c for c in evd["conflicts"] if c.get("status") == "contested"], "resolved": sum(1 for c in evd["conflicts"] if c.get("status") == "resolved"), "unplaced": unl}
     (ROOT / "docs/nations.html").write_text(PAGE.replace("__DATA__", json.dumps(payload).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
     for k, n in out.items(): print(f"{k:3} {n['name']:36} {n['counts']}")
     print("unplaced", unplaced, "problems", probs); sys.exit(1 if probs else 0)

@@ -87,12 +87,16 @@ def own_site(text):
     return sorted(nat), found
 
 def pb2020():
+    """The raw rows are not redistributed; when they are absent (CI, a fresh clone) the same non-personal fields are read
+    from the committed historical layer, so everyone reproduces the published result (OG-D32)."""
     p = SRC / "evidence" / "pb-nov2020-nonpersonal.tsv"
-    if not p.exists(): return {}
+    if p.exists():
+        rows = [(r[0], html.unescape(r[2]).strip(), html.unescape(r[6]).strip()) for r in list(csv.reader(p.open(encoding="utf-8"), delimiter="\t"))[1:]]
+    else:
+        h = json.loads((ROOT / "data/historical-2020.json").read_text())
+        rows = [(x["name_2020"], x["classification_2020"], x["department_2020"]) for x in h["bodies"] + h["unmatched"]]
     out = {}
-    rows = list(csv.reader(p.open(encoding="utf-8"), delimiter="\t"))[1:]
-    for r in rows:
-        name, cls, dept = r[0], html.unescape(r[2]).strip(), html.unescape(r[6]).strip()
+    for name, cls, dept in rows:
         n = None
         for pat, nn in ((r"Scotland|Scottish", ["SC"]), (r"Wales|Welsh", ["WA"]), (r"Northern Ireland|\bNI\b|Northern Irish", ["NI"]), (r"Local Government - England", ["EN"])):
             if re.search(pat, cls) or re.search(pat, dept):
@@ -141,7 +145,21 @@ def resolve():
             out[r[0]] = {"nations": [], "basis": None, "evidence": []}; continue
         ev.sort(key=lambda e: e[0]); best = ev[0]
         disagree = [e for e in ev[1:] if set(e[2]) != set(best[2]) and not (set(e[2]) <= set(best[2]) or "UK" in best[2])]
-        if disagree: conflicts.append({"id": r[0], "name": r[1], "chosen": [best[1], best[2]], "against": [[e[1], e[2]] for e in disagree]})
+        if disagree:
+            # Triangulate (OG-D33): broader evidence (whole UK, or a set containing the choice) is an upper bound (OG-D26), and
+            # narrower evidence is partial, so neither contradicts; only disjoint evidence does. Contradictions are settled only
+            # when at least two independent sources support the choice and they outnumber the contradicting ones.
+            ch = set(best[2])
+            def kind(n, ch=ch):
+                n = set(n)
+                return "broader" if ("UK" in n or ch <= n) else "narrower" if n <= ch else "contradicts" if not (n & ch) else "overlaps"
+            kinds = [kind(e[2]) for e in disagree]
+            support = {e[1] for e in ev if set(e[2]) == ch or ch <= set(e[2]) or "UK" in e[2]} if "UK" not in ch else {e[1] for e in ev if "UK" in e[2]}
+            against = {e[1] for e, k in zip(disagree, kinds, strict=True) if k in ("contradicts", "overlaps")}
+            if not against: status, why = "resolved", "the other sources are broader (an upper bound) or narrower (partial), so none contradicts"
+            elif len(support) >= 2 and len(support) > len(against): status, why = "resolved", f"{len(support)} independent sources support it against {len(against)}"
+            else: status, why = "contested", "sources contradict and no majority of independent sources settles it"
+            conflicts.append({"id": r[0], "name": r[1], "chosen": [best[1], best[2]], "against": [[e[1], e[2]] for e in disagree], "status": status, "reason": why, "support": sorted(support)})
         out[r[0]] = {"nations": best[2], "basis": best[1], "why": best[3], "url": best[4],
                      "evidence": [{"rank": e[0], "source": e[1], "nations": e[2], "why": e[3], "url": e[4]} for e in ev]}
     return D, out, conflicts, lad
@@ -166,6 +184,10 @@ if __name__ == "__main__":
         out2 = json.loads(json.dumps(out)); rid = next(r[0] for r in D["r"] if r[1] == "Aberdeen City Council"); out2[rid]["nations"] = ["EN"]
         ok = bool(check(D, out2)); print("caught wrong nation" if ok else "MISSED wrong nation"); sys.exit(0 if ok else 1)
     probs = check(D, out)
+    if "--verify" in sys.argv:  # the committed evidence must be exactly what the resolver produces from committed sources
+        pub = json.loads((ROOT / "data/nation-evidence.json").read_text())
+        same = pub["bodies"] == json.loads(json.dumps(out)) and pub["conflicts"] == json.loads(json.dumps(conflicts))
+        print("reproduces the published evidence" if same else "DIFFERS from the published evidence"); sys.exit(0 if same and not probs else 1)
     welsh = {v[1]: v[2] for v in lad.values() if v[2]}
     (ROOT / "data/nation-evidence.json").write_text(json.dumps({"bodies": out, "conflicts": conflicts, "welsh_names_ons": welsh}, indent=1))
     c = collections.Counter(v["basis"] for v in out.values())
