@@ -96,3 +96,6 @@
 .also{font-size:var(--og-size-xs);color:var(--og-muted);margin-top:var(--og-space-1)}
 .fl{display:block;font-size:var(--og-size-xs);color:var(--og-muted);margin:0 0 var(--og-space-1)}
 .site{font-size:var(--og-size-xs);margin-left:var(--og-space-2)}
+
+#s-figures .stat small{display:block;margin-top:4px;font-size:var(--og-size-xs,.78rem);line-height:1.35}
+.figgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px 24px;margin-top:18px}.figgrid h3{font-size:var(--og-size-md,1rem);margin:0 0 8px}.figwide{grid-column:1/-1}

@@ -127,7 +127,8 @@ const profWeb = r => {  // one Website row from the combined table, plus the GOV
   const own = w && w[1] !== "GOV.UK page" && ok(w[0]) ? w[0] : (!govuk(r.web) && ok(r.web) ? r.web : "");
   const gov = govuk(r.web) ? r.web : (w && w[1] === "GOV.UK page" ? w[0] : "");
   const a = u => `<a href="${esc(u)}" rel="noopener" target="_blank">${esc(u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}<span class="sr-only"> (opens in a new tab)</span></a>`;
-  return (own ? `<dt>Website</dt><dd>${a(own)} <span class="muted">(${esc(w && w[0] === own ? w[1] : "register")})</span></dd>` : "") + (gov && gov !== own ? `<dt>GOV.UK page</dt><dd>${a(gov)}</dd>` : "");
+  const oid = (ACC.orgid || {})[r.id];
+  return (oid ? `<dt>org-id</dt><dd>${oid.map(x => `<span class="mono">${esc(x)}</span>`).join(", ")} <span class="muted">(the form IATI, 360Giving and Open Contracting use)</span></dd>` : "") + (own ? `<dt>Website</dt><dd>${a(own)} <span class="muted">(${esc(w && w[0] === own ? w[1] : "register")})</span></dd>` : "") + (gov && gov !== own ? `<dt>GOV.UK page</dt><dd>${a(gov)}</dd>` : "");
 };
 const siteLink = id => { const w = (ACC.web || {})[id]; if (!w || !/^https?:\/\//.test(w[0])) return ""; const gov = w[1] === "GOV.UK page"; return ` <a class="site" href="${esc(w[0])}" rel="noopener" target="_blank" title="${esc(gov ? "Its page on GOV.UK (it has no separate website)" : "Its own website, from " + w[1])}">${gov ? "GOV.UK page" : "website"}<span class="sr-only"> of ${esc((BY[id] || {}).name || "")} (opens in a new tab)</span></a>`; };
 // folders inside folders: group by the chosen facet, then split any big folder by the next one (purpose, type of body, activity)
@@ -301,6 +302,27 @@ function localGov(){
   $("#lgPanels").innerHTML = T.map((t, i) => `<div class="tabpanel" role="tabpanel" id="lgp-${i}" aria-labelledby="lgtab-${i}" ${i ? "hidden" : ""}>${t[1]}</div>`).join(""); tabs($("#lgTabs"));
   $("#lgFoot").textContent = `Sources: ${Object.values(LG.sources).filter(s => s.kind === "primary").length} primary (legislation.gov.uk, Parliament, GOV.UK, councils, ONS) and ${Object.values(LG.sources).filter(s => s.kind === "secondary").length} secondary, marked “summary”. Decisions marked planned or minded to may still change: the government says every area will have an outcome by early 2027.`;
   applyTerms($("#s-localgov"));
+}
+
+
+/* Facts and figures: counted from the published data at build time; type, purpose, activity and reach are modelled */
+function figures(){
+  const V = ACC.vol; if (!V || !$("#figStats")) return;
+  const IDL = {wikidata:"Wikidata item", govuk_slug:"GOV.UK organisation page", nhs_ods:"NHS ODS code", gss:"ONS GSS code", local_authority:"Council register code", lei:"Legal Entity Identifier", dgu:"data.gov.uk publisher", github:"GitHub organisation", companies_house:"Companies House number", opencorporates:"OpenCorporates", charity_ew:"Charity number (England and Wales)"}, BRL = {legislature:"Law-makers", executive:"Government and public bodies", judiciary:"Courts and tribunals"};
+  const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "0%", N = V.open, NL = {EN:"England",SC:"Scotland",WA:"Wales",NI:"Northern Ireland",UK:"Whole UK (stated)",GB:"UK Government, extent not stated",OT:"Overseas Territories",CD:"Crown Dependencies",unstated:"Not stated"};
+  $("#figLede").textContent = `Counted from the register as built on ${String(D.built || "").slice(0, 10)}: ${fmt(V.open)} bodies after ${fmt(V.folded)} duplicate records were combined into ${fmt(V.groups)}. Crown Dependency and Overseas Territory bodies are counted with their group. Type, purpose, activity and where a body works are worked out from its kind, name and description, so a few may be wrong.`;
+  const tiles = [[V.open, "bodies, one record each", "red", `${fmt(V.records)} records from every source`], [V.web.own, "link to their own website", "sea", pct(V.web.own, N) + " of bodies, plus " + fmt(V.web.govuk) + " to a GOV.UK page"],
+    [V.ids.length, "kinds of identifier held", "navy", (V.ids[0] ? pct(V.ids[0][1], N) + " have a " + (IDL[V.ids[0][0]] || V.ids[0][0]) : "")], [V.territories.bodies, "Crown Dependency and Overseas Territory bodies", "gold", `in ${V.territories.jurisdictions} jurisdictions, ${V.territories.constitutional} from founding orders`],
+    [V.intl.bodies, "international bodies with a named UK lead", "sea", `${V.intl.leads} UK bodies lead; ${V.intl.to_confirm} groups still to confirm`], [V.corp.trees, "trading fund and public corporation trees", "navy", V.corp.by_kind.map(([k, n]) => `${n} ${(((ACC.corp || {}).meta || {}).kinds || {})[k] ? ACC.corp.meta.kinds[k][0].toLowerCase() : k}`).slice(0, 2).join(", ")],
+    [V.recon.names + V.recon.chains, "disagreements decided from evidence", "gold", `${V.recon.names} name matches and ${V.recon.chains} chains; ${V.recon.left} left for a person`], [V.bods.statements, "BODS 0.4 statements published", "red", V.bods.by_type.map(([k, n]) => `${fmt(n)} ${k}`).join(", ")]];
+  $("#figStats").innerHTML = tiles.map(x => `<div class="stat ${x[2]}"><b data-n="${x[0]}">0</b><span>${esc(x[1])}</span><small class="muted">${esc(x[3])}</small></div>`).join("");
+  $$("#figStats b").forEach(b => countUp(b, +b.dataset.n));
+  const panels = [["By type of body", V.type, "navy"], ["By purpose (what it is for)", V.purpose, "sea"], ["By activity (what it does)", V.activity, "gold"], ["By where it works", V.reach, "red"],
+    ["By nation or territory", V.nation.map(([k, n]) => [NL[k] || k, n]), "navy"], ["Identifiers held (share of bodies)", V.ids.map(([k, n]) => [`${IDL[k] || k} (${pct(n, N)})`, n]), "sea"],
+    ["Websites", [["Own website", V.web.own], ["GOV.UK page only", V.web.govuk], ["None found yet", V.web.none]], "gold"], ["Territory bodies by branch", V.territories.by_branch.map(([k, n]) => [BRL[k] || k, n]), "red"]];
+  $("#figBars").innerHTML = panels.map((p, i) => `<div><h3>${esc(p[0])}</h3><div class="bars" id="figB${i}"></div></div>`).join("") +
+    `<div class="figwide"><h3>Branches of the state, by nation</h3><div class="tablewrap"><table><thead><tr><th scope="col">Nation or territory</th><th scope="col" class="num">Law-makers</th><th scope="col" class="num">Government and public bodies</th><th scope="col" class="num">Courts and tribunals</th><th scope="col" class="num">Total</th></tr></thead><tbody>${Object.entries(V.branches).map(([k, c]) => `<tr><th scope="row">${esc(NL[k] || k)}</th><td class="num">${fmt(c.legislature)}</td><td class="num">${fmt(c.executive)}</td><td class="num">${fmt(c.judiciary)}</td><td class="num"><b>${fmt(c.legislature + c.executive + c.judiciary)}</b></td></tr>`).join("")}</tbody></table></div><p class="muted">A body that works in more than one nation is counted in each.</p></div>`;
+  panels.forEach((p, i) => bars($("#figB" + i), p[1].slice(0, 12).map(([l, n]) => [l, n]), p[2]));
 }
 
 function treeSelfChecks(){

@@ -1,6 +1,6 @@
 """Build OpenGovernment UK 0.3.0 from the published 0.2.2 page plus the accountability tree.
 Every textual change is an exact replacement that must match once: if the base page changes, this fails loudly."""
-import csv, hashlib, json, pathlib, re, subprocess, sys, io
+import collections, csv, hashlib, json, pathlib, re, subprocess, sys, io
 import barcode, qrcode, qrcode.image.svg
 from barcode.writer import SVGWriter
 
@@ -39,12 +39,44 @@ ACC = {"v": VER, "built": T["built"], "digest": T["digest"], "legend": {"e": "ch
 _CL = json.loads((ROOT / "data" / "classification.json").read_text())  # tools/classify.py: purpose, activity and type of body (purpose and activity MODELLED)
 ACC["cl"] = {k: [v["purpose"], v["activity"], v["btype"], v["reach"]] for k, v in _CL["bodies"].items()}
 _SA = json.loads((ROOT / "data" / "same-as.json").read_text())  # tools/sameas.py: one record per body
+ACC["orgid"] = json.loads((ROOT / "data" / "org-id.json").read_text())  # tools/sqlite_export.py: org-id.guide identifiers (GB-COH, GB-CHC)
 ACC["web"] = json.loads((ROOT / "data" / "websites.json").read_text())  # tools/websites.py: id -> [own website, source]
 ACC["sa"] = {c: g["members"] for c, g in _SA["groups"].items()}; ACC["sar"] = {c: g["rules"] for c, g in _SA["groups"].items()}
 ACC["clm"] = {"purpose": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["purposes"]}, "activity": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["activities"]},
               "btype": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["btypes"]},
               "reach": {"local": ["A local area", "Works in one council area or a few."], "one": ["One nation", "Works across one of England, Scotland, Wales or Northern Ireland."], "several": ["Several nations", "Works in two or three of the four nations."], "uk": ["The whole UK", "Works across all four nations."], "outside": ["Outside the UK", "A territory or Crown Dependency, or one of its bodies."], "unstated": ["Not stated", "The sources don't say where it works yet."]}}
-_LG = json.loads((ROOT / "data" / "local-government.json").read_text())  # tools/localgov.py: English Devolution Act 2026, current and planned
+# Facts and figures: every number below is counted from the published data at build time (classification facets are modelled)
+def _volumetrics():
+    C = collections.Counter
+    sa = json.loads((ROOT / "data/same-as.json").read_text())["groups"]; folded = {m for g in sa.values() for m in g["members"]}
+    reg = json.loads(re.search(r'<script[^>]*id="data"[^>]*>(.*?)</script>', (ROOT / "sources/opengovernment-uk-0.2.2.html").read_text(), re.S).group(1))["r"]
+    opn = [r for r in reg if r[4] and r[0] not in folded]
+    cl = _CL["bodies"]; web = json.loads((ROOT / "data/websites.json").read_text())
+    lab = lambda facet, k: ACC["clm"][facet].get(k, [k])[0]
+    facet = lambda f, i: C(lab(f, cl[r[0]][f]) for r in opn if r[0] in cl).most_common()
+    ids = C(k for r in opn for k in r[10] if k not in ("ons_name", "govuk"))
+    natc = C(c for r in opn for c in (ACC["nat"].get(r[0]) or ["unstated"]))
+    ter = json.loads((ROOT / "data/territories.json").read_text())["bodies"]
+    natc.update(b["group"] for b in ter)  # the territories' own bodies count with their group
+    intl = json.loads((ROOT / "data/international.json").read_text())
+    nat = json.loads((ROOT / "data/nations.json").read_text())["nations"]
+    corp = json.loads((ROOT / "data/corporations.json").read_text())["trees"]
+    dec = json.loads((ROOT / "sources/evidence/reconciliation-decisions.json").read_text())
+    bods = json.loads((ROOT / "docs/bods-0.4.json").read_text())
+    own = sum(1 for r in opn if r[0] in web and web[r[0]][1] != "GOV.UK page"); gov = sum(1 for r in opn if r[0] in web and web[r[0]][1] == "GOV.UK page")
+    return {"records": len(reg), "open": len(opn), "folded": len(folded), "groups": len(sa),
+            "type": facet("btype", 0), "purpose": facet("purpose", 0), "activity": facet("activity", 0), "reach": facet("reach", 0),
+            "nation": natc.most_common(), "ids": ids.most_common(),
+            "web": {"own": own, "govuk": gov, "none": len(opn) - own - gov},
+            "branches": {k: v["counts"] for k, v in nat.items()},
+            "territories": {"bodies": len(ter), "jurisdictions": len({b["j"] for b in ter}), "constitutional": sum(1 for b in ter if b.get("constitutional")), "by_branch": C(b["branch"] for b in ter).most_common()},
+            "intl": {"bodies": len(intl["bodies"]), "leads": len({x["id"] for b in intl["bodies"] for x in b["lead"]}), "to_confirm": len(intl["to_confirm"])},
+            "corp": {"trees": len(corp), "by_kind": C(t["kind"] for t in corp).most_common()},
+            "recon": {"names": len(dec["names"]), "chains": len(dec["chains"]), "left": 0},
+            "bods": {"statements": len(bods), "by_type": C(x.get("recordType", "?") for x in bods).most_common()}}
+
+_LG = json.loads((ROOT / "data" / "local-government.json").read_text())
+ACC["vol"] = _volumetrics()  # tools/localgov.py: English Devolution Act 2026, current and planned
 ACC["lg"] = {k: v for k, v in _LG.items() if k not in ("two_tier_counties", "missing")}
 ACC["corp"] = json.loads((ROOT / "data" / "corporations.json").read_text())  # tools/corporations.py: one family tree per trading fund or public corporation
 acc_json = json.dumps(ACC, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -118,7 +150,9 @@ if _clash: sys.exit(f"top-level names redeclared: {sorted(_clash)}")
 h = once(h, "// ---- start ----", js + "\n// ---- start ----", "js")
 if "sr-only" in js and ".sr-only{" not in h: sys.exit("OG-D40: screen-reader-only text used but .sr-only is not defined, so it would show on screen")
 h = once(h, "home(); explore(); setupRegister(); renderRegister(); reconcile(); changes(); dataView(); quality(); help(); product(); ask();\nroute(); selfChecks();",
-         "home(); explore(); setupRegister(); renderRegister(); reconcile(); changes(); whoAnswers(); dataView(); quality(); help(); product(); ask();\nroute(); selfChecks(); treeSelfChecks();", "start")
+         "home(); explore(); setupRegister(); renderRegister(); reconcile(); changes(); whoAnswers(); dataView(); quality(); help(); product(); ask(); figures();\nroute(); selfChecks(); treeSelfChecks();", "start")
+h = once(h, '<div class="card" id="s-files"><h2>Download the register</h2>', '<div class="card" id="s-query"><span class="eyebrow">Query it yourself</span><h2>Ask the data your own questions</h2><p>Every table in one SQLite file: bodies with their type, purpose, activity, nations, website and identifiers; who answers to whom; the accountable owner; public-private partnerships; the concordance of codes; the territories\' own bodies; and the UK in international bodies. Open it in <a href="https://lite.datasette.io/?url=https://cyberdudeuk.github.io/opengovernment-uk/opengovernment-uk.db" rel="noopener" target="_blank">Datasette Lite<span class="sr-only"> (opens in a new tab)</span></a> to filter, facet and run SQL in your browser, with nothing to install, or <a href="opengovernment-uk.db" download>download the file</a> for any SQLite tool. The approach follows Open Ownership\'s own data analysis tools.</p></div>\n   <div class="card" id="s-files"><h2>Download the register</h2>', "query panel")
+h = once(h, '<div class="stats" id="homeStats" aria-label="The register in numbers"></div>', '<div class="stats" id="homeStats" aria-label="The register in numbers"></div>\n   <div class="card" id="s-figures"><span class="eyebrow">Facts and figures</span><h2>The state in numbers</h2><p class="muted" id="figLede"></p><div class="stats" id="figStats" aria-label="Facts and figures"></div><div class="figgrid" id="figBars"></div></div>', "facts and figures panel")
 h = once(h, "const G = [[", "const G = [...TREE_TERMS, [", "glossary")
 h = once(h, "const DEFECTS = [[", (TOOLS / "tree-defects.js").read_text() + "const DEFECTS = [...TREE_DEFECTS, [", "defects")  # D-OG7: must precede DEFECTS (temporal dead zone)
 h = once(h, '$("#relList").innerHTML = `<li><b>0.2.2</b>', '$("#relList").innerHTML = `<li><b>0.3.0</b>, 22 November 2026: who answers for each body. Accountability, money and ownership from the Estimates and Accounts Orders (UK and Northern Ireland), the Whole of Government Accounts order and annex, ONS, the Public Bodies Directory, Companies House controllers, GLEIF and HM Treasury\'s PFI register, every link traced to a fingerprinted source; trading funds, public corporations and PPPs; the register becomes the single source for any app that reuses it.</li><li><b>0.2.2</b>', "release")
