@@ -39,6 +39,17 @@ def page_data(name, block):
 def load(p): return json.loads((ROOT / p).read_text())
 
 
+def db_fingerprint(path):
+    """A SQLite file's content, not its bytes (which differ between SQLite versions): every table, rows in order (OG-D76)."""
+    import sqlite3
+    con = sqlite3.connect(f"file:{path}?mode=ro", uri=True); h = hashlib.sha256()
+    for (t,) in con.execute("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"):
+        h.update(t.encode())
+        for row in sorted(con.execute(f'SELECT * FROM "{t}"'), key=repr): h.update(repr(row).encode())  # noqa: S608  table names come from the file's own catalogue
+    con.close()
+    return h.hexdigest()
+
+
 def taxonomies(meta, coop, rel):
     g = []
     def scheme(key, label, items, notation=None, desc=None):
@@ -229,7 +240,7 @@ def main():
     for name in ("register.jsonld", "international.jsonld", "taxonomies.skos.jsonld", "catalogue.jsonld", "datapackage.json"):
         files[("" if name == "datapackage.json" else "data/") + name] = hashlib.sha256(json.dumps(out[name], sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     for f in ("bods-0.4.json", "accountability.json", "nations.json", "edges.csv", "concordance.csv", "accountable-owner.csv", "ppp.csv", "opengovernment-uk.db"):
-        if (DOCS / f).exists(): files[f] = hashlib.sha256((DOCS / f).read_bytes()).hexdigest()
+        if (DOCS / f).exists(): files[f] = db_fingerprint(DOCS / f) if f.endswith(".db") else hashlib.sha256((DOCS / f).read_bytes()).hexdigest()
     out["provenance.jsonld"] = provenance(tree, files)
     e = checks({k: v for k, v in out.items()}, D) if "--negative" not in sys.argv else []
     if "--negative" in sys.argv:

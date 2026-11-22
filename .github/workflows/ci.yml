@@ -106,4 +106,4 @@ jobs:
           ! grep -Eq '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(gov|org|com|uk|net)\b' docs/index.html
           ! grep -q 'Office of the Chief Data Officer' docs/index.html
       - name: Committed outputs match a fresh build (nothing generated was left uncommitted; OG-D76)
-        run: git diff --stat --exit-code -- docs data ':!docs/opengovernment-uk.db'
+        run: python tools/fresh_check.py
