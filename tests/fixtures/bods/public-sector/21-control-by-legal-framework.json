@@ -1,0 +1,175 @@
+[
+ {
+  "statementId": "oguk-4ae553676026f1865b834390e8c02d79ca3d62d613ed7e1e",
+  "statementDate": "2026-11-22",
+  "recordId": "oguk-2db714fda2d44c2dad84f156",
+  "declarationSubject": "oguk-2db714fda2d44c2dad84f156",
+  "recordType": "entity",
+  "recordStatus": "new",
+  "recordDetails": {
+   "isComponent": false,
+   "entityType": {
+    "type": "stateBody",
+    "subtype": "governmentDepartment",
+    "details": "Ministerial department"
+   },
+   "name": "Department of Health and Social Care",
+   "identifiers": [
+    {
+     "id": "government-organisation:D12",
+     "schemeName": "OpenGovernment UK register key"
+    },
+    {
+     "id": "department-of-health-and-social-care",
+     "scheme": "GB-GOVUK",
+     "schemeName": "GOV.UK organisation"
+    },
+    {
+     "id": "Q3044742",
+     "scheme": "XI-WIKIDATA",
+     "schemeName": "Wikidata"
+    },
+    {
+     "id": "GB-GOV-10",
+     "scheme": "GB-GOV",
+     "schemeName": "UK government IATI organisation identifier (FCDO)"
+    }
+   ],
+   "jurisdiction": {
+    "name": "United Kingdom",
+    "code": "GB"
+   },
+   "foundingDate": "1988-01-01",
+   "uri": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "OpenGovernment UK register record, joined from GOV.UK, ONS and other registers"
+  },
+  "publicAccountability": {
+   "answersTo": "Parliament, through the Secretary of State or minister in charge",
+   "accountableOwner": null,
+   "sourcesAgreeing": 0,
+   "wga2024_25": "consolidated",
+   "governmentFundedIncomeGBP": null,
+   "tradingFund": null
+  }
+ },
+ {
+  "statementId": "oguk-9a49e964402b22762ead2c4f219f4b1fcb87b397e37be850",
+  "statementDate": "2026-11-22",
+  "recordId": "oguk-ecbb2fd5f85aa551f1895b5f",
+  "declarationSubject": "oguk-ecbb2fd5f85aa551f1895b5f",
+  "recordType": "entity",
+  "recordStatus": "new",
+  "recordDetails": {
+   "isComponent": false,
+   "entityType": {
+    "type": "stateBody",
+    "subtype": "stateAgency",
+    "details": "Other"
+   },
+   "name": "Administration of Radioactive Substances Advisory Committee",
+   "identifiers": [
+    {
+     "id": "government-organisation:PB523",
+     "schemeName": "OpenGovernment UK register key"
+    },
+    {
+     "id": "administration-of-radioactive-substances-advisory-committee",
+     "scheme": "GB-GOVUK",
+     "schemeName": "GOV.UK organisation"
+    },
+    {
+     "id": "Q39045819",
+     "scheme": "XI-WIKIDATA",
+     "schemeName": "Wikidata"
+    }
+   ],
+   "jurisdiction": {
+    "name": "United Kingdom",
+    "code": "GB"
+   },
+   "uri": "https://www.gov.uk/government/organisations/administration-of-radioactive-substances-advisory-committee"
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "OpenGovernment UK register record, joined from GOV.UK, ONS and other registers"
+  },
+  "publicAccountability": {
+   "answersTo": "Parliament, through the Secretary of State or minister in charge",
+   "accountableOwner": "oguk-2db714fda2d44c2dad84f156",
+   "sourcesAgreeing": 3,
+   "wga2024_25": "consolidated",
+   "governmentFundedIncomeGBP": null,
+   "tradingFund": null
+  }
+ },
+ {
+  "statementId": "oguk-16db217ade092865137a7e40c6434c343a4fb4eb516c150b",
+  "statementDate": "2026-11-22",
+  "recordId": "oguk-7a18d51209ad85248c8c75e1",
+  "recordType": "relationship",
+  "recordStatus": "new",
+  "declarationSubject": "oguk-ecbb2fd5f85aa551f1895b5f",
+  "recordDetails": {
+   "isComponent": false,
+   "subject": "oguk-ecbb2fd5f85aa551f1895b5f",
+   "interestedParty": "oguk-2db714fda2d44c2dad84f156",
+   "interests": [
+    {
+     "directOrIndirect": "direct",
+     "beneficialOwnershipOrControl": false,
+     "type": "controlByLegalFramework",
+     "details": "Included in this department's Supply Estimate and accounts by designation order"
+    }
+   ]
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "The Government Resources and Accounts Act 2000 (Estimates and Accounts) Order 2026, S.I. 2026/216, Schedule; Schedule, part: Department of Health and Social Care; sha256 8a9c04b429dd980eebf9584400c9407086a68ad90378b042c575f88d933f9264",
+   "url": "https://www.legislation.gov.uk/uksi/2026/216/made",
+   "retrievedAt": "2026-11-22T03:42:14Z"
+  },
+  "publicAccountability": {
+   "relation": "accounts",
+   "relationLabel": "Included in this department's estimate and accounts (law)",
+   "asWritten": "Department of Health and Social Care",
+   "matchMethod": "body: name, cleaned; department: name, cleaned",
+   "sourceKey": "eao"
+  }
+ }
+]

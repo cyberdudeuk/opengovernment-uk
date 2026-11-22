@@ -20,6 +20,8 @@ STD = [  # file, standard, what it holds, the standard's own page
     ("data/register.jsonld", "W3C Organization Ontology and schema.org", "Every public body, its parent, codes, links to Wikidata and LEI, website and classification", "https://www.w3.org/TR/vocab-org/"),
     ("data/register.csv", "W3C CSV on the Web", "The register as a table, described by register.csv-metadata.json", "https://www.w3.org/TR/tabular-data-primer/"),
     ("data/taxonomies.skos.jsonld", "W3C SKOS", "Types of body, purposes (UN COFOG), activities, reach, nations (ISO 3166-2:GB), kinds of treaty", "https://www.w3.org/TR/skos-reference/"),
+    ("data/register.ftm.json", "FollowTheMoney (OpenSanctions, OpenAleph, yente)", "Public bodies and the companies they control, international bodies, control and ownership links, renames and mergers (Succession) and memberships, checked against FollowTheMoney's own model", "https://followthemoney.tech/"),
+    ("llms.txt", "llms.txt convention", "A plain-text guide to every page and file, for language models and agents", "https://llmstxt.org/"),
     ("data/provenance.jsonld", "W3C PROV-O", "Which sources each build used, with fingerprints, and the files it made", "https://www.w3.org/TR/prov-o/"),
     ("datapackage.json", "Frictionless Data Package", "Every CSV with its fields and licence", "https://specs.frictionlessdata.io/data-package/"),
     ("sitemap.xml", "Sitemaps protocol", "Every page and file, for search engines and harvesters", "https://www.sitemaps.org/protocol.html")]

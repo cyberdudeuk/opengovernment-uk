@@ -1,0 +1,11 @@
+Source terms
+
+Each file under sources/evidence/ holds facts read from a named source on a stated date: its URL, the date it was
+read and, where the source states one, its licence, are recorded in the file itself. Those facts remain under the
+source's own terms. Examples: Wikidata (CC0 1.0), GLEIF (CC0 1.0), GOV.UK, legislation.gov.uk and other UK public
+sector sources (Open Government Licence v3.0), and World Bank Group Finances One datasets (CC BY 4.0). Where a source
+states no licence (for example a member list on an international organisation's website), only short factual items
+needed to cite and check the portal's data are kept, with a link back to the source.
+
+The arrangement of these files, and any notes added to them, are by OpenGovernment UK contributors under the Open
+Government Licence v3.0.

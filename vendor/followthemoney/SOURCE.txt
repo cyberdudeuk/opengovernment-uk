@@ -1,0 +1,1 @@
+followthemoney defaultModel.json from https://github.com/opensanctions/followthemoney at commit 81515906aa4377c25b177e5018bf74108d1c0f9b (MIT)

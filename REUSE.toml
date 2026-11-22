@@ -1,0 +1,57 @@
+# Licensing of this repository in machine-readable form (REUSE specification 3.3); the human-readable
+# version is LICENCE-DATA.md. Later annotations override earlier ones for the paths they match.
+version = 1
+
+[[annotations]]  # default: code
+path = "**"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 OpenGovernment UK contributors"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]  # documentation and other original content
+path = ["documentation/**", "tests/fixtures/**.md", "README.md", "SECURITY.md", "LICENCE-DATA.md", "CHANGELOG.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 OpenGovernment UK contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]  # data derived from Open Government Licence sources
+path = ["data/**", "docs/**.json", "docs/**.jsonld", "docs/**.csv", "docs/**.db", "docs/**.xml", "docs/**.txt", "sources/*.json", "sources/*.xml", "sources/*.xlsx", "sources/*.ods", "tests/fixtures/**.json"]  # OG-D65: test cases cut from the register are data
+precedence = "override"
+SPDX-FileCopyrightText = "2026 OpenGovernment UK contributors; contains public sector information licensed under the Open Government Licence v3.0"
+SPDX-License-Identifier = "OGL-UK-3.0"
+
+[[annotations]]  # published pages carry both the code and the data
+path = ["docs/*.html", "sources/opengovernment-uk-0.2.2.html"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 OpenGovernment UK contributors; contains public sector information licensed under the Open Government Licence v3.0"
+SPDX-License-Identifier = "MIT AND OGL-UK-3.0"
+
+[[annotations]]  # evidence snapshots: facts read from each source, kept under that source's own terms (recorded in each file)
+path = "sources/evidence/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Each source's publisher, as recorded in the file"
+SPDX-License-Identifier = "LicenseRef-Source-Terms"
+
+[[annotations]]
+path = "sources/gleif-level2.json"
+precedence = "override"
+SPDX-FileCopyrightText = "Global Legal Entity Identifier Foundation"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "sources/vendor/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2013-2019 Michael Bostock (world-atlas); Natural Earth (public domain data)"
+SPDX-License-Identifier = "ISC"
+
+[[annotations]]
+path = "vendor/bods-schema/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2016-2026 Open Ownership"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "docs/assets/fonts/**"
+precedence = "override"
+SPDX-FileCopyrightText = "The Atkinson Hyperlegible Next and IBM Plex Mono authors"
+SPDX-License-Identifier = "OFL-1.1"

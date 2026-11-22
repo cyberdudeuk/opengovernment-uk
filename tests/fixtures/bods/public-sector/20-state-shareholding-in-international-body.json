@@ -1,0 +1,151 @@
+[
+ {
+  "statementId": "oguk-0e726a40103a9030f5572dd4b090d972e0585e9a688e80d2",
+  "statementDate": "2026-11-22",
+  "recordId": "oguk-145980a40e09830f2f9d7771",
+  "declarationSubject": "oguk-145980a40e09830f2f9d7771",
+  "recordType": "entity",
+  "recordStatus": "new",
+  "recordDetails": {
+   "isComponent": false,
+   "entityType": {
+    "type": "state"
+   },
+   "name": "United Kingdom",
+   "jurisdiction": {
+    "name": "United Kingdom",
+    "code": "GB"
+   },
+   "identifiers": [
+    {
+     "id": "wikidata:Q145",
+     "schemeName": "OpenGovernment UK register key"
+    },
+    {
+     "id": "Q145",
+     "scheme": "XI-WIKIDATA",
+     "schemeName": "Wikidata"
+    }
+   ]
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "OpenGovernment UK register record"
+  }
+ },
+ {
+  "statementId": "oguk-bfbe1a0a22234765662184826e52b8c34a763bc3ac9a1cc2",
+  "statementDate": "2026-06-30",
+  "recordId": "oguk-5f1598e100508e3762c0c115",
+  "declarationSubject": "oguk-5f1598e100508e3762c0c115",
+  "recordType": "entity",
+  "recordStatus": "new",
+  "recordDetails": {
+   "isComponent": false,
+   "entityType": {
+    "type": "legalEntity",
+    "details": "International financial institution, established by treaty among its member countries"
+   },
+   "name": "International Bank for Reconstruction and Development",
+   "identifiers": [
+    {
+     "id": "ZTMSNXROF84AHWJNKQ93",
+     "scheme": "XI-LEI",
+     "schemeName": "Global Legal Entity Identifier"
+    },
+    {
+     "id": "Q191384",
+     "scheme": "XI-WIKIDATA",
+     "schemeName": "Wikidata"
+    }
+   ],
+   "uri": "https://financesone.worldbank.org/d/DS00051"
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "World Bank Group Finances One, IBRD subscriptions and voting power of member countries (DS00051)",
+   "url": "https://financesone.worldbank.org/d/DS00051"
+  }
+ },
+ {
+  "statementId": "oguk-b51e5a72ab00923b75f9cb0cfe4797e05064d0f0d836cdf3",
+  "statementDate": "2026-06-30",
+  "recordId": "oguk-279c368128e7b1a402be8a0d",
+  "recordType": "relationship",
+  "recordStatus": "new",
+  "declarationSubject": "oguk-5f1598e100508e3762c0c115",
+  "recordDetails": {
+   "isComponent": false,
+   "subject": "oguk-5f1598e100508e3762c0c115",
+   "interestedParty": "oguk-145980a40e09830f2f9d7771",
+   "interests": [
+    {
+     "directOrIndirect": "direct",
+     "beneficialOwnershipOrControl": false,
+     "type": "shareholding",
+     "share": {
+      "exact": 3.94
+     },
+     "details": "Share of total subscriptions to capital, as the institution publishes it"
+    },
+    {
+     "directOrIndirect": "direct",
+     "beneficialOwnershipOrControl": false,
+     "type": "votingRights",
+     "share": {
+      "exact": 3.75
+     },
+     "details": "109,468 votes, 3.75% of total voting power, as the institution publishes it"
+    }
+   ]
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "World Bank Group Finances One, IBRD subscriptions and voting power of member countries (DS00051); as of 2026-06-30",
+   "url": "https://financesone.worldbank.org/d/DS00051",
+   "retrievedAt": "2026-11-22"
+  },
+  "publicAccountability": {
+   "relation": "member-shareholder",
+   "relationLabel": "The UK state is a member and shareholder",
+   "ukLead": [
+    "government-organisation:D1315",
+    "government-organisation:D15"
+   ],
+   "membersOfInstitution": 189
+  }
+ }
+]

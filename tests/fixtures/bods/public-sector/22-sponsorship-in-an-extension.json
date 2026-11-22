@@ -1,0 +1,170 @@
+[
+ {
+  "statementId": "oguk-6680897e946747bdf6588608f39494ea064b39a1fe5b06f5",
+  "statementDate": "2026-11-22",
+  "recordId": "oguk-581fe77fa7d1b116b0874d61",
+  "declarationSubject": "oguk-581fe77fa7d1b116b0874d61",
+  "recordType": "entity",
+  "recordStatus": "new",
+  "recordDetails": {
+   "isComponent": false,
+   "entityType": {
+    "type": "stateBody",
+    "subtype": "governmentDepartment",
+    "details": "Devolved government"
+   },
+   "name": "The Scottish Government",
+   "identifiers": [
+    {
+     "id": "government-organisation:DA1020",
+     "schemeName": "OpenGovernment UK register key"
+    },
+    {
+     "id": "the-scottish-government",
+     "scheme": "GB-GOVUK",
+     "schemeName": "GOV.UK organisation"
+    },
+    {
+     "id": "Q32521",
+     "scheme": "XI-WIKIDATA",
+     "schemeName": "Wikidata"
+    },
+    {
+     "id": "213800RSIYROVPUVUV91",
+     "scheme": "XI-LEI",
+     "schemeName": "Global Legal Entity Identifier"
+    },
+    {
+     "id": "GB-GOV-21",
+     "scheme": "GB-GOV",
+     "schemeName": "UK government IATI organisation identifier (FCDO)"
+    }
+   ],
+   "jurisdiction": {
+    "name": "Scotland",
+    "code": "GB-SCT"
+   },
+   "foundingDate": "1999-01-01",
+   "uri": "https://www.gov.uk/government/organisations/the-scottish-government"
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "OpenGovernment UK register record, joined from GOV.UK, ONS and other registers"
+  },
+  "publicAccountability": {
+   "answersTo": "the Scottish Parliament",
+   "accountableOwner": null,
+   "sourcesAgreeing": 0,
+   "wga2024_25": "consolidated",
+   "governmentFundedIncomeGBP": null,
+   "tradingFund": null
+  }
+ },
+ {
+  "statementId": "oguk-da5cb587378602437fae9a735d095a69009e63523731b013",
+  "statementDate": "2026-11-22",
+  "recordId": "oguk-24b0dcd00e1109af61d8fe41",
+  "declarationSubject": "oguk-24b0dcd00e1109af61d8fe41",
+  "recordType": "entity",
+  "recordStatus": "new",
+  "recordDetails": {
+   "isComponent": false,
+   "entityType": {
+    "type": "stateBody",
+    "subtype": "stateAgency",
+    "details": "Central Government"
+   },
+   "name": "2023 Cycling World Championships Ltd",
+   "identifiers": [
+    {
+     "id": "ons-name:2023-cycling-world-championships-ltd",
+     "schemeName": "OpenGovernment UK register key"
+    }
+   ],
+   "jurisdiction": {
+    "name": "Scotland",
+    "code": "GB-SCT"
+   },
+   "foundingDate": "2020-02-28"
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "OpenGovernment UK register record, joined from GOV.UK, ONS and other registers"
+  },
+  "publicAccountability": {
+   "answersTo": "the Scottish Parliament",
+   "accountableOwner": "oguk-581fe77fa7d1b116b0874d61",
+   "sourcesAgreeing": 1,
+   "wga2024_25": "consolidated",
+   "governmentFundedIncomeGBP": null,
+   "tradingFund": null
+  }
+ },
+ {
+  "statementId": "oguk-328fceed5bbe3cf262ac36c059b06bc6d3e79c262b6427ce",
+  "statementDate": "2026-11-22",
+  "recordId": "oguk-f0f8adaa46b1c2f7710d2c13",
+  "recordType": "relationship",
+  "recordStatus": "new",
+  "declarationSubject": "oguk-24b0dcd00e1109af61d8fe41",
+  "recordDetails": {
+   "isComponent": false,
+   "subject": "oguk-24b0dcd00e1109af61d8fe41",
+   "interestedParty": "oguk-581fe77fa7d1b116b0874d61",
+   "interests": [
+    {
+     "directOrIndirect": "direct",
+     "beneficialOwnershipOrControl": false,
+     "type": "otherInfluenceOrControl",
+     "details": "Sponsorship"
+    }
+   ]
+  },
+  "publicationDetails": {
+   "publicationDate": "2026-11-22",
+   "bodsVersion": "0.4",
+   "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "publisher": {
+    "name": "OpenGovernment UK (pilot)",
+    "url": "https://claude.ai/artifact/63VSpapuNHqrds1LrFuwpb"
+   }
+  },
+  "source": {
+   "type": [
+    "officialRegister"
+   ],
+   "description": "ONS Public Sector Classification Guide, November 2026 (issued 20 November 2026); Organisation sheet, row 3; sha256 f8fc489417dc8ad418229b685229d68e299a569b72fb1c793da597507b004926",
+   "url": "https://www.ons.gov.uk/file?uri=/methodology/classificationsandstandards/economicstatisticsclassifications/introductiontoeconomicstatisticsclassifications/pscgnov2026.xlsx",
+   "retrievedAt": "2026-11-22T03:42:14Z"
+  },
+  "publicAccountability": {
+   "relation": "sponsors",
+   "relationLabel": "Sponsored by",
+   "asWritten": "SG",
+   "matchMethod": "body: name, cleaned; sponsor: ONS abbreviation SG = The Scottish Government; name, cleaned",
+   "sourceKey": "ons"
+  }
+ }
+]

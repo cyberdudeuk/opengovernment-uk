@@ -141,6 +141,8 @@ DATASETS = [  # file, title, description, media type, standard it conforms to
     ("data/international.jsonld", "The UK and the world", "Memberships of international bodies, the UK body that leads, treaties, agreements, trade agreements in effect and tax treaties.", "application/ld+json", "http://www.w3.org/ns/org#"),
     ("data/taxonomies.skos.jsonld", "Taxonomies", "Types, purposes (UN COFOG), activities, reach, nations (ISO 3166-2:GB), kinds of treaty.", "application/ld+json", "http://www.w3.org/2004/02/skos/core#"),
     ("bods-0.4.json", "Ownership and control (BODS 0.4)", "Who owns or controls each public body, and the UK's shareholdings in international financial institutions.", "application/json", "https://standard.openownership.org/en/0.4.0/"),
+    ("data/register.ftm.json", "The register in FollowTheMoney", "Public bodies, companies they control, international bodies, links, renames and memberships, for OpenSanctions, OpenAleph and yente.", "application/json", "https://followthemoney.tech/"),
+    ("llms.txt", "Guide for AI agents", "Where everything is, in plain text, for language models and agents (the llms.txt convention).", "text/plain", "https://llmstxt.org/"),
     ("data/provenance.jsonld", "Provenance of this build", "Sources used, with fingerprints, and the files made.", "application/ld+json", "http://www.w3.org/ns/prov#"),
     ("datapackage.json", "Data package", "Every CSV with its fields and licence.", "application/json", "https://specs.frictionlessdata.io/data-package/"),
     ("opengovernment-uk.db", "Everything in one SQLite file", "All tables, ready for Datasette or any SQLite tool.", "application/vnd.sqlite3", ""),
@@ -185,7 +187,7 @@ def checks(out, D):
     if len(reg) != len(D["r"]): e.append("register.jsonld does not hold every record")
     if not any(n.get("@type") == "org:Membership" and "NATO" in n.get("skos:note", "") for n in out["international.jsonld"]["@graph"]): e.append("known answer: the UK's NATO membership")
     for f, *_ in DATASETS:
-        if not (DOCS / f).exists() and f.split("/")[-1] not in out and f != "data/register.csv": e.append(f"catalogue lists {f}, which is not published")
+        if not (DOCS / f).exists() and f.split("/")[-1] not in out and f not in ("data/register.csv", "llms.txt"): e.append(f"catalogue lists {f}, which is not published")
     for res in out["datapackage.json"]["resources"]:
         if ".." in res["path"] or res["path"].startswith("/"): e.append(f"datapackage: {res['path']} climbs out of the package (not allowed)")
         elif (DOCS / res["path"]).exists() and [x["name"] for x in res["schema"]["fields"]] != csv_schema(res["path"]): e.append(f"datapackage: {res['path']} fields do not match its header")
@@ -240,6 +242,15 @@ def main():
     (DOCS / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
                                       "".join(f"<url><loc>{SITE}{p}</loc><lastmod>{tree['built'][:10]}</lastmod></url>\n" for p in pages) +
                                       "".join(f"<url><loc>{SITE}{f}</loc><lastmod>{tree['built'][:10]}</lastmod></url>\n" for f, *_ in DATASETS) + "</urlset>\n")
+    (DOCS / "llms.txt").write_text(  # the llms.txt convention: a plain guide for language models and agents
+        "# OpenGovernment UK\n\n> An open register of the UK state: every public body the official registers know, who each answers to, who owns or controls it,"
+        " its codes in other registers, and the UK's place in the world. Pilot. Every fact cites its source; anything worked out is labelled.\n\n"
+        "Identifiers: each body is " + ID + "<register key>, for example " + ID + "government-organisation:D9. Licence: data OGL v3.0, code MIT, documentation CC BY 4.0.\n\n"
+        "## Pages\n\n" + "".join(f"- [{t}]({SITE}{u}): {d}\n" for u, t, d in [("index.html", "Register", "search any body; profiles; who answers; changes; data and feeds; ask a question"),
+            ("nations.html", "Nation by nation", "each nation's legislature, executive and judiciary"), ("world.html", "UK and the world", "international bodies, memberships, treaties, agreements, the Commonwealth, trade and tax agreements, the UK's shares in international financial institutions"),
+            ("orgchart.html", "Org charts", "every body in context"), ("funding.html", "Funding", "grants, schemes and innovation services"), ("navigator.html", "Documentation", "requirements, design and traceability")]) +
+        "\n## Data\n\n" + "".join(f"- [{t}]({SITE}{f}): {d}\n" for f, t, d, _, _ in DATASETS) +
+        "\n## Optional\n\n- [Source code and issues](https://github.com/cyberdudeuk/opengovernment-uk)\n")
     (DOCS / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
     ld = {"@context": "https://schema.org/", "@type": "Dataset", "name": "OpenGovernment UK: register of the UK state",
           "description": "Every UK public body the official registers know, with who each answers to, its codes in other registers, its ownership (BODS 0.4) and the UK's international relationships.",
