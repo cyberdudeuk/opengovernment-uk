@@ -46,6 +46,9 @@ tools/scenarios.py      evolution, reform and revolution to 2030 (modelled, assu
 tools/corporations.py   one family tree per trading fund and public corporation, grouped by owner
 tools/design.py         the design system: tokens to one stylesheet, the shared page shell, the design system page and its guards
 tools/localgov.py       local government under the English Devolution and Community Empowerment Act 2026 (current and planned)
+tools/sameas.py         one record per body: combines records that are the same body seen by different sources
+tools/territories.py    the Crown Dependencies' and Overseas Territories' own bodies, branch by branch
+tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
 ```
 
 Three source files are **not redistributed** here because they name people (the Public Bodies Directory, Companies House controller pages, the PFI register's investors). `fetch.py --private` downloads them; their fingerprints are in `sources/manifest.json`, so a downloaded copy can be checked against the one the build used.
@@ -64,6 +67,8 @@ python tools/fetch.py --private && python tools/build.py   # full rebuild
 | New editions of the sources: ONS guide (roughly monthly), Estimates and Accounts and WGA orders (yearly), Public Bodies Directory and PFI register (yearly) | as published | 1 to 2 hours each to update the URL in `fetch.py` and review changes |
 | Clear the queue of names that didn't match (884 today) | per release | open-ended; worth 1 to 2 hours a release |
 | Local government facts (sources/evidence/local-government-2026.json): check the government's reorganisation and devolution announcements | when MHCLG announces decisions (every area is due an outcome by early 2027), then at least quarterly | 30 to 60 minutes |
+| Territory bodies and websites: re-read the Wikidata and founding-order evidence files, review exclusions | twice a year | 1 to 2 hours |
+| Reconciliation decisions (sources/evidence/reconciliation-decisions.json): decide new items from the body's own page or founding law | when the review queue is not empty | 15 minutes per item |
 | Feedback via the GitHub issue form | as it comes | minutes each |
 
 Nothing runs on a schedule: there are no paid services, no secrets and no tokens beyond the read-only one GitHub gives each workflow run.

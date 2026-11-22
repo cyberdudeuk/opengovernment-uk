@@ -93,3 +93,6 @@
 @media (prefers-reduced-motion:reduce){.lgarea{animation:none}}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media (max-width:600px){.lgdl{grid-template-columns:1fr}.lgdl dd{margin-bottom:4px}.lgtiers{grid-template-columns:1fr}}
+.also{font-size:var(--og-size-xs);color:var(--og-muted);margin-top:var(--og-space-1)}
+.fl{display:block;font-size:var(--og-size-xs);color:var(--og-muted);margin:0 0 var(--og-space-1)}
+.site{font-size:var(--og-size-xs);margin-left:var(--og-space-2)}

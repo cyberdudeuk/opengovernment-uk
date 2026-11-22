@@ -1,0 +1,5418 @@
+{
+ "meta": {
+  "rule": "One record per body, combining every source that names it:\n  - the territory's constitution or founding Order in Council on legislation.gov.uk (the establishing clause is quoted and\n    must be found in sources/evidence/territory-instruments.json, which carries each order's fingerprint);\n  - the body's own or its government's official website, where the page was read and named the body;\n  - Wikidata (community-sourced, CC0): legislature, executive and court links, other public bodies, and official websites.\nNothing is inferred from a name alone: a constitutional body needs its clause; any other body needs a Wikidata record whose\nclass is a public-sector class. Bodies whose website no longer answers are kept and flagged, not dropped.\nWrites data/territories.json. --negative proves the checks fail when they should.",
+  "jurisdictions": {
+   "JE": {
+    "name": "Jersey",
+    "group": "CD",
+    "register_id": "wikidata:Q116785235",
+    "order": null,
+    "note": "",
+    "note_sources": []
+   },
+   "GG": {
+    "name": "Guernsey",
+    "group": "CD",
+    "register_id": "wikidata:Q25230",
+    "order": null,
+    "note": "",
+    "note_sources": []
+   },
+   "GG-ALD": {
+    "name": "Alderney (Bailiwick of Guernsey)",
+    "group": "CD",
+    "register_id": "wikidata:Q25230",
+    "order": null,
+    "note": "",
+    "note_sources": []
+   },
+   "GG-SRK": {
+    "name": "Sark (Bailiwick of Guernsey)",
+    "group": "CD",
+    "register_id": "wikidata:Q25230",
+    "order": null,
+    "note": "",
+    "note_sources": []
+   },
+   "IM": {
+    "name": "Isle of Man",
+    "group": "CD",
+    "register_id": "wikidata:Q9676",
+    "order": null,
+    "note": "",
+    "note_sources": []
+   },
+   "AI": {
+    "name": "Anguilla",
+    "group": "OT",
+    "register_id": "wikidata:Q25228",
+    "order": "uksi-1982-334",
+    "note": "",
+    "note_sources": []
+   },
+   "BM": {
+    "name": "Bermuda",
+    "group": "OT",
+    "register_id": "wikidata:Q23635",
+    "order": "uksi-1968-182",
+    "note": "",
+    "note_sources": []
+   },
+   "VG": {
+    "name": "British Virgin Islands",
+    "group": "OT",
+    "register_id": "wikidata:Q25305",
+    "order": "uksi-2007-1678",
+    "note": "",
+    "note_sources": []
+   },
+   "KY": {
+    "name": "Cayman Islands",
+    "group": "OT",
+    "register_id": "wikidata:Q5785",
+    "order": "uksi-2009-1379",
+    "note": "",
+    "note_sources": []
+   },
+   "FK": {
+    "name": "Falkland Islands",
+    "group": "OT",
+    "register_id": "wikidata:Q9648",
+    "order": "uksi-2008-2846",
+    "note": "",
+    "note_sources": []
+   },
+   "GI": {
+    "name": "Gibraltar",
+    "group": "OT",
+    "register_id": "wikidata:Q1410",
+    "order": null,
+    "note": "Gibraltar's Constitution Order 2006 is not published on legislation.gov.uk, so its bodies here rest on Wikidata and official websites.",
+    "note_sources": []
+   },
+   "MS": {
+    "name": "Montserrat",
+    "group": "OT",
+    "register_id": "wikidata:Q13353",
+    "order": "uksi-2010-2474",
+    "note": "",
+    "note_sources": []
+   },
+   "PN": {
+    "name": "Pitcairn Islands",
+    "group": "OT",
+    "register_id": "wikidata:Q35672",
+    "order": "uksi-2010-244",
+    "note": "",
+    "note_sources": []
+   },
+   "SH": {
+    "name": "St Helena",
+    "group": "OT",
+    "register_id": "wikidata:Q192184",
+    "order": "uksi-2009-1751",
+    "note": "",
+    "note_sources": []
+   },
+   "SH-AC": {
+    "name": "Ascension",
+    "group": "OT",
+    "register_id": "wikidata:Q192184",
+    "order": "uksi-2009-1751",
+    "note": "",
+    "note_sources": []
+   },
+   "SH-TA": {
+    "name": "Tristan da Cunha",
+    "group": "OT",
+    "register_id": "wikidata:Q192184",
+    "order": "uksi-2009-1751",
+    "note": "",
+    "note_sources": []
+   },
+   "TC": {
+    "name": "Turks and Caicos Islands",
+    "group": "OT",
+    "register_id": "wikidata:Q18221",
+    "order": "uksi-2011-1681",
+    "note": "",
+    "note_sources": []
+   },
+   "GS": {
+    "name": "South Georgia and the South Sandwich Islands",
+    "group": "OT",
+    "register_id": "wikidata:Q35086",
+    "order": "uksi-1985-449",
+    "note": "",
+    "note_sources": []
+   },
+   "AQ-BAT": {
+    "name": "British Antarctic Territory",
+    "group": "OT",
+    "register_id": "wikidata:Q165783",
+    "order": "uksi-1989-842",
+    "note": "",
+    "note_sources": []
+   },
+   "IO": {
+    "name": "British Indian Ocean Territory",
+    "group": "OT",
+    "register_id": "wikidata:Q43448",
+    "order": "uksi-1976-893",
+    "note": "A treaty signed in May 2025 would transfer sovereignty over the Chagos Archipelago to Mauritius, with the UK keeping the base on Diego Garcia. It is not in force: the UK's enabling legislation ran out of time in Parliament in 2026. Until it is, this remains a UK Overseas Territory.",
+    "note_sources": [
+     {
+      "title": "GOV.UK: UK/Mauritius Agreement concerning the Chagos Archipelago including Diego Garcia (May 2025)",
+      "url": "https://www.gov.uk/government/publications/ukmauritius-agreement-concerning-the-chagos-archipelago-including-diego-garcia-cs-mauritius-no12025"
+     },
+     {
+      "title": "Chatham House, January 2026: Lords debate on ratification delayed",
+      "url": "https://www.chathamhouse.org/2026/01/uk-ratification-chagos-archipelago-treaty-will-not-violate-international-law"
+     }
+    ]
+   },
+   "SBA": {
+    "name": "Akrotiri and Dhekelia (Sovereign Base Areas)",
+    "group": "OT",
+    "register_id": "wikidata:Q37362",
+    "order": "uksi-1960-1369",
+    "note": "",
+    "note_sources": []
+   }
+  },
+  "counts": {
+   "OT:legislature": 15,
+   "OT:executive": 76,
+   "OT:judiciary": 20,
+   "CD:legislature": 7,
+   "CD:executive": 30,
+   "CD:judiciary": 5
+  },
+  "constitutional": 68,
+  "total": 153,
+  "excluded": {
+   "no website confirming it is current": 50,
+   "website gone, moved or blocked": 27,
+   "hospitals (public or private not stated)": 13
+  },
+  "blocked": "The Isle of Man Government's website refused automated checks, so its departments known only from Wikidata are left out until they can be confirmed another way; the site was not retried with a disguised request.",
+  "not_covered": "Local government below the jurisdiction (parishes, parish commissioners, douzaines) is shown only where the body's own website confirms it; hospitals are left out because the sources don't say whether each is public or private."
+ },
+ "bodies": [
+  {
+   "j": "AI",
+   "name": "House of Assembly",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Anguilla Constitution Order 1982",
+     "url": "https://www.legislation.gov.uk/uksi/1982/334",
+     "quote": "There shall be a House of Assembly for Anguilla",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Anguilla House of Assembly",
+     "url": "https://www.wikidata.org/wiki/Q4763974",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Anguilla",
+   "group": "OT",
+   "parent": "wikidata:Q25228",
+   "pk": "govt",
+   "geography": "Outside the UK: Anguilla",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ai:house-of-assembly"
+  },
+  {
+   "j": "AI",
+   "name": "Executive Council",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Anguilla Constitution Order 1982",
+     "url": "https://www.legislation.gov.uk/uksi/1982/334",
+     "quote": "There shall be an Executive Council in and for Anguilla which shall consist of the Chief Minister, not more than three other Ministers and two ex-officio members, namely, the Att",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q107770622",
+     "url": "https://www.wikidata.org/wiki/Q107770622",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Anguilla",
+   "group": "OT",
+   "parent": "wikidata:Q25228",
+   "pk": "unknown",
+   "geography": "Outside the UK: Anguilla",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ai:executive-council"
+  },
+  {
+   "j": "AI",
+   "name": "Governor of Anguilla",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Anguilla Constitution Order 1982",
+     "url": "https://www.legislation.gov.uk/uksi/1982/334",
+     "quote": "There shall be a Governor of Anguilla, who shall be appointed by Her Majesty and hold office during Her Majesty's pleasure",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Anguilla",
+   "group": "OT",
+   "parent": "wikidata:Q25228",
+   "pk": "govt",
+   "geography": "Outside the UK: Anguilla",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ai:governor-of-anguilla"
+  },
+  {
+   "j": "AI",
+   "name": "Eastern Caribbean Supreme Court (High Court and Court of Appeal)",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "https://www.eccourts.org/",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "Eastern Caribbean Supreme Court; The Anguilla, Montserrat and Virgin Islands (Supreme Court) Order 2000",
+     "url": "https://www.legislation.gov.uk/uksi/2000/3060/contents/made"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Eastern Caribbean Supreme Court",
+     "url": "https://www.wikidata.org/wiki/Q3001122",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Anguilla",
+   "group": "OT",
+   "parent": "wikidata:Q25228",
+   "pk": "safety",
+   "geography": "Outside the UK: Anguilla",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ai:eastern-caribbean-supreme-court-high-court-and-court-of-appe"
+  },
+  {
+   "j": "BM",
+   "name": "Parliament of Bermuda",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "https://www.parliament.bm/",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Bermuda Constitution Order 1968",
+     "url": "https://www.legislation.gov.uk/uksi/1968/182/made",
+     "quote": "There shall be a Legislature for Bermuda which shall consist of Bermuda",
+     "read_as": "OCR of the official scanned PDF"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Parliament of Bermuda",
+     "url": "https://www.wikidata.org/wiki/Q7138929",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "govt",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:parliament-of-bermuda"
+  },
+  {
+   "j": "BM",
+   "name": "Cabinet",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": "Executive Council (the 1968 order's name)",
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Bermuda Constitution Order 1968",
+     "url": "https://www.legislation.gov.uk/uksi/1968/182/made",
+     "quote": "There shall be an Executive Council for Bermuda which shall consist of the Government Leader and, subject to the provisions of section 64 of this Constitution, not less than six ",
+     "read_as": "OCR of the official scanned PDF"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Cabinet of Bermuda",
+     "url": "https://www.wikidata.org/wiki/Q107979988",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "govt",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:cabinet"
+  },
+  {
+   "j": "BM",
+   "name": "Governor of Bermuda",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Bermuda Constitution Order 1968",
+     "url": "https://www.legislation.gov.uk/uksi/1968/182/made",
+     "quote": "There shall be a Governor and Commander-in-Chief of Bermuda who shall be appointed by Her Majesty by Commission under Her Sign Manual and Signet and shall hold office during Her",
+     "read_as": "OCR of the official scanned PDF"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "govt",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:governor-of-bermuda"
+  },
+  {
+   "j": "BM",
+   "name": "Supreme Court of Bermuda",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "https://www.gov.bm/supreme-court",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Bermuda Constitution Order 1968",
+     "url": "https://www.legislation.gov.uk/uksi/1968/182/made",
+     "quote": "There shall be a Supreme Court for Bermuda which shall have such jurisdiction and powers as may be conferred upon it by this Constitution and any other law",
+     "read_as": "OCR of the official scanned PDF"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Supreme Court of Bermuda",
+     "url": "https://www.wikidata.org/wiki/Q113006163",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "safety",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:supreme-court-of-bermuda"
+  },
+  {
+   "j": "BM",
+   "name": "Court of Appeal for Bermuda",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Bermuda Constitution Order 1968",
+     "url": "https://www.legislation.gov.uk/uksi/1968/182/made",
+     "quote": "There shall be a Court of Appeal for Bermuda which shall have such jurisdiction and powers as may be conferred upon it by this Constitution and any other law",
+     "read_as": "OCR of the official scanned PDF"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "safety",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:court-of-appeal-for-bermuda"
+  },
+  {
+   "j": "BM",
+   "name": "Public Service Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Bermuda Constitution Order 1968",
+     "url": "https://www.legislation.gov.uk/uksi/1968/182/made",
+     "quote": "There shall be a Public Service Commission for Bermuda consisting of a Chairman and four other members",
+     "read_as": "OCR of the official scanned PDF"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "unknown",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:public-service-commission"
+  },
+  {
+   "j": "VG",
+   "name": "House of Assembly",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Virgin Islands Constitution Order 2007",
+     "url": "https://www.legislation.gov.uk/uksi/2007/1678",
+     "quote": "There shall be a Legislature of the Virgin Islands which shall consist of Her Majesty and a House of Assembly",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "House of Assembly of the British Virgin Islands",
+     "url": "https://www.wikidata.org/wiki/Q5914704",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "govt",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:house-of-assembly"
+  },
+  {
+   "j": "VG",
+   "name": "Cabinet",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Virgin Islands Constitution Order 2007",
+     "url": "https://www.legislation.gov.uk/uksi/2007/1678",
+     "quote": "There shall be a Cabinet in and for the Virgin Islands which shall consist of the Premier, four other Ministers and one ex officio member, namely the Attorney General",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q16825166",
+     "url": "https://www.wikidata.org/wiki/Q16825166",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "govt",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:cabinet"
+  },
+  {
+   "j": "VG",
+   "name": "Governor of the Virgin Islands",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Virgin Islands Constitution Order 2007",
+     "url": "https://www.legislation.gov.uk/uksi/2007/1678",
+     "quote": "There shall be a Governor of the Virgin Islands who shall be appointed by Her Majesty by Commission under Her Sign Manual and Signet and shall hold office during Her Majesty’s p",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "govt",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:governor-of-the-virgin-islands"
+  },
+  {
+   "j": "VG",
+   "name": "Eastern Caribbean Supreme Court (High Court and Court of Appeal)",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "https://www.eccourts.org/",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "Eastern Caribbean Supreme Court; The Anguilla, Montserrat and Virgin Islands (Supreme Court) Order 2000",
+     "url": "https://www.legislation.gov.uk/uksi/2000/3060/contents/made"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Eastern Caribbean Supreme Court",
+     "url": "https://www.wikidata.org/wiki/Q3001122",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "safety",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:eastern-caribbean-supreme-court-high-court-and-court-of-appe"
+  },
+  {
+   "j": "VG",
+   "name": "Director of Public Prosecutions",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Virgin Islands Constitution Order 2007",
+     "url": "https://www.legislation.gov.uk/uksi/2007/1678",
+     "quote": "There shall be a Director of Public Prosecutions, whose office shall be a public office and who shall be appointed in accordance with section 95",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "safety",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:director-of-public-prosecutions"
+  },
+  {
+   "j": "VG",
+   "name": "Auditor General",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Virgin Islands Constitution Order 2007",
+     "url": "https://www.legislation.gov.uk/uksi/2007/1678",
+     "quote": "There shall be an Auditor General whose office shall be a public office",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "govt",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:auditor-general"
+  },
+  {
+   "j": "VG",
+   "name": "Complaints Commissioner",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Virgin Islands Constitution Order 2007",
+     "url": "https://www.legislation.gov.uk/uksi/2007/1678",
+     "quote": "There shall be a Complaints Commissioner for the Virgin Islands",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "unknown",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:complaints-commissioner"
+  },
+  {
+   "j": "KY",
+   "name": "Parliament of the Cayman Islands",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": "Legislative Assembly (the 2009 order's name; renamed Parliament)",
+   "web": "http://www.gov.ky",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be a Legislature of the Cayman Islands which shall consist of Her Majesty and a Legislative Assembly",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Parliament of the Cayman Islands",
+     "url": "https://www.wikidata.org/wiki/Q3625554",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "govt",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:parliament-of-the-cayman-islands"
+  },
+  {
+   "j": "KY",
+   "name": "Cabinet",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be a Cabinet in and for the Cayman Islands, which shall consist of— a a Premier appointed by the Governor in accordance with section 49(2) or (3)",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "govt",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:cabinet"
+  },
+  {
+   "j": "KY",
+   "name": "Governor of the Cayman Islands",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be a Governor of the Cayman Islands who shall be appointed by Her Majesty and shall hold office during Her Majesty’s pleasure",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "govt",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:governor-of-the-cayman-islands"
+  },
+  {
+   "j": "KY",
+   "name": "Grand Court",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be a Grand Court for the Cayman Islands which shall be a superior Court of Record and shall have such jurisdiction and powers as may be conferred on it by this Const",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "safety",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:grand-court"
+  },
+  {
+   "j": "KY",
+   "name": "Court of Appeal",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be a Court of Appeal for the Cayman Islands which shall be a superior Court of Record and shall have jurisdiction and powers to hear and determine such appeals from ",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "safety",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:court-of-appeal"
+  },
+  {
+   "j": "KY",
+   "name": "Director of Public Prosecutions",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be a Director of Public Prosecutions for the Cayman Islands, whose office shall be a public office and who shall be appointed in accordance with section 106",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "safety",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:director-of-public-prosecutions"
+  },
+  {
+   "j": "KY",
+   "name": "Auditor General",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be an Auditor General whose office shall be a public office, and power to make appointments to the office of Auditor General, and to remove or exercise disciplinary c",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "govt",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:auditor-general"
+  },
+  {
+   "j": "KY",
+   "name": "Public Accounts Committee",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Cayman Islands Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1379",
+     "quote": "There shall be a Public Accounts Committee of the Legislative Assembly with power and responsibility to examine the public accounts of the Cayman Islands and the accounts and fi",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "govt",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:public-accounts-committee"
+  },
+  {
+   "j": "FK",
+   "name": "Legislative Assembly",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "https://assembly.gov.fk/",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Falkland Islands Constitution Order 2008",
+     "url": "https://www.legislation.gov.uk/uksi/2008/2846",
+     "quote": "There shall be a Legislative Assembly for the Falkland Islands",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Legislative Assembly of the Falkland Islands",
+     "url": "https://www.wikidata.org/wiki/Q3365321",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "govt",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:legislative-assembly"
+  },
+  {
+   "j": "FK",
+   "name": "Executive Council",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Falkland Islands Constitution Order 2008",
+     "url": "https://www.legislation.gov.uk/uksi/2008/2846",
+     "quote": "There shall be an Executive Council which shall consist of three of the elected members of the Legislative Assembly, elected in accordance with section 58, and two ex officio mem",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Executive Council of the Falkland Islands",
+     "url": "https://www.wikidata.org/wiki/Q5419832",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "unknown",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:executive-council"
+  },
+  {
+   "j": "FK",
+   "name": "Governor of the Falkland Islands",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Falkland Islands Constitution Order 2008",
+     "url": "https://www.legislation.gov.uk/uksi/2008/2846",
+     "quote": "There shall be a Governor of the Falkland Islands who shall be appointed by Her Majesty by Commission under Her Sign Manual and Signet and shall hold office during Her Majesty’s",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "govt",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:governor-of-the-falkland-islands"
+  },
+  {
+   "j": "FK",
+   "name": "Supreme Court",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Falkland Islands Constitution Order 2008",
+     "url": "https://www.legislation.gov.uk/uksi/2008/2846",
+     "quote": "There shall be a Supreme Court for the Falkland Islands which shall have unlimited jurisdiction to hear and determine any civil or criminal proceedings under any law and such ju",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Supreme Court of the Falkland Islands",
+     "url": "https://www.wikidata.org/wiki/Q133255547",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "safety",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:supreme-court"
+  },
+  {
+   "j": "FK",
+   "name": "Court of Appeal",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Falkland Islands Constitution Order 2008",
+     "url": "https://www.legislation.gov.uk/uksi/2008/2846",
+     "quote": "There shall be a Court of Appeal for the Falkland Islands",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "safety",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:court-of-appeal"
+  },
+  {
+   "j": "FK",
+   "name": "Public Accounts Committee",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Falkland Islands Constitution Order 2008",
+     "url": "https://www.legislation.gov.uk/uksi/2008/2846",
+     "quote": "There shall be a Public Accounts Committee which shall consist of— a a chairman and two other members appointed by the Governor, acting after consultation with the elected membe",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "govt",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:public-accounts-committee"
+  },
+  {
+   "j": "MS",
+   "name": "Legislative Assembly",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "https://www.parliament.ms/",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be a Legislature in and for Montserrat, which shall consist of Her Majesty and a Legislative Assembly",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Legislative Assembly of Montserrat",
+     "url": "https://www.wikidata.org/wiki/Q21029427",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "govt",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:legislative-assembly"
+  },
+  {
+   "j": "MS",
+   "name": "Cabinet",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be a Cabinet in and for Montserrat which shall consist of a Premier, three other Ministers and two ex officio members, namely the Attorney-General and the Financial ",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q109849522",
+     "url": "https://www.wikidata.org/wiki/Q109849522",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "govt",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:cabinet"
+  },
+  {
+   "j": "MS",
+   "name": "Governor of Montserrat",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be a Governor of Montserrat who shall be appointed by Her Majesty by Commission under Her Sign Manual and Signet and shall hold office during Her Majesty’s pleasure",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "govt",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:governor-of-montserrat"
+  },
+  {
+   "j": "MS",
+   "name": "National Advisory Council",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be a National Advisory Council for Montserrat (“the Council”), which shall consist of— a the Governor, as Chairman",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "unknown",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:national-advisory-council"
+  },
+  {
+   "j": "MS",
+   "name": "Electoral Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be an Electoral Commission for Montserrat",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "govt",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:electoral-commission"
+  },
+  {
+   "j": "MS",
+   "name": "Public Service Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be a Public Service Commission for Montserrat, which shall consist of a Chairman and five other members",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "unknown",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:public-service-commission"
+  },
+  {
+   "j": "MS",
+   "name": "Auditor-General",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be an Auditor-General for Montserrat",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "govt",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:auditor-general"
+  },
+  {
+   "j": "MS",
+   "name": "Complaints Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be a Complaints Commission for Montserrat, the composition, functions, operation and procedure of which shall, subject to this section, be prescribed by or under an ",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "unknown",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:complaints-commission"
+  },
+  {
+   "j": "MS",
+   "name": "Director of Public Prosecutions",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Montserrat Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/2474",
+     "quote": "There shall be a Director of Public Prosecutions for Montserrat, whose office shall be a public office",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "safety",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:director-of-public-prosecutions"
+  },
+  {
+   "j": "MS",
+   "name": "Eastern Caribbean Supreme Court (High Court and Court of Appeal)",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "https://www.eccourts.org/",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "Eastern Caribbean Supreme Court; The Anguilla, Montserrat and Virgin Islands (Supreme Court) Order 2000",
+     "url": "https://www.legislation.gov.uk/uksi/2000/3060/contents/made"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Eastern Caribbean Supreme Court",
+     "url": "https://www.wikidata.org/wiki/Q3001122",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "safety",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:eastern-caribbean-supreme-court-high-court-and-court-of-appe"
+  },
+  {
+   "j": "PN",
+   "name": "Island Council",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Pitcairn Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/244",
+     "quote": "There shall be an Island Council for Pitcairn, which shall be composed, and shall have such functions in relation to the government of Pitcairn, as may be prescribed by any law",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Island Council",
+     "url": "https://www.wikidata.org/wiki/Q6083065",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Pitcairn Islands",
+   "group": "OT",
+   "parent": "wikidata:Q35672",
+   "pk": "govt",
+   "geography": "Outside the UK: Pitcairn Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:pn:island-council"
+  },
+  {
+   "j": "PN",
+   "name": "Governor of Pitcairn",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Pitcairn Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/244",
+     "quote": "There shall be a Governor of Pitcairn, who shall be appointed by Her Majesty by Commission under Her Sign Manual and Signet and shall hold office during Her Majesty’s pleasure",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Pitcairn Islands",
+   "group": "OT",
+   "parent": "wikidata:Q35672",
+   "pk": "govt",
+   "geography": "Outside the UK: Pitcairn Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:pn:governor-of-pitcairn"
+  },
+  {
+   "j": "PN",
+   "name": "Supreme Court",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Pitcairn Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/244",
+     "quote": "There shall be a Supreme Court for Pitcairn which shall be a superior court of record and shall be styled the Pitcairn Supreme Court",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Supreme Court of the Pitcairn Islands",
+     "url": "https://www.wikidata.org/wiki/Q7645015",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Pitcairn Islands",
+   "group": "OT",
+   "parent": "wikidata:Q35672",
+   "pk": "safety",
+   "geography": "Outside the UK: Pitcairn Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:pn:supreme-court"
+  },
+  {
+   "j": "PN",
+   "name": "Court of Appeal",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Pitcairn Constitution Order 2010",
+     "url": "https://www.legislation.gov.uk/uksi/2010/244",
+     "quote": "There shall be a Court of Appeal for Pitcairn which shall be a superior court of record and shall be styled the Pitcairn Court of Appeal",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Pitcairn Islands",
+   "group": "OT",
+   "parent": "wikidata:Q35672",
+   "pk": "safety",
+   "geography": "Outside the UK: Pitcairn Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:pn:court-of-appeal"
+  },
+  {
+   "j": "SH",
+   "name": "Legislative Council",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be a Legislature for St Helena consisting of Her Majesty and the Legislative Council",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q6518247",
+     "url": "https://www.wikidata.org/wiki/Q6518247",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "St Helena",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "govt",
+   "geography": "Outside the UK: St Helena",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh:legislative-council"
+  },
+  {
+   "j": "SH",
+   "name": "Executive Council",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be an Executive Council for St Helena, which shall consist of— a the Chief Minister appointed by the Governor in accordance with section 37C(1)(a)",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "St Helena",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "unknown",
+   "geography": "Outside the UK: St Helena",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh:executive-council"
+  },
+  {
+   "j": "SH",
+   "name": "Governor of St Helena",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be a Governor of St Helena",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "St Helena",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "govt",
+   "geography": "Outside the UK: St Helena",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh:governor-of-st-helena"
+  },
+  {
+   "j": "SH",
+   "name": "Supreme Court",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be a Supreme Court for St Helena which shall be a superior court of record",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "St Helena",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "safety",
+   "geography": "Outside the UK: St Helena",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh:supreme-court"
+  },
+  {
+   "j": "SH",
+   "name": "Court of Appeal",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be a Court of Appeal for St Helena which shall be a superior court of record",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "St Helena",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "safety",
+   "geography": "Outside the UK: St Helena",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh:court-of-appeal"
+  },
+  {
+   "j": "SH",
+   "name": "Judicial Service Commission",
+   "branch": "judiciary",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be a Judicial Service Commission for St Helena (“the Commission”) which shall consist of— a the Chief Justice, who shall preside",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "St Helena",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "safety",
+   "geography": "Outside the UK: St Helena",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh:judicial-service-commission"
+  },
+  {
+   "j": "SH",
+   "name": "Chief Auditor",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be a Chief Auditor for St Helena",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "St Helena",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "govt",
+   "geography": "Outside the UK: St Helena",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh:chief-auditor"
+  },
+  {
+   "j": "SH-AC",
+   "name": "Island Council",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be an Island Council for Ascension, which shall be composed, and shall have such functions in relation to the government of Ascension, as may be prescribed by any law",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q4803835",
+     "url": "https://www.wikidata.org/wiki/Q4803835",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Ascension",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "govt",
+   "geography": "Outside the UK: Ascension",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh-ac:island-council"
+  },
+  {
+   "j": "SH-AC",
+   "name": "Administrator of Ascension",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be an Administrator of Ascension, who shall be appointed by the Governor, shall be an officer of the Ascension Public Service and shall have such functions as may be ",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Ascension",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "govt",
+   "geography": "Outside the UK: Ascension",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh-ac:administrator-of-ascension"
+  },
+  {
+   "j": "SH-AC",
+   "name": "Ascension Judicial Service Commission",
+   "branch": "judiciary",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be an Ascension Judicial Service Commission (“the Commission”), which shall consist of— a the Chief Justice, who shall preside",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Ascension",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "safety",
+   "geography": "Outside the UK: Ascension",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh-ac:ascension-judicial-service-commission"
+  },
+  {
+   "j": "SH-TA",
+   "name": "Island Council",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be an Island Council for Tristan da Cunha, which shall be composed, and shall have such functions in relation to the government of Tristan da Cunha, as may be prescri",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Tristan da Cunha Island Council",
+     "url": "https://www.wikidata.org/wiki/Q7844151",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Tristan da Cunha",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "govt",
+   "geography": "Outside the UK: Tristan da Cunha",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh-ta:island-council"
+  },
+  {
+   "j": "SH-TA",
+   "name": "Administrator of Tristan da Cunha",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The St Helena, Ascension and Tristan da Cunha Constitution Order 2009",
+     "url": "https://www.legislation.gov.uk/uksi/2009/1751",
+     "quote": "There shall be an Administrator of Tristan da Cunha, who shall be appointed by the Governor, shall be an officer of the Tristan da Cunha Public Service and shall have such functi",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Tristan da Cunha",
+   "group": "OT",
+   "parent": "wikidata:Q192184",
+   "pk": "govt",
+   "geography": "Outside the UK: Tristan da Cunha",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sh-ta:administrator-of-tristan-da-cunha"
+  },
+  {
+   "j": "TC",
+   "name": "Parliament of the Turks and Caicos Islands",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Legislature for the Turks and Caicos Islands which shall consist of Her Majesty and a Parliament ",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Parliament of the Turks and Caicos Islands",
+     "url": "https://www.wikidata.org/wiki/Q7855481",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "govt",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:parliament-of-the-turks-and-caicos-islands"
+  },
+  {
+   "j": "TC",
+   "name": "Cabinet",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Cabinet for the Turks and Caicos Islands, which shall consist of— a the Governor",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q5015586",
+     "url": "https://www.wikidata.org/wiki/Q5015586",
+     "note": ""
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "govt",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:cabinet"
+  },
+  {
+   "j": "TC",
+   "name": "Governor of the Turks and Caicos Islands",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Governor of the Turks and Caicos Islands who shall be appointed by Her Majesty by Commission under Her Sign Manual and Signet and shall hold office during Her M",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "govt",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:governor-of-the-turks-and-caicos-islands"
+  },
+  {
+   "j": "TC",
+   "name": "Supreme Court",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Supreme Court for the Turks and Caicos Islands which shall have such jurisdiction and powers as may be conferred on it by this Constitution and any other law",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "safety",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:supreme-court"
+  },
+  {
+   "j": "TC",
+   "name": "Court of Appeal",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Court of Appeal for the Turks and Caicos Islands which shall have such jurisdiction and powers as may be conferred on it by this Constitution and any other law",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "safety",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:court-of-appeal"
+  },
+  {
+   "j": "TC",
+   "name": "Judicial Service Commission",
+   "branch": "judiciary",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Judicial Service Commission for the Turks and Caicos Islands, which shall consist of a Chairman and two other members",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "safety",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:judicial-service-commission"
+  },
+  {
+   "j": "TC",
+   "name": "Public Service Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Public Service Commission for the Turks and Caicos Islands, which shall consist of a Chairman and four other members",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "unknown",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:public-service-commission"
+  },
+  {
+   "j": "TC",
+   "name": "Police and Defence Service Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Police and Defence Service Commission for the Turks and Caicos Islands, which shall consist of— a the Governor, as Chair",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "defence",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:police-and-defence-service-commission"
+  },
+  {
+   "j": "TC",
+   "name": "Public Accounts Committee",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "inspect",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Turks and Caicos Islands Constitution Order 2011",
+     "url": "https://www.legislation.gov.uk/uksi/2011/1681",
+     "quote": "There shall be a Public Accounts Committee of the Parliament which shall consist of— a at least three members of the Parliament appointed by the Speaker from among members who a",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "govt",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:public-accounts-committee"
+  },
+  {
+   "j": "GS",
+   "name": "Commissioner for South Georgia and the South Sandwich Islands",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The South Georgia and South Sandwich Islands Order 1985",
+     "url": "https://www.legislation.gov.uk/uksi/1985/449/made",
+     "quote": "There shall be a Commissioner for the Territories who shall be the officer for the time being administering the Government of the Falkland Islands",
+     "read_as": "OCR of the official scanned PDF"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "South Georgia and the South Sandwich Islands",
+   "group": "OT",
+   "parent": "wikidata:Q35086",
+   "pk": "govt",
+   "geography": "Outside the UK: South Georgia and the South Sandwich Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gs:commissioner-for-south-georgia-and-the-south-sandwich-island"
+  },
+  {
+   "j": "GS",
+   "name": "Supreme Court",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The South Georgia and South Sandwich Islands Order 1985",
+     "url": "https://www.legislation.gov.uk/uksi/1985/449/made",
+     "quote": "de under section 9 of Establishment this Order, establish a Supreme Court and such other courts of justice of courts",
+     "read_as": "OCR of the official scanned PDF"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "South Georgia and the South Sandwich Islands",
+   "group": "OT",
+   "parent": "wikidata:Q35086",
+   "pk": "safety",
+   "geography": "Outside the UK: South Georgia and the South Sandwich Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gs:supreme-court"
+  },
+  {
+   "j": "AQ-BAT",
+   "name": "Commissioner for the British Antarctic Territory",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The British Antarctic Territory Order 1989",
+     "url": "https://www.legislation.gov.uk/uksi/1989/842",
+     "quote": "There shall be a Commissioner for the Territory who shall be appointed by Her Majesty by instructions given through a Secretary of State and shall hold office during Her Majesty",
+     "read_as": "legislation.gov.uk XML (latest available version)"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Antarctic Territory",
+   "group": "OT",
+   "parent": "wikidata:Q165783",
+   "pk": "govt",
+   "geography": "Outside the UK: British Antarctic Territory",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:aq-bat:commissioner-for-the-british-antarctic-territory"
+  },
+  {
+   "j": "IO",
+   "name": "Commissioner for the British Indian Ocean Territory",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The British Indian Ocean Territory Order 1976",
+     "url": "https://www.legislation.gov.uk/uksi/1976/893/made",
+     "quote": "There shall be a Commissioner for the Territory who shall be appointed by Her Majesty by Commission under Her Majesty’s Sign Manual and Signet and shall hold office during her M",
+     "read_as": "OCR of the official scanned PDF"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "British Indian Ocean Territory",
+   "group": "OT",
+   "parent": "wikidata:Q43448",
+   "pk": "govt",
+   "geography": "Outside the UK: British Indian Ocean Territory",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:io:commissioner-for-the-british-indian-ocean-territory"
+  },
+  {
+   "j": "SBA",
+   "name": "Administrator of the Sovereign Base Areas",
+   "branch": "executive",
+   "tk": "territory",
+   "type": "The Crown's representative",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "founding order",
+     "title": "The Sovereign Base Areas of Akrotiri and Dhekelia Order in Council 1960",
+     "url": "https://www.legislation.gov.uk/uksi/1960/1369/made",
+     "quote": "There shall be an Administrator of the Sovereign Base Areas whe shall be a serving officer of Her Majesty’s Forces",
+     "read_as": "OCR of the official scanned PDF"
+    }
+   ],
+   "constitutional": true,
+   "jurisdiction": "Akrotiri and Dhekelia (Sovereign Base Areas)",
+   "group": "OT",
+   "parent": "wikidata:Q37362",
+   "pk": "govt",
+   "geography": "Outside the UK: Akrotiri and Dhekelia (Sovereign Base Areas)",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:sba:administrator-of-the-sovereign-base-areas"
+  },
+  {
+   "j": "GI",
+   "name": "Parliament of Gibraltar",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "http://www.parliament.gi",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Parliament of Gibraltar",
+     "url": "https://www.wikidata.org/wiki/Q128852",
+     "note": "its legislature (P194)"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Gibraltar",
+   "group": "OT",
+   "parent": "wikidata:Q1410",
+   "pk": "govt",
+   "geography": "Outside the UK: Gibraltar",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gi:parliament-of-gibraltar"
+  },
+  {
+   "j": "GI",
+   "name": "Government of Gibraltar",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Q128986",
+     "url": "https://www.wikidata.org/wiki/Q128986",
+     "note": ""
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q107803249",
+     "url": "https://www.wikidata.org/wiki/Q107803249",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Gibraltar",
+   "group": "OT",
+   "parent": "wikidata:Q1410",
+   "pk": "govt",
+   "geography": "Outside the UK: Gibraltar",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gi:government-of-gibraltar"
+  },
+  {
+   "j": "GI",
+   "name": "Courts of Gibraltar",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "court system of Gibraltar",
+     "url": "https://www.wikidata.org/wiki/Q169857",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Gibraltar",
+   "group": "OT",
+   "parent": "wikidata:Q1410",
+   "pk": "safety",
+   "geography": "Outside the UK: Gibraltar",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gi:courts-of-gibraltar"
+  },
+  {
+   "j": "JE",
+   "name": "States Assembly",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "States Assembly",
+     "url": "https://www.wikidata.org/wiki/Q946944",
+     "note": "its legislature (P194)"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "govt",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:states-assembly"
+  },
+  {
+   "j": "JE",
+   "name": "Government of Jersey (Council of Ministers)",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "https://www.gov.je",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "Government of Jersey: Council of Ministers",
+     "url": "https://www.gov.je/Government/Pages/default.aspx"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Government of Jersey",
+     "url": "https://www.wikidata.org/wiki/Q61747417",
+     "note": ""
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Council of Ministers",
+     "url": "https://www.wikidata.org/wiki/Q5060027",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "govt",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:government-of-jersey-council-of-ministers"
+  },
+  {
+   "j": "JE",
+   "name": "Royal Court of Jersey",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Royal Court",
+     "url": "https://www.wikidata.org/wiki/Q111950877",
+     "note": ""
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Courts of Jersey",
+     "url": "https://www.wikidata.org/wiki/Q5178728",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "safety",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:royal-court-of-jersey"
+  },
+  {
+   "j": "JE",
+   "name": "Court of Appeal of Jersey",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Jersey Court of Appeal",
+     "url": "https://www.wikidata.org/wiki/Q141255105",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "safety",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:court-of-appeal-of-jersey"
+  },
+  {
+   "j": "GG",
+   "name": "States of Guernsey (States of Deliberation)",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "https://www.gov.gg/parliament",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "States of Guernsey: States of Deliberation",
+     "url": "https://www.gov.gg/parliament"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "States of Guernsey",
+     "url": "https://www.wikidata.org/wiki/Q1368324",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "govt",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:states-of-guernsey-states-of-deliberation"
+  },
+  {
+   "j": "GG",
+   "name": "Policy & Resources Committee",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Q27958235",
+     "url": "https://www.wikidata.org/wiki/Q27958235",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "govt",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:policy-resources-committee"
+  },
+  {
+   "j": "GG",
+   "name": "Royal Court of Guernsey",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "Royal Court of Guernsey",
+     "url": "https://www.guernseyroyalcourt.gg/"
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Courts of Guernsey",
+     "url": "https://www.wikidata.org/wiki/Q21995547",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "safety",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:royal-court-of-guernsey"
+  },
+  {
+   "j": "GG-ALD",
+   "name": "States of Alderney",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "http://www.alderney.gov.gg/",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "States of Alderney",
+     "url": "https://www.wikidata.org/wiki/Q7604031",
+     "note": "its legislature (P194)"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Alderney (Bailiwick of Guernsey)",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "govt",
+   "geography": "Outside the UK: Alderney (Bailiwick of Guernsey)",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg-ald:states-of-alderney"
+  },
+  {
+   "j": "GG-SRK",
+   "name": "Chief Pleas",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Chief Pleas",
+     "url": "https://www.wikidata.org/wiki/Q9189683",
+     "note": "its legislature (P194)"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Sark (Bailiwick of Guernsey)",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "govt",
+   "geography": "Outside the UK: Sark (Bailiwick of Guernsey)",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg-srk:chief-pleas"
+  },
+  {
+   "j": "IM",
+   "name": "Tynwald",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Tynwald",
+     "url": "https://www.wikidata.org/wiki/Q827704",
+     "note": "its legislature (P194)"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "govt",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:tynwald"
+  },
+  {
+   "j": "IM",
+   "name": "House of Keys",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "House of Keys",
+     "url": "https://www.wikidata.org/wiki/Q1516957",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "govt",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:house-of-keys"
+  },
+  {
+   "j": "IM",
+   "name": "Legislative Council",
+   "branch": "legislature",
+   "tk": "legislature",
+   "type": "Parliament or assembly",
+   "ak": "legislate",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Legislative Council of the Isle of Man",
+     "url": "https://www.wikidata.org/wiki/Q679687",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "govt",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:legislative-council"
+  },
+  {
+   "j": "IM",
+   "name": "Isle of Man Government (Council of Ministers)",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "https://www.gov.im/",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Isle of Man Government",
+     "url": "https://www.wikidata.org/wiki/Q3112593",
+     "note": ""
+    },
+    {
+     "kind": "Wikidata",
+     "title": "Q2993842",
+     "url": "https://www.wikidata.org/wiki/Q2993842",
+     "note": ""
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "govt",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:isle-of-man-government-council-of-ministers"
+  },
+  {
+   "j": "IM",
+   "name": "High Court of Justice of the Isle of Man",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "Isle of Man Courts of Justice: High Court, Deemsters, Staff of Government Division",
+     "url": "https://www.courts.im/"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "safety",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:high-court-of-justice-of-the-isle-of-man"
+  },
+  {
+   "j": "IM",
+   "name": "Staff of Government Division (appeal court)",
+   "branch": "judiciary",
+   "tk": "court",
+   "type": "Court or tribunal",
+   "ak": "judge",
+   "formerly": null,
+   "web": "",
+   "srcs": [
+    {
+     "kind": "official",
+     "title": "Isle of Man Courts of Justice: High Court, Deemsters, Staff of Government Division",
+     "url": "https://www.courts.im/"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "safety",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:staff-of-government-division-appeal-court"
+  },
+  {
+   "j": "KY",
+   "name": "Cayman Islands Monetary Authority",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "https://www.cima.ky/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Cayman Islands Monetary Authority",
+     "url": "https://www.wikidata.org/wiki/Q1774447",
+     "note": "central bank, registration authority"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "economy",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:cayman-islands-monetary-authority"
+  },
+  {
+   "j": "JE",
+   "name": "Saint Saviour",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://stsaviour.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Saviour",
+     "url": "https://www.wikidata.org/wiki/Q1808243",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-saviour"
+  },
+  {
+   "j": "JE",
+   "name": "Saint Brelade",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://stbrelade.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Brelade",
+     "url": "https://www.wikidata.org/wiki/Q1835699",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-brelade"
+  },
+  {
+   "j": "GG",
+   "name": "Castel",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.castelparish.com/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Castel",
+     "url": "https://www.wikidata.org/wiki/Q2070272",
+     "note": "parish of Guernsey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "unknown",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:castel"
+  },
+  {
+   "j": "JE",
+   "name": "Saint Lawrence",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://stlawrence.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Lawrence",
+     "url": "https://www.wikidata.org/wiki/Q509090",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-lawrence"
+  },
+  {
+   "j": "JE",
+   "name": "Saint Helier",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://sthelier.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Helier",
+     "url": "https://www.wikidata.org/wiki/Q147738",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-helier"
+  },
+  {
+   "j": "GG",
+   "name": "Saint Peter Port",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.stppcons.com/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Peter Port",
+     "url": "https://www.wikidata.org/wiki/Q174262",
+     "note": "parish"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "economy",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:saint-peter-port"
+  },
+  {
+   "j": "GG",
+   "name": "Forest",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "http://www.forestparish.org.gg/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Forest",
+     "url": "https://www.wikidata.org/wiki/Q2324169",
+     "note": "parish of Guernsey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "environment",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:forest"
+  },
+  {
+   "j": "JE",
+   "name": "Grouville",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://grouville.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Grouville",
+     "url": "https://www.wikidata.org/wiki/Q2429741",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:grouville"
+  },
+  {
+   "j": "JE",
+   "name": "Trinity",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://parishoftrinity.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Trinity",
+     "url": "https://www.wikidata.org/wiki/Q2594704",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:trinity"
+  },
+  {
+   "j": "JE",
+   "name": "Saint Martin",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://stmartin.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Martin",
+     "url": "https://www.wikidata.org/wiki/Q593645",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-martin"
+  },
+  {
+   "j": "FK",
+   "name": "Royal Falkland Islands Police",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/police/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Royal Falkland Islands Police",
+     "url": "https://www.wikidata.org/wiki/Q7374162",
+     "note": "Falkland Islands government service, police"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "safety",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:royal-falkland-islands-police"
+  },
+  {
+   "j": "KY",
+   "name": "Registry of Companies",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "records",
+   "formerly": null,
+   "web": "https://www.ciregistry.ky/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Registry of Companies",
+     "url": "https://www.wikidata.org/wiki/Q108208674",
+     "note": "registration authority"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "economy",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:registry-of-companies"
+  },
+  {
+   "j": "JE",
+   "name": "Company Registry",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "records",
+   "formerly": null,
+   "web": "https://www.jerseyfsc.org/registry/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Company Registry",
+     "url": "https://www.wikidata.org/wiki/Q108208735",
+     "note": "registration authority"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:company-registry"
+  },
+  {
+   "j": "BM",
+   "name": "Office of the Ombudsman for Bermuda",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://ombudsman.bm/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Office of the Ombudsman for Bermuda",
+     "url": "https://www.wikidata.org/wiki/Q61931771",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "safety",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:office-of-the-ombudsman-for-bermuda"
+  },
+  {
+   "j": "BM",
+   "name": "Bermuda Police Service",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.bermudapolice.bm/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Bermuda Police Service",
+     "url": "https://www.wikidata.org/wiki/Q2897323",
+     "note": "Department of Ministry of Bermuda"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "safety",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:bermuda-police-service"
+  },
+  {
+   "j": "JE",
+   "name": "Jersey Financial Services Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "https://www.jerseyfsc.org/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Jersey Financial Services Commission",
+     "url": "https://www.wikidata.org/wiki/Q67930602",
+     "note": "regulatory agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "economy",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:jersey-financial-services-commission"
+  },
+  {
+   "j": "GG",
+   "name": "Saint Sampson",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.stsampson.gg",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Sampson",
+     "url": "https://www.wikidata.org/wiki/Q24695054",
+     "note": "parish of Guernsey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "unknown",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:saint-sampson"
+  },
+  {
+   "j": "FK",
+   "name": "Falkland Islands Government Taxation Office",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/taxation/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Government Taxation Office",
+     "url": "https://www.wikidata.org/wiki/Q133267751",
+     "note": "Falkland Islands government service, government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "govt",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:falkland-islands-government-taxation-office"
+  },
+  {
+   "j": "GS",
+   "name": "Falkland Islands Government Taxation Office",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/taxation/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Government Taxation Office",
+     "url": "https://www.wikidata.org/wiki/Q133267751",
+     "note": "Falkland Islands government service, government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "South Georgia and the South Sandwich Islands",
+   "group": "OT",
+   "parent": "wikidata:Q35086",
+   "pk": "govt",
+   "geography": "Outside the UK: South Georgia and the South Sandwich Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gs:falkland-islands-government-taxation-office"
+  },
+  {
+   "j": "FK",
+   "name": "Falkland Islands Maritime Authority",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/maritimeauthority/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Maritime Authority",
+     "url": "https://www.wikidata.org/wiki/Q133457090",
+     "note": "Falkland Islands government service"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "economy",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:falkland-islands-maritime-authority"
+  },
+  {
+   "j": "FK",
+   "name": "Falkland Islands Civil Aviation Department",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/civilaviation/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Civil Aviation Department",
+     "url": "https://www.wikidata.org/wiki/Q133643826",
+     "note": "Falkland Islands government service"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "economy",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:falkland-islands-civil-aviation-department"
+  },
+  {
+   "j": "FK",
+   "name": "Falkland Islands Fire and Rescue Service",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/fireandrescue/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Fire and Rescue Service",
+     "url": "https://www.wikidata.org/wiki/Q133786106",
+     "note": "Falkland Islands government service"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "safety",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:falkland-islands-fire-and-rescue-service"
+  },
+  {
+   "j": "BM",
+   "name": "Ministry of Economy and Labour",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "https://www.gov.bm/ministry/economy-and-labour",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Ministry of Economy and Labour",
+     "url": "https://www.wikidata.org/wiki/Q112873438",
+     "note": "Ministry in Bermuda, economic affairs ministry, ministry of labour"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "economy",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:ministry-of-economy-and-labour"
+  },
+  {
+   "j": "BM",
+   "name": "Ministry of Education of Bermuda",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "https://www.moed.bm",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Ministry of Education of Bermuda",
+     "url": "https://www.wikidata.org/wiki/Q113003573",
+     "note": "Ministry in Bermuda, ministry of education"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "education",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:ministry-of-education-of-bermuda"
+  },
+  {
+   "j": "BM",
+   "name": "Ministry of Finance",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "https://www.gov.bm/ministry/finance",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Ministry of Finance",
+     "url": "https://www.wikidata.org/wiki/Q113003780",
+     "note": "Ministry in Bermuda, finance ministry"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "economy",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:ministry-of-finance"
+  },
+  {
+   "j": "BM",
+   "name": "Ministry of Health",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "https://www.gov.bm/ministry/health",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Ministry of Health",
+     "url": "https://www.wikidata.org/wiki/Q113004030",
+     "note": "Ministry in Bermuda, ministry of health"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "health",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:ministry-of-health"
+  },
+  {
+   "j": "BM",
+   "name": "Ministry of Home Affairs",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "policy",
+   "formerly": null,
+   "web": "https://www.gov.bm/ministry/home-affairs",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Ministry of Home Affairs",
+     "url": "https://www.wikidata.org/wiki/Q113004150",
+     "note": "Ministry in Bermuda, interior ministry"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "housing",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:ministry-of-home-affairs"
+  },
+  {
+   "j": "JE",
+   "name": "Law Officers' Department",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.je/Government/NonexecLegal/LawOfficers/Pages/LawOfficersDepartment.aspx",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Law Officers' Department",
+     "url": "https://www.wikidata.org/wiki/Q136448388",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "govt",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:law-officers-department"
+  },
+  {
+   "j": "FK",
+   "name": "Jane Cameron National Archives",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://nationalarchives.gov.fk/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Jane Cameron National Archives",
+     "url": "https://www.wikidata.org/wiki/Q16849518",
+     "note": "Falkland Islands government service"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "culture",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:jane-cameron-national-archives"
+  },
+  {
+   "j": "JE",
+   "name": "Jersey Fire and Rescue Service",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://jerseyfire.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Jersey Fire and Rescue Service",
+     "url": "https://www.wikidata.org/wiki/Q16851236",
+     "note": "fire department"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "safety",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:jersey-fire-and-rescue-service"
+  },
+  {
+   "j": "BM",
+   "name": "Department of Statistics",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.bm/department/statistics",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Department of Statistics",
+     "url": "https://www.wikidata.org/wiki/Q17010279",
+     "note": "Department of Ministry of Bermuda"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "govt",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:department-of-statistics"
+  },
+  {
+   "j": "GI",
+   "name": "Gibraltar Regulatory Authority",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "https://www.gra.gi/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Gibraltar Regulatory Authority",
+     "url": "https://www.wikidata.org/wiki/Q17016933",
+     "note": "regulatory agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Gibraltar",
+   "group": "OT",
+   "parent": "wikidata:Q1410",
+   "pk": "unknown",
+   "geography": "Outside the UK: Gibraltar",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gi:gibraltar-regulatory-authority"
+  },
+  {
+   "j": "BM",
+   "name": "Bermuda Customs Department",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.bm/department/customs",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Bermuda Customs Department",
+     "url": "https://www.wikidata.org/wiki/Q113087539",
+     "note": "Department of Ministry of Bermuda"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "govt",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:bermuda-customs-department"
+  },
+  {
+   "j": "BM",
+   "name": "Bermuda Fire and Rescue Service",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.bm/department/fire-and-rescue-service",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Bermuda Fire and Rescue Service",
+     "url": "https://www.wikidata.org/wiki/Q113087556",
+     "note": "Department of Ministry of Bermuda, fire department"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "safety",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:bermuda-fire-and-rescue-service"
+  },
+  {
+   "j": "BM",
+   "name": "Bermuda Department of Child and Family Services",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.bm/department/child-and-family-services",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Bermuda Department of Child and Family Services",
+     "url": "https://www.wikidata.org/wiki/Q113115665",
+     "note": "Department of Ministry of Bermuda"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "unknown",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:bermuda-department-of-child-and-family-services"
+  },
+  {
+   "j": "GG",
+   "name": "Fort Grey Shipwreck Museum",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://museums.gov.gg/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Fort Grey Shipwreck Museum",
+     "url": "https://www.wikidata.org/wiki/Q113170776",
+     "note": "local authority museum"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "culture",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:fort-grey-shipwreck-museum"
+  },
+  {
+   "j": "GG",
+   "name": "Royal Guernsey Militia Regimental Museum",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "collections",
+   "formerly": null,
+   "web": "https://museums.gov.gg:443/rgm",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Royal Guernsey Militia Regimental Museum",
+     "url": "https://www.wikidata.org/wiki/Q113170789",
+     "note": "regimental museum"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "culture",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:royal-guernsey-militia-regimental-museum"
+  },
+  {
+   "j": "JE",
+   "name": "Saint Peter",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://stpeter.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Peter",
+     "url": "https://www.wikidata.org/wiki/Q3058152",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-peter"
+  },
+  {
+   "j": "JE",
+   "name": "Saint Clement",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://stclement.je/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint Clement",
+     "url": "https://www.wikidata.org/wiki/Q3058160",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-clement"
+  },
+  {
+   "j": "FK",
+   "name": "Falkland Islands Government Natural Resources Directorate",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/naturalresources/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Government Natural Resources Directorate",
+     "url": "https://www.wikidata.org/wiki/Q134696491",
+     "note": "Falkland Islands government service"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "environment",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:falkland-islands-government-natural-resources-directorate"
+  },
+  {
+   "j": "FK",
+   "name": "Falkland Islands Government Human Resources",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/humanresources/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Government Human Resources",
+     "url": "https://www.wikidata.org/wiki/Q134696500",
+     "note": "Falkland Islands government service"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "govt",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:falkland-islands-government-human-resources"
+  },
+  {
+   "j": "JE",
+   "name": "Saint John",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://StJohn.je",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Saint John",
+     "url": "https://www.wikidata.org/wiki/Q954721",
+     "note": "parish of Jersey"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "unknown",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:saint-john"
+  },
+  {
+   "j": "GG",
+   "name": "Guernsey Coastguard",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.harbours.gg/guernseycoastguard",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Guernsey Coastguard",
+     "url": "https://www.wikidata.org/wiki/Q139962127",
+     "note": "coast guard"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "unknown",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:guernsey-coastguard"
+  },
+  {
+   "j": "VG",
+   "name": "BVI Department of Disaster Management",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.bviddm.com/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "BVI Department of Disaster Management",
+     "url": "https://www.wikidata.org/wiki/Q105266773",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "British Virgin Islands",
+   "group": "OT",
+   "parent": "wikidata:Q25305",
+   "pk": "govt",
+   "geography": "Outside the UK: British Virgin Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:vg:bvi-department-of-disaster-management"
+  },
+  {
+   "j": "TC",
+   "name": "Department of Disaster Management & Emergencies of the Turks and Caicos Islands",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.tc/ddme/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Department of Disaster Management & Emergencies of the Turks and Caicos Islands",
+     "url": "https://www.wikidata.org/wiki/Q105267474",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Turks and Caicos Islands",
+   "group": "OT",
+   "parent": "wikidata:Q18221",
+   "pk": "govt",
+   "geography": "Outside the UK: Turks and Caicos Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:tc:department-of-disaster-management-emergencies-of-the-turks-a"
+  },
+  {
+   "j": "FK",
+   "name": "Government of the Falkland Islands",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Government of the Falkland Islands",
+     "url": "https://www.wikidata.org/wiki/Q105453192",
+     "note": "executive branch"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "govt",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:government-of-the-falkland-islands"
+  },
+  {
+   "j": "FK",
+   "name": "Falkland Islands Fisheries Department",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.fk/fisheries/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Falkland Islands Fisheries Department",
+     "url": "https://www.wikidata.org/wiki/Q106232046",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Falkland Islands",
+   "group": "OT",
+   "parent": "wikidata:Q9648",
+   "pk": "economy",
+   "geography": "Outside the UK: Falkland Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:fk:falkland-islands-fisheries-department"
+  },
+  {
+   "j": "AI",
+   "name": "Commercial Registry",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "records",
+   "formerly": null,
+   "web": "http://www.commercialregistry.ai/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Commercial Registry",
+     "url": "https://www.wikidata.org/wiki/Q107178528",
+     "note": "registration authority"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Anguilla",
+   "group": "OT",
+   "parent": "wikidata:Q25228",
+   "pk": "govt",
+   "geography": "Outside the UK: Anguilla",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ai:commercial-registry"
+  },
+  {
+   "j": "GI",
+   "name": "Companies House Gibraltar",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "records",
+   "formerly": null,
+   "web": "https://www.companieshouse.gi/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Companies House Gibraltar",
+     "url": "https://www.wikidata.org/wiki/Q107178883",
+     "note": "registration authority"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Gibraltar",
+   "group": "OT",
+   "parent": "wikidata:Q1410",
+   "pk": "economy",
+   "geography": "Outside the UK: Gibraltar",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gi:companies-house-gibraltar"
+  },
+  {
+   "j": "MS",
+   "name": "Financial Services Commission Montserrat",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "https://www.fscmontserrat.org/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Financial Services Commission Montserrat",
+     "url": "https://www.wikidata.org/wiki/Q107178987",
+     "note": "registration authority"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Montserrat",
+   "group": "OT",
+   "parent": "wikidata:Q13353",
+   "pk": "economy",
+   "geography": "Outside the UK: Montserrat",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ms:financial-services-commission-montserrat"
+  },
+  {
+   "j": "BM",
+   "name": "Bermuda Ministry of National Security",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.bm/ministry/national-security",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Bermuda Ministry of National Security",
+     "url": "https://www.wikidata.org/wiki/Q113017586",
+     "note": "Ministry in Bermuda"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "unknown",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:bermuda-ministry-of-national-security"
+  },
+  {
+   "j": "GG",
+   "name": "States of Guernsey Police Service",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.guernsey.police.uk:443/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "States of Guernsey Police Service",
+     "url": "https://www.wikidata.org/wiki/Q7604038",
+     "note": "police"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "safety",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:states-of-guernsey-police-service"
+  },
+  {
+   "j": "KY",
+   "name": "Government of the Cayman Islands",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://gov.ky/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Government of the Cayman Islands",
+     "url": "https://www.wikidata.org/wiki/Q5589389",
+     "note": "government"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Cayman Islands",
+   "group": "OT",
+   "parent": "wikidata:Q5785",
+   "pk": "govt",
+   "geography": "Outside the UK: Cayman Islands",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ky:government-of-the-cayman-islands"
+  },
+  {
+   "j": "GG",
+   "name": "Guernsey Financial Services Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "https://www.gfsc.gg/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Guernsey Financial Services Commission",
+     "url": "https://www.wikidata.org/wiki/Q5614899",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Guernsey",
+   "group": "CD",
+   "parent": "wikidata:Q25230",
+   "pk": "economy",
+   "geography": "Outside the UK: Guernsey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:gg:guernsey-financial-services-commission"
+  },
+  {
+   "j": "BM",
+   "name": "Hamilton",
+   "branch": "executive",
+   "tk": "council",
+   "type": "Council or local public body",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.cityofhamilton.bm/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Hamilton",
+     "url": "https://www.wikidata.org/wiki/Q30985",
+     "note": "municipality of Bermuda"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "unknown",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:hamilton"
+  },
+  {
+   "j": "GI",
+   "name": "Royal Gibraltar Post Office",
+   "branch": "executive",
+   "tk": "department",
+   "type": "Government department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://post.gi/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Royal Gibraltar Post Office",
+     "url": "https://www.wikidata.org/wiki/Q32784",
+     "note": "postal services ministry"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Gibraltar",
+   "group": "OT",
+   "parent": "wikidata:Q1410",
+   "pk": "economy",
+   "geography": "Outside the UK: Gibraltar",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gi:royal-gibraltar-post-office"
+  },
+  {
+   "j": "JE",
+   "name": "States of Jersey Police",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.jersey.police.je/s/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "States of Jersey Police",
+     "url": "https://www.wikidata.org/wiki/Q12069992",
+     "note": "police"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "safety",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:states-of-jersey-police"
+  },
+  {
+   "j": "IM",
+   "name": "Isle of Man Information Commissioner",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "https://www.inforights.im/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Isle of Man Information Commissioner",
+     "url": "https://www.wikidata.org/wiki/Q7079359",
+     "note": "data protection authority"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "govt",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:isle-of-man-information-commissioner"
+  },
+  {
+   "j": "GI",
+   "name": "Royal Gibraltar Police",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.police.gi/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Royal Gibraltar Police",
+     "url": "https://www.wikidata.org/wiki/Q3406050",
+     "note": "police"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Gibraltar",
+   "group": "OT",
+   "parent": "wikidata:Q1410",
+   "pk": "safety",
+   "geography": "Outside the UK: Gibraltar",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:gi:royal-gibraltar-police"
+  },
+  {
+   "j": "IM",
+   "name": "Isle of Man Post Office",
+   "branch": "executive",
+   "tk": "corporation",
+   "type": "Public corporation or government company",
+   "ak": "trade",
+   "formerly": null,
+   "web": "https://www.iompost.com/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Isle of Man Post Office",
+     "url": "https://www.wikidata.org/wiki/Q3432267",
+     "note": "postal service"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Isle of Man",
+   "group": "CD",
+   "parent": "wikidata:Q9676",
+   "pk": "economy",
+   "geography": "Outside the UK: Isle of Man",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:im:isle-of-man-post-office"
+  },
+  {
+   "j": "JE",
+   "name": "States of Jersey Customs and Immigration Service",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.gov.je/Government/Departments/JusticeHomeAffairs/Departments/CustomsImmigration/Pages/index.aspx",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "States of Jersey Customs and Immigration Service",
+     "url": "https://www.wikidata.org/wiki/Q3480413",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Jersey",
+   "group": "CD",
+   "parent": "wikidata:Q116785235",
+   "pk": "govt",
+   "geography": "Outside the UK: Jersey",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    },
+    {
+     "title": "GOV.UK: the Ministry of Justice manages the UK's constitutional relationship with the Crown Dependencies",
+     "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    }
+   ],
+   "id": "terr:je:states-of-jersey-customs-and-immigration-service"
+  },
+  {
+   "j": "AI",
+   "name": "Anguilla Financial Services Commission",
+   "branch": "executive",
+   "tk": "ndpb",
+   "type": "Arm's-length public body",
+   "ak": "regulate",
+   "formerly": null,
+   "web": "http://www.fsc.org.ai/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Anguilla Financial Services Commission",
+     "url": "https://www.wikidata.org/wiki/Q19600188",
+     "note": "financial regulatory agency, government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Anguilla",
+   "group": "OT",
+   "parent": "wikidata:Q25228",
+   "pk": "economy",
+   "geography": "Outside the UK: Anguilla",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:ai:anguilla-financial-services-commission"
+  },
+  {
+   "j": "BM",
+   "name": "Maritime Operations Centre",
+   "branch": "executive",
+   "tk": "agency",
+   "type": "Executive agency or part of a department",
+   "ak": "services",
+   "formerly": null,
+   "web": "https://www.marineandports.bm/",
+   "web_flag": "",
+   "srcs": [
+    {
+     "kind": "Wikidata",
+     "title": "Maritime Operations Centre",
+     "url": "https://www.wikidata.org/wiki/Q6765827",
+     "note": "government agency"
+    }
+   ],
+   "constitutional": false,
+   "jurisdiction": "Bermuda",
+   "group": "OT",
+   "parent": "wikidata:Q23635",
+   "pk": "economy",
+   "geography": "Outside the UK: Bermuda",
+   "uk_links": [
+    {
+     "title": "Judicial Committee of the Privy Council: final court of appeal for the UK overseas territories and Crown dependencies",
+     "url": "https://www.jcpc.uk/"
+    }
+   ],
+   "id": "terr:bm:maritime-operations-centre"
+  }
+ ]
+}

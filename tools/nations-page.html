@@ -14,8 +14,20 @@ button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visi
 /* hero */
 .hero{position:relative;overflow:hidden;padding:28px 24px 26px;background:linear-gradient(120deg,color-mix(in srgb,var(--nSC) 16%,var(--paper)) 0%,color-mix(in srgb,var(--nWA) 14%,var(--paper)) 38%,color-mix(in srgb,var(--nNI) 14%,var(--paper)) 68%,color-mix(in srgb,var(--nEN) 14%,var(--paper)) 100%);border-bottom:1px solid var(--line)}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);margin:0 0 6px}.hero p{max-width:60ch;color:var(--ink);font-size:1.05rem}
-.hero .rings{position:absolute;right:-30px;top:-20px;width:260px;opacity:.9}@media(max-width:760px){.hero .rings{width:150px;right:-40px;top:-30px;opacity:.35}}
-.rings circle{fill:none;stroke-width:14;opacity:.55;transform-origin:center;animation:spin 60s linear infinite}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,290px);gap:12px 24px;align-items:center}.hero>:not(.rings){grid-column:1}
+.hero .rings{grid-column:2;grid-row:1/span 3;width:100%;height:auto;overflow:visible}
+@media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}.hero .rings{grid-column:1;grid-row:auto;order:9;max-width:300px;justify-self:center}}
+.rings .ring circle{fill:var(--c);fill-opacity:.06;stroke:var(--c);stroke-width:9;stroke-opacity:.6;transition:stroke-width .2s,fill-opacity .2s,stroke-opacity .2s}
+.rings .node{cursor:pointer;outline:none}.rings .drift{animation:drift var(--d,14s) ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+.rings .ring circle{animation:pulse var(--d,14s) ease-in-out infinite alternate}
+.rings .node:hover circle,.rings .node:focus-visible circle,.rings .node[aria-current="true"] circle{stroke-width:13;stroke-opacity:1;fill-opacity:.18}
+.rings .node:focus-visible circle{stroke-dasharray:6 3}
+.rings text{font:600 12.5px/1 var(--og-font-sans,inherit);fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
+.rings text .n{font-weight:400;font-size:11px;fill:var(--og-muted,var(--ink))}
+.rings .orbit{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:3 7;animation:spin 80s linear infinite;transform-origin:150px 130px}
+.rings .sat circle{fill:var(--paper);stroke:var(--c);stroke-width:3}.rings .sat:hover circle,.rings .sat:focus-visible circle,.rings .sat[aria-current="true"] circle{fill:var(--c);fill-opacity:.2;stroke-width:5}
+.rings:hover .drift,.rings:focus-within .drift,.rings:hover .orbit,.rings:focus-within .orbit,.rings:hover .ring circle,.rings:focus-within .ring circle{animation-play-state:paused}
+@keyframes drift{from{transform:translate(-3px,-2px)}to{transform:translate(3px,2px)}}@keyframes pulse{from{stroke-opacity:.45}to{stroke-opacity:.8}}
 @keyframes spin{to{transform:rotate(360deg)}}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 main{padding:18px 24px 30px;max-width:1220px}
 .intro{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 16px}@media(max-width:820px){.intro{grid-template-columns:minmax(0,1fr)}}
@@ -52,10 +64,15 @@ th[scope=row]{background:none;position:static}
  td,th[scope=row]{border:0;padding:4px 10px}td[data-label]::before{content:attr(data-label) ": ";font-weight:700;color:var(--muted)}caption{display:block}}
 footer{padding:16px 24px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);background:var(--paper)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.facets{display:inline}.fa{font-size:var(--og-size-xs);color:var(--og-muted);border:1px solid var(--og-line);border-radius:var(--og-radius-pill);padding:0 var(--og-space-2);margin-left:var(--og-space-1);display:inline-block;max-width:100%;overflow-wrap:anywhere}
+.srcs{font-size:var(--og-size-xs);color:var(--og-muted)}.srcs a{color:var(--og-muted)}
+.cover{border:1px solid var(--og-line);border-left:4px solid var(--og-navy);background:var(--og-navy-soft);border-radius:var(--og-radius-md);padding:var(--og-space-3) var(--og-space-4);margin:var(--og-space-3) 0;font-size:var(--og-size-sm)}.cover p{margin:0 0 var(--og-space-2)}
+header.hero{overflow:visible}
+.tools label{min-width:0;max-width:100%;flex:1 1 180px}.tools select,.tools input{width:100%}
 </style></head><body>
 <a class="skip" href="#main">Skip to the nations</a>
 <header class="hero">
-<svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><circle cx="80" cy="80" r="44" style="stroke:var(--nSC)"/><circle cx="122" cy="80" r="44" style="stroke:var(--nNI);animation-duration:75s"/><circle cx="80" cy="120" r="44" style="stroke:var(--nWA);animation-duration:90s"/><circle cx="122" cy="120" r="44" style="stroke:var(--nEN);animation-duration:70s"/></svg>
+<svg class="rings" id="rings" viewBox="0 0 300 292" role="group" aria-label="Choose a nation or territory: select a ring"></svg>
 <h1>Who runs the UK? Nation by nation</h1>
 <p>The United Kingdom is made up of four nations: England, Scotland, Wales and Northern Ireland. Each one has organisations that make laws, run public services and settle disagreements. Pick a nation to see them all, what each one does and how the people in charge get there.</p>
 </header>
@@ -102,7 +119,8 @@ cap:"M2 9l10-5 10 5-10 5zM6 11v5c3 2 9 2 12 0v-5M22 9v6",people:"M16 21v-2a4 4 0
 q:"M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01",globe:"M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20",vote:"M4 12l4 4 8-8M3 21h18M5 3h14v12H5z"};
 const icon=(n,l)=>`<svg class="ico" viewBox="0 0 24 24" ${l?`role="img" aria-label="${esc(l)}"`:`aria-hidden="true"`}><path d="${P[n]||P.q}"/></svg>`;
 const PICON={govt:"doc",defence:"shield",safety:"siren",economy:"briefcase",environment:"leaf",housing:"house",health:"heart",culture:"palette",education:"cap",support:"people",local:"pin",unknown:"q"};
-const PUR=Object.fromEntries((M.purposes||[]).map(p=>[p.key,p])),FORM=M.formed||{};
+const PUR=Object.fromEntries((M.purposes||[]).map(p=>[p.key,p])),FORM=M.formed||{},ACTL=Object.fromEntries((M.activities||[]).map(a=>[a.key,a])),TYPL=Object.fromEntries((M.btypes||[]).map(a=>[a.key,a]));
+const actl=x=>(ACTL[x.ak]||{label:"Not yet worked out"}).label,where=x=>x.j?x.j:(x.nations&&x.nations.length?x.nations.map(k=>NC[k]||k).join(", "):(NC[cur]||""));
 document.querySelectorAll(".icard .badge").forEach((b,i)=>b.innerHTML=icon(["landmark","cog","scale"][i]));
 const B=[["legislature","Law-makers","--leg","landmark","The parliament or assembly that makes laws, and the bodies that work for it."],["executive","Government and public services","--exe","cog","Governments, councils and the organisations that run public services."],["judiciary","Courts and judges","--jud","scale","Courts and tribunals that settle disputes, and the bodies that run them."]],order=["EN","SC","WA","NI","UK","GB","OT","CD"];
 const NC={EN:"England",SC:"Scotland",WA:"Wales",NI:"Northern Ireland",UK:"Whole UK",GB:"Extent not stated",OT:"Overseas Territories",CD:"Crown Dependencies"},LN={cy:"Welsh",gd:"Scottish Gaelic",ga:"Irish",sco:"Scots"};
@@ -115,8 +133,11 @@ const multi=x=>x.nations&&x.nations.length?`<span class="multi" title="Works for
 const lnames=x=>(x.names||[]).map(n=>` <span class="lname" title="${esc(LN[n.lang]||n.lang)}: ${esc(n.src)}">· <span lang="${esc(n.lang)}">${esc(n.name)}</span></span>`).join("");
 const links=x=>`${x.web?`<a class="ext" href="${esc(x.web)}" rel="noopener" target="_blank">website<span aria-hidden="true"> ↗</span><span class="sr"> (opens in a new tab)</span></a>`:""}${x.gov?`<a class="ext" href="${esc(x.gov)}" rel="noopener" target="_blank">GOV.UK<span aria-hidden="true"> ↗</span><span class="sr"> (opens in a new tab)</span></a>`:""}`;
 const pp=x=>{const p=PUR[x.pk]||{label:"Not yet worked out"};return `<span class="pp" title="${esc(p.explain||"")}">${icon(PICON[x.pk]||"q")}${esc(p.label)}</span>`};
-const item=(x,pb)=>`<a href="./#${esc(x.h)}">${esc(x.name)}</a>${lnames(x)} ${pp(x)} <small>${esc(x.type)}</small>${multi(x)}${links(x)}${x.basis===pb?"":ev(x)}`;
-let q="",mode="tier",cur=order[0],pf="",ff="",grp="purpose",sortk="name",sortd=1,lim=200;
+const srcs=x=>x.srcs&&x.srcs.length?`<span class="srcs"> · sources: ${x.srcs.map(s=>`<a href="${esc(s.url)}" rel="noopener" target="_blank" title="${esc(s.title+(s.quote?": “"+s.quote+"”":""))}">${esc({"founding order":"founding order","official":"official site","Wikidata":"Wikidata"}[s.kind]||s.kind)}</a>`).join(", ")}</span>`:"";
+const also=x=>(x.also&&x.also.length?`<span class="srcs"> · also recorded as ${x.also.map(a=>esc(a.name)).join(", ")} (combined)</span>`:"")+(x.formerly?`<span class="srcs"> · ${esc(x.formerly)}</span>`:"");
+const nm=x=>x.h?`<a href="./#${esc(x.h)}">${esc(x.name)}</a>`:`<b>${esc(x.name)}</b>`;
+const item=(x,pb)=>`${nm(x)}${lnames(x)}<span class="facets"> ${pp(x)} <span class="fa" title="What it does">${esc(actl(x))}</span> <span class="fa" title="Type of body">${esc(x.type)}</span> <span class="fa" title="Where it works">${esc(x.rk||"Where not stated")}</span></span>${multi(x)}${links(x)}${x.srcs?srcs(x):x.basis===pb?"":ev(x)}${also(x)}`;
+let q="",mode="tier",cur=order[0],pf="",ff="",grp="type",sortk="name",sortd=1,lim=200;
 function tree(xs){const by=new Map(xs.map(x=>[x.id,x])),kids=new Map();xs.forEach(x=>{if(x.p&&by.has(x.p)&&x.p!==x.id){if(!kids.has(x.p))kids.set(x.p,[]);kids.get(x.p).push(x)}});
  const roots=xs.filter(x=>!(x.p&&by.has(x.p)&&x.p!==x.id)),seen=new Set(),f=x=>!q||x.name.toLowerCase().includes(q);
  const count=x=>(kids.get(x.id)||[]).reduce((s,c)=>s+1+count(c),0),keep=x=>f(x)||(kids.get(x.id)||[]).some(keep);
@@ -124,18 +145,18 @@ function tree(xs){const by=new Map(xs.map(x=>[x.id,x])),kids=new Map();xs.forEac
   return ch.length?`<li><details${q?" open":""}><summary>${item(x,pb)} <small>(${count(x)} below)</small></summary><ul>${ch.map(c=>node(c,x.basis)).join("")}</ul></details></li>`:`<li>${item(x,pb)}</li>`};
  return `<ul class="tree">${roots.filter(keep).sort((a,b)=>count(b)-count(a)||a.name.localeCompare(b.name)).map(x=>node(x,"")).join("")}</ul>`}
 function table(n){const rows=B.flatMap(b=>Object.values(n.branches[b[0]]).flat().map(x=>Object.assign({br:b[1]},x))).filter(x=>(!q||x.name.toLowerCase().includes(q))&&(!pf||x.pk===pf)&&(!ff||(FORM[x.fk]||{}).label===ff));
- const val=(x,k)=>k==="name"?x.name:k==="purpose"?(PUR[x.pk]||{}).label||"":k==="reach"?x.rk:k==="formed"?(FORM[x.fk]||{}).label||"":k==="often"?(FORM[x.fk]||{}).how_often||"":x.br;
+ const val=(x,k)=>k==="name"?x.name:k==="purpose"?(PUR[x.pk]||{}).label||"":k==="activity"?actl(x):k==="type"?x.type:k==="where"?where(x):k==="reach"?x.rk:k==="formed"?(FORM[x.fk]||{}).label||"":x.br;
  rows.sort((a,b)=>sortd*String(val(a,sortk)).localeCompare(String(val(b,sortk))));
- const gk=grp==="purpose"?x=>(PUR[x.pk]||{}).label||"Not yet worked out":grp==="formed"?x=>(FORM[x.fk]||{}).label||"Not stated":grp==="branch"?x=>x.br:null;
+ const gk=grp?x=>String(grp==="purpose"?(PUR[x.pk]||{}).label||"Not yet worked out":grp==="formed"?(FORM[x.fk]||{}).label||"Not stated":val(x,grp)||"Not stated"):null;
  if(gk)rows.sort((a,b)=>gk(a).localeCompare(gk(b))||sortd*String(val(a,sortk)).localeCompare(String(val(b,sortk))));
- let last=null,out=[];rows.slice(0,lim).forEach(x=>{if(gk&&gk(x)!==last){last=gk(x);const c=rows.filter(y=>gk(y)===last).length;out.push(`<tr class="grp"><td colspan="6">${grp==="purpose"?icon(PICON[x.pk]||"q"):""} ${esc(last)} <small>(${c})</small></td></tr>`)}
-  const f=FORM[x.fk]||{};out.push(`<tr><th scope="row" style="font-weight:400"><a href="./#${esc(x.h)}">${esc(x.name)}</a>${lnames(x)}${links(x)}</th><td data-label="What it does">${pp(x)}</td><td data-label="Where it works">${esc(x.rk||"Not stated")}${multi(x)}</td><td data-label="How it is run"><a href="#form-${esc(x.fk)}">${esc(f.label||"Not stated")}</a></td><td data-label="How often">${esc(f.how_often||"Not stated")}</td><td data-label="Part of the state">${esc(x.br)}</td></tr>`)});
+ let last=null,out=[];rows.slice(0,lim).forEach(x=>{if(gk&&gk(x)!==last){last=gk(x);const c=rows.filter(y=>gk(y)===last).length;out.push(`<tr class="grp"><td colspan="7">${grp==="purpose"?icon(PICON[x.pk]||"q"):""} ${esc(last)} <small>(${c})</small></td></tr>`)}
+  const f=FORM[x.fk]||{};out.push(`<tr><th scope="row" style="font-weight:400">${nm(x)}${lnames(x)}${links(x)}${srcs(x)}${also(x)}</th><td data-label="Type">${esc(x.type)}</td><td data-label="What it is for">${pp(x)}</td><td data-label="What it does">${esc(actl(x))}</td><td data-label="Where it works">${esc(where(x))}<br><small>${esc(x.rk||"Not stated")}</small>${multi(x)}</td><td data-label="How it is run"><a href="#form-${esc(x.fk)}">${esc(f.label||"Not stated")}</a><br><small>${esc(f.how_often||"")}</small></td><td data-label="Part of the state">${esc(x.br)}</td></tr>`)});
  const th=(k,l)=>`<th scope="col" aria-sort="${sortk===k?(sortd>0?"ascending":"descending"):"none"}"><button type="button" data-s="${k}">${l}</button></th>`;
  return `<div class="tools"><label>What it does<br><select id="pf"><option value="">Everything</option>${(M.purposes||[]).map(p=>`<option value="${esc(p.key)}"${pf===p.key?" selected":""}>${esc(p.label)}</option>`).join("")}</select></label>
  <label>How it is run<br><select id="ff"><option value="">Any way</option>${[...new Set(Object.values(FORM).map(f=>f.label))].map(l=>`<option${ff===l?" selected":""}>${esc(l)}</option>`).join("")}</select></label>
- <label>Group by<br><select id="grp"><option value="purpose"${grp==="purpose"?" selected":""}>What it does</option><option value="formed"${grp==="formed"?" selected":""}>How it is run</option><option value="branch"${grp==="branch"?" selected":""}>Part of the state</option><option value=""${!grp?" selected":""}>No grouping</option></select></label>
- <label>Sort by<br><select id="srt">${[["name","Name"],["purpose","What it does"],["reach","Where it works"],["formed","How it is run"],["often","How often"],["branch","Part of the state"]].map(([k,l])=>`<option value="${k}"${sortk===k?" selected":""}>${l}</option>`).join("")}</select></label></div>
- <div class="tablewrap"><table><caption>${rows.length} bodies${rows.length>lim?`, showing the first ${lim}`:""}. Use “Sort by” or a column heading to sort.</caption><thead><tr>${th("name","Name")}${th("purpose","What it does")}${th("reach","Where it works")}${th("formed","How it is run")}${th("often","How often")}${th("branch","Part of the state")}</tr></thead><tbody>${out.join("")}</tbody></table></div>
+ <label>Group by<br><select id="grp">${[["type","Type of body"],["purpose","What it is for"],["activity","What it does"],["where",["OT","CD"].includes(cur)?"Jurisdiction":"Nation"],["reach","Geography"],["formed","How it is run"],["branch","Part of the state"],["","No grouping"]].map(([k,l])=>`<option value="${k}"${grp===k?" selected":""}>${l}</option>`).join("")}</select></label>
+ <label>Sort by<br><select id="srt">${[["name","Name"],["type","Type of body"],["purpose","What it is for"],["activity","What it does"],["where","Nation or jurisdiction"],["reach","Geography"],["formed","How it is run"],["branch","Part of the state"]].map(([k,l])=>`<option value="${k}"${sortk===k?" selected":""}>${l}</option>`).join("")}</select></label></div>
+ <div class="tablewrap"><table><caption>${rows.length} bodies${rows.length>lim?`, showing the first ${lim}`:""}. Use “Sort by” or a column heading to sort.</caption><thead><tr>${th("name","Name")}${th("type","Type")}${th("purpose","What it is for")}${th("activity","What it does")}${th("where","Where it works")}${th("formed","How it is run")}${th("branch","Part of the state")}</tr></thead><tbody>${out.join("")}</tbody></table></div>
  ${rows.length>lim?`<p style="margin-top:8px"><button type="button" class="seg" id="more" style="font:inherit;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink)">Show ${Math.min(200,rows.length-lim)} more</button></p>`:""}`}
 function countUp(el){const t=+el.dataset.n;if(REDUCED||t<20){el.textContent=t.toLocaleString("en-GB");return}let s=null;const step=ts=>{s=s||ts;const p=Math.min(1,(ts-s)/700);el.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString("en-GB");if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
 function show(k,keepFocus){cur=k;const n=N[k],tot=B.reduce((s,b)=>s+n.counts[b[0]],0);
@@ -145,6 +166,7 @@ function show(k,keepFocus){cur=k;const n=N[k],tot=B.reduce((s,b)=>s+n.counts[b[0
  const mcount=B.reduce((s,b)=>s+Object.values(n.branches[b[0]]).flat().filter(x=>x.nations&&x.nations.length).length,0);
  pn.innerHTML=`<h2>${sw(k)}${esc(n.name)}</h2><div class="kpis"><div class="kpi">${icon("globe")}<b data-n="${tot}">0</b>public bodies${mcount?`<span class="why" style="display:block;font-size:.8rem">${mcount} work in more than one nation</span>`:""}</div>${B.map(b=>`<div class="kpi" style="--k:var(${b[2]})">${icon(b[3])}<b data-n="${n.counts[b[0]]}">0</b>${esc(b[1].toLowerCase())}</div>`).join("")}</div>
  <div class="bar" role="img" aria-label="${B.map(b=>b[1]+": "+n.counts[b[0]]).join(", ")}">${B.map(b=>`<span style="flex:${n.counts[b[0]]};background:var(${b[2]})"></span>`).join("")}</div>
+ ${n.notes||n.coverage?`<div class="cover">${(n.notes||[]).map(t=>`<p><b>${esc(t.j)}:</b> ${esc(t.note)} ${(t.sources||[]).map(s=>`<a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title.split(":")[0])}</a>`).join(", ")}</p>`).join("")}${n.coverage?`<p><b>What's included:</b> each jurisdiction's own law-makers, government and courts from its founding order (on legislation.gov.uk) or official website, plus other public bodies that Wikidata records there and whose own website confirms they are current. Left out: ${Object.entries(n.coverage.excluded).map(([k,v])=>`${v} ${esc(k)}`).join("; ")}. ${esc(n.coverage.blocked)} ${esc(n.coverage.not_covered)}</p>`:""}</div>`:""}
  ${ukn?`<p>${icon("globe")} This nation is also served by <a href="#" id="toUK">${ukn} bodies that work across the whole UK</a>.</p>`:""}
  <div class="tools"><label>Find a body by name<br><input id="q" type="search" value="${esc(q)}" autocomplete="off" placeholder="For example: health, police, museum"></label><div class="seg" role="group" aria-label="Choose a view"><button type="button" data-m="tier" aria-pressed="${mode==="tier"}">Lists</button><button type="button" data-m="tree" aria-pressed="${mode==="tree"}">Family tree</button><button type="button" data-m="table" aria-pressed="${mode==="table"}">Table</button></div></div>
  ${mode==="table"?table(n):B.map(b=>{const tiers=n.branches[b[0]],flat=Object.values(tiers).flat();return `<section class="branch" style="--b:var(${b[2]})"><h3>${icon(b[3])} ${esc(b[1])} · ${n.counts[b[0]]}</h3><p class="lede">${esc(b[4])}</p>${apex(n.apex[b[0]],"In charge at the top")}${apex(n.uk_apex[b[0]],"For things decided for the whole UK")}
@@ -162,5 +184,22 @@ document.getElementById("howList").innerHTML=Object.entries(FORM).map(([k,f])=>`
 document.getElementById("confIntro").textContent=`Each disagreement was checked against the other sources. ${ALL.resolved} were settled (a source that covers the whole UK only sets an outer limit, and a narrower one is only part of the picture) and are not listed. ${ALL.conflicts.length?"These still need a person to decide:":"None is left to decide."}`;
 document.getElementById("conf").innerHTML=ALL.conflicts.map(c=>`<li>${esc(c.name)}: shown as ${esc(c.chosen[1].join(", "))} (${esc(c.chosen[0])}); ${c.against.map(a=>`${esc(a[0])} says ${esc(a[1].join(", "))}`).join("; ")}</li>`).join("");
 document.getElementById("un").innerHTML=ALL.unplaced.map(x=>`<li>${esc(x.name)} <small>${esc(x.type)}</small></li>`).join("");
+
+/* Nation rings: an animated, labelled way into each nation's tab (motion stops for reduced motion, and on hover or focus) */
+(function(){const svg=document.getElementById("rings");if(!svg)return;
+ const tot=k=>N[k]?B.reduce((s,b)=>s+(N[k].counts[b[0]]||0),0):0;
+ const RING=[["SC",118,100,"Scotland",68,62],["NI",182,100,"Northern|Ireland",232,58],["WA",118,160,"Wales",68,212],["EN",182,160,"England",232,212]];
+ const SAT=[["UK",150,18,"Whole UK","--nUK",168,15,"start"],["CD",22,262,"Crown|Dependencies","--nGB",40,256,"start"],["OT",278,262,"Overseas|Territories","--nGB",260,256,"end"]];
+ const lab=(x,y,t,k,anchor)=>{const ls=t.split("|");return `<text x="${x}" y="${y}" text-anchor="${anchor||"middle"}">${ls.map((l,i)=>`<tspan x="${x}" dy="${i?13:0}">${esc(l)}</tspan>`).join("")}<tspan class="n" x="${x}" dy="13">${tot(k).toLocaleString("en-GB")} bodies</tspan></text>`};
+ const node=(k,inner,cls,name)=>N[k]?`<g class="node ${cls}" role="button" tabindex="0" data-k="${k}" aria-label="${esc(name.replace("|"," "))}: ${tot(k)} bodies. Show them">${inner}</g>`:"";
+ svg.innerHTML=`<circle class="orbit" cx="150" cy="130" r="116"/>`+
+  RING.map(([k,x,y,t,lx,ly],i)=>node(k,`<g class="drift" style="--d:${11+i*2.5}s;animation-delay:-${i*3}s"><circle cx="${x}" cy="${y}" r="50" style="--c:var(--n${k})"/></g>${lab(lx,ly,t,k)}`,"ring",t)).join("")+
+  SAT.map(([k,x,y,t,c,lx,ly,an])=>node(k,`<circle cx="${x}" cy="${y}" r="12" style="--c:var(${c})"/>${lab(lx,ly,t,k,an)}`,"sat",t)).join("");
+ const go=k=>{if(!N[k])return;show(k);const t=document.getElementById("t-"+k);if(t){t.scrollIntoView({behavior:REDUCED?"auto":"smooth",block:"start"});t.focus({preventScroll:true})}};
+ svg.addEventListener("click",e=>{const g=e.target.closest(".node");if(g)go(g.dataset.k)});
+ svg.addEventListener("keydown",e=>{const g=e.target.closest(".node");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();go(g.dataset.k)}});
+ const mark=k=>svg.querySelectorAll(".node").forEach(g=>g.setAttribute("aria-current",String(g.dataset.k===k)));
+ const _show=show;show=function(k,f){_show(k,f);mark(k)};
+})();
 show(order[0]);
 </script></body></html>

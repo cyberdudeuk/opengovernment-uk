@@ -1,0 +1,271 @@
+{
+ "meta": {
+  "rule": "Strict rules (any one is enough; all are recorded with the reason):\n  S1  identical name once case, a leading \"The\", a legal form (Ltd, Limited, plc), punctuation and a trailing number suffix\n      on a register key are ignored. Brackets are NOT dropped: \"(NI)\" or \"(Tax)\" usually names a different body.\n  S2  one name is the other plus a bracket that only spells out its initials, e.g. \"Health Education and Improvement Wales (HEIW)\".\n  S3  both records carry the same strong identifier: LEI, Companies House number, Wikidata item, ONS GSS code, charity number.\n  S4  a person decided they are one body from its own page or founding instrument (sources/evidence/reconciliation-decisions.json).\nNever merged: two records with different values for the same strong identifier; two closed records; a closed with an open record.\nThe canonical record is the one from the most authoritative family (GOV.UK, council, NHS, then ONS-only, then others).\nWrites data/same-as.json. --negative proves the checks fail when they should.",
+  "groups": 21,
+  "records_folded": 21,
+  "open_records": 2824,
+  "bodies": 2803,
+  "by_rule": {
+   "S4": 1,
+   "S2": 2,
+   "S1": 18,
+   "S3": 2
+  }
+ },
+ "groups": {
+  "government-organisation:PC389": {
+   "members": [
+    "ons-name:historic-royal-palaces-trust"
+   ],
+   "names": {
+    "government-organisation:PC389": "Historic Royal Palaces",
+    "ons-name:historic-royal-palaces-trust": "Historic Royal Palaces Trust"
+   },
+   "rules": [
+    "S4 decided from evidence"
+   ]
+  },
+  "government-organisation:PB295": {
+   "members": [
+    "ons-name:the-sentencing-council-for-england-and-wales-sentencing-council"
+   ],
+   "names": {
+    "government-organisation:PB295": "Sentencing Council for England and Wales",
+    "ons-name:the-sentencing-council-for-england-and-wales-sentencing-council": "The Sentencing Council for England and Wales (Sentencing Council)"
+   },
+   "rules": [
+    "S2 name plus a short form in brackets"
+   ]
+  },
+  "nhs-ods:RQF": {
+   "members": [
+    "ons-name:velindre-nhs-trust"
+   ],
+   "names": {
+    "nhs-ods:RQF": "Velindre NHS Trust",
+    "ons-name:velindre-nhs-trust": "Velindre NHS Trust"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:RT4": {
+   "members": [
+    "ons-name:welsh-ambulance-services-nhs-trust"
+   ],
+   "names": {
+    "nhs-ods:RT4": "Welsh Ambulance Services NHS Trust",
+    "ons-name:welsh-ambulance-services-nhs-trust": "Welsh Ambulance Services NHS Trust"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:L5X6M": {
+   "members": [
+    "ons-name:digital-health-and-care-wales"
+   ],
+   "names": {
+    "nhs-ods:L5X6M": "Digital Health and Care Wales",
+    "ons-name:digital-health-and-care-wales": "Digital Health and Care Wales"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:T1530": {
+   "members": [
+    "ons-name:health-education-and-improvement-wales"
+   ],
+   "names": {
+    "nhs-ods:T1530": "Health Education and Improvement Wales (Heiw)",
+    "ons-name:health-education-and-improvement-wales": "Health Education and Improvement Wales"
+   },
+   "rules": [
+    "S2 name plus a short form in brackets"
+   ]
+  },
+  "nhs-ods:T1550": {
+   "members": [
+    "ons-name:community-health-partnerships-limited"
+   ],
+   "names": {
+    "nhs-ods:T1550": "Community Health Partnerships Ltd",
+    "ons-name:community-health-partnerships-limited": "Community Health Partnerships Limited"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:X15": {
+   "members": [
+    "ons-name:the-nhs-confederation"
+   ],
+   "names": {
+    "nhs-ods:X15": "NHS Confederation",
+    "ons-name:the-nhs-confederation": "The NHS Confederation"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:ZT001": {
+   "members": [
+    "ons-name:belfast-health-and-social-care-trust"
+   ],
+   "names": {
+    "nhs-ods:ZT001": "Belfast Health and Social Care Trust",
+    "ons-name:belfast-health-and-social-care-trust": "Belfast Health and Social Care Trust"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:ZT002": {
+   "members": [
+    "ons-name:northern-health-and-social-care-trust"
+   ],
+   "names": {
+    "nhs-ods:ZT002": "Northern Health and Social Care Trust",
+    "ons-name:northern-health-and-social-care-trust": "Northern Health and Social Care Trust"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:ZT003": {
+   "members": [
+    "ons-name:southern-health-and-social-care-trust"
+   ],
+   "names": {
+    "nhs-ods:ZT003": "Southern Health and Social Care Trust",
+    "ons-name:southern-health-and-social-care-trust": "Southern Health and Social Care Trust"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:ZT004": {
+   "members": [
+    "ons-name:south-eastern-health-and-social-care-trust"
+   ],
+   "names": {
+    "nhs-ods:ZT004": "South Eastern Health and Social Care Trust",
+    "ons-name:south-eastern-health-and-social-care-trust": "South Eastern Health and Social Care Trust"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "nhs-ods:ZT005": {
+   "members": [
+    "ons-name:western-health-and-social-care-trust"
+   ],
+   "names": {
+    "nhs-ods:ZT005": "Western Health and Social Care Trust",
+    "ons-name:western-health-and-social-care-trust": "Western Health and Social Care Trust"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "ons-name:british-coal-staff-superannuation-scheme": {
+   "members": [
+    "ons-name:the-british-coal-staff-superannuation-scheme"
+   ],
+   "names": {
+    "ons-name:british-coal-staff-superannuation-scheme": "British Coal Staff Superannuation Scheme",
+    "ons-name:the-british-coal-staff-superannuation-scheme": "The British Coal Staff Superannuation Scheme"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "ons-name:children-and-family-court-advisory-and-support-service-cafcass": {
+   "members": [
+    "ons-name:children-and-family-court-advisory-and-support-service-cafcass-2"
+   ],
+   "names": {
+    "ons-name:children-and-family-court-advisory-and-support-service-cafcass": "Children and Family Court Advisory and Support Service (CAFCASS)",
+    "ons-name:children-and-family-court-advisory-and-support-service-cafcass-2": "Children and Family Court Advisory and Support Service (Cafcass)"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "ons-name:general-lighthouse-authorities-en-bloc": {
+   "members": [
+    "ons-name:general-lighthouse-authorities-en-bloc-2"
+   ],
+   "names": {
+    "ons-name:general-lighthouse-authorities-en-bloc": "General Lighthouse Authorities (En Bloc)",
+    "ons-name:general-lighthouse-authorities-en-bloc-2": "General Lighthouse Authorities (En Bloc)"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "ons-name:national-library-of-wales-staff-superannuation-scheme": {
+   "members": [
+    "ons-name:the-national-library-of-wales-staff-superannuation-scheme"
+   ],
+   "names": {
+    "ons-name:national-library-of-wales-staff-superannuation-scheme": "National Library of Wales Staff Superannuation Scheme",
+    "ons-name:the-national-library-of-wales-staff-superannuation-scheme": "The National Library of Wales Staff Superannuation Scheme"
+   },
+   "rules": [
+    "S1 same name",
+    "S3 same lei"
+   ]
+  },
+  "ons-name:northern-ireland-central-investment-fund-for-charities": {
+   "members": [
+    "ons-name:northern-ireland-central-investment-fund-for-charities-2"
+   ],
+   "names": {
+    "ons-name:northern-ireland-central-investment-fund-for-charities": "Northern Ireland Central Investment Fund for Charities",
+    "ons-name:northern-ireland-central-investment-fund-for-charities-2": "Northern Ireland Central Investment Fund for Charities"
+   },
+   "rules": [
+    "S1 same name",
+    "S3 same lei"
+   ]
+  },
+  "ons-name:northern-ireland-office-sponsored-bodies": {
+   "members": [
+    "ons-name:northern-ireland-office-sponsored-bodies-2"
+   ],
+   "names": {
+    "ons-name:northern-ireland-office-sponsored-bodies": "Northern Ireland Office Sponsored Bodies",
+    "ons-name:northern-ireland-office-sponsored-bodies-2": "Northern Ireland Office Sponsored Bodies"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "ons-name:office-for-judicial-complaints": {
+   "members": [
+    "ons-name:the-office-for-judicial-complaints"
+   ],
+   "names": {
+    "ons-name:office-for-judicial-complaints": "Office for Judicial Complaints",
+    "ons-name:the-office-for-judicial-complaints": "The Office for Judicial Complaints"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  },
+  "ons-name:the-scottish-association-of-citizens-advice-bureau": {
+   "members": [
+    "ons-name:the-scottish-association-of-citizens-advice-bureau-2"
+   ],
+   "names": {
+    "ons-name:the-scottish-association-of-citizens-advice-bureau": "The Scottish Association of Citizens Advice Bureau",
+    "ons-name:the-scottish-association-of-citizens-advice-bureau-2": "The Scottish Association of Citizens Advice Bureau"
+   },
+   "rules": [
+    "S1 same name"
+   ]
+  }
+ }
+}

@@ -12,7 +12,7 @@ The UK public-sector equivalent of a corporate tree and ultimate beneficial owne
 Every edge carries its source, the row or part it came from, and how its two ends were matched. Nothing is inferred
 silently: anything that cannot be matched to a register record goes to the unresolved queue, never guessed.
 Personal names are never reproduced (natural persons with significant control are counted, not named)."""
-import collections, datetime, hashlib, json, pathlib, re
+import collections, datetime, hashlib, json, pathlib, re, sys
 import openpyxl
 import pandas as pd
 
@@ -342,6 +342,27 @@ for cf in CONFLICTS:
         else:
             cf["status"], cf["reason"] = "contested", "sources of equal or higher rank disagree"
 
+# Items the rules left contested, decided by a person from the body's own page or founding instrument (evidence kept in the file).
+# Fail closed: a decision must name a parent that one of the sources gave, or no parent with a stated reason.
+DEC = {d["id"]: d for d in json.loads((ROOT / "sources/evidence/reconciliation-decisions.json").read_text())["chains"]}
+for cf in CONFLICTS:
+    d = DEC.get(cf["id"])
+    if not d or cf["status"] != "contested": continue
+    if d["parent"] is not None and d["parent"] not in {v["parent"] for v in cf["views"]}: sys.exit(f"decision for {cf['id']} names a parent no source gives")
+    if not d.get("evidence"): sys.exit(f"decision for {cf['id']} has no evidence")
+    cf["status"], cf["reason"], cf["decided"] = "resolved", "decided from evidence: " + d["why"], [x["url"] for x in d["evidence"]]
+    ch = CHAINS.get(cf["id"]) or {}
+    if d["parent"]:
+        cf["chosen"] = d["parent"]
+        if ch.get("path") and ch["path"][0]["to"] != d["parent"]:  # re-route the first hop to the decided parent and inherit its chain
+            up = CHAINS.get(d["parent"])
+            if not up: sys.exit(f"decision for {cf['id']}: the decided parent has no chain of its own")
+            ch["path"] = [{"from": cf["id"], "to": d["parent"], "rel": "decided", "src": "decision", "ref": d["evidence"][0]["url"]}] + up["path"]
+            EDGES.append({"c": cf["id"], "p": d["parent"], "pt": R[d["parent"]]["name"] if isinstance(R[d["parent"]], dict) else R[d["parent"]][1], "rel": "decided", "src": "decision", "ref": d["evidence"][0]["url"], "how": "decided by a person from the evidence in sources/evidence/reconciliation-decisions.json"})
+            ch["root"], ch["answerable"] = up["root"], up["answerable"]
+    elif ch:  # no parent: the body sits at the top of its own chain and answers to its legislature (e.g. NI Act 1998 s.20)
+        cf["chosen"] = None; ch["path"] = []; ch["root"] = cf["id"]
+
 # PFI money rolled up to the procuring authority and the department
 PFIBY = collections.defaultdict(lambda: {"projects": 0, "capital": 0.0, "pay_2025_26": 0.0})
 for p in PPP:
@@ -365,6 +386,7 @@ def sha(o): return hashlib.sha256(json.dumps(o, sort_keys=True).encode()).hexdig
 srcs = {k: {kk: v[kk] for kk in ("name", "url", "owner", "licence", "asserts", "retrieved", "sha256")} for k, v in MAN.items()}
 srcs["eao-ni"] = {"name": "Government Resources and Accounts Act (Northern Ireland) 2001 (Estimates and Accounts) (Designation of Bodies) Order 2026, S.R. 2026/49", "url": "https://www.legislation.gov.uk/nisr/2026/49/made", "owner": "Department of Finance (Northern Ireland)", "licence": "OGL v3.0", "asserts": "legal financial accountability for Northern Ireland bodies (2026-27)", "retrieved": datetime.date.today().isoformat(), "sha256": hashlib.sha256((S / "ni-eao-2026.xml").read_bytes()).hexdigest()}
 srcs["pfi"] = {"name": "HM Treasury: Current PFI and PF2 projects as at 31 March 2025", "url": "https://www.gov.uk/government/publications/pfi-and-pfi2-projects-2025-summary-data", "owner": "HM Treasury / National Infrastructure and Service Transformation Authority", "licence": "OGL v3.0", "asserts": "public-private partnerships: project company, procuring authority, department, equity holders, capital value and annual unitary charges", "retrieved": datetime.date.today().isoformat(), "sha256": hashlib.sha256((S / "pfi-2025.ods").read_bytes()).hexdigest()}
+srcs["decision"] = {"name": "Reconciliation decisions, each with its evidence (this repository)", "url": "https://github.com/cyberdudeuk/opengovernment-uk/blob/main/sources/evidence/reconciliation-decisions.json", "owner": "OpenGovernment UK", "licence": "OGL v3.0", "asserts": "the parent a person decided from the body's own page or founding instrument, where the sources disagreed", "retrieved": datetime.date.today().isoformat(), "sha256": hashlib.sha256((ROOT / "sources/evidence/reconciliation-decisions.json").read_bytes()).hexdigest()}
 srcs["tf"] = {"name": "legislation.gov.uk: trading fund orders under the Government Trading Funds Act 1973", "url": "https://www.legislation.gov.uk/all?title=Trading%20Fund%20Order", "owner": "legislation.gov.uk (The National Archives)", "licence": "OGL v3.0", "asserts": "which operations are financed as trading funds", "retrieved": datetime.date.today().isoformat(), "sha256": hashlib.sha256((S / "tf-feed.xml").read_bytes()).hexdigest()}
 stats = {"records": len(R), "open": sum(v["open"] for v in R.values()), "edges": len(EDGES), "edges_by": dict(collections.Counter(f'{e["rel"]}:{e["src"]}' for e in EDGES)),
          "chains": len(CHAINS), "roots": dict(collections.Counter(c["answerable"] for c in CHAINS.values()).most_common()), "conflicts": len(CONFLICTS),
@@ -373,7 +395,7 @@ stats = {"records": len(R), "open": sum(v["open"] for v in R.values()), "edges":
          "ons_matched": len(ONSBY), "pbd_matched": len(MONEY), "ppp_projects": len(PPP), "ppp_authorities_matched": sum(1 for p in PPP if p["authority"]),
          "trading_funds": sorted(TF), "ukgi": UKGI, "gleif_exceptions": dict(GLEIFX), "persons_with_control_withheld": sum(PERSONS.values())}
 TREE = {"v": "0.3.0", "built": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "sources": srcs, "stats": stats,
-        "rels": {"accounts": "Included in this department's estimate and accounts (law)", "sponsors": "Sponsored by", "controls": "Controlled by (not an institutional unit)",
+        "rels": {"accounts": "Included in this department's estimate and accounts (law)", "sponsors": "Sponsored by", "decided": "Overseen by (decided from the body's own record where sources disagreed)", "controls": "Controlled by (not an institutional unit)",
                  "parent": "GOV.UK parent organisation", "owns": "Owned or controlled by"},
         "edges": EDGES, "chains": CHAINS, "conflicts": CONFLICTS, "unresolved": UNRES, "ppp": PPP}
 TREE["digest"] = sha({k: TREE[k] for k in ("edges", "chains", "conflicts", "unresolved", "ppp")})

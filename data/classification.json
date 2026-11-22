@@ -76,6 +76,11 @@
   ],
   "activities": [
    {
+    "key": "legislate",
+    "label": "Makes laws",
+    "explain": "A parliament, assembly or council whose members debate and pass laws, approve spending and question the government."
+   },
+   {
     "key": "policy",
     "label": "Runs a government",
     "explain": "Ministers and civil servants who make policy, propose laws and run the departments under them."
@@ -147,6 +152,11 @@
    }
   ],
   "btypes": [
+   {
+    "key": "legislature",
+    "label": "Parliament or assembly",
+    "explain": "Where elected (or appointed) members make laws, approve spending and question the government."
+   },
    {
     "key": "department",
     "label": "Government department",
@@ -15283,8 +15293,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:belgrade-theatre": {
@@ -17673,8 +17683,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:direct-labour-organisations-en-bloc": {
@@ -19203,8 +19213,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:health-estates-northern-ireland": {
@@ -22243,8 +22253,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:northern-housing-consortium-nhc": {
@@ -22333,8 +22343,8 @@
    "activity": "trade",
    "activity_basis": "a trading fund or public corporation",
    "btype": "corporation",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "company"
   },
   "ons-name:northern-ireland-climate-commissioner": {
@@ -22583,8 +22593,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:northern-ireland-practice-and-education-council-for-nursing-and-midwifery-nipec": {
@@ -25543,8 +25553,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:south-essex-homes-ltd": {
@@ -25713,8 +25723,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:southport-birkdale-aerodrome": {
@@ -26503,8 +26513,8 @@
    "activity": "services",
    "activity_basis": "its kind",
    "btype": "pension",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "pension"
   },
   "ons-name:the-nhs-confederation": {
@@ -26613,8 +26623,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:the-skills-development-scotland-co-limited-t-a-skills-development-scotland": {
@@ -27233,8 +27243,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:verderers-of-the-new-forest": {
@@ -27423,8 +27433,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:welsh-blood-service": {
@@ -27613,8 +27623,8 @@
    "activity": "services",
    "activity_basis": "its kind (no clearer clue)",
    "btype": "central",
-   "reach": "one",
-   "reach_label": "One nation",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:western-riverside-waste-authority": {
@@ -28393,8 +28403,8 @@
    "activity": "promote",
    "activity_basis": "its name",
    "btype": "central",
-   "reach": "several",
-   "reach_label": "Several nations",
+   "reach": "unstated",
+   "reach_label": "Not stated",
    "formed": "central-body"
   },
   "ons-name:truth-recovery-programme-independent-panei": {

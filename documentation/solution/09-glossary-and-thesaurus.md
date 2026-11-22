@@ -20,3 +20,8 @@
 | Public corporation | A body controlled by government that sells goods or services at market prices | state-owned enterprise |
 | Safe-fail matching | Joining names only on exact evidence, leaving gaps rather than guessing | conservative matching |
 | Trading fund | A body allowed to fund its operations from its own revenue under the Government Trading Funds Act 1973 | — |
+| Crown Dependency | The Isle of Man, Jersey and Guernsey (with Alderney and Sark). They are not part of the UK and make their own laws; the UK is responsible for their defence and international relations, and the Ministry of Justice manages the relationship. | Crown dependency; Isle of Man, Jersey, Guernsey |
+| Overseas Territory | One of the 14 territories under UK sovereignty but outside the UK, such as Bermuda or the Falkland Islands. Each has its own constitution, usually set out in an Order in Council. | British Overseas Territory; BOT |
+| Founding order | The Order in Council or Act that sets up a territory's constitution and its law-makers, government and courts. We read it on legislation.gov.uk and quote the clause that creates each body. | constitution order; Order in Council |
+| Combined record | One body that different sources record under different names or keys. We show it once, with every source's identifiers together, and say which rule joined them. | same-as; duplicate record |
+| Decided from evidence | A disagreement between sources that the automatic rules could not settle, decided by a person from the body's own page or the law that set it up. The evidence is kept with the decision. | manual reconciliation; human decision |

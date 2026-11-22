@@ -43,7 +43,7 @@ def interests(e):
         return out or [dict(base, type="otherInfluenceOrControl", details=e["control"])]
     if e["rel"] == "owns" and e["src"] == "ons": return [dict(base, type="shareholding", details="ONS: parent company (share not published)")]
     if e["rel"] == "owns": return [dict(base, type="otherInfluenceOrControl", details="GLEIF: accounting consolidation parent")]
-    return [dict(base, type="otherInfluenceOrControl", details={"sponsors": "Sponsorship", "controls": "ONS: controlling unit of a non-institutional unit", "parent": "GOV.UK parent organisation"}[e["rel"]])]
+    return [dict(base, type="otherInfluenceOrControl", details={"sponsors": "Sponsorship", "controls": "ONS: controlling unit of a non-institutional unit", "parent": "GOV.UK parent organisation", "decided": "Oversight by this parent, decided from the body's own record where the sources disagreed"}[e["rel"]])]
 IATI = {r["register_id"]: r["iati_id"] for r in json.loads((ROOT / "data" / "peer-iati.json").read_text())["rows"] if r["register_id"]}  # FCDO list, exact matches only
 ids_needed = {e["c"] for e in T["edges"] if e["p"]} | {e["p"] for e in T["edges"] if e["p"]}
 S = []

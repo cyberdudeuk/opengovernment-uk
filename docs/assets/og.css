@@ -91,6 +91,7 @@ nav.hubs{border-top:1px solid var(--og-line)}
 .pill.good{background:var(--og-good-soft);color:var(--og-good)} .pill.bad{background:var(--og-bad-soft);color:var(--og-bad)}
 
 /* forms */
+select,input,textarea{max-width:100%}
 input[type=search],input[type=text],select,textarea{min-height:var(--og-target-min);font-family:var(--og-font-body);font-size:var(--og-size-base);color:var(--og-ink);background:var(--og-surface);border:1px solid var(--og-line-strong);border-radius:var(--og-radius-sm)}
 input[type=search]:focus,input[type=text]:focus,select:focus,textarea:focus{border-color:var(--og-accent)}
 .controls label{font-size:var(--og-size-sm);font-weight:600;color:var(--og-muted)}

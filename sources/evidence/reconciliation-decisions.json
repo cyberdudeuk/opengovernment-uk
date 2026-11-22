@@ -1,0 +1,34 @@
+{
+  "about": "Reconciliation items that the automatic rules left for a person, each decided from the body's own page, its founding or governing instrument, or an official archive record, read 22 November 2026. Decided items leave the review queue; this file keeps the decision and its evidence. Nothing here is inferred from a name.",
+  "names": [
+    {"id": "government-organisation:OT801", "ons": "Appointments Commission", "decision": "same", "why": "The NHS Appointments Commission was renamed the Appointments Commission (2006) and abolished in 2012: one body under two names.",
+     "evidence": [{"title": "GOV.UK: NHS Appointments Commission", "url": "https://www.gov.uk/government/organisations/nhs-appointments-commission"},
+                  {"title": "Health and Social Care Act 2012, explanatory notes to section 279", "url": "https://www.legislation.gov.uk/ukpga/2012/7/notes/division/5/10/2"}]},
+    {"id": "government-organisation:CO1133", "ons": "Fair Employment Tribunal", "decision": "different", "why": "The Fair Employment Tribunal is Northern Ireland's own tribunal, set up under the Fair Employment and Treatment (Northern Ireland) Order 1998; the Employment Tribunal is a different body.",
+     "evidence": [{"title": "Fair Employment and Treatment (Northern Ireland) Order 1998, article 81", "url": "https://www.legislation.gov.uk/nisi/1998/3162/article/81"}]},
+    {"id": "government-organisation:OT1000", "ons": "Further Education Funding Council for Wales", "decision": "different", "why": "The GOV.UK entry covers two councils together; the Further Education Funding Council for Wales was one of the two, a separate legal body.",
+     "evidence": [{"title": "GOV.UK: Further and Higher Education Funding Councils for Wales", "url": "https://www.gov.uk/government/organisations/further-and-higher-education-funding-councils-for-wales"},
+                  {"title": "The National Archives: records of the Further Education and Higher Education Funding Councils for Wales", "url": "https://discovery.nationalarchives.gov.uk/details/r/C172"}]},
+    {"id": "government-organisation:PC389", "ons": "Historic Royal Palaces Trust", "match": "ons-name:historic-royal-palaces-trust", "decision": "same", "why": "Only one body exists: Historic Royal Palaces, the Royal Charter charity set up in 1998 (charity 1068852, which the Charity Commission records under no other name). GOV.UK and ONS both class it as a public corporation.",
+     "evidence": [{"title": "Charity Commission: Historic Royal Palaces (1068852), governance", "url": "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/3944422/governance"},
+                  {"title": "GOV.UK: Historic Royal Palaces", "url": "https://www.gov.uk/government/organisations/historic-royal-palaces"}]},
+    {"id": "government-organisation:EA959", "ons": "North West Regional Development Agency", "decision": "same", "why": "The Regional Development Agencies Act 1998 set up one agency for each region, named after the region; the North West had only one.",
+     "evidence": [{"title": "Regional Development Agencies Act 1998, section 1 (as enacted)", "url": "https://www.legislation.gov.uk/ukpga/1998/45/section/1/enacted"}]},
+    {"id": "government-organisation:EA918", "ons": "South West of England Development Agency", "decision": "same", "why": "The Regional Development Agencies Act 1998 set up one agency for each region, named after the region; the South West had only one.",
+     "evidence": [{"title": "Regional Development Agencies Act 1998, section 1 (as enacted)", "url": "https://www.legislation.gov.uk/ukpga/1998/45/section/1/enacted"}]},
+    {"id": "government-organisation:EA601", "ons": "The Court Service", "decision": "different", "why": "The Court Service (1995 to 2005) was a predecessor: on 1 April 2005 it and the magistrates' courts committees were brought together as HM Courts Service. A predecessor is not the same body.",
+     "evidence": [{"title": "The National Archives: records of The Court Service and successors", "url": "https://discovery.nationalarchives.gov.uk/details/r/C317"}]}
+  ],
+  "chains": [
+    {"id": "government-organisation:PB126", "parent": "government-organisation:D10", "why": "The body's own GOV.UK record (updated December 2025) names the Department for Work and Pensions, as does the Cabinet Office list. ONS and the 2020 list name the Department for Education, which held skills before the move; the Northern Ireland view belongs to CITB (NI), a different body.",
+     "evidence": [{"title": "GOV.UK API: Construction Industry Training Board", "url": "https://www.gov.uk/api/organisations/construction-industry-training-board"}]},
+    {"id": "government-organisation:PB355", "parent": "government-organisation:D1480", "why": "The tribunal's own GOV.UK record names the Department for Business, Innovation, Science and Trade, which ONS also names; the other two views are not named on its own page.",
+     "evidence": [{"title": "GOV.UK API: Copyright Tribunal", "url": "https://www.gov.uk/api/organisations/copyright-tribunal"}]},
+    {"id": "government-organisation:DA1021", "parent": null, "why": "The Executive Committee is made up of the First Minister, the deputy First Minister and the Northern Ireland Ministers, and answers to the Northern Ireland Assembly. The Northern Ireland departments sit under it, not above it, and the Northern Ireland Office is the UK department for Northern Ireland, not its parent.",
+     "evidence": [{"title": "Northern Ireland Act 1998, section 20", "url": "https://www.legislation.gov.uk/ukpga/1998/47/section/20"}]},
+    {"id": "government-organisation:OT1347", "parent": "government-organisation:PB197", "why": "The body's own GOV.UK record names the Nuclear Decommissioning Authority, as ONS does; the departments named elsewhere sit above the authority in the same chain.",
+     "evidence": [{"title": "GOV.UK API: Nuclear Waste Services", "url": "https://www.gov.uk/api/organisations/nuclear-waste-services"}]},
+    {"id": "government-organisation:PB438", "parent": "government-organisation:D1481", "why": "The council's own GOV.UK record names the Department for Digital, Culture, Media and Sport, as ONS and the 2020 list do. The National Archives view is outvoted three to one.",
+     "evidence": [{"title": "GOV.UK API: The Advisory Council on National Records and Archives", "url": "https://www.gov.uk/api/organisations/the-advisory-council-on-national-records-and-archives"}]}
+  ]
+}

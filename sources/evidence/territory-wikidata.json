@@ -1,0 +1,2616 @@
+{
+ "about": "Public bodies Wikidata records in each Crown Dependency and Overseas Territory (country or jurisdiction property), filtered to public-sector classes, read 22 November 2026. Community-sourced: used as corroboration and for bodies the constitution orders don't name; each website was requested once on the same day and its HTTP status recorded (403 usually means the site blocks automated requests, not that it is closed). A body found only in Wikidata counts as current only when its website answers at the recorded address without redirecting elsewhere (site_confirms); and when the page's title isn't an error page (site_title is recorded; some sites answer a retired address with an error page and a success status).",
+ "licence": "CC0 (Wikidata)",
+ "bodies": {
+  "Q1735847": {
+   "name": "Smith's Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1756036": {
+   "name": "Pembroke Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1774433": {
+   "name": "Bermuda Monetary Authority",
+   "classes": [
+    "central bank",
+    "registration authority"
+   ],
+   "site": "http://www.bma.bm/investment/investment%20funds/SitePages/Authorised%20Funds.aspx",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": "unreachable",
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1774447": {
+   "name": "Cayman Islands Monetary Authority",
+   "classes": [
+    "central bank",
+    "registration authority"
+   ],
+   "site": "https://www.cima.ky/",
+   "jurisdictions": [
+    "KY"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.cima.ky/",
+   "site_confirms": true,
+   "site_title": "Monetary, Regulatory and Advisory Body of the Cayman Islands- CIMA"
+  },
+  "Q1808243": {
+   "name": "Saint Saviour",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://stsaviour.je/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stsaviour.je/",
+   "site_confirms": true,
+   "site_title": "Parish of St Saviour"
+  },
+  "Q1809806": {
+   "name": "Vale",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1835699": {
+   "name": "Saint Brelade",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/StBrelade",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stbrelade.je/",
+   "site_confirms": false,
+   "site_title": "Parish of St Brelade"
+  },
+  "Q2046204": {
+   "name": "Paget",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2070272": {
+   "name": "Castel",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": "https://www.castelparish.com/",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.castelparish.com/",
+   "site_confirms": true,
+   "site_title": "Home | Castel Parish"
+  },
+  "Q289876": {
+   "name": "Hamilton Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q509090": {
+   "name": "Saint Lawrence",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/StLawrence",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stlawrence.je/",
+   "site_confirms": false,
+   "site_title": "Parish of St Lawrence"
+  },
+  "Q121782": {
+   "name": "Sandys Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q128852": {
+   "name": "Parliament of Gibraltar",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": "http://www.parliament.gi",
+   "jurisdictions": [
+    "GI"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.parliament.gi/",
+   "site_confirms": true,
+   "site_title": "Gibraltar Parliament"
+  },
+  "Q147738": {
+   "name": "Saint Helier",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://www.sthelier.je",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://sthelier.je/",
+   "site_confirms": true,
+   "site_title": "Parish of St Helier | Town Hall"
+  },
+  "Q169857": {
+   "name": "court system of Gibraltar",
+   "classes": [
+    "judiciary"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GI"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q174262": {
+   "name": "Saint Peter Port",
+   "classes": [
+    "parish"
+   ],
+   "site": "http://www.stppcons.com/",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.stppcons.com/",
+   "site_confirms": true,
+   "site_title": "Official website of St Peter Port parish, Guernsey | St. Peter Port Parish"
+  },
+  "Q4755358": {
+   "name": "Andreas",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q4763974": {
+   "name": "Anguilla House of Assembly",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "AI"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2305318": {
+   "name": "Saint Ouen",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/StOuen",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stouen.je/",
+   "site_confirms": false,
+   "site_title": "Parish of St Ouen"
+  },
+  "Q2324169": {
+   "name": "Forest",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": "http://www.forestparish.org.gg/",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "http://www.forestparish.org.gg/",
+   "site_confirms": true,
+   "site_title": "Forest Parish"
+  },
+  "Q2391916": {
+   "name": "Saint Andrew",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2429741": {
+   "name": "Grouville",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/Grouville",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://grouville.je/",
+   "site_confirms": false,
+   "site_title": "Parish of Grouville"
+  },
+  "Q2594704": {
+   "name": "Trinity",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/trinity/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://parishoftrinity.je/",
+   "site_confirms": false,
+   "site_title": "Parish of Trinity"
+  },
+  "Q2164378": {
+   "name": "Saint Peter's",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2212948": {
+   "name": "Saint Mary",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/StMary",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stmary.je/",
+   "site_confirms": false,
+   "site_title": "Parish of St Mary"
+  },
+  "Q2106447": {
+   "name": "Saint Saviour",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q593645": {
+   "name": "Saint Martin",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/stmartin",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stmartin.je/",
+   "site_confirms": false,
+   "site_title": "Parish of St Martin"
+  },
+  "Q595669": {
+   "name": "Saint Martin",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q679687": {
+   "name": "Legislative Council of the Isle of Man",
+   "classes": [
+    "unelected legislative house"
+   ],
+   "site": "http://www.tynwald.org.im/council",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 403,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q4851559": {
+   "name": "Ballaugh",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2671049": {
+   "name": "Torteval",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2734559": {
+   "name": "Jurby",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2734571": {
+   "name": "Braddan",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2734574": {
+   "name": "German",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2734578": {
+   "name": "Maughold",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": "http://www.maughold.org.im/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": "unreachable",
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1207018": {
+   "name": "Devonshire Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1323054": {
+   "name": "Southampton Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1368324": {
+   "name": "States of Guernsey",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": "https://www.gov.gg/parliament",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.gg/StatesMeetings",
+   "site_confirms": false,
+   "site_title": "States Meeting Information - States of Guernsey"
+  },
+  "Q1468860": {
+   "name": "Warwick Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1516957": {
+   "name": "House of Keys",
+   "classes": [
+    "elected legislative house"
+   ],
+   "site": "http://www.tynwald.org.im/about/hok/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 403,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q1521745": {
+   "name": "St. George's Parish",
+   "classes": [
+    "parish of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q7138929": {
+   "name": "Parliament of Bermuda",
+   "classes": [
+    "bicameral legislature",
+    "unicameral legislature"
+   ],
+   "site": "https://www.parliament.bm/",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.parliament.bm/",
+   "site_confirms": true,
+   "site_title": "Bermuda Parliament"
+  },
+  "Q7374162": {
+   "name": "Royal Falkland Islands Police",
+   "classes": [
+    "Falkland Islands government service",
+    "police"
+   ],
+   "site": "https://www.police.gov.fk/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/police/",
+   "site_confirms": true,
+   "site_title": "Royal Falkland Islands Police - Falkland Islands"
+  },
+  "Q21029427": {
+   "name": "Legislative Assembly of Montserrat",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": "https://www.parliament.ms/",
+   "jurisdictions": [
+    "MS"
+   ],
+   "site_status": 200,
+   "site_final": "https://parliament.ms/",
+   "site_confirms": true,
+   "site_title": "Montserrat Legislative Assembly – Montserrat Legislative Assembly"
+  },
+  "Q107832374": {
+   "name": "Department of Health and Social Care",
+   "classes": [
+    "ministry of health"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q107979988": {
+   "name": "Cabinet of Bermuda",
+   "classes": [
+    "government"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q108208674": {
+   "name": "Registry of Companies",
+   "classes": [
+    "registration authority"
+   ],
+   "site": "https://www.ciregistry.ky/",
+   "jurisdictions": [
+    "KY"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.ciregistry.ky/",
+   "site_confirms": true,
+   "site_title": "Cayman Islands General Registry | An official website of the Cayman Islands Government – Cayman Islands General Registry"
+  },
+  "Q108208732": {
+   "name": "Companies Registry",
+   "classes": [
+    "registration authority"
+   ],
+   "site": "http://www.gov.im/ded/companies/companiesregistry.xml",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/ded/companies/companiesregistry.xml",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q108208735": {
+   "name": "Company Registry",
+   "classes": [
+    "registration authority"
+   ],
+   "site": "http://www.jerseyfsc.org/registry/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.jerseyfsc.org/registry/",
+   "site_confirms": true,
+   "site_title": "Registry — Jersey Financial Services Commission"
+  },
+  "Q4892617": {
+   "name": "Bermuda Department of Civil Aviation",
+   "classes": [
+    "aviation authority",
+    "government agency"
+   ],
+   "site": "http://www.dca.gov.bm/",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": "unreachable",
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q4971202": {
+   "name": "British Virgin Islands Financial Services Commission",
+   "classes": [
+    "financial regulatory agency",
+    "government agency"
+   ],
+   "site": "http://www.bvifsc.vg",
+   "jurisdictions": [
+    "VG"
+   ],
+   "site_status": 403,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q16829382": {
+   "name": "Department of Health and Social Care",
+   "classes": [
+    "ministry of health",
+    "ministry of social affairs"
+   ],
+   "site": "http://www.gov.im/dhsc",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/dhsc",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q30293407": {
+   "name": "Noble's Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": "https://www.gov.im/categories/health-and-wellbeing/hospitals-and-emergency-treatment/nobles-hospital/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/categories/health-and-wellbeing/hospitals-and-emergency-treatment/nobles-hospital",
+   "site_confirms": true,
+   "site_title": "Noble's Hospital | Isle of Man Government"
+  },
+  "Q51727346": {
+   "name": "Garff",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q61747417": {
+   "name": "Government of Jersey",
+   "classes": [
+    "executive branch",
+    "government"
+   ],
+   "site": "https://www.gov.je",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.je/Pages/default.aspx",
+   "site_confirms": true,
+   "site_title": "Government of Jersey"
+  },
+  "Q61931771": {
+   "name": "Office of the Ombudsman for Bermuda",
+   "classes": [
+    "government agency"
+   ],
+   "site": "http://www.ombudsman.bm/",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://ombudsman.bm/",
+   "site_confirms": true,
+   "site_title": ""
+  },
+  "Q21995547": {
+   "name": "Courts of Guernsey",
+   "classes": [
+    "judiciary"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q23926484": {
+   "name": "Peebles Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "VG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q55631162": {
+   "name": "Ramsey Cottage Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q31842272": {
+   "name": "St. Helena General Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "SH"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2859727": {
+   "name": "Arbory",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q2897323": {
+   "name": "Bermuda Police Service",
+   "classes": [
+    "Department of Ministry of Bermuda"
+   ],
+   "site": "https://www.bermudapolice.bm/",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.bermudapolice.bm/",
+   "site_confirms": true,
+   "site_title": "Home"
+  },
+  "Q2925151": {
+   "name": "Bride",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5178728": {
+   "name": "Courts of Jersey",
+   "classes": [
+    "court"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5260136": {
+   "name": "Department of Agriculture, Fisheries and Forestry",
+   "classes": [
+    "ministry of agriculture"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5260192": {
+   "name": "Department of Community, Culture and Leisure",
+   "classes": [
+    "government agency"
+   ],
+   "site": "http://www.gov.im/dccl",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/dccl",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q67930602": {
+   "name": "Jersey Financial Services Commission",
+   "classes": [
+    "regulatory agency"
+   ],
+   "site": "https://www.jerseyfsc.org/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.jerseyfsc.org/",
+   "site_confirms": true,
+   "site_title": "Jersey Financial Services Commission"
+  },
+  "Q76359417": {
+   "name": "Isle of Man Arts Council",
+   "classes": [
+    "arts council"
+   ],
+   "site": "https://www.iomarts.com/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 403,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q24695054": {
+   "name": "Saint Sampson",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": "https://www.stsampson.gg",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.stsampson.gg",
+   "site_confirms": true,
+   "site_title": "ST SAMPSON PARISH"
+  },
+  "Q60754278": {
+   "name": "Jersey General Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": "https://www.gov.je/Health/Hospitals/HospitalServices/Pages/index.aspx",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.je/Health/Hospitals/HospitalServices/Pages/index.aspx",
+   "site_confirms": true,
+   "site_title": "Hospital wards"
+  },
+  "Q60775945": {
+   "name": "Saint Saviour's Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q111950877": {
+   "name": "Royal Court",
+   "classes": [
+    "supreme court"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q59260753": {
+   "name": "Princess Alexandra Hospital, Anguilla",
+   "classes": [
+    "hospital"
+   ],
+   "site": "http://www.haa.ai/page/medical-services",
+   "jurisdictions": [
+    "AI"
+   ],
+   "site_status": "unreachable",
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q133255547": {
+   "name": "Supreme Court of the Falkland Islands",
+   "classes": [
+    "supreme court"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q133267751": {
+   "name": "Falkland Islands Government Taxation Office",
+   "classes": [
+    "Falkland Islands government service",
+    "government agency"
+   ],
+   "site": "https://www.falklands.gov.fk/taxation/",
+   "jurisdictions": [
+    "FK",
+    "GS"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/taxation/",
+   "site_confirms": true,
+   "site_title": "Falkland Islands Taxation | Government Tax Office"
+  },
+  "Q133457090": {
+   "name": "Falkland Islands Maritime Authority",
+   "classes": [
+    "Falkland Islands government service"
+   ],
+   "site": "https://www.falklands.gov.fk/maritimeauthority/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/maritimeauthority/",
+   "site_confirms": true,
+   "site_title": "Falkland Islands Maritime Authority | Marine Safety & Regulation"
+  },
+  "Q133643826": {
+   "name": "Falkland Islands Civil Aviation Department",
+   "classes": [
+    "Falkland Islands government service"
+   ],
+   "site": "https://www.falklands.gov.fk/civilaviation/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/civilaviation/",
+   "site_confirms": true,
+   "site_title": "Falkland Islands Civil Aviation Department | FICAD"
+  },
+  "Q133786106": {
+   "name": "Falkland Islands Fire and Rescue Service",
+   "classes": [
+    "Falkland Islands government service"
+   ],
+   "site": "https://www.falklands.gov.fk/fireandrescue/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/fireandrescue/",
+   "site_confirms": true,
+   "site_title": "Fire & Rescue Service – Falkland Islands"
+  },
+  "Q5060027": {
+   "name": "Council of Ministers",
+   "classes": [
+    "government committee"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q63974395": {
+   "name": "Princess Elizabeth Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": "https://www.healthcare.gg/princess-elizabeth-hospital/",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.healthcare.gg/surgeries",
+   "site_confirms": false,
+   "site_title": "Surgeries | Healthcare Group"
+  },
+  "Q5260254": {
+   "name": "Department for Enterprise",
+   "classes": [
+    "government agency",
+    "ministry"
+   ],
+   "site": "http://www.gov.im/ded",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/ded",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q5260259": {
+   "name": "Department of Education of Manx",
+   "classes": [
+    "government agency",
+    "ministry of education"
+   ],
+   "site": "http://www.gov.im/dec",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/dec",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q5260288": {
+   "name": "Department of Environment, Food and Agriculture",
+   "classes": [
+    "government agency",
+    "ministry"
+   ],
+   "site": "http://www.gov.im/defa",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/defa",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q112873438": {
+   "name": "Ministry of Economy and Labour",
+   "classes": [
+    "Ministry in Bermuda",
+    "economic affairs ministry",
+    "ministry of labour"
+   ],
+   "site": "https://www.gov.bm/ministry/economy-and-labour",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/ministry/economy-and-labour",
+   "site_confirms": true,
+   "site_title": "Economy and Labour - Government of Bermuda"
+  },
+  "Q113003573": {
+   "name": "Ministry of Education of Bermuda",
+   "classes": [
+    "Ministry in Bermuda",
+    "ministry of education"
+   ],
+   "site": "https://www.moed.bm",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.moed.bm",
+   "site_confirms": true,
+   "site_title": "Ministry of Education"
+  },
+  "Q113003780": {
+   "name": "Ministry of Finance",
+   "classes": [
+    "Ministry in Bermuda",
+    "finance ministry"
+   ],
+   "site": "https://www.gov.bm/ministry/finance",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/ministry/finance",
+   "site_confirms": true,
+   "site_title": "Finance - Government of Bermuda"
+  },
+  "Q113004030": {
+   "name": "Ministry of Health",
+   "classes": [
+    "Ministry in Bermuda",
+    "ministry of health"
+   ],
+   "site": "https://www.gov.bm/ministry/health",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/ministry/health",
+   "site_confirms": true,
+   "site_title": "Health - Government of Bermuda"
+  },
+  "Q113004150": {
+   "name": "Ministry of Home Affairs",
+   "classes": [
+    "Ministry in Bermuda",
+    "interior ministry"
+   ],
+   "site": "https://www.gov.bm/ministry/home-affairs",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/ministry/home-affairs",
+   "site_confirms": true,
+   "site_title": "Home Affairs - Government of Bermuda"
+  },
+  "Q113004260": {
+   "name": "Ministry of Legal Affairs",
+   "classes": [
+    "Ministry in Bermuda",
+    "justice ministry"
+   ],
+   "site": "https://www.gov.bm/ministry/legal-affairs-and-constitutional-reform",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q136439723": {
+   "name": "Bermuda Tourism Authority",
+   "classes": [
+    "government organization"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q136448388": {
+   "name": "Law Officers' Department",
+   "classes": [
+    "government agency"
+   ],
+   "site": "https://www.gov.je/Government/NonexecLegal/LawOfficers/Pages/LawOfficersDepartment.aspx",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.je/Government/NonexecLegal/LawOfficers/Pages/LawOfficersDepartment.aspx",
+   "site_confirms": true,
+   "site_title": "Law Officers' Department"
+  },
+  "Q16849518": {
+   "name": "Jane Cameron National Archives",
+   "classes": [
+    "Falkland Islands government service"
+   ],
+   "site": "https://www.nationalarchives.gov.fk/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://nationalarchives.gov.fk/",
+   "site_confirms": true,
+   "site_title": "Jane Cameron National Archives"
+  },
+  "Q16851236": {
+   "name": "Jersey Fire and Rescue Service",
+   "classes": [
+    "fire department"
+   ],
+   "site": "https://jerseyfire.je/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://jerseyfire.je/",
+   "site_confirms": true,
+   "site_title": "Jersey Fire & Rescue Service | Making Jersey a safer community"
+  },
+  "Q17010279": {
+   "name": "Department of Statistics",
+   "classes": [
+    "Department of Ministry of Bermuda"
+   ],
+   "site": "https://www.gov.bm/department/statistics",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/department/statistics",
+   "site_confirms": true,
+   "site_title": "Statistics - Government of Bermuda"
+  },
+  "Q17016933": {
+   "name": "Gibraltar Regulatory Authority",
+   "classes": [
+    "regulatory agency"
+   ],
+   "site": "http://www.gra.gi",
+   "jurisdictions": [
+    "GI"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gra.gi/",
+   "site_confirms": true,
+   "site_title": "GRA | Gibraltar Regulatory Authority"
+  },
+  "Q113042962": {
+   "name": "Ministry of Youth, Culture and Sport",
+   "classes": [
+    "Ministry in Bermuda",
+    "ministry of culture",
+    "youth ministry"
+   ],
+   "site": "https://www.gov.bm/ministry/youth-culture-and-sport",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q113087539": {
+   "name": "Bermuda Customs Department",
+   "classes": [
+    "Department of Ministry of Bermuda"
+   ],
+   "site": "https://www.gov.bm/department/customs",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/department/customs",
+   "site_confirms": true,
+   "site_title": "Customs - Government of Bermuda"
+  },
+  "Q113087556": {
+   "name": "Bermuda Fire and Rescue Service",
+   "classes": [
+    "Department of Ministry of Bermuda",
+    "fire department"
+   ],
+   "site": "https://www.gov.bm/department/fire-and-rescue-service",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/department/fire-and-rescue-service",
+   "site_confirms": true,
+   "site_title": "Fire and Rescue Service - Government of Bermuda"
+  },
+  "Q113110641": {
+   "name": "Bermuda Ministry of Social Development and Seniors",
+   "classes": [
+    "Ministry in Bermuda"
+   ],
+   "site": "https://www.gov.bm/ministry/social-development-and-seniors",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q113115665": {
+   "name": "Bermuda Department of Child and Family Services",
+   "classes": [
+    "Department of Ministry of Bermuda"
+   ],
+   "site": "https://www.gov.bm/department/child-and-family-services",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/department/child-and-family-services",
+   "site_confirms": true,
+   "site_title": "Child and Family Services - Government of Bermuda"
+  },
+  "Q113170776": {
+   "name": "Fort Grey Shipwreck Museum",
+   "classes": [
+    "local authority museum"
+   ],
+   "site": "http://www.museums.gov.gg/article/101090/fort-grey",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://museums.gov.gg/",
+   "site_confirms": false,
+   "site_title": "Guernsey Museums Home Page - Guernsey Museums"
+  },
+  "Q113170789": {
+   "name": "Royal Guernsey Militia Regimental Museum",
+   "classes": [
+    "regimental museum"
+   ],
+   "site": "http://museums.gov.gg/rgm",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://museums.gov.gg:443/rgm",
+   "site_confirms": true,
+   "site_title": "Royal Guernsey Militia Regimental Museum - Guernsey Museums"
+  },
+  "Q113864410": {
+   "name": "Ministry of The Cabinet Office",
+   "classes": [
+    "Ministry in Bermuda"
+   ],
+   "site": "https://www.gov.bm/ministry/government-reform",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3001122": {
+   "name": "Eastern Caribbean Supreme Court",
+   "classes": [
+    "international court",
+    "superior court"
+   ],
+   "site": "https://www.eccourts.org/",
+   "jurisdictions": [
+    "AI",
+    "MS",
+    "VG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.eccourts.org/",
+   "site_confirms": true,
+   "site_title": "Eastern Caribbean Supreme Court"
+  },
+  "Q3058152": {
+   "name": "Saint Peter",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/StPeter",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stpeter.je/",
+   "site_confirms": false,
+   "site_title": "Parish of St Peter"
+  },
+  "Q3058160": {
+   "name": "Saint Clement",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://parish.gov.je/StClement",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://stclement.je/",
+   "site_confirms": false,
+   "site_title": "Parish of St Clement"
+  },
+  "Q3112593": {
+   "name": "Isle of Man Government",
+   "classes": [
+    "government"
+   ],
+   "site": "https://www.gov.im/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q3237456": {
+   "name": "Lezayre",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q134696491": {
+   "name": "Falkland Islands Government Natural Resources Directorate",
+   "classes": [
+    "Falkland Islands government service"
+   ],
+   "site": "https://www.falklands.gov.fk/naturalresources/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/naturalresources/",
+   "site_confirms": true,
+   "site_title": "Falkland Islands Natural Resources Department"
+  },
+  "Q134696500": {
+   "name": "Falkland Islands Government Human Resources",
+   "classes": [
+    "Falkland Islands government service"
+   ],
+   "site": "https://www.falklands.gov.fk/humanresources/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/humanresources/",
+   "site_confirms": true,
+   "site_title": "Falkland Islands Department of Human Resources"
+  },
+  "Q827704": {
+   "name": "Tynwald",
+   "classes": [
+    "bicameral legislature"
+   ],
+   "site": "http://www.tynwald.org.im/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 403,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q946944": {
+   "name": "States Assembly",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": "https://statesassembly.je/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 403,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q954721": {
+   "name": "Saint John",
+   "classes": [
+    "parish of Jersey"
+   ],
+   "site": "https://StJohn.je",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://StJohn.je",
+   "site_confirms": true,
+   "site_title": "Parish of St John"
+  },
+  "Q6083065": {
+   "name": "Island Council",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "PN"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q6084023": {
+   "name": "Isle of Man Treasury",
+   "classes": [
+    "government agency"
+   ],
+   "site": "http://www.gov.im/treasury",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/treasury",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q139962127": {
+   "name": "Guernsey Coastguard",
+   "classes": [
+    "coast guard"
+   ],
+   "site": "https://www.harbours.gg/guernseycoastguard",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.harbours.gg/guernseycoastguard",
+   "site_confirms": true,
+   "site_title": "Guernsey Coastguard - Guernsey Harbours"
+  },
+  "Q105265593": {
+   "name": "Department of Disaster Management Anguilla",
+   "classes": [
+    "government agency"
+   ],
+   "site": "http://ddmaxa.org/",
+   "jurisdictions": [
+    "AI"
+   ],
+   "site_status": 500,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q105266773": {
+   "name": "BVI Department of Disaster Management",
+   "classes": [
+    "government agency"
+   ],
+   "site": "https://www.bviddm.com/",
+   "jurisdictions": [
+    "VG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.bviddm.com/",
+   "site_confirms": true,
+   "site_title": "BVIDDM – BVI Department of Disaster Management"
+  },
+  "Q105267022": {
+   "name": "Montserrat Disaster Management Coordination Agency",
+   "classes": [
+    "government agency"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "MS"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q105267474": {
+   "name": "Department of Disaster Management & Emergencies of the Turks and Caicos Islands",
+   "classes": [
+    "government agency"
+   ],
+   "site": "https://www.gov.tc/ddme/",
+   "jurisdictions": [
+    "TC"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.tc/ddme/",
+   "site_confirms": true,
+   "site_title": null
+  },
+  "Q105453192": {
+   "name": "Government of the Falkland Islands",
+   "classes": [
+    "executive branch"
+   ],
+   "site": "https://www.falklands.gov.fk/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/",
+   "site_confirms": true,
+   "site_title": "Welcome to the Falkland Islands Government"
+  },
+  "Q106232046": {
+   "name": "Falkland Islands Fisheries Department",
+   "classes": [
+    "government agency"
+   ],
+   "site": "https://www.fig.gov.fk/fisheries/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.fk/fisheries/",
+   "site_confirms": true,
+   "site_title": "Falkland Islands Fisheries | Sustainable Fishing"
+  },
+  "Q106618723": {
+   "name": "Cayman Islands Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": "https://www.hsa.ky/cayman-islands-hospital/",
+   "jurisdictions": [
+    "KY"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.hsa.ky/locations/george-town-hospital",
+   "site_confirms": false,
+   "site_title": "Anthony S. Eden Hospital | George Town Hospital | HSA"
+  },
+  "Q141255105": {
+   "name": "Jersey Court of Appeal",
+   "classes": [
+    "appellate court"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3625554": {
+   "name": "Parliament of the Cayman Islands",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": "http://www.gov.ky",
+   "jurisdictions": [
+    "KY"
+   ],
+   "site_status": 200,
+   "site_final": "https://gov.ky/",
+   "site_confirms": true,
+   "site_title": "Home - GOV.KY - CIG"
+  },
+  "Q107178528": {
+   "name": "Commercial Registry",
+   "classes": [
+    "registration authority"
+   ],
+   "site": "http://www.commercialregistry.ai/",
+   "jurisdictions": [
+    "AI"
+   ],
+   "site_status": 200,
+   "site_final": "http://www.commercialregistry.ai/",
+   "site_confirms": true,
+   "site_title": "Anguilla Commercial Registry - Home Page"
+  },
+  "Q107178883": {
+   "name": "Companies House Gibraltar",
+   "classes": [
+    "registration authority"
+   ],
+   "site": "http://www.companieshouse.gi",
+   "jurisdictions": [
+    "GI"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.companieshouse.gi/",
+   "site_confirms": true,
+   "site_title": "Companies House Gibraltar"
+  },
+  "Q107178987": {
+   "name": "Financial Services Commission Montserrat",
+   "classes": [
+    "registration authority"
+   ],
+   "site": "http://www.fscmontserrat.org/",
+   "jurisdictions": [
+    "MS"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.fscmontserrat.org/",
+   "site_confirms": true,
+   "site_title": "Financial Services Commission Montserrat | Responsible for the licensing, supervision and regulation of financial service providers."
+  },
+  "Q113006163": {
+   "name": "Supreme Court of Bermuda",
+   "classes": [
+    "supreme court"
+   ],
+   "site": "https://www.gov.bm/supreme-court",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/supreme-court",
+   "site_confirms": true,
+   "site_title": "Supreme Court | Government of Bermuda - Government of Bermuda"
+  },
+  "Q113017362": {
+   "name": "Ministry of Tourism",
+   "classes": [
+    "Ministry in Bermuda",
+    "tourism ministry"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q113017413": {
+   "name": "Ministry of Transport",
+   "classes": [
+    "Ministry in Bermuda"
+   ],
+   "site": "https://www.gov.bm/ministry/transport",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q113017586": {
+   "name": "Bermuda Ministry of National Security",
+   "classes": [
+    "Ministry in Bermuda"
+   ],
+   "site": "https://www.gov.bm/ministry/national-security",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.bm/ministry/national-security",
+   "site_confirms": true,
+   "site_title": "National Security - Government of Bermuda"
+  },
+  "Q113018353": {
+   "name": "Ministry of Public Works",
+   "classes": [
+    "Ministry in Bermuda",
+    "ministry of public works"
+   ],
+   "site": "https://www.gov.bm/ministry/public-works",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3258914": {
+   "name": "Lonan",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": "http://www.lonan.org/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": "unreachable",
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q124739982": {
+   "name": "Farnham Cabinet",
+   "classes": [
+    "Council of Ministers"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q7571591": {
+   "name": "Sovereign Base Areas Police",
+   "classes": [
+    "police"
+   ],
+   "site": "http://www.sba.mod.uk/web_pages/sbap.htm",
+   "jurisdictions": [
+    "SBA"
+   ],
+   "site_status": "unreachable",
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q7604031": {
+   "name": "States of Alderney",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": "http://www.alderney.gov.gg/",
+   "jurisdictions": [
+    "GG-ALD"
+   ],
+   "site_status": 200,
+   "site_final": "https://alderney.gov.gg/",
+   "site_confirms": true,
+   "site_title": "States of Alderney Home Page - States of Alderney"
+  },
+  "Q7604038": {
+   "name": "States of Guernsey Police Service",
+   "classes": [
+    "police"
+   ],
+   "site": "http://www.guernsey.police.uk/",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.guernsey.police.uk:443/",
+   "site_confirms": true,
+   "site_title": "Guernsey Police Home Page - Guernsey Police"
+  },
+  "Q7645015": {
+   "name": "Supreme Court of the Pitcairn Islands",
+   "classes": [
+    "supreme court"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "PN"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q98079216": {
+   "name": "Camogli Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": "http://www.tristandc.com/hospital.php",
+   "jurisdictions": [
+    "SH"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.tristandc.com/hospital.php",
+   "site_confirms": true,
+   "site_title": "Tristan da Cunha Camogli Healthcare Centre"
+  },
+  "Q4358669": {
+   "name": "Falkland Islands Government Aviation Service",
+   "classes": [
+    "Falkland Islands government service"
+   ],
+   "site": "https://www.falklands.gov.fk/aviationservice/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5532147": {
+   "name": "General Registry",
+   "classes": [
+    "government agency"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5589389": {
+   "name": "Government of the Cayman Islands",
+   "classes": [
+    "government"
+   ],
+   "site": "http://www.gov.ky",
+   "jurisdictions": [
+    "KY"
+   ],
+   "site_status": 200,
+   "site_final": "https://gov.ky/",
+   "site_confirms": true,
+   "site_title": "Home - GOV.KY - CIG"
+  },
+  "Q5260325": {
+   "name": "Department of Health",
+   "classes": [
+    "government agency"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5260333": {
+   "name": "Department of Health and Social Security",
+   "classes": [
+    "government agency"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5260341": {
+   "name": "Department of Home Affairs",
+   "classes": [
+    "government agency",
+    "ministry"
+   ],
+   "site": "http://www.gov.im/dha",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/dha",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q5260355": {
+   "name": "Department of Infrastructure",
+   "classes": [
+    "ministry"
+   ],
+   "site": "http://www.gov.im/infrastructure",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.im/infrastructure",
+   "site_confirms": true,
+   "site_title": "Request Rejected"
+  },
+  "Q5260379": {
+   "name": "Department of Local Government and the Environment",
+   "classes": [
+    "ministry"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5260484": {
+   "name": "Department of Social Care",
+   "classes": [
+    "government agency"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5614896": {
+   "name": "Guernsey Border Agency",
+   "classes": [
+    "government organization"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q5614899": {
+   "name": "Guernsey Financial Services Commission",
+   "classes": [
+    "government agency"
+   ],
+   "site": "http://www.gfsc.gg/",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gfsc.gg/",
+   "site_confirms": true,
+   "site_title": "Guernsey Financial Services Commission — GFSC"
+  },
+  "Q5635214": {
+   "name": "HM Prison La Moye",
+   "classes": [
+    "prison"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q28063": {
+   "name": "St. George's",
+   "classes": [
+    "municipality of Bermuda"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q30985": {
+   "name": "Hamilton",
+   "classes": [
+    "municipality of Bermuda"
+   ],
+   "site": "https://www.cityofhamilton.bm/",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.cityofhamilton.bm/",
+   "site_confirms": true,
+   "site_title": "Welcome to Hamilton, Bermuda"
+  },
+  "Q32784": {
+   "name": "Royal Gibraltar Post Office",
+   "classes": [
+    "postal services ministry"
+   ],
+   "site": "https://post.gi/",
+   "jurisdictions": [
+    "GI"
+   ],
+   "site_status": 200,
+   "site_final": "https://post.gi/",
+   "site_confirms": true,
+   "site_title": "Royal Gibraltar Post Office – RGPO – Royal Gibraltar Post Office"
+  },
+  "Q5419832": {
+   "name": "Executive Council of the Falkland Islands",
+   "classes": [
+    "executive branch"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q7844151": {
+   "name": "Tristan da Cunha Island Council",
+   "classes": [
+    "parliament"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "SH-TA"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q7855481": {
+   "name": "Parliament of the Turks and Caicos Islands",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "TC"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q7866304": {
+   "name": "USCG Air Station Bermuda",
+   "classes": [
+    "coast guard station"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q9189683": {
+   "name": "Chief Pleas",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG",
+    "GG-SRK"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q12060361": {
+   "name": "Hohlgangsanlage 8",
+   "classes": [
+    "hospital"
+   ],
+   "site": "http://www.jerseywartunnels.com/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.jerseywartunnels.com:443/",
+   "site_confirms": true,
+   "site_title": "Jersey War Tunnels"
+  },
+  "Q12069992": {
+   "name": "States of Jersey Police",
+   "classes": [
+    "police"
+   ],
+   "site": "https://www.jersey.police.je/",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.jersey.police.je/s/",
+   "site_confirms": true,
+   "site_title": "States of Jersey Police"
+  },
+  "Q3281889": {
+   "name": "Malew",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": "http://www.malewparish.org/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 202,
+   "site_final": "http://www.malew-parish.org/",
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3294687": {
+   "name": "Marown",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q6844274": {
+   "name": "Mignot Memorial Hospital",
+   "classes": [
+    "hospital"
+   ],
+   "site": "https://www.gov.gg/lemignot",
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.gg/lemignot",
+   "site_confirms": true,
+   "site_title": "The Mignot Memorial Hospital - Alderney - States of Guernsey"
+  },
+  "Q7079359": {
+   "name": "Isle of Man Information Commissioner",
+   "classes": [
+    "data protection authority"
+   ],
+   "site": "https://www.inforights.im/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.inforights.im/",
+   "site_confirms": true,
+   "site_title": "Isle of Man Information Commissioner"
+  },
+  "Q3365321": {
+   "name": "Legislative Assembly of the Falkland Islands",
+   "classes": [
+    "elected legislative house",
+    "unicameral legislature"
+   ],
+   "site": "https://assembly.gov.fk/",
+   "jurisdictions": [
+    "FK"
+   ],
+   "site_status": 200,
+   "site_final": "https://assembly.gov.fk/",
+   "site_confirms": true,
+   "site_title": "Home"
+  },
+  "Q3369173": {
+   "name": "Patrick",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3406050": {
+   "name": "Royal Gibraltar Police",
+   "classes": [
+    "police"
+   ],
+   "site": "https://www.police.gi/",
+   "jurisdictions": [
+    "GI"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.police.gi/",
+   "site_confirms": true,
+   "site_title": "Royal Gibraltar Police - Home"
+  },
+  "Q3432267": {
+   "name": "Isle of Man Post Office",
+   "classes": [
+    "postal service"
+   ],
+   "site": "https://www.iompost.com/",
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.iompost.com/",
+   "site_confirms": true,
+   "site_title": "Isle of Man Post Office | Trusted Delivery Partner"
+  },
+  "Q3445994": {
+   "name": "Royal Montserrat Police Force",
+   "classes": [
+    "police"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "MS"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3453376": {
+   "name": "Rushen",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3463656": {
+   "name": "Saint Anthony",
+   "classes": [
+    "parish"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "MS"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3463799": {
+   "name": "Saint Georges",
+   "classes": [
+    "civil parish",
+    "parish"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "MS"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3464018": {
+   "name": "Saint Peter",
+   "classes": [
+    "civil parish",
+    "parish"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "MS"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3472980": {
+   "name": "Santon",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q3480413": {
+   "name": "States of Jersey Customs and Immigration Service",
+   "classes": [
+    "government agency"
+   ],
+   "site": "https://www.gov.je/Government/Departments/JusticeHomeAffairs/Departments/CustomsImmigration/Pages/index.aspx",
+   "jurisdictions": [
+    "JE"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.gov.je/Government/Departments/JusticeHomeAffairs/Departments/CustomsImmigration/Pages/index.aspx",
+   "site_confirms": true,
+   "site_title": "Jersey Customs & Immigration Service"
+  },
+  "Q14956835": {
+   "name": "Health City Cayman Islands",
+   "classes": [
+    "hospital"
+   ],
+   "site": "https://www.healthcitycaymanislands.com/",
+   "jurisdictions": [
+    "KY"
+   ],
+   "site_status": 200,
+   "site_final": "https://healthcitycaymanislands.com/",
+   "site_confirms": true,
+   "site_title": "Leading hospital in Cayman Island for Advanced Healthcare - Health City Cayman Islands"
+  },
+  "Q15069291": {
+   "name": "Michael",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q19600188": {
+   "name": "Anguilla Financial Services Commission",
+   "classes": [
+    "financial regulatory agency",
+    "government agency"
+   ],
+   "site": "http://www.fsc.org.ai/",
+   "jurisdictions": [
+    "AI"
+   ],
+   "site_status": 200,
+   "site_final": "http://www.fsc.org.ai/",
+   "site_confirms": true,
+   "site_title": "Anguilla Financial Services Commission"
+  },
+  "Q5914704": {
+   "name": "House of Assembly of the British Virgin Islands",
+   "classes": [
+    "unicameral legislature"
+   ],
+   "site": "https://bvi.gov.vg/house-of-assembly",
+   "jurisdictions": [
+    "VG"
+   ],
+   "site_status": 404,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q6765827": {
+   "name": "Maritime Operations Centre",
+   "classes": [
+    "government agency"
+   ],
+   "site": "https://www.marineandports.bm/",
+   "jurisdictions": [
+    "BM"
+   ],
+   "site_status": 200,
+   "site_final": "https://www.marineandports.bm/",
+   "site_confirms": true,
+   "site_title": "Department of Marine and Ports Services"
+  },
+  "Q7091958": {
+   "name": "Onchan",
+   "classes": [
+    "parish of the Isle of Man"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "IM"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  },
+  "Q24695673": {
+   "name": "Alderney",
+   "classes": [
+    "parish of Guernsey"
+   ],
+   "site": null,
+   "jurisdictions": [
+    "GG"
+   ],
+   "site_status": null,
+   "site_final": null,
+   "site_confirms": false,
+   "site_title": null
+  }
+ }
+}

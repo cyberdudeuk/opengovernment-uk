@@ -35,6 +35,12 @@ jobs:
         run: python tools/nation_evidence.py --verify && python tools/nation_evidence.py --negative
       - name: Plain-English classification (known answers, negative)
         run: python tools/classify.py && python tools/classify.py --negative
+      - name: One record per body (same-as layer; known answers, never merged across identifiers, negatives)
+        run: python tools/sameas.py && python tools/sameas.py --negative
+      - name: Crown Dependencies and Overseas Territories (founding orders, confirmed websites, negatives)
+        run: python tools/territories.py && python tools/territories.py --negative
+      - name: Each body's own website (one combined table, code-matched only, negatives)
+        run: python tools/websites.py && python tools/websites.py --negative
       - name: Trading fund and public corporation trees (one place each, known answers, negatives)
         run: python tools/corporations.py && python tools/corporations.py --negative
       - name: Local government under the English Devolution Act 2026 (every fact sourced, 21 areas, negatives)

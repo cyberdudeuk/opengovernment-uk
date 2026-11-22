@@ -77,6 +77,7 @@ def c_person_rule_offices(T):
 CHECKS = [c_person_rule_offices, c_provenance, c_ends, c_no_persons, c_no_email, c_chain_shape, c_coverage, c_hashes, c_known_answers, c_nmd_terminal, c_unresolved_reason, c_wording, c_digest]
 
 PREC = {"eao": 0, "eao-ni": 0, "pbd": 1, "ons": 2, "govuk": 3, "ch": 4, "gleif": 4}
+DECIDED = {d["id"] for d in json.loads((ROOT / "sources/evidence/reconciliation-decisions.json").read_text())["chains"]}
 def c_conflicts_triangulated(T):
     """OG-D33: every disagreement is either contested or resolved for a stated reason that re-checks independently."""
     bad = []; up = lambda x: {st["to"] for st in T["chains"].get(x, {}).get("path", [])}
@@ -89,6 +90,8 @@ def c_conflicts_triangulated(T):
             ok = cv and min(PREC[x] for x in cv["sources"]) < min(PREC[x] for v in alts for x in v["sources"]) and len(cv["sources"]) >= max(len(v["sources"]) for v in alts)
         elif why.startswith(("nested", "joint")):
             ok = cv and all(v["parent"] in up(ch) or ch in up(v["parent"]) or set(v["sources"]) & set(cv["sources"]) for v in alts)
+        elif why.startswith("decided from evidence:"):  # decided by a person: must cite evidence and keep to a parent a source gave, or none
+            ok = bool(c.get("decided")) and (ch is None or ch in {v["parent"] for v in c["views"]}) and c["id"] in DECIDED
         elif why.startswith("rule D-OG3"):
             ok = REG[c["id"]][3] == "Non-ministerial department" or not T["chains"].get(c["id"], {}).get("path")
         else: ok = False
@@ -126,7 +129,7 @@ def breakers(T):
         "c_wording": b(lambda t: t["edges"][0].update(how="Office of the Chief Data Officer")),
         "c_digest": b(lambda t: t["conflicts"].append({"id": k0, "views": []})),
         "c_ons_codes": b(lambda t: next(e for e in t["edges"] if e["pt"] == "SE").update(how="body: name, cleaned; sponsor: name, cleaned")),
-        "c_conflicts_triangulated": b(lambda t: next(c for c in t["conflicts"] if c["status"] == "contested").update(status="resolved", reason="rule: invented")),
+        "c_conflicts_triangulated": b(lambda t: next(c for c in t["conflicts"] if c["status"] == "contested" or c.get("decided")).update(status="resolved", reason="decided from evidence: none", decided=[])),
     }
 
 def run(T, quiet=False):

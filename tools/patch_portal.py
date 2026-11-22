@@ -37,9 +37,13 @@ ACC = {"v": VER, "built": T["built"], "digest": T["digest"], "legend": {"e": "ch
        "src": SRC, "e": E, "ans": ANS, "ch": CH, "m": M, "w": W, "wo": WO, "tf": T["stats"]["trading_funds"], "pcs": PCS, "pw": PW, "ppp": PPP, "cf": CF, "cfr": CF_RESOLVED, "un": UN,
        "nat": json.loads((ROOT / "data" / "body-nations.json").read_text())}  # tools/nations.py: final nation placement per body
 _CL = json.loads((ROOT / "data" / "classification.json").read_text())  # tools/classify.py: purpose, activity and type of body (purpose and activity MODELLED)
-ACC["cl"] = {k: [v["purpose"], v["activity"], v["btype"]] for k, v in _CL["bodies"].items()}
+ACC["cl"] = {k: [v["purpose"], v["activity"], v["btype"], v["reach"]] for k, v in _CL["bodies"].items()}
+_SA = json.loads((ROOT / "data" / "same-as.json").read_text())  # tools/sameas.py: one record per body
+ACC["web"] = json.loads((ROOT / "data" / "websites.json").read_text())  # tools/websites.py: id -> [own website, source]
+ACC["sa"] = {c: g["members"] for c, g in _SA["groups"].items()}; ACC["sar"] = {c: g["rules"] for c, g in _SA["groups"].items()}
 ACC["clm"] = {"purpose": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["purposes"]}, "activity": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["activities"]},
-              "btype": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["btypes"]}}
+              "btype": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["btypes"]},
+              "reach": {"local": ["A local area", "Works in one council area or a few."], "one": ["One nation", "Works across one of England, Scotland, Wales or Northern Ireland."], "several": ["Several nations", "Works in two or three of the four nations."], "uk": ["The whole UK", "Works across all four nations."], "outside": ["Outside the UK", "A territory or Crown Dependency, or one of its bodies."], "unstated": ["Not stated", "The sources don't say where it works yet."]}}
 _LG = json.loads((ROOT / "data" / "local-government.json").read_text())  # tools/localgov.py: English Devolution Act 2026, current and planned
 ACC["lg"] = {k: v for k, v in _LG.items() if k not in ("two_tier_counties", "missing")}
 ACC["corp"] = json.loads((ROOT / "data" / "corporations.json").read_text())  # tools/corporations.py: one family tree per trading fund or public corporation
@@ -48,6 +52,10 @@ acc_json = json.dumps(ACC, ensure_ascii=False, separators=(",", ":")).replace("<
 # ---------- data block edits ----------
 m = re.search(r'(<script[^>]*id="data"[^>]*>)(.*?)(</script>)', h, re.S); D = json.loads(m.group(2))
 D["v"] = VER; D["built"] = T["built"]
+_DEC = json.loads((ROOT / "sources/evidence/reconciliation-decisions.json").read_text())["names"]  # decided name matches leave the queue
+_DONE = {(d["id"], d["ons"]) for d in _DEC}
+if not all(d.get("evidence") for d in _DEC): sys.exit("a name decision has no evidence")
+D["q"] = [x for x in D["q"] if (x["id"], x["ons"]) not in _DONE]
 chk = subprocess.run([sys.executable, str(TOOLS / "check.py")], capture_output=True, text=True)  # noqa: S603 fixed interpreter and script path, no input
 neg = subprocess.run([sys.executable, str(TOOLS / "check.py"), "--negative"], capture_output=True, text=True)  # noqa: S603
 if chk.returncode or neg.returncode: sys.exit("accountability checks failed; nothing written\n" + chk.stdout + neg.stdout)
@@ -89,6 +97,15 @@ h = once(h, '$("#stdRows").innerHTML = std.map(s => `<tr><td>${esc(s[0])}</td><t
          '$("#stdRows").innerHTML = std.map(s => `<tr><td>${s[3] ? `<a href="${esc(s[3])}" rel="noopener">${esc(s[0])}</a>` : esc(s[0])}</td><td>${esc(s[1])}</td><td>${esc(s[2])}</td></tr>`).join("");', "standards rows")
 h = once(h, '<th scope="col">Standard</th><th scope="col">Where it applies</th></tr>', '<th scope="col">Standard</th><th scope="col">Where it applies</th><th scope="col">Status</th></tr>', "standards head")
 h = once(h, '<div class="card" id="s-mog">', (TOOLS / "localgov-view.html").read_text() + '<div class="card" id="s-mog">', "localgov")  # most important first: what is changing now
+h = once(h, '<option value="fam">Family</option><option value="nat">Nation</option><option value="sec">ONS sector</option></select>', '<option value="btype">Type of body</option><option value="purpose">What it is for</option><option value="activity">What it does</option><option value="nation">Nation</option><option value="reach">Geography</option><option value="fam">Source family</option><option value="sec">ONS sector</option></select>', "register group options")
+h = once(h, '<th scope="col"><button class="sortbtn" data-sort="fam">Family and kind</button></th><th scope="col">Nation</th>', '<th scope="col"><button class="sortbtn" data-sort="fam">Type</button></th><th scope="col">What it is for and does</th><th scope="col">Nation and geography</th>', "register columns")
+h = h.replace('const g = {fam:r => r.fam, nat:r => (r.nat.map(n => NAT[n]).join(", ") || "Not stated"), sec:r => r.ons.sector || "Not classified by ONS"}[FILTER.group];', "const g = REG_GROUP[FILTER.group];")
+h = once(h, 'const gf = FILTER.group ? {fam:r => r.fam, nat:r => (r.nat.map(n => NAT[n]).join(", ") || "Not stated"), sec:r => r.ons.sector || "Not classified by ONS"}[FILTER.group] : null;', "const gf = FILTER.group ? REG_GROUP[FILTER.group] : null;", "register group fn")
+h = once(h, 'head = `<tr><th colspan="5" scope="colgroup"', 'head = `<tr><th colspan="6" scope="colgroup"', "register group colspan")
+h = once(h, '${r.web ? `<dt>Website</dt><dd><a href="${esc(r.web)}" rel="noopener" target="_blank">${esc(r.web)}</a></dd>` : ""}', '${profWeb(r)}', "profile website from the one combined table")
+h = once(h, '$("#exIntro").textContent = `${D.q.length} pairs need someone who knows the bodies.', '$("#exIntro").textContent = D.q.length === 0 ? "Nothing is left for a person. Every pair was decided from the body\'s own page, its founding law or an official archive record, and each decision is kept with its evidence in sources/evidence/reconciliation-decisions.json." : `${D.q.length} pairs need someone who knows the bodies.', "empty review queue says why")
+h = once(h, '</td><td>${esc(r.fam)}<br><span class="muted">${esc(r.kind)}</span></td><td>${esc(r.nat.map(x => NAT[x]).join(", ") || "Not stated")}</td>', '${siteLink(r.id)}${regAlso(r.id)}</td><td>${regType(r)}</td><td>${regWhat(r.id)}</td><td>${regWhere(r.id)}</td>', "register row cells")
+h = once(h, "function filtered(){ return R.filter(r => matches(r, FILTER.q)", "function filtered(){ return R.filter(r => !SA_FOLDED.has(r.id) && matches(r, FILTER.q)", "register: one record per body")
 h = once(h, "  <!-- DATA -->", (TOOLS / "tree-view.html").read_text() + "  <!-- DATA -->", "view")
 h = once(h, "</style>", (TOOLS / "tree-view.css").read_text() + "</style>", "css") if h.count("</style>") == 1 else h.replace("</style>", (TOOLS / "tree-view.css").read_text() + "</style>", 1)
 ICONS = '<symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol><symbol id="i-coin" viewBox="0 0 24 24"><ellipse cx="12" cy="7" rx="7" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 7v10c0 1.7 3.1 3 7 3s7-1.3 7-3V7M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>'

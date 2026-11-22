@@ -1,0 +1,1903 @@
+{
+ "about": "planning.data.gov.uk local-authority dataset (MHCLG), read 22 November 2026: each authority's official website, keyed by its three-letter reference.",
+ "url": "https://www.planning.data.gov.uk/dataset/local-authority",
+ "licence": "Open Government Licence v3.0",
+ "sha256": "1a174434b2184071392a710ae121119dadbd42b32646a56623ef4df61018ce4d",
+ "websites": {
+  "ADU": {
+   "name": "Adur District Council",
+   "website": "https://www.adur-worthing.gov.uk",
+   "end_date": ""
+  },
+  "ALL": {
+   "name": "Allerdale Borough Council",
+   "website": "https://www.allerdale.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "AMB": {
+   "name": "Amber Valley Borough Council",
+   "website": "https://www.ambervalley.gov.uk",
+   "end_date": ""
+  },
+  "ARU": {
+   "name": "Arun District Council",
+   "website": "https://www.arun.gov.uk",
+   "end_date": ""
+  },
+  "ASF": {
+   "name": "Ashford Borough Council",
+   "website": "https://www.ashford.gov.uk",
+   "end_date": ""
+  },
+  "ASH": {
+   "name": "Ashfield District Council",
+   "website": "https://www.ashfield.gov.uk",
+   "end_date": ""
+  },
+  "AYL": {
+   "name": "Aylesbury Vale District Council",
+   "website": "https://www.aylesburyvaledc.gov.uk",
+   "end_date": "2020-03-31"
+  },
+  "BAB": {
+   "name": "Babergh District Council",
+   "website": "https://www.babergh.gov.uk",
+   "end_date": ""
+  },
+  "BAE": {
+   "name": "Bassetlaw District Council",
+   "website": "https://www.bassetlaw.gov.uk",
+   "end_date": ""
+  },
+  "BAI": {
+   "name": "Basildon Borough Council",
+   "website": "https://www.basildon.gov.uk",
+   "end_date": ""
+  },
+  "BAN": {
+   "name": "Basingstoke and Deane Borough Council",
+   "website": "https://www.basingstoke.gov.uk",
+   "end_date": ""
+  },
+  "BAR": {
+   "name": "Barrow-in-Furness Borough Council",
+   "website": "https://www.barrowbc.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "BAS": {
+   "name": "Bath and North East Somerset Council",
+   "website": "https://www.bathnes.gov.uk",
+   "end_date": ""
+  },
+  "BBD": {
+   "name": "Blackburn with Darwen Borough Council",
+   "website": "https://www.blackburn.gov.uk",
+   "end_date": ""
+  },
+  "BDF": {
+   "name": "Bedford Borough Council",
+   "website": "https://www.bedford.gov.uk",
+   "end_date": ""
+  },
+  "BDG": {
+   "name": "London Borough of Barking and Dagenham",
+   "website": "https://www.lbbd.gov.uk",
+   "end_date": ""
+  },
+  "BEN": {
+   "name": "London Borough of Brent",
+   "website": "https://www.brent.gov.uk",
+   "end_date": ""
+  },
+  "BEX": {
+   "name": "London Borough of Bexley",
+   "website": "https://www.bexley.gov.uk",
+   "end_date": ""
+  },
+  "BIR": {
+   "name": "Birmingham City Council",
+   "website": "https://www.birmingham.gov.uk",
+   "end_date": ""
+  },
+  "BKM": {
+   "name": "Buckinghamshire County Council",
+   "website": "https://www.buckscc.gov.uk",
+   "end_date": "2020-03-31"
+  },
+  "BLA": {
+   "name": "Blaby District Council",
+   "website": "https://www.blaby.gov.uk",
+   "end_date": ""
+  },
+  "BMH": {
+   "name": "Bournemouth Borough Council",
+   "website": "https://www.bournemouth.gov.uk",
+   "end_date": "2019-03-31"
+  },
+  "BNE": {
+   "name": "London Borough of Barnet",
+   "website": "https://www.barnet.gov.uk",
+   "end_date": ""
+  },
+  "BNH": {
+   "name": "Brighton and Hove City Council",
+   "website": "https://www.brighton-hove.gov.uk",
+   "end_date": ""
+  },
+  "BNS": {
+   "name": "Barnsley Metropolitan Borough Council",
+   "website": "https://www.barnsley.gov.uk",
+   "end_date": ""
+  },
+  "BOL": {
+   "name": "Bolton Metropolitan Borough Council",
+   "website": "https://www.bolton.gov.uk",
+   "end_date": ""
+  },
+  "BOS": {
+   "name": "Bolsover District Council",
+   "website": "https://www.bolsover.gov.uk",
+   "end_date": ""
+  },
+  "BOT": {
+   "name": "Boston Borough Council",
+   "website": "https://www.boston.gov.uk",
+   "end_date": ""
+  },
+  "BPC": {
+   "name": "Bournemouth, Christchurch and Poole Council",
+   "website": "https://www.bcpcouncil.gov.uk",
+   "end_date": ""
+  },
+  "BPL": {
+   "name": "Blackpool Borough Council",
+   "website": "https://www.blackpool.gov.uk",
+   "end_date": ""
+  },
+  "BRA": {
+   "name": "Braintree District Council",
+   "website": "https://www.braintree.gov.uk",
+   "end_date": ""
+  },
+  "BRC": {
+   "name": "Bracknell Forest Council",
+   "website": "https://www.bracknell-forest.gov.uk/",
+   "end_date": ""
+  },
+  "BRD": {
+   "name": "City of Bradford Metropolitan District Council",
+   "website": "https://www.bradford.gov.uk",
+   "end_date": ""
+  },
+  "BRE": {
+   "name": "Breckland District Council",
+   "website": "https://www.breckland.gov.uk",
+   "end_date": ""
+  },
+  "BRM": {
+   "name": "Bromsgrove District Council",
+   "website": "https://www.bromsgrove.gov.uk",
+   "end_date": ""
+  },
+  "BRO": {
+   "name": "Broadland District Council",
+   "website": "https://www.broadland.gov.uk",
+   "end_date": ""
+  },
+  "BRT": {
+   "name": "Broxtowe Borough Council",
+   "website": "https://www.broxtowe.gov.uk",
+   "end_date": ""
+  },
+  "BRW": {
+   "name": "Brentwood Borough Council",
+   "website": "https://www.brentwood.gov.uk",
+   "end_date": ""
+  },
+  "BRX": {
+   "name": "Broxbourne Borough Council",
+   "website": "https://www.broxbourne.gov.uk",
+   "end_date": ""
+  },
+  "BRY": {
+   "name": "London Borough of Bromley",
+   "website": "https://www.bromley.gov.uk",
+   "end_date": ""
+  },
+  "BST": {
+   "name": "Bristol City Council",
+   "website": "https://www.bristol.gov.uk",
+   "end_date": ""
+  },
+  "BUC": {
+   "name": "Buckinghamshire Council",
+   "website": "https://www.buckinghamshire.gov.uk/",
+   "end_date": ""
+  },
+  "BUN": {
+   "name": "Burnley Borough Council",
+   "website": "https://www.burnley.gov.uk",
+   "end_date": ""
+  },
+  "BUR": {
+   "name": "Bury Metropolitan Borough Council",
+   "website": "https://www.bury.gov.uk",
+   "end_date": ""
+  },
+  "CAB": {
+   "name": "Cambridge City Council",
+   "website": "https://www.cambridge.gov.uk",
+   "end_date": ""
+  },
+  "CAM": {
+   "name": "Cambridgeshire County Council",
+   "website": "https://www.cambridgeshire.gov.uk",
+   "end_date": ""
+  },
+  "CAN": {
+   "name": "Cannock Chase District Council",
+   "website": "https://www.cannockchasedc.gov.uk",
+   "end_date": ""
+  },
+  "CAR": {
+   "name": "Carlisle City Council",
+   "website": "https://www.carlisle.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "CAS": {
+   "name": "Castle Point Borough Council",
+   "website": "https://www.castlepoint.gov.uk",
+   "end_date": ""
+  },
+  "CAT": {
+   "name": "Canterbury City Council",
+   "website": "https://www.canterbury.gov.uk",
+   "end_date": ""
+  },
+  "CBF": {
+   "name": "Central Bedfordshire Council",
+   "website": "https://www.centralbedfordshire.gov.uk",
+   "end_date": ""
+  },
+  "CHA": {
+   "name": "Charnwood Borough Council",
+   "website": "https://www.charnwood.gov.uk",
+   "end_date": ""
+  },
+  "CHC": {
+   "name": "Christchurch Borough Council",
+   "website": "https://www.dorsetforyou.com",
+   "end_date": "2019-03-31"
+  },
+  "CHE": {
+   "name": "Cheshire East Council",
+   "website": "https://www.cheshireeast.gov.uk",
+   "end_date": ""
+  },
+  "CHI": {
+   "name": "Chichester District Council",
+   "website": "https://www.chichester.gov.uk",
+   "end_date": ""
+  },
+  "CHL": {
+   "name": "Chelmsford City Council",
+   "website": "https://www.chelmsford.gov.uk",
+   "end_date": ""
+  },
+  "CHN": {
+   "name": "Chiltern District Council",
+   "website": "https://www.chiltern.gov.uk",
+   "end_date": "2020-03-31"
+  },
+  "CHO": {
+   "name": "Chorley Borough Council",
+   "website": "https://www.chorley.gov.uk",
+   "end_date": ""
+  },
+  "CHR": {
+   "name": "Cherwell District Council",
+   "website": "https://www.cherwell-dc.gov.uk",
+   "end_date": ""
+  },
+  "CHS": {
+   "name": "Chesterfield Borough Council",
+   "website": "https://www.chesterfield.gov.uk",
+   "end_date": ""
+  },
+  "CHT": {
+   "name": "Cheltenham Borough Council",
+   "website": "https://www.cheltenham.gov.uk",
+   "end_date": ""
+  },
+  "CHW": {
+   "name": "Cheshire West and Chester Council",
+   "website": "https://www.cheshirewestandchester.gov.uk",
+   "end_date": ""
+  },
+  "CLD": {
+   "name": "Calderdale Metropolitan Borough Council",
+   "website": "https://www.calderdale.gov.uk",
+   "end_date": ""
+  },
+  "CMA": {
+   "name": "Cumbria County Council",
+   "website": "https://www.cumbria.gov.uk",
+   "end_date": "2023-04-01"
+  },
+  "CMD": {
+   "name": "London Borough of Camden",
+   "website": "https://www.camden.gov.uk",
+   "end_date": ""
+  },
+  "COL": {
+   "name": "Colchester City Council",
+   "website": "https://www.colchester.gov.uk",
+   "end_date": ""
+  },
+  "CON": {
+   "name": "Cornwall Council",
+   "website": "https://www.cornwall.gov.uk",
+   "end_date": ""
+  },
+  "COP": {
+   "name": "Copeland Borough Council",
+   "website": "https://www.copeland.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "COR": {
+   "name": "Corby Borough Council",
+   "website": "https://www.corby.gov.uk",
+   "end_date": "2021-03-31"
+  },
+  "COT": {
+   "name": "Cotswold District Council",
+   "website": "https://www.cotswold.gov.uk",
+   "end_date": ""
+  },
+  "COV": {
+   "name": "Coventry City Council",
+   "website": "https://www.coventry.gov.uk",
+   "end_date": ""
+  },
+  "CPCA": {
+   "name": "Cambridgeshire and Peterborough Combined Authority",
+   "website": "https://cambridgeshirepeterborough-ca.gov.uk",
+   "end_date": ""
+  },
+  "CRA": {
+   "name": "Craven District Council",
+   "website": "https://www.cravendc.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "CRW": {
+   "name": "Crawley Borough Council",
+   "website": "https://www.crawley.gov.uk",
+   "end_date": ""
+  },
+  "CRY": {
+   "name": "London Borough of Croydon",
+   "website": "https://www.croydon.gov.uk",
+   "end_date": ""
+  },
+  "DAC": {
+   "name": "Dacorum Borough Council",
+   "website": "https://www.dacorum.gov.uk",
+   "end_date": ""
+  },
+  "DAL": {
+   "name": "Darlington Borough Council",
+   "website": "https://www.darlington.gov.uk",
+   "end_date": ""
+  },
+  "DAR": {
+   "name": "Dartford Borough Council",
+   "website": "https://www.dartford.gov.uk",
+   "end_date": ""
+  },
+  "DAV": {
+   "name": "Daventry District Council",
+   "website": "https://www.daventrydc.gov.uk",
+   "end_date": "2021-03-31"
+  },
+  "DBY": {
+   "name": "Derbyshire County Council",
+   "website": "https://www.derbyshire.gov.uk",
+   "end_date": ""
+  },
+  "DEB": {
+   "name": "Derbyshire Dales District Council",
+   "website": "https://www.derbyshiredales.gov.uk",
+   "end_date": ""
+  },
+  "DER": {
+   "name": "Derby City Council",
+   "website": "https://www.derby.gov.uk",
+   "end_date": ""
+  },
+  "DEV": {
+   "name": "Devon County Council",
+   "website": "https://www.devon.gov.uk",
+   "end_date": ""
+  },
+  "DNC": {
+   "name": "Doncaster Metropolitan Borough Council",
+   "website": "https://www.doncaster.gov.uk",
+   "end_date": ""
+  },
+  "DOR": {
+   "name": "Dorset County Council",
+   "website": "https://www.dorsetforyou.com",
+   "end_date": "2019-03-31"
+  },
+  "DOV": {
+   "name": "Dover District Council",
+   "website": "https://www.dover.gov.uk",
+   "end_date": ""
+  },
+  "DST": {
+   "name": "Dorset Council",
+   "website": "https://www.dorsetcouncil.gov.uk",
+   "end_date": ""
+  },
+  "DUD": {
+   "name": "Dudley Metropolitan Borough Council",
+   "website": "https://www.dudley.gov.uk",
+   "end_date": ""
+  },
+  "DUR": {
+   "name": "Durham County Council",
+   "website": "https://www.durham.gov.uk",
+   "end_date": ""
+  },
+  "EAL": {
+   "name": "London Borough of Ealing",
+   "website": "https://www.ealing.gov.uk",
+   "end_date": ""
+  },
+  "EAS": {
+   "name": "Eastbourne Borough Council",
+   "website": "https://www.eastbourne.gov.uk",
+   "end_date": ""
+  },
+  "EAT": {
+   "name": "Eastleigh Borough Council",
+   "website": "https://www.eastleigh.gov.uk",
+   "end_date": ""
+  },
+  "ECA": {
+   "name": "East Cambridgeshire District Council",
+   "website": "https://www.eastcambs.gov.uk",
+   "end_date": ""
+  },
+  "EDE": {
+   "name": "East Devon District Council",
+   "website": "https://eastdevon.gov.uk",
+   "end_date": ""
+  },
+  "EDN": {
+   "name": "Eden District Council",
+   "website": "https://www.eden.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "EDO": {
+   "name": "East Dorset District Council",
+   "website": "http://www.eastdorsetdc.gov.uk/",
+   "end_date": "2019-03-31"
+  },
+  "EHA": {
+   "name": "East Hampshire District Council",
+   "website": "https://www.easthants.gov.uk",
+   "end_date": ""
+  },
+  "EHE": {
+   "name": "East Hertfordshire District Council",
+   "website": "https://www.eastherts.gov.uk",
+   "end_date": ""
+  },
+  "ELI": {
+   "name": "East Lindsey District Council",
+   "website": "https://www.e-lindsey.gov.uk",
+   "end_date": ""
+  },
+  "ELM": {
+   "name": "Elmbridge Borough Council",
+   "website": "https://www.elmbridge.gov.uk",
+   "end_date": ""
+  },
+  "ENF": {
+   "name": "London Borough of Enfield",
+   "website": "https://www.enfield.gov.uk",
+   "end_date": ""
+  },
+  "ENO": {
+   "name": "East Northamptonshire Council",
+   "website": "https://www.east-northamptonshire.gov.uk",
+   "end_date": "2021-03-31"
+  },
+  "EPP": {
+   "name": "Epping Forest District Council",
+   "website": "https://www.eppingforestdc.gov.uk",
+   "end_date": ""
+  },
+  "EPS": {
+   "name": "Epsom and Ewell Borough Council",
+   "website": "https://www.epsom-ewell.gov.uk",
+   "end_date": ""
+  },
+  "ERE": {
+   "name": "Erewash Borough Council",
+   "website": "https://www.erewash.gov.uk",
+   "end_date": ""
+  },
+  "ERY": {
+   "name": "East Riding of Yorkshire Council",
+   "website": "https://www.eastriding.gov.uk/",
+   "end_date": ""
+  },
+  "ESK": {
+   "name": "East Suffolk Council",
+   "website": "https://www.eastsuffolk.gov.uk",
+   "end_date": ""
+  },
+  "ESS": {
+   "name": "Essex County Council",
+   "website": "https://www.essex.gov.uk/",
+   "end_date": ""
+  },
+  "EST": {
+   "name": "East Staffordshire Borough Council",
+   "website": "https://www.eaststaffsbc.gov.uk",
+   "end_date": ""
+  },
+  "ESX": {
+   "name": "East Sussex County Council",
+   "website": "https://www.eastsussex.gov.uk",
+   "end_date": ""
+  },
+  "EXE": {
+   "name": "Exeter City Council",
+   "website": "https://www.exeter.gov.uk",
+   "end_date": ""
+  },
+  "FAR": {
+   "name": "Fareham Borough Council",
+   "website": "https://www.fareham.gov.uk",
+   "end_date": ""
+  },
+  "FEN": {
+   "name": "Fenland District Council",
+   "website": "https://www.fenland.gov.uk",
+   "end_date": ""
+  },
+  "FOE": {
+   "name": "Forest of Dean District Council",
+   "website": "https://www.fdean.gov.uk",
+   "end_date": ""
+  },
+  "FOR": {
+   "name": "Forest Heath District Council",
+   "website": "https://www.forest-heath.gov.uk",
+   "end_date": "2019-03-31"
+  },
+  "FYL": {
+   "name": "Fylde Borough Council",
+   "website": "https://www.fylde.gov.uk",
+   "end_date": ""
+  },
+  "GAT": {
+   "name": "Gateshead Metropolitan Borough Council",
+   "website": "https://www.gateshead.gov.uk",
+   "end_date": ""
+  },
+  "GED": {
+   "name": "Gedling Borough Council",
+   "website": "https://www.gedling.gov.uk",
+   "end_date": ""
+  },
+  "GLA": {
+   "name": "Greater London Authority",
+   "website": "https://www.london.gov.uk",
+   "end_date": ""
+  },
+  "GLO": {
+   "name": "Gloucester City Council",
+   "website": "https://www.gloucester.gov.uk",
+   "end_date": ""
+  },
+  "GLS": {
+   "name": "Gloucestershire County Council",
+   "website": "https://www.gloucestershire.gov.uk",
+   "end_date": ""
+  },
+  "GMCA": {
+   "name": "Greater Manchester Combined Authority",
+   "website": "https://www.greatermanchester-ca.gov.uk",
+   "end_date": ""
+  },
+  "GOS": {
+   "name": "Gosport Borough Council",
+   "website": "https://www.gosport.gov.uk",
+   "end_date": ""
+  },
+  "GRA": {
+   "name": "Gravesham Borough Council",
+   "website": "https://www.gravesham.gov.uk",
+   "end_date": ""
+  },
+  "GRE": {
+   "name": "Royal Borough of Greenwich",
+   "website": "https://www.royalgreenwich.gov.uk",
+   "end_date": ""
+  },
+  "GRT": {
+   "name": "Guildford Borough Council",
+   "website": "https://www.guildford.gov.uk",
+   "end_date": ""
+  },
+  "GRY": {
+   "name": "Great Yarmouth Borough Council",
+   "website": "https://www.great-yarmouth.gov.uk",
+   "end_date": ""
+  },
+  "HAA": {
+   "name": "Havant Borough Council",
+   "website": "https://www.havant.gov.uk",
+   "end_date": ""
+  },
+  "HAE": {
+   "name": "Hambleton District Council",
+   "website": "https://www.hambleton.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "HAG": {
+   "name": "Harrogate Borough Council",
+   "website": "https://www.harrogate.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "HAL": {
+   "name": "Halton Borough Council",
+   "website": "https://www.halton.gov.uk",
+   "end_date": ""
+  },
+  "HAM": {
+   "name": "Hampshire County Council",
+   "website": "https://www.hants.gov.uk",
+   "end_date": ""
+  },
+  "HAO": {
+   "name": "Harborough District Council",
+   "website": "https://www.harborough.gov.uk",
+   "end_date": ""
+  },
+  "HAR": {
+   "name": "Harlow District Council",
+   "website": "https://www.harlow.gov.uk",
+   "end_date": ""
+  },
+  "HAS": {
+   "name": "Hastings Borough Council",
+   "website": "https://www.hastings.gov.uk",
+   "end_date": ""
+  },
+  "HAT": {
+   "name": "Hart District Council",
+   "website": "https://www.hart.gov.uk",
+   "end_date": ""
+  },
+  "HAV": {
+   "name": "London Borough of Havering",
+   "website": "https://www.havering.gov.uk",
+   "end_date": ""
+  },
+  "HCK": {
+   "name": "London Borough of Hackney",
+   "website": "https://www.hackney.gov.uk",
+   "end_date": ""
+  },
+  "HEF": {
+   "name": "Herefordshire Council",
+   "website": "https://www.herefordshire.gov.uk",
+   "end_date": ""
+  },
+  "HER": {
+   "name": "Hertsmere Borough Council",
+   "website": "https://www.hertsmere.gov.uk",
+   "end_date": ""
+  },
+  "HIG": {
+   "name": "High Peak Borough Council",
+   "website": "https://www.highpeak.gov.uk",
+   "end_date": ""
+  },
+  "HIL": {
+   "name": "London Borough of Hillingdon",
+   "website": "https://www.hillingdon.gov.uk",
+   "end_date": ""
+  },
+  "HIN": {
+   "name": "Hinckley and Bosworth Borough Council",
+   "website": "https://www.hinckley-bosworth.gov.uk",
+   "end_date": ""
+  },
+  "HMF": {
+   "name": "London Borough of Hammersmith & Fulham",
+   "website": "https://www.lbhf.gov.uk/",
+   "end_date": ""
+  },
+  "HNS": {
+   "name": "London Borough of Hounslow",
+   "website": "https://www.hounslow.gov.uk",
+   "end_date": ""
+  },
+  "HOR": {
+   "name": "Horsham District Council",
+   "website": "https://www.horsham.gov.uk",
+   "end_date": ""
+  },
+  "HPL": {
+   "name": "Hartlepool Borough Council",
+   "website": "https://www.hartlepool.gov.uk",
+   "end_date": ""
+  },
+  "HRT": {
+   "name": "Hertfordshire County Council",
+   "website": "https://www.hertsdirect.org/",
+   "end_date": ""
+  },
+  "HRW": {
+   "name": "London Borough of Harrow",
+   "website": "https://www.harrow.gov.uk",
+   "end_date": ""
+  },
+  "HRY": {
+   "name": "London Borough of Haringey",
+   "website": "https://www.haringey.gov.uk",
+   "end_date": ""
+  },
+  "HUN": {
+   "name": "Huntingdonshire District Council",
+   "website": "https://www.huntingdonshire.gov.uk",
+   "end_date": ""
+  },
+  "HYN": {
+   "name": "Hyndburn Borough Council",
+   "website": "https://www.hyndburnbc.gov.uk",
+   "end_date": ""
+  },
+  "IOS": {
+   "name": "Council of the Isles of Scilly",
+   "website": "https://www.scilly.gov.uk",
+   "end_date": ""
+  },
+  "IOW": {
+   "name": "Isle of Wight Council",
+   "website": "https://www.iow.gov.uk/",
+   "end_date": ""
+  },
+  "IPS": {
+   "name": "Ipswich Borough Council",
+   "website": "https://www.ipswich.gov.uk",
+   "end_date": ""
+  },
+  "ISL": {
+   "name": "London Borough of Islington",
+   "website": "https://www.islington.gov.uk",
+   "end_date": ""
+  },
+  "KEC": {
+   "name": "Royal Borough of Kensington and Chelsea",
+   "website": "https://www.rbkc.gov.uk/",
+   "end_date": ""
+  },
+  "KEN": {
+   "name": "Kent County Council",
+   "website": "https://www.kent.gov.uk",
+   "end_date": ""
+  },
+  "KET": {
+   "name": "Kettering Borough Council",
+   "website": "https://www.kettering.gov.uk",
+   "end_date": "2021-03-31"
+  },
+  "KHL": {
+   "name": "Hull City Council",
+   "website": "https://www.hullcc.gov.uk",
+   "end_date": ""
+  },
+  "KIN": {
+   "name": "Borough Council of King's Lynn and West Norfolk",
+   "website": "https://www.west-norfolk.gov.uk",
+   "end_date": ""
+  },
+  "KIR": {
+   "name": "Kirklees Council",
+   "website": "https://www.kirklees.gov.uk",
+   "end_date": ""
+  },
+  "KTT": {
+   "name": "Royal Borough of Kingston upon Thames",
+   "website": "https://www.kingston.gov.uk",
+   "end_date": ""
+  },
+  "KWL": {
+   "name": "Knowsley Metropolitan Borough Council",
+   "website": "https://www.knowsley.gov.uk",
+   "end_date": ""
+  },
+  "LAC": {
+   "name": "Lancaster City Council",
+   "website": "https://www.lancaster.gov.uk",
+   "end_date": ""
+  },
+  "LAN": {
+   "name": "Lancashire County Council",
+   "website": "https://www.lancashire.gov.uk",
+   "end_date": ""
+  },
+  "LBH": {
+   "name": "London Borough of Lambeth",
+   "website": "https://www.lambeth.gov.uk",
+   "end_date": ""
+  },
+  "LCE": {
+   "name": "Leicester City Council",
+   "website": "https://www.leicester.gov.uk",
+   "end_date": ""
+  },
+  "LCR": {
+   "name": "Liverpool City Region",
+   "website": "https://www.liverpoolcityregion-ca.gov.uk",
+   "end_date": ""
+  },
+  "LDS": {
+   "name": "Leeds City Council",
+   "website": "https://www.leeds.gov.uk",
+   "end_date": ""
+  },
+  "LEC": {
+   "name": "Leicestershire County Council",
+   "website": "https://www.leicestershire.gov.uk/",
+   "end_date": ""
+  },
+  "LEE": {
+   "name": "Lewes District Council",
+   "website": "https://www.lewes-eastbourne.gov.uk",
+   "end_date": ""
+  },
+  "LEW": {
+   "name": "London Borough of Lewisham",
+   "website": "https://www.lewisham.gov.uk",
+   "end_date": ""
+  },
+  "LIC": {
+   "name": "City of Lincoln Council",
+   "website": "https://www.lincoln.gov.uk",
+   "end_date": ""
+  },
+  "LIF": {
+   "name": "Lichfield District Council",
+   "website": "https://www.lichfielddc.gov.uk",
+   "end_date": ""
+  },
+  "LIN": {
+   "name": "Lincolnshire County Council",
+   "website": "https://www.lincolnshire.gov.uk",
+   "end_date": ""
+  },
+  "LIV": {
+   "name": "Liverpool City Council",
+   "website": "https://www.liverpool.gov.uk",
+   "end_date": ""
+  },
+  "LND": {
+   "name": "City of London Corporation",
+   "website": "https://www.cityoflondon.gov.uk/",
+   "end_date": ""
+  },
+  "LUT": {
+   "name": "Luton Borough Council",
+   "website": "https://www.luton.gov.uk",
+   "end_date": ""
+  },
+  "MAI": {
+   "name": "Maidstone Borough Council",
+   "website": "https://www.maidstone.gov.uk",
+   "end_date": ""
+  },
+  "MAL": {
+   "name": "Maldon District Council",
+   "website": "https://www.maldon.gov.uk",
+   "end_date": ""
+  },
+  "MAN": {
+   "name": "Manchester City Council",
+   "website": "https://www.manchester.gov.uk",
+   "end_date": ""
+  },
+  "MAS": {
+   "name": "Mansfield District Council",
+   "website": "https://www.mansfield.gov.uk",
+   "end_date": ""
+  },
+  "MAV": {
+   "name": "Malvern Hills District Council",
+   "website": "https://www.malvernhills.gov.uk",
+   "end_date": ""
+  },
+  "MDB": {
+   "name": "Middlesbrough Borough Council",
+   "website": "https://www.middlesbrough.gov.uk",
+   "end_date": ""
+  },
+  "MDE": {
+   "name": "Mid Devon District Council",
+   "website": "https://www.middevon.gov.uk",
+   "end_date": ""
+  },
+  "MDW": {
+   "name": "Medway Council",
+   "website": "https://www.medway.gov.uk",
+   "end_date": ""
+  },
+  "MEL": {
+   "name": "Melton Borough Council",
+   "website": "https://www.melton.gov.uk",
+   "end_date": ""
+  },
+  "MEN": {
+   "name": "Mendip District Council",
+   "website": "https://www.mendip.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "MIK": {
+   "name": "Milton Keynes City Council",
+   "website": "https://www.milton-keynes.gov.uk/",
+   "end_date": ""
+  },
+  "MOL": {
+   "name": "Mole Valley District Council",
+   "website": "https://www.molevalley.gov.uk",
+   "end_date": ""
+  },
+  "MRT": {
+   "name": "London Borough of Merton",
+   "website": "https://www.merton.gov.uk",
+   "end_date": ""
+  },
+  "MSS": {
+   "name": "Mid Sussex District Council",
+   "website": "https://www.midsussex.gov.uk",
+   "end_date": ""
+  },
+  "MSU": {
+   "name": "Mid Suffolk District Council",
+   "website": "https://www.midsuffolk.gov.uk",
+   "end_date": ""
+  },
+  "NBL": {
+   "name": "Northumberland County Council",
+   "website": "https://www.northumberland.gov.uk",
+   "end_date": ""
+  },
+  "NDE": {
+   "name": "North Devon District Council",
+   "website": "https://www.northdevon.gov.uk",
+   "end_date": ""
+  },
+  "NDO": {
+   "name": "North Dorset District Council",
+   "website": "https://www.dorsetforyou.com",
+   "end_date": "2019-03-31"
+  },
+  "NEA": {
+   "name": "Newark and Sherwood District Council",
+   "website": "https://www.newark-sherwooddc.gov.uk",
+   "end_date": ""
+  },
+  "NEC": {
+   "name": "Newcastle-under-Lyme Borough Council",
+   "website": "https://www.newcastle-staffs.gov.uk",
+   "end_date": ""
+  },
+  "NECA": {
+   "name": "North East Combined Authority",
+   "website": "https://northeastca.gov.uk/",
+   "end_date": "2024-05-06"
+  },
+  "NED": {
+   "name": "North East Derbyshire District Council",
+   "website": "https://www.ne-derbyshire.gov.uk",
+   "end_date": ""
+  },
+  "NEL": {
+   "name": "North East Lincolnshire Council",
+   "website": "https://www.nelincs.gov.uk",
+   "end_date": ""
+  },
+  "NET": {
+   "name": "Newcastle City Council",
+   "website": "https://www.newcastle.gov.uk",
+   "end_date": ""
+  },
+  "NEW": {
+   "name": "New Forest District Council",
+   "website": "https://www.newforestdc.gov.uk",
+   "end_date": ""
+  },
+  "NFK": {
+   "name": "Norfolk County Council",
+   "website": "https://www.norfolk.gov.uk",
+   "end_date": ""
+  },
+  "NGM": {
+   "name": "Nottingham City Council",
+   "website": "https://www.nottinghamcity.gov.uk",
+   "end_date": ""
+  },
+  "NHE": {
+   "name": "North Hertfordshire District Council",
+   "website": "https://www.north-herts.gov.uk",
+   "end_date": ""
+  },
+  "NKE": {
+   "name": "North Kesteven District Council",
+   "website": "https://www.n-kesteven.gov.uk",
+   "end_date": ""
+  },
+  "NLN": {
+   "name": "North Lincolnshire Council",
+   "website": "https://www.northlincs.gov.uk",
+   "end_date": ""
+  },
+  "NNO": {
+   "name": "North Norfolk District Council",
+   "website": "https://www.northnorfolk.org/",
+   "end_date": ""
+  },
+  "NOR": {
+   "name": "Northampton Borough Council",
+   "website": "https://www.northampton.gov.uk",
+   "end_date": "2020-03-31"
+  },
+  "NOW": {
+   "name": "Norwich City Council",
+   "website": "https://www.norwich.gov.uk",
+   "end_date": ""
+  },
+  "NSM": {
+   "name": "North Somerset Council",
+   "website": "https://www.n-somerset.gov.uk",
+   "end_date": ""
+  },
+  "NTCA": {
+   "name": "North of Tyne Combined Authority",
+   "website": "https://www.northoftyne-ca.gov.uk/",
+   "end_date": "2024-05-07"
+  },
+  "NTH": {
+   "name": "Northamptonshire County Council",
+   "website": "https://www.northamptonshire.gov.uk",
+   "end_date": "2021-03-31"
+  },
+  "NTT": {
+   "name": "Nottinghamshire County Council",
+   "website": "https://www.nottinghamshire.gov.uk/council-and-democracy",
+   "end_date": ""
+  },
+  "NTY": {
+   "name": "North Tyneside Council",
+   "website": "https://www.northtyneside.gov.uk",
+   "end_date": ""
+  },
+  "NUN": {
+   "name": "Nuneaton and Bedworth Borough Council",
+   "website": "https://www.nuneatonandbedworth.gov.uk",
+   "end_date": ""
+  },
+  "NWA": {
+   "name": "North Warwickshire Borough Council",
+   "website": "https://www.northwarks.gov.uk",
+   "end_date": ""
+  },
+  "NWL": {
+   "name": "North West Leicestershire District Council",
+   "website": "https://www.nwleics.gov.uk",
+   "end_date": ""
+  },
+  "NWM": {
+   "name": "London Borough of Newham",
+   "website": "https://www.newham.gov.uk",
+   "end_date": ""
+  },
+  "NYK": {
+   "name": "North Yorkshire County Council",
+   "website": "https://www.northyorks.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "OAD": {
+   "name": "Oadby and Wigston Borough Council",
+   "website": "https://oadby-wigston.gov.uk",
+   "end_date": ""
+  },
+  "OLD": {
+   "name": "Oldham Metropolitan Borough Council",
+   "website": "https://www.oldham.gov.uk",
+   "end_date": ""
+  },
+  "OXF": {
+   "name": "Oxfordshire County Council",
+   "website": "https://www.oxfordshire.gov.uk",
+   "end_date": ""
+  },
+  "OXO": {
+   "name": "Oxford City Council",
+   "website": "https://www.oxford.gov.uk",
+   "end_date": ""
+  },
+  "PEN": {
+   "name": "Pendle Borough Council",
+   "website": "https://www.pendle.gov.uk",
+   "end_date": ""
+  },
+  "PLY": {
+   "name": "Plymouth City Council",
+   "website": "https://www.plymouth.gov.uk",
+   "end_date": ""
+  },
+  "POL": {
+   "name": "Borough of Poole",
+   "website": "https://www.boroughofpoole.com",
+   "end_date": "2019-03-31"
+  },
+  "POR": {
+   "name": "Portsmouth City Council",
+   "website": "https://www.portsmouth.gov.uk",
+   "end_date": ""
+  },
+  "PRE": {
+   "name": "Preston City Council",
+   "website": "https://www.preston.gov.uk",
+   "end_date": ""
+  },
+  "PTE": {
+   "name": "Peterborough City Council",
+   "website": "https://www.peterborough.gov.uk",
+   "end_date": ""
+  },
+  "PUR": {
+   "name": "Purbeck District Council",
+   "website": "https://www.dorsetforyou.com",
+   "end_date": "2019-03-31"
+  },
+  "RCC": {
+   "name": "Redcar and Cleveland Borough Council",
+   "website": "https://www.redcar-cleveland.gov.uk",
+   "end_date": ""
+  },
+  "RCH": {
+   "name": "Rochdale Metropolitan Borough Council",
+   "website": "https://www.rochdale.gov.uk",
+   "end_date": ""
+  },
+  "RDB": {
+   "name": "London Borough of Redbridge",
+   "website": "https://www.redbridge.gov.uk",
+   "end_date": ""
+  },
+  "RDG": {
+   "name": "Reading Borough Council",
+   "website": "http://www.reading.gov.uk",
+   "end_date": ""
+  },
+  "RED": {
+   "name": "Redditch Borough Council",
+   "website": "https://www.redditchbc.gov.uk",
+   "end_date": ""
+  },
+  "REI": {
+   "name": "Reigate and Banstead Borough Council",
+   "website": "https://www.reigate-banstead.gov.uk",
+   "end_date": ""
+  },
+  "RIB": {
+   "name": "Ribble Valley Borough Council",
+   "website": "https://www.ribblevalley.gov.uk",
+   "end_date": ""
+  },
+  "RIC": {
+   "name": "London Borough of Richmond upon Thames",
+   "website": "https://www.richmond.gov.uk",
+   "end_date": ""
+  },
+  "RIH": {
+   "name": "Richmondshire District Council",
+   "website": "https://richmondshire.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "ROC": {
+   "name": "Rochford District Council",
+   "website": "https://www.rochford.gov.uk",
+   "end_date": ""
+  },
+  "ROH": {
+   "name": "Rother District Council",
+   "website": "https://www.rother.gov.uk",
+   "end_date": ""
+  },
+  "ROS": {
+   "name": "Rossendale Borough Council",
+   "website": "https://www.rossendale.gov.uk",
+   "end_date": ""
+  },
+  "ROT": {
+   "name": "Rotherham Metropolitan Borough Council",
+   "website": "https://www.rotherham.gov.uk",
+   "end_date": ""
+  },
+  "RUG": {
+   "name": "Rugby Borough Council",
+   "website": "https://www.rugby.gov.uk",
+   "end_date": ""
+  },
+  "RUH": {
+   "name": "Rushmoor Borough Council",
+   "website": "https://www.rushmoor.gov.uk",
+   "end_date": ""
+  },
+  "RUN": {
+   "name": "Runnymede Borough Council",
+   "website": "https://www.runnymede.gov.uk",
+   "end_date": ""
+  },
+  "RUS": {
+   "name": "Rushcliffe Borough Council",
+   "website": "https://www.rushcliffe.gov.uk",
+   "end_date": ""
+  },
+  "RUT": {
+   "name": "Rutland County Council",
+   "website": "https://www.rutland.gov.uk",
+   "end_date": ""
+  },
+  "RYE": {
+   "name": "Ryedale District Council",
+   "website": "https://www.ryedale.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "SAL": {
+   "name": "St Albans City and District Council",
+   "website": "https://www.stalbans.gov.uk",
+   "end_date": ""
+  },
+  "SAW": {
+   "name": "Sandwell Metropolitan Borough Council",
+   "website": "https://www.sandwell.gov.uk",
+   "end_date": ""
+  },
+  "SBU": {
+   "name": "South Bucks District Council",
+   "website": "https://www.southbucks.gov.uk",
+   "end_date": "2020-03-31"
+  },
+  "SCA": {
+   "name": "South Cambridgeshire District Council",
+   "website": "https://www.scambs.gov.uk",
+   "end_date": ""
+  },
+  "SCE": {
+   "name": "Scarborough Borough Council",
+   "website": "https://www.scarborough.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "SYMCA": {
+   "name": "South Yorkshire Mayoral Combined Authority",
+   "website": "https://www.southyorkshire-ca.gov.uk/",
+   "end_date": ""
+  },
+  "SDE": {
+   "name": "South Derbyshire District Council",
+   "website": "https://www.southderbyshire.gov.uk/",
+   "end_date": ""
+  },
+  "SED": {
+   "name": "St Edmundsbury Borough Council",
+   "website": "https://www.stedmundsbury.gov.uk",
+   "end_date": "2019-03-31"
+  },
+  "SEG": {
+   "name": "Sedgemoor District Council",
+   "website": "https://www.sedgemoor.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "SEL": {
+   "name": "Selby District Council",
+   "website": "https://www.selby.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "SEV": {
+   "name": "Sevenoaks District Council",
+   "website": "https://www.sevenoaks.gov.uk",
+   "end_date": ""
+  },
+  "SFK": {
+   "name": "Suffolk County Council",
+   "website": "https://www.suffolk.gov.uk",
+   "end_date": ""
+  },
+  "SFT": {
+   "name": "Sefton Metropolitan Borough Council",
+   "website": "https://www.sefton.gov.uk",
+   "end_date": ""
+  },
+  "SGC": {
+   "name": "South Gloucestershire Council",
+   "website": "https://www.southglos.gov.uk",
+   "end_date": ""
+  },
+  "SHA": {
+   "name": "South Hams District Council",
+   "website": "https://www.southhams.gov.uk/",
+   "end_date": ""
+  },
+  "SHE": {
+   "name": "Folkestone and Hythe Council",
+   "website": "https://www.folkestone-hythe.gov.uk",
+   "end_date": ""
+  },
+  "SHF": {
+   "name": "Sheffield City Council",
+   "website": "https://www.sheffield.gov.uk",
+   "end_date": ""
+  },
+  "SHN": {
+   "name": "St Helens Council",
+   "website": "https://www.sthelens.gov.uk",
+   "end_date": ""
+  },
+  "SHO": {
+   "name": "South Holland District Council",
+   "website": "https://www.sholland.gov.uk",
+   "end_date": ""
+  },
+  "SHR": {
+   "name": "Shropshire Council",
+   "website": "https://www.shropshire.gov.uk",
+   "end_date": ""
+  },
+  "SKE": {
+   "name": "South Kesteven District Council",
+   "website": "https://www.southkesteven.gov.uk",
+   "end_date": ""
+  },
+  "SKP": {
+   "name": "Stockport Metropolitan Borough Council",
+   "website": "https://www.stockport.gov.uk",
+   "end_date": ""
+  },
+  "SLA": {
+   "name": "South Lakeland District Council",
+   "website": "https://www.southlakeland.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "SLF": {
+   "name": "Salford City Council",
+   "website": "https://www.salford.gov.uk",
+   "end_date": ""
+  },
+  "SLG": {
+   "name": "Slough Borough Council",
+   "website": "https://www.slough.gov.uk",
+   "end_date": ""
+  },
+  "SND": {
+   "name": "Sunderland City Council",
+   "website": "https://www.sunderland.gov.uk",
+   "end_date": ""
+  },
+  "SNO": {
+   "name": "South Norfolk District Council",
+   "website": "https://www.south-norfolk.gov.uk",
+   "end_date": ""
+  },
+  "SNR": {
+   "name": "South Northamptonshire Council",
+   "website": "https://www.southnorthants.gov.uk",
+   "end_date": "2021-03-31"
+  },
+  "SOL": {
+   "name": "Solihull Metropolitan Borough Council",
+   "website": "https://www.solihull.gov.uk",
+   "end_date": ""
+  },
+  "SOM": {
+   "name": "Somerset County Council",
+   "website": "https://www.somerset.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "SOS": {
+   "name": "Southend-on-Sea Borough Council",
+   "website": "https://www.southend.gov.uk",
+   "end_date": ""
+  },
+  "SOX": {
+   "name": "South Oxfordshire District Council",
+   "website": "https://www.southoxon.gov.uk",
+   "end_date": ""
+  },
+  "SPE": {
+   "name": "Spelthorne Borough Council",
+   "website": "https://www.spelthorne.gov.uk",
+   "end_date": ""
+  },
+  "SRI": {
+   "name": "South Ribble Borough Council",
+   "website": "https://www.southribble.gov.uk",
+   "end_date": ""
+  },
+  "SRY": {
+   "name": "Surrey County Council",
+   "website": "https://www.surreycc.gov.uk",
+   "end_date": ""
+  },
+  "SSO": {
+   "name": "South Somerset District Council",
+   "website": "https://www.southsomerset.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "SST": {
+   "name": "South Staffordshire Council",
+   "website": "https://www.sstaffs.gov.uk",
+   "end_date": ""
+  },
+  "STA": {
+   "name": "Stafford Borough Council",
+   "website": "https://www.staffordbc.gov.uk",
+   "end_date": ""
+  },
+  "STE": {
+   "name": "Stoke-on-Trent City Council",
+   "website": "https://www.stoke.gov.uk",
+   "end_date": ""
+  },
+  "STF": {
+   "name": "Staffordshire Moorlands District Council",
+   "website": "https://www.staffsmoorlands.gov.uk",
+   "end_date": ""
+  },
+  "STH": {
+   "name": "Southampton City Council",
+   "website": "https://www.southampton.gov.uk/",
+   "end_date": ""
+  },
+  "STN": {
+   "name": "London Borough of Sutton",
+   "website": "https://www.sutton.gov.uk",
+   "end_date": ""
+  },
+  "STO": {
+   "name": "Stroud District Council",
+   "website": "https://www.stroud.gov.uk",
+   "end_date": ""
+  },
+  "STR": {
+   "name": "Stratford-on-Avon District Council",
+   "website": "https://www.stratford.gov.uk",
+   "end_date": ""
+  },
+  "STS": {
+   "name": "Staffordshire County Council",
+   "website": "https://www.staffordshire.gov.uk",
+   "end_date": ""
+  },
+  "STT": {
+   "name": "Stockton-on-Tees Borough Council",
+   "website": "https://www.stockton.gov.uk",
+   "end_date": ""
+  },
+  "STV": {
+   "name": "Stevenage Borough Council",
+   "website": "https://www.stevenage.gov.uk",
+   "end_date": ""
+  },
+  "STY": {
+   "name": "South Tyneside Council",
+   "website": "https://www.southtyneside.info",
+   "end_date": ""
+  },
+  "SUF": {
+   "name": "Suffolk Coastal District Council",
+   "website": "https://www.suffolkcoastal.gov.uk",
+   "end_date": "2019-03-31"
+  },
+  "SUR": {
+   "name": "Surrey Heath Borough Council",
+   "website": "https://www.surreyheath.gov.uk",
+   "end_date": ""
+  },
+  "SWD": {
+   "name": "Swindon Borough Council",
+   "website": "https://www.swindon.gov.uk",
+   "end_date": ""
+  },
+  "SWK": {
+   "name": "London Borough of Southwark",
+   "website": "https://www.southwark.gov.uk",
+   "end_date": ""
+  },
+  "SWL": {
+   "name": "Swale Borough Council",
+   "website": "https://www.swale.gov.uk",
+   "end_date": ""
+  },
+  "SWT": {
+   "name": "Somerset West and Taunton Council",
+   "website": "https://www.somersetwestandtaunton.gov.uk",
+   "end_date": "2023-03-31"
+  },
+  "TAM": {
+   "name": "Tameside Metropolitan Borough Council",
+   "website": "https://www.tameside.gov.uk",
+   "end_date": ""
+  },
+  "TAN": {
+   "name": "Tandridge District Council",
+   "website": "https://www.tandridge.gov.uk",
+   "end_date": ""
+  },
+  "TAU": {
+   "name": "Taunton Deane Borough Council",
+   "website": "https://www.tauntondeane.gov.uk",
+   "end_date": "2019-03-31"
+  },
+  "TAW": {
+   "name": "Tamworth Borough Council",
+   "website": "https://www.tamworth.gov.uk",
+   "end_date": ""
+  },
+  "TEI": {
+   "name": "Teignbridge District Council",
+   "website": "https://www.teignbridge.gov.uk",
+   "end_date": ""
+  },
+  "TEN": {
+   "name": "Tendring District Council",
+   "website": "https://www.tendringdc.gov.uk",
+   "end_date": ""
+  },
+  "TES": {
+   "name": "Test Valley Borough Council",
+   "website": "https://www.testvalley.gov.uk",
+   "end_date": ""
+  },
+  "TEW": {
+   "name": "Tewkesbury Borough Council",
+   "website": "https://tewkesbury.gov.uk",
+   "end_date": ""
+  },
+  "TFW": {
+   "name": "Telford & Wrekin Council",
+   "website": "https://www.telford.gov.uk",
+   "end_date": ""
+  },
+  "THA": {
+   "name": "Thanet District Council",
+   "website": "https://thanet.gov.uk",
+   "end_date": ""
+  },
+  "THE": {
+   "name": "Three Rivers District Council",
+   "website": "https://www.threerivers.gov.uk",
+   "end_date": ""
+  },
+  "THR": {
+   "name": "Thurrock Council",
+   "website": "https://www.thurrock.gov.uk",
+   "end_date": ""
+  },
+  "TOB": {
+   "name": "Torbay Council",
+   "website": "https://www.torbay.gov.uk",
+   "end_date": ""
+  },
+  "TON": {
+   "name": "Tonbridge and Malling Borough Council",
+   "website": "https://www.tmbc.gov.uk",
+   "end_date": ""
+  },
+  "TOR": {
+   "name": "Torridge District Council",
+   "website": "https://www.torridge.gov.uk",
+   "end_date": ""
+  },
+  "TRF": {
+   "name": "Trafford Metropolitan Borough Council",
+   "website": "https://www.trafford.gov.uk",
+   "end_date": ""
+  },
+  "TUN": {
+   "name": "Tunbridge Wells Borough Council",
+   "website": "https://www.tunbridgewells.gov.uk",
+   "end_date": ""
+  },
+  "TVCA": {
+   "name": "Tees Valley Combined Authority",
+   "website": "https://teesvalley-ca.gov.uk",
+   "end_date": ""
+  },
+  "TWH": {
+   "name": "London Borough of Tower Hamlets",
+   "website": "https://www.towerhamlets.gov.uk",
+   "end_date": ""
+  },
+  "UTT": {
+   "name": "Uttlesford District Council",
+   "website": "https://www.uttlesford.gov.uk",
+   "end_date": ""
+  },
+  "VAL": {
+   "name": "Vale of White Horse District Council",
+   "website": "https://www.whitehorsedc.gov.uk",
+   "end_date": ""
+  },
+  "WAE": {
+   "name": "Waverley Borough Council",
+   "website": "https://www.waverley.gov.uk/",
+   "end_date": ""
+  },
+  "WAR": {
+   "name": "Warwickshire County Council",
+   "website": "https://www.warwickshire.gov.uk",
+   "end_date": ""
+  },
+  "WAT": {
+   "name": "Watford Borough Council",
+   "website": "https://www.watford.gov.uk",
+   "end_date": ""
+  },
+  "WAV": {
+   "name": "Waveney District Council",
+   "website": "https://www.waveney.gov.uk",
+   "end_date": "2019-03-31"
+  },
+  "WAW": {
+   "name": "Warwick District Council",
+   "website": "https://www.warwickdc.gov.uk",
+   "end_date": ""
+  },
+  "WBK": {
+   "name": "West Berkshire Council",
+   "website": "https://www.westberks.gov.uk",
+   "end_date": ""
+  },
+  "WDE": {
+   "name": "West Devon Borough Council",
+   "website": "https://www.westdevon.gov.uk",
+   "end_date": ""
+  },
+  "WDO": {
+   "name": "West Dorset District Council",
+   "website": "https://www.dorsetforyou.com",
+   "end_date": "2019-03-31"
+  },
+  "WEA": {
+   "name": "Wealden District Council",
+   "website": "https://www.wealden.gov.uk",
+   "end_date": ""
+  },
+  "WECA": {
+   "name": "West of England Combined Authority",
+   "website": "https://www.westofengland-ca.gov.uk",
+   "end_date": ""
+  },
+  "WEL": {
+   "name": "Wellingborough Borough Council",
+   "website": "https://www.wellingborough.gov.uk",
+   "end_date": "2021-03-31"
+  },
+  "WEW": {
+   "name": "Welwyn Hatfield Borough Council",
+   "website": "https://www.welhat.gov.uk",
+   "end_date": ""
+  },
+  "WEY": {
+   "name": "Weymouth and Portland Borough Council",
+   "website": "https://www.dorsetforyou.com",
+   "end_date": "2019-03-31"
+  },
+  "WFT": {
+   "name": "London Borough of Waltham Forest",
+   "website": "https://www.walthamforest.gov.uk/",
+   "end_date": ""
+  },
+  "WGN": {
+   "name": "Wigan Metropolitan Borough Council",
+   "website": "https://www.wigan.gov.uk",
+   "end_date": ""
+  },
+  "WIL": {
+   "name": "Wiltshire Council",
+   "website": "https://wiltshire.gov.uk",
+   "end_date": ""
+  },
+  "WIN": {
+   "name": "Winchester City Council",
+   "website": "https://www.winchester.gov.uk",
+   "end_date": ""
+  },
+  "WKF": {
+   "name": "Wakefield Metropolitan District Council",
+   "website": "https://www.wakefield.gov.uk",
+   "end_date": ""
+  },
+  "WLA": {
+   "name": "West Lancashire Borough Council",
+   "website": "https://www.westlancs.gov.uk",
+   "end_date": ""
+  },
+  "WLI": {
+   "name": "West Lindsey District Council",
+   "website": "https://www.west-lindsey.gov.uk",
+   "end_date": ""
+  },
+  "WLL": {
+   "name": "Walsall Metropolitan Borough Council",
+   "website": "https://www.walsall.gov.uk",
+   "end_date": ""
+  },
+  "WLV": {
+   "name": "City of Wolverhampton Council",
+   "website": "https://www.wolverhampton.gov.uk",
+   "end_date": ""
+  },
+  "WMCA": {
+   "name": "West Midlands Combined Authority",
+   "website": "https://www.wmca.org.uk",
+   "end_date": ""
+  },
+  "WND": {
+   "name": "London Borough of Wandsworth",
+   "website": "https://www.wandsworth.gov.uk",
+   "end_date": ""
+  },
+  "WNM": {
+   "name": "Royal Borough of Windsor and Maidenhead",
+   "website": "https://www.rbwm.gov.uk/",
+   "end_date": ""
+  },
+  "WOC": {
+   "name": "Worcester City Council",
+   "website": "https://www.worcester.gov.uk",
+   "end_date": ""
+  },
+  "WOI": {
+   "name": "Woking Borough Council",
+   "website": "https://www.woking.gov.uk",
+   "end_date": ""
+  },
+  "WOK": {
+   "name": "Wokingham Borough Council",
+   "website": "https://www.wokingham.gov.uk",
+   "end_date": ""
+  },
+  "WOR": {
+   "name": "Worcestershire County Council",
+   "website": "https://www.worcestershire.gov.uk",
+   "end_date": ""
+  },
+  "WOT": {
+   "name": "Worthing Borough Council",
+   "website": "https://www.adur-worthing.gov.uk",
+   "end_date": ""
+  },
+  "WOX": {
+   "name": "West Oxfordshire District Council",
+   "website": "https://www.westoxon.gov.uk",
+   "end_date": ""
+  },
+  "WRL": {
+   "name": "Wirral Borough Council",
+   "website": "https://www.wirral.gov.uk",
+   "end_date": ""
+  },
+  "WRT": {
+   "name": "Warrington Borough Council",
+   "website": "https://www.warrington.gov.uk",
+   "end_date": ""
+  },
+  "WSK": {
+   "name": "West Suffolk Council",
+   "website": "https://www.westsuffolk.gov.uk",
+   "end_date": ""
+  },
+  "WSM": {
+   "name": "City of Westminster",
+   "website": "https://www.westminster.gov.uk",
+   "end_date": ""
+  },
+  "WSO": {
+   "name": "West Somerset District Council",
+   "website": "https://www.westsomersetonline.gov.uk",
+   "end_date": "2019-03-31"
+  },
+  "WSX": {
+   "name": "West Sussex County Council",
+   "website": "https://www.westsussex.gov.uk",
+   "end_date": ""
+  },
+  "WYC": {
+   "name": "Wychavon District Council",
+   "website": "https://www.wychavon.gov.uk",
+   "end_date": ""
+  },
+  "WYCA": {
+   "name": "West Yorkshire Combined Authority",
+   "website": "https://www.westyorks-ca.gov.uk/",
+   "end_date": ""
+  },
+  "WYE": {
+   "name": "Wyre Forest District Council",
+   "website": "https://www.wyreforestdc.gov.uk",
+   "end_date": ""
+  },
+  "WYO": {
+   "name": "Wycombe District Council",
+   "website": "https://www.wycombe.gov.uk",
+   "end_date": "2020-03-31"
+  },
+  "WYR": {
+   "name": "Wyre Borough Council",
+   "website": "https://www.wyre.gov.uk",
+   "end_date": ""
+  },
+  "YOR": {
+   "name": "City of York Council",
+   "website": "https://www.york.gov.uk",
+   "end_date": ""
+  },
+  "CUA": {
+   "name": "Cumberland Council",
+   "website": "https://www.cumberland.gov.uk/",
+   "end_date": ""
+  },
+  "WFUA": {
+   "name": "Westmorland and Furness Council",
+   "website": "https://www.westmorlandandfurness.gov.uk/",
+   "end_date": ""
+  },
+  "SUA": {
+   "name": "Somerset Council",
+   "website": "https://www.somerset.gov.uk/",
+   "end_date": ""
+  },
+  "NYUA": {
+   "name": "North Yorkshire Council",
+   "website": "https://www.northyorks.gov.uk/",
+   "end_date": ""
+  },
+  "YNYCA": {
+   "name": "York and North Yorkshire Combined Authority",
+   "website": "https://yorknorthyorks-ca.gov.uk/",
+   "end_date": ""
+  },
+  "NNECA": {
+   "name": "North East Combined Authority",
+   "website": "https://www.northeast-ca.gov.uk/",
+   "end_date": ""
+  },
+  "EMCCA": {
+   "name": "East Midlands Combined County Authority",
+   "website": "https://www.eastmidlands-cca.gov.uk/",
+   "end_date": ""
+  },
+  "NNUA": {
+   "name": "North Northamptonshire Council",
+   "website": "https://www.northnorthants.gov.uk/",
+   "end_date": ""
+  },
+  "WNUA": {
+   "name": "West Northamptonshire Council",
+   "website": "https://www.westnorthants.gov.uk/",
+   "end_date": ""
+  }
+ }
+}

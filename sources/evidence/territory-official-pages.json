@@ -1,0 +1,45 @@
+{
+ "about": "Official pages read on 22 November 2026 with a browser user agent; each entry keeps the URL, final URL, HTTP status, a fingerprint of the page and the passage naming the body. Pages that blocked automated reading are not listed.",
+ "je-gov": {
+  "url": "https://www.gov.je/Government/Pages/default.aspx",
+  "final_url": "https://www.gov.je/Government/Pages/default.aspx",
+  "status": 200,
+  "sha256": "d01780f183c04c466c96d21b6ad2c1fcd9bffd3c683cd711c179074b89096e9b",
+  "found": {
+   "Council of Ministers": "cers States Greffe How our government works Advisory groups Council of Ministers Elections and voting About the Government Chief Minister of Jersey Co",
+   "Chief Minister": "ncil of Ministers Elections and voting About the Government Chief Minister of Jersey Council of Ministers Government departments Government of Jersey "
+  }
+ },
+ "gg-parliament": {
+  "url": "https://www.gov.gg/parliament",
+  "final_url": "https://www.gov.gg/StatesMeetings",
+  "status": 200,
+  "sha256": "70b360f951139ec33233a2b0d1dd61b0c5fdfd8b122a1d32c7d0dca0e55af3fe",
+  "found": {
+   "States of Deliberation": "n Contact Us - States&#39; Greffier Share this page --> The States of Deliberation meet every three weeks, except in school holidays, to discuss and d",
+   "States of Guernsey": " States Meeting Information - States of Guernsey (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start':"
+  }
+ },
+ "gg-courts": {
+  "url": "https://www.guernseyroyalcourt.gg/",
+  "final_url": "https://www.guernseyroyalcourt.gg/",
+  "status": 200,
+  "sha256": "e258e261d159b6fe538a8bd86dd148cfd9b290dec1fe4853a21493b3ea8b1758",
+  "found": {
+   "Royal Court": " Royal Court Home Page - Royal Court $(function () { $('div.equal').evenHeights(); }); wind",
+   "Court of Appeal": null,
+   "Magistrate": null
+  }
+ },
+ "im-courts": {
+  "url": "https://www.courts.im/",
+  "final_url": "https://www.courts.im/",
+  "status": 200,
+  "sha256": "422044526c5dd3a5fec1b90870e3765ad3f49d77da0dfa9785fb088200679a99",
+  "found": {
+   "High Court": " of Government (Appeal Division), the Civil Division of the High Court, the Court of General Gaol Delivery and the Courts of Summary Jurisdiction. Des",
+   "Deemster": "y. Read the full swearing-in speech of His Honour The First Deemster Corlett here. -------------------------------------------------------------------",
+   "Staff of Government": "ngs before the Judicial Committee of the Privy Council, the Staff of Government (Appeal Division), the Civil Division of the High Court, the Court of "
+  }
+ }
+}

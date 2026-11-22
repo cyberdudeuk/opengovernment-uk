@@ -91,14 +91,48 @@ BASIS = {"chain": "answers to that nation's legislature", "ons-sponsor": "ONS re
          "register": "stated by the register", "ons-gss": "ONS local authority code", "statute": "the Act that founded it", "wikidata": "Wikidata jurisdiction",
          "pb-2020": "2020 public bodies compilation", "companies": "where it is registered"}
 
+SA, SA_NAMES = {}, {}
+_WP = ROOT / "data/websites.json"
+WEB = json.loads(_WP.read_text()) if _WP.exists() else {}
+JTIER = "The jurisdictions themselves"
+
+
+def add_territories(out):
+    """The Crown Dependencies' and Overseas Territories' own bodies (tools/territories.py), grouped by jurisdiction within each branch."""
+    tp = ROOT / "data/territories.json"
+    if not tp.exists(): return
+    T = json.loads(tp.read_text())
+    for g in ("OT", "CD"):  # the jurisdiction records themselves head each family tree
+        ex = out[g]["branches"]["executive"]
+        for tier in list(ex):
+            if tier != JTIER: ex[JTIER] += ex.pop(tier)
+    FKB = {"legislature": "territory", "judiciary": "judicial"}
+    for b in T["bodies"]:
+        s0 = b["srcs"][0]
+        out[b["group"]]["branches"][b["branch"]][b["jurisdiction"]].append({
+            "id": b["id"], "name": b["name"], "type": b["type"], "basis": {"founding order": "founding order", "official": "official website", "Wikidata": "Wikidata"}[s0["kind"]],
+            "why": "; ".join(s["title"] for s in b["srcs"]), "url": s0["url"], "p": b["parent"], "answers_to": "", "h": "", "web": b["web"], "gov": "", "names": [], "nations": [],
+            "pk": b["pk"], "rk": b["geography"], "fk": FKB.get(b["branch"], "unknown") if b["tk"] != "territory" else "territory", "ak": b["ak"], "tk": b["tk"],
+            "j": b["jurisdiction"], "srcs": b["srcs"], "formerly": b.get("formerly"), "also": []})
+    jm = T["meta"]["jurisdictions"]
+    for g in ("OT", "CD"):
+        out[g]["apex"] = {"judiciary": [{"name": "Judicial Committee of the Privy Council (final court of appeal)", "basis": "jcpc.uk", "url": "https://www.jcpc.uk/"}]}
+        if g == "CD": out[g]["apex"]["executive"] = [{"name": "The Crown, through the Privy Council; the Ministry of Justice manages the UK's relationship", "basis": "GOV.UK", "url": "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"}]
+        out[g]["notes"] = [{"j": v["name"], "note": v["note"], "sources": v["note_sources"]} for v in jm.values() if v["group"] == g and v["note"]]
+        out[g]["coverage"] = {"excluded": T["meta"]["excluded"], "blocked": T["meta"].get("blocked", ""), "not_covered": T["meta"]["not_covered"]}
+
+
 def build(D, chains, ev):
     site, off, lab, lad = names_and_sites()
     cp = ROOT / "data/classification.json"  # tools/classify.py (it reads body-nations.json, which this writes: run nations, classify, nations)
     CL = json.loads(cp.read_text())["bodies"] if cp.exists() else {}
     out = {k: {"name": v, "branches": {"legislature": collections.defaultdict(list), "executive": collections.defaultdict(list), "judiciary": collections.defaultdict(list)}} for k, v in NATIONS.items()}
     unplaced = 0
+    sa = json.loads((ROOT / "data/same-as.json").read_text())["groups"] if (ROOT / "data/same-as.json").exists() else {}  # tools/sameas.py: one record per body
+    SA.clear(); SA.update({c: g["members"] for c, g in sa.items()}); SA_NAMES.clear(); SA_NAMES.update({k: n for g in sa.values() for k, n in g["names"].items()})
+    folded = {m for g in sa.values() for m in g["members"]}
     for r in D["r"]:
-        if not r[4]: continue  # open bodies only: closed ones belong to history, not the current register
+        if not r[4] or r[0] in folded: continue  # open bodies only, once each (a folded record's sources show on its main record)
         ans = (chains.get(r[0]) or {}).get("answerable", "")
         e = ev.get(r[0]) or {}
         if e.get("nations"): codes, basis, why, url = e["nations"], BASIS[e["basis"]], e.get("why", ""), e.get("url", "")
@@ -118,19 +152,21 @@ def build(D, chains, ev):
             if q and lg in off.get(q, {}) and NE.clean(off[q][lg]) == NE.clean(r[1]): continue
             if q and lg in off.get(q, {}): nm.append({"lang": lg, "name": off[q][lg], "src": "official name (Wikidata)"})
             elif q and lg in lab.get(q, {}) and NE.clean(lab[q][lg]) != NE.clean(r[1]): nm.append({"lang": lg, "name": lab[q][lg], "src": "community translation (Wikidata)"})
-        web = site.get(q, "") if q else ""
         govuk = f"https://www.gov.uk/government/organisations/{ids['govuk_slug']}" if ids.get("govuk_slug") else ""
+        web = WEB.get(r[0], ["", ""])[0]  # tools/websites.py: the one combined website table every list uses
         if web.rstrip("/") == govuk.rstrip("/"): web = ""
-        if not web and r[9] and "gov.uk/government/organisations" not in r[9]: web = r[9]
         multi = [c for c in codes if c in ("EN", "SC", "WA", "NI")]
         for c in codes: out[c]["branches"][br][tier].append({"id": r[0], "name": r[1], "type": r[3], "basis": basis, "why": why, "url": url, "p": parent, "answers_to": ans,
                                                              "h": to_hash(r[0]), "web": web, "gov": govuk, "names": nm, "nations": codes if (len(multi) > 1 or "UK" in codes) else [],
-                                                             "pk": (CL.get(r[0]) or {}).get("purpose", "unknown"), "rk": (CL.get(r[0]) or {}).get("reach_label", ""), "fk": (CL.get(r[0]) or {}).get("formed", "unknown")})
+                                                             "pk": (CL.get(r[0]) or {}).get("purpose", "unknown"), "rk": (CL.get(r[0]) or {}).get("reach_label", ""), "fk": (CL.get(r[0]) or {}).get("formed", "unknown"),
+                                                             "ak": (CL.get(r[0]) or {}).get("activity", "unknown"), "tk": (CL.get(r[0]) or {}).get("btype", "central"), "also": [{"id": m, "name": SA_NAMES.get(m, m)} for m in SA.get(r[0], [])]})
     for c, n in out.items():
         n["apex"] = {br: [{"name": a, "basis": b, "url": u} for a, b, u in v] for br, v in APEX.get(c, {}).items()}
+    add_territories(out)
+    for c, n in out.items():
         n["uk_apex"] = {br: [{"name": a, "basis": b, "url": u} for a, b, u in v] for br, v in UK_APEX.items()} if c in ("EN", "SC", "WA", "NI") else {}
         for br in n["branches"]:
-            n["branches"][br] = {k: sorted(v, key=lambda x: x["name"]) for k, v in sorted(n["branches"][br].items())}
+            n["branches"][br] = {k: sorted(v, key=lambda x: x["name"]) for k, v in sorted(n["branches"][br].items(), key=lambda kv: (kv[0] != JTIER, kv[0]))}
         n["counts"] = {br: sum(len(v) for v in n["branches"][br].values()) for br in n["branches"]}
     return out, unplaced
 
@@ -155,7 +191,10 @@ def check(out, unplaced, D):
         ids = [x["id"] for tiers in n["branches"].values() for v in tiers.values() for x in v]
         if len(ids) != len(set(ids)): p.append(f"{c}: a body appears twice")
     placed = {x["id"] for n in out.values() for tiers in n["branches"].values() for v in tiers.values() for x in v}
-    if len(placed) + unplaced != sum(1 for r in D["r"] if r[4]): p.append("open bodies not all accounted for")
+    folded = {m for ms in SA.values() for m in ms}
+    reg_placed = {i for i in placed if not i.startswith("terr:")}  # territory bodies come from their own sources, not the register
+    if len(reg_placed) + unplaced + len(folded) != sum(1 for r in D["r"] if r[4]): p.append("open bodies not all accounted for (placed + unplaced + folded duplicates)")
+    if folded & reg_placed: p.append("a folded duplicate is still listed separately")
     return p
 
 PAGE = (pathlib.Path(__file__).resolve().parent / "nations-page.html").read_text()

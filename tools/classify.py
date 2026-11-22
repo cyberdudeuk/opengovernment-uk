@@ -77,6 +77,7 @@ FORM = {
 
 # What a body does day to day: a second axis beside purpose (what area of life). MODELLED by stated rules, first match wins.
 ACTIVITIES = [  # (key, plain label, plain explanation)
+    ("legislate", "Makes laws", "A parliament, assembly or council whose members debate and pass laws, approve spending and question the government."),
     ("policy", "Runs a government", "Ministers and civil servants who make policy, propose laws and run the departments under them."),
     ("judge", "Decides cases", "Courts and tribunals that settle disputes and decide what the law means in a case."),
     ("regulate", "Sets and enforces rules", "Licenses, registers or regulates a profession, market or activity, and can take action when rules are broken."),
@@ -112,6 +113,7 @@ ACT_KW = [
 
 
 BTYPES = [  # (key, plain label, plain explanation): the register's kinds of body in plain groups
+    ("legislature", "Parliament or assembly", "Where elected (or appointed) members make laws, approve spending and question the government."),
     ("department", "Government department", "A ministerial or non-ministerial department, or a devolved government."),
     ("agency", "Executive agency or part of a department", "Run by civil servants inside a department, with its own job to do."),
     ("ndpb", "Arm's-length public body", "Set up by law or by ministers to work at arm's length: an executive or advisory non-departmental public body, or another statutory body."),
