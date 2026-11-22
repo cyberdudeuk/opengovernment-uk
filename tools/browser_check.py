@@ -82,6 +82,9 @@ def check(base, pages):
                         pg.fill(q, "met office"); pg.wait_for_timeout(900)
                         if not pg.locator(f"{q}r a", has_text="Met Office").count(): bad.append(f"{tag}: search found no Met Office")
                         if pg.evaluate("document.documentElement.scrollWidth - innerWidth") > 1: bad.append(f"{tag}: search suggestions overflow the page")
+                        if q == "#hmQ":  # OG-D80: choosing a suggestion on the portal page must close the panel
+                            pg.locator(f"{q}r a", has_text="Met Office").first.click(); pg.wait_for_timeout(600)
+                            if pg.locator(f"{q}r").is_visible(): bad.append(f"{tag}: search panel stayed open after choosing a suggestion")
                     pg.close()
         b.close()
     return bad

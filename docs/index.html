@@ -1520,6 +1520,8 @@ function hmSearch(){
   box.addEventListener("keydown", e => { const its = $$("a", out); if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); sel = (sel + (e.key === "ArrowDown" ? 1 : its.length - 1)) % its.length; its.forEach((a, i) => a.classList.toggle("on", i === sel)); }
     if (e.key === "Enter") { e.preventDefault(); (its[sel] || its[its.length - 1])?.click(); } if (e.key === "Escape") { out.hidden = true; box.setAttribute("aria-expanded", "false"); } });
   document.addEventListener("click", e => { if (!e.target.closest(".og-search")) { out.hidden = true; box.setAttribute("aria-expanded", "false"); } });
+  // OG-D80: this page changes view without reloading, so a chosen suggestion must close the panel itself (it is inside .og-search)
+  out.addEventListener("click", e => { if (e.target.closest("a")) { out.hidden = true; box.setAttribute("aria-expanded", "false"); box.blur(); } });
 }
 
 function hmTicker(){
