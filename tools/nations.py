@@ -108,7 +108,8 @@ def rel_payload():
     return {"read": o["read"], "domains": o["domains"],
             "m": [[m["who"], m["name"], m["status"], m["start"][:4], (m["end"] or "")[:4], m["domain"], uk(m["lead"]), m["site"], m.get("official") or (f"https://www.wikidata.org/wiki/{m['qid']}" if m["qid"] else "")] for m in o["memberships"]],
             "t": [[t["title"], t["url"], t["date"], t["partner"], t["kind"], t["series"], t["domain"], uk(t["uk"])] for t in o["treaties"]],
-            "a": [[a["title"], a["url"], a["date"], a["form"], a["level"], a["domain"], uk(a["uk"])] for a in o["agreements"]]}
+            "a": [[a["title"], a["url"], a["date"], a["form"], a["level"], a["domain"], uk(a["uk"])] for a in o["agreements"]],
+            "geo": json.loads((ROOT / "data/worldmap.json").read_text()) if (ROOT / "data/worldmap.json").exists() else None}
 
 
 def add_territories(out):

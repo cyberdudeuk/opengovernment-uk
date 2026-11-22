@@ -55,6 +55,7 @@ tools/relations.py      the UK's memberships, treaties and agreements, linked to
 tools/orgchart.py      interactive org charts: who answers to whom, nations and branches, type and purpose, the UK in the world
 tools/funding.py        grants, business support schemes, regulators' innovation services and grant-makers
 tools/personas.py       personas and journeys from one source; checks every route the portal offers them
+tools/worldmap.py       world map of treaty partners (world-atlas 2.0.2, Equal Earth); every partner placed or recorded as an organisation or former state
 tools/websites.py       each body's own website, from one combined table (matched by code; councils in Scotland and Northern Ireland by exact name within that nation's councils, from the official lists, one-to-one or the build fails)
 ```
 

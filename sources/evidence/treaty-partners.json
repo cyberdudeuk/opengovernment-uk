@@ -1,0 +1,108 @@
+{
+ "about": "How each treaty partner, as GOV.UK titles it, is placed on the world map. A partner that is exactly a country name in the map (world-atlas 2.0.2, from Natural Earth) needs no entry. Every other partner must appear below: as one or more map countries (aliases), as an organisation (not drawn), or as a state that no longer exists (not drawn). A partner in none of these fails the build.",
+ "read": "2026-11-22",
+ "aliases": {
+  "USA": [
+   "United States of America"
+  ],
+  "US": [
+   "United States of America"
+  ],
+  "Australia/USA": [
+   "Australia",
+   "United States of America"
+  ],
+  "North Macedonia": [
+   "Macedonia"
+  ],
+  "Viet Nam": [
+   "Vietnam"
+  ],
+  "Korea": [
+   "South Korea"
+  ],
+  "Rep. of Korea": [
+   "South Korea"
+  ],
+  "Rep of Korea": [
+   "South Korea"
+  ],
+  "UAE": [
+   "United Arab Emirates"
+  ],
+  "Czech Republic": [
+   "Czechia"
+  ],
+  "Türkiye": [
+   "Turkey"
+  ],
+  "Cote d'Ivoire": [
+   "Côte d'Ivoire"
+  ],
+  "Bosnia and Herzegovina": [
+   "Bosnia and Herz."
+  ],
+  "Russian Federation": [
+   "Russia"
+  ],
+  "Swiss Confederation": [
+   "Switzerland"
+  ],
+  "DR Congo": [
+   "Dem. Rep. Congo"
+  ],
+  "Antigua and Barbuda": [
+   "Antigua and Barb."
+  ],
+  "Saint Vincent and the Grenadines": [
+   "St. Vin. and Gren."
+  ],
+  "Faroes": [
+   "Faeroe Is."
+  ],
+  "Brunei Darussalam": [
+   "Brunei"
+  ],
+  "Hong Kong SAR": [
+   "Hong Kong"
+  ],
+  "Ireland/EC": [
+   "Ireland"
+  ],
+  "Sweden [Iran]": [
+   "Sweden"
+  ],
+  "SACU and Mozambique": [
+   "Botswana",
+   "eSwatini",
+   "Lesotho",
+   "Namibia",
+   "South Africa",
+   "Mozambique"
+  ],
+  "FR Germany": [
+   "Germany"
+  ]
+ },
+ "why": {
+  "Ireland/EC": "Ireland is the only state party; the European Community is an organisation.",
+  "Sweden [Iran]": "The title names Sweden as the treaty partner, acting in respect of Iran.",
+  "SACU and Mozambique": "The Southern African Customs Union's members are Botswana, Eswatini, Lesotho, Namibia and South Africa.",
+  "FR Germany": "The Federal Republic of Germany is Germany's official name, before and after 1990."
+ },
+ "organisations": [
+  "EU",
+  "EAEC",
+  "EU/EAEC",
+  "EU and EAEC",
+  "IAEA",
+  "INTERPOL",
+  "UNEP",
+  "European Forest Institute",
+  "Bank for International Settlements",
+  "Secretariat of UN Framework Convention on Climate Change, Kyoto Protocol and Paris Agreement"
+ ],
+ "former_states": [
+  "USSR"
+ ]
+}

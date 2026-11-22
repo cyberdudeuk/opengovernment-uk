@@ -51,7 +51,9 @@ jobs:
         run: python tools/funding.py && python tools/funding.py --negative
       - name: Personas and journeys (every route leads somewhere real, negatives)
         run: python tools/personas.py && python tools/personas.py --negative
-      - name: Each body's own website (one combined table, code-matched only, negatives)
+      - name: World map of treaty partners (every partner placed or recorded; known answers; negatives)
+        run: python tools/worldmap.py && python tools/worldmap.py --negative
+      - name: Each body's own website (one combined table; codes, and official council lists by exact name; negatives)
         run: python tools/websites.py && python tools/websites.py --negative
       - name: Trading fund and public corporation trees (one place each, known answers, negatives)
         run: python tools/corporations.py && python tools/corporations.py --negative
