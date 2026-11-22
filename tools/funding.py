@@ -115,7 +115,7 @@ def main():
     if e: sys.exit("funding: " + "; ".join(e[:6]))
     (ROOT / "data/funding.json").write_text(json.dumps(o, ensure_ascii=False, separators=(",", ":")))
     ids = {i for x in o["schemes"] + o["grants"] for i in x["by"]} | {s["body"] for s in o["services"]} | {f["id"] for f in o["funders"] if f["id"]}
-    page = dict(o, names={i: R[i][1] + ("" if R[i][4] else " (closed)") for i in ids})
+    page = dict(o, names={i: R[i][1] + ("" if R[i][4] else " (closed)") for i in sorted(ids)})  # sorted: a set's order changes between runs (OG-D61)
     data = json.dumps(page, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     (ROOT / "docs/funding.html").write_text(design.wrap_page((ROOT / "tools/funding-page.html").read_text(), "funding").replace("__DATA__", data))
     C = collections.Counter

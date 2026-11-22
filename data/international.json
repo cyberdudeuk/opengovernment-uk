@@ -6,7 +6,8 @@
   "un": "United Nations and its agencies",
   "finance": "International finance",
   "europe": "European and regional bodies",
-  "specialist": "Specialist and technical bodies"
+  "specialist": "Specialist and technical bodies",
+  "assoc": "The Commonwealth and other associations of states"
  },
  "to_confirm": [
   {
@@ -513,7 +514,7 @@
   },
   {
    "name": "The Commonwealth",
-   "group": "europe",
+   "group": "assoc",
    "way_in": "UK Representation in the Commonwealth",
    "lead": [
     {

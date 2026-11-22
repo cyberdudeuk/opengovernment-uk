@@ -75,6 +75,8 @@ def build():
         if big and (max(xs) - min(xs) >= 3 or max(ys) - min(ys) >= 3): shapes[name] = path(big)
         else: dots[name] = [round(sum(xs) / len(xs)), round(sum(ys) / len(ys))]
     ev = json.loads(EV.read_text())
+    for name, x in ev.get("extra_dots", {}).items():  # places too small for the atlas, from Wikidata coordinates
+        if name not in shapes and name not in dots: dots[name] = list(project(x["lon"], x["lat"]))
     rel = json.loads((ROOT / "data/relations.json").read_text())
     known = set(shapes) | set(dots)
     place, problems = {}, []

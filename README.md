@@ -56,6 +56,7 @@ tools/orgchart.py      interactive org charts: who answers to whom, nations and 
 tools/funding.py        grants, business support schemes, regulators' innovation services and grant-makers
 tools/personas.py       personas and journeys from one source; checks every route the portal offers them
 tools/setaside.py       decide the set-aside near-name pairs (nation rule, evidenced nations, Wikidata, quoted official pages; --verify re-reads every quote)
+tools/cooperation.py    cooperation by country: the Commonwealth (Secretariat's members; GOV.UK's wording), trade agreements in effect (DBT), tax treaties (HMRC), kind of every treaty (modelled); --refresh re-reads them
 tools/worldmap.py       world map of treaty partners (world-atlas 2.0.2, Equal Earth); every partner placed or recorded as an organisation or former state
 tools/websites.py       each body's own website, from one combined table (matched by code; councils in Scotland and Northern Ireland by exact name within that nation's councils, from the official lists, one-to-one or the build fails)
 ```

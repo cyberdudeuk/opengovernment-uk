@@ -55,12 +55,18 @@ jobs:
         run: python tools/personas.py && python tools/personas.py --negative
       - name: World map of treaty partners (every partner placed or recorded; known answers; negatives)
         run: python tools/worldmap.py && python tools/worldmap.py --negative
+      - name: Cooperation by country (Commonwealth, trade agreements in effect, tax treaties, kinds of treaty; official sources; negatives)
+        run: python tools/cooperation.py && python tools/cooperation.py --negative
       - name: Each body's own website (one combined table; codes, and official council lists by exact name; negatives)
         run: python tools/websites.py && python tools/websites.py --negative
       - name: Trading fund and public corporation trees (one place each, known answers, negatives)
         run: python tools/corporations.py && python tools/corporations.py --negative
       - name: Local government under the English Devolution Act 2026 (every fact sourced, 21 areas, negatives)
         run: python tools/localgov.py && python tools/localgov.py --negative
+      - name: Builds are deterministic (built twice with different hash seeds; any difference fails, OG-D61)
+        run: |
+          for t in funding cooperation setaside worldmap; do PYTHONHASHSEED=1 python tools/$t.py >/dev/null; done; cp docs/funding.html /tmp/a.html; cp data/cooperation.json /tmp/a.json; cp data/set-aside.json /tmp/b.json; cp data/worldmap.json /tmp/c.json
+          for t in funding cooperation setaside worldmap; do PYTHONHASHSEED=2 python tools/$t.py >/dev/null; done; cmp /tmp/a.html docs/funding.html && cmp /tmp/a.json data/cooperation.json && cmp /tmp/b.json data/set-aside.json && cmp /tmp/c.json data/worldmap.json
       - name: Nations and documentation (known answers, traceability, negatives)
         run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: Design system (contrast in light and dark, every page on the shared tokens, no third-party fonts, negatives)

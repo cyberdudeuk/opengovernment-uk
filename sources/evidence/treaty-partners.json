@@ -82,13 +82,83 @@
   ],
   "FR Germany": [
    "Germany"
+  ],
+  "Gambia, The": [
+   "Gambia"
+  ],
+  "Kingdom of Eswatini": [
+   "eSwatini"
+  ],
+  "Eswatini": [
+   "eSwatini"
+  ],
+  "United Republic of Tanzania": [
+   "Tanzania"
+  ],
+  "Bahamas, The": [
+   "Bahamas"
+  ],
+  "St Kitts and Nevis": [
+   "St. Kitts and Nevis"
+  ],
+  "Saint Kitts and Nevis": [
+   "St. Kitts and Nevis"
+  ],
+  "Saint Christopher (Saint Kitts) and Nevis": [
+   "St. Kitts and Nevis"
+  ],
+  "St Vincent and The Grenadines": [
+   "St. Vin. and Gren."
+  ],
+  "St Vincent and the Grenadines": [
+   "St. Vin. and Gren."
+  ],
+  "Naoero": [
+   "Nauru"
+  ],
+  "Solomon Islands": [
+   "Solomon Is."
+  ],
+  "Côte d’Ivoire": [
+   "Côte d'Ivoire"
+  ],
+  "Ivory Coast": [
+   "Côte d'Ivoire"
+  ],
+  "Dominican Republic": [
+   "Dominican Rep."
+  ],
+  "Faroe Islands": [
+   "Faeroe Is."
+  ],
+  "Palestinian Authority": [
+   "Palestine"
+  ],
+  "Bosnia-Herzegovina": [
+   "Bosnia and Herz."
+  ],
+  "Marshall Islands": [
+   "Marshall Is."
+  ],
+  "Myanmar (Burma)": [
+   "Myanmar"
+  ],
+  "Slovak Republic": [
+   "Slovakia"
+  ],
+  "St Lucia": [
+   "Saint Lucia"
   ]
  },
  "why": {
   "Ireland/EC": "Ireland is the only state party; the European Community is an organisation.",
   "Sweden [Iran]": "The title names Sweden as the treaty partner, acting in respect of Iran.",
   "SACU and Mozambique": "The Southern African Customs Union's members are Botswana, Eswatini, Lesotho, Namibia and South Africa.",
-  "FR Germany": "The Federal Republic of Germany is Germany's official name, before and after 1990."
+  "FR Germany": "The Federal Republic of Germany is Germany's official name, before and after 1990.",
+  "Naoero": "The Commonwealth Secretariat lists Nauru by its Nauruan name.",
+  "Palestinian Authority": "The Department for Business and Trade's name for the partner to the UK-Palestinian Authority agreement; placed on the atlas area of that name, with no further label.",
+  "former_names": "Earlier names of the same state, as HMRC's list still titles them: Swaziland became Eswatini in 2018, and Zaire became the Democratic Republic of the Congo in 1997.",
+  "extra_dots": "Too small for the atlas; placed from the coordinates Wikidata gives for each (read 22 November 2026)."
  },
  "organisations": [
   "EU",
@@ -103,6 +173,24 @@
   "Secretariat of UN Framework Convention on Climate Change, Kyoto Protocol and Paris Agreement"
  ],
  "former_states": [
-  "USSR"
- ]
+  "USSR",
+  "Netherlands Antilles",
+  "Netherlands Antilles (Curacao,Sint Maarten and BES Islands)"
+ ],
+ "former_names": {
+  "Swaziland": "eSwatini",
+  "Zaire": "Dem. Rep. Congo"
+ },
+ "extra_dots": {
+  "Tuvalu": {
+   "wikidata": "Q672",
+   "lat": -7.475,
+   "lon": 178.005556
+  },
+  "Gibraltar": {
+   "wikidata": "Q1410",
+   "lat": 36.14,
+   "lon": -5.35
+  }
+ }
 }

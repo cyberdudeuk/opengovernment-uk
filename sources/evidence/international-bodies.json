@@ -1,7 +1,7 @@
 {
   "about": "Which UK public body manages the UK's relationship with each international body, trading bloc or treaty organisation, or is its single point of contact. Each row cites an official page that says so, read 22 November 2026. Roles, never people. 'way_in' is the UK mission or delegation where there is one; 'lead' is the UK body that holds the relationship.",
   "read": "2026-11-22",
-  "groups": {"bloc": "Trading blocs and economic partnerships", "security": "Security, defence and justice", "un": "United Nations and its agencies", "finance": "International finance", "europe": "European and regional bodies", "specialist": "Specialist and technical bodies"},
+  "groups": {"bloc": "Trading blocs and economic partnerships", "security": "Security, defence and justice", "un": "United Nations and its agencies", "finance": "International finance", "europe": "European and regional bodies", "specialist": "Specialist and technical bodies", "assoc": "The Commonwealth and other associations of states"},
   "bodies": [
     {"name": "European Union", "group": "bloc", "way_in": "UK Mission to the European Union (Brussels)", "lead": ["government-organisation:D2", "government-organisation:D1315"],
      "role": "The Cabinet Office holds overall responsibility for the UK's relationship with the EU; a Cabinet Office minister co-chaired the Trade and Cooperation Agreement Partnership Council and the Withdrawal Agreement Joint Committee in February 2026. Since July 2026 a joint Cabinet Office and Foreign Office Minister of State holds EU policy and relations. The Foreign Office runs the mission in Brussels.",
@@ -62,7 +62,7 @@
      "evidence": [{"title": "GOV.UK: UK Permanent Delegation to the OECD", "url": "https://www.gov.uk/world/organisations/uk-permanent-delegation-to-the-oecd"}]},
     {"name": "Council of Europe", "group": "europe", "way_in": "UK Delegation to the Council of Europe (Strasbourg)", "lead": ["government-organisation:D1315"], "role": "The Foreign Office's delegation represents the UK, a founding member.",
      "evidence": [{"title": "GOV.UK: UK Delegation to the Council of Europe", "url": "https://www.gov.uk/world/organisations/uk-delegation-to-the-council-of-europe"}]},
-    {"name": "The Commonwealth", "group": "europe", "way_in": "UK Representation in the Commonwealth", "lead": ["government-organisation:D1315"], "role": "The Foreign Office holds the UK's representation in the Commonwealth.",
+    {"name": "The Commonwealth", "group": "assoc", "way_in": "UK Representation in the Commonwealth", "lead": ["government-organisation:D1315"], "role": "The Foreign Office holds the UK's representation in the Commonwealth.",
      "evidence": [{"title": "GOV.UK: UK Representation in the Commonwealth", "url": "https://www.gov.uk/world/organisations/uk-representation-in-the-commonwealth"}]},
     {"name": "European Space Agency (ESA)", "group": "specialist", "way_in": "", "lead": ["government-organisation:EA31"], "role": "The UK Space Agency holds the UK's ESA membership and commits most of its budget to ESA programmes.",
      "evidence": [{"title": "GOV.UK: Evaluating the benefits of the UK's investments in the European Space Agency", "url": "https://www.gov.uk/government/publications/evaluating-the-benefits-of-the-uks-investments-in-the-european-space-agency/evaluating-the-benefits-of-the-uks-investments-in-the-european-space-agency-executive-summary"}]}

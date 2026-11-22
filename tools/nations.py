@@ -105,11 +105,13 @@ def rel_payload():
     D = json.loads(re.search(r'<script[^>]*id="data"[^>]*>(.*?)</script>', (ROOT / "sources/opengovernment-uk-0.2.2.html").read_text(), re.S).group(1))
     nm = {r[0]: r[1] for r in D["r"]}
     uk = lambda ids: [[i, nm.get(i, i)] for i in ids]
+    cp = ROOT / "data/cooperation.json"; coop = json.loads(cp.read_text()) if cp.exists() else None
     return {"read": o["read"], "domains": o["domains"],
             "m": [[m["who"], m["name"], m["status"], m["start"][:4], (m["end"] or "")[:4], m["domain"], uk(m["lead"]), m["site"], m.get("official") or (f"https://www.wikidata.org/wiki/{m['qid']}" if m["qid"] else "")] for m in o["memberships"]],
-            "t": [[t["title"], t["url"], t["date"], t["partner"], t["kind"], t["series"], t["domain"], uk(t["uk"])] for t in o["treaties"]],
+            "t": [[t["title"], t["url"], t["date"], t["partner"], t["kind"], t["series"], t["domain"], uk(t["uk"]), k] for t, k in zip(o["treaties"], coop["treaty_kind"] if coop else [""] * len(o["treaties"]), strict=True)],
             "a": [[a["title"], a["url"], a["date"], a["form"], a["level"], a["domain"], uk(a["uk"])] for a in o["agreements"]],
-            "geo": json.loads((ROOT / "data/worldmap.json").read_text()) if (ROOT / "data/worldmap.json").exists() else None}
+            "geo": json.loads((ROOT / "data/worldmap.json").read_text()) if (ROOT / "data/worldmap.json").exists() else None,
+            "coop": {k: v for k, v in coop.items() if k != "treaty_kind"} if coop else None}
 
 
 def add_territories(out):
@@ -223,6 +225,10 @@ if __name__ == "__main__":
         globals()["branch_of"] = _orig; out2, u2 = build(D, chains, ev); out2["SC"]["apex"]["judiciary"] = []
         ok2 = bool(check(out2, u2, D)); print("caught missing apex" if ok2 else "MISSED missing apex"); sys.exit(0 if ok and ok2 else 1)
     probs = check(out, unplaced, D)
+    def hidden_guard(page):  # OG-D59: a label hidden by script still shows if page CSS sets its display
+        return [] if ".hidden=" not in page or "label[hidden]{display:none}" in page else ["filter labels are hidden by script but the page CSS would still show them (add label[hidden]{display:none})"]
+    if hidden_guard(".hidden=tab label{display:grid}") == []: probs.append("OG-D59 guard failed its negative")
+    probs += hidden_guard(PAGE)
     ISO = {"EN": "GB-ENG", "SC": "GB-SCT", "WA": "GB-WLS", "NI": "GB-NIR", "UK": "GB"}  # ISO 3166-2:GB (and 3166-1 for the UK)
     for c, nn in out.items(): nn["iso"] = ISO.get(c)
     final = {x["id"]: x.get("nations") or [c] for c, n in out.items() for t in n["branches"].values() for v in t.values() for x in v}

@@ -1,0 +1,1741 @@
+{
+"read": "2026-11-22",
+"urls": {
+"cw_members": "https://thecommonwealth.org/our-member-countries",
+"cw_uk": "https://www.gov.uk/world/organisations/uk-representation-in-the-commonwealth",
+"trade": "https://www.gov.uk/guidance/uk-trade-agreements-in-effect",
+"tax": "https://www.gov.uk/government/collections/tax-treaties"
+},
+"commonwealth": {
+"members": [
+{
+"name": "Botswana",
+"url": "https://thecommonwealth.org/our-member-countries/botswana"
+},
+{
+"name": "Cameroon",
+"url": "https://thecommonwealth.org/our-member-countries/cameroon"
+},
+{
+"name": "Gabon",
+"url": "https://thecommonwealth.org/our-member-countries/gabon"
+},
+{
+"name": "Gambia, The",
+"url": "https://thecommonwealth.org/our-member-countries/gambia"
+},
+{
+"name": "Ghana",
+"url": "https://thecommonwealth.org/our-member-countries/ghana"
+},
+{
+"name": "Kenya",
+"url": "https://thecommonwealth.org/our-member-countries/kenya"
+},
+{
+"name": "Kingdom of Eswatini",
+"url": "https://thecommonwealth.org/our-member-countries/kingdom-eswatini"
+},
+{
+"name": "Lesotho",
+"url": "https://thecommonwealth.org/our-member-countries/lesotho"
+},
+{
+"name": "Malawi",
+"url": "https://thecommonwealth.org/our-member-countries/malawi"
+},
+{
+"name": "Mauritius",
+"url": "https://thecommonwealth.org/our-member-countries/mauritius"
+},
+{
+"name": "Mozambique",
+"url": "https://thecommonwealth.org/our-member-countries/mozambique"
+},
+{
+"name": "Namibia",
+"url": "https://thecommonwealth.org/our-member-countries/namibia"
+},
+{
+"name": "Nigeria",
+"url": "https://thecommonwealth.org/our-member-countries/nigeria"
+},
+{
+"name": "Rwanda",
+"url": "https://thecommonwealth.org/our-member-countries/rwanda"
+},
+{
+"name": "Seychelles",
+"url": "https://thecommonwealth.org/our-member-countries/seychelles"
+},
+{
+"name": "Sierra Leone",
+"url": "https://thecommonwealth.org/our-member-countries/sierra-leone"
+},
+{
+"name": "South Africa",
+"url": "https://thecommonwealth.org/our-member-countries/south-africa"
+},
+{
+"name": "Togo",
+"url": "https://thecommonwealth.org/our-member-countries/togo"
+},
+{
+"name": "Uganda",
+"url": "https://thecommonwealth.org/our-member-countries/uganda"
+},
+{
+"name": "United Republic of Tanzania",
+"url": "https://thecommonwealth.org/our-member-countries/united-republic-tanzania"
+},
+{
+"name": "Zambia",
+"url": "https://thecommonwealth.org/our-member-countries/zambia"
+},
+{
+"name": "Bangladesh",
+"url": "https://thecommonwealth.org/our-member-countries/bangladesh"
+},
+{
+"name": "Brunei Darussalam",
+"url": "https://thecommonwealth.org/our-member-countries/brunei-darussalam"
+},
+{
+"name": "India",
+"url": "https://thecommonwealth.org/our-member-countries/india"
+},
+{
+"name": "Malaysia",
+"url": "https://thecommonwealth.org/our-member-countries/malaysia"
+},
+{
+"name": "Maldives",
+"url": "https://thecommonwealth.org/our-member-countries/maldives"
+},
+{
+"name": "Pakistan",
+"url": "https://thecommonwealth.org/our-member-countries/pakistan"
+},
+{
+"name": "Singapore",
+"url": "https://thecommonwealth.org/our-member-countries/singapore"
+},
+{
+"name": "Sri Lanka",
+"url": "https://thecommonwealth.org/our-member-countries/sri-lanka"
+},
+{
+"name": "Antigua and Barbuda",
+"url": "https://thecommonwealth.org/our-member-countries/antigua-and-barbuda"
+},
+{
+"name": "Bahamas, The",
+"url": "https://thecommonwealth.org/our-member-countries/bahamas"
+},
+{
+"name": "Barbados",
+"url": "https://thecommonwealth.org/our-member-countries/barbados"
+},
+{
+"name": "Belize",
+"url": "https://thecommonwealth.org/our-member-countries/belize"
+},
+{
+"name": "Canada",
+"url": "https://thecommonwealth.org/our-member-countries/canada"
+},
+{
+"name": "Dominica",
+"url": "https://thecommonwealth.org/our-member-countries/dominica"
+},
+{
+"name": "Grenada",
+"url": "https://thecommonwealth.org/our-member-countries/grenada"
+},
+{
+"name": "Guyana",
+"url": "https://thecommonwealth.org/our-member-countries/guyana"
+},
+{
+"name": "Jamaica",
+"url": "https://thecommonwealth.org/our-member-countries/jamaica"
+},
+{
+"name": "Saint Lucia",
+"url": "https://thecommonwealth.org/our-member-countries/saint-lucia"
+},
+{
+"name": "St Kitts and Nevis",
+"url": "https://thecommonwealth.org/our-member-countries/st-kitts-and-nevis"
+},
+{
+"name": "St Vincent and The Grenadines",
+"url": "https://thecommonwealth.org/our-member-countries/st-vincent-and-grenadines"
+},
+{
+"name": "Trinidad and Tobago",
+"url": "https://thecommonwealth.org/our-member-countries/trinidad-and-tobago"
+},
+{
+"name": "Cyprus",
+"url": "https://thecommonwealth.org/our-member-countries/cyprus"
+},
+{
+"name": "Malta",
+"url": "https://thecommonwealth.org/our-member-countries/malta"
+},
+{
+"name": "United Kingdom",
+"url": "https://thecommonwealth.org/our-member-countries/united-kingdom"
+},
+{
+"name": "Australia",
+"url": "https://thecommonwealth.org/our-member-countries/australia"
+},
+{
+"name": "Fiji",
+"url": "https://thecommonwealth.org/our-member-countries/fiji"
+},
+{
+"name": "Kiribati",
+"url": "https://thecommonwealth.org/our-member-countries/kiribati"
+},
+{
+"name": "Naoero",
+"url": "https://thecommonwealth.org/our-member-countries/naeoro"
+},
+{
+"name": "New Zealand",
+"url": "https://thecommonwealth.org/our-member-countries/new-zealand"
+},
+{
+"name": "Papua New Guinea",
+"url": "https://thecommonwealth.org/our-member-countries/papua-new-guinea"
+},
+{
+"name": "Samoa",
+"url": "https://thecommonwealth.org/our-member-countries/samoa"
+},
+{
+"name": "Solomon Islands",
+"url": "https://thecommonwealth.org/our-member-countries/solomon-islands"
+},
+{
+"name": "Tonga",
+"url": "https://thecommonwealth.org/our-member-countries/tonga"
+},
+{
+"name": "Tuvalu",
+"url": "https://thecommonwealth.org/our-member-countries/tuvalu"
+},
+{
+"name": "Vanuatu",
+"url": "https://thecommonwealth.org/our-member-countries/vanuatu"
+}
+],
+"uk_role": {
+"title": "UK Representation in the Commonwealth",
+"description": "The Commonwealth is a voluntary association of 56 independent and equal countries, representing over 2.7 billion people across 5 continents. ",
+"url": "https://www.gov.uk/world/organisations/uk-representation-in-the-commonwealth"
+}
+},
+"trade": [
+{
+"country": "Albania",
+"agreement": "UK-Albania Partnership, Trade and Cooperation Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "373"
+},
+{
+"country": "Antigua and Barbuda",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Australia",
+"agreement": "UK-Australia Free Trade Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "24,186"
+},
+{
+"country": "Australia",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Bahamas",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Barbados",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Belize",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Botswana",
+"agreement": "SACUM-UK economic partnership agreement (EPA)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "14,296 (total for SACUM trade bloc)"
+},
+{
+"country": "Brunei",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Cameroon",
+"agreement": "UK-Cameroon Economic Partnership Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "321"
+},
+{
+"country": "Canada",
+"agreement": "UK-Canada Trade Continuity Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "33,655"
+},
+{
+"country": "Canada",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Chile",
+"agreement": "UK-Chile association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,282"
+},
+{
+"country": "Chile",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Colombia",
+"agreement": "UK-Andean countries trade agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "4,288 (total for Andean countries)"
+},
+{
+"country": "Costa Rica",
+"agreement": "UK-Central America association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,939 (total for Central America)"
+},
+{
+"country": "Côte d’Ivoire",
+"agreement": "UK-Côte d’Ivoire Stepping Stone Economic Partnership Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "1,116"
+},
+{
+"country": "Dominica",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Dominican Republic",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Ecuador",
+"agreement": "UK-Andean countries trade agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "4,288 (total for Andean countries)"
+},
+{
+"country": "El Salvador",
+"agreement": "UK-Central America association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,939 (total for Central America)"
+},
+{
+"country": "Egypt",
+"agreement": "UK-Egypt Association Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "5,058"
+},
+{
+"country": "Eswatini",
+"agreement": "SACUM-UK economic partnership agreement (EPA)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "14,296 (total for SACUM trade bloc)"
+},
+{
+"country": "Faroe Islands",
+"agreement": "UK-Faroe Islands Free Trade Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "267"
+},
+{
+"country": "Fiji",
+"agreement": "UK-Pacific economic partnership agreement (EPA)",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "653 (total for Pacific States)"
+},
+{
+"country": "Georgia",
+"agreement": "UK-Georgia strategic partnership and cooperation agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "424"
+},
+{
+"country": "Ghana",
+"agreement": "UK-Ghana Interim Trade Partnership Agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "1,561"
+},
+{
+"country": "Grenada",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Guatemala",
+"agreement": "UK-Central America association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,939 (total for Central America)"
+},
+{
+"country": "Guyana",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Honduras",
+"agreement": "UK-Central America association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,939 (total for Central America)"
+},
+{
+"country": "Iceland",
+"agreement": "Free Trade Agreement between the UK, Iceland, Liechtenstein and Norway",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "41,125 (total for Iceland, Liechtenstein and Norway)"
+},
+{
+"country": "India",
+"agreement": "UK–India Trade Deal",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "48,029"
+},
+{
+"country": "Israel",
+"agreement": "UK-Israel trade and partnership agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "5,956"
+},
+{
+"country": "Jamaica",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Japan",
+"agreement": "UK-Japan Comprehensive Economic Partnership Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "34,660"
+},
+{
+"country": "Japan",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Jordan",
+"agreement": "UK-Jordan association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "1,099"
+},
+{
+"country": "Kenya",
+"agreement": "UK-Kenya Economic Partnership Agreement (2)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,117"
+},
+{
+"country": "Kosovo",
+"agreement": "UK-Kosovo partnership, trade and cooperation agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "20"
+},
+{
+"country": "Lebanon",
+"agreement": "UK-Lebanon association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "696"
+},
+{
+"country": "Lesotho",
+"agreement": "SACUM-UK economic partnership agreement (EPA)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "14,296 (total for SACUM trade bloc)"
+},
+{
+"country": "Liechtenstein",
+"agreement": "Free Trade Agreement between the UK, Iceland, Liechtenstein and Norway",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "41,125 (total for Iceland, Liechtenstein and Norway)"
+},
+{
+"country": "Liechtenstein",
+"agreement": "UK-Switzerland-Liechtenstein Trade Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "192"
+},
+{
+"country": "Madagascar",
+"agreement": "Eastern and Southern Africa (ESA)-UK economic partnership agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,562 (total for ESA trade bloc)"
+},
+{
+"country": "Malaysia",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Mauritius",
+"agreement": "Eastern and Southern Africa (ESA)-UK economic partnership agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,562 (total for ESA trade bloc)"
+},
+{
+"country": "Mexico",
+"agreement": "UK-Mexico Trade Continuity Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "7,010"
+},
+{
+"country": "Mexico",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Moldova",
+"agreement": "UK-Moldova Strategic Partnership, Trade and Cooperation Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "1,568"
+},
+{
+"country": "Morocco",
+"agreement": "UK-Morocco association agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "4,740"
+},
+{
+"country": "Mozambique",
+"agreement": "SACUM-UK economic partnership agreement (EPA)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "14,296 (total for SACUM trade bloc)"
+},
+{
+"country": "Namibia",
+"agreement": "SACUM-UK economic partnership agreement (EPA)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "14,296 (total for SACUM trade bloc)"
+},
+{
+"country": "New Zealand",
+"agreement": "UK-New Zealand Free Trade Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "4,019"
+},
+{
+"country": "New Zealand",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Nicaragua",
+"agreement": "UK-Central America association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,939 (total for Central America)"
+},
+{
+"country": "North Macedonia",
+"agreement": "UK-North Macedonia Partnership, Trade and Cooperation agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "1,773"
+},
+{
+"country": "Norway",
+"agreement": "Free Trade Agreement between the UK, Iceland, Liechtenstein and Norway",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "41,125 (total for Iceland, Liechtenstein and Norway)"
+},
+{
+"country": "Palestinian Authority",
+"agreement": "UK-Palestinian Authority political, trade and partnership agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "38"
+},
+{
+"country": "Panama",
+"agreement": "UK-Central America association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,939 (total for Central America)"
+},
+{
+"country": "Papua New Guinea",
+"agreement": "UK-Pacific economic partnership agreement (EPA)",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "653 (total for Pacific States)"
+},
+{
+"country": "Peru",
+"agreement": "UK-Andean countries trade agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "4,288 (total for Andean countries)"
+},
+{
+"country": "Peru",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Saint Lucia",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Samoa",
+"agreement": "UK-Pacific economic partnership agreement (EPA)",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "653 (total for Pacific States)"
+},
+{
+"country": "Serbia",
+"agreement": "UK-Serbia partnership, trade and cooperation agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "1,247"
+},
+{
+"country": "Seychelles",
+"agreement": "Eastern and Southern Africa (ESA)-UK economic partnership agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,562 (total for ESA trade bloc)"
+},
+{
+"country": "Singapore",
+"agreement": "UK-Singapore Free Trade Agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "28,244"
+},
+{
+"country": "Singapore",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Solomon Islands",
+"agreement": "UK-Pacific economic partnership agreement (EPA)",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "653 (total for Pacific States)"
+},
+{
+"country": "South Africa",
+"agreement": "SACUM-UK economic partnership agreement (EPA)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "14,296 (total for SACUM trade bloc)"
+},
+{
+"country": "South Korea",
+"agreement": "UK-South Korea trade agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "16,975"
+},
+{
+"country": "St Kitts and Nevis",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "St Vincent and the Grenadines",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Suriname",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Switzerland",
+"agreement": "UK-Switzerland trade agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "52,727"
+},
+{
+"country": "Trinidad and Tobago",
+"agreement": "CARIFORUM-UK economic partnership agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "5,522 (total for CARIFORUM trade bloc)"
+},
+{
+"country": "Tunisia",
+"agreement": "UK-Tunisia association agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "716"
+},
+{
+"country": "Turkey",
+"agreement": "UK-Turkey trade agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "28,323"
+},
+{
+"country": "Ukraine",
+"agreement": "UK-Ukraine political, free trade and strategic partnership agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,058"
+},
+{
+"country": "Vietnam",
+"agreement": "UK-Vietnam Free Trade Agreement",
+"mechanism": "Provisional application",
+"uk_trade_2025_gbp_m": "10,473"
+},
+{
+"country": "Vietnam",
+"agreement": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "152,415 (total for CPTPP)"
+},
+{
+"country": "Zimbabwe",
+"agreement": "Eastern and Southern Africa (ESA)-UK economic partnership agreement",
+"mechanism": "Full ratification",
+"uk_trade_2025_gbp_m": "2,562 (total for ESA trade bloc)"
+}
+],
+"tax": [
+{
+"country": "Albania",
+"title": "Albania: tax treaties",
+"url": "https://www.gov.uk/government/publications/albania-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Algeria",
+"title": "Algeria: tax treaties",
+"url": "https://www.gov.uk/government/publications/algeria-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Andorra",
+"title": "Andorra: tax treaties",
+"url": "https://www.gov.uk/government/publications/andorra-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Anguilla",
+"title": "Anguilla: tax treaties",
+"url": "https://www.gov.uk/government/publications/anguilla-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Antigua and Barbuda",
+"title": "Antigua and Barbuda: tax treaties",
+"url": "https://www.gov.uk/government/publications/antigua-and-barbuda-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Argentina",
+"title": "Argentina: tax treaties",
+"url": "https://www.gov.uk/government/publications/argentina-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Armenia",
+"title": "Armenia: tax treaties",
+"url": "https://www.gov.uk/government/publications/armenia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Aruba",
+"title": "Aruba: tax treaties",
+"url": "https://www.gov.uk/government/publications/aruba-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Australia",
+"title": "Australia: tax treaties",
+"url": "https://www.gov.uk/government/publications/australia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Austria",
+"title": "Austria: tax treaties",
+"url": "https://www.gov.uk/government/publications/austria-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Azerbaijan",
+"title": "Azerbaijan: tax treaties",
+"url": "https://www.gov.uk/government/publications/azerbaijan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Bahamas",
+"title": "Bahamas: tax treaties",
+"url": "https://www.gov.uk/government/publications/bahamas-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Bahrain",
+"title": "Bahrain: tax treaties",
+"url": "https://www.gov.uk/government/publications/bahrain-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Bangladesh",
+"title": "Bangladesh: tax treaties",
+"url": "https://www.gov.uk/government/publications/bangladesh-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Barbados",
+"title": "Barbados: tax treaties",
+"url": "https://www.gov.uk/government/publications/barbados-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Belarus",
+"title": "Belarus: tax treaties",
+"url": "https://www.gov.uk/government/publications/belarus-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Belgium",
+"title": "Belgium: tax treaties",
+"url": "https://www.gov.uk/government/publications/belgium-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Belize",
+"title": "Belize: tax treaties",
+"url": "https://www.gov.uk/government/publications/belize-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Bermuda",
+"title": "Bermuda: tax treaties",
+"url": "https://www.gov.uk/government/publications/bermuda-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Bolivia",
+"title": "Bolivia: tax treaties",
+"url": "https://www.gov.uk/government/publications/bolivia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Bosnia-Herzegovina",
+"title": "Bosnia-Herzegovina: tax treaties",
+"url": "https://www.gov.uk/government/publications/bosnia-herzegovina-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Botswana",
+"title": "Botswana: tax treaties",
+"url": "https://www.gov.uk/government/publications/botswana-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Brazil",
+"title": "Brazil: tax treaties",
+"url": "https://www.gov.uk/government/publications/brazil-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "British Virgin Islands",
+"title": "British Virgin Islands: tax treaties",
+"url": "https://www.gov.uk/government/publications/british-virgin-islands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Brunei",
+"title": "Brunei: tax treaties",
+"url": "https://www.gov.uk/government/publications/brunei-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Bulgaria",
+"title": "Bulgaria: tax treaties",
+"url": "https://www.gov.uk/government/publications/bulgaria-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Cameroon",
+"title": "Cameroon: tax treaties",
+"url": "https://www.gov.uk/government/publications/cameroon-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Canada",
+"title": "Canada: tax treaties",
+"url": "https://www.gov.uk/government/publications/canada-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Cayman Islands",
+"title": "Cayman Islands: tax treaties",
+"url": "https://www.gov.uk/government/publications/cayman-islands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Chile",
+"title": "Chile: tax treaties",
+"url": "https://www.gov.uk/government/publications/chile-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "China",
+"title": "China: tax treaties",
+"url": "https://www.gov.uk/government/publications/china-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Colombia",
+"title": "Colombia: tax treaties",
+"url": "https://www.gov.uk/government/publications/colombia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Croatia",
+"title": "Croatia: tax treaties",
+"url": "https://www.gov.uk/government/publications/croatia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Cyprus",
+"title": "Cyprus: tax treaties",
+"url": "https://www.gov.uk/government/publications/cyprus-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Czech Republic",
+"title": "Czech Republic: tax treaties",
+"url": "https://www.gov.uk/government/publications/czech-republic-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Denmark",
+"title": "Denmark: tax treaties",
+"url": "https://www.gov.uk/government/publications/denmark-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Dominica",
+"title": "Dominica: tax treaties",
+"url": "https://www.gov.uk/government/publications/dominica-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Ecuador",
+"title": "Ecuador: tax treaties",
+"url": "https://www.gov.uk/government/publications/ecuador-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Egypt",
+"title": "Egypt: tax treaties",
+"url": "https://www.gov.uk/government/publications/egypt-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Estonia",
+"title": "Estonia: tax treaties",
+"url": "https://www.gov.uk/government/publications/estonia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Ethiopia",
+"title": "Ethiopia: tax treaties",
+"url": "https://www.gov.uk/government/publications/ethiopia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Falkland Islands",
+"title": "Falkland Islands: tax treaties",
+"url": "https://www.gov.uk/government/publications/falkland-islands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Faroes",
+"title": "Faroes: tax treaties",
+"url": "https://www.gov.uk/government/publications/faroes-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Fiji",
+"title": "Fiji: tax treaties",
+"url": "https://www.gov.uk/government/publications/fiji-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Finland",
+"title": "Finland: tax treaties",
+"url": "https://www.gov.uk/government/publications/finland-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "France",
+"title": "France: tax treaties",
+"url": "https://www.gov.uk/government/publications/france-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Gambia",
+"title": "Gambia: tax treaties",
+"url": "https://www.gov.uk/government/publications/gambia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Georgia",
+"title": "Georgia: tax treaties",
+"url": "https://www.gov.uk/government/publications/georgia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Germany",
+"title": "Germany: tax treaties",
+"url": "https://www.gov.uk/government/publications/germany-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Ghana",
+"title": "Ghana: tax treaties",
+"url": "https://www.gov.uk/government/publications/ghana-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Gibraltar",
+"title": "Gibraltar: tax treaties",
+"url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Greece",
+"title": "Greece: tax treaties",
+"url": "https://www.gov.uk/government/publications/greece-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Grenada",
+"title": "Grenada: tax treaties",
+"url": "https://www.gov.uk/government/publications/grenada-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Guernsey",
+"title": "Guernsey: tax treaties",
+"url": "https://www.gov.uk/government/publications/guernsey-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Guyana",
+"title": "Guyana: tax treaties",
+"url": "https://www.gov.uk/government/publications/guyana-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Hong Kong",
+"title": "Hong Kong: tax treaties",
+"url": "https://www.gov.uk/government/publications/hong-kong-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Hungary",
+"title": "Hungary: tax treaties",
+"url": "https://www.gov.uk/government/publications/hungary-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Iceland",
+"title": "Iceland: tax treaties",
+"url": "https://www.gov.uk/government/publications/iceland-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "India",
+"title": "India: tax treaties",
+"url": "https://www.gov.uk/government/publications/india-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Indonesia",
+"title": "Indonesia: tax treaties",
+"url": "https://www.gov.uk/government/publications/indonesia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Iran",
+"title": "Iran: tax treaties",
+"url": "https://www.gov.uk/government/publications/iran-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Ireland",
+"title": "Ireland: tax treaties",
+"url": "https://www.gov.uk/government/publications/ireland-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Isle of Man",
+"title": "Isle of Man: tax treaties",
+"url": "https://www.gov.uk/government/publications/isle-of-man-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Israel",
+"title": "Israel: tax treaties",
+"url": "https://www.gov.uk/government/publications/israel-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Italy",
+"title": "Italy: tax treaties",
+"url": "https://www.gov.uk/government/publications/italy-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Ivory Coast",
+"title": "Ivory Coast: tax treaties",
+"url": "https://www.gov.uk/government/publications/ivory-coast-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Jamaica",
+"title": "Jamaica: tax treaties",
+"url": "https://www.gov.uk/government/publications/jamaica-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Japan",
+"title": "Japan: tax treaties",
+"url": "https://www.gov.uk/government/publications/japan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Jersey",
+"title": "Jersey: tax treaties",
+"url": "https://www.gov.uk/government/publications/jersey-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Jordan",
+"title": "Jordan: tax treaties",
+"url": "https://www.gov.uk/government/publications/jordan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Kazakhstan",
+"title": "Kazakhstan: tax treaties",
+"url": "https://www.gov.uk/government/publications/kazakhstan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Kenya",
+"title": "Kenya: tax treaties",
+"url": "https://www.gov.uk/government/publications/kenya-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Kiribati",
+"title": "Kiribati: tax treaties",
+"url": "https://www.gov.uk/government/publications/kiribati-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Kosovo",
+"title": "Kosovo: tax treaties",
+"url": "https://www.gov.uk/government/publications/kosovo-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Kuwait",
+"title": "Kuwait: tax treaties",
+"url": "https://www.gov.uk/government/publications/kuwait-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Kyrgyzstan",
+"title": "Kyrgyzstan: tax treaties",
+"url": "https://www.gov.uk/government/publications/kyrgyzstan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Latvia",
+"title": "Latvia: tax treaties",
+"url": "https://www.gov.uk/government/publications/latvia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Lebanon",
+"title": "Lebanon: tax treaties",
+"url": "https://www.gov.uk/government/publications/lebanon-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Lesotho",
+"title": "Lesotho tax treaties",
+"url": "https://www.gov.uk/government/publications/lesotho-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Liberia",
+"title": "Liberia: tax treaties",
+"url": "https://www.gov.uk/government/publications/liberia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Libya",
+"title": "Libya: tax treaties",
+"url": "https://www.gov.uk/government/publications/libya-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Liechtenstein",
+"title": "Liechtenstein: tax treaties",
+"url": "https://www.gov.uk/government/publications/liechtenstein-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Lithuania",
+"title": "Lithuania: tax treaties",
+"url": "https://www.gov.uk/government/publications/lithuania-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Luxembourg",
+"title": "Luxembourg: tax treaties",
+"url": "https://www.gov.uk/government/publications/luxembourg-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Macao",
+"title": "Macao: tax treaties",
+"url": "https://www.gov.uk/government/publications/macao-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Macedonia",
+"title": "Macedonia: tax treaties",
+"url": "https://www.gov.uk/government/publications/macedonia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Malawi",
+"title": "Malawi: tax treaties",
+"url": "https://www.gov.uk/government/publications/malawi-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Malaysia",
+"title": "Malaysia: tax treaties",
+"url": "https://www.gov.uk/government/publications/malaysia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Malta",
+"title": "Malta: tax treaties",
+"url": "https://www.gov.uk/government/publications/malta-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Marshall Islands",
+"title": "Marshall Islands: tax treaties",
+"url": "https://www.gov.uk/government/publications/marshall-islands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Mauritius",
+"title": "Mauritius: tax treaties",
+"url": "https://www.gov.uk/government/publications/mauritius-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Mexico",
+"title": "Mexico: tax treaties",
+"url": "https://www.gov.uk/government/publications/mexico-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Moldova",
+"title": "Moldova: tax treaties",
+"url": "https://www.gov.uk/government/publications/moldova-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Monaco",
+"title": "Monaco: tax treaties",
+"url": "https://www.gov.uk/government/publications/monaco-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Mongolia",
+"title": "Mongolia: tax treaties",
+"url": "https://www.gov.uk/government/publications/mongolia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Montenegro",
+"title": "Montenegro: tax treaties",
+"url": "https://www.gov.uk/government/publications/montenegro-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Montserrat",
+"title": "Montserrat: tax treaties",
+"url": "https://www.gov.uk/government/publications/montserrat-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Morocco",
+"title": "Morocco: tax treaties",
+"url": "https://www.gov.uk/government/publications/morocco-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Myanmar (Burma)",
+"title": "Myanmar (Burma): tax treaties",
+"url": "https://www.gov.uk/government/publications/burma-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Namibia",
+"title": "Namibia: tax treaties",
+"url": "https://www.gov.uk/government/publications/namibia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Netherlands",
+"title": "Netherlands: tax treaties",
+"url": "https://www.gov.uk/government/publications/netherlands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Netherlands Antilles (Curacao,Sint Maarten and BES Islands)",
+"title": "Netherlands Antilles (Curacao,Sint Maarten and BES Islands): tax treaties",
+"url": "https://www.gov.uk/government/publications/netherlands-antilles-curacaosint-maarten-and-bes-islands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "New Zealand",
+"title": "New Zealand: tax treaties",
+"url": "https://www.gov.uk/government/publications/new-zealand-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Nigeria",
+"title": "Nigeria: tax treaties",
+"url": "https://www.gov.uk/government/publications/nigeria-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Norway",
+"title": "Norway: tax treaties",
+"url": "https://www.gov.uk/government/publications/norway-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Oman",
+"title": "Oman: tax treaties",
+"url": "https://www.gov.uk/government/publications/oman-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Pakistan",
+"title": "Pakistan: tax treaties",
+"url": "https://www.gov.uk/government/publications/pakistan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Panama",
+"title": "Panama: tax treaties",
+"url": "https://www.gov.uk/government/publications/panama-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Papua New Guinea",
+"title": "Papua New Guinea: tax treaties",
+"url": "https://www.gov.uk/government/publications/papua-new-guinea-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Peru",
+"title": "Peru: tax treaties",
+"url": "https://www.gov.uk/government/publications/peru-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Philippines",
+"title": "Philippines: tax treaties",
+"url": "https://www.gov.uk/government/publications/philippines-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Poland",
+"title": "Poland: tax treaties",
+"url": "https://www.gov.uk/government/publications/poland-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Portugal",
+"title": "Portugal: tax treaties",
+"url": "https://www.gov.uk/government/publications/portugal-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Qatar",
+"title": "Qatar: tax treaties",
+"url": "https://www.gov.uk/government/publications/qatar-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Romania",
+"title": "Romania: tax treaties",
+"url": "https://www.gov.uk/government/publications/romania-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Russia",
+"title": "Russia: tax treaties",
+"url": "https://www.gov.uk/government/publications/russia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Saint Christopher (Saint Kitts) and Nevis",
+"title": "Saint Christopher (Saint Kitts) and Nevis: tax treaties",
+"url": "https://www.gov.uk/government/publications/saint-christopher-saint-kitts-and-nevis-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Saint Vincent and the Grenadines",
+"title": "Saint Vincent and the Grenadines: tax treaties",
+"url": "https://www.gov.uk/government/publications/st-vincent-and-the-grenadines-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "San Marino",
+"title": "San Marino: tax treaties",
+"url": "https://www.gov.uk/government/publications/san-marino-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Saudi Arabia",
+"title": "Saudi Arabia: tax treaties",
+"url": "https://www.gov.uk/government/publications/saudi-arabia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Senegal",
+"title": "Senegal: tax treaties",
+"url": "https://www.gov.uk/government/publications/senegal-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Serbia",
+"title": "Serbia: tax treaties",
+"url": "https://www.gov.uk/government/publications/serbia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Sierra Leone",
+"title": "Sierra Leone: tax treaties",
+"url": "https://www.gov.uk/government/publications/sierra-leone-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Singapore",
+"title": "Singapore: tax treaties",
+"url": "https://www.gov.uk/government/publications/singapore-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Slovak Republic",
+"title": "Slovak Republic: tax treaties",
+"url": "https://www.gov.uk/government/publications/slovak-republic-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Slovenia",
+"title": "Slovenia: tax treaties",
+"url": "https://www.gov.uk/government/publications/slovenia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Solomon Islands",
+"title": "Solomon Islands: tax treaties",
+"url": "https://www.gov.uk/government/publications/solomon-islands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "South Africa",
+"title": "South Africa: tax treaties",
+"url": "https://www.gov.uk/government/publications/south-africa-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "South Korea",
+"title": "South Korea: tax treaties",
+"url": "https://www.gov.uk/government/publications/south-korea-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Spain",
+"title": "Spain: tax treaties",
+"url": "https://www.gov.uk/government/publications/spain-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Sri Lanka",
+"title": "Sri Lanka: tax treaties",
+"url": "https://www.gov.uk/government/publications/sri-lanka-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "St Lucia",
+"title": "St Lucia: tax treaties",
+"url": "https://www.gov.uk/government/publications/st-lucia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Sudan",
+"title": "Sudan: tax treaties",
+"url": "https://www.gov.uk/government/publications/sudan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Swaziland",
+"title": "Swaziland: tax treaties",
+"url": "https://www.gov.uk/government/publications/swaziland-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Sweden",
+"title": "Sweden: tax treaties",
+"url": "https://www.gov.uk/government/publications/sweden-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Switzerland",
+"title": "Switzerland: tax treaties",
+"url": "https://www.gov.uk/government/publications/switzerland-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Taiwan",
+"title": "Taiwan: tax treaties",
+"url": "https://www.gov.uk/government/publications/taiwan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Tajikistan",
+"title": "Tajikistan: tax treaties",
+"url": "https://www.gov.uk/government/publications/tajikistan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Thailand",
+"title": "Thailand: tax treaties",
+"url": "https://www.gov.uk/government/publications/thailand-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Trinidad and Tobago",
+"title": "Trinidad and Tobago: tax treaties",
+"url": "https://www.gov.uk/government/publications/trinidad-and-tobago-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Tunisia",
+"title": "Tunisia: tax treaties",
+"url": "https://www.gov.uk/government/publications/tunisia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Turkey",
+"title": "Turkey: tax treaties",
+"url": "https://www.gov.uk/government/publications/turkey-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Turkmenistan",
+"title": "Turkmenistan: tax treaties",
+"url": "https://www.gov.uk/government/publications/turkmenistan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Turks and Caicos Islands",
+"title": "Turks and Caicos Islands: tax treaties",
+"url": "https://www.gov.uk/government/publications/turks-and-caicos-islands-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Tuvalu",
+"title": "Tuvalu: tax treaties",
+"url": "https://www.gov.uk/government/publications/tuvalu-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Uganda",
+"title": "Uganda: tax treaties",
+"url": "https://www.gov.uk/government/publications/uganda-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Ukraine",
+"title": "Ukraine: tax treaties",
+"url": "https://www.gov.uk/government/publications/ukraine-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "United Arab Emirates",
+"title": "United Arab Emirates: tax treaties",
+"url": "https://www.gov.uk/government/publications/united-arab-emirates-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Uruguay",
+"title": "Uruguay: tax treaties",
+"url": "https://www.gov.uk/government/publications/uruguay-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "USA",
+"title": "USA: tax treaties",
+"url": "https://www.gov.uk/government/publications/usa-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "USSR",
+"title": "USSR: tax treaties",
+"url": "https://www.gov.uk/government/publications/ussr-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Uzbekistan",
+"title": "Uzbekistan: tax treaties",
+"url": "https://www.gov.uk/government/publications/uzbekistan-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Venezuela",
+"title": "Venezuela: tax treaties",
+"url": "https://www.gov.uk/government/publications/venezuela-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Vietnam",
+"title": "Vietnam: tax treaties",
+"url": "https://www.gov.uk/government/publications/vietnam-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Zaire",
+"title": "Zaire: tax treaties",
+"url": "https://www.gov.uk/government/publications/zaire-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Zambia",
+"title": "Zambia: tax treaties",
+"url": "https://www.gov.uk/government/publications/zambia-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "Zimbabwe",
+"title": "Zimbabwe: tax treaties",
+"url": "https://www.gov.uk/government/publications/zimbabwe-tax-treaties",
+"kind": "tax treaties"
+},
+{
+"country": "San Marino",
+"title": "Agreement between the UK and San Marino for the exchange of information relating to taxes",
+"url": "https://www.gov.uk/government/publications/agreement-between-the-uk-and-san-marino-for-the-exchange-of-information-relating-to-taxes",
+"kind": "exchange of tax information"
+},
+{
+"country": "Antigua and Barbuda",
+"title": "Agreement between the UK and Antigua and Barbuda for the exchange of information relating to tax matters",
+"url": "https://www.gov.uk/government/publications/agreement-between-the-uk-and-antigua-and-barbuda-for-the-exchange-of-information-relating-to-tax-matters",
+"kind": "exchange of tax information"
+},
+{
+"country": "Saint Kitts and Nevis",
+"title": "Agreement between the UK and Saint Kitts and Nevis for the exchange of information relating to tax matters",
+"url": "https://www.gov.uk/government/publications/agreement-between-the-uk-and-saint-kitts-and-nevis-for-the-exchange-of-information-relating-to-tax-matters",
+"kind": "exchange of tax information"
+},
+{
+"country": "Saint Vincent and the Grenadines",
+"title": "Agreement between the UK and Saint Vincent and the Grenadines for the exchange of information relating to tax matters",
+"url": "https://www.gov.uk/government/publications/agreement-between-the-uk-and-saint-vincent-and-the-grenadines-for-the-exchange-of-information-relating-to-tax-matters",
+"kind": "exchange of tax information"
+},
+{
+"country": "Bahamas",
+"title": "Agreement between the UK and the Bahamas for the exchange of information relating to taxes",
+"url": "https://www.gov.uk/government/publications/agreement-between-the-uk-and-the-bahamas-for-the-exchange-of-information-relating-to-taxes",
+"kind": "exchange of tax information"
+},
+{
+"country": "Dominica",
+"title": "Agreement between the UK and Dominica: taxes and tax matters: London, 31 March 2012",
+"url": "https://www.gov.uk/government/publications/agreement-between-the-uk-and-dominica-taxes-and-tax-matters-london-31-march-2012",
+"kind": "exchange of tax information"
+},
+{
+"country": "Grenada",
+"title": "Agreement between the UK and Grenada for the exchange of information relating to tax matters",
+"url": "https://www.gov.uk/government/publications/agreement-between-the-uk-and-grenada-for-the-exchange-of-information-relating-to-tax-matters",
+"kind": "exchange of tax information"
+},
+{
+"country": "Netherlands Antilles",
+"title": "Tax Information Exchange Agreement: Netherlands Antilles - taxation savings income",
+"url": "https://www.gov.uk/government/publications/tax-information-exchange-agreement-netherlands-antilles-taxation-savings-income",
+"kind": "exchange of tax information"
+},
+{
+"country": "Turks and Caicos Islands",
+"title": "Tax Information Exchange Agreement: Turks and Caicos Islands - taxation of savings income",
+"url": "https://www.gov.uk/government/publications/tax-information-exchange-agreement-turks-and-caicos-islands-taxation-of-savings-income",
+"kind": "exchange of tax information"
+}
+],
+"sha256": "09c4907a2e5f2eb9789d2a0ea291a8b1359243df41107659e7bfc4e9a151ef69"
+}
