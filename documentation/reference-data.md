@@ -34,20 +34,7 @@ Built 2026-11-22T04:24:15Z against https://www.data.gov.uk (National Data Librar
 
 | App or dataset | Holds today | Reads from the register | Status |
 |---|---|---|---|
-| ANA: Anatomy of Government | its own anatomy of departments and arm's-length bodies | `id, name, family, parents, ids.govuk_slug` | proposed |
-| GovCRM | party-data.js (organisations as parties) | `id as party key; name; parents` | proposed |
-| MEASR data asset register | uk-gov-orgs.json (1,176 organisations), org-resolution.json | `id, name, ids.govuk_slug, joins` | proposed |
-| MoG Navigator and the MoG canon | mog-canon.json | `mog-changes.json as its change log; superseding links` | proposed |
-| Cadastre | derived organisation feeds | `id, name, family, nations` | proposed |
-| AIM Government Data Directorate PMO portal | org-chart.js | `id, name, parents` | proposed |
 | GitHub Repos Asset Catalogue | organisation names and GOV.UK slugs per GitHub account | `ids.github, ids.govuk_slug` | proposed |
-| Government Technology Intelligence | organisation-level scores | `id, name, family` | proposed |
-| DAM Policy returns: SharePoint reference list and Dataverse | data/reference-organisations.csv (308 in-scope bodies), DAM Reference Organisations list, dam_Organisation table | `id, name, accountable_owner, answers_to, wga, ids.govuk_slug` | adopting (0.3.0) |
-| Data Interoperability Atlas | estate owners by GOV.UK slug | `ids.govuk_slug, id` | proposed |
-| CDA register and CDA Estate Command Dashboard | publishing-body names and WGA status per return | `id, accountable_owner, wga (accountability.json)` | proposed |
-| DAM Insight | organisation names on returns | `id, name, accountable_owner` | proposed |
-| Social Care Legacy Exit portal | council and NHS body names | `id, ids.local_authority, ids.nhs_ods, answers_to` | proposed |
-| Portfolio portal (Government Data Directorate) | departments and bodies in its portfolio | `id, name, accountable_owner` | proposed |
 | dcat-ap-uk | publisher URIs | `id as dct:publisher, state.jsonld` | proposed |
 
 ## Peer reference datasets in the catalogue

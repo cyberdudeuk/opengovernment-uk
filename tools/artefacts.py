@@ -50,7 +50,9 @@ REQS = {
     "OG-R40": ("Nation colours across the portal; ultimate owners split by nation; bodies serving several nations flagged", "Must", "Done", ["N1", "N2"], ["C-NAT", "C-PORTAL"]),
     "OG-R41": ("Own websites and official-language names, linked within the portal and out to the source", "Should", "Done", ["N1"], ["C-NAT"]),
     "OG-R42": ("2020 compilation used as dated evidence, non-personal columns only, not redistributed", "Should", "Done", ["N5", "N7"], ["C-H2020"]),
-    "OG-R43": ("Every body classified by purpose, reach and how it is formed, in plain English for any reader", "Must", "In progress", ["N1"], []),
+    "OG-R43": ("Every body classified by purpose, reach and how it is formed, in plain English for any reader", "Must", "Done", ["N1"], ["C-CLASS", "C-NAT"]),
+    "OG-R44": ("Only apps with a public portal and repository are named as consumers", "Must", "Done", ["N6", "N7"], ["C-PORTAL"]),
+    "OG-R45": ("Every open standard in use listed with status and a deep link", "Must", "Done", ["N6", "N7"], ["C-PORTAL"]),
     "OG-R37": ("Comparator adoptions: founding legislation, COFOG, movements, interests, parent history", "Should", "Planned", ["N1", "N4", "N5"], []),
 }
 # id: (name, path, checks, outputs)
@@ -67,6 +69,7 @@ COMPONENTS = {
     "C-NAT": ("Nation-by-nation registers", "tools/nations.py", ["CHK-nations"], ["data/nations.json", "docs/nations.html"]),
     "C-NATEV": ("Nation evidence resolver", "tools/nation_evidence.py", ["CHK-natev"], ["data/nation-evidence.json"]),
     "C-H2020": ("2020 historical layer", "tools/historical_2020.py", ["CHK-h2020"], ["data/historical-2020.json"]),
+    "C-CLASS": ("Plain-English classifier", "tools/classify.py", ["CHK-classify"], ["data/classification.json"]),
     "C-ART": ("Documentation generator", "tools/artefacts.py", ["CHK-artefacts"], ["documentation/solution/", "docs/navigator.html"]),
     "C-CI": ("Checks and refresh workflows", ".github/workflows/", ["CHK-lint"], []),
     "C-REPO": ("Contribution model", "CONTRIBUTING.md", [], [".github/ISSUE_TEMPLATE/"]),
@@ -79,7 +82,7 @@ CHECKS = {
     "CHK-footer": "Footer names no individual and no government body", "CHK-req_ids": "Requirement IDs are unique", "CHK-self": "The page checks itself (width, links, chains, wording)",
     "CHK-bods_schema": "BODS output validates against the official schema", "CHK-units": "Every edition records its unit evidence and year", "CHK-reconciled": "The 2020 baseline is fully accounted for",
     "CHK-trend_persons": "No personal fields in trend outputs", "CHK-scenarios": "Scenarios recompute exactly from their assumptions", "CHK-functions": "Back-office known answers",
-    "CHK-artefacts": "Ontology and knowledge graph parse; every requirement traces to a need", "CHK-lint": "Linter fails on any finding", "CHK-natev": "Nation known answers found; a wrong nation is caught", "CHK-h2020": "Fingerprint matches; no personal field", "CHK-bods_rules": "Open Ownership's checker finds nothing", "CHK-nations": "Nation and branch known answers are found; every nation has an apex for each branch",
+    "CHK-artefacts": "Ontology and knowledge graph parse; every requirement traces to a need", "CHK-lint": "Linter fails on any finding", "CHK-natev": "Nation known answers found; a wrong nation is caught", "CHK-h2020": "Fingerprint matches; no personal field", "CHK-bods_rules": "Open Ownership's checker finds nothing", "CHK-classify": "Purpose and formation known answers; a wrong formation is caught", "CHK-nations": "Nation and branch known answers are found; every nation has an apex for each branch",
 }
 DOCS = {
     "D01": ("Theory of change", "01-theory-of-change.md", ["N1", "N2", "N3", "N5", "N7"]),

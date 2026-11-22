@@ -481,11 +481,42 @@
    "@type": "Requirement",
    "name": "Every body classified by purpose, reach and how it is formed, in plain English for any reader",
    "priority": "Must",
-   "status": "In progress",
+   "status": "Done",
    "serves": [
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#N1"
    ],
-   "metBy": []
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NAT"
+   ]
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R44",
+   "@type": "Requirement",
+   "name": "Only apps with a public portal and repository are named as consumers",
+   "priority": "Must",
+   "status": "Done",
+   "serves": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N6",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N7"
+   ],
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-PORTAL"
+   ]
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R45",
+   "@type": "Requirement",
+   "name": "Every open standard in use listed with status and a deep link",
+   "priority": "Must",
+   "status": "Done",
+   "serves": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N6",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N7"
+   ],
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-PORTAL"
+   ]
   },
   {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37",
@@ -663,6 +694,18 @@
    ]
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+   "@type": "Component",
+   "name": "Plain-English classifier",
+   "path": "tools/classify.py",
+   "provenBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-classify"
+   ],
+   "produces": [
+    "data/classification.json"
+   ]
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
    "@type": "Component",
    "name": "Documentation generator",
@@ -821,6 +864,11 @@
    "name": "Open Ownership's checker finds nothing"
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-classify",
+   "@type": "Check",
+   "name": "Purpose and formation known answers; a wrong formation is caught"
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-nations",
    "@type": "Check",
    "name": "Nation and branch known answers are found; every nation has an apex for each branch"
@@ -903,6 +951,8 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R41",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R42",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R43",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R44",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R45",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
   },
@@ -944,6 +994,8 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R41",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R42",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R43",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R44",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R45",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
   },
@@ -965,6 +1017,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NAT",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CI",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-REPO"
@@ -988,6 +1041,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NAT",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CI",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-REPO"
@@ -1011,6 +1065,7 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NAT",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CI",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-REPO"
@@ -1083,6 +1138,8 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R41",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R42",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R43",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R44",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R45",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
   }

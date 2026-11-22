@@ -33,6 +33,8 @@ jobs:
           libcovebods pv docs/bods-0.4.json | python -c "import json,sys; a=json.load(sys.stdin)['additional_checks']; sys.exit(f'BODS rule findings: {len(a)}' if a else 0)"
       - name: Nation evidence and the 2020 layer (known answers, negatives)
         run: python tools/nation_evidence.py --verify && python tools/nation_evidence.py --negative
+      - name: Plain-English classification (known answers, negative)
+        run: python tools/classify.py && python tools/classify.py --negative
       - name: Nations and documentation (known answers, traceability, negatives)
         run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: BODS output validates against the official schema

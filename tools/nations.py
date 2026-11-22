@@ -93,6 +93,8 @@ BASIS = {"chain": "answers to that nation's legislature", "ons-sponsor": "ONS re
 
 def build(D, chains, ev):
     site, off, lab, lad = names_and_sites()
+    cp = ROOT / "data/classification.json"  # tools/classify.py (it reads body-nations.json, which this writes: run nations, classify, nations)
+    CL = json.loads(cp.read_text())["bodies"] if cp.exists() else {}
     out = {k: {"name": v, "branches": {"legislature": collections.defaultdict(list), "executive": collections.defaultdict(list), "judiciary": collections.defaultdict(list)}} for k, v in NATIONS.items()}
     unplaced = 0
     for r in D["r"]:
@@ -122,7 +124,8 @@ def build(D, chains, ev):
         if not web and r[9] and "gov.uk/government/organisations" not in r[9]: web = r[9]
         multi = [c for c in codes if c in ("EN", "SC", "WA", "NI")]
         for c in codes: out[c]["branches"][br][tier].append({"id": r[0], "name": r[1], "type": r[3], "basis": basis, "why": why, "url": url, "p": parent, "answers_to": ans,
-                                                             "h": to_hash(r[0]), "web": web, "gov": govuk, "names": nm, "nations": codes if (len(multi) > 1 or "UK" in codes) else []})
+                                                             "h": to_hash(r[0]), "web": web, "gov": govuk, "names": nm, "nations": codes if (len(multi) > 1 or "UK" in codes) else [],
+                                                             "pk": (CL.get(r[0]) or {}).get("purpose", "unknown"), "rk": (CL.get(r[0]) or {}).get("reach_label", ""), "fk": (CL.get(r[0]) or {}).get("formed", "unknown")})
     for c, n in out.items():
         n["apex"] = {br: [{"name": a, "basis": b, "url": u} for a, b, u in v] for br, v in APEX.get(c, {}).items()}
         n["uk_apex"] = {br: [{"name": a, "basis": b, "url": u} for a, b, u in v] for br, v in UK_APEX.items()} if c in ("EN", "SC", "WA", "NI") else {}
@@ -166,13 +169,16 @@ if __name__ == "__main__":
         globals()["branch_of"] = _orig; out2, u2 = build(D, chains, ev); out2["SC"]["apex"]["judiciary"] = []
         ok2 = bool(check(out2, u2, D)); print("caught missing apex" if ok2 else "MISSED missing apex"); sys.exit(0 if ok and ok2 else 1)
     probs = check(out, unplaced, D)
+    ISO = {"EN": "GB-ENG", "SC": "GB-SCT", "WA": "GB-WLS", "NI": "GB-NIR", "UK": "GB"}  # ISO 3166-2:GB (and 3166-1 for the UK)
+    for c, nn in out.items(): nn["iso"] = ISO.get(c)
     final = {x["id"]: x.get("nations") or [c] for c, n in out.items() for t in n["branches"].values() for v in t.values() for x in v}
     (ROOT / "data/body-nations.json").write_text(json.dumps(final, separators=(",", ":")))  # final placement, read by the portal
     for f in ("data/nations.json", "docs/nations.json"): (ROOT / f).write_text(json.dumps({"nations": out, "unplaced_open_bodies": unplaced}, indent=1))
     evd = json.loads((ROOT / "data/nation-evidence.json").read_text())
     placed = {x["id"] for n in out.values() for t in n["branches"].values() for v in t.values() for x in v}
     unl = sorted(({"id": r[0], "name": r[1], "type": r[3].replace("\n", " ")} for r in D["r"] if r[4] and r[0] not in placed), key=lambda x: x["name"])
-    payload = {"nations": out, "conflicts": [c for c in evd["conflicts"] if c.get("status") == "contested"], "resolved": sum(1 for c in evd["conflicts"] if c.get("status") == "resolved"), "unplaced": unl}
+    meta = json.loads((ROOT / "data/classification.json").read_text())["meta"] if (ROOT / "data/classification.json").exists() else {}
+    payload = {"meta": meta, "nations": out, "conflicts": [c for c in evd["conflicts"] if c.get("status") == "contested"], "resolved": sum(1 for c in evd["conflicts"] if c.get("status") == "resolved"), "unplaced": unl}
     (ROOT / "docs/nations.html").write_text(PAGE.replace("__DATA__", json.dumps(payload).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
     for k, n in out.items(): print(f"{k:3} {n['name']:36} {n['counts']}")
     print("unplaced", unplaced, "problems", probs); sys.exit(1 if probs else 0)

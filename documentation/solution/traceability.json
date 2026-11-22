@@ -371,11 +371,38 @@
   "OG-R43": [
    "Every body classified by purpose, reach and how it is formed, in plain English for any reader",
    "Must",
-   "In progress",
+   "Done",
    [
     "N1"
    ],
-   []
+   [
+    "C-CLASS",
+    "C-NAT"
+   ]
+  ],
+  "OG-R44": [
+   "Only apps with a public portal and repository are named as consumers",
+   "Must",
+   "Done",
+   [
+    "N6",
+    "N7"
+   ],
+   [
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R45": [
+   "Every open standard in use listed with status and a deep link",
+   "Must",
+   "Done",
+   [
+    "N6",
+    "N7"
+   ],
+   [
+    "C-PORTAL"
+   ]
   ],
   "OG-R37": [
    "Comparator adoptions: founding legislation, COFOG, movements, interests, parent history",
@@ -528,6 +555,16 @@
     "data/historical-2020.json"
    ]
   ],
+  "C-CLASS": [
+   "Plain-English classifier",
+   "tools/classify.py",
+   [
+    "CHK-classify"
+   ],
+   [
+    "data/classification.json"
+   ]
+  ],
   "C-ART": [
    "Documentation generator",
    "tools/artefacts.py",
@@ -582,6 +619,7 @@
   "CHK-natev": "Nation known answers found; a wrong nation is caught",
   "CHK-h2020": "Fingerprint matches; no personal field",
   "CHK-bods_rules": "Open Ownership's checker finds nothing",
+  "CHK-classify": "Purpose and formation known answers; a wrong formation is caught",
   "CHK-nations": "Nation and branch known answers are found; every nation has an apex for each branch"
  },
  "documents": {
@@ -655,6 +693,8 @@
     "OG-R41",
     "OG-R42",
     "OG-R43",
+    "OG-R44",
+    "OG-R45",
     "OG-R37"
    ]
   ],
@@ -694,6 +734,8 @@
     "OG-R41",
     "OG-R42",
     "OG-R43",
+    "OG-R44",
+    "OG-R45",
     "OG-R37"
    ]
   ],
@@ -713,6 +755,7 @@
     "C-NAT",
     "C-NATEV",
     "C-H2020",
+    "C-CLASS",
     "C-ART",
     "C-CI",
     "C-REPO"
@@ -734,6 +777,7 @@
     "C-NAT",
     "C-NATEV",
     "C-H2020",
+    "C-CLASS",
     "C-ART",
     "C-CI",
     "C-REPO"
@@ -755,6 +799,7 @@
     "C-NAT",
     "C-NATEV",
     "C-H2020",
+    "C-CLASS",
     "C-ART",
     "C-CI",
     "C-REPO"
@@ -819,6 +864,8 @@
     "OG-R41",
     "OG-R42",
     "OG-R43",
+    "OG-R44",
+    "OG-R45",
     "OG-R37"
    ]
   ]

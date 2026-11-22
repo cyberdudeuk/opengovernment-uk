@@ -783,109 +783,22 @@
  ],
  "downstream": [
   {
-   "id": "ana-anatomy-of-government",
-   "app": "ANA: Anatomy of Government",
-   "holds_now": "its own anatomy of departments and arm's-length bodies",
-   "reads": "id, name, family, parents, ids.govuk_slug",
-   "status": "proposed"
-  },
-  {
-   "id": "govcrm",
-   "app": "GovCRM",
-   "holds_now": "party-data.js (organisations as parties)",
-   "reads": "id as party key; name; parents",
-   "status": "proposed"
-  },
-  {
-   "id": "measr-data-asset-register",
-   "app": "MEASR data asset register",
-   "holds_now": "uk-gov-orgs.json (1,176 organisations), org-resolution.json",
-   "reads": "id, name, ids.govuk_slug, joins",
-   "status": "proposed"
-  },
-  {
-   "id": "mog-navigator-and-the-mog-canon",
-   "app": "MoG Navigator and the MoG canon",
-   "holds_now": "mog-canon.json",
-   "reads": "mog-changes.json as its change log; superseding links",
-   "status": "proposed"
-  },
-  {
-   "id": "cadastre",
-   "app": "Cadastre",
-   "holds_now": "derived organisation feeds",
-   "reads": "id, name, family, nations",
-   "status": "proposed"
-  },
-  {
-   "id": "aim-government-data-directorate-pmo-portal",
-   "app": "AIM Government Data Directorate PMO portal",
-   "holds_now": "org-chart.js",
-   "reads": "id, name, parents",
-   "status": "proposed"
-  },
-  {
    "id": "github-repos-asset-catalogue",
    "app": "GitHub Repos Asset Catalogue",
    "holds_now": "organisation names and GOV.UK slugs per GitHub account",
    "reads": "ids.github, ids.govuk_slug",
-   "status": "proposed"
-  },
-  {
-   "id": "government-technology-intelligence",
-   "app": "Government Technology Intelligence",
-   "holds_now": "organisation-level scores",
-   "reads": "id, name, family",
-   "status": "proposed"
-  },
-  {
-   "id": "dam-policy-returns-sharepoint-reference-list-and-dataverse",
-   "app": "DAM Policy returns: SharePoint reference list and Dataverse",
-   "holds_now": "data/reference-organisations.csv (308 in-scope bodies), DAM Reference Organisations list, dam_Organisation table",
-   "reads": "id, name, accountable_owner, answers_to, wga, ids.govuk_slug",
-   "status": "adopting (0.3.0)"
-  },
-  {
-   "id": "data-interoperability-atlas",
-   "app": "Data Interoperability Atlas",
-   "holds_now": "estate owners by GOV.UK slug",
-   "reads": "ids.govuk_slug, id",
-   "status": "proposed"
-  },
-  {
-   "id": "cda-register-and-cda-estate-command-dashboard",
-   "app": "CDA register and CDA Estate Command Dashboard",
-   "holds_now": "publishing-body names and WGA status per return",
-   "reads": "id, accountable_owner, wga (accountability.json)",
-   "status": "proposed"
-  },
-  {
-   "id": "dam-insight",
-   "app": "DAM Insight",
-   "holds_now": "organisation names on returns",
-   "reads": "id, name, accountable_owner",
-   "status": "proposed"
-  },
-  {
-   "id": "social-care-legacy-exit-portal",
-   "app": "Social Care Legacy Exit portal",
-   "holds_now": "council and NHS body names",
-   "reads": "id, ids.local_authority, ids.nhs_ods, answers_to",
-   "status": "proposed"
-  },
-  {
-   "id": "portfolio-portal-government-data-directorate",
-   "app": "Portfolio portal (Government Data Directorate)",
-   "holds_now": "departments and bodies in its portfolio",
-   "reads": "id, name, accountable_owner",
-   "status": "proposed"
+   "status": "proposed",
+   "portal": "https://cyberdudeuk.github.io/github-repos-asset-catalogue/",
+   "repo": "https://github.com/cyberdudeuk/github-repos-asset-catalogue"
   },
   {
    "id": "dcat-ap-uk",
    "app": "dcat-ap-uk",
    "holds_now": "publisher URIs",
    "reads": "id as dct:publisher, state.jsonld",
-   "status": "proposed"
+   "status": "proposed",
+   "portal": "https://cyberdudeuk.github.io/dcat-ap-uk/",
+   "repo": "https://github.com/cyberdudeuk/dcat-ap-uk"
   }
  ],
  "peers": [

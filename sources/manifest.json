@@ -48,15 +48,15 @@
   "retrieved": "2026-11-22T03:42:14Z"
  },
  "wga": {
-  "file": "cda-register-2026-10-15.json",
-  "name": "HM Treasury Whole of Government Accounts 2024-25, Annexes 1 to 3 (as transcribed in the CDA register, read 21 September 2026)",
+  "file": "wga-2024-25-annexes.json",
+  "name": "HM Treasury Whole of Government Accounts 2024-25, Annexes 1 to 3 (published annexes, transcribed 21 September 2026)",
   "url": "https://www.gov.uk/government/collections/whole-of-government-accounts",
   "owner": "HM Treasury",
   "licence": "OGL v3.0",
   "asserts": "consolidation status in the audited accounts of the UK public sector",
   "staged": true,
   "redistributed": true,
-  "sha256": "772297c4304c683303525c07b148eae6f589c430bae25f1ab4ea67e90e09513a",
+  "sha256": "6b7788a6f81dd3ed88692c59dae600863f6697b6abc24427cbf1d27c76b26e23",
   "bytes": 3331912,
   "retrieved": "2026-09-21"
  },

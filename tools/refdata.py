@@ -54,8 +54,11 @@ for i, name, owner, role, kind, url, q in UP:
         time.sleep(0.4)
     else: row["best"] = None; row["catalogue_note"] = "not a UK government dataset; not expected in the catalogue"
     out["upstream"].append(row)
+PUBLIC_APPS = {"GitHub Repos Asset Catalogue": ("https://cyberdudeuk.github.io/github-repos-asset-catalogue/", "https://github.com/cyberdudeuk/github-repos-asset-catalogue"),
+               "dcat-ap-uk": ("https://cyberdudeuk.github.io/dcat-ap-uk/", "https://github.com/cyberdudeuk/dcat-ap-uk")}  # public portal AND public repo only (OG-D34)
+DOWN = [d for d in DOWN if d[1] in PUBLIC_APPS]
 for i, app, holds, reads, status in DOWN:
-    out["downstream"].append({"id": i, "app": app, "holds_now": holds, "reads": reads, "status": status})
+    out["downstream"].append({"id": i, "app": app, "holds_now": holds, "reads": reads, "status": status, "portal": PUBLIC_APPS[app][0], "repo": PUBLIC_APPS[app][1]})
 # peer reference datasets: other lists of public bodies or their codes, to reconcile record by record
 PEERS = ["organisation identifier government", "public bodies list", "government organisations register", "local authority register codes", "arm's length bodies", "public sector organisations"]
 out["peers"] = []
