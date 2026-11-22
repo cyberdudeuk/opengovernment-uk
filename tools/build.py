@@ -130,6 +130,23 @@ def sheet(name, first):
     rows = list(wb[name].iter_rows(values_only=True)); h = next(i for i, r in enumerate(rows) if r and r[0] == first)
     return rows[h], [r for r in rows[h + 1:] if r and r[0]]
 _, ONSROWS = sheet("Organisation|Institutional Unit", "Name")
+# D-OG37: ONS writes sponsors as short codes. Resolve a code only through ONS's own Abbreviations sheet or an alias with
+# stated evidence, never through register abbreviations ("SE" had matched Sport England for Scottish Water).
+ONSABBR = {str(r[0]).strip(): re.sub(r"\s*\((?:formerly|post|pre|\w+ \d{4}).*?\)\s*$", "", str(r[1])).strip() for r in sheet("Abbreviations", "Abbreviation")[1] if r[1]}
+ONSABBR["SE"] = "The Scottish Government"  # the guide's own entries: "SE Corporate Services is a former Directorate of the Scottish Executive"; renamed by the Scotland Act 2012 (noted in the guide)
+ONSABBR.update({"SG": "The Scottish Government", "WG": "Welsh Government"})
+CODE = re.compile(r"^[A-Z][A-Za-z0-9:&]{0,7}$")
+def match_ons_sponsor(text):
+    t = str(text).strip()
+    if CODE.match(t) and t.upper() == t:
+        if t not in ONSABBR: return None, "ONS code not in the guide's abbreviation list"
+        pid, how = match(ONSABBR[t])
+        alt, ahow = match(t)
+        # the expansion is a former name held as a closed or ONS-only record (OFWAT = Office of Water Services): keep the GOV.UK record the code names
+        if pid and alt and alt != pid and (not R[pid]["open"] or (pid.startswith("ons-name:") and alt.startswith("government-organisation:"))):
+            return alt, f"ONS abbreviation {t}; expansion {ONSABBR[t]} is a former-name record; " + ahow
+        return pid, f"ONS abbreviation {t} = {ONSABBR[t]}; " + how
+    return match(t)
 ONSBY = {}
 for i, r in enumerate(ONSROWS, 1):
     name, sector, esa, _, classified, parentco, subs, sponsor = r[:8]
@@ -139,7 +156,7 @@ for i, r in enumerate(ONSROWS, 1):
     if not bid: unresolved("ons", name, ref, how, "body"); continue
     ONSBY[bid] = {"sector": str(sector or "").strip(), "esa": esa, "classified": str(classified)[:10] if classified else ""}
     if sponsor and str(sponsor).strip().lower() not in ("local authorities",):
-        pid, phow = match(str(sponsor))
+        pid, phow = match_ons_sponsor(sponsor)
         if pid and pid != bid: edge(bid, pid, sponsor, "sponsors", "ons", ref, f"body: {how}; sponsor: {phow}")
         elif not pid: unresolved("ons", sponsor, ref + " (sponsoring entity)", phow, "sponsor")
     if parentco:

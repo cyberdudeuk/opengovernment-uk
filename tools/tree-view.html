@@ -32,11 +32,18 @@
     <p style="margin-top:8px"><button class="btn ghost small" type="button" id="pppMore">Show more</button></p>
    </div>
    <div class="card" id="s-ttf">
-    <h2>Trading funds and public corporations</h2>
-    <div class="grid2" style="margin-top:8px">
-     <div><h3><span data-term="trading fund"></span>s</h3><p class="muted" id="tfIntro" style="margin:4px 0 8px"></p><ul id="tfList"></ul></div>
-     <div><h3><span data-term="public corporation"></span>s</h3><p class="muted" id="pcIntro" style="margin:4px 0 8px"></p><div class="controls"><label>Find<input type="search" id="pcQ"></label></div><ul id="pcList"></ul></div>
+    <span class="eyebrow">Families of public businesses</span>
+    <h2>Trading funds and public corporations, one family tree each</h2>
+    <p class="muted" style="margin:6px 0 10px" id="cpIntro"></p>
+    <div class="stats" id="cpStats"></div>
+    <details class="howto" style="margin:10px 0"><summary>How the trees are built</summary><p id="cpRule" class="muted"></p></details>
+    <div class="tabs" role="tablist" aria-label="Who owns them" id="cpTabs"></div>
+    <div class="controls" style="margin-top:10px">
+     <label style="flex:1 1 240px">Find<input type="search" id="cpQ" autocomplete="off" placeholder="Royal Mint, Post Office, an airport…"></label>
+     <label>Show<select id="cpKind"><option value="">All kinds</option></select></label>
+     <label>Group each owner's trees by<select id="cpBy"><option value="purpose">What it is for</option><option value="activity">What it does</option><option value="kind">Kind of body</option><option value="">Don't group</option></select></label>
     </div>
+    <div id="cpOut" aria-live="polite"></div>
    </div>
    <div class="card" id="s-tconf">
     <h2>Where sources disagree</h2>

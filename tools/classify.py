@@ -50,7 +50,7 @@ COUNCIL = re.compile(r"\b(council|borough of|city and county of|comhairle)\b", r
 PA = ("https://www.gov.uk/government/publications/governance-code-for-public-appointments", "Governance Code for Public Appointments")
 VOTE = ("https://www.gov.uk/elections-in-the-uk/local-government", "GOV.UK: voting systems in local elections")
 FORM = {
-    "council-EN": ("Elected by local voters", "Every 4 years. Some councils elect all councillors at once; others elect a third or half at a time, so there is a vote in most years.", "Voters choose councillors for their area. The candidate with the most votes wins (first past the post).", [VOTE, (L + "ukpga/2000/22/part/IV", "Local Government Act 2000, Part 4")]),
+    "council-EN": ("Elected by local voters", "Every 4 years. Some councils elect all councillors at once; others elect a third or half at a time, so there is a vote in most years.", "Voters choose councillors for their area. The candidate with the most votes wins (first past the post). Councillors then choose a leader and cabinet; the 2026 Act stops councils choosing the older committee system. In 21 areas, councils are being replaced by new single councils (see local government reorganisation).", [VOTE, (L + "ukpga/2000/22/part/IV", "Local Government Act 2000, Part 4"), ("https://questions-statements.parliament.uk/written-statements/1815788", "Written statement: ending the committee system")]),
     "council-WA": ("Elected by local voters", "Every 5 years.", "Voters choose councillors for their area. Most councils use first past the post; the law lets a council choose ranked voting instead.", [VOTE, (L + "asc/2021/1/part/1", "Local Government and Elections (Wales) Act 2021, sections 14 to 16")]),
     "council-SC": ("Elected by local voters", "Every 5 years.", "Voters rank candidates in order of preference (single transferable vote), and several councillors are chosen for each area.", [VOTE, (L + "asp/2020/12/section/2", "Scottish Elections (Reform) Act 2020, section 2")]),
     "council-NI": ("Elected by local voters", "Every 4 years.", "Voters rank candidates in order of preference (single transferable vote), and several councillors are chosen for each area.", [VOTE]),
@@ -65,15 +65,95 @@ FORM = {
     "nhs": ("Board appointed, not elected", "Board members are appointed for fixed terms.", "The chair and board are appointed through the NHS appointments process in its nation. Local people are not asked to vote.", []),
     "judicial": ("Judges chosen by an independent commission", "Judges are usually appointed until they retire.", "An independent commission picks candidates on merit (in England and Wales, the Judicial Appointments Commission). Judges are not elected, so they can be fair to everyone.", [(L + "ukpga/2005/4", "Constitutional Reform Act 2005")]),
     "parliament-body": ("Answers to a parliament", "Its leaders are appointed by or with the agreement of the parliament.", "It works for a parliament (for example, checking how public money is spent) rather than for ministers, so it can be independent of the government.", []),
-    "combined": ("Led by an elected mayor and local council leaders", "The mayor is elected every 4 years.", "Voters elect the mayor (first past the post). The leaders of the councils in the area sit on its board.", [(L + "ukpga/2022/37", "Elections Act 2022")]),
+    "combined": ("Led by an elected mayor and local council leaders", "The mayor is elected every 4 years.", "Voters elect the mayor. From the elections after May 2026, they mark a first and a second choice (the supplementary vote); the May 2026 elections still used first past the post. The leaders of the councils in the area sit on its board. Under the 2026 Act it is a 'strategic authority'.", [((L + "ukpga/2026/23", "English Devolution and Community Empowerment Act 2026")), ("https://commonsbusiness.parliament.uk/Document/105419/Pdf", "Written statement, 21 May 2026: the supplementary vote returns")]),
     "charity": ("Run by a board of trustees", "Trustees serve terms set in its own rules.", "It is a charity or non-profit body with its own trustees, which government partly funds or controls.", []),
     "local-body": ("Set up or owned by a local council", "Its managers or board are appointed by the council when posts fall vacant.", "ONS counts it as local government because one or more councils control it. The council, whose councillors are elected, appoints who runs it.", [("https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/datasets/publicsectorclassificationguide", "ONS Public Sector Classification Guide")]),
     "central-body": ("Controlled by government", "Its leaders are appointed by the government that controls it.", "ONS counts it as central government because a government department or devolved government controls it. The sources don't say exactly how its leaders are chosen.", [("https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/datasets/publicsectorclassificationguide", "ONS Public Sector Classification Guide")]),
     "pension": ("Pension scheme for public workers", "Its managers or trustees are appointed under the scheme's rules.", "It pays pensions to people who worked in public services. Its rules say who runs it.", []),
     "territory": ("Has its own government", "Elections are held under its own laws.", "It runs most of its own affairs with its own elected law-makers. The UK is responsible for its defence and relations with other countries.", []),
-    "gla": ("Elected mayor and assembly", "Every 4 years.", "Londoners elect the Mayor of London (first past the post) and the London Assembly, which checks the Mayor's work.", [(L + "ukpga/2022/37", "Elections Act 2022")]),
+    "gla": ("Elected mayor and assembly", "Every 4 years.", "Londoners elect the Mayor of London and the London Assembly, which checks the Mayor's work. The 2026 Act returns mayoral elections to the supplementary vote (a first and a second choice) after May 2026. The Greater London Authority is a mayoral strategic authority under that Act.", [((L + "ukpga/2026/23", "English Devolution and Community Empowerment Act 2026")), (L + "ukpga/2026/23/section/1", "The 2026 Act, section 1")]),
     "unknown": ("Not stated in the sources", "", "The sources don't say how this body is led. You can help by sending a correction.", []),
 }
+
+# What a body does day to day: a second axis beside purpose (what area of life). MODELLED by stated rules, first match wins.
+ACTIVITIES = [  # (key, plain label, plain explanation)
+    ("policy", "Runs a government", "Ministers and civil servants who make policy, propose laws and run the departments under them."),
+    ("judge", "Decides cases", "Courts and tribunals that settle disputes and decide what the law means in a case."),
+    ("regulate", "Sets and enforces rules", "Licenses, registers or regulates a profession, market or activity, and can take action when rules are broken."),
+    ("inspect", "Inspects and audits", "Checks that services and public money are run properly, and reports what it finds."),
+    ("complaints", "Handles complaints", "An ombudsman or commissioner who looks into complaints and stands up for people."),
+    ("advise", "Gives expert advice", "A committee or council of experts that advises ministers but doesn't run services."),
+    ("fund", "Gives out money", "Pays out grants, loans or investment to other organisations or people."),
+    ("trade", "Sells goods or services", "Earns most of its income by charging customers, like a business."),
+    ("collections", "Looks after collections and places", "Museums, galleries, libraries, archives, parks and historic places."),
+    ("records", "Keeps records and statistics", "Registers, records, maps and official statistics."),
+    ("research", "Does research", "Science and research, in its own labs or by funding others."),
+    ("promote", "Promotes and represents", "Promotes a place, an industry or a group of people, or speaks for them."),
+    ("services", "Runs public services", "Delivers services to the public directly: health, councils, benefits, policing, transport and more."),
+    ("unknown", "Not yet worked out", "The sources don't say enough yet. You can help by sending a correction."),
+]
+ACT_TYPE = {"Ministerial department": "policy", "Devolved government": "policy", "UK nation": "policy", "Executive office": "policy",
+            "Court": "judge", "Tribunal": "judge", "Tribunal non-departmental public body": "judge", "Advisory non-departmental public body": "advise", "Ad-hoc advisory group": "advise",
+            "Independent monitoring body": "inspect", "Public Pension Funds": "services"}  # a pension scheme pays pensions, whatever body's name it carries
+ACT_SERVICE_TYPES = LOCAL_TYPES | {"Special health authority", "Commissioning support unit", "NHS England region", "Local Government"}
+ACT_KW = [
+    ("judge", r"\b(courts?|tribunals?|adjudicat\w+|appeals? (panel|board|service))\b"),
+    ("complaints", r"\b(ombudsman|complaints?|commissioner for (children|older people|victims|patients)|children'?s commissioner|independent office for police conduct)\b"),
+    ("inspect", r"\b(inspect\w*|inspectorate|audit\w*|ofsted|estyn|care quality|scrutiny|monitoring board)\b"),
+    ("regulate", r"\b(regulat\w+|licens\w+|ofqual|ofcom|ofwat|ofgem|ofsted|authority for .*standards|standards authority|competition|registrar of|council for .*professions|professional standards|accredit\w+)\b"),
+    ("advise", r"\b(advisory|advises|advice to (ministers|government)|committee on|review body|review panel|expert (panel|group))\b"),
+    ("research", r"\b(research|laborator\w+|scientific|science|survey|observator\w+|institute)\b"),
+    ("fund", r"\b(fund\w*|grants?|lottery|invest\w*|loans?|finance|bank|endowment|bursar\w+)\b"),
+    ("collections", r"\b(museums?|galler\w+|librar\w+|archives?|heritage|historic|royal parks?|palaces?|botanic\w*|zoo|collections?)\b"),
+    ("records", r"\b(registry|register|registration|records|statistics|land registry|companies house|ordnance survey|mapping|census)\b"),
+    ("promote", r"\b(promot\w+|visit\w*|tourism|marketing|levy board|board for|council for|commission for (racial|equality)|ambassador\w*|trade and invest\w*)\b"),
+    ("trade", r"\b(airports?|harbou?r|ports?|railways?|buses|trains|trading|shipbuilding|sales)\b"),  # not "Ltd": ONS classes many government companies as non-market (central or local government)
+]
+
+
+BTYPES = [  # (key, plain label, plain explanation): the register's kinds of body in plain groups
+    ("department", "Government department", "A ministerial or non-ministerial department, or a devolved government."),
+    ("agency", "Executive agency or part of a department", "Run by civil servants inside a department, with its own job to do."),
+    ("ndpb", "Arm's-length public body", "Set up by law or by ministers to work at arm's length: an executive or advisory non-departmental public body, or another statutory body."),
+    ("court", "Court or tribunal", "Where judges and tribunal members decide cases."),
+    ("corporation", "Public corporation or government company", "Owned or controlled by government and run like a business (ONS: public corporation)."),
+    ("nhs", "NHS body", "A hospital trust, health board, care board or other NHS organisation."),
+    ("council", "Council or local public body", "An elected council, a group of councils, or a body that councils control."),
+    ("central", "Other central government body", "A body ONS counts as central government that doesn't fit the groups above."),
+    ("charity", "Charity or non-profit", "A non-profit body that government partly funds or controls."),
+    ("pension", "Pension scheme", "A pension scheme for people who worked in public services."),
+    ("territory", "Territory or dependency", "An overseas territory or Crown dependency with its own government."),
+]
+BTYPE_OF = {"Ministerial department": "department", "Non-ministerial department": "department", "Devolved government": "department", "UK nation": "department", "Executive office": "department",
+            "Executive agency": "agency", "Sub organisation": "agency", "Civil service": "agency",
+            "Executive non-departmental public body": "ndpb", "Advisory non-departmental public body": "ndpb", "Tribunal non-departmental public body": "ndpb",
+            "Other statutory authority": "ndpb", "Independent monitoring body": "ndpb", "Ad-hoc advisory group": "ndpb",
+            "Court": "court", "Tribunal": "court", "Public corporation": "corporation", "Central Bank": "corporation",
+            "Overseas Territory": "territory", "Crown Dependency": "territory", "Public Pension Funds": "pension", "Central Government": "central", "Other": "central"}
+
+
+def btype(kind, fam):
+    if kind in BTYPE_OF: return BTYPE_OF[kind]
+    if kind.startswith(("Public ", "Foreign controlled", "Non-MMF")): return "corporation"
+    if kind.startswith("Non-profit"): return "charity"
+    if fam == "NHS body" or kind in ("NHS trust", "Integrated care board", "Special health authority", "Health board", "Local health board", "Commissioning support unit",
+                                     "NHS England region", "Health and social care trust", "Care trust", "Health and social care board"): return "nhs"
+    if fam == "Local authority" or kind in LOCAL_TYPES or kind in ("Local Government", "Strategic regional authority", "City corporation"): return "council"
+    return "central"
+
+
+def activity(name, kind, desc, tf):
+    if kind in ACT_TYPE: return ACT_TYPE[kind], "its kind"
+    if tf or kind.startswith(("Public Non-Financial", "Public Other financial", "Public Financial", "Public Insurance", "Public deposit", "Public Captive")) or kind == "Public corporation":
+        if not re.search(r"\b(regulat\w+|ombudsman)\b", name, re.I): return "trade", "a trading fund or public corporation"
+    for key, rx in ACT_KW:
+        if re.search(rx, name, re.I): return key, "its name"
+    if kind in ACT_SERVICE_TYPES: return "services", "its kind"  # by kind only: the word "council" also names Arts Council England
+    for key, rx in ACT_KW:
+        if desc and re.search(rx, desc, re.I): return key, "its description"
+    if kind in ("Non-ministerial department", "Executive agency", "Executive non-departmental public body", "Sub organisation", "Central Government", "Other"): return "services", "its kind (no clearer clue)"
+    return "unknown", ""
+
 
 def purpose(name, kind, desc):
     if kind in TYPE_PURPOSE and (TYPE_PURPOSE[kind] != "local" or COUNCIL.search(name) or kind == "Combined authority"): return TYPE_PURPOSE[kind], "its kind"
@@ -123,6 +203,7 @@ def build():
     nat = json.loads((ROOT / "data/body-nations.json").read_text())
     desc = json.loads((SRC / "govuk-descriptions.json").read_text())
     sys.path.insert(0, str(ROOT / "tools")); from nations import branch_of  # one definition of the three branches
+    tfs = set(json.loads((ROOT / "data/tree.json").read_text())["stats"]["trading_funds"])
     out = {}
     for r in D["r"]:
         if not r[4]: continue
@@ -130,7 +211,8 @@ def build():
         br, _ = branch_of(r[1], r[3], fam, ans)
         pk, pbasis = purpose(r[1], r[3], desc.get(r[10].get("govuk_slug", ""), ""))
         rk, rl = reach(ns, r[3], fam, r[1]); fk = formed(r[1], r[3], fam, ns, ans, br)
-        out[r[0]] = {"purpose": pk, "purpose_basis": pbasis, "reach": rk, "reach_label": rl, "formed": fk}
+        ak, abasis = activity(r[1], r[3], desc.get(r[10].get("govuk_slug", ""), ""), r[0] in tfs)
+        out[r[0]] = {"purpose": pk, "purpose_basis": pbasis, "activity": ak, "activity_basis": abasis, "btype": btype(r[3], fam), "reach": rk, "reach_label": rl, "formed": fk}
     return D, out
 
 def check(D, out):
@@ -144,6 +226,18 @@ def check(D, out):
         got = out[i]
         if want[0] and got["purpose"] != want[0]: p.append(f"{name}: purpose {got['purpose']}")
         if want[1] and got["formed"] != want[1]: p.append(f"{name}: formed {got['formed']}")
+    for name, want in [("Ofqual", "regulate"), ("Ofsted", "inspect"), ("Arts Council England", "fund"), ("Royal Mint", "trade"), ("Natural History Museum", "collections"),
+                       ("Ministry of Defence", "policy"), ("Parliamentary and Health Service Ombudsman", "complaints"), ("Companies House", "trade"), ("Low Pay Commission", None),
+                       ("HM Revenue & Customs", "services"), ("Scottish Water", "trade"), ("Aberdeen City Council", "services")]:
+        i = by.get(name)
+        if not i: p.append(f"{name}: not found (activity)"); continue
+        if want and out[i]["activity"] != want: p.append(f"{name}: activity {out[i]['activity']}, expected {want}")
+    if any(not v.get("activity") for v in out.values()): p.append("missing activity")
+    for name, want in [("Ofqual", "department"), ("Met Office", "agency"), ("Arts Council England", "ndpb"), ("Barnsley Hospital NHS Foundation Trust", "nhs"), ("Royal Mint", "central"), ("Aberdeen City Council", "council")]:
+        i = by.get(name)
+        if not i: p.append(f"{name}: not found (type)"); continue
+        if out[i]["btype"] != want: p.append(f"{name}: type {out[i]['btype']}, expected {want}")
+    if {v["btype"] for v in out.values()} - {k for k, _, _ in BTYPES}: p.append("unknown body type key")
     if any(not (v["purpose"] and v["reach"] and v["formed"]) for v in out.values()): p.append("missing field")
     return p
 
@@ -151,13 +245,19 @@ if __name__ == "__main__":
     D, out = build()
     if "--negative" in sys.argv:
         o2 = json.loads(json.dumps(out)); o2[next(r[0] for r in D["r"] if r[1] == "Cardiff Council")]["formed"] = "council-EN"
-        ok = bool(check(D, o2)); print("caught wrong formation" if ok else "MISSED wrong formation"); sys.exit(0 if ok else 1)
+        ok = bool(check(D, o2)); print("caught wrong formation" if ok else "MISSED wrong formation")
+        o3 = json.loads(json.dumps(out)); o3[next(r[0] for r in D["r"] if r[1] == "Ofqual" and r[4])]["activity"] = "fund"
+        ok2 = bool(check(D, o3)); print("caught wrong activity" if ok2 else "MISSED wrong activity"); sys.exit(0 if ok and ok2 else 1)
     probs = check(D, out)
     meta = {"purposes": [{"key": k, "label": a, "explain": b, "cofog": c} for k, a, b, c in PURPOSES],
+            "activities": [{"key": k, "label": a, "explain": b} for k, a, b in ACTIVITIES],
+            "btypes": [{"key": k, "label": a, "explain": b} for k, a, b in BTYPES],
             "formed": {k: {"label": a, "how_often": b, "process": c, "sources": [{"url": u, "title": t} for u, t in s]} for k, (a, b, c, s) in FORM.items()},
-            "notes": "Purpose is worked out from each body's kind, name and description (modelled). How a body is formed is the rule for its kind, with the law or guidance it comes from. Election facts checked against the Acts on 22 November 2026."}
+            "notes": "Purpose and activity are worked out from each body's kind, name and description (modelled). How a body is formed is the rule for its kind, with the law or guidance it comes from. Election facts checked against the Acts on 22 November 2026."}
     (ROOT / "data/classification.json").write_text(json.dumps({"meta": meta, "bodies": out}, indent=1, ensure_ascii=False))
     print("purpose", dict(collections.Counter(v["purpose"] for v in out.values()).most_common()))
     print("formed", dict(collections.Counter(v["formed"] for v in out.values()).most_common()))
+    print("btype", dict(collections.Counter(v["btype"] for v in out.values()).most_common()))
+    print("activity", dict(collections.Counter(v["activity"] for v in out.values()).most_common()))
     print("reach", dict(collections.Counter(v["reach"] for v in out.values()).most_common()), "problems", probs)
     sys.exit(1 if probs else 0)

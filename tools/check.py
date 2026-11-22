@@ -96,6 +96,15 @@ def c_conflicts_triangulated(T):
     return bad
 CHECKS.append(c_conflicts_triangulated)
 
+ONSCODE = re.compile(r"^[A-Z][A-Z0-9:&]{0,7}$")
+def c_ons_codes(T):
+    """OG-D37: an ONS sponsor written as a code resolves only through the guide's abbreviation list (SE had matched Sport England)"""
+    bad = [e["c"] for e in T["edges"] if e["src"] == "ons" and e["rel"] == "sponsors" and ONSCODE.match(e["pt"].strip()) and not e["how"].split("sponsor: ")[-1].startswith("ONS abbreviation")]
+    sw = next(k for k, r in REG.items() if r[1] == "Scottish Water")
+    if NAME.get(T["chains"][sw]["root"]) != "The Scottish Government": bad.append(sw)
+    return bad
+CHECKS.append(c_ons_codes)
+
 def breakers(T):
     """One deliberate break per check. Each must make exactly its check fail."""
     k0 = next(iter(T["chains"])); e0 = T["edges"][0]
@@ -116,6 +125,7 @@ def breakers(T):
         "c_unresolved_reason": b(lambda t: t["unresolved"][0].update(why="")),
         "c_wording": b(lambda t: t["edges"][0].update(how="Office of the Chief Data Officer")),
         "c_digest": b(lambda t: t["conflicts"].append({"id": k0, "views": []})),
+        "c_ons_codes": b(lambda t: next(e for e in t["edges"] if e["pt"] == "SE").update(how="body: name, cleaned; sponsor: name, cleaned")),
         "c_conflicts_triangulated": b(lambda t: next(c for c in t["conflicts"] if c["status"] == "contested").update(status="resolved", reason="rule: invented")),
     }
 

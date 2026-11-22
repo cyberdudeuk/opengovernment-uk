@@ -53,13 +53,17 @@ REQS = {
     "OG-R43": ("Every body classified by purpose, reach and how it is formed, in plain English for any reader", "Must", "Done", ["N1"], ["C-CLASS", "C-NAT"]),
     "OG-R44": ("Only apps with a public portal and repository are named as consumers", "Must", "Done", ["N6", "N7"], ["C-PORTAL"]),
     "OG-R45": ("Every open standard in use listed with status and a deep link", "Must", "Done", ["N6", "N7"], ["C-PORTAL"]),
+    "OG-R46": ("Every trading fund and public corporation shown as its own family tree, each body in exactly one place, grouped by owner level and owner", "Must", "Done", ["N1", "N2", "N4"], ["C-CORP", "C-PORTAL"]),
+    "OG-R47": ("Department and corporation trees grouped by purpose, activity and type of body, with large groups split again", "Must", "Done", ["N1", "N2"], ["C-CLASS", "C-CORP", "C-PORTAL"]),
+    "OG-R48": ("Local government in England shown as it is and as planned under the English Devolution and Community Empowerment Act 2026: strategic authorities, reorganisation areas and their councils, and a timeline, every fact sourced", "Must", "Done", ["N1", "N2", "N5", "N7"], ["C-LG", "C-PORTAL"]),
+    "OG-R49": ("ONS sponsor codes resolve only through the guide's own abbreviation list", "Must", "Done", ["N2", "N7"], ["C-BUILD"]),
     "OG-R37": ("Comparator adoptions: founding legislation, COFOG, movements, interests, parent history", "Should", "Planned", ["N1", "N4", "N5"], []),
 }
 # id: (name, path, checks, outputs)
 COMPONENTS = {
     "C-REG": ("Register spine (0.2.2)", "sources/opengovernment-uk-0.2.2.html", ["CHK-known_answers"], ["docs/concordance.csv"]),
     "C-FETCH": ("Source fetcher and manifest", "tools/fetch.py", ["CHK-hashes"], ["sources/manifest.json"]),
-    "C-BUILD": ("Accountability tree builder", "tools/build.py", ["CHK-provenance", "CHK-ends", "CHK-no_persons", "CHK-chain_shape", "CHK-coverage", "CHK-nmd_terminal", "CHK-unresolved_reason", "CHK-digest", "CHK-person_rule_offices"], ["data/tree.json", "data/edges.csv", "data/accountable-owner.csv"]),
+    "C-BUILD": ("Accountability tree builder", "tools/build.py", ["CHK-provenance", "CHK-ends", "CHK-no_persons", "CHK-chain_shape", "CHK-coverage", "CHK-nmd_terminal", "CHK-unresolved_reason", "CHK-digest", "CHK-person_rule_offices", "CHK-ons_codes"], ["data/tree.json", "data/edges.csv", "data/accountable-owner.csv"]),
     "C-PORTAL": ("Portal page builder", "tools/patch_portal.py", ["CHK-footer", "CHK-req_ids", "CHK-self"], ["docs/index.html", "docs/accountability.json", "docs/ppp.csv"]),
     "C-BODS": ("BODS 0.4 exporter", "tools/export_bods.py", ["CHK-bods_schema", "CHK-bods_rules"], ["docs/bods-0.4.json"]),
     "C-TRENDS": ("Public bodies trends and 2020 reconciliation", "tools/trends.py", ["CHK-units", "CHK-reconciled", "CHK-trend_persons"], ["data/public-bodies-trends.json", "data/reconciliation-2020.csv"]),
@@ -70,6 +74,8 @@ COMPONENTS = {
     "C-NATEV": ("Nation evidence resolver", "tools/nation_evidence.py", ["CHK-natev"], ["data/nation-evidence.json"]),
     "C-H2020": ("2020 historical layer", "tools/historical_2020.py", ["CHK-h2020"], ["data/historical-2020.json"]),
     "C-CLASS": ("Plain-English classifier", "tools/classify.py", ["CHK-classify"], ["data/classification.json"]),
+    "C-CORP": ("Trading fund and public corporation trees", "tools/corporations.py", ["CHK-corporations"], ["data/corporations.json"]),
+    "C-LG": ("Local government under the 2026 Act", "tools/localgov.py", ["CHK-localgov"], ["data/local-government.json"]),
     "C-ART": ("Documentation generator", "tools/artefacts.py", ["CHK-artefacts"], ["documentation/solution/", "docs/navigator.html"]),
     "C-CI": ("Checks and refresh workflows", ".github/workflows/", ["CHK-lint"], []),
     "C-REPO": ("Contribution model", "CONTRIBUTING.md", [], [".github/ISSUE_TEMPLATE/"]),
@@ -82,6 +88,9 @@ CHECKS = {
     "CHK-footer": "Footer names no individual and no government body", "CHK-req_ids": "Requirement IDs are unique", "CHK-self": "The page checks itself (width, links, chains, wording)",
     "CHK-bods_schema": "BODS output validates against the official schema", "CHK-units": "Every edition records its unit evidence and year", "CHK-reconciled": "The 2020 baseline is fully accounted for",
     "CHK-trend_persons": "No personal fields in trend outputs", "CHK-scenarios": "Scenarios recompute exactly from their assumptions", "CHK-functions": "Back-office known answers",
+    "CHK-corporations": "Every member in exactly one tree; known answers (Manchester Airport group, Ordnance Survey, Scottish Water); negatives caught",
+    "CHK-localgov": "Every fact sourced; 21 areas cover every two-tier county once; 205 councils match MHCLG's count; known answers; negatives caught",
+    "CHK-ons_codes": "ONS sponsor codes resolve through the guide's abbreviations; Scottish Water answers to the Scottish Government",
     "CHK-artefacts": "Ontology and knowledge graph parse; every requirement traces to a need", "CHK-lint": "Linter fails on any finding", "CHK-natev": "Nation known answers found; a wrong nation is caught", "CHK-h2020": "Fingerprint matches; no personal field", "CHK-bods_rules": "Open Ownership's checker finds nothing", "CHK-classify": "Purpose and formation known answers; a wrong formation is caught", "CHK-nations": "Nation and branch known answers are found; every nation has an apex for each branch",
 }
 DOCS = {

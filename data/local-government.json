@@ -1,0 +1,1858 @@
+{
+ "timeline": [
+  {
+   "date": "2025-12",
+   "what": "Ministers ask 63 councils about postponing their May 2026 elections; first mayoral elections in four priority areas moved to May 2028",
+   "src": [
+    "dpp-funds",
+    "hansard-dpp"
+   ],
+   "when": "done"
+  },
+  {
+   "date": "2026-04-29",
+   "what": "The English Devolution and Community Empowerment Act becomes law",
+   "src": [
+    "assent"
+   ],
+   "when": "done"
+  },
+  {
+   "date": "2026-05",
+   "what": "Council elections: 107 go ahead and 29 are postponed; East Surrey and West Surrey councils elected",
+   "src": [
+    "postpone-2026",
+    "review-launch"
+   ],
+   "when": "done"
+  },
+  {
+   "date": "2026-05-21",
+   "what": "Government sets out commencement: the supplementary vote returns for mayors and police and crime commissioners",
+   "src": [
+    "sv"
+   ],
+   "when": "done"
+  },
+  {
+   "date": "2026-09-07",
+   "what": "Reorganisation review launched; decisions for Essex, Hampshire, Norfolk and Suffolk withdrawn",
+   "src": [
+    "review-launch",
+    "review-letter"
+   ],
+   "when": "done"
+  },
+  {
+   "date": "2026-10-29",
+   "what": "Five areas get 'minded to' decisions; July decisions for nine areas withdrawn; 15 areas under review",
+   "src": [
+    "five-counties",
+    "withdrawn-9",
+    "review-6"
+   ],
+   "when": "done"
+  },
+  {
+   "date": "2027-04-01",
+   "what": "East Surrey and West Surrey councils take over",
+   "src": [
+    "five-counties"
+   ],
+   "when": "planned"
+  },
+  {
+   "date": "2027-05",
+   "what": "Elections to existing councils in the other 20 areas; first mayors elected in Cumbria and in Cheshire and Warrington",
+   "src": [
+    "withdrawn-9",
+    "ifg-dpp"
+   ],
+   "when": "planned"
+  },
+  {
+   "date": "2028-05",
+   "what": "Elections to the new (shadow) councils; first mayors in Sussex and Brighton, Hampshire and the Solent, Greater Essex, and Norfolk and Suffolk",
+   "src": [
+    "withdrawn-9",
+    "dpp-funds"
+   ],
+   "when": "planned"
+  },
+  {
+   "date": "2029-04-01",
+   "what": "New single councils take over in the 20 remaining areas, if confirmed",
+   "src": [
+    "withdrawn-9",
+    "oxford"
+   ],
+   "when": "planned"
+  }
+ ],
+ "meta": {
+  "as_of": "2026-11-22",
+  "about": "Local government in England under the English Devolution and Community Empowerment Act 2026: what is in force, and what is planned. Transcribed by hand from the primary sources linked on each fact, read on 22 November 2026. Secondary sources are used only where marked secondary, and only for a summary of the Act. Nothing here is inferred: a status the sources don't give is left out.",
+  "built_from": [
+   "sources/evidence/local-government-2026.json",
+   "sources/evidence/ons-lad-cty-dec-2024-en.json (ONS, sha af375fc83aa7)",
+   "sources/evidence/ons-lad-dec-2024-uk.json"
+  ],
+  "counts": {
+   "areas": 21,
+   "councils_in_areas": 205,
+   "strategic_authorities": 22,
+   "sa_current": 16,
+   "sa_planned": 6,
+   "sa_not_in_register": 10,
+   "by_status": {
+    "decided": 1,
+    "minded-to": 5,
+    "review": 15
+   }
+  }
+ },
+ "sources": {
+  "act": {
+   "title": "English Devolution and Community Empowerment Act 2026 (c. 23)",
+   "url": "https://www.legislation.gov.uk/ukpga/2026/23",
+   "kind": "primary"
+  },
+  "act-s1": {
+   "title": "The Act, section 1: strategic authorities",
+   "url": "https://www.legislation.gov.uk/ukpga/2026/23/section/1",
+   "kind": "primary"
+  },
+  "act-s2": {
+   "title": "The Act, section 2: areas of competence",
+   "url": "https://www.legislation.gov.uk/ukpga/2026/23/section/2",
+   "kind": "primary"
+  },
+  "act-s3": {
+   "title": "The Act, section 3: single foundation strategic authorities",
+   "url": "https://www.legislation.gov.uk/ukpga/2026/23/section/3",
+   "kind": "primary"
+  },
+  "act-s108": {
+   "title": "The Act, section 108: commencement (lists section 17, members of legislatures disqualified from being a mayor)",
+   "url": "https://www.legislation.gov.uk/ukpga/2026/23/section/108",
+   "kind": "primary"
+  },
+  "assent": {
+   "title": "UK Parliament procedure browser: the Act gained Royal Assent on 29 April 2026",
+   "url": "https://api.parliament.uk/procedure-browser/enabling-legislation/6MspAbV8",
+   "kind": "primary"
+  },
+  "sv": {
+   "title": "Written statement, 21 May 2026: commencing the Act; the supplementary vote returns for mayoral and police and crime commissioner elections",
+   "url": "https://commonsbusiness.parliament.uk/Document/105419/Pdf",
+   "kind": "primary"
+  },
+  "committee": {
+   "title": "Geldards: summary of the Act (committee system and protected committee systems)",
+   "url": "https://www.geldards.com/insights/english-devolution-and-community-empowerment-act-2026/",
+   "kind": "secondary"
+  },
+  "guidance-2025": {
+   "title": "MHCLG: English Devolution and Community Empowerment Bill guidance, 10 July 2025",
+   "url": "https://www.gov.uk/government/publications/english-devolution-and-community-empowerment-bill-guidance/english-devolution-and-community-empowerment-bill-guidance",
+   "kind": "primary"
+  },
+  "factsheets": {
+   "title": "MHCLG: English devolution area factsheets, 10 July 2025",
+   "url": "https://www.gov.uk/government/publications/english-devolution-area-factsheets/english-devolution-area-factsheets",
+   "kind": "primary"
+  },
+  "dpp-funds": {
+   "title": "Written statement HCWS1128, 4 December 2025: Devolution Priority Programme investment funds; first mayoral elections in four areas minded to be May 2028",
+   "url": "https://questions-statements.parliament.uk/written-statements/1860228",
+   "kind": "primary"
+  },
+  "hansard-dpp": {
+   "title": "Hansard, 4 December 2025: Devolution Priority Programme",
+   "url": "https://hansard.parliament.uk/Commons/2025-12-04/debates/25120433000010/DevolutionPriorityProgramme",
+   "kind": "primary"
+  },
+  "ifg-dpp": {
+   "title": "Institute for Government: the Devolution Priority Programme explained (Cumbria and Cheshire and Warrington first mayoral elections May 2027)",
+   "url": "https://www.instituteforgovernment.org.uk/article/explainer/devolution-priority-programme-dpp",
+   "kind": "secondary"
+  },
+  "sussex-si": {
+   "title": "West Sussex County Council, 12 February 2026: regulations to establish the Sussex and Brighton Combined County Authority laid in Parliament",
+   "url": "https://www.westsussex.gov.uk/news/parliamentary-milestone-reached-as-sussex-and-brighton-move-closer-to-devolution",
+   "kind": "primary"
+  },
+  "hants-si": {
+   "title": "Hansard, Delegated Legislation Committee, 20 May 2026: draft Hampshire and the Solent Combined County Authority Regulations 2026",
+   "url": "https://hansard.parliament.uk/html/Commons/2026-05-20/GeneralCommittees",
+   "kind": "primary"
+  },
+  "postpone-2026": {
+   "title": "Written statement, January 2026: of 136 council elections due in May 2026, 107 go ahead and 29 are postponed",
+   "url": "https://questions-statements.parliament.uk/written-statements/1874101",
+   "kind": "primary"
+  },
+  "review-launch": {
+   "title": "MHCLG, 7 September 2026: review of local government reorganisation launched; decisions for Essex, Hampshire, Norfolk and Suffolk withdrawn; Surrey unaffected",
+   "url": "https://www.gov.uk/government/news/review-of-local-government-reorganisation-launched",
+   "kind": "primary"
+  },
+  "review-letter": {
+   "title": "Letter to council leaders, 7 September 2026: programme review and withdrawal of decisions",
+   "url": "https://www.gov.uk/government/publications/local-government-reorganisation-programme-review-and-decisions-withdrawal-letter-to-council-leaders",
+   "kind": "primary"
+  },
+  "five-counties": {
+   "title": "MHCLG, 29 October 2026: local government reorganisation moves forward in five counties",
+   "url": "https://www.gov.uk/government/news/local-government-reorganisation-moves-forward-in-five-counties",
+   "kind": "primary"
+  },
+  "withdrawn-9": {
+   "title": "Letter, 29 October 2026: July 2026 decisions withdrawn for nine areas; timetable for the 15 areas under review",
+   "url": "https://assets.publishing.service.gov.uk/media/6ae36c6ed22fc5fecb3eb7f9/Local_government_reorganisation_-_withdrawn_letter_to_9_areas.pdf",
+   "kind": "primary"
+  },
+  "review-6": {
+   "title": "Letter, 29 October 2026: six areas still under review",
+   "url": "https://assets.publishing.service.gov.uk/media/6ae366b6d22fc5fecb3eb7ee/Local_government_reorganisation_-_review_letter_to_6_areas.pdf",
+   "kind": "primary"
+  },
+  "oxford": {
+   "title": "Oxford City Council, 29 October 2026: minded-to decision for three unitary councils for Oxfordshire and West Berkshire, from 1 April 2029",
+   "url": "https://www.oxford.gov.uk/news/article/1933/government-announces-new-minded-to-decision-for-three-unitary-councils-for-oxfordshire-and-west-berkshire",
+   "kind": "primary"
+  },
+  "ons-lad-cty": {
+   "title": "ONS: Local Authority District to County (December 2024) Lookup in England",
+   "url": "https://geoportal.statistics.gov.uk/",
+   "kind": "primary"
+  },
+  "wms-governance": {
+   "title": "Written statement on council governance: the committee system to be abolished; the vast majority of councils in England already use a leader and cabinet",
+   "url": "https://questions-statements.parliament.uk/written-statements/1815788",
+   "kind": "primary"
+  }
+ },
+ "act": {
+  "royal_assent": {
+   "value": "2026-04-29",
+   "src": [
+    "assent"
+   ]
+  },
+  "tiers": [
+   {
+    "key": "foundation-single",
+    "label": "Single foundation strategic authority",
+    "plain": "One county council or unitary council given strategic powers on its own.",
+    "law": "A unitary district council or county council designated under section 3.",
+    "src": [
+     "act-s1",
+     "act-s3"
+    ]
+   },
+   {
+    "key": "foundation-combined",
+    "label": "Combined foundation strategic authority",
+    "plain": "Several councils working together as a combined authority, without a mayor.",
+    "law": "A non-mayoral combined authority or combined county authority.",
+    "src": [
+     "act-s1"
+    ]
+   },
+   {
+    "key": "mayoral",
+    "label": "Mayoral strategic authority",
+    "plain": "A group of councils with an elected mayor, who has more powers and money.",
+    "law": "A mayoral combined authority, a mayoral combined county authority, or the Greater London Authority.",
+    "src": [
+     "act-s1"
+    ]
+   },
+   {
+    "key": "mayoral-established",
+    "label": "Established mayoral strategic authority",
+    "plain": "A mayoral authority with a strong track record, given the most powers and a single funding settlement.",
+    "law": "A mayoral strategic authority that has been designated as established.",
+    "src": [
+     "act-s1"
+    ]
+   }
+  ],
+  "competences": {
+   "value": [
+    "Transport and local infrastructure",
+    "Skills and employment support",
+    "Housing and strategic planning",
+    "Economic development and regeneration",
+    "The environment and climate change",
+    "Health, well-being and public service reform",
+    "Public safety",
+    "Culture",
+    "Rural affairs and coastal communities"
+   ],
+   "src": [
+    "act-s2"
+   ]
+  },
+  "changes": [
+   {
+    "key": "sv",
+    "now": "Mayors and police and crime commissioners are elected by the supplementary vote again: voters mark a first and a second choice. The May 2026 mayoral elections still used first past the post.",
+    "src": [
+     "sv"
+    ]
+   },
+   {
+    "key": "no-mp-mayor",
+    "now": "A mayor of a strategic authority can't also be a member of a UK legislature.",
+    "src": [
+     "act-s108"
+    ]
+   },
+   {
+    "key": "committee",
+    "now": "Councils can no longer choose the committee system of running a council. Most councils already use a leader and cabinet; a council with a 'protected' committee system may keep it but must review it.",
+    "src": [
+     "wms-governance",
+     "committee"
+    ]
+   }
+  ]
+ },
+ "strategic_authorities": [
+  {
+   "name": "Greater London Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1"
+   ],
+   "id": "local-authority:GLA",
+   "in_register": true
+  },
+  {
+   "name": "Greater Manchester Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:GMCA",
+   "in_register": true
+  },
+  {
+   "name": "West Midlands Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:WMCA",
+   "in_register": true
+  },
+  {
+   "name": "Liverpool City Region Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "ons-name:liverpool-city-region-combined-authority",
+   "in_register": true
+  },
+  {
+   "name": "South Yorkshire Mayoral Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:SYMCA",
+   "in_register": true
+  },
+  {
+   "name": "West Yorkshire Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:WYCA",
+   "in_register": true
+  },
+  {
+   "name": "North East Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:NNECA",
+   "in_register": true
+  },
+  {
+   "name": "Tees Valley Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:TVCA",
+   "in_register": true
+  },
+  {
+   "name": "West of England Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:WECA",
+   "in_register": true
+  },
+  {
+   "name": "Cambridgeshire and Peterborough Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:CPCA",
+   "in_register": true
+  },
+  {
+   "name": "East Midlands Combined County Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:EMCCA",
+   "in_register": true
+  },
+  {
+   "name": "York and North Yorkshire Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "src": [
+    "act-s1",
+    "factsheets"
+   ],
+   "id": "local-authority:YNYCA",
+   "in_register": true
+  },
+  {
+   "name": "Greater Lincolnshire Combined County Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "note": "Set up in 2025; not yet in the register.",
+   "src": [
+    "guidance-2025"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Hull and East Yorkshire Combined Authority",
+   "tier": "mayoral",
+   "status": "current",
+   "note": "Set up in 2025; not yet in the register.",
+   "src": [
+    "guidance-2025"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Devon and Torbay Combined County Authority",
+   "tier": "foundation-combined",
+   "status": "current",
+   "note": "Not yet in the register.",
+   "src": [
+    "guidance-2025"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Lancashire Combined County Authority",
+   "tier": "foundation-combined",
+   "status": "current",
+   "note": "Not yet in the register.",
+   "src": [
+    "guidance-2025"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Cumbria Combined Authority",
+   "tier": "mayoral",
+   "status": "planned",
+   "first_mayor": "2027-05",
+   "note": "Devolution Priority Programme. First mayoral election planned for May 2027.",
+   "src": [
+    "dpp-funds",
+    "ifg-dpp"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Cheshire and Warrington Combined Authority",
+   "tier": "mayoral",
+   "status": "planned",
+   "first_mayor": "2027-05",
+   "note": "Devolution Priority Programme. First mayoral election planned for May 2027.",
+   "src": [
+    "dpp-funds",
+    "ifg-dpp"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Sussex and Brighton Combined County Authority",
+   "tier": "mayoral",
+   "status": "planned",
+   "first_mayor": "2028-05",
+   "note": "Devolution Priority Programme. Regulations to set it up were laid in February 2026; the first mayoral election was moved from May 2026 to May 2028.",
+   "src": [
+    "sussex-si",
+    "dpp-funds",
+    "hansard-dpp"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Hampshire and the Solent Combined County Authority",
+   "tier": "mayoral",
+   "status": "planned",
+   "first_mayor": "2028-05",
+   "note": "Devolution Priority Programme. Draft regulations were debated in May 2026; the first mayoral election was moved to May 2028.",
+   "src": [
+    "hants-si",
+    "dpp-funds",
+    "hansard-dpp"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Greater Essex Combined County Authority",
+   "tier": "mayoral",
+   "status": "planned",
+   "first_mayor": "2028-05",
+   "note": "Devolution Priority Programme. The first mayoral election was moved to May 2028. The sources read don't confirm it has been set up yet.",
+   "src": [
+    "dpp-funds",
+    "hansard-dpp"
+   ],
+   "id": null,
+   "in_register": false
+  },
+  {
+   "name": "Norfolk and Suffolk Combined County Authority",
+   "tier": "mayoral",
+   "status": "planned",
+   "first_mayor": "2028-05",
+   "note": "Devolution Priority Programme. The first mayoral election was moved to May 2028. The sources read don't confirm it has been set up yet.",
+   "src": [
+    "dpp-funds",
+    "hansard-dpp"
+   ],
+   "id": null,
+   "in_register": false
+  }
+ ],
+ "reorganisation": {
+  "summary": {
+   "value": "England's two-tier areas (a county council with district councils under it) are being replaced by single-tier unitary councils. There are 21 areas. Surrey's two new councils start on 1 April 2027. Five areas have 'minded to' decisions (29 October 2026). The other 15 are under review after decisions were withdrawn in September and October 2026; every area is due an outcome by early 2027.",
+   "src": [
+    "five-counties",
+    "withdrawn-9",
+    "review-6",
+    "review-launch"
+   ]
+  },
+  "postponed_2026": {
+   "value": "Of 136 council elections due in May 2026, 29 were postponed to help reorganisation; 107 went ahead.",
+   "src": [
+    "postpone-2026"
+   ]
+  },
+  "statuses": {
+   "decided": {
+    "label": "Decided",
+    "plain": "The new councils are confirmed."
+   },
+   "minded-to": {
+    "label": "Minded to go ahead",
+    "plain": "The government intends to go ahead and is hearing final views before it decides."
+   },
+   "review": {
+    "label": "Under review",
+    "plain": "An earlier decision was withdrawn, or none was made. All options are still open."
+   }
+  },
+  "areas": [
+   {
+    "area": "Surrey",
+    "counties": [
+     "Surrey"
+    ],
+    "unitaries": [],
+    "status": "decided",
+    "new_councils": 2,
+    "new_names": [
+     "East Surrey",
+     "West Surrey"
+    ],
+    "shadow_election": "2026-05",
+    "vesting": "2027-04-01",
+    "src": [
+     "review-launch",
+     "five-counties"
+    ],
+    "councils": [
+     "local-authority:SRY",
+     "local-authority:ELM",
+     "local-authority:EPS",
+     "local-authority:GRT",
+     "local-authority:MOL",
+     "local-authority:REI",
+     "local-authority:RUN",
+     "local-authority:SPE",
+     "local-authority:SUR",
+     "local-authority:TAN",
+     "local-authority:WAE",
+     "local-authority:WOI"
+    ]
+   },
+   {
+    "area": "East Sussex and Brighton and Hove",
+    "counties": [
+     "East Sussex"
+    ],
+    "unitaries": [
+     "Brighton and Hove"
+    ],
+    "status": "minded-to",
+    "new_councils": 2,
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029",
+    "src": [
+     "five-counties"
+    ],
+    "councils": [
+     "local-authority:ESX",
+     "local-authority:EAS",
+     "local-authority:HAS",
+     "local-authority:LEE",
+     "local-authority:ROH",
+     "local-authority:WEA",
+     "local-authority:BNH"
+    ]
+   },
+   {
+    "area": "Gloucestershire",
+    "counties": [
+     "Gloucestershire"
+    ],
+    "unitaries": [],
+    "status": "minded-to",
+    "new_councils": 1,
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029",
+    "src": [
+     "five-counties"
+    ],
+    "councils": [
+     "local-authority:GLS",
+     "local-authority:CHT",
+     "local-authority:COT",
+     "local-authority:FOE",
+     "local-authority:GLO",
+     "local-authority:STO",
+     "local-authority:TEW"
+    ]
+   },
+   {
+    "area": "Oxfordshire (with West Berkshire)",
+    "counties": [
+     "Oxfordshire"
+    ],
+    "unitaries": [
+     "West Berkshire"
+    ],
+    "status": "minded-to",
+    "new_councils": 3,
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "five-counties",
+     "oxford"
+    ],
+    "councils": [
+     "local-authority:OXF",
+     "local-authority:OXO",
+     "local-authority:SOX",
+     "local-authority:VAL",
+     "local-authority:WOX",
+     "local-authority:CHR",
+     "local-authority:WBK"
+    ]
+   },
+   {
+    "area": "Warwickshire",
+    "counties": [
+     "Warwickshire"
+    ],
+    "unitaries": [],
+    "status": "minded-to",
+    "new_councils": 2,
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029",
+    "src": [
+     "five-counties"
+    ],
+    "councils": [
+     "local-authority:WAR",
+     "local-authority:NWA",
+     "local-authority:NUN",
+     "local-authority:RUG",
+     "local-authority:STR",
+     "local-authority:WAW"
+    ]
+   },
+   {
+    "area": "Worcestershire",
+    "counties": [
+     "Worcestershire"
+    ],
+    "unitaries": [],
+    "status": "minded-to",
+    "new_councils": 2,
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029",
+    "src": [
+     "five-counties"
+    ],
+    "councils": [
+     "local-authority:WOR",
+     "local-authority:BRM",
+     "local-authority:MAV",
+     "local-authority:RED",
+     "local-authority:WOC",
+     "local-authority:WYC",
+     "local-authority:WYE"
+    ]
+   },
+   {
+    "area": "Derbyshire and Derby",
+    "counties": [
+     "Derbyshire"
+    ],
+    "unitaries": [
+     "Derby"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:DBY",
+     "local-authority:AMB",
+     "local-authority:BOS",
+     "local-authority:CHS",
+     "local-authority:DEB",
+     "local-authority:ERE",
+     "local-authority:HIG",
+     "local-authority:NED",
+     "local-authority:SDE",
+     "local-authority:DER"
+    ]
+   },
+   {
+    "area": "Devon, Plymouth and Torbay",
+    "counties": [
+     "Devon"
+    ],
+    "unitaries": [
+     "Plymouth",
+     "Torbay"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:DEV",
+     "local-authority:EDE",
+     "local-authority:EXE",
+     "local-authority:MDE",
+     "local-authority:NDE",
+     "local-authority:SHA",
+     "local-authority:TEI",
+     "local-authority:TOR",
+     "local-authority:WDE",
+     "local-authority:PLY",
+     "local-authority:TOB"
+    ]
+   },
+   {
+    "area": "Hertfordshire",
+    "counties": [
+     "Hertfordshire"
+    ],
+    "unitaries": [],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:HRT",
+     "local-authority:BRX",
+     "local-authority:DAC",
+     "local-authority:HER",
+     "local-authority:NHE",
+     "local-authority:THE",
+     "local-authority:WAT",
+     "local-authority:SAL",
+     "local-authority:WEW",
+     "local-authority:EHE",
+     "local-authority:STV"
+    ]
+   },
+   {
+    "area": "Kent and Medway",
+    "counties": [
+     "Kent"
+    ],
+    "unitaries": [
+     "Medway"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:KEN",
+     "local-authority:ASF",
+     "local-authority:CAT",
+     "local-authority:DAR",
+     "local-authority:DOV",
+     "local-authority:GRA",
+     "local-authority:MAI",
+     "local-authority:SEV",
+     "local-authority:SHE",
+     "local-authority:SWL",
+     "local-authority:THA",
+     "local-authority:TON",
+     "local-authority:TUN",
+     "local-authority:MDW"
+    ]
+   },
+   {
+    "area": "Lancashire, Blackburn with Darwen and Blackpool",
+    "counties": [
+     "Lancashire"
+    ],
+    "unitaries": [
+     "Blackburn with Darwen",
+     "Blackpool"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:LAN",
+     "local-authority:BUN",
+     "local-authority:CHO",
+     "local-authority:FYL",
+     "local-authority:HYN",
+     "local-authority:LAC",
+     "local-authority:PEN",
+     "local-authority:PRE",
+     "local-authority:RIB",
+     "local-authority:ROS",
+     "local-authority:SRI",
+     "local-authority:WLA",
+     "local-authority:WYR",
+     "local-authority:BBD",
+     "local-authority:BPL"
+    ]
+   },
+   {
+    "area": "Leicestershire, Leicester and Rutland",
+    "counties": [
+     "Leicestershire"
+    ],
+    "unitaries": [
+     "Leicester",
+     "Rutland"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:LEC",
+     "local-authority:BLA",
+     "local-authority:CHA",
+     "local-authority:HAO",
+     "local-authority:HIN",
+     "local-authority:MEL",
+     "local-authority:NWL",
+     "local-authority:OAD",
+     "local-authority:LCE",
+     "local-authority:RUT"
+    ]
+   },
+   {
+    "area": "Lincolnshire, North Lincolnshire and North East Lincolnshire",
+    "counties": [
+     "Lincolnshire"
+    ],
+    "unitaries": [
+     "North Lincolnshire",
+     "North East Lincolnshire"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:LIN",
+     "local-authority:BOT",
+     "local-authority:ELI",
+     "local-authority:LIC",
+     "local-authority:NKE",
+     "local-authority:SHO",
+     "local-authority:SKE",
+     "local-authority:WLI",
+     "local-authority:NLN",
+     "local-authority:NEL"
+    ]
+   },
+   {
+    "area": "Nottinghamshire and Nottingham",
+    "counties": [
+     "Nottinghamshire"
+    ],
+    "unitaries": [
+     "Nottingham"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:NTT",
+     "local-authority:ASH",
+     "local-authority:BAE",
+     "local-authority:BRT",
+     "local-authority:GED",
+     "local-authority:MAS",
+     "local-authority:NEA",
+     "local-authority:RUS",
+     "local-authority:NGM"
+    ]
+   },
+   {
+    "area": "Staffordshire and Stoke-on-Trent",
+    "counties": [
+     "Staffordshire"
+    ],
+    "unitaries": [
+     "Stoke-on-Trent"
+    ],
+    "status": "review",
+    "why": "July 2026 decision withdrawn on 29 October 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "withdrawn-9"
+    ],
+    "councils": [
+     "local-authority:STS",
+     "local-authority:CAN",
+     "local-authority:EST",
+     "local-authority:LIF",
+     "local-authority:NEC",
+     "local-authority:SST",
+     "local-authority:STA",
+     "local-authority:STF",
+     "local-authority:TAW",
+     "local-authority:STE"
+    ]
+   },
+   {
+    "area": "Essex, Southend-on-Sea and Thurrock",
+    "counties": [
+     "Essex"
+    ],
+    "unitaries": [
+     "Southend-on-Sea",
+     "Thurrock"
+    ],
+    "status": "review",
+    "why": "March 2026 decision withdrawn on 7 September 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "review-launch",
+     "review-6"
+    ],
+    "councils": [
+     "local-authority:ESS",
+     "local-authority:BAI",
+     "local-authority:BRA",
+     "local-authority:BRW",
+     "local-authority:CAS",
+     "local-authority:CHL",
+     "local-authority:COL",
+     "local-authority:EPP",
+     "local-authority:HAR",
+     "local-authority:MAL",
+     "local-authority:ROC",
+     "local-authority:TEN",
+     "local-authority:UTT",
+     "local-authority:SOS",
+     "local-authority:THR"
+    ]
+   },
+   {
+    "area": "Hampshire, Isle of Wight, Portsmouth and Southampton",
+    "counties": [
+     "Hampshire"
+    ],
+    "unitaries": [
+     "Isle of Wight",
+     "Portsmouth",
+     "Southampton"
+    ],
+    "status": "review",
+    "why": "March 2026 decision withdrawn on 7 September 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "review-launch",
+     "review-6"
+    ],
+    "councils": [
+     "local-authority:HAM",
+     "local-authority:BAN",
+     "local-authority:EHA",
+     "local-authority:EAT",
+     "local-authority:FAR",
+     "local-authority:GOS",
+     "local-authority:HAT",
+     "local-authority:HAA",
+     "local-authority:NEW",
+     "local-authority:RUH",
+     "local-authority:TES",
+     "local-authority:WIN",
+     "local-authority:IOW",
+     "local-authority:POR",
+     "local-authority:STH"
+    ]
+   },
+   {
+    "area": "Norfolk",
+    "counties": [
+     "Norfolk"
+    ],
+    "unitaries": [],
+    "status": "review",
+    "why": "March 2026 decision withdrawn on 7 September 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "review-launch",
+     "review-6"
+    ],
+    "councils": [
+     "local-authority:NFK",
+     "local-authority:BRE",
+     "local-authority:BRO",
+     "local-authority:GRY",
+     "local-authority:KIN",
+     "local-authority:NNO",
+     "local-authority:NOW",
+     "local-authority:SNO"
+    ]
+   },
+   {
+    "area": "Suffolk",
+    "counties": [
+     "Suffolk"
+    ],
+    "unitaries": [],
+    "status": "review",
+    "why": "March 2026 decision withdrawn on 7 September 2026",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "review-launch",
+     "review-6"
+    ],
+    "councils": [
+     "local-authority:SFK",
+     "local-authority:BAB",
+     "local-authority:IPS",
+     "local-authority:MSU",
+     "local-authority:ESK",
+     "local-authority:WSK"
+    ]
+   },
+   {
+    "area": "Cambridgeshire and Peterborough",
+    "counties": [
+     "Cambridgeshire"
+    ],
+    "unitaries": [
+     "Peterborough"
+    ],
+    "status": "review",
+    "why": "No decision made yet",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "review-6"
+    ],
+    "councils": [
+     "local-authority:CAM",
+     "local-authority:CAB",
+     "local-authority:ECA",
+     "local-authority:FEN",
+     "local-authority:HUN",
+     "local-authority:SCA",
+     "local-authority:PTE"
+    ]
+   },
+   {
+    "area": "West Sussex",
+    "counties": [
+     "West Sussex"
+    ],
+    "unitaries": [],
+    "status": "review",
+    "why": "No decision made yet",
+    "existing_elections": "2027-05",
+    "shadow_election": "2028-05",
+    "vesting": "2029-04-01",
+    "src": [
+     "review-6"
+    ],
+    "councils": [
+     "local-authority:WSX",
+     "local-authority:ADU",
+     "local-authority:ARU",
+     "local-authority:CHI",
+     "local-authority:CRW",
+     "local-authority:HOR",
+     "local-authority:MSS",
+     "local-authority:WOT"
+    ]
+   }
+  ]
+ },
+ "council_area": {
+  "local-authority:SRY": [
+   0
+  ],
+  "local-authority:ELM": [
+   0
+  ],
+  "local-authority:EPS": [
+   0
+  ],
+  "local-authority:GRT": [
+   0
+  ],
+  "local-authority:MOL": [
+   0
+  ],
+  "local-authority:REI": [
+   0
+  ],
+  "local-authority:RUN": [
+   0
+  ],
+  "local-authority:SPE": [
+   0
+  ],
+  "local-authority:SUR": [
+   0
+  ],
+  "local-authority:TAN": [
+   0
+  ],
+  "local-authority:WAE": [
+   0
+  ],
+  "local-authority:WOI": [
+   0
+  ],
+  "local-authority:ESX": [
+   1
+  ],
+  "local-authority:EAS": [
+   1
+  ],
+  "local-authority:HAS": [
+   1
+  ],
+  "local-authority:LEE": [
+   1
+  ],
+  "local-authority:ROH": [
+   1
+  ],
+  "local-authority:WEA": [
+   1
+  ],
+  "local-authority:BNH": [
+   1
+  ],
+  "local-authority:GLS": [
+   2
+  ],
+  "local-authority:CHT": [
+   2
+  ],
+  "local-authority:COT": [
+   2
+  ],
+  "local-authority:FOE": [
+   2
+  ],
+  "local-authority:GLO": [
+   2
+  ],
+  "local-authority:STO": [
+   2
+  ],
+  "local-authority:TEW": [
+   2
+  ],
+  "local-authority:OXF": [
+   3
+  ],
+  "local-authority:OXO": [
+   3
+  ],
+  "local-authority:SOX": [
+   3
+  ],
+  "local-authority:VAL": [
+   3
+  ],
+  "local-authority:WOX": [
+   3
+  ],
+  "local-authority:CHR": [
+   3
+  ],
+  "local-authority:WBK": [
+   3
+  ],
+  "local-authority:WAR": [
+   4
+  ],
+  "local-authority:NWA": [
+   4
+  ],
+  "local-authority:NUN": [
+   4
+  ],
+  "local-authority:RUG": [
+   4
+  ],
+  "local-authority:STR": [
+   4
+  ],
+  "local-authority:WAW": [
+   4
+  ],
+  "local-authority:WOR": [
+   5
+  ],
+  "local-authority:BRM": [
+   5
+  ],
+  "local-authority:MAV": [
+   5
+  ],
+  "local-authority:RED": [
+   5
+  ],
+  "local-authority:WOC": [
+   5
+  ],
+  "local-authority:WYC": [
+   5
+  ],
+  "local-authority:WYE": [
+   5
+  ],
+  "local-authority:DBY": [
+   6
+  ],
+  "local-authority:AMB": [
+   6
+  ],
+  "local-authority:BOS": [
+   6
+  ],
+  "local-authority:CHS": [
+   6
+  ],
+  "local-authority:DEB": [
+   6
+  ],
+  "local-authority:ERE": [
+   6
+  ],
+  "local-authority:HIG": [
+   6
+  ],
+  "local-authority:NED": [
+   6
+  ],
+  "local-authority:SDE": [
+   6
+  ],
+  "local-authority:DER": [
+   6
+  ],
+  "local-authority:DEV": [
+   7
+  ],
+  "local-authority:EDE": [
+   7
+  ],
+  "local-authority:EXE": [
+   7
+  ],
+  "local-authority:MDE": [
+   7
+  ],
+  "local-authority:NDE": [
+   7
+  ],
+  "local-authority:SHA": [
+   7
+  ],
+  "local-authority:TEI": [
+   7
+  ],
+  "local-authority:TOR": [
+   7
+  ],
+  "local-authority:WDE": [
+   7
+  ],
+  "local-authority:PLY": [
+   7
+  ],
+  "local-authority:TOB": [
+   7
+  ],
+  "local-authority:HRT": [
+   8
+  ],
+  "local-authority:BRX": [
+   8
+  ],
+  "local-authority:DAC": [
+   8
+  ],
+  "local-authority:HER": [
+   8
+  ],
+  "local-authority:NHE": [
+   8
+  ],
+  "local-authority:THE": [
+   8
+  ],
+  "local-authority:WAT": [
+   8
+  ],
+  "local-authority:SAL": [
+   8
+  ],
+  "local-authority:WEW": [
+   8
+  ],
+  "local-authority:EHE": [
+   8
+  ],
+  "local-authority:STV": [
+   8
+  ],
+  "local-authority:KEN": [
+   9
+  ],
+  "local-authority:ASF": [
+   9
+  ],
+  "local-authority:CAT": [
+   9
+  ],
+  "local-authority:DAR": [
+   9
+  ],
+  "local-authority:DOV": [
+   9
+  ],
+  "local-authority:GRA": [
+   9
+  ],
+  "local-authority:MAI": [
+   9
+  ],
+  "local-authority:SEV": [
+   9
+  ],
+  "local-authority:SHE": [
+   9
+  ],
+  "local-authority:SWL": [
+   9
+  ],
+  "local-authority:THA": [
+   9
+  ],
+  "local-authority:TON": [
+   9
+  ],
+  "local-authority:TUN": [
+   9
+  ],
+  "local-authority:MDW": [
+   9
+  ],
+  "local-authority:LAN": [
+   10
+  ],
+  "local-authority:BUN": [
+   10
+  ],
+  "local-authority:CHO": [
+   10
+  ],
+  "local-authority:FYL": [
+   10
+  ],
+  "local-authority:HYN": [
+   10
+  ],
+  "local-authority:LAC": [
+   10
+  ],
+  "local-authority:PEN": [
+   10
+  ],
+  "local-authority:PRE": [
+   10
+  ],
+  "local-authority:RIB": [
+   10
+  ],
+  "local-authority:ROS": [
+   10
+  ],
+  "local-authority:SRI": [
+   10
+  ],
+  "local-authority:WLA": [
+   10
+  ],
+  "local-authority:WYR": [
+   10
+  ],
+  "local-authority:BBD": [
+   10
+  ],
+  "local-authority:BPL": [
+   10
+  ],
+  "local-authority:LEC": [
+   11
+  ],
+  "local-authority:BLA": [
+   11
+  ],
+  "local-authority:CHA": [
+   11
+  ],
+  "local-authority:HAO": [
+   11
+  ],
+  "local-authority:HIN": [
+   11
+  ],
+  "local-authority:MEL": [
+   11
+  ],
+  "local-authority:NWL": [
+   11
+  ],
+  "local-authority:OAD": [
+   11
+  ],
+  "local-authority:LCE": [
+   11
+  ],
+  "local-authority:RUT": [
+   11
+  ],
+  "local-authority:LIN": [
+   12
+  ],
+  "local-authority:BOT": [
+   12
+  ],
+  "local-authority:ELI": [
+   12
+  ],
+  "local-authority:LIC": [
+   12
+  ],
+  "local-authority:NKE": [
+   12
+  ],
+  "local-authority:SHO": [
+   12
+  ],
+  "local-authority:SKE": [
+   12
+  ],
+  "local-authority:WLI": [
+   12
+  ],
+  "local-authority:NLN": [
+   12
+  ],
+  "local-authority:NEL": [
+   12
+  ],
+  "local-authority:NTT": [
+   13
+  ],
+  "local-authority:ASH": [
+   13
+  ],
+  "local-authority:BAE": [
+   13
+  ],
+  "local-authority:BRT": [
+   13
+  ],
+  "local-authority:GED": [
+   13
+  ],
+  "local-authority:MAS": [
+   13
+  ],
+  "local-authority:NEA": [
+   13
+  ],
+  "local-authority:RUS": [
+   13
+  ],
+  "local-authority:NGM": [
+   13
+  ],
+  "local-authority:STS": [
+   14
+  ],
+  "local-authority:CAN": [
+   14
+  ],
+  "local-authority:EST": [
+   14
+  ],
+  "local-authority:LIF": [
+   14
+  ],
+  "local-authority:NEC": [
+   14
+  ],
+  "local-authority:SST": [
+   14
+  ],
+  "local-authority:STA": [
+   14
+  ],
+  "local-authority:STF": [
+   14
+  ],
+  "local-authority:TAW": [
+   14
+  ],
+  "local-authority:STE": [
+   14
+  ],
+  "local-authority:ESS": [
+   15
+  ],
+  "local-authority:BAI": [
+   15
+  ],
+  "local-authority:BRA": [
+   15
+  ],
+  "local-authority:BRW": [
+   15
+  ],
+  "local-authority:CAS": [
+   15
+  ],
+  "local-authority:CHL": [
+   15
+  ],
+  "local-authority:COL": [
+   15
+  ],
+  "local-authority:EPP": [
+   15
+  ],
+  "local-authority:HAR": [
+   15
+  ],
+  "local-authority:MAL": [
+   15
+  ],
+  "local-authority:ROC": [
+   15
+  ],
+  "local-authority:TEN": [
+   15
+  ],
+  "local-authority:UTT": [
+   15
+  ],
+  "local-authority:SOS": [
+   15
+  ],
+  "local-authority:THR": [
+   15
+  ],
+  "local-authority:HAM": [
+   16
+  ],
+  "local-authority:BAN": [
+   16
+  ],
+  "local-authority:EHA": [
+   16
+  ],
+  "local-authority:EAT": [
+   16
+  ],
+  "local-authority:FAR": [
+   16
+  ],
+  "local-authority:GOS": [
+   16
+  ],
+  "local-authority:HAT": [
+   16
+  ],
+  "local-authority:HAA": [
+   16
+  ],
+  "local-authority:NEW": [
+   16
+  ],
+  "local-authority:RUH": [
+   16
+  ],
+  "local-authority:TES": [
+   16
+  ],
+  "local-authority:WIN": [
+   16
+  ],
+  "local-authority:IOW": [
+   16
+  ],
+  "local-authority:POR": [
+   16
+  ],
+  "local-authority:STH": [
+   16
+  ],
+  "local-authority:NFK": [
+   17
+  ],
+  "local-authority:BRE": [
+   17
+  ],
+  "local-authority:BRO": [
+   17
+  ],
+  "local-authority:GRY": [
+   17
+  ],
+  "local-authority:KIN": [
+   17
+  ],
+  "local-authority:NNO": [
+   17
+  ],
+  "local-authority:NOW": [
+   17
+  ],
+  "local-authority:SNO": [
+   17
+  ],
+  "local-authority:SFK": [
+   18
+  ],
+  "local-authority:BAB": [
+   18
+  ],
+  "local-authority:IPS": [
+   18
+  ],
+  "local-authority:MSU": [
+   18
+  ],
+  "local-authority:ESK": [
+   18
+  ],
+  "local-authority:WSK": [
+   18
+  ],
+  "local-authority:CAM": [
+   19
+  ],
+  "local-authority:CAB": [
+   19
+  ],
+  "local-authority:ECA": [
+   19
+  ],
+  "local-authority:FEN": [
+   19
+  ],
+  "local-authority:HUN": [
+   19
+  ],
+  "local-authority:SCA": [
+   19
+  ],
+  "local-authority:PTE": [
+   19
+  ],
+  "local-authority:WSX": [
+   20
+  ],
+  "local-authority:ADU": [
+   20
+  ],
+  "local-authority:ARU": [
+   20
+  ],
+  "local-authority:CHI": [
+   20
+  ],
+  "local-authority:CRW": [
+   20
+  ],
+  "local-authority:HOR": [
+   20
+  ],
+  "local-authority:MSS": [
+   20
+  ],
+  "local-authority:WOT": [
+   20
+  ]
+ },
+ "missing": [],
+ "two_tier_counties": [
+  "Cambridgeshire",
+  "Derbyshire",
+  "Devon",
+  "East Sussex",
+  "Essex",
+  "Gloucestershire",
+  "Hampshire",
+  "Hertfordshire",
+  "Kent",
+  "Lancashire",
+  "Leicestershire",
+  "Lincolnshire",
+  "Norfolk",
+  "Nottinghamshire",
+  "Oxfordshire",
+  "Staffordshire",
+  "Suffolk",
+  "Surrey",
+  "Warwickshire",
+  "West Sussex",
+  "Worcestershire"
+ ]
+}

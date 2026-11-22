@@ -36,6 +36,13 @@ ACC = {"v": VER, "built": T["built"], "digest": T["digest"], "legend": {"e": "ch
        "ppp": "HMT id, project, status, sector, authority id, authority, department id, department, project company, company number, equity [holder, share], individuals withheld, capital £m, charge 2025-26 £m, end, ESA balance sheet"},
        "src": SRC, "e": E, "ans": ANS, "ch": CH, "m": M, "w": W, "wo": WO, "tf": T["stats"]["trading_funds"], "pcs": PCS, "pw": PW, "ppp": PPP, "cf": CF, "cfr": CF_RESOLVED, "un": UN,
        "nat": json.loads((ROOT / "data" / "body-nations.json").read_text())}  # tools/nations.py: final nation placement per body
+_CL = json.loads((ROOT / "data" / "classification.json").read_text())  # tools/classify.py: purpose, activity and type of body (purpose and activity MODELLED)
+ACC["cl"] = {k: [v["purpose"], v["activity"], v["btype"]] for k, v in _CL["bodies"].items()}
+ACC["clm"] = {"purpose": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["purposes"]}, "activity": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["activities"]},
+              "btype": {x["key"]: [x["label"], x["explain"]] for x in _CL["meta"]["btypes"]}}
+_LG = json.loads((ROOT / "data" / "local-government.json").read_text())  # tools/localgov.py: English Devolution Act 2026, current and planned
+ACC["lg"] = {k: v for k, v in _LG.items() if k not in ("two_tier_counties", "missing")}
+ACC["corp"] = json.loads((ROOT / "data" / "corporations.json").read_text())  # tools/corporations.py: one family tree per trading fund or public corporation
 acc_json = json.dumps(ACC, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
 # ---------- data block edits ----------
@@ -81,6 +88,7 @@ h = once(h, STD_OLD, STD_NEW, "standards list")
 h = once(h, '$("#stdRows").innerHTML = std.map(s => `<tr><td>${esc(s[0])}</td><td>${esc(s[1])}</td></tr>`).join("");',
          '$("#stdRows").innerHTML = std.map(s => `<tr><td>${s[3] ? `<a href="${esc(s[3])}" rel="noopener">${esc(s[0])}</a>` : esc(s[0])}</td><td>${esc(s[1])}</td><td>${esc(s[2])}</td></tr>`).join("");', "standards rows")
 h = once(h, '<th scope="col">Standard</th><th scope="col">Where it applies</th></tr>', '<th scope="col">Standard</th><th scope="col">Where it applies</th><th scope="col">Status</th></tr>', "standards head")
+h = once(h, '<div class="card" id="s-mog">', (TOOLS / "localgov-view.html").read_text() + '<div class="card" id="s-mog">', "localgov")  # most important first: what is changing now
 h = once(h, "  <!-- DATA -->", (TOOLS / "tree-view.html").read_text() + "  <!-- DATA -->", "view")
 h = once(h, "</style>", (TOOLS / "tree-view.css").read_text() + "</style>", "css") if h.count("</style>") == 1 else h.replace("</style>", (TOOLS / "tree-view.css").read_text() + "</style>", 1)
 ICONS = '<symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol><symbol id="i-coin" viewBox="0 0 24 24"><ellipse cx="12" cy="7" rx="7" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 7v10c0 1.7 3.1 3 7 3s7-1.3 7-3V7M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>'
@@ -91,6 +99,7 @@ _decl = lambda t: set(re.findall(r"^(?:const|let|function)\s+([A-Za-z_$][\w$]*)"
 _clash = _decl(js) & _decl(re.sub(r"<script id=\"tree\".*?</script>", "", h, flags=re.S))
 if _clash: sys.exit(f"top-level names redeclared: {sorted(_clash)}")
 h = once(h, "// ---- start ----", js + "\n// ---- start ----", "js")
+if "sr-only" in js and ".sr-only{" not in h: sys.exit("OG-D40: screen-reader-only text used but .sr-only is not defined, so it would show on screen")
 h = once(h, "home(); explore(); setupRegister(); renderRegister(); reconcile(); changes(); dataView(); quality(); help(); product(); ask();\nroute(); selfChecks();",
          "home(); explore(); setupRegister(); renderRegister(); reconcile(); changes(); whoAnswers(); dataView(); quality(); help(); product(); ask();\nroute(); selfChecks(); treeSelfChecks();", "start")
 h = once(h, "const G = [[", "const G = [...TREE_TERMS, [", "glossary")

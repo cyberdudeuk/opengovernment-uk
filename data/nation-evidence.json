@@ -43996,10 +43996,19 @@
    "nations": [
     "SC"
    ],
-   "basis": "register",
-   "why": "the register states SC",
+   "basis": "chain",
+   "why": "answers to the Scottish Parliament",
    "url": "",
    "evidence": [
+    {
+     "rank": 1,
+     "source": "chain",
+     "nations": [
+      "SC"
+     ],
+     "why": "answers to the Scottish Parliament",
+     "url": ""
+    },
     {
      "rank": 4,
      "source": "register",
@@ -44015,10 +44024,19 @@
    "nations": [
     "SC"
    ],
-   "basis": "register",
-   "why": "the register states SC",
+   "basis": "chain",
+   "why": "answers to the Scottish Parliament",
    "url": "",
    "evidence": [
+    {
+     "rank": 1,
+     "source": "chain",
+     "nations": [
+      "SC"
+     ],
+     "why": "answers to the Scottish Parliament",
+     "url": ""
+    },
     {
      "rank": 4,
      "source": "register",

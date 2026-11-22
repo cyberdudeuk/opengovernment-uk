@@ -113,7 +113,7 @@ Top-level keys: `source`, `functions`, `bodies`
 
 ## `docs/accountability.json`
 
-Top-level keys: `v`, `built`, `digest`, `legend`, `src`, `e`, `ans`, `ch`, `m`, `w`, `wo`, `tf`, `pcs`, `pw`, `ppp`, `cf`, `cfr`, `un`, `nat`
+Top-level keys: `v`, `built`, `digest`, `legend`, `src`, `e`, `ans`, `ch`, `m`, `w`, `wo`, `tf`, `pcs`, `pw`, `ppp`, `cf`, `cfr`, `un`, `nat`, `cl`, `clm`, `lg`, `corp`
 
 ## `docs/bods-0.4.json`
 

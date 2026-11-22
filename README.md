@@ -43,6 +43,8 @@ tools/refdata.py        reference data lineage, matched against data.gov.uk
 tools/trends.py         public bodies 2012-2024 from the official editions; 2020 baseline reconciled with today
 tools/functions.py      back-office classes: A (exists for government) and B (back office as one line of business)
 tools/scenarios.py      evolution, reform and revolution to 2030 (modelled, assumptions editable)
+tools/corporations.py   one family tree per trading fund and public corporation, grouped by owner
+tools/localgov.py       local government under the English Devolution and Community Empowerment Act 2026 (current and planned)
 ```
 
 Three source files are **not redistributed** here because they name people (the Public Bodies Directory, Companies House controller pages, the PFI register's investors). `fetch.py --private` downloads them; their fingerprints are in `sources/manifest.json`, so a downloaded copy can be checked against the one the build used.
@@ -60,6 +62,7 @@ python tools/fetch.py --private && python tools/build.py   # full rebuild
 | Run the **Refresh** workflow, read the summary, publish if the checks pass | monthly, or when a source changes | about 30 minutes |
 | New editions of the sources: ONS guide (roughly monthly), Estimates and Accounts and WGA orders (yearly), Public Bodies Directory and PFI register (yearly) | as published | 1 to 2 hours each to update the URL in `fetch.py` and review changes |
 | Clear the queue of names that didn't match (884 today) | per release | open-ended; worth 1 to 2 hours a release |
+| Local government facts (sources/evidence/local-government-2026.json): check the government's reorganisation and devolution announcements | when MHCLG announces decisions (every area is due an outcome by early 2027), then at least quarterly | 30 to 60 minutes |
 | Feedback via the GitHub issue form | as it comes | minutes each |
 
 Nothing runs on a schedule: there are no paid services, no secrets and no tokens beyond the read-only one GitHub gives each workflow run.

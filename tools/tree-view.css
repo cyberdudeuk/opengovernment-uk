@@ -46,3 +46,52 @@
 /* in nation columns the name, flag and chips get a full line; the bar and value sit beneath (no overlap at any width) */
 .natcol .bar{grid-template-columns:minmax(0,1fr) 44px;row-gap:3px;margin-bottom:8px}.natcol .bar>span:first-child{grid-column:1/-1;line-height:1.6}
 .natcol .nmulti,.natcol .nchip{white-space:nowrap}
+/* trading funds and public corporations: one family tree each (0.4) */
+.cpown{border:1px solid var(--line);border-radius:12px;margin:8px 0;background:var(--paper)}
+.cpown>summary{cursor:pointer;padding:10px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.cpown>summary svg{width:18px;height:18px;color:var(--navy);flex:none}
+.cpown[open]>summary{border-bottom:1px solid var(--line)}
+.cpgrp{margin:6px 12px}
+.cpgrp>summary,.otree .grp>details>summary{cursor:pointer;font-size:.86rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;padding:4px 0}
+.otree .grp>details>summary .term-b,.cpgrp>summary .term-b{text-transform:inherit;letter-spacing:inherit;font-weight:inherit}
+.otree .grp{margin:4px 0}
+.cptree{border-left:4px solid var(--c,var(--line));padding:2px 0 2px 12px;margin:8px 12px 12px;animation:cpIn .35s ease-out both}
+.cptree .crumb{font-size:.85rem;margin:2px 0;display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.cptree .crumb svg{width:14px;height:14px;color:var(--gold)}
+.kchip{display:inline-block;font-size:.72rem;border-radius:999px;padding:1px 8px;margin-left:6px;border:1px solid currentColor;vertical-align:1px}
+.kchip.k-trading-fund{color:var(--gold)} .kchip.k-non-financial{color:var(--sea)} .kchip.k-financial{color:var(--navy)} .kchip.k-central-bank{color:var(--red)}
+@keyframes cpIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.cptree{animation:none}}
+.gl+.c,.cpgrp>summary .c,.otree .grp .c{display:inline-block;margin-left:8px;font-size:.72rem;font-weight:600;letter-spacing:0;text-transform:none;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 7px}
+/* local government: English Devolution Act 2026 (0.4) */
+.lgcard{background:linear-gradient(135deg,color-mix(in srgb,var(--nEN) 7%,var(--paper)),var(--paper) 55%)}
+.lgtiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
+.lgtier{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--paper)}
+.lgtier h3{margin:0 0 4px;font-size:1rem}
+.lgtier .law{font-size:.82rem;color:var(--muted);display:flex;gap:6px;align-items:flex-start;flex-wrap:wrap}
+.lgtier .law svg{width:14px;height:14px;flex:none;margin-top:2px;color:var(--gold)}
+.lglist{list-style:none;padding:0;margin:8px 0 0}
+.lglist li{padding:6px 0;border-top:1px dashed var(--line)}
+.src{font-size:.78rem;color:var(--muted)} .src a{color:var(--muted)}
+.lgst{display:inline-block;font-size:.72rem;font-weight:600;border-radius:999px;padding:1px 8px;border:1px solid currentColor;vertical-align:1px}
+.lgst.current,.lgst.decided{color:var(--good)} .lgst.planned,.lgst.minded-to{color:var(--gold)} .lgst.review{color:var(--red)}
+.lgh{margin:16px 0 4px}
+.lgareas{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.lgarea{border:1px solid var(--line);border-left:4px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper);animation:cpIn .35s ease-out both}
+.lgarea.st-decided{border-left-color:var(--good)} .lgarea.st-minded-to{border-left-color:var(--gold)} .lgarea.st-review{border-left-color:var(--red)}
+.lgarea h4{margin:0 0 6px;font-size:.98rem;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.lgdl{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:0 0 6px;font-size:.88rem}
+.lgdl dt{color:var(--muted)} .lgdl dd{margin:0}
+.lgcouncils{columns:2 180px;font-size:.85rem;padding-left:18px}
+.lgchips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}
+.lgchips li{border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:.88rem;background:var(--paper)}
+.lgchanges li{margin:6px 0}
+.lgtl{list-style:none;padding:0;margin:10px 0;border-left:2px solid var(--line)}
+.lgtl li{position:relative;padding:4px 0 10px 18px;display:grid;grid-template-columns:150px 1fr;gap:2px 12px}
+.lgtl li::before{content:"";position:absolute;left:-7px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--sea);border:2px solid var(--paper)}
+.lgtl li.planned::before{background:var(--paper);border-color:var(--gold)}
+.lgtl .d{font-weight:600} .lgtl .src{grid-column:2}
+@media (max-width:600px){.lgtl li{grid-template-columns:1fr}.lgtl .src{grid-column:1}}
+@media (prefers-reduced-motion:reduce){.lgarea{animation:none}}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (max-width:600px){.lgdl{grid-template-columns:1fr}.lgdl dd{margin-bottom:4px}.lgtiers{grid-template-columns:1fr}}

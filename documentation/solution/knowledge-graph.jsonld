@@ -519,6 +519,69 @@
    ]
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R46",
+   "@type": "Requirement",
+   "name": "Every trading fund and public corporation shown as its own family tree, each body in exactly one place, grouped by owner level and owner",
+   "priority": "Must",
+   "status": "Done",
+   "serves": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N1",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N2",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N4"
+   ],
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-PORTAL"
+   ]
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R47",
+   "@type": "Requirement",
+   "name": "Department and corporation trees grouped by purpose, activity and type of body, with large groups split again",
+   "priority": "Must",
+   "status": "Done",
+   "serves": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N1",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N2"
+   ],
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-PORTAL"
+   ]
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R48",
+   "@type": "Requirement",
+   "name": "Local government in England shown as it is and as planned under the English Devolution and Community Empowerment Act 2026: strategic authorities, reorganisation areas and their councils, and a timeline, every fact sourced",
+   "priority": "Must",
+   "status": "Done",
+   "serves": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N1",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N2",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N5",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N7"
+   ],
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-PORTAL"
+   ]
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
+   "@type": "Requirement",
+   "name": "ONS sponsor codes resolve only through the guide's own abbreviation list",
+   "priority": "Must",
+   "status": "Done",
+   "serves": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N2",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#N7"
+   ],
+   "metBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-BUILD"
+   ]
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37",
    "@type": "Requirement",
    "name": "Comparator adoptions: founding legislation, COFOG, movements, interests, parent history",
@@ -569,7 +632,8 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-nmd_terminal",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-unresolved_reason",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-digest",
-    "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-person_rule_offices"
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-person_rule_offices",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-ons_codes"
    ],
    "produces": [
     "data/tree.json",
@@ -706,6 +770,30 @@
    ]
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
+   "@type": "Component",
+   "name": "Trading fund and public corporation trees",
+   "path": "tools/corporations.py",
+   "provenBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-corporations"
+   ],
+   "produces": [
+    "data/corporations.json"
+   ]
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
+   "@type": "Component",
+   "name": "Local government under the 2026 Act",
+   "path": "tools/localgov.py",
+   "provenBy": [
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-localgov"
+   ],
+   "produces": [
+    "data/local-government.json"
+   ]
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
    "@type": "Component",
    "name": "Documentation generator",
@@ -839,6 +927,21 @@
    "name": "Back-office known answers"
   },
   {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-corporations",
+   "@type": "Check",
+   "name": "Every member in exactly one tree; known answers (Manchester Airport group, Ordnance Survey, Scottish Water); negatives caught"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-localgov",
+   "@type": "Check",
+   "name": "Every fact sourced; 21 areas cover every two-tier county once; 205 councils match MHCLG's count; known answers; negatives caught"
+  },
+  {
+   "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-ons_codes",
+   "@type": "Check",
+   "name": "ONS sponsor codes resolve through the guide's abbreviations; Scottish Water answers to the Scottish Government"
+  },
+  {
    "@id": "https://cyberdudeuk.github.io/opengovernment-uk/trace#CHK-artefacts",
    "@type": "Check",
    "name": "Ontology and knowledge graph parse; every requirement traces to a need"
@@ -953,6 +1056,10 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R43",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R44",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R45",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R46",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R47",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R48",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
   },
@@ -996,6 +1103,10 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R43",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R44",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R45",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R46",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R47",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R48",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
   },
@@ -1018,6 +1129,8 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CI",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-REPO"
@@ -1042,6 +1155,8 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CI",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-REPO"
@@ -1066,6 +1181,8 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-NATEV",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-H2020",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CLASS",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CORP",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-LG",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-ART",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-CI",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#C-REPO"
@@ -1140,6 +1257,10 @@
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R43",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R44",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R45",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R46",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R47",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R48",
+    "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R49",
     "https://cyberdudeuk.github.io/opengovernment-uk/trace#OG-R37"
    ]
   }
