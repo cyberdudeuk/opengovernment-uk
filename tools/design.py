@@ -127,9 +127,15 @@ def tokenise(css):
     return css
 
 
-SHELL_NAV = [("index.html#home", "Home", "home"), ("index.html#register", "Register", "register"), ("index.html#tree", "Who answers", "tree"), ("nations.html", "Nations", "nations"),
-             ("index.html#changes", "Changes", "changes"), ("navigator.html", "Documentation", "docs"), ("design-system.html", "Design system", "design")]
+SHELL_NAV = [("index.html#home", "Home", "home"), ("index.html#register", "Register", "register"), ("index.html#tree", "Who answers", "tree"), ("nations.html", "Nations", "nations"), ("orgchart.html", "Org charts", "orgchart"),
+             ("index.html#changes", "Changes", "changes"), ("navigator.html", "Documentation", "docs")]  # the design system page is linked from every footer
 LOGO = '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="var(--og-brand)"/><circle cx="20" cy="20" r="11.5" fill="none" stroke="var(--og-surface)" stroke-width="2"/><circle cx="20" cy="20" r="5" fill="var(--og-surface)"/><path d="M20 2v7M20 31v7M2 20h7M31 20h7" stroke="var(--og-surface)" stroke-width="2"/></svg>'
+# The global navigation must never wrap or exceed the screen: when its links would not fit on one line, it folds into
+# the Menu button (the 1023px media rule is the fallback without JavaScript).
+NAVFIT_JS = ('<script>(()=>{const m=document.querySelector(".og-shell-mast"),n=m&&m.querySelector(".og-shell-nav");if(!n)return;'
+             'const fit=()=>{m.classList.remove("og-fold");if(getComputedStyle(n).display==="none")return;const a=[...n.querySelectorAll("a")];'
+             'if(a.length&&(a[a.length-1].getBoundingClientRect().top>a[0].getBoundingClientRect().top+2||n.scrollWidth>n.clientWidth+1))m.classList.add("og-fold")};'
+             'fit();addEventListener("resize",fit);document.fonts&&document.fonts.ready.then(fit)})()</script>')
 THEME_JS = ('<script>(()=>{const k="og-theme",r=document.documentElement,b=document.getElementById("ogTheme"),L={"":"Device","light":"Light","dark":"Dark"},N={"":"light","light":"dark","dark":""};'
             'let t="";try{t=localStorage.getItem(k)||""}catch(e){}const set=x=>{t=x;x?r.setAttribute("data-theme",x):r.removeAttribute("data-theme");b.querySelector(".v").textContent=L[x];try{localStorage.setItem(k,x)}catch(e){}};'
             'set(t);b.addEventListener("click",()=>set(N[t]));})();</script>')
@@ -150,7 +156,7 @@ def shell(active):
             '<div><h2>Contact</h2><p><a href="https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=feedback.yml" rel="noopener" target="_blank">Tell us what\'s wrong or missing</a> through the feedback form.</p></div>'
             '<div><h2>Colophon</h2><p>Source and issues on <a href="https://github.com/cyberdudeuk/opengovernment-uk" rel="noopener" target="_blank">GitHub</a>. Code MIT, documentation CC BY 4.0, data OGL v3. '
             'Fonts: Atkinson Hyperlegible Next and IBM Plex Mono (SIL Open Font License), served from this site. <a href="design-system.html">Design system</a>.</p></div>'
-            f'</div></footer>{THEME_JS}')
+            f'</div></footer>{THEME_JS}{NAVFIT_JS}')
     return head, foot
 
 
@@ -172,6 +178,7 @@ WRAP_GUARDS = [("nmulti", "@media (max-width:640px){.nmulti{white-space:normal}}
 def audit_html(name, html):
     """Problems with one published page."""
     p = []
+    if "og-shell-nav" in html and "og-fold" not in html: p.append(f"{name}: the global navigation has no fold for when it would wrap (OG-D51)")
     for sel, rule, d in WRAP_GUARDS:
         if sel in html and rule not in html: p.append(f"{name}: {sel} has no narrow-screen wrap rule ({d})")
     if re.search(r"fonts\.(googleapis|gstatic)\.com|<link[^>]+rel=\"stylesheet\"[^>]+href=\"https?://", html): p.append(f"{name}: third-party font or stylesheet")
@@ -280,6 +287,7 @@ def main():
         for bad in ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">', "<style>a{color:#ff0000}</style>", "<style>p{font-size:13px}</style>", "<style>p{font:700 .9rem var(--f-body)}</style>",
                     "<style>.c{border-radius:14px}</style>", "<style>@media (max-width:900px){a{color:red}}</style>"):
             caught.append(bool(audit_html("bad", ok + bad)))
+        caught.append(bool(audit_html("bad", ok + '<nav class="og-shell-nav"><a href="#">A</a></nav>')))  # OG-D51: a shell navigation without its fold
         caught.append(bool(audit_html("bad", ok + '<span class="nmulti">serves the whole UK</span>')))  # OG-D50: a no-wrap chip without its narrow-screen rule
         caught.append(tokenise("p{font-size:.72rem;border-radius:10px}@media (max-width:900px){}") == "p{font-size:var(--og-size-xs);border-radius:var(--og-radius-md)}@media (max-width:1023px){}")
         if not all(caught): sys.exit(f"design negative: {caught.count(False)} not caught")

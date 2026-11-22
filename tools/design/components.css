@@ -143,6 +143,7 @@ footer h3{font-size:var(--og-size-sm);text-transform:uppercase;letter-spacing:.0
 .og-skip{position:absolute;left:-9999px}
 .og-skip:focus{left:var(--og-space-4);top:var(--og-space-2);z-index:30;background:var(--og-surface);padding:var(--og-space-2) var(--og-space-3);border-radius:var(--og-radius-sm)}
 @media (max-width:1023px){.og-shell-nav{display:none}.og-shell-menu{display:block;margin-left:auto}}
+.og-fold .og-shell-nav{display:none}.og-fold .og-shell-menu{display:block;margin-left:auto}
 @media (max-width:640px){.og-shell-mast .in{padding:var(--og-space-2) var(--og-space-4);gap:var(--og-space-2)}.og-shell-mast .brand small{display:none}.og-shell-mast .brand b{font-size:var(--og-size-base)}.og-phone-hide{display:none}}
 
 @media (max-width:1023px){.hero{grid-template-columns:minmax(0,1fr)}}

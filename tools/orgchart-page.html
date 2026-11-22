@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Org charts of the UK state · OpenGovernment UK</title>
+<meta name="description" content="Interactive org charts of every UK public body in its context: who answers to whom, by nation and branch, by type and purpose, and the UK in the world.">
+<style>
+main{max-width:var(--og-layout-max);margin:0 auto;padding:20px 16px 40px}
+.lede{max-width:var(--og-layout-measure)}
+.oc-bar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:end;margin:14px 0 10px}
+.oc-tabs{display:flex;flex-wrap:wrap;gap:6px}
+.oc-tabs [role=tab],.oc-btn{border:1px solid var(--og-line);background:var(--og-surface);color:var(--og-ink);border-radius:var(--og-radius-pill);padding:6px 12px;font:inherit;cursor:pointer;min-height:var(--og-target-min)}
+.oc-tabs [aria-selected=true]{background:var(--og-ink);color:var(--og-surface)}
+.oc-btn[aria-pressed=true]{background:var(--og-navy-soft)}
+.oc-bar label{display:flex;flex-direction:column;font-size:var(--og-size-sm);flex:1 1 220px;min-width:0}
+.oc-bar input{font:inherit;padding:6px 10px;border:1px solid var(--og-line-strong);border-radius:var(--og-radius-sm);background:var(--og-surface);color:var(--og-ink);min-height:var(--og-target-min)}
+.oc-wrap{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:14px}
+@media (max-width:1023px){.oc-wrap{grid-template-columns:minmax(0,1fr)}}
+.oc-stage{position:relative;border:1px solid var(--og-line);border-radius:var(--og-radius-md);background:var(--og-bg);height:min(72vh,760px);overflow:hidden;touch-action:none;cursor:grab}
+.oc-stage:active{cursor:grabbing}
+.oc-stage svg{display:block;width:100%;height:100%}
+.oc-zoom{position:absolute;right:8px;top:8px;display:flex;gap:4px}
+.oc-zoom button{width:var(--og-target-min);height:var(--og-target-min);border:1px solid var(--og-line);border-radius:var(--og-radius-sm);background:var(--og-surface);color:var(--og-ink);font:inherit;cursor:pointer}
+.oc-node{cursor:pointer;outline:none}
+.oc-node rect.card{fill:var(--og-surface);stroke:var(--og-line-strong);stroke-width:1}
+.oc-node rect.bar{fill:var(--c)}
+.oc-node.grp rect.card{fill:var(--og-navy-soft)}
+.oc-node:hover rect.card,.oc-node:focus-visible rect.card{stroke:var(--og-focus);stroke-width:2.5}
+.oc-node.sel rect.card{stroke:var(--og-accent);stroke-width:3}
+.oc-node.hit rect.card{fill:var(--og-gold-soft)}
+.oc-node text{font:500 12px/1 var(--og-font-body);fill:var(--og-ink)}
+.oc-node text.sub{font-size:10.5px;fill:var(--og-muted)}
+.oc-node .badge{fill:var(--og-ink)}.oc-node text.bt{fill:var(--og-surface);font-size:10.5px;font-weight:700}
+.oc-link{fill:none;stroke:var(--og-line-strong);stroke-width:1.2}
+.oc-g{transition:transform var(--og-motion-base) var(--og-motion-ease)}
+.oc-node{transition:transform var(--og-motion-base) var(--og-motion-ease),opacity var(--og-motion-base)}
+@media (prefers-reduced-motion:reduce){.oc-g,.oc-node{transition:none}}
+.oc-side{border:1px solid var(--og-line);border-radius:var(--og-radius-md);background:var(--og-surface);padding:14px;align-self:start;min-width:0}
+.oc-side h2{font-size:var(--og-size-lg);margin:0 0 6px;overflow-wrap:anywhere}
+.oc-crumbs{font-size:var(--og-size-sm);color:var(--og-muted);overflow-wrap:anywhere}
+.oc-crumbs button{border:0;background:none;color:var(--og-accent);text-decoration:underline;font:inherit;cursor:pointer;padding:0}
+.oc-side ul{padding-left:1.1em;margin:6px 0;max-height:260px;overflow:auto}
+.oc-side li{overflow-wrap:anywhere}
+.oc-key{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:var(--og-size-sm);margin:8px 0 0}
+.oc-key span{display:inline-flex;align-items:center;gap:5px}.oc-key i{width:12px;height:12px;border-radius:3px;background:var(--c);display:inline-block}
+.oc-list{border:1px solid var(--og-line);border-radius:var(--og-radius-md);padding:10px 14px;max-height:72vh;overflow:auto;background:var(--og-surface)}
+.oc-list details{margin-left:14px}.oc-list summary{cursor:pointer;padding:2px 0;overflow-wrap:anywhere}.oc-list li{list-style:none;margin-left:14px;overflow-wrap:anywhere}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style></head><body>
+<main id="main">
+<h1>Org charts of the UK state</h1>
+<p class="lede">Every public body in its context, four ways round. Select a box to open or close it; drag to move around; use the buttons or your mouse wheel to zoom. Each body links to its full profile, with its sources, rules, website and relationships. Same-as duplicates are shown once. Where a body works across more than one nation, the nation view shows it in each.</p>
+<div class="oc-bar">
+ <div role="tablist" class="oc-tabs" aria-label="Choose an org chart" id="tabs"></div>
+ <label>Find a body or group <input id="q" type="search" placeholder="Type a name and press Enter" autocomplete="off" list="names"></label>
+ <button class="oc-btn" id="expand" type="button">Open one more level</button>
+ <button class="oc-btn" id="collapse" type="button">Close all</button>
+ <button class="oc-btn" id="asList" type="button" aria-pressed="false">Show as a list</button>
+</div>
+<datalist id="names"></datalist>
+<p class="sr" aria-live="polite" id="live"></p>
+<div class="oc-wrap">
+ <div>
+  <div class="oc-stage" id="stage" aria-label="Org chart. Use Tab to move between boxes and Enter to open or close one."><svg id="svg" role="tree" aria-label="Org chart"><g class="oc-g" id="g"></g></svg>
+   <div class="oc-zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zfit" aria-label="Fit to screen">⤢</button></div></div>
+  <div class="oc-list" id="list" hidden></div>
+  <div class="oc-key" id="key"></div>
+ </div>
+ <aside class="oc-side" id="side" aria-live="polite"><h2>Choose a box</h2><p class="muted">Details of the selected body or group appear here.</p></aside>
+</div>
+</main>
+<script id="ocd" type="application/json">__DATA__</script>
+<script>
+(()=>{const V=JSON.parse(document.getElementById("ocd").textContent).views,esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const REDUCED=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const TABS={answers:"Who answers to whom",nations:"Nations and branches",types:"Type and purpose",world:"The UK in the world"};
+const COL={group:"var(--og-line-strong)",department:"var(--og-navy)",agency:"var(--og-accent)",ndpb:"var(--og-gold)",central:"var(--og-muted)",council:"var(--og-good)",nhs:"var(--og-n-SC)",corporation:"var(--og-brand)",court:"var(--og-bad)",charity:"var(--og-n-WA)",pension:"var(--og-n-NI)",territory:"var(--og-n-EN)",legislature:"var(--og-n-UK)"};
+const TL={department:"Government department",agency:"Executive agency or part of a department",ndpb:"Arm's-length public body",central:"Other central government body",council:"Council or local public body",nhs:"NHS body",corporation:"Public corporation or company",court:"Court or tribunal",charity:"Charity or non-profit",pension:"Pension scheme",territory:"Territory body"};
+const NAT={EN:"England",SC:"Scotland",WA:"Wales",NI:"Northern Ireland",UK:"Whole UK",GB:"UK Government, extent not stated",OT:"Overseas Territories",CD:"Crown Dependencies"};
+const W=230,H=40,CW=290,RH=50,PAGE=40;
+let view="answers",N,kids,open,shown,sel=0,scale=1,tx=20,ty=20,moved=false;
+const $=id=>document.getElementById(id),g=$("g"),svg=$("svg"),stage=$("stage");
+const prof=id=>"index.html#org-"+String(id).replace(/:/g,"--").replace(/[^A-Za-z0-9-]/g,"");
+function load(v){view=v;moved=false;N=V[v];kids=N.map(()=>[]);N.forEach((n,i)=>{if(i)kids[n[1]].push(i)});open=new Set([0]);shown=new Map();kids[0].length<=12&&kids[0].forEach(i=>{});sel=0;
+ $("names").innerHTML=[...new Set(N.map(n=>n[0]))].slice(0,4000).map(x=>`<option value="${esc(x)}">`).join("");
+ document.querySelectorAll("#tabs [role=tab]").forEach(t=>{const on=t.dataset.v===v;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1});
+ draw(true);panel(0)}
+function vis(i){const ks=kids[i],lim=shown.get(i)||PAGE;return ks.length>lim?ks.slice(0,lim).concat([-i-1]):ks}
+function layout(){const pos=new Map();let leaf=0;const walk=(i,d)=>{if(i<0){pos.set(i,[d,leaf++]);return}const ks=open.has(i)?vis(i):[];if(!ks.length){pos.set(i,[d,leaf++]);return}ks.forEach(k=>walk(k,d+1));const ys=ks.map(k=>pos.get(k)[1]);pos.set(i,[d,(ys[0]+ys[ys.length-1])/2])};walk(0,0);return pos}
+function label(t,max){return t.length>max?t.slice(0,max-1)+"…":t}
+function draw(fit){const pos=layout(),out=[],links=[];
+ pos.forEach(([d,y],i)=>{const x=d*CW,yy=y*RH;if(i>0&&N[i]&&N[i][1]>=0){const [pd,py]=pos.get(N[i][1]);links.push(`<path class="oc-link" d="M${pd*CW+W} ${py*RH+H/2} C${pd*CW+W+30} ${py*RH+H/2} ${x-30} ${yy+H/2} ${x} ${yy+H/2}"/>`)}
+  if(i<0){const p=-i-1,rest=kids[p].length-(shown.get(p)||PAGE),[pd,py]=pos.get(p);links.push(`<path class="oc-link" d="M${pd*CW+W} ${py*RH+H/2} C${pd*CW+W+30} ${py*RH+H/2} ${x-30} ${yy+H/2} ${x} ${yy+H/2}"/>`);
+   out.push(`<g class="oc-node grp" role="treeitem" tabindex="0" data-more="${p}" transform="translate(${x},${yy})" aria-label="Show ${rest} more"><rect class="card" width="${W}" height="${H}" rx="8"/><text x="14" y="25">Show ${Math.min(rest,PAGE)} more of ${rest}…</text></g>`);return}
+  const n=N[i],k=kids[i].length,isG=!n[2]&&n[3]==="group",c=COL[n[3]]||COL.central,o=open.has(i);
+  out.push(`<g class="oc-node${isG?" grp":""}${i===sel?" sel":""}" role="treeitem" tabindex="0" data-i="${i}" ${k?`aria-expanded="${o}"`:""} aria-level="${d+1}" aria-label="${esc(n[0])}${k?`, ${k} below`:""}" transform="translate(${x},${yy})" style="--c:${c}"><title>${esc(n[0])}</title><rect class="card" width="${W}" height="${H}" rx="8"/><rect class="bar" width="6" height="${H}" rx="3"/><text x="14" y="${n[4]||TL[n[3]]?17:25}">${esc(label(n[0],k?28:32))}</text>${!isG?`<text class="sub" x="14" y="31">${esc(label([TL[n[3]]||"",(n[4]||"").split(",").filter(Boolean).join(" ")].filter(Boolean).join(" · "),k?30:38))}</text>`:""}${k?`<rect class="badge" x="${W-34}" y="${H/2-9}" width="28" height="18" rx="9"/><text class="bt" x="${W-20}" y="${H/2+4}" text-anchor="middle">${o?"−":k>99?"99+":k}</text>`:""}</g>`)});
+ g.innerHTML=links.join("")+out.join("");
+ if(fit)zfit(pos);else apply()}
+function apply(user){if(user)moved=true;g.setAttribute("transform",`translate(${tx},${ty}) scale(${scale})`)}
+function zfit(pos){pos=pos||layout();let mx=0,my=0;pos.forEach(([d,y])=>{mx=Math.max(mx,d*CW+W);my=Math.max(my,y*RH+H)});const r=stage.getBoundingClientRect();scale=Math.max(.25,Math.min(1.2,(r.width-40)/mx,(r.height-40)/my));tx=20;ty=Math.max(20,(r.height-my*scale)/2);apply()}
+function centre(i){const p=layout().get(i);if(!p)return;const r=stage.getBoundingClientRect();tx=r.width/2-(p[0]*CW+W/2)*scale;ty=r.height/2-(p[1]*RH+H/2)*scale;apply()}
+function path(i){const p=[];while(i>0){p.unshift(i);i=N[i][1]}return p}
+function panel(i){sel=i;const n=N[i],k=kids[i],pa=path(i);
+ $("side").innerHTML=`<h2>${esc(n[0])}</h2><p class="oc-crumbs">${[0,...pa.slice(0,-1)].map(j=>`<button type="button" data-go="${j}">${esc(N[j][0])}</button>`).join(" › ")}</p>${n[2]?`<p>${esc(TL[n[3]]||"Public body")}${n[4]?` · ${esc(n[4].split(",").map(c=>NAT[c]||c).join(", "))}`:""}</p><p><a href="${prof(n[2])}">Open the full profile</a>: sources, who it answers to, rules, website and relationships.</p>`:`<p class="muted">A group in this chart.</p>`}${k.length?`<p><b>${k.length.toLocaleString("en-GB")}</b> directly below${k.length?"":""}:</p><ul>${k.slice(0,80).map(j=>`<li><button type="button" class="oc-btn" style="padding:2px 8px;min-height:0" data-go="${j}">${esc(N[j][0])}</button></li>`).join("")}${k.length>80?`<li class="muted">and ${k.length-80} more in the chart</li>`:""}</ul>`:""}`;
+ g.querySelectorAll(".oc-node.sel").forEach(e=>e.classList.remove("sel"));const e=g.querySelector(`[data-i="${i}"]`);e&&e.classList.add("sel")}
+function reveal(i){scale=Math.max(scale,1);moved=true;path(i).slice(0,-1).forEach(j=>{open.add(N[j][1]);open.add(j);const p=N[j][1],ix=kids[p].indexOf(j);if(ix>=(shown.get(p)||PAGE))shown.set(p,ix+1)});open.add(N[i][1]);const p=N[i][1],ix=kids[p].indexOf(i);if(ix>=(shown.get(p)||PAGE))shown.set(p,ix+1);draw();panel(i);centre(i);const e=g.querySelector(`[data-i="${i}"]`);e&&e.focus({preventScroll:true})}
+function toggle(i){if(!kids[i].length){panel(i);return}open.has(i)?(open.delete(i)):open.add(i);draw();panel(i);const e=g.querySelector(`[data-i="${i}"]`);e&&e.focus({preventScroll:true});$("live").textContent=`${N[i][0]} ${open.has(i)?"opened":"closed"}`}
+g.addEventListener("click",e=>{const m=e.target.closest("[data-more]");if(m){const p=+m.dataset.more;shown.set(p,(shown.get(p)||PAGE)+PAGE);draw();return}const n=e.target.closest("[data-i]");if(n)toggle(+n.dataset.i)});
+g.addEventListener("keydown",e=>{const n=e.target.closest("[data-i],[data-more]");if(!n)return;if(e.key==="Enter"||e.key===" "){e.preventDefault();n.dispatchEvent(new MouseEvent("click",{bubbles:true}))}
+ if(n.dataset.i&&["ArrowRight","ArrowLeft","ArrowUp","ArrowDown"].includes(e.key)){e.preventDefault();const i=+n.dataset.i;let t=null;if(e.key==="ArrowRight"){if(!open.has(i)&&kids[i].length){toggle(i);return}t=kids[i][0]}if(e.key==="ArrowLeft")t=i?N[i][1]:null;if(e.key==="ArrowUp"||e.key==="ArrowDown"){const s=i?kids[N[i][1]]:[0],ix=s.indexOf(i);t=s[ix+(e.key==="ArrowDown"?1:-1)]}if(t!=null&&t>=0){const el=g.querySelector(`[data-i="${t}"]`);if(el){el.focus({preventScroll:true});panel(t);centre(t)}}}});
+$("side").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b)reveal(+b.dataset.go)});
+$("tabs").innerHTML=Object.entries(TABS).map(([k,v],i)=>`<button role="tab" data-v="${k}" aria-selected="${!i}" tabindex="${i?-1:0}">${esc(v)}</button>`).join("");
+$("tabs").addEventListener("click",e=>{const t=e.target.closest("[role=tab]");if(t){load(t.dataset.v);if(!$("list").hidden)list()}});
+$("tabs").addEventListener("keydown",e=>{if(!["ArrowRight","ArrowLeft"].includes(e.key))return;const ts=[...$("tabs").children],i=ts.indexOf(e.target),n=ts[(i+(e.key==="ArrowRight"?1:ts.length-1))%ts.length];n.focus();n.click()});
+$("expand").onclick=()=>{const pos=layout();[...pos.keys()].filter(i=>i>=0&&!open.has(i)&&kids[i].length).forEach(i=>open.add(i));draw(true)};
+$("collapse").onclick=()=>{open=new Set([0]);shown=new Map();draw(true);panel(0)};
+$("q").addEventListener("keydown",e=>{if(e.key!=="Enter")return;const q=e.target.value.trim().toLowerCase();if(!q)return;const hits=N.map((n,i)=>[n[0].toLowerCase(),i]).filter(([t])=>t.includes(q));if(!hits.length){$("live").textContent="No match in this chart";return}const exact=hits.find(([t])=>t===q)||hits[0];reveal(exact[1]);g.querySelectorAll(".hit").forEach(x=>x.classList.remove("hit"));const el=g.querySelector(`[data-i="${exact[1]}"]`);el&&el.classList.add("hit");$("live").textContent=`${hits.length} match${hits.length>1?"es":""}; showing ${N[exact[1]][0]}`});
+$("zin").onclick=()=>{zoomAt(1.25)};$("zout").onclick=()=>{zoomAt(.8)};$("zfit").onclick=()=>{moved=false;zfit()};
+function zoomAt(f,cx,cy){const r=stage.getBoundingClientRect();cx=cx??r.width/2;cy=cy??r.height/2;const ns=Math.max(.2,Math.min(2.5,scale*f));tx=cx-(cx-tx)*ns/scale;ty=cy-(cy-ty)*ns/scale;scale=ns;apply(true)}
+stage.addEventListener("wheel",e=>{e.preventDefault();const r=stage.getBoundingClientRect();zoomAt(e.deltaY<0?1.1:.9,e.clientX-r.left,e.clientY-r.top)},{passive:false});
+let drag=null;const pts=new Map();
+stage.addEventListener("pointerdown",e=>{if(e.target.closest(".oc-zoom"))return;pts.set(e.pointerId,[e.clientX,e.clientY]);drag={x:e.clientX,y:e.clientY,tx,ty,moved:false}});
+stage.addEventListener("pointermove",e=>{if(!pts.has(e.pointerId))return;pts.set(e.pointerId,[e.clientX,e.clientY]);if(pts.size===2){const [a,b]=[...pts.values()],d=Math.hypot(a[0]-b[0],a[1]-b[1]);if(drag.d)zoomAt(d/drag.d);drag.d=d;return}if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4){drag.moved=true;stage.setPointerCapture(e.pointerId)}if(drag.moved){tx=drag.tx+dx;ty=drag.ty+dy;apply(true)}});
+const end=e=>{pts.delete(e.pointerId);if(drag&&drag.moved){e.preventDefault();stage.addEventListener("click",ev=>ev.stopPropagation(),{capture:true,once:true})}drag=pts.size?drag:null};
+stage.addEventListener("pointerup",end);stage.addEventListener("pointercancel",end);
+function list(){const li=i=>{const n=N[i],k=kids[i];const a=n[2]?` <a href="${prof(n[2])}">profile</a>`:"";return k.length?`<details><summary>${esc(n[0])} <span class="muted">(${k.length})</span>${a}</summary>${k.length>400?k.slice(0,400).map(li).join("")+`<li class="muted">and ${k.length-400} more in the chart</li>`:k.map(li).join("")}</details>`:`<li>${esc(n[0])}${a}</li>`};$("list").innerHTML=`<details open><summary>${esc(N[0][0])}</summary>${kids[0].map(li).join("")}</details>`}
+$("asList").onclick=e=>{const on=e.currentTarget.getAttribute("aria-pressed")!=="true";e.currentTarget.setAttribute("aria-pressed",on);e.currentTarget.textContent=on?"Show as a chart":"Show as a list";$("list").hidden=!on;stage.hidden=on;if(on)list();else draw(true)};
+$("key").innerHTML=Object.entries(TL).map(([k,v])=>`<span style="--c:${COL[k]}"><i></i>${esc(v)}</span>`).join("");
+addEventListener("resize",()=>{if(!moved)zfit()});  /* keep the reader's zoom and place when the window changes (phones resize as the address bar moves) */
+load(new URLSearchParams(location.hash.slice(1)).get("view")||"answers");
+const want=new URLSearchParams(location.hash.slice(1)).get("id");if(want){const i=N.findIndex(n=>n[2]===want);if(i>0)reveal(i)}
+})();
+</script>
+</body></html>

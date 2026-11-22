@@ -52,6 +52,7 @@ tools/international.py  which UK body leads the UK's place in each international
 tools/sqlite_export.py  one SQLite file for Datasette Lite, and org-id.guide identifiers
 tools/instruments.py    rules that apply to each body, what it issues, and legislation naming it
 tools/relations.py      the UK's memberships, treaties and agreements, linked to the UK bodies that hold them
+tools/orgchart.py      interactive org charts: who answers to whom, nations and branches, type and purpose, the UK in the world
 tools/websites.py       each body's own website, from one combined table (matched by code, never by name)
 ```
 
