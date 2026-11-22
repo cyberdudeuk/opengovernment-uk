@@ -32,7 +32,8 @@ SRC = {k: v for k, v in T["sources"].items() if k not in ("base",)}
 ACC = {"v": VER, "built": T["built"], "digest": T["digest"], "legend": {"e": "child, parent, parent as written, relation, source, where in source, match method, money or control",
        "ch": "edge indexes to the root, root, answers-to index, sources agreeing, parents asserted", "m": "year, government funded income, other income, total managed expenditure, classification, purpose, ombudsman",
        "ppp": "HMT id, project, status, sector, authority id, authority, department id, department, project company, company number, equity [holder, share], individuals withheld, capital £m, charge 2025-26 £m, end, ESA balance sheet"},
-       "src": SRC, "e": E, "ans": ANS, "ch": CH, "m": M, "w": W, "wo": WO, "tf": T["stats"]["trading_funds"], "pcs": PCS, "pw": PW, "ppp": PPP, "cf": CF, "un": UN}
+       "src": SRC, "e": E, "ans": ANS, "ch": CH, "m": M, "w": W, "wo": WO, "tf": T["stats"]["trading_funds"], "pcs": PCS, "pw": PW, "ppp": PPP, "cf": CF, "un": UN,
+       "nat": json.loads((ROOT / "data" / "body-nations.json").read_text())}  # tools/nations.py: final nation placement per body
 acc_json = json.dumps(ACC, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
 # ---------- data block edits ----------
@@ -78,6 +79,10 @@ h = once(h, "</style>", (TOOLS / "tree-view.css").read_text() + "</style>", "css
 ICONS = '<symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol><symbol id="i-coin" viewBox="0 0 24 24"><ellipse cx="12" cy="7" rx="7" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 7v10c0 1.7 3.1 3 7 3s7-1.3 7-3V7M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>'
 h = once(h, '<symbol id="i-tree"', ICONS + '<symbol id="i-tree"', "icons")
 js = (TOOLS / "tree-view.js").read_text()
+# Top-level names added by this release must not redeclare the base page's (OG-D31: "NAT" collided and stopped the page).
+_decl = lambda t: set(re.findall(r"^(?:const|let|function)\s+([A-Za-z_$][\w$]*)", t, re.M))
+_clash = _decl(js) & _decl(re.sub(r"<script id=\"tree\".*?</script>", "", h, flags=re.S))
+if _clash: sys.exit(f"top-level names redeclared: {sorted(_clash)}")
 h = once(h, "// ---- start ----", js + "\n// ---- start ----", "js")
 h = once(h, "home(); explore(); setupRegister(); renderRegister(); reconcile(); changes(); dataView(); quality(); help(); product(); ask();\nroute(); selfChecks();",
          "home(); explore(); setupRegister(); renderRegister(); reconcile(); changes(); whoAnswers(); dataView(); quality(); help(); product(); ask();\nroute(); selfChecks(); treeSelfChecks();", "start")

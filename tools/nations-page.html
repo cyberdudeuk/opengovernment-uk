@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenGovernment UK: the state, nation by nation</title>
+<style>:root{--bg:#f6f2ea;--paper:#fffdf8;--ink:#1c1a17;--muted:#5a544b;--line:#ddd3c3;--hi:#b6391f;--leg:#5c564d;--exe:#8b8378;--jud:#2f2b26;--focus:#1c5bd6;--warn:#8a5a00;
+/* nation palette: validated for colour-blind separation and 3:1 contrast in light and dark; always shown with its EN/SC/WA/NI label */
+--nEN:#a0153a;--nSC:#2b6bd6;--nWA:#33a061;--nNI:#8f6a00;--nUK:#6b655c;--nGB:#a39a8c}@media(prefers-color-scheme:dark){:root{--bg:#14120f;--paper:#1c1915;--ink:#efe9de;--muted:#b4aa9a;--line:#3a342b;--hi:#ff8a6e;--leg:#b4aa9a;--exe:#8a8173;--jud:#efe9de;--focus:#8ab4ff;--warn:#f0c060;
+--nEN:#e85d78;--nSC:#4f88ea;--nWA:#23905a;--nNI:#b58a1c;--nUK:#9a9184;--nGB:#5c564d}}
+.sw{display:inline-block;width:.75em;height:.75em;border-radius:2px;margin-right:.35em;vertical-align:-.05em;background:var(--c)}.sw.gb{background:repeating-linear-gradient(45deg,var(--nGB) 0 2px,transparent 2px 4px);border:1px solid var(--nGB)}
+.chip{display:inline-flex;align-items:center;font-size:.72rem;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:0 .45em;margin-left:.25em;color:var(--ink);background:var(--paper)}
+.multi{font-size:.72rem;color:var(--ink);border:1px dashed var(--muted);border-radius:999px;padding:0 .45em;margin-left:.3em;white-space:nowrap}
+[role=tab] .sw{margin-right:.4em}.panelnat{border-top:6px solid var(--c);padding-top:8px}.lname{font-style:italic;color:var(--muted)}.ext{font-size:.78rem;margin-left:.35em;white-space:nowrap}
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink)}header,footer{padding:18px 24px;background:var(--paper);border-bottom:1px solid var(--line)}footer{border-top:1px solid var(--line);border-bottom:0;color:var(--muted);font-size:.85rem}
+h1{font:700 1.5rem Georgia,serif;margin:0 0 4px}h2{font:700 1.2rem Georgia,serif;margin:0 0 8px}p{margin:0;color:var(--muted)}main{padding:16px 24px;max-width:1200px}
+[role=tablist]{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}[role=tab],.seg button{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);cursor:pointer}[role=tab][aria-selected=true],.seg button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+button:focus-visible,summary:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:10px 0 12px}@media(max-width:640px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}.kpi{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px}.kpi b{display:block;font-size:1.5rem}
+.bar{display:flex;height:14px;border-radius:7px;overflow:hidden;gap:2px;margin:6px 0 12px}.bar span{display:block}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:0 0 12px}.seg{display:flex;gap:6px}label{display:block}input{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;width:100%;max-width:420px;background:var(--paper);color:var(--ink)}
+.branch{border-left:5px solid var(--c);background:var(--paper);border-radius:10px;padding:10px 14px;margin:0 0 12px}.branch h3{margin:0 0 6px;font-size:1rem}
+details{border-top:1px solid var(--line);padding:6px 0}summary{cursor:pointer}ul{margin:6px 0 4px;padding-left:20px}ul.cols{columns:2;column-gap:28px}@media(max-width:700px){ul.cols{columns:1}}li{break-inside:avoid;font-size:.9rem;margin:2px 0}li small,.why{color:var(--muted)}
+ul.tree{list-style:none;padding-left:0}ul.tree ul{list-style:none;padding-left:18px;border-left:1px dashed var(--line);margin-left:6px}ul.tree details{border:0;padding:0}ul.tree summary{list-style-position:outside}
+.ev{font-size:.8rem}.note{font-size:.85rem;margin:8px 0}.apex{color:var(--ink);margin:0 0 6px;font-size:.92rem}.apex small{color:var(--muted)}a{color:var(--hi)}.warn{color:var(--warn)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.box{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}</style></head><body>
+<header><h1>The state, nation by nation</h1><p>Every open public body associated with each nation, in the three branches of the state, as a list by tier or as a parent-and-child hierarchy. Each placement shows its evidence: who sponsors the body, what it says about itself, its founding Act, or the register that states it.</p></header>
+<main><div role="tablist" id="tabs" aria-label="Nations"></div><section id="panel" role="tabpanel" aria-live="polite"></section>
+<section class="box" aria-labelledby="h-method"><h2 id="h-method">How a nation is decided</h2><p>Evidence is ranked, and a weaker source never overrides a stronger one; disagreements are listed below, not hidden. In order: the legislature the body answers to; its sponsor as ONS records it; what the body's own GOV.UK page says; the nation its register states; ONS local authority codes; the extent of its founding Act; Wikidata; a 2020 compilation of public bodies; where it is registered as a company. Nothing is guessed from a name. Bodies answering to the UK Parliament with no evidence of extent are shown as “UK Government, extent not stated”. Court administration and judicial appointments bodies are counted with the judiciary, in their own tier. The top of each branch is stated from its founding legislation, linked.</p></section>
+<section class="box" aria-labelledby="h-conf"><h2 id="h-conf">Where sources disagree</h2><ul id="conf"></ul></section>
+<section class="box" aria-labelledby="h-un"><h2 id="h-un">Not yet placed (__UNPLACED__)</h2><p>No trusted source yet says which nation these open bodies belong to. If you can point to one (an Act, the body's own site, a register), <a href="https://github.com/cyberdudeuk/opengovernment-uk/issues/new?template=data-correction.yml">send a correction with the source</a>.</p><details><summary>Show the list</summary><ul class="cols" id="un"></ul></details></section></main>
+<footer>OpenGovernment UK, an open-source public good. <a href="./">Back to the register</a> · <a href="./navigator.html">Documentation and traceability</a> · Data: <a href="https://github.com/cyberdudeuk/opengovernment-uk/blob/main/docs/nations.json">nations.json</a></footer>
+<script id="nd" type="application/json">__DATA__</script>
+<script>"use strict";
+const ALL=JSON.parse(document.getElementById("nd").textContent),N=ALL.nations,esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const B=[["legislature","Legislature","--leg"],["executive","Executive","--exe"],["judiciary","Judiciary","--jud"]],order=["EN","SC","WA","NI","UK","GB","OT","CD"];
+const tabs=document.getElementById("tabs");const NC={EN:"England",SC:"Scotland",WA:"Wales",NI:"Northern Ireland",UK:"Whole UK",GB:"Extent not stated",OT:"Overseas Territories",CD:"Crown Dependencies"},LN={cy:"Welsh",gd:"Scottish Gaelic",ga:"Irish",sco:"Scots"};
+const sw=k=>["EN","SC","WA","NI","UK"].includes(k)?`<span class="sw" style="--c:var(--n${k})" aria-hidden="true"></span>`:k==="GB"?`<span class="sw gb" aria-hidden="true"></span>`:"";
+const chip=k=>`<span class="chip" title="${esc(NC[k]||k)}">${sw(k)}${esc(k)}</span>`;
+tabs.innerHTML=order.map((k,i)=>`<button role="tab" id="t-${k}" aria-selected="${i===0}" aria-controls="panel" tabindex="${i===0?0:-1}" data-k="${k}">${sw(k)}${esc(N[k].name)}</button>`).join("");
+const apex=(xs,label)=>xs&&xs.length?`<p class="apex"><b>${label}:</b> ${xs.map(a=>`${esc(a.name)}${a.basis?` <small>(${a.url?`<a href="${esc(a.url)}">${esc(a.basis)}</a>`:esc(a.basis)})</small>`:""}`).join("; ")}</p>`:"";
+const ev=x=>`<span class="ev"> · <span class="why">${x.url?`<a href="${esc(x.url)}" title="${esc(x.why)}">${esc(x.basis)}</a>`:`<span title="${esc(x.why)}">${esc(x.basis)}</span>`}</span></span>`;
+const multi=x=>x.nations&&x.nations.length?`<span class="multi" title="Performs functions for more than one nation">serves ${x.nations.includes("UK")?"the whole UK":x.nations.length+" nations"}</span>${x.nations.map(chip).join("")}`:"";
+const lnames=x=>(x.names||[]).map(n=>` <span class="lname" title="${esc(LN[n.lang]||n.lang)}: ${esc(n.src)}">· <span lang="${esc(n.lang)}">${esc(n.name)}</span></span>`).join("");
+const links=x=>`${x.web?`<a class="ext" href="${esc(x.web)}" rel="noopener" target="_blank">website<span aria-hidden="true"> ↗</span><span class="sr">, opens in a new tab</span></a>`:""}${x.gov?`<a class="ext" href="${esc(x.gov)}" rel="noopener" target="_blank">GOV.UK<span aria-hidden="true"> ↗</span><span class="sr">, opens in a new tab</span></a>`:""}`;
+const item=(x,pb)=>`<a href="./#${esc(x.h)}">${esc(x.name)}</a>${lnames(x)} <small>${esc(x.type)}</small>${multi(x)}${links(x)}${x.basis===pb?"":ev(x)}`;
+let q="",mode="tier",cur=order[0];
+function tree(xs){const by=new Map(xs.map(x=>[x.id,x])),kids=new Map();xs.forEach(x=>{if(x.p&&by.has(x.p)&&x.p!==x.id){if(!kids.has(x.p))kids.set(x.p,[]);kids.get(x.p).push(x)}});
+ const roots=xs.filter(x=>!(x.p&&by.has(x.p)&&x.p!==x.id)),seen=new Set(),f=x=>!q||x.name.toLowerCase().includes(q);
+ const count=x=>(kids.get(x.id)||[]).reduce((s,c)=>s+1+count(c),0);
+ const keep=x=>f(x)||(kids.get(x.id)||[]).some(keep);
+ const node=(x,pb)=>{if(seen.has(x.id))return"";seen.add(x.id);const ch=(kids.get(x.id)||[]).filter(keep).sort((a,b)=>a.name.localeCompare(b.name));
+  return ch.length?`<li><details${q?" open":""}><summary>${item(x,pb)} <small>(${count(x)} below)</small></summary><ul>${ch.map(c=>node(c,x.basis)).join("")}</ul></details></li>`:`<li>${item(x,pb)}</li>`};
+ return `<ul class="tree">${roots.filter(keep).sort((a,b)=>count(b)-count(a)||a.name.localeCompare(b.name)).map(x=>node(x,"")).join("")}</ul>`}
+function show(k){cur=k;const n=N[k],tot=B.reduce((s,b)=>s+n.counts[b[0]],0);
+ document.querySelectorAll("[role=tab]").forEach(t=>{const on=t.dataset.k===k;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1});
+ const f=x=>!q||x.name.toLowerCase().includes(q),ukn=["EN","SC","WA","NI"].includes(k)?B.reduce((s,b)=>s+N.UK.counts[b[0]],0):0;
+ const pn=document.getElementById("panel");pn.className=["EN","SC","WA","NI","UK"].includes(k)?"panelnat":"";pn.style.setProperty("--c",`var(--n${k})`);
+ pn.innerHTML=`<h2>${sw(k)}${esc(n.name)}</h2><div class="kpis"><div class="kpi"><b>${tot}</b>open bodies${(()=>{const m=B.reduce((s,b)=>s+Object.values(n.branches[b[0]]).flat().filter(x=>x.nations&&x.nations.length).length,0);return m?`<span class="why" style="display:block;font-size:.8rem">${m} serve more than one nation</span>`:""})()}</div>${B.map(b=>`<div class="kpi"><b>${n.counts[b[0]]}</b>${b[1].toLowerCase()}</div>`).join("")}</div>
+ <div class="bar" role="img" aria-label="${B.map(b=>b[1]+" "+n.counts[b[0]]).join(", ")}">${B.map(b=>`<span style="flex:${n.counts[b[0]]};background:var(${b[2]})"></span>`).join("")}</div>
+ ${ukn?`<p class="note">This nation is also served by <a href="#" id="toUK">${ukn} bodies that work across the whole UK</a>.</p>`:""}
+ <div class="tools"><label>Filter by name <input id="q" type="search" value="${esc(q)}" autocomplete="off"></label><div class="seg" role="group" aria-label="View"><button type="button" data-m="tier" aria-pressed="${mode==="tier"}">By tier</button><button type="button" data-m="tree" aria-pressed="${mode==="tree"}">As a hierarchy</button></div></div>
+ ${B.map(b=>{const tiers=n.branches[b[0]],flat=Object.values(tiers).flat();return `<section class="branch" style="--c:var(${b[2]})"><h3>${b[1]} · ${n.counts[b[0]]} bodies in the register</h3>${apex(n.apex[b[0]],"At the top")}${apex(n.uk_apex[b[0]],"For reserved matters, the UK level")}
+ ${!flat.length?"<p>None in the sources.</p>":mode==="tree"?tree(flat):Object.entries(tiers).map(([tier,xs])=>{const v=xs.filter(f);return v.length?`<details${q?" open":""}><summary>${esc(tier)} (${v.length})</summary><ul class="cols">${v.map(x=>`<li>${item(x)}</li>`).join("")}</ul></details>`:""}).join("")}</section>`}).join("")}`;
+ const i=document.getElementById("q");i.addEventListener("input",()=>{q=i.value.trim().toLowerCase();const p=i.selectionStart;show(cur);const j=document.getElementById("q");j.focus();j.setSelectionRange(p,p)});
+ document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{mode=b.dataset.m;show(cur);document.querySelector(`.seg button[data-m="${mode}"]`).focus()}));
+ const u=document.getElementById("toUK");if(u)u.addEventListener("click",e=>{e.preventDefault();show("UK");document.getElementById("t-UK").focus()})}
+tabs.addEventListener("click",e=>{const t=e.target.closest("[role=tab]");if(t)show(t.dataset.k)});
+tabs.addEventListener("keydown",e=>{if(!["ArrowRight","ArrowLeft"].includes(e.key))return;const ts=[...tabs.children],i=ts.indexOf(document.activeElement),n=ts[(i+(e.key==="ArrowRight"?1:ts.length-1))%ts.length];n.focus();show(n.dataset.k)});
+document.getElementById("conf").innerHTML=ALL.conflicts.map(c=>`<li>${esc(c.name)}: shown as ${esc(c.chosen[1].join(", "))} (${esc(c.chosen[0])}); ${c.against.map(a=>`${esc(a[0])} says ${esc(a[1].join(", "))}`).join("; ")}</li>`).join("")||"<li>None.</li>";
+document.getElementById("un").innerHTML=ALL.unplaced.map(x=>`<li>${esc(x.name)} <small>${esc(x.type)}</small></li>`).join("");
+show(order[0]);
+</script></body></html>

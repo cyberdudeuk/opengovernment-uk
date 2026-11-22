@@ -320,6 +320,63 @@
     "C-NAT"
    ]
   ],
+  "OG-R39": [
+   "Nation placement from trusted sources only, every piece of evidence shown, disagreements listed",
+   "Must",
+   "Done",
+   [
+    "N1",
+    "N7"
+   ],
+   [
+    "C-NATEV"
+   ]
+  ],
+  "OG-R40": [
+   "Nation colours across the portal; ultimate owners split by nation; bodies serving several nations flagged",
+   "Must",
+   "Done",
+   [
+    "N1",
+    "N2"
+   ],
+   [
+    "C-NAT",
+    "C-PORTAL"
+   ]
+  ],
+  "OG-R41": [
+   "Own websites and official-language names, linked within the portal and out to the source",
+   "Should",
+   "Done",
+   [
+    "N1"
+   ],
+   [
+    "C-NAT"
+   ]
+  ],
+  "OG-R42": [
+   "2020 compilation used as dated evidence, non-personal columns only, not redistributed",
+   "Should",
+   "Done",
+   [
+    "N5",
+    "N7"
+   ],
+   [
+    "C-H2020"
+   ]
+  ],
+  "OG-R43": [
+   "Every body classified by purpose, reach and how it is formed, in plain English for any reader",
+   "Must",
+   "In progress",
+   [
+    "N1"
+   ],
+   []
+  ],
   "OG-R37": [
    "Comparator adoptions: founding legislation, COFOG, movements, interests, parent history",
    "Should",
@@ -391,7 +448,8 @@
    "BODS 0.4 exporter",
    "tools/export_bods.py",
    [
-    "CHK-bods_schema"
+    "CHK-bods_schema",
+    "CHK-bods_rules"
    ],
    [
     "docs/bods-0.4.json"
@@ -450,6 +508,26 @@
     "docs/nations.html"
    ]
   ],
+  "C-NATEV": [
+   "Nation evidence resolver",
+   "tools/nation_evidence.py",
+   [
+    "CHK-natev"
+   ],
+   [
+    "data/nation-evidence.json"
+   ]
+  ],
+  "C-H2020": [
+   "2020 historical layer",
+   "tools/historical_2020.py",
+   [
+    "CHK-h2020"
+   ],
+   [
+    "data/historical-2020.json"
+   ]
+  ],
   "C-ART": [
    "Documentation generator",
    "tools/artefacts.py",
@@ -501,6 +579,9 @@
   "CHK-functions": "Back-office known answers",
   "CHK-artefacts": "Ontology and knowledge graph parse; every requirement traces to a need",
   "CHK-lint": "Linter fails on any finding",
+  "CHK-natev": "Nation known answers found; a wrong nation is caught",
+  "CHK-h2020": "Fingerprint matches; no personal field",
+  "CHK-bods_rules": "Open Ownership's checker finds nothing",
   "CHK-nations": "Nation and branch known answers are found; every nation has an apex for each branch"
  },
  "documents": {
@@ -569,6 +650,11 @@
     "OG-R35",
     "OG-R36",
     "OG-R38",
+    "OG-R39",
+    "OG-R40",
+    "OG-R41",
+    "OG-R42",
+    "OG-R43",
     "OG-R37"
    ]
   ],
@@ -603,6 +689,11 @@
     "OG-R35",
     "OG-R36",
     "OG-R38",
+    "OG-R39",
+    "OG-R40",
+    "OG-R41",
+    "OG-R42",
+    "OG-R43",
     "OG-R37"
    ]
   ],
@@ -620,6 +711,8 @@
     "C-FUNC",
     "C-REF",
     "C-NAT",
+    "C-NATEV",
+    "C-H2020",
     "C-ART",
     "C-CI",
     "C-REPO"
@@ -639,6 +732,8 @@
     "C-FUNC",
     "C-REF",
     "C-NAT",
+    "C-NATEV",
+    "C-H2020",
     "C-ART",
     "C-CI",
     "C-REPO"
@@ -658,6 +753,8 @@
     "C-FUNC",
     "C-REF",
     "C-NAT",
+    "C-NATEV",
+    "C-H2020",
     "C-ART",
     "C-CI",
     "C-REPO"
@@ -717,6 +814,11 @@
     "OG-R35",
     "OG-R36",
     "OG-R38",
+    "OG-R39",
+    "OG-R40",
+    "OG-R41",
+    "OG-R42",
+    "OG-R43",
     "OG-R37"
    ]
   ]

@@ -37,9 +37,16 @@ function applyTerms(root = document){ $$("[data-term]", root).forEach(s => { s.o
   addEventListener("scroll", hide, {passive:true});
 })();
 function stepEvidence(e){ const s = SRC(e.src); return `<div class="ev">${termHTML("source", "Source")}: <a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.name)}</a>, ${esc(e.ref)}. Written there as “${esc(e.pt)}”. Matched by ${esc(e.how)}.${s.sha256 ? ` <span class="mono" title="SHA-256 of the file read">#${esc(s.sha256.slice(0, 12))}</span>` : ""}</div>`; }
+// nations: final placement from tools/nations.py; colour is always paired with the two-letter label
+const NATNAME = {EN:"England", SC:"Scotland", WA:"Wales", NI:"Northern Ireland", UK:"Whole UK", GB:"UK Government, extent not stated", OT:"Overseas Territories", CD:"Crown Dependencies"};
+const natOf = id => (ACC.nat && ACC.nat[id]) || [];
+const nsw = k => ["EN","SC","WA","NI","UK"].includes(k) ? `<span class="nsw" style="--c:var(--n${k})" aria-hidden="true"></span>` : k === "GB" ? `<span class="nsw gb" aria-hidden="true"></span>` : "";
+const nchip = k => `<span class="nchip" title="${esc(NATNAME[k] || k)}">${nsw(k)}${esc(k)}</span>`;
+const natHTML = id => { const n = natOf(id); if (!n.length) return ""; const home = n.filter(k => ["EN","SC","WA","NI"].includes(k));
+  const multi = home.length > 1 || n.includes("UK"); return `${multi ? `<span class="nmulti" title="Performs functions for more than one nation">serves ${n.includes("UK") ? "the whole UK" : home.length + " nations"}</span>` : ""}${n.map(nchip).join("")}`; };
 function chainHTML(id){
   const r = BY[id], c = CHAIN(id); if (!r || !c) return `<p class="muted">No accountability data for this record.</p>`;
-  const steps = [`<div class="step start"><span class="dot">${icon("tree")}</span><div><b>${orgLink(id)}</b><span class="rel">${esc(r.fam)} · ${esc(r.kind)}</span></div></div>`];
+  const steps = [`<div class="step start"><span class="dot">${icon("tree")}</span><div><b>${orgLink(id)}</b>${natHTML(id)}<span class="rel">${esc(r.fam)} · ${esc(r.kind)}</span></div></div>`];
   c.path.forEach(e => steps.push(`<div class="step"><span class="dot">${icon(RELICON[e.rel] || "link")}</span><div><span class="rel">${esc(RELNAME[e.rel] || e.rel)}</span><b>${orgLink(e.p)}</b>${stepEvidence(e)}</div></div>`));
   const nf = /^not established/.test(c.ans);
   steps.push(`<div class="step root"><span class="dot">${icon("crown")}</span><div><span class="rel">${nf ? "No further link in the sources" : "Answers in the end to"}</span><b>${esc(nf ? "Not established from the sources: listed under What couldn't be matched" : c.ans)}</b></div></div>`);
@@ -108,12 +115,17 @@ function whoAnswers(){
   const byRoot = {}; ids.forEach(k => { const c = ACC.ch[k]; if (c[0].length) byRoot[c[1]] = (byRoot[c[1]] || 0) + 1; });
   const depts = R.filter(r => r.open && r.kind === "Ministerial department").sort((a, b) => (byRoot[b.id] || 0) - (byRoot[a.id] || 0));
   const RT = [["Answers to", `<p class="muted" style="margin:8px 0">Each open body, grouped by the elected body it answers to in the end.</p><div class="bars" id="ansBars"></div>`],
-              ["Ultimate owners", `<p class="muted" style="margin:8px 0">The bodies that sit at the top of the most chains: the public-sector equivalent of a group parent.</p><div class="bars" id="ownBars"></div>`],
+              ["Ultimate owners", `<p class="muted" style="margin:8px 0">The bodies at the top of the most chains, the public-sector equivalent of a group parent, split by the nation each one serves. A body that serves more than one nation appears under each, flagged. <a href="nations.html">See every nation's register</a>.</p><div class="natgrid" id="ownNat"></div>`],
               ["Tree", `<div class="controls" style="margin-top:8px"><label>Start from<select id="treeRoot">${depts.map(d => `<option value="${esc(d.id)}">${esc(d.name)} (${fmt(byRoot[d.id] || 0)})</option>`).join("")}</select></label></div><p class="muted">Every body whose chain passes through it, nested by the link that joins them. The number is how many bodies sit below.</p><div id="treeOut"></div>`]];
   $("#rootTabs").innerHTML = RT.map((t, i) => `<button class="tab" role="tab" id="rt-${i}" aria-controls="rp-${i}" aria-selected="${i === 0}" tabindex="${i ? -1 : 0}">${esc(t[0])}</button>`).join("");
   $("#rootPanels").innerHTML = RT.map((t, i) => `<div class="tabpanel" role="tabpanel" id="rp-${i}" aria-labelledby="rt-${i}" ${i ? "hidden" : ""}>${t[1]}</div>`).join(""); tabs($("#rootTabs"));
   tbars($("#ansBars"), Object.entries(byAns).sort((a, b) => b[1] - a[1]).map(([a, n]) => [a, n]));
-  tbars($("#ownBars"), Object.entries(byRoot).sort((a, b) => b[1] - a[1]).slice(0, 20).map(([k, n]) => [BY[k] ? BY[k].name : k, n, k]));
+  { const cols = {EN:[], SC:[], WA:[], NI:[], UK:[], GB:[]};
+    Object.entries(byRoot).forEach(([k, n]) => { const ns = natOf(k); (ns.length ? ns : ["GB"]).forEach(c => { if (cols[c]) cols[c].push([k, n]); }); });
+    $("#ownNat").innerHTML = Object.entries(cols).map(([c, xs]) => `<section class="natcol" style="--c:var(--n${c})" aria-labelledby="on-${c}"><h3 id="on-${c}">${nsw(c)}${esc(NATNAME[c])} <span class="muted" style="font-weight:400">· ${fmt(xs.length)} owners</span></h3><div class="bars" id="ob-${c}"></div></section>`).join("");
+    Object.entries(cols).forEach(([c, xs]) => { const el = $("#ob-" + c); el.innerHTML = xs.length ? "" : `<p class="muted">None in the sources.</p>`;
+      if (xs.length) { tbars(el, xs.sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k, n]) => [BY[k] ? BY[k].name : k, n, k]));
+        el.querySelectorAll(".bar").forEach((b, i) => { const k = xs[i][0], h = natHTML(k); if (h && (natOf(k).length > 1 || natOf(k).includes("UK"))) b.firstElementChild.insertAdjacentHTML("beforeend", h); }); } }); }
   const drawTree = () => { $("#treeOut").innerHTML = treeOf($("#treeRoot").value).html; }; $("#treeRoot").addEventListener("change", drawTree); if (depts.length) drawTree();
   // money
   const gf = Object.entries(ACC.m).filter(([, m]) => m[1] > 0).sort((a, b) => b[1][1] - a[1][1]);

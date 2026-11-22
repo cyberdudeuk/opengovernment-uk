@@ -10,3 +10,6 @@ sources/ukgi-ara-2025-26.html
 sources/ni-eao-2026.xml
 # raw Public Bodies editions name chairs and accounting officers; tools/trends.py --fetch downloads them
 sources/public-bodies/
+
+# 2020 public bodies compilation: read for evidence, not redistributed (fingerprint in data/historical-2020.json)
+sources/evidence/pb-nov2020-nonpersonal.tsv

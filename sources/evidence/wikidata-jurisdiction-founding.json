@@ -1,0 +1,2414 @@
+{
+"jurisdiction": [
+[
+"Q138589987",
+"Q21",
+"England"
+],
+[
+"Q1437242",
+"Q21",
+"England"
+],
+[
+"Q1699627",
+"Q21",
+"England"
+],
+[
+"Q16981179",
+"Q21",
+"England"
+],
+[
+"Q100234556",
+"Q21",
+"England"
+],
+[
+"Q106968333",
+"Q21",
+"England"
+],
+[
+"Q107547875",
+"Q21",
+"England"
+],
+[
+"Q1437242",
+"Q22",
+"Scotland"
+],
+[
+"Q137294778",
+"Q145",
+"United Kingdom"
+],
+[
+"Q17020947",
+"Q23095",
+"South Yorkshire"
+],
+[
+"Q17066348",
+"Q23140",
+"Warwickshire"
+],
+[
+"Q1135166",
+"Q23306",
+"Greater London"
+],
+[
+"Q1094147",
+"Q23311",
+"City of London"
+],
+[
+"Q17016863",
+"Q175945",
+"North Lincolnshire"
+],
+[
+"Q17016922",
+"Q178196",
+"North Somerset"
+],
+[
+"Q16966588",
+"Q810793",
+"Bath and North East Somerset"
+],
+[
+"Q16984481",
+"Q880782",
+"Blackburn with Darwen"
+],
+[
+"Q16239012",
+"Q894077",
+"Bedford"
+],
+[
+"Q17022493",
+"Q894094",
+"Stockton-on-Tees"
+],
+[
+"Q17033474",
+"Q894095",
+"Warrington"
+],
+[
+"Q16985082",
+"Q896725",
+"Bracknell Forest"
+],
+[
+"Q16901812",
+"Q596743",
+"Tonbridge and Malling"
+],
+[
+"Q16997208",
+"Q737114",
+"Maidstone"
+],
+[
+"Q16997526",
+"Q797782",
+"Medway"
+],
+[
+"Q16953725",
+"Q1022488",
+"Brighton and Hove"
+],
+[
+"Q16985873",
+"Q1026448",
+"Calderdale"
+],
+[
+"Q17022094",
+"Q179206",
+"St Helens"
+],
+[
+"Q16983144",
+"Q376141",
+"Halton"
+],
+[
+"Q16954633",
+"Q512036",
+"Bury"
+],
+[
+"Q17034839",
+"Q915954",
+"Trafford"
+],
+[
+"Q16995709",
+"Q918975",
+"Kirklees"
+],
+[
+"Q16997843",
+"Q894090",
+"City of Milton Keynes"
+],
+[
+"Q17040033",
+"Q894093",
+"Swindon"
+],
+[
+"Q1813958",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q107547875",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q17020402",
+"Q1142118",
+"Salford"
+],
+[
+"Q1437242",
+"Q25",
+"Wales"
+],
+[
+"Q17018314",
+"Q25",
+"Wales"
+],
+[
+"Q16986562",
+"Q1053723",
+"Central Bedfordshire"
+],
+[
+"Q16829355",
+"Q1070590",
+"Cheshire East"
+],
+[
+"Q16829360",
+"Q1070591",
+"Cheshire West and Chester"
+],
+[
+"Q17017005",
+"Q1120443",
+"North Tyneside"
+],
+[
+"Q17034697",
+"Q1136118",
+"Torbay"
+],
+[
+"Q1122261",
+"Q145",
+"United Kingdom"
+],
+[
+"Q1191394",
+"Q145",
+"United Kingdom"
+],
+[
+"Q1334971",
+"Q145",
+"United Kingdom"
+],
+[
+"Q16848097",
+"Q145",
+"United Kingdom"
+],
+[
+"Q17101024",
+"Q145",
+"United Kingdom"
+],
+[
+"Q19597365",
+"Q145",
+"United Kingdom"
+],
+[
+"Q16948698",
+"Q1171024",
+"Darlington"
+],
+[
+"Q16995750",
+"Q1228523",
+"Knowsley"
+],
+[
+"Q14211",
+"Q145",
+"United Kingdom"
+],
+[
+"Q17020059",
+"Q1878732",
+"Rotherham"
+],
+[
+"Q17019804",
+"Q1892596",
+"Rochdale"
+],
+[
+"Q16988947",
+"Q1925846",
+"Doncaster"
+],
+[
+"Q1813958",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q17102630",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q104248034",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q16991635",
+"Q1617704",
+"Dudley"
+],
+[
+"Q17039435",
+"Q1758432",
+"Wokingham"
+],
+[
+"Q16950416",
+"Q1857382",
+"Barnsley"
+],
+[
+"Q16191496",
+"Q3801785",
+"Ipswich"
+],
+[
+"Q17038877",
+"Q11365639",
+"Wirral"
+],
+[
+"Q16996746",
+"Q15242530",
+"Liverpool City Region"
+],
+[
+"Q17059453",
+"Q20986421",
+"City of York"
+],
+[
+"Q16934215",
+"Q21272736",
+"Nottinghamshire"
+],
+[
+"Q14978996",
+"Q21496675",
+"Redditch"
+],
+[
+"Q17018654",
+"Q21496716",
+"Reading"
+],
+[
+"Q17021809",
+"Q21683230",
+"City of Southampton"
+],
+[
+"Q17104656",
+"Q21683233",
+"City of Portsmouth"
+],
+[
+"Q16997109",
+"Q21683239",
+"Luton"
+],
+[
+"Q17021590",
+"Q1925858",
+"Solihull"
+],
+[
+"Q16993720",
+"Q2594690",
+"Hartlepool"
+],
+[
+"Q16953331",
+"Q2834810",
+"Bradford"
+],
+[
+"Q111232469",
+"Q60790129",
+"West Northamptonshire"
+],
+[
+"Q16984489",
+"Q20989106",
+"Blackpool"
+],
+[
+"Q16998823",
+"Q21012735",
+"Newcastle upon Tyne"
+],
+[
+"Q16996347",
+"Q21269047",
+"Lincolnshire"
+],
+[
+"Q17016820",
+"Q1342914",
+"North East Lincolnshire"
+],
+[
+"Q16952682",
+"Q1364541",
+"Bolton"
+],
+[
+"Q17038560",
+"Q1368496",
+"Windsor and Maidenhead"
+],
+[
+"Q17017730",
+"Q1278608",
+"Oldham"
+],
+[
+"Q17022675",
+"Q1280897",
+"Sunderland"
+],
+[
+"Q112160997",
+"Q110536343",
+"Cumberland"
+],
+[
+"Q111962803",
+"Q110536353",
+"Westmorland and Furness"
+],
+[
+"Q121568187",
+"Q121568197",
+"East Midlands"
+],
+[
+"Q123082103",
+"Q123081900",
+"York and North Yorkshire"
+],
+[
+"Q17035952",
+"Q127545656",
+"West Yorkshire"
+],
+[
+"Q116179003",
+"Q131418933",
+"North East"
+],
+[
+"Q16953796",
+"Q21693433",
+"City of Bristol"
+],
+[
+"Q16839354",
+"Q21694733",
+"Gloucestershire"
+],
+[
+"Q16989282",
+"Q21695028",
+"East Riding of Yorkshire"
+],
+[
+"Q17012769",
+"Q21886147",
+"Norwich"
+],
+[
+"Q17022507",
+"Q21891722",
+"City of Stoke-on-Trent"
+],
+[
+"Q111232446",
+"Q60790121",
+"North Northamptonshire"
+],
+[
+"Q17020724",
+"Q1369280",
+"South Gloucestershire"
+],
+[
+"Q17041259",
+"Q1423078",
+"Tameside"
+],
+[
+"Q17059334",
+"Q1425298",
+"Telford and Wrekin"
+],
+[
+"Q17019415",
+"Q1434448",
+"Redcar and Cleveland"
+],
+[
+"Q17041496",
+"Q1473780",
+"West Berkshire"
+],
+[
+"Q1646552",
+"Q1549155",
+"Thurrock"
+],
+[
+"Q15223753",
+"Q1614775",
+"Hertsmere"
+],
+[
+"Q601819",
+"Q21",
+"England"
+],
+[
+"Q2612019",
+"Q21",
+"England"
+],
+[
+"Q5890410",
+"Q21",
+"England"
+],
+[
+"Q19604421",
+"Q21",
+"England"
+],
+[
+"Q30716417",
+"Q21",
+"England"
+],
+[
+"Q55099243",
+"Q635416",
+"Folkestone and Hythe"
+],
+[
+"Q55098937",
+"Q652559",
+"Swale"
+],
+[
+"Q55098926",
+"Q894074",
+"Ashford"
+],
+[
+"Q55098919",
+"Q894082",
+"Dartford"
+],
+[
+"Q55098930",
+"Q894097",
+"Tunbridge Wells"
+],
+[
+"Q54666929",
+"Q929034",
+"Gateshead"
+],
+[
+"Q55098924",
+"Q1094104",
+"Canterbury"
+],
+[
+"Q48804615",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q55098935",
+"Q1459781",
+"Gravesham"
+],
+[
+"Q55098936",
+"Q1499339",
+"Sevenoaks"
+],
+[
+"Q55098918",
+"Q1971967",
+"Dover"
+],
+[
+"Q55098923",
+"Q21886170",
+"Worthing"
+],
+[
+"Q54818205",
+"Q54366459",
+"Bournemouth, Christchurch and Poole"
+],
+[
+"Q59536023",
+"Q54554266",
+"East Suffolk"
+],
+[
+"Q55609905",
+"Q55231693",
+"Dorset"
+],
+[
+"Q32521",
+"Q22",
+"Scotland"
+],
+[
+"Q5374333",
+"Q22",
+"Scotland"
+],
+[
+"Q3112646",
+"Q25",
+"Wales"
+],
+[
+"Q5401944",
+"Q25",
+"Wales"
+],
+[
+"Q30716417",
+"Q25",
+"Wales"
+],
+[
+"Q2665914",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q3015291",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q3044738",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q5995",
+"Q145",
+"United Kingdom"
+],
+[
+"Q218886",
+"Q145",
+"United Kingdom"
+],
+[
+"Q220798",
+"Q145",
+"United Kingdom"
+],
+[
+"Q257303",
+"Q145",
+"United Kingdom"
+],
+[
+"Q277020",
+"Q145",
+"United Kingdom"
+],
+[
+"Q281113",
+"Q145",
+"United Kingdom"
+],
+[
+"Q358834",
+"Q145",
+"United Kingdom"
+],
+[
+"Q533601",
+"Q145",
+"United Kingdom"
+],
+[
+"Q578269",
+"Q145",
+"United Kingdom"
+],
+[
+"Q601819",
+"Q145",
+"United Kingdom"
+],
+[
+"Q2928362",
+"Q145",
+"United Kingdom"
+],
+[
+"Q2928396",
+"Q145",
+"United Kingdom"
+],
+[
+"Q2982287",
+"Q145",
+"United Kingdom"
+],
+[
+"Q2983190",
+"Q145",
+"United Kingdom"
+],
+[
+"Q3044721",
+"Q145",
+"United Kingdom"
+],
+[
+"Q3044742",
+"Q145",
+"United Kingdom"
+],
+[
+"Q4158541",
+"Q145",
+"United Kingdom"
+],
+[
+"Q5251253",
+"Q145",
+"United Kingdom"
+],
+[
+"Q5449586",
+"Q145",
+"United Kingdom"
+],
+[
+"Q5589070",
+"Q145",
+"United Kingdom"
+],
+[
+"Q23688635",
+"Q145",
+"United Kingdom"
+],
+[
+"Q5744765",
+"Q3410",
+"Hertfordshire"
+],
+[
+"Q3305205",
+"Q23111",
+"Suffolk"
+],
+[
+"Q5189676",
+"Q26888",
+"London Borough of Croydon"
+],
+[
+"Q5738061",
+"Q23129",
+"Herefordshire"
+],
+[
+"Q22001063",
+"Q23666",
+"Great Britain"
+],
+[
+"Q5645758",
+"Q40478",
+"London Borough of Hammersmith and Fulham"
+],
+[
+"Q4861611",
+"Q151048",
+"London Borough of Barnet"
+],
+[
+"Q5637369",
+"Q205679",
+"London Borough of Hackney"
+],
+[
+"Q5763303",
+"Q205690",
+"London Borough of Hillingdon"
+],
+[
+"Q4899799",
+"Q207208",
+"London Borough of Bexley"
+],
+[
+"Q5325486",
+"Q207218",
+"London Borough of Ealing"
+],
+[
+"Q4961461",
+"Q207201",
+"London Borough of Brent"
+],
+[
+"Q4973687",
+"Q208201",
+"London Borough of Bromley"
+],
+[
+"Q5666565",
+"Q210476",
+"London Borough of Harrow"
+],
+[
+"Q5377310",
+"Q210531",
+"London Borough of Enfield"
+],
+[
+"Q28195166",
+"Q180209",
+"Isles of Scilly"
+],
+[
+"Q5175478",
+"Q581022",
+"Cotswold"
+],
+[
+"Q5328577",
+"Q582288",
+"East Hertfordshire"
+],
+[
+"Q28401189",
+"Q607082",
+"North Kesteven"
+],
+[
+"Q5913301",
+"Q214162",
+"London Borough of Hounslow"
+],
+[
+"Q5683826",
+"Q215038",
+"London Borough of Havering"
+],
+[
+"Q5756024",
+"Q1458060",
+"High Peak"
+],
+[
+"Q5074501",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q5374333",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q5635120",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q5207723",
+"Q931180",
+"Dacorum"
+],
+[
+"Q28401169",
+"Q966144",
+"Stroud"
+],
+[
+"Q5316492",
+"Q1137286",
+"County Durham"
+],
+[
+"Q5657624",
+"Q213560",
+"London Borough of Haringey"
+],
+[
+"Q5025790",
+"Q202088",
+"London Borough of Camden"
+],
+[
+"Q4867303",
+"Q810056",
+"Basildon"
+],
+[
+"Q4976877",
+"Q894078",
+"Broxbourne"
+],
+[
+"Q27183368",
+"Q894096",
+"Tewkesbury"
+],
+[
+"Q28401332",
+"Q902998",
+"Forest of Dean"
+],
+[
+"Q5261561",
+"Q11775003",
+"Derbyshire"
+],
+[
+"Q27159704",
+"Q11811449",
+"Lake District National Park"
+],
+[
+"Q27178932",
+"Q20602688",
+"Yorkshire Dales National Park"
+],
+[
+"Q5179058",
+"Q20986417",
+"Coventry"
+],
+[
+"Q4916650",
+"Q20986424",
+"Birmingham"
+],
+[
+"Q28401303",
+"Q20986485",
+"Gloucester"
+],
+[
+"Q28401301",
+"Q20989092",
+"Cheltenham"
+],
+[
+"Q5399679",
+"Q21272241",
+"Essex"
+],
+[
+"Q5025648",
+"Q21272276",
+"Cambridgeshire"
+],
+[
+"Q2302252",
+"Q21525592",
+"Manchester"
+],
+[
+"Q4861056",
+"Q205358",
+"London Borough of Barking and Dagenham"
+],
+[
+"Q23461861",
+"Q649699",
+"South Hams"
+],
+[
+"Q5604860",
+"Q693450",
+"Royal Borough of Greenwich"
+],
+[
+"Q23463529",
+"Q1541228",
+"South Tyneside"
+],
+[
+"Q4972284",
+"Q1999046",
+"The Broads"
+],
+[
+"Q20198711",
+"Q3695606",
+"South Downs National Park"
+],
+[
+"Q21061639",
+"Q3982570",
+"Tees Valley"
+],
+[
+"Q5225646",
+"Q24677296",
+"Dartmoor National Park"
+],
+[
+"Q24993670",
+"Q56840292",
+"West of England"
+],
+[
+"Q28451058",
+"Q56855521",
+"Cambridgeshire and Peterborough"
+],
+[
+"Q5600634",
+"Q56856017",
+"Greater Manchester"
+],
+[
+"Q21061625",
+"Q56856175",
+"West Midlands"
+],
+[
+"Q5329458",
+"Q21694646",
+"East Sussex"
+],
+[
+"Q5646045",
+"Q21694653",
+"Hampshire"
+],
+[
+"Q1990879",
+"Q21694746",
+"Wiltshire"
+],
+[
+"Q5025388",
+"Q21713103",
+"Cambridge"
+],
+[
+"Q5261430",
+"Q21885980",
+"City of Derby"
+],
+[
+"Q5935834",
+"Q21885987",
+"City of Kingston upon Hull"
+],
+[
+"Q30255982",
+"Q21886073",
+"Crawley"
+],
+[
+"Q30588396",
+"Q21886079",
+"Eastbourne"
+],
+[
+"Q5420103",
+"Q21886091",
+"Exeter"
+],
+[
+"Q3774189",
+"Q22338583",
+"Cornwall"
+],
+[
+"Q6302844",
+"Q21",
+"England"
+],
+[
+"Q6764168",
+"Q21",
+"England"
+],
+[
+"Q7201367",
+"Q21",
+"England"
+],
+[
+"Q65071973",
+"Q21",
+"England"
+],
+[
+"Q73072625",
+"Q176029",
+"Fenland"
+],
+[
+"Q73072831",
+"Q253501",
+"West Lindsey"
+],
+[
+"Q73072619",
+"Q257577",
+"Epsom and Ewell"
+],
+[
+"Q6302844",
+"Q25",
+"Wales"
+],
+[
+"Q6980600",
+"Q25",
+"Wales"
+],
+[
+"Q7201367",
+"Q25",
+"Wales"
+],
+[
+"Q7257623",
+"Q25",
+"Wales"
+],
+[
+"Q7961756",
+"Q25",
+"Wales"
+],
+[
+"Q73072657",
+"Q23330",
+"Huntingdonshire"
+],
+[
+"Q73072603",
+"Q82181",
+"East Lindsey"
+],
+[
+"Q73072658",
+"Q168052",
+"Lancaster"
+],
+[
+"Q73072778",
+"Q678347",
+"Stafford"
+],
+[
+"Q73072792",
+"Q739432",
+"Teignbridge"
+],
+[
+"Q73072741",
+"Q745385",
+"South Derbyshire"
+],
+[
+"Q73072704",
+"Q764425",
+"Oadby and Wigston"
+],
+[
+"Q73072703",
+"Q920466",
+"Nuneaton and Bedworth"
+],
+[
+"Q73072654",
+"Q946825",
+"Hinckley and Bosworth"
+],
+[
+"Q73072681",
+"Q961824",
+"Mole Valley"
+],
+[
+"Q73072564",
+"Q1067639",
+"Charnwood"
+],
+[
+"Q763388",
+"Q145",
+"United Kingdom"
+],
+[
+"Q795009",
+"Q145",
+"United Kingdom"
+],
+[
+"Q6851971",
+"Q145",
+"United Kingdom"
+],
+[
+"Q7079377",
+"Q145",
+"United Kingdom"
+],
+[
+"Q73072755",
+"Q290838",
+"South Ribble"
+],
+[
+"Q73072743",
+"Q303269",
+"South Holland"
+],
+[
+"Q73072823",
+"Q370814",
+"West Devon"
+],
+[
+"Q6084095",
+"Q9679",
+"Isle of Wight"
+],
+[
+"Q6386521",
+"Q23079",
+"Northumberland"
+],
+[
+"Q73072566",
+"Q894080",
+"Chelmsford"
+],
+[
+"Q73072578",
+"Q894081",
+"Chorley"
+],
+[
+"Q73072609",
+"Q894083",
+"Eastleigh"
+],
+[
+"Q73072624",
+"Q894084",
+"Fareham"
+],
+[
+"Q73072859",
+"Q548224",
+"Wyre Forest"
+],
+[
+"Q73072586",
+"Q589620",
+"Colchester"
+],
+[
+"Q73072810",
+"Q611294",
+"Warwick"
+],
+[
+"Q73072663",
+"Q613878",
+"Maldon"
+],
+[
+"Q73072635",
+"Q894085",
+"Great Yarmouth"
+],
+[
+"Q73072637",
+"Q894086",
+"Guildford"
+],
+[
+"Q73072687",
+"Q894089",
+"Newcastle-under-Lyme"
+],
+[
+"Q73072725",
+"Q894091",
+"Rugby"
+],
+[
+"Q7058487",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q7058507",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q7257503",
+"Q26",
+"Northern Ireland"
+],
+[
+"Q7383481",
+"Q23107",
+"Rutland"
+],
+[
+"Q6386325",
+"Q23276",
+"Surrey"
+],
+[
+"Q7055115",
+"Q674940",
+"North Devon"
+],
+[
+"Q7571153",
+"Q730706",
+"London Borough of Southwark"
+],
+[
+"Q73072805",
+"Q1496198",
+"Uttlesford"
+],
+[
+"Q73072632",
+"Q1497633",
+"Gedling"
+],
+[
+"Q73072695",
+"Q1545713",
+"North Norfolk"
+],
+[
+"Q73072730",
+"Q635274",
+"Rushmoor"
+],
+[
+"Q73072684",
+"Q637772",
+"Newark and Sherwood"
+],
+[
+"Q73072676",
+"Q662238",
+"Mid Devon"
+],
+[
+"Q6084379",
+"Q205817",
+"London Borough of Islington"
+],
+[
+"Q73072569",
+"Q1070481",
+"Cherwell"
+],
+[
+"Q73072573",
+"Q1072104",
+"Chichester"
+],
+[
+"Q73072843",
+"Q1094226",
+"Winchester"
+],
+[
+"Q73072850",
+"Q2116344",
+"Wychavon"
+],
+[
+"Q73072779",
+"Q2116362",
+"Staffordshire Moorlands"
+],
+[
+"Q73072759",
+"Q2116379",
+"South Staffordshire"
+],
+[
+"Q73072816",
+"Q2116521",
+"Waverley"
+],
+[
+"Q73072717",
+"Q2160315",
+"Rochford"
+],
+[
+"Q7961061",
+"Q763171",
+"Wakefield"
+],
+[
+"Q6515870",
+"Q774015",
+"Leeds"
+],
+[
+"Q6386353",
+"Q23287",
+"West Sussex"
+],
+[
+"Q73072598",
+"Q1199980",
+"Derbyshire Dales"
+],
+[
+"Q73072774",
+"Q1234166",
+"Spelthorne"
+],
+[
+"Q73072662",
+"Q1254688",
+"Lewes"
+],
+[
+"Q73072642",
+"Q1556307",
+"Harborough"
+],
+[
+"Q73072817",
+"Q1575946",
+"Wealden"
+],
+[
+"Q73072649",
+"Q1587050",
+"Hart"
+],
+[
+"Q6820723",
+"Q32504",
+"London Borough of Merton"
+],
+[
+"Q73072846",
+"Q2277849",
+"Woking"
+],
+[
+"Q73072790",
+"Q2301760",
+"Tandridge"
+],
+[
+"Q73072652",
+"Q4946344",
+"Havant"
+],
+[
+"Q73072788",
+"Q7170938",
+"Tamworth"
+],
+[
+"Q6481450",
+"Q202059",
+"London Borough of Lambeth"
+],
+[
+"Q6413671",
+"Q32508",
+"Royal Borough of Kingston upon Thames"
+],
+[
+"Q7331065",
+"Q32515",
+"London Borough of Richmond upon Thames"
+],
+[
+"Q69118038",
+"Q1277825",
+"East Devon"
+],
+[
+"Q7797746",
+"Q1386468",
+"Three Rivers"
+],
+[
+"Q65090041",
+"Q1540110",
+"Vale of White Horse"
+],
+[
+"Q7305508",
+"Q208955",
+"London Borough of Redbridge"
+],
+[
+"Q73039037",
+"Q797643",
+"Babergh"
+],
+[
+"Q73072528",
+"Q810185",
+"Basingstoke and Deane"
+],
+[
+"Q73045241",
+"Q810508",
+"Bassetlaw"
+],
+[
+"Q6386227",
+"Q23109",
+"Norfolk"
+],
+[
+"Q6851971",
+"Q46395",
+"British Overseas Territories"
+],
+[
+"Q73072533",
+"Q891608",
+"Bolsover"
+],
+[
+"Q73072538",
+"Q894076",
+"Boston"
+],
+[
+"Q73072554",
+"Q894079",
+"Burnley"
+],
+[
+"Q73072540",
+"Q897454",
+"Braintree"
+],
+[
+"Q7446119",
+"Q1546645",
+"Sefton"
+],
+[
+"Q65089006",
+"Q1640713",
+"Hyndburn"
+],
+[
+"Q7055592",
+"Q1685976",
+"North Hertfordshire"
+],
+[
+"Q73072602",
+"Q1277894",
+"East Hampshire"
+],
+[
+"Q73072606",
+"Q1278032",
+"East Staffordshire"
+],
+[
+"Q73072828",
+"Q1290796",
+"West Lancashire"
+],
+[
+"Q7963789",
+"Q178356",
+"Walsall"
+],
+[
+"Q6391507",
+"Q188801",
+"Royal Borough of Kensington and Chelsea"
+],
+[
+"Q6537320",
+"Q215030",
+"London Borough of Lewisham"
+],
+[
+"Q7417057",
+"Q285964",
+"Sandwell"
+],
+[
+"Q6386253",
+"Q23169",
+"Oxfordshire"
+],
+[
+"Q73072615",
+"Q1292592",
+"Elmbridge"
+],
+[
+"Q73072679",
+"Q1344342",
+"Mid Sussex"
+],
+[
+"Q73072617",
+"Q1347659",
+"Epping Forest"
+],
+[
+"Q7162423",
+"Q1693090",
+"Pendle"
+],
+[
+"Q72980967",
+"Q1725997",
+"Arun"
+],
+[
+"Q73072537",
+"Q1742192",
+"King's Lynn and West Norfolk"
+],
+[
+"Q73072550",
+"Q1744694",
+"Bromsgrove"
+],
+[
+"Q7566485",
+"Q969203",
+"South Cambridgeshire"
+],
+[
+"Q73072556",
+"Q1033439",
+"Cannock Chase"
+],
+[
+"Q73072562",
+"Q1049506",
+"Castle Point"
+],
+[
+"Q7592257",
+"Q1094060",
+"St Albans"
+],
+[
+"Q6975069",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q7139404",
+"Q1156248",
+"England and Wales"
+],
+[
+"Q73072656",
+"Q1629013",
+"Horsham"
+],
+[
+"Q73072781",
+"Q1693076",
+"Stratford-on-Avon"
+],
+[
+"Q73072804",
+"Q1752488",
+"Torridge"
+],
+[
+"Q73072799",
+"Q1752638",
+"Tendring"
+],
+[
+"Q7063612",
+"Q21885994",
+"City of Nottingham"
+],
+[
+"Q7615422",
+"Q21886152",
+"Stevenage"
+],
+[
+"Q72617669",
+"Q24638865",
+"North York Moors National Park"
+],
+[
+"Q72617988",
+"Q24641019",
+"Peak District National Park"
+],
+[
+"Q72617784",
+"Q24643111",
+"Exmoor National Park"
+],
+[
+"Q73072669",
+"Q1891143",
+"Mansfield"
+],
+[
+"Q73072678",
+"Q1931811",
+"Mid Suffolk"
+],
+[
+"Q73072747",
+"Q1942426",
+"South Kesteven"
+],
+[
+"Q7650288",
+"Q320378",
+"London Borough of Sutton"
+],
+[
+"Q72980889",
+"Q379103",
+"Adur"
+],
+[
+"Q65089357",
+"Q385669",
+"Preston"
+],
+[
+"Q7618164",
+"Q1752424",
+"Stockport"
+],
+[
+"Q7710261",
+"Q1752642",
+"Thanet"
+],
+[
+"Q65089301",
+"Q1776967",
+"South Oxfordshire"
+],
+[
+"Q73072621",
+"Q1350065",
+"Erewash"
+],
+[
+"Q73072692",
+"Q1384012",
+"North East Derbyshire"
+],
+[
+"Q73072667",
+"Q1427973",
+"Malvern Hills"
+],
+[
+"Q73072630",
+"Q1478592",
+"Fylde"
+],
+[
+"Q65090031",
+"Q1277768",
+"East Cambridgeshire"
+],
+[
+"Q73072634",
+"Q21886128",
+"Gosport"
+],
+[
+"Q73072650",
+"Q21886138",
+"Hastings"
+],
+[
+"Q73072837",
+"Q54554272",
+"West Suffolk"
+],
+[
+"Q73072726",
+"Q9324032",
+"Runnymede"
+],
+[
+"Q73072848",
+"Q20986481",
+"Worcester"
+],
+[
+"Q73072583",
+"Q20989075",
+"Lincoln"
+],
+[
+"Q73072572",
+"Q20989091",
+"Chesterfield"
+],
+[
+"Q73072645",
+"Q21713095",
+"Harlow"
+],
+[
+"Q6543271",
+"Q1823259",
+"Lichfield"
+],
+[
+"Q73072548",
+"Q2116353",
+"Broadland"
+],
+[
+"Q6851971",
+"Q2345593",
+"sovereign base area"
+],
+[
+"Q73072833",
+"Q1776955",
+"West Oxfordshire"
+],
+[
+"Q73072720",
+"Q1811605",
+"Rother"
+],
+[
+"Q73072672",
+"Q1853349",
+"Melton"
+],
+[
+"Q6841843",
+"Q2673020",
+"Middlesbrough"
+],
+[
+"Q7492609",
+"Q12956644",
+"Sheffield"
+],
+[
+"Q6664413",
+"Q12956645",
+"City of Peterborough"
+],
+[
+"Q72617158",
+"Q14524921",
+"New Forest National Park"
+],
+[
+"Q7115277",
+"Q20986484",
+"Oxford"
+],
+[
+"Q73072699",
+"Q1853930",
+"North West Leicestershire"
+],
+[
+"Q73072729",
+"Q1854225",
+"Rushcliffe"
+],
+[
+"Q73072752",
+"Q1854245",
+"South Norfolk"
+],
+[
+"Q73072682",
+"Q1972541",
+"New Forest"
+],
+[
+"Q73072698",
+"Q2000897",
+"North Warwickshire"
+],
+[
+"Q73072709",
+"Q2066396",
+"Reigate and Banstead"
+],
+[
+"Q7018141",
+"Q208139",
+"London Borough of Newham"
+],
+[
+"Q7829677",
+"Q208152",
+"London Borough of Tower Hamlets"
+],
+[
+"Q73072712",
+"Q2116317",
+"Ribble Valley"
+],
+[
+"Q73072785",
+"Q2116333",
+"Surrey Heath"
+],
+[
+"Q73072801",
+"Q2116338",
+"Test Valley"
+],
+[
+"Q7541466",
+"Q21163036",
+"Slough"
+],
+[
+"Q6386198",
+"Q21272890",
+"Leicestershire"
+],
+[
+"Q6386149",
+"Q21279371",
+"Lancashire"
+],
+[
+"Q7569516",
+"Q21487155",
+"Southend-on-Sea"
+],
+[
+"Q6658351",
+"Q21665571",
+"Liverpool"
+],
+[
+"Q7205775",
+"Q21674890",
+"City of Plymouth"
+],
+[
+"Q6519163",
+"Q21683242",
+"City of Leicester"
+],
+[
+"Q6386127",
+"Q21694674",
+"Kent"
+],
+[
+"Q6385990",
+"Q21694695",
+"Devon"
+],
+[
+"Q6386295",
+"Q21694786",
+"Staffordshire"
+],
+[
+"Q73072544",
+"Q427849",
+"Brentwood"
+],
+[
+"Q72980961",
+"Q457014",
+"Amber Valley"
+],
+[
+"Q7369771",
+"Q527423",
+"Rossendale"
+],
+[
+"Q72617890",
+"Q582205",
+"Northumberland National Park"
+],
+[
+"Q73072529",
+"Q596076",
+"Blaby"
+],
+[
+"Q73038329",
+"Q600996",
+"Ashfield"
+],
+[
+"Q73072553",
+"Q605605",
+"Broxtowe"
+],
+[
+"Q910019",
+"Q145",
+"United Kingdom"
+],
+[
+"Q918253",
+"Q9676",
+"Isle of Man"
+],
+[
+"Q8034245",
+"Q23135",
+"Worcestershire"
+],
+[
+"Q7967311",
+"Q210563",
+"London Borough of Wandsworth"
+],
+[
+"Q7981937",
+"Q3112646",
+"Welsh Government"
+],
+[
+"Q93612",
+"Q21694759",
+"Shropshire"
+],
+[
+"Q8030462",
+"Q21885975",
+"City of Wolverhampton"
+],
+[
+"Q7974596",
+"Q21886164",
+"Watford"
+],
+[
+"Q7999507",
+"Q684307",
+"Wigan"
+],
+[
+"Q7982137",
+"Q2166127",
+"Welwyn Hatfield"
+],
+[
+"Q918253",
+"Q22",
+"Scotland"
+],
+[
+"Q7966606",
+"Q40608",
+"London Borough of Waltham Forest"
+],
+[
+"Q7989145",
+"Q179351",
+"City of Westminster"
+]
+],
+"founding": [
+[
+"Q1122261",
+"Q1635668",
+"Constitutional Reform Act 2005",
+"ukpga/2005/4",
+"P457"
+],
+[
+"Q17144286",
+"Q5097768",
+"Child Poverty Act 2010",
+"ukpga/2010/9",
+"P457"
+],
+[
+"Q166559",
+"Q5152871",
+"Commissioners for Revenue and Customs Act 2005",
+"ukpga/2005/11",
+"P457"
+],
+[
+"Q139488640",
+"Q5164304",
+"Constitutional Reform and Governance Act 2010",
+"ukpga/2010/25",
+"P457"
+],
+[
+"Q104900954",
+"Q6483944",
+"Land Registration Act 2002",
+"ukpga/2002/9",
+"P457"
+],
+[
+"Q14592116",
+"Q7604434",
+"Statistics and Registration Service Act 2007",
+"ukpga/2007/18",
+"P92"
+],
+[
+"Q140452602",
+"Q7840477",
+"Tribunals, Courts and Enforcement Act 2007",
+"ukpga/2007/15",
+"P457"
+],
+[
+"Q1482170",
+"Q16967355",
+"Police (Northern Ireland) Act 2000",
+"ukpga/2000/32",
+"P457"
+],
+[
+"Q124683926",
+"Q17035159",
+"Transparency of Lobbying, Non-Party Campaigning and Trade Union Administration Act 2014",
+"ukpga/2014/4",
+"P457"
+],
+[
+"Q104900937",
+"Q17109538",
+"Insolvency Act 1986",
+"ukpga/1986/45",
+"P457"
+],
+[
+"Q17047789",
+"Q65064370",
+"Dockyard Ports Regulation Act 1865",
+"ukpga/Vict/28-29/125",
+"P457"
+],
+[
+"Q104779861",
+"Q100162855",
+"Covent Garden Market Act 1961",
+"ukpga/Eliz2/9-10/49",
+"P457"
+],
+[
+"Q104900928",
+"Q100164801",
+"Industrial Development Act 1982",
+"ukpga/1982/52",
+"P457"
+],
+[
+"Q107547875",
+"Q110267055",
+"Environment Act 2021",
+"ukpga/2021/30",
+"P457"
+],
+[
+"Q130296594",
+"Q123358037",
+"Energy Act 2023",
+"ukpga/2023/52",
+"P457"
+],
+[
+"Q123082103",
+"Q124394991",
+"The York and North Yorkshire Combined Authority Order 2023",
+"uksi/2023/1432",
+"P457"
+],
+[
+"Q126271358",
+"Q131744183",
+"Great British Energy Act 2025",
+"ukpga/2025/16",
+"P457"
+],
+[
+"Q138002235",
+"Q135447731",
+"Data (Use and Access) Act 2025",
+"ukpga/2025/18",
+"P457"
+],
+[
+"Q137294778",
+"Q136226194",
+"Armed Forces Commissioner Act 2025",
+"ukpga/2025/23",
+"P457"
+],
+[
+"Q138906287",
+"Q137357761",
+"Employment Rights Act 2025",
+"ukpga/2025/36",
+"P457"
+],
+[
+"Q137756532",
+"Q137756553",
+"The Trade, Aircraft and Shipping Sanctions (Civil Enforcement) Regulations 2024",
+"uksi/2024/948",
+"P457"
+],
+[
+"Q140593766",
+"Q140593794",
+"The Producer Responsibility Obligations (Packaging and Packaging Waste) Regulations 2024",
+"uksi/2024/1334",
+"P457"
+],
+[
+"Q24993522",
+"Q280030",
+"Railways Act 2005",
+"ukpga/2005/14",
+"P457"
+],
+[
+"Q5153040",
+"Q5133407",
+"Climate Change Act 2008",
+"ukpga/2008/27",
+"P457"
+],
+[
+"Q30716417",
+"Q5290176",
+"Domestic Violence, Crime and Victims Act 2004",
+"ukpga/2004/28",
+"P457"
+],
+[
+"Q22001063",
+"Q5384170",
+"Equality Act 2006",
+"ukpga/2006/3",
+"P457"
+],
+[
+"Q5988335",
+"Q5988298",
+"Identity Documents Act 2010",
+"ukpga/2010/40",
+"P92"
+],
+[
+"Q238587",
+"Q6941145",
+"Museums and Galleries Act 1992",
+"ukpga/1992/44",
+"P457"
+],
+[
+"Q6017123",
+"Q7242388",
+"Prevention of Terrorism Act 2005",
+"ukpga/2005/2",
+"P457"
+],
+[
+"Q3538278",
+"Q14900310",
+"Treasure Act 1996",
+"ukpga/1996/24",
+"P457"
+],
+[
+"Q5449586",
+"Q16992165",
+"Financial Services Act 2012",
+"ukpga/2012/21",
+"P457"
+],
+[
+"Q24993378",
+"Q29026461",
+"Energy Act 2016",
+"ukpga/2016/20",
+"P457"
+],
+[
+"Q60741063",
+"Q100164477",
+"Health and Social Care (National Data Guardian) Act 2018",
+"ukpga/2018/31",
+"P457"
+],
+[
+"Q5011892",
+"Q100164807",
+"Industrial Training Act 1964",
+"ukpga/1964/16",
+"P457"
+],
+[
+"Q7797746",
+"Q1510461",
+"Local Government Act 1972",
+"ukpga/1972/70",
+"P92"
+],
+[
+"Q6373",
+"Q4970370",
+"British Museum Act 1963",
+"ukpga/1963/24",
+"P92"
+],
+[
+"Q7439887",
+"Q5454875",
+"Fisheries Act 1981",
+"ukpga/1981/29",
+"P457"
+],
+[
+"Q6764168",
+"Q6764267",
+"Marine and Coastal Access Act 2009",
+"ukpga/2009/23",
+"P457"
+],
+[
+"Q6502999",
+"Q17109651",
+"Law Commissions Act 1965",
+"ukpga/1965/22",
+"P457"
+],
+[
+"Q65071973",
+"Q99538396",
+"The Legislative Reform (Regulator of Social Housing) (England) Order 2018",
+"uksi/2018/1040",
+"P457"
+],
+[
+"Q72463795",
+"Q99644474",
+"The Ebbsfleet Development Corporation (Area and Constitution) Order 2015",
+"uksi/2015/747",
+"P457"
+],
+[
+"Q7081374",
+"Q100159364",
+"Oil and Pipelines Act 1985",
+"ukpga/1985/62",
+"P457"
+],
+[
+"Q7643946",
+"Q100164416",
+"Groceries Code Adjudicator Act 2013",
+"ukpga/2013/19",
+"P92"
+],
+[
+"Q7257503",
+"Q100164974",
+"Justice (Northern Ireland) Act 2002",
+"ukpga/2002/26",
+"P457"
+]
+]
+}

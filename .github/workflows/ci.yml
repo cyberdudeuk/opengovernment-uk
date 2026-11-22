@@ -27,6 +27,12 @@ jobs:
         run: python tools/check_functions.py && python tools/check_functions.py --negative
       - name: Trends, 2020 reconciliation and 2030 scenarios
         run: python tools/check_trends.py && python tools/check_trends.py --negative
+      - name: BODS normative rules (Open Ownership's own checker; any finding fails)
+        run: |
+          libcovebods jsv docs/bods-0.4.json | python -c "import json,sys; e=json.load(sys.stdin); sys.exit(f'schema errors: {len(e)}' if e else 0)"
+          libcovebods pv docs/bods-0.4.json | python -c "import json,sys; a=json.load(sys.stdin)['additional_checks']; sys.exit(f'BODS rule findings: {len(a)}' if a else 0)"
+      - name: Nation evidence and the 2020 layer (known answers, negatives)
+        run: python tools/nation_evidence.py && python tools/nation_evidence.py --negative
       - name: Nations and documentation (known answers, traceability, negatives)
         run: python tools/nations.py && python tools/nations.py --negative && python tools/artefacts.py && python tools/artefacts.py --negative
       - name: BODS output validates against the official schema

@@ -306,6 +306,15 @@ for k, a in PFIBY.items():
     if k in CHAINS: CHAINS[k]["pfi"] = {kk: round(vv, 1) if isinstance(vv, float) else vv for kk, vv in a.items()}
 
 # ---------- write ----------
+# One link per (child, parent, relation, source, place): several Order entries (an old name and its successor) can resolve to
+# the same body; keep one link and every match method (OG-D30, found by Open Ownership's lib-cove-bods).
+_seen = {}
+for _e in EDGES:
+    _k = (_e["c"], _e["p"], _e["rel"], _e["src"], _e["ref"])
+    if _k in _seen:
+        if _e["how"] not in _seen[_k]["how"].split(" | "): _seen[_k]["how"] += " | " + _e["how"]
+    else: _seen[_k] = _e
+EDGES[:] = list(_seen.values())
 def sha(o): return hashlib.sha256(json.dumps(o, sort_keys=True).encode()).hexdigest()
 srcs = {k: {kk: v[kk] for kk in ("name", "url", "owner", "licence", "asserts", "retrieved", "sha256")} for k, v in MAN.items()}
 srcs["eao-ni"] = {"name": "Government Resources and Accounts Act (Northern Ireland) 2001 (Estimates and Accounts) (Designation of Bodies) Order 2026, S.R. 2026/49", "url": "https://www.legislation.gov.uk/nisr/2026/49/made", "owner": "Department of Finance (Northern Ireland)", "licence": "OGL v3.0", "asserts": "legal financial accountability for Northern Ireland bodies (2026-27)", "retrieved": datetime.date.today().isoformat(), "sha256": hashlib.sha256((S / "ni-eao-2026.xml").read_bytes()).hexdigest()}

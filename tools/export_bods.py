@@ -50,7 +50,7 @@ S = []
 for k in sorted(ids_needed):
     r = REG[k]; nat = (r[5] or "")[:2]
     rd = {"isComponent": False, "entityType": etype(r), "name": r[1],
-          "identifiers": [{"id": k, "scheme": "OGUK", "schemeName": "OpenGovernment UK register key"}] + [{"id": str(v), "scheme": SCHEME[f][0], "schemeName": SCHEME[f][1]} for f, v in r[10].items() if f in SCHEME and v and not isinstance(v, list)] + ([{"id": IATI[k], "scheme": "GB-GOV", "schemeName": "UK government IATI organisation identifier (FCDO)"}] if k in IATI else [])}
+          "identifiers": [{"id": k, "schemeName": "OpenGovernment UK register key"}] + [{"id": str(v), "scheme": SCHEME[f][0], "schemeName": SCHEME[f][1]} for f, v in r[10].items() if f in SCHEME and v and not isinstance(v, list)] + ([{"id": IATI[k], "scheme": "GB-GOV", "schemeName": "UK government IATI organisation identifier (FCDO)"}] if k in IATI else [])}
     if nat in JUR: rd["jurisdiction"] = {"name": JUR[nat][0], "code": JUR[nat][1]}
     elif nat in ("UK", ""): rd["jurisdiction"] = {"name": "United Kingdom", "code": "GB"}
     if r[7]: rd["foundingDate"] = r[7][:10]
@@ -64,7 +64,7 @@ for k in sorted(ids_needed):
     S.append(st)
 for i, e in enumerate(T["edges"]):
     if not e["p"] or e["p"] == e["c"]: continue
-    S.append({"statementId": sid("r", i, e["c"], e["p"], e["rel"], e["src"], T["digest"]), "statementDate": T["built"][:10], "recordId": rid(f'{e["c"]}|{e["p"]}|{e["rel"]}|{e["src"]}'),
+    S.append({"statementId": sid("r", i, e["c"], e["p"], e["rel"], e["src"], T["digest"]), "statementDate": T["built"][:10], "recordId": rid(f'{e["c"]}|{e["p"]}|{e["rel"]}|{e["src"]}|{e["ref"]}'),
               "recordType": "relationship", "recordStatus": "new", "declarationSubject": rid(e["c"]),
               "recordDetails": {"isComponent": False, "subject": rid(e["c"]), "interestedParty": rid(e["p"]), "interests": interests(e)},
               "publicationDetails": PUB, "source": src(e),

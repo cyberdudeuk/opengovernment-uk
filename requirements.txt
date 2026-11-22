@@ -7,3 +7,4 @@ python-barcode==0.16.1
 qrcode==8.2
 ruff==0.16.9
 rdflib==7.6.0
+libcovebods==0.16.0

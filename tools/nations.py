@@ -67,18 +67,62 @@ def nations_of(code: str, answerable: str) -> tuple[list[str], str]:
 def load():
     D = json.loads(re.search(r'<script[^>]*id="data"[^>]*>(.*?)</script>', (ROOT / "sources/opengovernment-uk-0.2.2.html").read_text(), re.S).group(1))
     chains = json.loads((ROOT / "data/tree.json").read_text())["chains"]
-    return D, chains
+    ev = json.loads((ROOT / "data/nation-evidence.json").read_text())["bodies"]  # tools/nation_evidence.py
+    return D, chains, ev
 
-def build(D, chains):
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import nation_evidence as NE  # noqa: E402  council matching and ONS Welsh names, shared so the two never drift
+
+LANGS_FOR = {"WA": ["cy"], "SC": ["gd", "sco"], "NI": ["ga", "sco"], "UK": ["cy", "gd", "ga", "sco"], "GB": ["cy", "gd", "ga", "sco"]}
+def names_and_sites():
+    """Official websites (Wikidata P856, current statements only), official names (P1448, and ONS Welsh names for
+    councils), and community labels (Wikidata labels, shown as community translations, dropped when they just repeat
+    the English name)."""
+    w = json.loads((ROOT / "sources/evidence/wikidata-websites-names.json").read_text())
+    site = {}
+    for q, u in w["website"]: site.setdefault(q, u)
+    off, lab = collections.defaultdict(dict), collections.defaultdict(dict)
+    for q, lang, n in w["official_name"]: off[q].setdefault(lang, n)
+    for q, lang, n in w["label"]: lab[q].setdefault(lang, n)
+    return site, off, lab, NE.lad_index()
+def to_hash(i): return "org-" + re.sub(r"[^A-Za-z0-9-]", "", i.replace(":", "--"))  # mirrors the portal's toHash
+
+BASIS = {"chain": "answers to that nation's legislature", "ons-sponsor": "ONS records its sponsor", "own-site": "its own GOV.UK page says so",
+         "register": "stated by the register", "ons-gss": "ONS local authority code", "statute": "the Act that founded it", "wikidata": "Wikidata jurisdiction",
+         "pb-2020": "2020 public bodies compilation", "companies": "where it is registered"}
+
+def build(D, chains, ev):
+    site, off, lab, lad = names_and_sites()
     out = {k: {"name": v, "branches": {"legislature": collections.defaultdict(list), "executive": collections.defaultdict(list), "judiciary": collections.defaultdict(list)}} for k, v in NATIONS.items()}
     unplaced = 0
     for r in D["r"]:
         if not r[4]: continue  # open bodies only: closed ones belong to history, not the current register
         ans = (chains.get(r[0]) or {}).get("answerable", "")
-        codes, basis = nations_of(r[5], ans)
+        e = ev.get(r[0]) or {}
+        if e.get("nations"): codes, basis, why, url = e["nations"], BASIS[e["basis"]], e.get("why", ""), e.get("url", "")
+        else:
+            codes, basis = nations_of("", ans); why, url = basis, ""
         if not codes: unplaced += 1; continue
         br, tier = branch_of(r[1], r[3], D["fam"][r[2]], ans)
-        for c in codes: out[c]["branches"][br][tier].append({"id": r[0], "name": r[1], "type": r[3], "basis": basis, "answers_to": ans})
+        path = (chains.get(r[0]) or {}).get("path") or []
+        parent = path[0]["to"] if path else ""
+        q, ids = r[10].get("wikidata"), r[10]
+        langs = sorted({lg for c in codes for lg in LANGS_FOR.get(c, [])})
+        nm = []
+        ck = NE.council_key(r[1])
+        if ck and ck in lad and lad[ck][2] and "cy" in langs: nm.append({"lang": "cy", "name": lad[ck][2], "src": "official (ONS)"})
+        for lg in langs:
+            if any(x["lang"] == lg for x in nm): continue
+            if q and lg in off.get(q, {}) and NE.clean(off[q][lg]) == NE.clean(r[1]): continue
+            if q and lg in off.get(q, {}): nm.append({"lang": lg, "name": off[q][lg], "src": "official name (Wikidata)"})
+            elif q and lg in lab.get(q, {}) and NE.clean(lab[q][lg]) != NE.clean(r[1]): nm.append({"lang": lg, "name": lab[q][lg], "src": "community translation (Wikidata)"})
+        web = site.get(q, "") if q else ""
+        govuk = f"https://www.gov.uk/government/organisations/{ids['govuk_slug']}" if ids.get("govuk_slug") else ""
+        if web.rstrip("/") == govuk.rstrip("/"): web = ""
+        if not web and r[9] and "gov.uk/government/organisations" not in r[9]: web = r[9]
+        multi = [c for c in codes if c in ("EN", "SC", "WA", "NI")]
+        for c in codes: out[c]["branches"][br][tier].append({"id": r[0], "name": r[1], "type": r[3], "basis": basis, "why": why, "url": url, "p": parent, "answers_to": ans,
+                                                             "h": to_hash(r[0]), "web": web, "gov": govuk, "names": nm, "nations": codes if (len(multi) > 1 or "UK" in codes) else []})
     for c, n in out.items():
         n["apex"] = {br: [{"name": a, "basis": b, "url": u} for a, b, u in v] for br, v in APEX.get(c, {}).items()}
         n["uk_apex"] = {br: [{"name": a, "basis": b, "url": u} for a, b, u in v] for br, v in UK_APEX.items()} if c in ("EN", "SC", "WA", "NI") else {}
@@ -95,7 +139,8 @@ def check(out, unplaced, D):
     # Known answers must be FOUND: a known answer that silently matches nothing proves nothing (D-OG17).
     for name, want in [("The Scottish Government", ("SC", "executive")), ("Scottish Parliamentary Corporate Body", ("SC", "legislature")),
                        ("Northern Ireland Assembly Commission", ("NI", "legislature")), ("Welsh Government", ("WA", "executive")),
-                       ("Scottish Courts and Tribunals Service", ("SC", "judiciary")), ("Supreme Court of the United Kingdom", ("GB", "judiciary")),
+                       ("Scottish Courts and Tribunals Service", ("SC", "judiciary")), ("Supreme Court of the United Kingdom", ("UK", "judiciary")), ("HM Land Registry", ("WA", "executive")), ("Estyn", ("WA", "executive")),
+                       ("Aberdeen City Council", ("SC", "executive")),
                        ("Houses of Parliament", ("GB", "legislature")), ("Parliamentary Boundary Commission for England", ("EN", "executive"))]:
         if want not in where(name): p.append(f"{name}: expected {want}, got {sorted(where(name))}")
     for c in ("EN", "SC", "WA", "NI", "GB"):
@@ -110,50 +155,24 @@ def check(out, unplaced, D):
     if len(placed) + unplaced != sum(1 for r in D["r"] if r[4]): p.append("open bodies not all accounted for")
     return p
 
-PAGE = """<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OpenGovernment UK: the state, nation by nation</title>
-<style>:root{--bg:#f6f2ea;--paper:#fffdf8;--ink:#1c1a17;--muted:#5a544b;--line:#ddd3c3;--hi:#b6391f;--leg:#2f5d8a;--exe:#2e6b4f;--jud:#7a4b8c;--focus:#1c5bd6}@media(prefers-color-scheme:dark){:root{--bg:#14120f;--paper:#1c1915;--ink:#efe9de;--muted:#b4aa9a;--line:#3a342b;--hi:#ff8a6e;--leg:#8cb8e6;--exe:#86c9a6;--jud:#c9a3dc;--focus:#8ab4ff}}
-*{box-sizing:border-box}body{margin:0;font:16px/1.5 Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink)}header,footer{padding:18px 24px;background:var(--paper);border-bottom:1px solid var(--line)}footer{border-top:1px solid var(--line);border-bottom:0;color:var(--muted);font-size:.85rem}
-h1{font:700 1.5rem Georgia,serif;margin:0 0 4px}h2{font:700 1.2rem Georgia,serif;margin:0 0 8px}p{margin:0;color:var(--muted)}main{padding:16px 24px;max-width:1200px}
-[role=tablist]{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}[role=tab]{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);cursor:pointer}[role=tab][aria-selected=true]{background:var(--ink);color:var(--paper)}
-button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:10px 0 16px}@media(max-width:640px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}.kpi{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px}.kpi b{display:block;font-size:1.5rem}
-.bar{display:flex;height:14px;border-radius:7px;overflow:hidden;gap:2px;margin:6px 0 14px}.bar span{display:block}
-.branch{border-left:5px solid var(--c);background:var(--paper);border-radius:10px;padding:10px 14px;margin:0 0 12px}.branch h3{margin:0 0 6px;font-size:1rem}
-details{border-top:1px solid var(--line);padding:6px 0}summary{cursor:pointer}ul{margin:6px 0 4px;padding-left:20px;columns:2;column-gap:28px}@media(max-width:700px){ul{columns:1}}li{break-inside:avoid;font-size:.9rem}li small{color:var(--muted)}
-label{display:block;margin:0 0 10px}input{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;width:100%;max-width:420px;background:var(--paper);color:var(--ink)}.note{font-size:.85rem;margin:8px 0}.apex{color:var(--ink);margin:0 0 6px;font-size:.92rem}.apex small{color:var(--muted)}a{color:var(--hi)}</style></head><body>
-<header><h1>The state, nation by nation</h1><p>Every open public body associated with each nation, split into the three branches of the state. A nation is shown only where a register states it, or where the body answers to that nation's legislature.</p></header>
-<main><div role="tablist" id="tabs" aria-label="Nations"></div><section id="panel" role="tabpanel" aria-live="polite"></section>
-<p class="note">Bodies answering to the UK Parliament that state no territorial extent are shown under “UK Government, extent not stated”, rather than guessed as England-only. The top of each branch is stated from its founding legislation, linked; the legislatures themselves are not yet register records. Court administration and judicial appointments bodies are counted with the judiciary, in their own tier, although they do not judge cases. __UNPLACED__ open bodies have no nation in any source and are not shown.</p></main>
-<footer>OpenGovernment UK, an open-source public good. <a href="./">Back to the register</a> · <a href="./navigator.html">Documentation and traceability</a> · Data: <a href="https://github.com/cyberdudeuk/opengovernment-uk/blob/main/data/nations.json">nations.json</a></footer>
-<script id="nd" type="application/json">__DATA__</script>
-<script>"use strict";
-const N=JSON.parse(document.getElementById("nd").textContent),esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const B=[["legislature","Legislature","--leg"],["executive","Executive","--exe"],["judiciary","Judiciary","--jud"]],order=["EN","SC","WA","NI","UK","GB","OT","CD"];
-const tabs=document.getElementById("tabs");tabs.innerHTML=order.map((k,i)=>`<button role="tab" id="t-${k}" aria-selected="${i===0}" aria-controls="panel" tabindex="${i===0?0:-1}" data-k="${k}">${esc(N[k].name)}</button>`).join("");
-const apex=(xs,label)=>xs&&xs.length?`<p class="apex"><b>${label}:</b> ${xs.map(a=>`${esc(a.name)}${a.basis?` <small>(${a.url?`<a href="${esc(a.url)}">${esc(a.basis)}</a>`:esc(a.basis)})</small>`:""}`).join("; ")}</p>`:"";
-let q="";function show(k){const n=N[k],tot=B.reduce((s,b)=>s+n.counts[b[0]],0);
-document.querySelectorAll("[role=tab]").forEach(t=>{const on=t.dataset.k===k;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1});
-const f=x=>!q||x.name.toLowerCase().includes(q);
-document.getElementById("panel").innerHTML=`<h2>${esc(n.name)}</h2><div class="kpis"><div class="kpi"><b>${tot}</b>open bodies</div>${B.map(b=>`<div class="kpi"><b>${n.counts[b[0]]}</b>${b[1].toLowerCase()}</div>`).join("")}</div>
-<div class="bar" role="img" aria-label="${B.map(b=>b[1]+" "+n.counts[b[0]]).join(", ")}">${B.map(b=>`<span style="flex:${n.counts[b[0]]};background:var(${b[2]})"></span>`).join("")}</div>
-<label>Filter this nation by name <input id="q" type="search" value="${esc(q)}" autocomplete="off"></label>
-${B.map(b=>`<section class="branch" style="--c:var(${b[2]})"><h3>${b[1]} · ${n.counts[b[0]]} bodies in the register</h3>${apex(n.apex[b[0]],"At the top")}${apex(n.uk_apex[b[0]],"For reserved matters, the UK level")}${Object.entries(n.branches[b[0]]).map(([tier,xs])=>{const v=xs.filter(f);return v.length?`<details${q?" open":""}><summary>${esc(tier)} (${v.length})</summary><ul>${v.map(x=>`<li>${esc(x.name)} <small>${esc(x.type)} · ${esc(x.basis)}</small></li>`).join("")}</ul></details>`:""}).join("")||"<p>None in the sources.</p>"}</section>`).join("")}`;
-const i=document.getElementById("q");i.addEventListener("input",()=>{q=i.value.trim().toLowerCase();const p=i.selectionStart;show(k);const j=document.getElementById("q");j.focus();j.setSelectionRange(p,p)})}
-tabs.addEventListener("click",e=>{const t=e.target.closest("[role=tab]");if(t)show(t.dataset.k)});
-tabs.addEventListener("keydown",e=>{if(!["ArrowRight","ArrowLeft"].includes(e.key))return;const ts=[...tabs.children],i=ts.indexOf(document.activeElement),n=ts[(i+(e.key==="ArrowRight"?1:ts.length-1))%ts.length];n.focus();show(n.dataset.k)});
-show(order[0]);
-</script></body></html>"""
+PAGE = (pathlib.Path(__file__).resolve().parent / "nations-page.html").read_text()
 
 if __name__ == "__main__":
-    D, chains = load(); out, unplaced = build(D, chains)
+    D, chains, ev = load(); out, unplaced = build(D, chains, ev)
     _orig = branch_of
     if "--negative" in sys.argv:  # break the judiciary rule: the known answers must catch it
         globals()["branch_of"] = lambda n, t, f, a: ("executive", "x")
-        bad, _ = build(D, chains); ok = bool(check(bad, _, D)); print("caught branch break" if ok else "MISSED branch break")
-        globals()["branch_of"] = _orig; out2, u2 = build(D, chains); out2["SC"]["apex"]["judiciary"] = []
+        bad, _ = build(D, chains, ev); ok = bool(check(bad, _, D)); print("caught branch break" if ok else "MISSED branch break")
+        globals()["branch_of"] = _orig; out2, u2 = build(D, chains, ev); out2["SC"]["apex"]["judiciary"] = []
         ok2 = bool(check(out2, u2, D)); print("caught missing apex" if ok2 else "MISSED missing apex"); sys.exit(0 if ok and ok2 else 1)
     probs = check(out, unplaced, D)
+    final = {x["id"]: x.get("nations") or [c] for c, n in out.items() for t in n["branches"].values() for v in t.values() for x in v}
+    (ROOT / "data/body-nations.json").write_text(json.dumps(final, separators=(",", ":")))  # final placement, read by the portal
     for f in ("data/nations.json", "docs/nations.json"): (ROOT / f).write_text(json.dumps({"nations": out, "unplaced_open_bodies": unplaced}, indent=1))
-    (ROOT / "docs/nations.html").write_text(PAGE.replace("__DATA__", json.dumps(out).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
+    evd = json.loads((ROOT / "data/nation-evidence.json").read_text())
+    placed = {x["id"] for n in out.values() for t in n["branches"].values() for v in t.values() for x in v}
+    unl = sorted(({"id": r[0], "name": r[1], "type": r[3].replace("\n", " ")} for r in D["r"] if r[4] and r[0] not in placed), key=lambda x: x["name"])
+    payload = {"nations": out, "conflicts": evd["conflicts"], "unplaced": unl}
+    (ROOT / "docs/nations.html").write_text(PAGE.replace("__DATA__", json.dumps(payload).replace("</", "<\\/")).replace("__UNPLACED__", str(unplaced)))
     for k, n in out.items(): print(f"{k:3} {n['name']:36} {n['counts']}")
     print("unplaced", unplaced, "problems", probs); sys.exit(1 if probs else 0)
