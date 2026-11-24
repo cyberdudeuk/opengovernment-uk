@@ -1,5 +1,5 @@
 {
- "about": "Bodies, status questions and machinery-of-government events that ANA (Anatomy of Government, a govukOS app being retired) held and this register does not. Nothing here is in the register yet. Each entry keeps ANA's own wording as its origin and lists the official source to read. A maintainer reads that source before any entry is added, then sets the status to 'added' and records the register id. Sources marked read_by Cadastre were read from the official directories on 4 October 2026 by another govukOS app; they are a pointer, not a reading by this register.",
+ "about": "Bodies, status questions and machinery-of-government events that ANA (Anatomy of Government, a govukOS app being retired) held and this register does not. Nothing here is in the register yet. Each entry keeps ANA's own wording as its origin and lists the official source to read. A maintainer reads that source before any entry is added, sets the status to 'confirmed' with what the source says (read_here), and to 'added' once the register holds it and records the register id. Sources marked read_by Cadastre were read from the official directories on 4 October 2026 by another govukOS app; they are a pointer, not a reading by this register.",
  "licence": "Facts come from the sources named on each entry, under each source's own terms (Open Government Licence v3.0 for GOV.UK, gov.scot and gov.wales; Open Parliament Licence for UK Parliament pages). Notes are by this register, CC BY 4.0.",
  "prepared": "2026-11-24",
  "origin": "ANA source file version 1794096244-f8f9; ANA fold register rows D073 (bodies) and V049 (what is new)",
@@ -9,7 +9,8 @@
   "waiting": "not yet established",
   "added": "in the register; id recorded",
   "corrected": "the register now agrees with the source",
-  "rejected": "the source shows it does not belong; reason recorded"
+  "rejected": "the source shows it does not belong; reason recorded",
+  "confirmed": "read at source by this register on the date given; ready to add or correct"
  },
  "entries": [
   {
@@ -20,13 +21,21 @@
    "type": "Company owned by the Department of Health and Social Care",
    "status": "needs-source",
    "sources": [],
-   "note": "Read the Companies House record and DHSC's own statement of ownership before adding.",
+   "note": "Companies House confirms the company exists and is active. Its ownership by DHSC is not yet read at source; read DHSC's annual report and accounts before adding.",
    "origin": {
     "ana_name": "NHS Property Services",
     "ana_department": "DHSC",
     "ana_type": "govco",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://find-and-update.company-information.service.gov.uk/company/07888110",
+     "title": "Companies House: NHS PROPERTY SERVICES LIMITED (07888110)",
+     "read": "2026-11-24",
+     "says": "Company status active; private limited company incorporated 20 December 2011."
+    }
+   ]
   },
   {
    "id": "ANA-B02",
@@ -66,7 +75,7 @@
    "name": "Transport Scotland",
    "nation": "SC",
    "type": "Executive agency of the Scottish Government",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Scottish Government: National public bodies directory, executive agencies",
@@ -82,7 +91,15 @@
     "ana_department": "Holyrood",
     "ana_type": "ea",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-agencies/",
+     "title": "Scottish Government national public bodies directory, executive agencies (last updated 2 October 2026)",
+     "read": "2026-11-24",
+     "says": "Lists Transport Scotland as an executive agency, established 2006."
+    }
+   ]
   },
   {
    "id": "ANA-B05",
@@ -90,7 +107,7 @@
    "name": "Qualifications Scotland",
    "nation": "SC",
    "type": "Executive non-departmental public body",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Scottish Government: National public bodies directory, executive non-departmental public bodies",
@@ -106,7 +123,15 @@
     "ana_department": "Holyrood",
     "ana_type": "ndpb-exec",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-non-departmental-public-bodies/",
+     "title": "Scottish Government national public bodies directory, executive NDPBs (last updated 2 October 2026)",
+     "read": "2026-11-24",
+     "says": "Lists Qualifications Scotland as an executive NDPB, established 2026; the directory's change log says it now replaces the Scottish Qualifications Authority."
+    }
+   ]
   },
   {
    "id": "ANA-B06",
@@ -116,7 +141,7 @@
    "type": "Non-ministerial office",
    "status": "needs-source",
    "sources": [],
-   "note": "Not in the directory pages Cadastre read; read the directory's non-ministerial offices page.",
+   "note": "Not on any page of the Scottish Government directory read on 24 November 2026 (non-ministerial offices, executive agencies, NDPBs, other significant national bodies). Find its founding instrument or its own official page.",
    "origin": {
     "ana_name": "Crown Office & Procurator Fiscal Service",
     "ana_department": "Holyrood",
@@ -130,7 +155,7 @@
    "name": "Disclosure Scotland",
    "nation": "SC",
    "type": "Executive agency of the Scottish Government",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Scottish Government: National public bodies directory, executive agencies",
@@ -146,7 +171,15 @@
     "ana_department": "Holyrood",
     "ana_type": "ea",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-agencies/",
+     "title": "Scottish Government national public bodies directory, executive agencies (last updated 2 October 2026)",
+     "read": "2026-11-24",
+     "says": "Lists Disclosure Scotland as an executive agency, established 2009."
+    }
+   ]
   },
   {
    "id": "ANA-B08",
@@ -154,7 +187,7 @@
    "name": "Accountant in Bankruptcy",
    "nation": "SC",
    "type": "Executive agency of the Scottish Government",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Scottish Government: National public bodies directory, executive agencies",
@@ -170,7 +203,15 @@
     "ana_department": "Holyrood",
     "ana_type": "ea",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-agencies/",
+     "title": "Scottish Government national public bodies directory, executive agencies (last updated 2 October 2026)",
+     "read": "2026-11-24",
+     "says": "Lists Accountant in Bankruptcy as an executive agency, established 1985."
+    }
+   ]
   },
   {
    "id": "ANA-B09",
@@ -178,7 +219,7 @@
    "name": "National Museum Wales (Amgueddfa Cymru)",
    "nation": "WA",
    "type": "Welsh Government sponsored body",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Welsh Government: Public Sector Equality Duty, organisations covered",
@@ -194,7 +235,15 @@
     "ana_department": "Senedd",
     "ana_type": "ndpb-exec",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.wales/public-sector-equality-duty-html",
+     "title": "Welsh Government, Public Sector Equality Duty organisations covered (last updated 23 August 2023)",
+     "read": "2026-11-24",
+     "says": "Lists National Museum Wales among Welsh public bodies covered by the duty."
+    }
+   ]
   },
   {
    "id": "ANA-B10",
@@ -202,15 +251,29 @@
    "name": "Adjudication Panel for Wales",
    "nation": "WA",
    "type": "Tribunal",
-   "status": "needs-source",
-   "sources": [],
-   "note": "Not on the Welsh Government list Cadastre read; read the Welsh Tribunals pages.",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Welsh Government: Adjudication Panel for Wales organisation page",
+     "url": "https://www.gov.wales/adjudication-panel-wales",
+     "names_it_as": "Adjudication Panel for Wales"
+    }
+   ],
+   "note": "gov.wales confirms it exists. Read its founding provision (Local Government Act 2000, Part 3) before adding.",
    "origin": {
     "ana_name": "Adjudication Panel for Wales",
     "ana_department": "Senedd",
     "ana_type": "ndpb-trib",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.wales/adjudication-panel-wales",
+     "title": "Welsh Government: Adjudication Panel for Wales",
+     "read": "2026-11-24",
+     "says": "An independent tribunal determining alleged breaches of an authority's code of conduct for members."
+    }
+   ]
   },
   {
    "id": "ANA-B11",
@@ -218,7 +281,7 @@
    "name": "Auditor General for Wales; Audit Wales",
    "nation": "WA",
    "type": "Office and body accountable to the Senedd",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Welsh Government: Public Sector Equality Duty, organisations covered",
@@ -241,7 +304,15 @@
     "ana_department": "Senedd",
     "ana_type": "parl",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.wales/public-sector-equality-duty-html",
+     "title": "Welsh Government, Public Sector Equality Duty organisations covered (last updated 23 August 2023)",
+     "read": "2026-11-24",
+     "says": "Lists Audit Wales and the Auditor General for Wales as other public authorities."
+    }
+   ]
   },
   {
    "id": "ANA-B12",
@@ -249,15 +320,29 @@
    "name": "Future Generations Commissioner for Wales",
    "nation": "WA",
    "type": "Commissioner",
-   "status": "needs-source",
-   "sources": [],
-   "note": "Set up by the Well-being of Future Generations (Wales) Act 2015; cite the Act section and the body's own page.",
+   "status": "confirmed",
+   "sources": [
+    {
+     "title": "Well-being of Future Generations (Wales) Act 2015, section 17",
+     "url": "https://www.legislation.gov.uk/anaw/2015/2/section/17",
+     "names_it_as": "Future Generations Commissioner for Wales"
+    }
+   ],
+   "note": "Established by section 17 of the Well-being of Future Generations (Wales) Act 2015.",
    "origin": {
     "ana_name": "Future Generations Commissioner",
     "ana_department": "Senedd",
     "ana_type": "ndpb-exec",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.legislation.gov.uk/anaw/2015/2/section/17",
+     "title": "Well-being of Future Generations (Wales) Act 2015, section 17",
+     "read": "2026-11-24",
+     "says": "Section 17 is headed 'Future Generations Commissioner for Wales' and provides that there is to be such a commissioner."
+    }
+   ]
   },
   {
    "id": "ANA-B13",
@@ -265,15 +350,23 @@
    "name": "NHS Wales Executive",
    "nation": "WA",
    "type": "Part of NHS Wales",
-   "status": "needs-source",
+   "status": "rejected",
    "sources": [],
-   "note": "ANA's name 'Meddygfa' (Welsh for a GP surgery) looks wrong; check whether NHS Wales Executive is a separate body or part of a hosted organisation.",
+   "note": "Not a separate body: the former NHS Wales Executive is now NHS Wales Performance and Improvement, a support function made of existing NHS Wales teams. ANA's name 'Meddygfa' was wrong.",
    "origin": {
     "ana_name": "Meddygfa / NHS Wales Executive",
     "ana_department": "Senedd",
     "ana_type": "special",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://performanceandimprovement.nhs.wales/about-us/",
+     "title": "NHS Wales Performance and Improvement, about us",
+     "read": "2026-11-24",
+     "says": "A national support function operational from 1 April 2023; 'we aren't a new organisation': existing national NHS Wales teams brought together."
+    }
+   ]
   },
   {
    "id": "ANA-B14",
@@ -281,7 +374,7 @@
    "name": "Education Authority",
    "nation": "NI",
    "type": "Non-departmental public body of the Department of Education",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Commissioner for Public Appointments for Northern Ireland: list of bodies we regulate",
@@ -297,14 +390,22 @@
     "ana_department": "Stormont",
     "ana_type": "ndpb-exec",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.publicappointmentsni.org/list-bodies-we-regulate",
+     "title": "Commissioner for Public Appointments for Northern Ireland, list of bodies regulated",
+     "read": "2026-11-24",
+     "says": "Lists the Education Authority among bodies regulated."
+    }
+   ]
   },
   {
    "id": "ANA-S01",
    "kind": "status",
    "name": "Tourism Northern Ireland",
    "register_id": "government-organisation:OT820",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Commissioner for Public Appointments for Northern Ireland: list of bodies we regulate",
@@ -314,19 +415,27 @@
      "read": "2026-10-04"
     }
    ],
-   "note": "The register records this body as closed; the Northern Ireland Commissioner's list read on 4 Oct 2026 names it as a body regulated today.",
+   "note": "The register records this body as closed; the Northern Ireland Commissioner for Public Appointments lists it as a body regulated today (read 4 October and again 24 November 2026). Root cause: GOV.UK set this body's page to closed on 15 April 2021 and pointed it to the Northern Ireland Executive; that retired the GOV.UK page, not the body. 52 bodies were treated the same way: see issue #4.",
    "origin": {
     "ana_name": "Tourism NI",
     "ana_department": "Stormont",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.publicappointmentsni.org/list-bodies-we-regulate",
+     "title": "Commissioner for Public Appointments for Northern Ireland, list of bodies regulated",
+     "read": "2026-11-24",
+     "says": "Lists Tourism Northern Ireland among bodies regulated today."
+    }
+   ]
   },
   {
    "id": "ANA-S02",
    "kind": "status",
    "name": "Northern Ireland Local Government Officers’ Superannuation Committee",
    "register_id": "government-organisation:OT758",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Commissioner for Public Appointments for Northern Ireland: list of bodies we regulate",
@@ -336,33 +445,49 @@
      "read": "2026-10-04"
     }
    ],
-   "note": "The register records this body as closed; the Northern Ireland Commissioner's list read on 4 Oct 2026 names it as a body regulated today.",
+   "note": "The register records this body as closed; the Northern Ireland Commissioner for Public Appointments lists it as a body regulated today (read 4 October and again 24 November 2026). Root cause: GOV.UK set this body's page to closed on 15 April 2021 and pointed it to the Northern Ireland Executive; that retired the GOV.UK page, not the body. 52 bodies were treated the same way: see issue #4.",
    "origin": {
     "ana_name": "NI Local Government Officers’ Superannuation Cttee",
     "ana_department": "Stormont",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.publicappointmentsni.org/list-bodies-we-regulate",
+     "title": "Commissioner for Public Appointments for Northern Ireland, list of bodies regulated",
+     "read": "2026-11-24",
+     "says": "Lists the Northern Ireland Local Government Officers' Superannuation Committee (NILGOSC) among bodies regulated today."
+    }
+   ]
   },
   {
    "id": "ANA-S03",
    "kind": "status",
    "name": "Northern Ireland Audit Office",
    "register_id": "government-organisation:OT634",
-   "status": "needs-source",
+   "status": "confirmed",
    "sources": [],
-   "note": "The register records this body as closed; ANA shows it as current. No source read yet: read the Audit Office's own page and the Audit (Northern Ireland) Order 1987.",
+   "note": "The register records this body as closed; ANA shows it as current. Its own website shows it operating in 2026. Root cause: GOV.UK set this body's page to closed on 15 April 2021 and pointed it to the Northern Ireland Executive; that retired the GOV.UK page, not the body. 52 bodies were treated the same way: see issue #4.",
    "origin": {
     "ana_name": "NI Audit Office",
     "ana_department": "Stormont",
     "fold_row": "D073"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.niauditoffice.gov.uk/",
+     "title": "Northern Ireland Audit Office, own website",
+     "read": "2026-11-24",
+     "says": "Operating and publishing reports in 2026, including the Local Government Auditor's Report 2026."
+    }
+   ]
   },
   {
    "id": "ANA-E01",
    "kind": "event",
    "name": "Change of Prime Minister",
    "date": "2026-07-20",
-   "status": "to-read",
+   "status": "rejected",
    "sources": [
     {
      "title": "Cabinet Office ministers (GOV.UK)",
@@ -370,7 +495,7 @@
      "cited_by": "ANA"
     }
    ],
-   "note": "ANA marked this 'corroborated'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "note": "Not recorded here: a change of office holder is not a change to bodies or functions, and this register names no office holders. The machinery changes that followed are ANA-E02 to ANA-E04.",
    "origin": {
     "ana_dataset": "GOVNEWS",
     "fold_row": "V049"
@@ -381,7 +506,7 @@
    "kind": "event",
    "name": "No.10 North established",
    "date": "2026-07-21",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Cabinet Office fact sheet (GOV.UK)",
@@ -394,18 +519,32 @@
      "cited_by": "ANA"
     }
    ],
-   "note": "ANA marked this 'verified'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "note": "Read at both sources on 24 November 2026. The statement is dated 21 July 2026 and says the changes take practical effect that day; the fact sheet was published 22 July. Record only the change to bodies and functions, never the names of office holders.",
    "origin": {
     "ana_dataset": "GOVNEWS",
     "fold_row": "V049"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.uk/government/news/machinery-of-government-changes-fact-sheet",
+     "title": "Cabinet Office, Machinery of Government changes: fact sheet (published 22 July 2026)",
+     "read": "2026-11-24",
+     "says": "No.10 North established; local economic growth and devolution strategy moves from MHCLG and local economic growth policy from HM Treasury."
+    },
+    {
+     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-07-21/hlws298",
+     "title": "Written statement HLWS298, 21 July 2026",
+     "read": "2026-11-24",
+     "says": "Same transfers; MHCLG and HM Treasury keep some remaining functions; changes take practical effect from 21 July 2026."
+    }
+   ]
   },
   {
    "id": "ANA-E03",
    "kind": "event",
    "name": "Office for the Prime Minister and Cabinet (OPMC) created",
    "date": "2026-07-21",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Cabinet Office fact sheet (GOV.UK)",
@@ -418,18 +557,32 @@
      "cited_by": "ANA"
     }
    ],
-   "note": "ANA marked this 'verified'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "note": "Read at both sources on 24 November 2026. The statement is dated 21 July 2026 and says the changes take practical effect that day; the fact sheet was published 22 July. Record only the change to bodies and functions, never the names of office holders.",
    "origin": {
     "ana_dataset": "GOVNEWS",
     "fold_row": "V049"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.uk/government/news/machinery-of-government-changes-fact-sheet",
+     "title": "Cabinet Office, Machinery of Government changes: fact sheet (published 22 July 2026)",
+     "read": "2026-11-24",
+     "says": "Office for the Prime Minister and the Cabinet created, housing No.10, No.10 North and core Cabinet Office functions serving the PM and Cabinet."
+    },
+    {
+     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-07-21/hlws298",
+     "title": "Written statement HLWS298, 21 July 2026",
+     "read": "2026-11-24",
+     "says": "OPMC led by the Cabinet Secretary; effective 21 July 2026."
+    }
+   ]
   },
   {
    "id": "ANA-E04",
    "kind": "event",
    "name": "OneGov Delivery Agency established",
    "date": "2026-07-21",
-   "status": "to-read",
+   "status": "confirmed",
    "sources": [
     {
      "title": "Cabinet Office fact sheet (GOV.UK)",
@@ -442,11 +595,25 @@
      "cited_by": "ANA"
     }
    ],
-   "note": "ANA marked this 'corroborated'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "note": "Read at both sources on 24 November 2026. The statement is dated 21 July 2026 and says the changes take practical effect that day; the fact sheet was published 22 July. Record only the change to bodies and functions, never the names of office holders.",
    "origin": {
     "ana_dataset": "GOVNEWS",
     "fold_row": "V049"
-   }
+   },
+   "read_here": [
+    {
+     "url": "https://www.gov.uk/government/news/machinery-of-government-changes-fact-sheet",
+     "title": "Cabinet Office, Machinery of Government changes: fact sheet (published 22 July 2026)",
+     "read": "2026-11-24",
+     "says": "OneGov Delivery Agency to be established within the Cabinet Office family, running operational services at arm's length: Government Recruitment Service, Pensions, Shared Services, Government Car Service, Security Vetting."
+    },
+    {
+     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-07-21/hlws298",
+     "title": "Written statement HLWS298, 21 July 2026",
+     "read": "2026-11-24",
+     "says": "Overseen by the OPMC; the statement's list omits the Government Car Service."
+    }
+   ]
   }
  ]
 }
