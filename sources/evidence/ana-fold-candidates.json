@@ -1,0 +1,452 @@
+{
+ "about": "Bodies, status questions and machinery-of-government events that ANA (Anatomy of Government, a govukOS app being retired) held and this register does not. Nothing here is in the register yet. Each entry keeps ANA's own wording as its origin and lists the official source to read. A maintainer reads that source before any entry is added, then sets the status to 'added' and records the register id. Sources marked read_by Cadastre were read from the official directories on 4 October 2026 by another govukOS app; they are a pointer, not a reading by this register.",
+ "licence": "Facts come from the sources named on each entry, under each source's own terms (Open Government Licence v3.0 for GOV.UK, gov.scot and gov.wales; Open Parliament Licence for UK Parliament pages). Notes are by this register, CC BY 4.0.",
+ "prepared": "2026-11-24",
+ "origin": "ANA source file version 1794096244-f8f9; ANA fold register rows D073 (bodies) and V049 (what is new)",
+ "statuses": {
+  "to-read": "an official source names it; read it there before adding",
+  "needs-source": "no official source held yet",
+  "waiting": "not yet established",
+  "added": "in the register; id recorded",
+  "corrected": "the register now agrees with the source",
+  "rejected": "the source shows it does not belong; reason recorded"
+ },
+ "entries": [
+  {
+   "id": "ANA-B01",
+   "kind": "body",
+   "name": "NHS Property Services Limited",
+   "nation": "EN",
+   "type": "Company owned by the Department of Health and Social Care",
+   "status": "needs-source",
+   "sources": [],
+   "note": "Read the Companies House record and DHSC's own statement of ownership before adding.",
+   "origin": {
+    "ana_name": "NHS Property Services",
+    "ana_department": "DHSC",
+    "ana_type": "govco",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B02",
+   "kind": "body",
+   "name": "Great British Railways",
+   "nation": "EN+WA+SC",
+   "type": "Public corporation (planned)",
+   "status": "waiting",
+   "sources": [],
+   "note": "Add only once the body exists in law; the transition team sits inside the Department for Transport today.",
+   "origin": {
+    "ana_name": "Great British Railways (transition)",
+    "ana_department": "DfT",
+    "ana_type": "pubcorp",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B03",
+   "kind": "body",
+   "name": "Restoration and Renewal Client Board; Restoration and Renewal Delivery Authority",
+   "nation": "UK",
+   "type": "Parliamentary bodies",
+   "status": "needs-source",
+   "sources": [],
+   "note": "Read both from the UK Parliament's own pages.",
+   "origin": {
+    "ana_name": "Restoration & Renewal",
+    "ana_department": "Legislature",
+    "ana_type": "parl",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B04",
+   "kind": "body",
+   "name": "Transport Scotland",
+   "nation": "SC",
+   "type": "Executive agency of the Scottish Government",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Scottish Government: National public bodies directory, executive agencies",
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-agencies/",
+     "names_it_as": "Transport Scotland",
+     "read_by": "Cadastre (govukOS) devolved read, row DV80",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "",
+   "origin": {
+    "ana_name": "Transport Scotland",
+    "ana_department": "Holyrood",
+    "ana_type": "ea",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B05",
+   "kind": "body",
+   "name": "Qualifications Scotland",
+   "nation": "SC",
+   "type": "Executive non-departmental public body",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Scottish Government: National public bodies directory, executive non-departmental public bodies",
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-non-departmental-public-bodies/",
+     "names_it_as": "Qualifications Scotland",
+     "read_by": "Cadastre (govukOS) devolved read, row DV22",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "Successor to the Scottish Qualifications Authority, which the register holds; record the succession, not a second body.",
+   "origin": {
+    "ana_name": "Qualifications Scotland (SQA)",
+    "ana_department": "Holyrood",
+    "ana_type": "ndpb-exec",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B06",
+   "kind": "body",
+   "name": "Crown Office and Procurator Fiscal Service",
+   "nation": "SC",
+   "type": "Non-ministerial office",
+   "status": "needs-source",
+   "sources": [],
+   "note": "Not in the directory pages Cadastre read; read the directory's non-ministerial offices page.",
+   "origin": {
+    "ana_name": "Crown Office & Procurator Fiscal Service",
+    "ana_department": "Holyrood",
+    "ana_type": "ministerial",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B07",
+   "kind": "body",
+   "name": "Disclosure Scotland",
+   "nation": "SC",
+   "type": "Executive agency of the Scottish Government",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Scottish Government: National public bodies directory, executive agencies",
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-agencies/",
+     "names_it_as": "Disclosure Scotland",
+     "read_by": "Cadastre (govukOS) devolved read, row DV71",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "",
+   "origin": {
+    "ana_name": "Disclosure Scotland",
+    "ana_department": "Holyrood",
+    "ana_type": "ea",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B08",
+   "kind": "body",
+   "name": "Accountant in Bankruptcy",
+   "nation": "SC",
+   "type": "Executive agency of the Scottish Government",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Scottish Government: National public bodies directory, executive agencies",
+     "url": "https://www.gov.scot/publications/national-public-bodies-directory/pages/executive-agencies/",
+     "names_it_as": "Accountant in Bankruptcy",
+     "read_by": "Cadastre (govukOS) devolved read, row DV70",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "",
+   "origin": {
+    "ana_name": "Accountant in Bankruptcy",
+    "ana_department": "Holyrood",
+    "ana_type": "ea",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B09",
+   "kind": "body",
+   "name": "National Museum Wales (Amgueddfa Cymru)",
+   "nation": "WA",
+   "type": "Welsh Government sponsored body",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Welsh Government: Public Sector Equality Duty, organisations covered",
+     "url": "https://www.gov.wales/public-sector-equality-duty-html",
+     "names_it_as": "National Museum Wales",
+     "read_by": "Cadastre (govukOS) devolved read, row DV110",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "The Welsh Government list names it National Museum Wales; check the legal name at the body's own page.",
+   "origin": {
+    "ana_name": "Amgueddfa Cymru – Museums Wales",
+    "ana_department": "Senedd",
+    "ana_type": "ndpb-exec",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B10",
+   "kind": "body",
+   "name": "Adjudication Panel for Wales",
+   "nation": "WA",
+   "type": "Tribunal",
+   "status": "needs-source",
+   "sources": [],
+   "note": "Not on the Welsh Government list Cadastre read; read the Welsh Tribunals pages.",
+   "origin": {
+    "ana_name": "Adjudication Panel for Wales",
+    "ana_department": "Senedd",
+    "ana_type": "ndpb-trib",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B11",
+   "kind": "body",
+   "name": "Auditor General for Wales; Audit Wales",
+   "nation": "WA",
+   "type": "Office and body accountable to the Senedd",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Welsh Government: Public Sector Equality Duty, organisations covered",
+     "url": "https://www.gov.wales/public-sector-equality-duty-html",
+     "names_it_as": "Audit Wales",
+     "read_by": "Cadastre (govukOS) devolved read, row DV161",
+     "read": "2026-10-04"
+    },
+    {
+     "title": "Welsh Government: Public Sector Equality Duty, organisations covered",
+     "url": "https://www.gov.wales/public-sector-equality-duty-html",
+     "names_it_as": "Auditor General for Wales",
+     "read_by": "Cadastre (govukOS) devolved read, row DV162",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "The register holds the Wales Audit Office (closed). Record Audit Wales and the Auditor General as its successors.",
+   "origin": {
+    "ana_name": "Auditor General / Audit Wales",
+    "ana_department": "Senedd",
+    "ana_type": "parl",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B12",
+   "kind": "body",
+   "name": "Future Generations Commissioner for Wales",
+   "nation": "WA",
+   "type": "Commissioner",
+   "status": "needs-source",
+   "sources": [],
+   "note": "Set up by the Well-being of Future Generations (Wales) Act 2015; cite the Act section and the body's own page.",
+   "origin": {
+    "ana_name": "Future Generations Commissioner",
+    "ana_department": "Senedd",
+    "ana_type": "ndpb-exec",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B13",
+   "kind": "body",
+   "name": "NHS Wales Executive",
+   "nation": "WA",
+   "type": "Part of NHS Wales",
+   "status": "needs-source",
+   "sources": [],
+   "note": "ANA's name 'Meddygfa' (Welsh for a GP surgery) looks wrong; check whether NHS Wales Executive is a separate body or part of a hosted organisation.",
+   "origin": {
+    "ana_name": "Meddygfa / NHS Wales Executive",
+    "ana_department": "Senedd",
+    "ana_type": "special",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-B14",
+   "kind": "body",
+   "name": "Education Authority",
+   "nation": "NI",
+   "type": "Non-departmental public body of the Department of Education",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Commissioner for Public Appointments for Northern Ireland: list of bodies we regulate",
+     "url": "https://www.publicappointmentsni.org/list-bodies-we-regulate",
+     "names_it_as": "Education Authority",
+     "read_by": "Cadastre (govukOS) devolved read, row DV217",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "",
+   "origin": {
+    "ana_name": "Education Authority NI",
+    "ana_department": "Stormont",
+    "ana_type": "ndpb-exec",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-S01",
+   "kind": "status",
+   "name": "Tourism Northern Ireland",
+   "register_id": "government-organisation:OT820",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Commissioner for Public Appointments for Northern Ireland: list of bodies we regulate",
+     "url": "https://www.publicappointmentsni.org/list-bodies-we-regulate",
+     "names_it_as": "Tourism Northern Ireland",
+     "read_by": "Cadastre (govukOS) devolved read, row DV237",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "The register records this body as closed; the Northern Ireland Commissioner's list read on 4 Oct 2026 names it as a body regulated today.",
+   "origin": {
+    "ana_name": "Tourism NI",
+    "ana_department": "Stormont",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-S02",
+   "kind": "status",
+   "name": "Northern Ireland Local Government Officers’ Superannuation Committee",
+   "register_id": "government-organisation:OT758",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Commissioner for Public Appointments for Northern Ireland: list of bodies we regulate",
+     "url": "https://www.publicappointmentsni.org/list-bodies-we-regulate",
+     "names_it_as": "Northern Ireland Local Government Officers’ Superannuation Committee",
+     "read_by": "Cadastre (govukOS) devolved read, row DV209",
+     "read": "2026-10-04"
+    }
+   ],
+   "note": "The register records this body as closed; the Northern Ireland Commissioner's list read on 4 Oct 2026 names it as a body regulated today.",
+   "origin": {
+    "ana_name": "NI Local Government Officers’ Superannuation Cttee",
+    "ana_department": "Stormont",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-S03",
+   "kind": "status",
+   "name": "Northern Ireland Audit Office",
+   "register_id": "government-organisation:OT634",
+   "status": "needs-source",
+   "sources": [],
+   "note": "The register records this body as closed; ANA shows it as current. No source read yet: read the Audit Office's own page and the Audit (Northern Ireland) Order 1987.",
+   "origin": {
+    "ana_name": "NI Audit Office",
+    "ana_department": "Stormont",
+    "fold_row": "D073"
+   }
+  },
+  {
+   "id": "ANA-E01",
+   "kind": "event",
+   "name": "Change of Prime Minister",
+   "date": "2026-07-20",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Cabinet Office ministers (GOV.UK)",
+     "url": "https://www.gov.uk/government/organisations/cabinet-office",
+     "cited_by": "ANA"
+    }
+   ],
+   "note": "ANA marked this 'corroborated'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "origin": {
+    "ana_dataset": "GOVNEWS",
+    "fold_row": "V049"
+   }
+  },
+  {
+   "id": "ANA-E02",
+   "kind": "event",
+   "name": "No.10 North established",
+   "date": "2026-07-21",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Cabinet Office fact sheet (GOV.UK)",
+     "url": "https://www.gov.uk/government/news/machinery-of-government-changes-fact-sheet",
+     "cited_by": "ANA"
+    },
+    {
+     "title": "Written statement HLWS298",
+     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-07-21/hlws298",
+     "cited_by": "ANA"
+    }
+   ],
+   "note": "ANA marked this 'verified'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "origin": {
+    "ana_dataset": "GOVNEWS",
+    "fold_row": "V049"
+   }
+  },
+  {
+   "id": "ANA-E03",
+   "kind": "event",
+   "name": "Office for the Prime Minister and Cabinet (OPMC) created",
+   "date": "2026-07-21",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Cabinet Office fact sheet (GOV.UK)",
+     "url": "https://www.gov.uk/government/news/machinery-of-government-changes-fact-sheet",
+     "cited_by": "ANA"
+    },
+    {
+     "title": "Written statement HLWS298",
+     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-07-21/hlws298",
+     "cited_by": "ANA"
+    }
+   ],
+   "note": "ANA marked this 'verified'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "origin": {
+    "ana_dataset": "GOVNEWS",
+    "fold_row": "V049"
+   }
+  },
+  {
+   "id": "ANA-E04",
+   "kind": "event",
+   "name": "OneGov Delivery Agency established",
+   "date": "2026-07-21",
+   "status": "to-read",
+   "sources": [
+    {
+     "title": "Cabinet Office fact sheet (GOV.UK)",
+     "url": "https://www.gov.uk/government/news/machinery-of-government-changes-fact-sheet",
+     "cited_by": "ANA"
+    },
+    {
+     "title": "Written statement HLWS298",
+     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-07-21/hlws298",
+     "cited_by": "ANA"
+    }
+   ],
+   "note": "ANA marked this 'corroborated'. Not re-read for this register yet. Record only the change to bodies and functions, never the names of office holders.",
+   "origin": {
+    "ana_dataset": "GOVNEWS",
+    "fold_row": "V049"
+   }
+  }
+ ]
+}

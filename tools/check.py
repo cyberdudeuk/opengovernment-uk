@@ -108,6 +108,24 @@ def c_ons_codes(T):
     return bad
 CHECKS.append(c_ons_codes)
 
+ANA_FOLD = json.loads((S / "evidence" / "ana-fold-candidates.json").read_text())
+OFFICIAL = re.compile(r"^https://(?:[\w-]+\.)*(?:gov\.uk|gov\.scot|gov\.wales|parliament\.uk|legislation\.gov\.uk|nhs\.wales|publicappointmentsni\.org|nidirect\.gov\.uk|find-and-update\.company-information\.service\.gov\.uk)(?:/|$)")
+def c_ana_fold(T):
+    """OG-D81: entries carried over from ANA keep their origin, cite only official https sources, and cannot claim the register holds them unless it does"""
+    E = T.get("ana_fold", ANA_FOLD)["entries"]; bad = []; ids = set(); names = set(NAME.values())
+    for e in E:
+        o = e.get("origin") or {}
+        if e["id"] in ids or not o.get("fold_row") or e["status"] not in ANA_FOLD["statuses"]: bad.append(e["id"])
+        ids.add(e["id"])
+        if any(not OFFICIAL.match(x.get("url", "")) for x in e["sources"]): bad.append(e["id"])
+        if e["status"] == "to-read" and not e["sources"]: bad.append(e["id"])  # nothing to read
+        if e["status"] in ("added", "corrected") and e.get("register_id") not in REG: bad.append(e["id"])
+        if e["kind"] == "status" and e.get("register_id") not in REG: bad.append(e["id"])
+        if e["kind"] == "body" and e["status"] in ("to-read", "needs-source", "waiting") and e["name"] in names: bad.append(e["id"])  # the register now holds it: update this file
+        if is_person(e["name"]) or EMAIL.search(json.dumps(e, ensure_ascii=False)): bad.append(e["id"])
+    return bad
+CHECKS.append(c_ana_fold)
+
 def breakers(T):
     """One deliberate break per check. Each must make exactly its check fail."""
     k0 = next(iter(T["chains"])); e0 = T["edges"][0]
@@ -129,6 +147,7 @@ def breakers(T):
         "c_wording": b(lambda t: t["edges"][0].update(how="Office of the Chief Data Officer")),
         "c_digest": b(lambda t: t["conflicts"].append({"id": k0, "views": []})),
         "c_ons_codes": b(lambda t: next(e for e in t["edges"] if e["pt"] == "SE").update(how="body: name, cleaned; sponsor: name, cleaned")),
+        "c_ana_fold": b(lambda t: t.update(ana_fold={"entries": ANA_FOLD["entries"] + [{"id": "X", "kind": "body", "name": "Invented Body", "status": "to-read", "sources": [{"url": "https://example.org/"}], "origin": {"fold_row": "D073"}}]})),
         "c_conflicts_triangulated": b(lambda t: next(c for c in t["conflicts"] if c["status"] == "contested" or c.get("decided")).update(status="resolved", reason="decided from evidence: none", decided=[])),
     }
 
